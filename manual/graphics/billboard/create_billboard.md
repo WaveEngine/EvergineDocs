@@ -1,5 +1,5 @@
 # Create Billboard
----
+
 ![Billboards header](images/billboards.jpg)
 **Billboard** allows simulating far objects like bushes or trees reducing the amount of geometry needed to render your scene.
 
@@ -13,6 +13,7 @@ A billboard entity will be added to your scene
 ![Billboard entity](images/BillboardEntity.jpg)
 
 In the billboard component of your billboard entity you will find the following properties:
+
 |Property                       | Description |
 |-------------------------------|-------------|
 | **Texture**               | The billboard texture. |
