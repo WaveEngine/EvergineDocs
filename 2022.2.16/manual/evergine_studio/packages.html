@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Packages | Evergine Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Packages | Evergine Doc ">
+    <meta name="generator" content="docfx 2.58.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="packages">Packages</h1>
+
+<p>Packages are Evergine extensions that add specific functionalities and assets to your project.</p>
+<p>When a package is added, its assets (textures, sounds, meshes, etc.), source code (components, behaviors, services, etc.) and its nuget dependencies are automatically added for you, so you can start using them.</p>
+<h2 id="packages-in-evergine-studio">Packages in Evergine Studio</h2>
+<p>To check wich packages are installed in your application, you just need to take a look to the Project Explorer tab in Evergine Studio, and inspect the Dependencies section:</p>
+<p><img src="Images/mrtk_package.png" alt="packages on evergine studio"></p>
+<h2 id="supported-packages">Supported packages</h2>
+<p>Evergine comes gives the possibility to extend your applications using different packages</p>
+<h3 id="evergine-core">Evergine Core</h3>
+<p><strong>Evergine.Core</strong> is the most important package in Evergine, and it is registered into your application by default. It gives your application all default <a href="../graphics/effects/builtin_effects.html">Effects</a>, <a href="../graphics/materials/index.html">Materials</a>, <a href="../graphics/textures/index.html">Textures</a>, <a href="../graphics/postprocessing_graph/index.html">PostProcessingGraph</a> and core functionality to start developing your project.</p>
+<p><img src="Images/evergine_core.png" alt="Evergine.Core package"></p>
+<h4 id="everginecore-package-information">Evergine.Core Package information</h4>
+<ul>
+<li>Id: <strong>Evergine.Core</strong></li>
+<li>Latest Version: <em>This package is installed with the same version as used in your Evergine application</em></li>
+<li>NuGet Dependencies:
+<ul>
+<li><strong>Evergine.Framework</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="mixed-reality-toolkit">Mixed Reality Toolkit</h3>
+<p><a href="https://github.com/EvergineTeam/MixedRealityToolkit"><strong>Evergine.MRTK</strong></a> is a package that provides a set of components and features used to accelerate cross-platform XR application development in Evergine.
+Evergine.MRTK provides a set of basic building blocks for Evergine development on XR platforms such as:</p>
+<ul>
+<li>Microsoft HoloLens 2</li>
+<li>Windows Mixed Reality hreadsets</li>
+<li>OpenVR headsets (Oculus, HTC Vive, etc..)</li>
+</ul>
+<p><img src="Images/MRTK_Examples.png" alt="Evergine.MRTK"></p>
+<h4 id="everginemrtk-package-information">Evergine.MRTK Package information</h4>
+<ul>
+<li>Id: <strong>Evergine.MRTK.Assets</strong></li>
+<li>Latest Version: <strong>2021.11.4.5-nightly</strong></li>
+<li>NuGet Dependencies:
+<ul>
+<li><strong>Evergine.Framework</strong></li>
+<li><strong>Evergine.MRTK</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="upcoming-packages">Upcoming packages</h3>
+<p>Evergine is on continuous development, and more upcoming packages are coming:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Azure Remote Rendering</strong></td>
+<td>This package provides integration of Evergine with <a href="https://azure.microsoft.com/es-es/services/remote-rendering/">Azure Remote Rendering</a>, allowing to render on cloud complex industrial scenes and reproduce on portable devices or HoloLens.</td>
+</tr>
+<tr>
+<td><strong>Noesis GUI</strong></td>
+<td>Using <a href="https://www.noesisengine.com/">NoesisGUI</a> with Evergine allows you to create appealing User Interfaces using powerful XAML tools like Microsoft Expression Blend.</td>
+</tr>
+<tr>
+<td><strong>CAD Formats</strong></td>
+<td>Take your industrial CAD/3D model and bring it into your Evergine application.</td>
+</tr>
+<tr>
+<td><strong>Bing Maps</strong></td>
+<td>Provides <a href="https://www.bingmapsportal.com/">Bing Maps</a> integration with Evergine, that allows you to utilize Bing Maps 3D mapping data in your application.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-update-or-remove-a-package">Add, update or remove a package</h2>
+<p>To open Package Manager go to Settings &gt; Project Settings main menu option, or just right click on &quot;Dependencies&quot; node in Assets hierarchy panel and select &quot;Manage dependencies&quot; option.</p>
+<p><img src="Images/package_manager.png" alt="evergine studio packages manager"></p>
+<p>Browse tab shows all available packages. Dependending on usage of each package on your project, an indicator may appear to display availability or not of new package versions.</p>
+<p>You can perform typical add, update or remove operations over packages from this section.</p>
+<p>If you modify the collection of used packages, Evergine Studio will be reloaded once you close Project Settings window.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Notice that to use packages that have third NuGet package dependencies, you still need to install them by hand. Add the nuget dependencies to your root project, the one that contains the <code>EvergineContent.cs</code> file.</p>
+</div>
+<h3 id="core-add-ons">Core add-ons</h3>
+<p>Some packages like <em>Evergine.Core</em> are required to be synchronized with project's Evergine version, so they are considered as special packages and can't be managed using this panel.</p>
+<p><img src="Images/package_manager_protected.png" alt="evergine studio packages manager"></p>
+<p>To updgrade <em>Evergine.Core</em> package, you should update the whole project using Evergine Launcher user interface.</p>
+<h2 id="customize-assets">Customize assets</h2>
+<p>By default, all assets included in a package cannot be modified. This is indicated by this lock icon: <img src="Images/locked_icon.png" alt="lock icon">.</p>
+<p>However, you can modify an asset included in the package. When you modify a package asset, and try to save it, the following message apperas, indicating if you want to create a new copy of this asset in your project:</p>
+<p><img src="Images/package_locked_save.png" alt="confirm"></p>
+<p>Automatically a new copy of the asset will be created on your local folder project, overwriting the one provided by the package. By doing this allows you to modify or adapt Evergine core assets to your application requirements</p>
+<p><img src="Images/asset_edit.png" alt="Asset customization"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>      
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
