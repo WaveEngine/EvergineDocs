@@ -557,3 +557,28 @@ input:checked + .slider:before {
 .evergine-documentation-list li:hover {
   background-color: var(--color-background-subnav);
 }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select-label {
+  margin-bottom: 0;
+  padding: 10px 0 10px 15px;
+}
+
+.select-version {
+  background-color: inherit;
+  border-width: 0px;
+  padding-left: 15px;
+  padding-right: 2px;
+  margin-right: 15px;
+  outline: none;
+}
+
+.option-version {
+  color: black;
+}
