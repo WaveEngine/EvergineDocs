@@ -2,7 +2,7 @@
 ---
 ![Billboards header](images/billboards.jpg)
 
-**Billboard** is a quad orientated to face the camera. While the active camera in your scene is moving the billboard is orientated to face the camera. The billboards are useful to create pushpins or making an impostor of your far mesh to reduce the geometry that the render needs to draw. A common use is to simulate far bushes or trees.
+**Billboard** is a quad orientated to face the camera. While the active camera in your scene is moving the billboard is orientated to face the camera. The billboards are useful to create indicators or making an impostor of your far mesh to reduce the geometry that the render needs to draw. A common use is to simulate far bushes or trees.
 
 ## Types of billboards
 
