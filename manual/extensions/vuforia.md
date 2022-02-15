@@ -1,2 +1,0 @@
-# Vuforia
-Coming soon
