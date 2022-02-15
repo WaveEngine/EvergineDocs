@@ -28,6 +28,6 @@
 - name: Extensions
   href: extensions/toc.yml
   homepage: extensions/index.md
-- name: Addons
+- name: Add-ons
   href: addons/toc.yml
   homepage: addons/index.md

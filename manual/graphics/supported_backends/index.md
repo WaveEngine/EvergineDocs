@@ -6,7 +6,6 @@
 
 In the previous image you can see and overall diagram where all this APIs are represented.
 
-
 All the most recent APIs are supported and on top of all of them exists a common [low level graphics API](../low_level_api/index.md) used by **Evergine** to abstract the final graphics API used by the applications.
 
 ## In this section
