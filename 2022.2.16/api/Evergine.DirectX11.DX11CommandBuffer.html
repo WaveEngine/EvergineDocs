@@ -238,7 +238,8 @@
   </h3>
   <a id="Evergine_DirectX11_DX11CommandBuffer_AvailablePointerKeys_" data-uid="Evergine.DirectX11.DX11CommandBuffer.AvailablePointerKeys*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_AvailablePointerKeys" data-uid="Evergine.DirectX11.DX11CommandBuffer.AvailablePointerKeys">AvailablePointerKeys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of all available keys to obtain native pointers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -263,7 +264,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_AvailablePointerKeys">CommandBuffer.AvailablePointerKeys</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_GraphicsContext_" data-uid="Evergine.DirectX11.DX11CommandBuffer.GraphicsContext*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_GraphicsContext" data-uid="Evergine.DirectX11.DX11CommandBuffer.GraphicsContext">GraphicsContext</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the generic graphicsContext.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -288,7 +290,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_GraphicsContext">CommandBuffer.GraphicsContext</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Name_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Name*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Name" data-uid="Evergine.DirectX11.DX11CommandBuffer.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,7 +342,9 @@
   </h3>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Begin_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Begin*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Begin" data-uid="Evergine.DirectX11.DX11CommandBuffer.Begin">Begin()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the initialize state for this commandbuffer.
+This function must be called before other graphics commands ca be issued.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,7 +354,9 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Begin">CommandBuffer.Begin()</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_BeginDebugMarker_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginDebugMarker*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_BeginDebugMarker_System_String_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginDebugMarker(System.String)">BeginDebugMarker(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks the beginning of a section of event code. This allows subsequent commands to be
+categorized and filtered when viewed in external debugging tools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -368,15 +375,21 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>String that contains the name of the event.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_BeginDebugMarker_System_String_">CommandBuffer.BeginDebugMarker(String)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_BeginDebugMarker_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You call the EndDebugMarker method to mark the end of the section of event code.
+BeginDebugMarker has no effect if the calling application is not running under an enabled profiling tool.</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_BeginQuery_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginQuery*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_BeginQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginQuery(Evergine.Common.Graphics.QueryHeap,System.UInt32)">BeginQuery(QueryHeap, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins a GPU query.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -395,20 +408,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
         <td><span class="parametername">heap</span></td>
-        <td></td>
+        <td><p>Specifies the queryheap containing the query.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The query index.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_BeginQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32_">CommandBuffer.BeginQuery(QueryHeap, UInt32)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_BeginQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with occusion and binaryOcclusion queryheap types.</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_BeginRenderPassInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginRenderPassInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_BeginRenderPassInternal_Evergine_Common_Graphics_RenderPassDescription__" data-uid="Evergine.DirectX11.DX11CommandBuffer.BeginRenderPassInternal(Evergine.Common.Graphics.RenderPassDescription@)">BeginRenderPassInternal(ref RenderPassDescription)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begin a render pass.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,7 +446,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a></td>
         <td><span class="parametername">description</span></td>
-        <td></td>
+        <td><p>The renderPass description <a class="xref" href="Evergine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -435,7 +455,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_BeginRenderPassInternal_Evergine_Common_Graphics_RenderPassDescription__">CommandBuffer.BeginRenderPassInternal(ref RenderPassDescription)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Blit_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Blit*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Blit_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Blit(Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">Blit(Texture, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies all subresources from this texture in other texture with format conversion and preparing to present in swapchain.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -454,67 +475,80 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The source <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceX</span></td>
-        <td></td>
+        <td><p>The x-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceY</span></td>
-        <td></td>
+        <td><p>The y-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceZ</span></td>
-        <td></td>
+        <td><p>The z-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceMipLevel</span></td>
-        <td></td>
+        <td><p>The mip level to copy from the source texture.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceBasedArrayLayer</span></td>
-        <td></td>
+        <td><p>The starting array layer to copy from the source texture.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">destination</span></td>
-        <td></td>
+        <td><p>The destination <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into which data is copied./&gt;.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationX</span></td>
-        <td></td>
+        <td><p>The x-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationY</span></td>
-        <td></td>
+        <td><p>The y-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationZ</span></td>
-        <td></td>
+        <td><p>The z-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationMipLevel</span></td>
-        <td></td>
+        <td><p>The mip level to copy the data into.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationBasedArrayLayer</span></td>
-        <td></td>
+        <td><p>The starting array layer to copy data into.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">layerCount</span></td>
-        <td></td>
+        <td><p>The number of array layers to copy.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -522,7 +556,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Blit_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.Blit(Texture, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_BuildRaytracingAccelerationStructure_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BuildRaytracingAccelerationStructure*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_BuildRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_BottomLevelASDescription_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BuildRaytracingAccelerationStructure(Evergine.Common.Graphics.Raytracing.BottomLevelASDescription)">BuildRaytracingAccelerationStructure(BottomLevelASDescription)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Perform an bottom level acceleration structure build on the GPU.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -556,7 +591,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.BottomLevelAS.html">BottomLevelAS</a></td>
-        <td></td>
+        <td><p>Bottom Level Acceleration Structure.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -564,7 +600,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_BuildRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_BottomLevelASDescription_">CommandBuffer.BuildRaytracingAccelerationStructure(BottomLevelASDescription)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_BuildRaytracingAccelerationStructure_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BuildRaytracingAccelerationStructure*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_BuildRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="Evergine.DirectX11.DX11CommandBuffer.BuildRaytracingAccelerationStructure(Evergine.Common.Graphics.Raytracing.TopLevelASDescription)">BuildRaytracingAccelerationStructure(TopLevelASDescription)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Perform an top level acceleration structure build on the GPU.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -598,7 +635,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.TopLevelAS.html">TopLevelAS</a></td>
-        <td></td>
+        <td><p>Top Level Acceleration Structure.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -606,7 +644,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_BuildRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelASDescription_">CommandBuffer.BuildRaytracingAccelerationStructure(TopLevelASDescription)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Commit_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Commit*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Commit" data-uid="Evergine.DirectX11.DX11CommandBuffer.Commit">Commit()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Commits this command buffer to the command queue waiting to be execute on GPU after <a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_Submit">Submit()</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -616,7 +655,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Commit">CommandBuffer.Commit()</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_CopyBufferDataToInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.CopyBufferDataToInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_CopyBufferDataToInternal_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.CopyBufferDataToInternal(Evergine.Common.Graphics.Buffer,Evergine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">CopyBufferDataToInternal(Buffer, Buffer, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copy this buffer in the destination buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -640,22 +680,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">destination</span></td>
-        <td></td>
+        <td><p>The destination buffer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sizeInBytes</span></td>
-        <td></td>
+        <td><p>The data size in bytes to copy.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceOffset</span></td>
-        <td></td>
+        <td><p>The source buffer offset in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationOffset</span></td>
-        <td></td>
+        <td><p>The destination buffer offset in bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -663,7 +707,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_CopyBufferDataToInternal_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.CopyBufferDataToInternal(Buffer, Buffer, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_CopyTextureDataToInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.CopyTextureDataToInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_CopyTextureDataToInternal_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.CopyTextureDataToInternal(Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTextureDataToInternal(Texture, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Copies a region from this texture in other texture.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -682,82 +727,98 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The source <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceX</span></td>
-        <td></td>
+        <td><p>The x-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceY</span></td>
-        <td></td>
+        <td><p>The y-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceZ</span></td>
-        <td></td>
+        <td><p>The z-coordinate of the upper left corner of the source region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceMipLevel</span></td>
-        <td></td>
+        <td><p>The mip level to copy from the source texture.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceBasedArrayLayer</span></td>
-        <td></td>
+        <td><p>The starting array layer to copy from the source texture.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">destination</span></td>
-        <td></td>
+        <td><p>The destination <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into which data is copied./&gt;.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationX</span></td>
-        <td></td>
+        <td><p>The x-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationY</span></td>
-        <td></td>
+        <td><p>The y-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationZ</span></td>
-        <td></td>
+        <td><p>The z-coordinate of the upper left corner of the destination region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationMipLevel</span></td>
-        <td></td>
+        <td><p>The mip level to copy the data into.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationBasedArrayLayer</span></td>
-        <td></td>
+        <td><p>The starting array layer to copy data into.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">width</span></td>
-        <td></td>
+        <td><p>The width in texels of the copy region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>The height in texels of the copy region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">depth</span></td>
-        <td></td>
+        <td><p>The depth in texels of the copy region.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">layerCount</span></td>
-        <td></td>
+        <td><p>The number of array layers to copy.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -765,7 +826,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_CopyTextureDataToInternal_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.CopyTextureDataToInternal(Texture, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Dispatch_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Dispatch*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Dispatch_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Dispatch(System.UInt32,System.UInt32,System.UInt32)">Dispatch(UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute commands in a compute shader from a thread group.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -800,9 +862,15 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Dispatch_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.Dispatch(UInt32, UInt32, UInt32)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_Dispatch_System_UInt32_System_UInt32_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You call the Dispatch method to execute commands in a compute shader. A compute
+shader can be run on many threads in parallel, within a thread group. Index a
+particular thread, within a thread group using a 3D vector given by (x,y,z).</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DispatchIndirect_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DispatchIndirect*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DispatchIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DispatchIndirect(Evergine.Common.Graphics.Buffer,System.UInt32)">DispatchIndirect(Buffer, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Execute a command list over one or more thread groups.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -821,12 +889,14 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">argBuffer</span></td>
-        <td></td>
+        <td><p>A buffer which must be loaded with data that matches the argument list for <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Dispatch_System_UInt32_System_UInt32_System_UInt32_">Dispatch(UInt32, UInt32, UInt32)</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>A byte-aligned offset between the start of the buffer and the arguments.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -834,7 +904,9 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DispatchIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_">CommandBuffer.DispatchIndirect(Buffer, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DispatchRays_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DispatchRays*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DispatchRays_Evergine_Common_Graphics_Raytracing_DispatchRaysDescription_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DispatchRays(Evergine.Common.Graphics.Raytracing.DispatchRaysDescription)">DispatchRays(DispatchRaysDescription)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Launch threads of a ray generation shader. See Initiating raytracing for an overview. Can be called from
+graphics or compute command lists and bundles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -853,7 +925,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.DispatchRaysDescription.html">DispatchRaysDescription</a></td>
         <td><span class="parametername">description</span></td>
-        <td></td>
+        <td><p>Dispatch rays description.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -861,7 +934,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DispatchRays_Evergine_Common_Graphics_Raytracing_DispatchRaysDescription_">CommandBuffer.DispatchRays(DispatchRaysDescription)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Dispose_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Dispose*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Dispose" data-uid="Evergine.DirectX11.DX11CommandBuffer.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -898,7 +972,8 @@
   </table>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Draw_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Draw*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Draw_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Draw(System.UInt32,System.UInt32)">Draw(UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw non-indexed, non-instanced primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -917,12 +992,14 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">vertexCount</span></td>
-        <td></td>
+        <td><p>Number of vertices to draw.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startVertexLocation</span></td>
-        <td></td>
+        <td><p>Index of the first vertex, which is usually an offset in a vertex buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -930,7 +1007,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Draw_System_UInt32_System_UInt32_">CommandBuffer.Draw(UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexed_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexed*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexed_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexed(System.UInt32,System.UInt32,System.UInt32)">DrawIndexed(UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw indexed, non-instanced primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -949,17 +1027,20 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">indexCount</span></td>
-        <td></td>
+        <td><p>Number of indices to draw.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startIndexLocation</span></td>
-        <td></td>
+        <td><p>The location of the first index read by the GPU from the index buffer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">baseVertexLocation</span></td>
-        <td></td>
+        <td><p>A value added to each index before reading a vertex from the vertex buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -967,7 +1048,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DrawIndexed_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.DrawIndexed(UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexedInstanced_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexedInstanced*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexedInstanced_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexedInstanced(System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">DrawIndexedInstanced(UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw indexed, instanced primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -986,27 +1068,32 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">indexCountPerInstance</span></td>
-        <td></td>
+        <td><p>Number of indices read from the index buffer for each instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">instanceCount</span></td>
-        <td></td>
+        <td><p>Number of instances to draw.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startIndexLocation</span></td>
-        <td></td>
+        <td><p>The location of the first index read by the GPU from the index buffer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">baseVertexLocation</span></td>
-        <td></td>
+        <td><p>A value added to each index before reading a vertex from the vertex buffer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startInstanceLocation</span></td>
-        <td></td>
+        <td><p>A value added to each index before reading per-instance data from a vertex buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1014,7 +1101,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DrawIndexedInstanced_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.DrawIndexedInstanced(UInt32, UInt32, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexedInstancedIndirect_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexedInstancedIndirect*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DrawIndexedInstancedIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawIndexedInstancedIndirect(Evergine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">DrawIndexedInstancedIndirect(Buffer, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw indexed, instanced, GPU-generated primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1033,22 +1121,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">argBuffer</span></td>
-        <td></td>
+        <td><p>A buffer containing the GPU generated primitives.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>Offset to the start of the GPU generated primitives.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">drawCount</span></td>
-        <td></td>
+        <td><p>It is the number of draws to execute, and can be zero.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">stride</span></td>
-        <td></td>
+        <td><p>It is the byte stride between succesive sets of draw parameters.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1056,7 +1148,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DrawIndexedInstancedIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.DrawIndexedInstancedIndirect(Buffer, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DrawInstanced_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawInstanced*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DrawInstanced_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawInstanced(System.UInt32,System.UInt32,System.UInt32,System.UInt32)">DrawInstanced(UInt32, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw non-indexed, instanced primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1075,22 +1168,26 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">vertexCountPerInstance</span></td>
-        <td></td>
+        <td><p>Number of vertices to draw.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">instanceCount</span></td>
-        <td></td>
+        <td><p>Number of instances to draw.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startVertexLocation</span></td>
-        <td></td>
+        <td><p>Index of the first vertex.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startInstanceLocation</span></td>
-        <td></td>
+        <td><p>A value added to each index before reading per-instance data from a vertex buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1098,7 +1195,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DrawInstanced_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.DrawInstanced(UInt32, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_DrawInstancedIndirect_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawInstancedIndirect*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_DrawInstancedIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.DrawInstancedIndirect(Evergine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">DrawInstancedIndirect(Buffer, UInt32, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw instanced, GPU-generated primitives.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1117,22 +1215,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">argBuffer</span></td>
-        <td></td>
+        <td><p>A buffer containing the GPU generated primitives.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>Offset to the start of the GPU generated primitives.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">drawCount</span></td>
-        <td></td>
+        <td><p>It is the number of draws to execute, and can be zero.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">stride</span></td>
-        <td></td>
+        <td><p>It is the byte stride between succesive sets of draw parameters.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1140,7 +1242,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_DrawInstancedIndirect_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.DrawInstancedIndirect(Buffer, UInt32, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_EndDebugMarker_" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndDebugMarker*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_EndDebugMarker" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndDebugMarker">EndDebugMarker()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks the end of a section of event code.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1148,9 +1251,13 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_EndDebugMarker">CommandBuffer.EndDebugMarker()</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_EndDebugMarker_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>EndDebugMarker has no effect if the calling application is not running under an enabled profiling tool.</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_EndInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_EndInternal" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndInternal">EndInternal()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Completes the command buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1160,7 +1267,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_EndInternal">CommandBuffer.EndInternal()</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_EndQuery_" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndQuery*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_EndQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndQuery(Evergine.Common.Graphics.QueryHeap,System.UInt32)">EndQuery(QueryHeap, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Ends a GPU query.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1179,20 +1287,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
         <td><span class="parametername">heap</span></td>
-        <td></td>
+        <td><p>Specifies the queryheap containing the query.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The query index.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_EndQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32_">CommandBuffer.EndQuery(QueryHeap, UInt32)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_EndQuery_Evergine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with occusion and binaryOcclusion queryheap types.</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_EndRenderPassInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndRenderPassInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_EndRenderPassInternal" data-uid="Evergine.DirectX11.DX11CommandBuffer.EndRenderPassInternal">EndRenderPassInternal()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>End a render pass.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1202,7 +1316,9 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_EndRenderPassInternal">CommandBuffer.EndRenderPassInternal()</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_GenerateMipmaps_" data-uid="Evergine.DirectX11.DX11CommandBuffer.GenerateMipmaps*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_GenerateMipmaps_Evergine_Common_Graphics_Texture_" data-uid="Evergine.DirectX11.DX11CommandBuffer.GenerateMipmaps(Evergine.Common.Graphics.Texture)">GenerateMipmaps(Texture)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates mipmaps for the given <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a>. The largest mipmap is used to generate all of the lower mipmap
+levels contained in the Texture.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1221,7 +1337,9 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">texture</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> to generate mipmaps for. This Texture must have been created with
+<a class="xref" href="Evergine.Common.Graphics.TextureFlags.html">TextureFlags</a>.<a class="xref" href="Evergine.Common.Graphics.TextureFlags.html#Evergine_Common_Graphics_TextureFlags_GenerateMipmaps">GenerateMipmaps</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1274,7 +1392,9 @@
   </table>
   <a id="Evergine_DirectX11_DX11CommandBuffer_InsertDebugMarker_" data-uid="Evergine.DirectX11.DX11CommandBuffer.InsertDebugMarker*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_InsertDebugMarker_System_String_" data-uid="Evergine.DirectX11.DX11CommandBuffer.InsertDebugMarker(System.String)">InsertDebugMarker(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks a single point of execution in code. This is used by graphics debuggers to identify
+points of interest in a command stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1293,15 +1413,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">label</span></td>
-        <td></td>
+        <td><p>String that contains the name of the event.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_InsertDebugMarker_System_String_">CommandBuffer.InsertDebugMarker(String)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_InsertDebugMarker_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>InsertDebugMarker has no effect if the calling application is not running under an enabled profiling tool.</p>
+</div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_Reset_" data-uid="Evergine.DirectX11.DX11CommandBuffer.Reset*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_Reset" data-uid="Evergine.DirectX11.DX11CommandBuffer.Reset">Reset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reset the command buffer to the initial state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1369,7 +1494,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_ResourceBarrierUnorderedAccessView_Evergine_Common_Graphics_Texture_">CommandBuffer.ResourceBarrierUnorderedAccessView(Texture)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetComputePipelineStateInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetComputePipelineStateInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetComputePipelineStateInternal_Evergine_Common_Graphics_ComputePipelineState_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetComputePipelineStateInternal(Evergine.Common.Graphics.ComputePipelineState)">SetComputePipelineStateInternal(ComputePipelineState)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the compute pipeline state object for this commandbuffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1388,7 +1514,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.ComputePipelineState.html">ComputePipelineState</a></td>
         <td><span class="parametername">pipeline</span></td>
-        <td></td>
+        <td><p>The compute pipeline state description.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1396,7 +1523,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetComputePipelineStateInternal_Evergine_Common_Graphics_ComputePipelineState_">CommandBuffer.SetComputePipelineStateInternal(ComputePipelineState)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetGraphicsPipelineStateInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetGraphicsPipelineStateInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetGraphicsPipelineStateInternal_Evergine_Common_Graphics_GraphicsPipelineState_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetGraphicsPipelineStateInternal(Evergine.Common.Graphics.GraphicsPipelineState)">SetGraphicsPipelineStateInternal(GraphicsPipelineState)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the graphics pipeline state object for this commandbuffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1415,7 +1543,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.GraphicsPipelineState.html">GraphicsPipelineState</a></td>
         <td><span class="parametername">pipeline</span></td>
-        <td></td>
+        <td><p>The graphics pipeline state description.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1423,7 +1552,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetGraphicsPipelineStateInternal_Evergine_Common_Graphics_GraphicsPipelineState_">CommandBuffer.SetGraphicsPipelineStateInternal(GraphicsPipelineState)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetIndexBuffer_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetIndexBuffer*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetIndexBuffer_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_IndexFormat_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetIndexBuffer(Evergine.Common.Graphics.Buffer,Evergine.Common.Graphics.IndexFormat,System.UInt32)">SetIndexBuffer(Buffer, IndexFormat, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set an array of index buffers to the input-assembler stage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1442,17 +1572,20 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">buffer</span></td>
-        <td></td>
+        <td><p>The buffer being bound.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.IndexFormat.html">IndexFormat</a></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>Indices Data Type (Default UInt16).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>Offset (in bytes) from the start of the index buffer to the first index to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1460,7 +1593,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetIndexBuffer_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_IndexFormat_System_UInt32_">CommandBuffer.SetIndexBuffer(Buffer, IndexFormat, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetRaytracingPipelineStateInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetRaytracingPipelineStateInternal*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetRaytracingPipelineStateInternal_Evergine_Common_Graphics_Raytracing_RaytracingPipelineState_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetRaytracingPipelineStateInternal(Evergine.Common.Graphics.Raytracing.RaytracingPipelineState)">SetRaytracingPipelineStateInternal(RaytracingPipelineState)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the raytracing pipeline state object for this commandbuffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1479,7 +1613,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.RaytracingPipelineState.html">RaytracingPipelineState</a></td>
         <td><span class="parametername">pipeline</span></td>
-        <td></td>
+        <td><p>The raytracing pipeline state description.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1487,7 +1622,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetRaytracingPipelineStateInternal_Evergine_Common_Graphics_Raytracing_RaytracingPipelineState_">CommandBuffer.SetRaytracingPipelineStateInternal(RaytracingPipelineState)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetResourceSet_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetResourceSet*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetResourceSet_Evergine_Common_Graphics_ResourceSet_System_UInt32_System_UInt32___" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetResourceSet(Evergine.Common.Graphics.ResourceSet,System.UInt32,System.UInt32[])">SetResourceSet(ResourceSet, UInt32, UInt32[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the active <a class="xref" href="Evergine.Common.Graphics.ResourceSet.html">ResourceSet</a> for the given index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1506,12 +1642,14 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.ResourceSet.html">ResourceSet</a></td>
         <td><span class="parametername">resourceSet</span></td>
-        <td></td>
+        <td><p>The new <a class="xref" href="Evergine.Common.Graphics.ResourceSet.html">ResourceSet</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The resourceSet index.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span>[]</td>
@@ -1524,7 +1662,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetResourceSet_Evergine_Common_Graphics_ResourceSet_System_UInt32_System_UInt32___">CommandBuffer.SetResourceSet(ResourceSet, UInt32, UInt32[])</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetScissorRectangles_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetScissorRectangles*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetScissorRectangles_Evergine_Mathematics_Rectangle___" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetScissorRectangles(Evergine.Mathematics.Rectangle[])">SetScissorRectangles(Rectangle[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set an scissor rectangle in a specific slot.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1543,7 +1682,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Mathematics.Rectangle.html">Rectangle</a>[]</td>
         <td><span class="parametername">rectangles</span></td>
-        <td></td>
+        <td><p>The array of the scissor rectangles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1551,7 +1691,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetScissorRectangles_Evergine_Mathematics_Rectangle___">CommandBuffer.SetScissorRectangles(Rectangle[])</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetVertexBuffer_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetVertexBuffer*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetVertexBuffer_System_UInt32_Evergine_Common_Graphics_Buffer_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetVertexBuffer(System.UInt32,Evergine.Common.Graphics.Buffer,System.UInt32)">SetVertexBuffer(UInt32, Buffer, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set an buffers to the input-assembler stage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1570,17 +1711,20 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">slot</span></td>
-        <td></td>
+        <td><p>The buffer slot.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">buffer</span></td>
-        <td></td>
+        <td><p>The buffer being bound.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>Offset (in bytes) from the start of buffer to the first vertex to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1588,7 +1732,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetVertexBuffer_System_UInt32_Evergine_Common_Graphics_Buffer_System_UInt32_">CommandBuffer.SetVertexBuffer(UInt32, Buffer, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetVertexBuffers_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetVertexBuffers*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetVertexBuffers_Evergine_Common_Graphics_Buffer___System_Int32___" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetVertexBuffers(Evergine.Common.Graphics.Buffer[],System.Int32[])">SetVertexBuffers(Buffer[], Int32[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set an array of buffers to the input-assembler stage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1612,7 +1757,8 @@
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">offsets</span></td>
-        <td></td>
+        <td><p>Offsets (in bytes) from the start of each vertexbuffer to the first vertex to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1620,7 +1766,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetVertexBuffers_Evergine_Common_Graphics_Buffer___System_Int32___">CommandBuffer.SetVertexBuffers(Buffer[], Int32[])</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_SetViewports_" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetViewports*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_SetViewports_Evergine_Common_Graphics_Viewport___" data-uid="Evergine.DirectX11.DX11CommandBuffer.SetViewports(Evergine.Common.Graphics.Viewport[])">SetViewports(Viewport[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set a viewport in a specific slot.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1639,7 +1786,8 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Viewport.html">Viewport</a>[]</td>
         <td><span class="parametername">viewports</span></td>
-        <td></td>
+        <td><p>The array of the viewports.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1687,7 +1835,8 @@
   </table>
   <a id="Evergine_DirectX11_DX11CommandBuffer_UpdateRaytracingAccelerationStructure_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateRaytracingAccelerationStructure*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_UpdateRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelAS__Evergine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateRaytracingAccelerationStructure(Evergine.Common.Graphics.Raytracing.TopLevelAS@,Evergine.Common.Graphics.Raytracing.TopLevelASDescription)">UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Refit an top level accelerations structure build on the GPU.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1706,12 +1855,14 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.TopLevelAS.html">TopLevelAS</a></td>
         <td><span class="parametername">tlas</span></td>
-        <td></td>
+        <td><p>Top level acceleration structure.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.TopLevelASDescription.html">TopLevelASDescription</a></td>
         <td><span class="parametername">newDescription</span></td>
-        <td></td>
+        <td><p>New top level description.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1719,7 +1870,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelAS__Evergine_Common_Graphics_Raytracing_TopLevelASDescription_">CommandBuffer.UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_WriteTimestamp_" data-uid="Evergine.DirectX11.DX11CommandBuffer.WriteTimestamp*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_WriteTimestamp_Evergine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.WriteTimestamp(Evergine.Common.Graphics.QueryHeap,System.UInt32)">WriteTimestamp(QueryHeap, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Write a device timestamp into a query heap.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1738,17 +1890,22 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
         <td><span class="parametername">heap</span></td>
-        <td></td>
+        <td><p>Specifies the queryheap.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The query index.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_WriteTimestamp_Evergine_Common_Graphics_QueryHeap_System_UInt32_">CommandBuffer.WriteTimestamp(QueryHeap, UInt32)</a></div>
+  <h5 id="Evergine_DirectX11_DX11CommandBuffer_WriteTimestamp_Evergine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with timestamp queryheap type.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>

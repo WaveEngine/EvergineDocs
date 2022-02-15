@@ -142,7 +142,8 @@ CommandBuffers are transient single-use objects and do not support reuse.</p>
   </h3>
   <a id="Evergine_Common_Graphics_CommandBuffer_AvailablePointerKeys_" data-uid="Evergine.Common.Graphics.CommandBuffer.AvailablePointerKeys*"></a>
   <h4 id="Evergine_Common_Graphics_CommandBuffer_AvailablePointerKeys" data-uid="Evergine.Common.Graphics.CommandBuffer.AvailablePointerKeys">AvailablePointerKeys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of all available keys to obtain native pointers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1635,7 +1636,8 @@ levels contained in the Texture.</p>
   </table>
   <a id="Evergine_Common_Graphics_CommandBuffer_GetNativePointer_" data-uid="Evergine.Common.Graphics.CommandBuffer.GetNativePointer*"></a>
   <h4 id="Evergine_Common_Graphics_CommandBuffer_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.Common.Graphics.CommandBuffer.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1654,12 +1656,14 @@ levels contained in the Texture.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">pointerKey</span></td>
-        <td></td>
+        <td><p>The pointer key.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
-        <td></td>
+        <td><p>The native pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1674,7 +1678,8 @@ levels contained in the Texture.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if there are an available pointer with this key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2218,7 +2223,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, ref T data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2275,7 +2279,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2332,7 +2335,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint count, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

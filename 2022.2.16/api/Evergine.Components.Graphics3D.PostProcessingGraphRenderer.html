@@ -402,7 +402,8 @@
   </h3>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_Draw_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.Draw*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_Draw_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.Draw(Evergine.Framework.Graphics.DrawContext)">Draw(DrawContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows to perform custom drawing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -421,15 +422,21 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td></td>
+        <td><p>The draw context.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_Draw_Evergine_Framework_Graphics_DrawContext_">Drawable.Draw(DrawContext)</a></div>
+  <h5 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_Draw_Evergine_Framework_Graphics_DrawContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only be called if all the following points are true:</p>
+<ul><li>The entity passes the culling test.</li><li>The parent of the owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> cascades its visibility to its children and it is visible.</li><li>The <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active.</li><li>The owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active and visible.</li></ul>
+</div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnActivated_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnActivated*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnActivated" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnActivated">OnActivated()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -439,7 +446,8 @@
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnActivated">Component.OnActivated()</a></div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnAttached_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnAttached*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnAttached" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnAttached">OnAttached()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -456,7 +464,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if all is OK.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -464,7 +473,8 @@
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_OnAttached">Drawable.OnAttached()</a></div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDeactivated_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDeactivated*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDeactivated" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDeactivated">OnDeactivated()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +484,8 @@
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDeactivated">Component.OnDeactivated()</a></div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDestroy_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDestroy*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDestroy" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDestroy">OnDestroy()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is going to be disposed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -484,7 +495,8 @@
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDestroy">Component.OnDestroy()</a></div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDetach_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDetach*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnDetach" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnDetach">OnDetach()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -494,7 +506,8 @@
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_OnDetach">Drawable.OnDetach()</a></div>
   <a id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnLoaded_" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnLoaded*"></a>
   <h4 id="Evergine_Components_Graphics3D_PostProcessingGraphRenderer_OnLoaded" data-uid="Evergine.Components.Graphics3D.PostProcessingGraphRenderer.OnLoaded">OnLoaded()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when the object is loaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

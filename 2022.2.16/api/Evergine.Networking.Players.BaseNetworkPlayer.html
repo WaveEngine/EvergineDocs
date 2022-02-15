@@ -142,7 +142,9 @@
   </h3>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_CustomProperties_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.CustomProperties*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_CustomProperties" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.CustomProperties">CustomProperties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the custom properties of the player.
+Those properties are synchronized by the server automatically.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,9 +165,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Evergine_Networking_Players_BaseNetworkPlayer_CustomProperties_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only the local player might change his own custom properties in a room.
+Setting properties in this table updates the server and other players.</p>
+<p>Keys in the table are bytes to reduce network traffic. It is recommended
+to use a custom enumerator for better clarity.</p>
+</div>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_Id_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Id*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_Id" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an identifier of this player in current room. It's -1 outside of rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -186,9 +195,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Evergine_Networking_Players_BaseNetworkPlayer_Id_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Id is assigned per room and only valid in that context. It will change even on leave and re-join.
+Ids are never re-used per room.</p>
+</div>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_IsInLobby_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsInLobby*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_IsInLobby" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsInLobby">IsInLobby</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is in the lobby (not in a room).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -211,7 +225,8 @@
   </table>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_IsLocalPlayer_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_IsLocalPlayer" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer">IsLocalPlayer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is the local player.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,7 +249,8 @@
   </table>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_IsMasterClient_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsMasterClient*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_IsMasterClient" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.IsMasterClient">IsMasterClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is the Master Client of the current room or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -255,9 +271,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Evergine_Networking_Players_BaseNetworkPlayer_IsMasterClient_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can be used as &quot;authoritative&quot; client/player to make decisions, run AI or other.
+If the current Master Client leaves the room (leave/disconnect), the server will quickly assign someone else.
+If the current Master Client times out (closed app, lost connection, etc), messages sent to this client are
+effectively lost for the others!.</p>
+</div>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_Nickname_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Nickname*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_Nickname" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Nickname">Nickname</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a non-unique nickname of this player. Synced automatically in a room.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -278,9 +301,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Evergine_Networking_Players_BaseNetworkPlayer_Nickname_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A player might change his own nickname in a room.
+Setting this value updates the server and other players.</p>
+</div>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_Room_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Room*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_Room" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.Room">Room</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the room where is the player. It is null if the player is in the lobby.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,7 +331,9 @@
   </table>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_TagObject_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.TagObject*"></a>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_TagObject" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.TagObject">TagObject</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an object that can be used to store a reference that's useful to know &quot;by player&quot;.
+This property is not sync by the server.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -324,6 +354,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Evergine_Networking_Players_BaseNetworkPlayer_TagObject_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Example: Set a player's character as Tag by assigning its Entity or EntityPath.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Networking_Players_BaseNetworkPlayer_WriteToMessage_" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.WriteToMessage*"></a>
@@ -362,7 +395,8 @@
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_OnCustomPropertiesChanged" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged">OnCustomPropertiesChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event raised when the server updates custom properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,7 +418,8 @@
     </tbody>
   </table>
   <h4 id="Evergine_Networking_Players_BaseNetworkPlayer_OnNicknameChanged" data-uid="Evergine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged">OnNicknameChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event raised when the server updates the player nickname.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
