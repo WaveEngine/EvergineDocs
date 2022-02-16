@@ -1,14 +1,6 @@
-- name: NoesisGUI
-  href: noesisgui.md
-- name: Vuforia
-  href: vuforia.md
 - name: Networking
   href: networking.md
 - name: ImGUI
   href: imgui.md
 - name: OpenXR
   href: openxr.md
-- name: Mixed Reality
-  href: mixed_reality.md
-- name: MRTK
-  href: mrtk.md

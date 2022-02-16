@@ -22,9 +22,12 @@
 #- name: Physics
 #  href: physics/toc.yml
 #  homepage: physics/index.md
-#- name: XR
-#  href: xr/toc.yml
-#  homepage: xr/index.md
+- name: XR
+  href: xr/toc.yml
+  homepage: xr/index.md
 - name: Extensions
   href: extensions/toc.yml
   homepage: extensions/index.md
+- name: Add-ons
+  href: addons/toc.yml
+  homepage: addons/index.md
