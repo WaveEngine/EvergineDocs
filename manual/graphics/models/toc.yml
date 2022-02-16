@@ -1,6 +1,6 @@
 - name: Import a Model
   href: import_model.md
-- name: How to create a model from code
-  href: create_model_from_code.md
+- name: Using Models
+  href: using_models.md
 - name: Model Editor
   href: model_editor.md
