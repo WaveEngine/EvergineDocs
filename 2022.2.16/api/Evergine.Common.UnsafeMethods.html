@@ -97,40 +97,16 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnsafeMethods</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.html">Evergine.Common</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_UnsafeMethods_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UnsafeMethods</code></pre>
+    <pre><code class="lang-csharp hljs">public static class UnsafeMethods : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_UnsafeMethods_ClonePointer_" data-uid="Evergine.Common.UnsafeMethods.ClonePointer*"></a>
-  <h4 id="Evergine_Common_UnsafeMethods_ClonePointer_System_IntPtr_System_Int32_" data-uid="Evergine.Common.UnsafeMethods.ClonePointer(System.IntPtr,System.Int32)">ClonePointer(IntPtr, Int32)</h4>
+  <h4 id="Evergine_Common_UnsafeMethods_ClonePointer_IntPtr_System_Int32_" data-uid="Evergine.Common.UnsafeMethods.ClonePointer(IntPtr,System.Int32)">ClonePointer(IntPtr, Int32)</h4>
   <div class="markdown level1 summary"><p>Clones the pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -149,7 +125,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The source.</p>
 </td>
@@ -172,14 +148,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><p>New IntPtr created.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_UnsafeMethods_CopyPointer_" data-uid="Evergine.Common.UnsafeMethods.CopyPointer*"></a>
-  <h4 id="Evergine_Common_UnsafeMethods_CopyPointer_System_IntPtr_System_IntPtr_System_Int32_" data-uid="Evergine.Common.UnsafeMethods.CopyPointer(System.IntPtr,System.IntPtr,System.Int32)">CopyPointer(IntPtr, IntPtr, Int32)</h4>
+  <h4 id="Evergine_Common_UnsafeMethods_CopyPointer_IntPtr_IntPtr_System_Int32_" data-uid="Evergine.Common.UnsafeMethods.CopyPointer(IntPtr,IntPtr,System.Int32)">CopyPointer(IntPtr, IntPtr, Int32)</h4>
   <div class="markdown level1 summary"><p>Copies the pointers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -198,13 +174,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The source.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">destination</span></td>
         <td><p>The destination.</p>
 </td>

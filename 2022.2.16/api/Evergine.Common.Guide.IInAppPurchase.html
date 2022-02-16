@@ -92,12 +92,6 @@
   <div class="markdown level0 summary"><p>In App purchase service interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.IDisposable.Dispose()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Guide.html">Evergine.Common.Guide</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Guide_IInAppPurchase_syntax">Syntax</h5>
@@ -107,7 +101,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_Guide_IInAppPurchase_Initialize_" data-uid="Evergine.Common.Guide.IInAppPurchase.Initialize*"></a>
-  <h4 id="Evergine_Common_Guide_IInAppPurchase_Initialize_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Evergine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary{System.String,System.String})">Initialize(Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="Evergine_Common_Guide_IInAppPurchase_Initialize_Dictionary_System_String_System_String__" data-uid="Evergine.Common.Guide.IInAppPurchase.Initialize(Dictionary{System.String,System.String})">Initialize(Dictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Initialize the store with the given properties.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -126,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">properties</span></td>
         <td><p>Store properties.</p>
 </td>
@@ -143,7 +137,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p><code>true</code> if the initialization has been done correctly; otherwise, <code>false</code>.</p>
 </td>
       </tr>
@@ -186,7 +180,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p><code>true</code> if the consumable product has been purchased; otherwise, <code>false</code>.</p>
 </td>
       </tr>
@@ -229,14 +223,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p><code>true</code> if the product purchase has been accepted by user; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Guide_IInAppPurchase_RequestProductsAsync_" data-uid="Evergine.Common.Guide.IInAppPurchase.RequestProductsAsync*"></a>
-  <h4 id="Evergine_Common_Guide_IInAppPurchase_RequestProductsAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="Evergine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable{System.String})">RequestProductsAsync(IEnumerable&lt;String&gt;)</h4>
+  <h4 id="Evergine_Common_Guide_IInAppPurchase_RequestProductsAsync_IEnumerable_System_String__" data-uid="Evergine.Common.Guide.IInAppPurchase.RequestProductsAsync(IEnumerable{System.String})">RequestProductsAsync(IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Requests to store the products async.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -255,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">productIds</span></td>
         <td><p>Enumerable of products to obtain the details.</p>
 </td>
@@ -272,7 +266,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Common.Guide.Product.html">Product</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Common.Guide.Product.html">Product</a>&gt;&gt;</td>
         <td><p>Detailed product list.</p>
 </td>
       </tr>
@@ -315,7 +309,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Common.Guide.Receipt.html">Receipt</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Common.Guide.Receipt.html">Receipt</a>&gt;</td>
         <td><p>The receipt.</p>
 </td>
       </tr>

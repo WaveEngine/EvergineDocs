@@ -96,35 +96,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Interface</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="glTFLoader.html">glTFLoader</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="glTFLoader_Interface_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Interface</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Interface : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -172,13 +148,13 @@
     </tbody>
   </table>
   <a id="glTFLoader_Interface_LoadBinaryBuffer_" data-uid="glTFLoader.Interface.LoadBinaryBuffer*"></a>
-  <h4 id="glTFLoader_Interface_LoadBinaryBuffer_glTFLoader_Schema_Gltf_System_Int32_System_Func_System_String_System_Byte____" data-uid="glTFLoader.Interface.LoadBinaryBuffer(glTFLoader.Schema.Gltf,System.Int32,System.Func{System.String,System.Byte[]})">LoadBinaryBuffer(Gltf, Int32, Func&lt;String, Byte[]&gt;)</h4>
+  <h4 id="glTFLoader_Interface_LoadBinaryBuffer_glTFLoader_Schema_Gltf_System_Int32_Func_System_String_Byte____" data-uid="glTFLoader.Interface.LoadBinaryBuffer(glTFLoader.Schema.Gltf,System.Int32,Func{System.String,Byte[]})">LoadBinaryBuffer(Gltf, Int32, Func&lt;String, Byte[]&gt;)</h4>
   <div class="markdown level1 summary"><p>Gets a binary buffer referenced by a specific <pre><code>Schema.Buffer</code></pre></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] LoadBinaryBuffer(this Gltf model, int bufferIndex, Func&lt;string, byte[]&gt; externalReferenceSolver)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Byte[] LoadBinaryBuffer(this Gltf model, int bufferIndex, Func&lt;string, Byte[]&gt; externalReferenceSolver)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,7 +179,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">Byte</span>[]&gt;</td>
         <td><span class="parametername">externalReferenceSolver</span></td>
         <td><p>An user provided lambda function to resolve external assets</p>
 </td>
@@ -220,13 +196,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td><p>Byte array of the buffer</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="glTFLoader_Interface_LoadBinaryBuffer_glTFLoader_Schema_Gltf_System_Int32_System_Func_System_String_System_Byte_____remarks">Remarks</h5>
+  <h5 id="glTFLoader_Interface_LoadBinaryBuffer_glTFLoader_Schema_Gltf_System_Int32_Func_System_String_Byte_____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Binary buffers can be stored in three different ways:</p>
 <ul>
 <li>As stand alone files.</li>
@@ -244,7 +220,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] LoadBinaryBuffer(this Gltf model, int bufferIndex, string gltfFilePath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Byte[] LoadBinaryBuffer(this Gltf model, int bufferIndex, string gltfFilePath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,20 +262,20 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td><p>Byte array of the buffer</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="glTFLoader_Interface_LoadBinaryBuffer_" data-uid="glTFLoader.Interface.LoadBinaryBuffer*"></a>
-  <h4 id="glTFLoader_Interface_LoadBinaryBuffer_System_IO_Stream_" data-uid="glTFLoader.Interface.LoadBinaryBuffer(System.IO.Stream)">LoadBinaryBuffer(Stream)</h4>
+  <h4 id="glTFLoader_Interface_LoadBinaryBuffer_Stream_" data-uid="glTFLoader.Interface.LoadBinaryBuffer(Stream)">LoadBinaryBuffer(Stream)</h4>
   <div class="markdown level1 summary"><p>Reads the binary buffer chunk of a glb stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] LoadBinaryBuffer(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Byte[] LoadBinaryBuffer(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -312,7 +288,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Readable stream to a glb model</p>
 </td>
@@ -329,7 +305,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td><p>Byte array of the buffer</p>
 </td>
       </tr>
@@ -342,7 +318,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte[] LoadBinaryBuffer(string filePath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Byte[] LoadBinaryBuffer(string filePath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -372,14 +348,14 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">Byte</span>[]</td>
         <td><p>Byte array of the buffer</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="glTFLoader_Interface_LoadModel_" data-uid="glTFLoader.Interface.LoadModel*"></a>
-  <h4 id="glTFLoader_Interface_LoadModel_System_IO_Stream_" data-uid="glTFLoader.Interface.LoadModel(System.IO.Stream)">LoadModel(Stream)</h4>
+  <h4 id="glTFLoader_Interface_LoadModel_Stream_" data-uid="glTFLoader.Interface.LoadModel(Stream)">LoadModel(Stream)</h4>
   <div class="markdown level1 summary"><p>Reads a <pre><code>Schema.Gltf</code></pre> model from a stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -398,7 +374,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Readable stream to a gltf/glb model</p>
 </td>
@@ -465,13 +441,13 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </tbody>
   </table>
   <a id="glTFLoader_Interface_OpenImageFile_" data-uid="glTFLoader.Interface.OpenImageFile*"></a>
-  <h4 id="glTFLoader_Interface_OpenImageFile_glTFLoader_Schema_Gltf_System_Int32_System_Func_System_String_System_Byte____" data-uid="glTFLoader.Interface.OpenImageFile(glTFLoader.Schema.Gltf,System.Int32,System.Func{System.String,System.Byte[]})">OpenImageFile(Gltf, Int32, Func&lt;String, Byte[]&gt;)</h4>
+  <h4 id="glTFLoader_Interface_OpenImageFile_glTFLoader_Schema_Gltf_System_Int32_Func_System_String_Byte____" data-uid="glTFLoader.Interface.OpenImageFile(glTFLoader.Schema.Gltf,System.Int32,Func{System.String,Byte[]})">OpenImageFile(Gltf, Int32, Func&lt;String, Byte[]&gt;)</h4>
   <div class="markdown level1 summary"><p>Opens a stream to the image referenced by a specific <pre><code>Schema.Image</code></pre></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Stream OpenImageFile(this Gltf model, int imageIndex, Func&lt;string, byte[]&gt; externalReferenceSolver)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Stream OpenImageFile(this Gltf model, int imageIndex, Func&lt;string, Byte[]&gt; externalReferenceSolver)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -496,7 +472,7 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">Byte</span>[]&gt;</td>
         <td><span class="parametername">externalReferenceSolver</span></td>
         <td><p>An user provided lambda function to resolve external assets</p>
 </td>
@@ -513,13 +489,13 @@ or when the buffer is in the glb binary chunk, in which case, the Argument of th
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><p>An open stream to the image</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="glTFLoader_Interface_OpenImageFile_glTFLoader_Schema_Gltf_System_Int32_System_Func_System_String_System_Byte_____remarks">Remarks</h5>
+  <h5 id="glTFLoader_Interface_OpenImageFile_glTFLoader_Schema_Gltf_System_Int32_Func_System_String_Byte_____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Images can be stored in three different ways:</p>
 <ul>
 <li>As stand alone files.</li>
@@ -579,7 +555,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><p>An open stream to the image</p>
 </td>
       </tr>
@@ -619,7 +595,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
     </tbody>
   </table>
   <a id="glTFLoader_Interface_SaveBinaryModel_" data-uid="glTFLoader.Interface.SaveBinaryModel*"></a>
-  <h4 id="glTFLoader_Interface_SaveBinaryModel_glTFLoader_Schema_Gltf_System_Byte___System_IO_BinaryWriter_" data-uid="glTFLoader.Interface.SaveBinaryModel(glTFLoader.Schema.Gltf,System.Byte[],System.IO.BinaryWriter)">SaveBinaryModel(Gltf, Byte[], BinaryWriter)</h4>
+  <h4 id="glTFLoader_Interface_SaveBinaryModel_glTFLoader_Schema_Gltf_System_Byte___BinaryWriter_" data-uid="glTFLoader.Interface.SaveBinaryModel(glTFLoader.Schema.Gltf,System.Byte[],BinaryWriter)">SaveBinaryModel(Gltf, Byte[], BinaryWriter)</h4>
   <div class="markdown level1 summary"><p>Writes a <pre><code>Schema.Gltf</code></pre> model to a writable binary writer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -650,7 +626,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="xref">BinaryWriter</span></td>
         <td><span class="parametername">binaryWriter</span></td>
         <td><p>Binary Writer</p>
 </td>
@@ -658,7 +634,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
     </tbody>
   </table>
   <a id="glTFLoader_Interface_SaveBinaryModel_" data-uid="glTFLoader.Interface.SaveBinaryModel*"></a>
-  <h4 id="glTFLoader_Interface_SaveBinaryModel_glTFLoader_Schema_Gltf_System_Byte___System_IO_Stream_" data-uid="glTFLoader.Interface.SaveBinaryModel(glTFLoader.Schema.Gltf,System.Byte[],System.IO.Stream)">SaveBinaryModel(Gltf, Byte[], Stream)</h4>
+  <h4 id="glTFLoader_Interface_SaveBinaryModel_glTFLoader_Schema_Gltf_System_Byte___Stream_" data-uid="glTFLoader.Interface.SaveBinaryModel(glTFLoader.Schema.Gltf,System.Byte[],Stream)">SaveBinaryModel(Gltf, Byte[], Stream)</h4>
   <div class="markdown level1 summary"><p>Writes a <pre><code>Schema.Gltf</code></pre> model to a writable stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -689,7 +665,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Writable stream</p>
 </td>
@@ -736,7 +712,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
     </tbody>
   </table>
   <a id="glTFLoader_Interface_SaveBinaryModelPacked_" data-uid="glTFLoader.Interface.SaveBinaryModelPacked*"></a>
-  <h4 id="glTFLoader_Interface_SaveBinaryModelPacked_glTFLoader_Schema_Gltf_System_IO_BinaryWriter_System_String_System_Byte___" data-uid="glTFLoader.Interface.SaveBinaryModelPacked(glTFLoader.Schema.Gltf,System.IO.BinaryWriter,System.String,System.Byte[])">SaveBinaryModelPacked(Gltf, BinaryWriter, String, Byte[])</h4>
+  <h4 id="glTFLoader_Interface_SaveBinaryModelPacked_glTFLoader_Schema_Gltf_BinaryWriter_System_String_System_Byte___" data-uid="glTFLoader.Interface.SaveBinaryModelPacked(glTFLoader.Schema.Gltf,BinaryWriter,System.String,System.Byte[])">SaveBinaryModelPacked(Gltf, BinaryWriter, String, Byte[])</h4>
   <div class="markdown level1 summary"><p>Writes a <pre><code>Schema.Gltf</code></pre> model to a writable binary writer and pack all data into the model</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -761,7 +737,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="xref">BinaryWriter</span></td>
         <td><span class="parametername">binaryWriter</span></td>
         <td><p>Binary Writer</p>
 </td>
@@ -826,7 +802,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
     </tbody>
   </table>
   <a id="glTFLoader_Interface_SaveModel_" data-uid="glTFLoader.Interface.SaveModel*"></a>
-  <h4 id="glTFLoader_Interface_SaveModel_glTFLoader_Schema_Gltf_System_IO_Stream_" data-uid="glTFLoader.Interface.SaveModel(glTFLoader.Schema.Gltf,System.IO.Stream)">SaveModel(Gltf, Stream)</h4>
+  <h4 id="glTFLoader_Interface_SaveModel_glTFLoader_Schema_Gltf_Stream_" data-uid="glTFLoader.Interface.SaveModel(glTFLoader.Schema.Gltf,Stream)">SaveModel(Gltf, Stream)</h4>
   <div class="markdown level1 summary"><p>Writes a <pre><code>Schema.Gltf</code></pre> model to a writable stream</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -851,7 +827,7 @@ or when the image is in the glb binary chunk, in which case, the Argument of the
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Writable stream</p>
 </td>

@@ -97,38 +97,41 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ExportResult</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Assets.Exporters.html">Evergine.Assets.Exporters</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="Evergine_Assets_Exporters_ExportResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ExportResult</code></pre>
+    <pre><code class="lang-csharp hljs">public class ExportResult : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
+  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_Exception_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(Exception)">ExportResult(Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExportResult(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
   <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement)">ExportResult(Boolean, ContentElement)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
@@ -163,91 +166,7 @@
     </tbody>
   </table>
   <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
-  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_System_Collections_Generic_List_Evergine_Framework_Assets_AssetPart__" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,System.Collections.Generic.List{Evergine.Framework.Assets.AssetPart})">ExportResult(Boolean, ContentElement, List&lt;AssetPart&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExportResult(bool succeeded, ContentElement outputElement, List&lt;AssetPart&gt; assetParts)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">succeeded</span></td>
-        <td><p>If the export was successful.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Assets.Contents.ContentElement.html">ContentElement</a></td>
-        <td><span class="parametername">outputElement</span></td>
-        <td><p>The output file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
-        <td><span class="parametername">assetParts</span></td>
-        <td><p>The asset parts.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
-  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_System_Collections_Generic_List_Evergine_Framework_Assets_AssetPart__System_DateTime_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,System.Collections.Generic.List{Evergine.Framework.Assets.AssetPart},System.DateTime)">ExportResult(Boolean, ContentElement, List&lt;AssetPart&gt;, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExportResult(bool succeeded, ContentElement outputElement, List&lt;AssetPart&gt; assetParts, DateTime exportTime)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">succeeded</span></td>
-        <td><p>If the export was successful.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Assets.Contents.ContentElement.html">ContentElement</a></td>
-        <td><span class="parametername">outputElement</span></td>
-        <td><p>The output file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
-        <td><span class="parametername">assetParts</span></td>
-        <td><p>The asset parts.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">exportTime</span></td>
-        <td><p>The export time.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
-  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_System_DateTime_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,System.DateTime)">ExportResult(Boolean, ContentElement, DateTime)</h4>
+  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_DateTime_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,DateTime)">ExportResult(Boolean, ContentElement, DateTime)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -278,7 +197,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">exportTime</span></td>
         <td><p>The export time.</p>
 </td>
@@ -286,13 +205,13 @@
     </tbody>
   </table>
   <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
-  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Exception_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Exception)">ExportResult(Exception)</h4>
+  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_List_Evergine_Framework_Assets_AssetPart__" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,List{Evergine.Framework.Assets.AssetPart})">ExportResult(Boolean, ContentElement, List&lt;AssetPart&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExportResult(Exception exception)</code></pre>
+    <pre><code class="lang-csharp hljs">public ExportResult(bool succeeded, ContentElement outputElement, List&lt;AssetPart&gt; assetParts)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -305,9 +224,66 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception.</p>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">succeeded</span></td>
+        <td><p>If the export was successful.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Assets.Contents.ContentElement.html">ContentElement</a></td>
+        <td><span class="parametername">outputElement</span></td>
+        <td><p>The output file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
+        <td><span class="parametername">assetParts</span></td>
+        <td><p>The asset parts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Assets_Exporters_ExportResult__ctor_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor*"></a>
+  <h4 id="Evergine_Assets_Exporters_ExportResult__ctor_System_Boolean_Evergine_Assets_Contents_ContentElement_List_Evergine_Framework_Assets_AssetPart__DateTime_" data-uid="Evergine.Assets.Exporters.ExportResult.#ctor(System.Boolean,Evergine.Assets.Contents.ContentElement,List{Evergine.Framework.Assets.AssetPart},DateTime)">ExportResult(Boolean, ContentElement, List&lt;AssetPart&gt;, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExportResult(bool succeeded, ContentElement outputElement, List&lt;AssetPart&gt; assetParts, DateTime exportTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">succeeded</span></td>
+        <td><p>If the export was successful.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Assets.Contents.ContentElement.html">ContentElement</a></td>
+        <td><span class="parametername">outputElement</span></td>
+        <td><p>The output file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
+        <td><span class="parametername">assetParts</span></td>
+        <td><p>The asset parts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">exportTime</span></td>
+        <td><p>The export time.</p>
 </td>
       </tr>
     </tbody>
@@ -332,7 +308,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -355,7 +331,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -378,7 +354,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>

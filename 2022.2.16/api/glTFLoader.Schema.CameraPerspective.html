@@ -96,35 +96,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CameraPerspective</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="glTFLoader.Schema.html">glTFLoader.Schema</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="glTFLoader_Schema_CameraPerspective_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CameraPerspective</code></pre>
+    <pre><code class="lang-csharp hljs">public class CameraPerspective : object</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -135,8 +111,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;aspectRatio&quot;)]
-public float? AspectRatio { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public System.Nullable&lt;float&gt; AspectRatio { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,8 +135,7 @@ public float? AspectRatio { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extensions&quot;)]
-public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,8 +159,7 @@ public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extras&quot;)]
-public Extras Extras { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Extras Extras { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -210,9 +183,7 @@ public Extras Extras { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonRequired]
-[JsonProperty(&quot;yfov&quot;)]
-public float Yfov { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Yfov { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,8 +207,7 @@ public float Yfov { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;zfar&quot;)]
-public float? Zfar { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public System.Nullable&lt;float&gt; Zfar { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,9 +231,7 @@ public float? Zfar { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonRequired]
-[JsonProperty(&quot;znear&quot;)]
-public float Znear { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Znear { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -100,7 +100,6 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a></div>
   </div>
   <div class="inheritedMembers">
@@ -145,7 +144,7 @@
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData__1_Evergine_Common_Graphics_Buffer___0__System_UInt32_">CommandBuffer.UpdateBufferData&lt;T&gt;(Buffer, T, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
+      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_CopyBufferDataTo_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.CopyBufferDataTo(Buffer, Buffer, UInt32, UInt32, UInt32)</a>
@@ -172,35 +171,14 @@
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Dispatch3D_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.Dispatch3D(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_GetNativePointer_System_String_System_IntPtr__">CommandBuffer.GetNativePointer(String, IntPtr)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_GetNativePointer_System_String_IntPtr__">CommandBuffer.GetNativePointer(String, IntPtr)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenGL.html">Evergine.OpenGL</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenGL.dll</h6>
   <h5 id="Evergine_OpenGL_GLCommandBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GLCommandBuffer : CommandBuffer, IDisposable, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class GLCommandBuffer : CommandBuffer, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -607,7 +585,7 @@ BeginDebugMarker has no effect if the calling application is not running under a
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer origin, Buffer destination, uint sizeInBytes, uint sourceOffset = 0U, uint destinationOffset = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer origin, Buffer destination, uint sizeInBytes, uint sourceOffset = null, uint destinationOffset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -925,7 +903,7 @@ resources.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -960,7 +938,7 @@ resources.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = null, uint baseVertexLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1001,7 +979,7 @@ resources.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = null, uint baseVertexLocation = null, uint startInstanceLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1100,7 +1078,7 @@ resources.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = null, uint startInstanceLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1597,7 +1575,7 @@ points of interest in a command stream.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetVertexBuffer(uint slot, Buffer buffer, uint offset = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetVertexBuffer(uint slot, Buffer buffer, uint offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1696,13 +1674,12 @@ points of interest in a command stream.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetViewports_Evergine_Common_Graphics_Viewport___">CommandBuffer.SetViewports(Viewport[])</a></div>
   <a id="Evergine_OpenGL_GLCommandBuffer_UpdateBufferDataInternal_" data-uid="Evergine.OpenGL.GLCommandBuffer.UpdateBufferDataInternal*"></a>
-  <h4 id="Evergine_OpenGL_GLCommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLCommandBuffer.UpdateBufferDataInternal(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
-</div>
+  <h4 id="Evergine_OpenGL_GLCommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLCommandBuffer.UpdateBufferDataInternal(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1717,31 +1694,25 @@ points of interest in a command stream.</p>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">buffer</span></td>
-        <td><p>Buffer instance.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
-        <td><p>The data pointer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceSizeInBytes</span></td>
-        <td><p>The size in bytes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationOffsetInBytes</span></td>
-        <td><p>The offset in bytes.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</a></div>
   <a id="Evergine_OpenGL_GLCommandBuffer_UpdateRaytracingAccelerationStructure_" data-uid="Evergine.OpenGL.GLCommandBuffer.UpdateRaytracingAccelerationStructure*"></a>
   <h4 id="Evergine_OpenGL_GLCommandBuffer_UpdateRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelAS__Evergine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="Evergine.OpenGL.GLCommandBuffer.UpdateRaytracingAccelerationStructure(Evergine.Common.Graphics.Raytracing.TopLevelAS@,Evergine.Common.Graphics.Raytracing.TopLevelASDescription)">UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</h4>
   <div class="markdown level1 summary"><p>Refit an top level accelerations structure build on the GPU.</p>
@@ -1816,9 +1787,6 @@ points of interest in a command stream.</p>
   <div class="markdown level1 remarks"><p>This method works only with timestamp queryheap type.</p>
 </div>
   <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

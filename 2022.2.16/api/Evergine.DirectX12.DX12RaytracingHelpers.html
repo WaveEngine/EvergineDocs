@@ -97,35 +97,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DX12RaytracingHelpers</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX12.dll</h6>
   <h5 id="Evergine_DirectX12_DX12RaytracingHelpers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DX12RaytracingHelpers</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DX12RaytracingHelpers : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -147,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.HeapProperties</span></td>
+        <td><span class="xref">HeapProperties</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -170,7 +146,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.HeapProperties</span></td>
+        <td><span class="xref">HeapProperties</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +154,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_DirectX12_DX12RaytracingHelpers_CreateBuffer_" data-uid="Evergine.DirectX12.DX12RaytracingHelpers.CreateBuffer*"></a>
-  <h4 id="Evergine_DirectX12_DX12RaytracingHelpers_CreateBuffer_Vortice_Direct3D12_ID3D12Device5_System_UInt32_Vortice_Direct3D12_ResourceFlags_Vortice_Direct3D12_ResourceStates_Vortice_Direct3D12_HeapProperties_" data-uid="Evergine.DirectX12.DX12RaytracingHelpers.CreateBuffer(Vortice.Direct3D12.ID3D12Device5,System.UInt32,Vortice.Direct3D12.ResourceFlags,Vortice.Direct3D12.ResourceStates,Vortice.Direct3D12.HeapProperties)">CreateBuffer(ID3D12Device5, UInt32, ResourceFlags, ResourceStates, HeapProperties)</h4>
+  <h4 id="Evergine_DirectX12_DX12RaytracingHelpers_CreateBuffer_ID3D12Device5_System_UInt32_ResourceFlags_ResourceStates_HeapProperties_" data-uid="Evergine.DirectX12.DX12RaytracingHelpers.CreateBuffer(ID3D12Device5,System.UInt32,ResourceFlags,ResourceStates,HeapProperties)">CreateBuffer(ID3D12Device5, UInt32, ResourceFlags, ResourceStates, HeapProperties)</h4>
   <div class="markdown level1 summary"><p>Create Acceleration Structure buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -197,7 +173,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ID3D12Device5</span></td>
+        <td><span class="xref">ID3D12Device5</span></td>
         <td><span class="parametername">pDevice</span></td>
         <td><p>Device.</p>
 </td>
@@ -209,19 +185,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ResourceFlags</span></td>
+        <td><span class="xref">ResourceFlags</span></td>
         <td><span class="parametername">flags</span></td>
         <td><p>Resource flags.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ResourceStates</span></td>
+        <td><span class="xref">ResourceStates</span></td>
         <td><span class="parametername">initState</span></td>
         <td><p>Initial buffer state.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.HeapProperties</span></td>
+        <td><span class="xref">HeapProperties</span></td>
         <td><span class="parametername">heapProps</span></td>
         <td><p>Heap properties.</p>
 </td>
@@ -238,7 +214,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ID3D12Resource</span></td>
+        <td><span class="xref">ID3D12Resource</span></td>
         <td><p>The buffer.</p>
 </td>
       </tr>

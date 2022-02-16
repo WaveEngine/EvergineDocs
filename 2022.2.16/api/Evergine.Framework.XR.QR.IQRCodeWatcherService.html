@@ -167,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -184,7 +184,7 @@
     <pre><code class="lang-csharp hljs">void ClearQRCodes()</code></pre>
   </div>
   <a id="Evergine_Framework_XR_QR_IQRCodeWatcherService_StartQRWatchingAsync_" data-uid="Evergine.Framework.XR.QR.IQRCodeWatcherService.StartQRWatchingAsync*"></a>
-  <h4 id="Evergine_Framework_XR_QR_IQRCodeWatcherService_StartQRWatchingAsync_System_Threading_CancellationToken_" data-uid="Evergine.Framework.XR.QR.IQRCodeWatcherService.StartQRWatchingAsync(System.Threading.CancellationToken)">StartQRWatchingAsync(CancellationToken)</h4>
+  <h4 id="Evergine_Framework_XR_QR_IQRCodeWatcherService_StartQRWatchingAsync_CancellationToken_" data-uid="Evergine.Framework.XR.QR.IQRCodeWatcherService.StartQRWatchingAsync(CancellationToken)">StartQRWatchingAsync(CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Starts tracking QR codes asynchronously.
 Should not be called if the feature is not supported, check the <a class="xref" href="Evergine.Framework.XR.QR.IQRCodeWatcherService.html#Evergine_Framework_XR_QR_IQRCodeWatcherService_IsSupported">IsSupported</a> to see if this feature is supported.
 Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
@@ -192,7 +192,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task StartQRWatchingAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">Task StartQRWatchingAsync(CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,7 +205,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>A cancellation token that can be used to cancel the work.</p>
 </td>
@@ -222,7 +222,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the start tracking asynchronous operation.</p>
 </td>
       </tr>
@@ -247,7 +247,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the stop tracking asynchronous operation.</p>
 </td>
       </tr>
@@ -273,7 +273,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -296,7 +296,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -319,7 +319,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -342,7 +342,7 @@ Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

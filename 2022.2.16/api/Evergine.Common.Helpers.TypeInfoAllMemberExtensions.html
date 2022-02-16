@@ -97,40 +97,16 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TypeInfoAllMemberExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Helpers.html">Evergine.Common.Helpers</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TypeInfoAllMemberExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TypeInfoAllMemberExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllConstructors_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllConstructors*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllConstructors_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllConstructors(System.Reflection.TypeInfo)">GetAllConstructors(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllConstructors_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllConstructors(TypeInfo)">GetAllConstructors(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get contructors of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -149,7 +125,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -166,14 +142,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.ConstructorInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">ConstructorInfo</span>&gt;</td>
         <td><p>All the contructors.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllEvents_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllEvents*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllEvents_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllEvents(System.Reflection.TypeInfo)">GetAllEvents(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllEvents_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllEvents(TypeInfo)">GetAllEvents(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get events of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -192,7 +168,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -209,14 +185,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.EventInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">EventInfo</span>&gt;</td>
         <td><p>All the events.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllFields_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllFields*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllFields_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllFields(System.Reflection.TypeInfo)">GetAllFields(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllFields_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllFields(TypeInfo)">GetAllFields(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get fields of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -235,7 +211,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -252,14 +228,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.FieldInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">FieldInfo</span>&gt;</td>
         <td><p>All the fields.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMembers_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMembers*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMembers_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMembers(System.Reflection.TypeInfo)">GetAllMembers(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMembers_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMembers(TypeInfo)">GetAllMembers(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get members of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -278,7 +254,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -295,14 +271,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.MemberInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">MemberInfo</span>&gt;</td>
         <td><p>All the members.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMethods_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMethods*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMethods_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMethods(System.Reflection.TypeInfo)">GetAllMethods(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllMethods_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllMethods(TypeInfo)">GetAllMethods(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get methods of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -321,7 +297,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -338,14 +314,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.MethodInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">MethodInfo</span>&gt;</td>
         <td><p>All the methods.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllNestedTypes_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllNestedTypes*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllNestedTypes_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllNestedTypes(System.Reflection.TypeInfo)">GetAllNestedTypes(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllNestedTypes_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllNestedTypes(TypeInfo)">GetAllNestedTypes(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get nested types of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -364,7 +340,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -381,14 +357,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.TypeInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">TypeInfo</span>&gt;</td>
         <td><p>All the nested types.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllProperties_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllProperties*"></a>
-  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllProperties_System_Reflection_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllProperties(System.Reflection.TypeInfo)">GetAllProperties(TypeInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_TypeInfoAllMemberExtensions_GetAllProperties_TypeInfo_" data-uid="Evergine.Common.Helpers.TypeInfoAllMemberExtensions.GetAllProperties(TypeInfo)">GetAllProperties(TypeInfo)</h4>
   <div class="markdown level1 summary"><p>Get properties of the type and its base types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -407,7 +383,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="xref">TypeInfo</span></td>
         <td><span class="parametername">typeInfo</span></td>
         <td><p>The type info.</p>
 </td>
@@ -424,7 +400,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PropertyInfo</span>&gt;</td>
         <td><p>All the properties.</p>
 </td>
       </tr>

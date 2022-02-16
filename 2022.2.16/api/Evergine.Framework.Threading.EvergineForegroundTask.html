@@ -97,35 +97,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">EvergineForegroundTask</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Threading.html">Evergine.Framework.Threading</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Threading_EvergineForegroundTask_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class EvergineForegroundTask</code></pre>
+    <pre><code class="lang-csharp hljs">public static class EvergineForegroundTask : object</code></pre>
   </div>
   <h5 id="Evergine_Framework_Threading_EvergineForegroundTask_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The tasks will be enqueued using the <a class="xref" href="Evergine.Framework.Threading.ForegroundTaskScheduler.html">ForegroundTaskScheduler</a>.</p>
@@ -133,7 +109,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_System_Action_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(System.Action)">Run(Action)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_Action_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(Action)">Run(Action)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified action in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -152,7 +128,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute asynchronously.</p>
 </td>
@@ -169,30 +145,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">action</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_System_Action_System_Threading_CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(System.Action,System.Threading.CancellationToken)">Run(Action, CancellationToken)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_Action_CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(Action,CancellationToken)">Run(Action, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified action in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -211,13 +171,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The CancellationToken to use to request cancellation of this task.</p>
 </td>
@@ -234,30 +194,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">action</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_System_Func_System_Threading_Tasks_Task__" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(System.Func{System.Threading.Tasks.Task})">Run(Func&lt;Task&gt;)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_Func_Task__" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(Func{Task})">Run(Func&lt;Task&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -276,7 +220,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute asynchronously.</p>
 </td>
@@ -293,30 +237,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)">Run(Func&lt;Task&gt;, CancellationToken)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run_Func_Task__CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run(Func{Task},CancellationToken)">Run(Func&lt;Task&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -335,13 +263,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The CancellationToken to use to request cancellation of this task.</p>
 </td>
@@ -358,30 +286,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task that represents the completion of the function.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_System_Func___0__" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(System.Func{``0})">Run&lt;TResult&gt;(Func&lt;TResult&gt;)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_Func___0__" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(Func{``0})">Run&lt;TResult&gt;(Func&lt;TResult&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -400,7 +312,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Func</span>&lt;TResult&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute asynchronously.</p>
 </td>
@@ -417,7 +329,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Task</span>&lt;TResult&gt;</td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
@@ -439,24 +351,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_System_Func___0__System_Threading_CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(System.Func{``0},System.Threading.CancellationToken)">Run&lt;TResult&gt;(Func&lt;TResult&gt;, CancellationToken)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_Func___0__CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(Func{``0},CancellationToken)">Run&lt;TResult&gt;(Func&lt;TResult&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -475,13 +371,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Func</span>&lt;TResult&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The CancellationToken to use to cancel the task.</p>
 </td>
@@ -498,7 +394,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Task</span>&lt;TResult&gt;</td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
@@ -520,24 +416,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_System_Func_System_Threading_Tasks_Task___0___" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(System.Func{System.Threading.Tasks.Task{``0}})">Run&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_Func_Task___0___" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(Func{Task{``0}})">Run&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -556,7 +436,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute asynchronously.</p>
 </td>
@@ -573,7 +453,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Task</span>&lt;TResult&gt;</td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
@@ -595,24 +475,8 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Framework_Threading_EvergineForegroundTask_Run_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_System_Func_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)">Run&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;, CancellationToken)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineForegroundTask_Run__1_Func_Task___0___CancellationToken_" data-uid="Evergine.Framework.Threading.EvergineForegroundTask.Run``1(Func{Task{``0}},CancellationToken)">Run&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a task that runs the specified function in the main Evergine thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -631,13 +495,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
         <td><span class="parametername">function</span></td>
         <td><p>The function to execute.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>The CancellationToken to use to cancel the task.</p>
 </td>
@@ -654,7 +518,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+        <td><span class="xref">Task</span>&lt;TResult&gt;</td>
         <td><p>A task that represents the completion of the action.</p>
 </td>
       </tr>
@@ -672,22 +536,6 @@
       <tr>
         <td><span class="parametername">TResult</span></td>
         <td><p>The task result type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">function</code> argument is null.</p>
 </td>
       </tr>
     </tbody>

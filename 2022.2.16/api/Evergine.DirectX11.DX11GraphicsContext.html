@@ -100,7 +100,6 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a></div>
   </div>
   <div class="inheritedMembers">
@@ -136,7 +135,7 @@
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData__1_Evergine_Common_Graphics_Buffer___0__System_UInt32_">GraphicsContext.UpdateBufferData&lt;T&gt;(Buffer, T, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
+      <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateTextureData__1_Evergine_Common_Graphics_Texture___0___System_UInt32_">GraphicsContext.UpdateTextureData&lt;T&gt;(Texture, T[], UInt32)</a>
@@ -156,33 +155,12 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_Dispose">GraphicsContext.Dispose()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX11.html">Evergine.DirectX11</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX11.dll</h6>
   <h5 id="Evergine_DirectX11_DX11GraphicsContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX11GraphicsContext : GraphicsContext, IDisposable, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX11GraphicsContext : GraphicsContext, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -203,7 +181,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ID3D11Device DXDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public Vortice.Direct3D11.ID3D11Device DXDevice</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,7 +204,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ID3D11DeviceContext1 DXDeviceContext</code></pre>
+    <pre><code class="lang-csharp hljs">public Vortice.Direct3D11.ID3D11DeviceContext1 DXDeviceContext</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.DXGI.IDXGIFactory2</span></td>
+        <td><span class="xref">IDXGIFactory2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -310,7 +288,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -376,7 +354,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ID3D11Device1 DXDevice1 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vortice.Direct3D11.ID3D11Device1 DXDevice1 { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -400,7 +378,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ID3D11Device2 DXDevice2 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vortice.Direct3D11.ID3D11Device2 DXDevice2 { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -424,7 +402,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ID3D11Device3 DXDevice3 { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vortice.Direct3D11.ID3D11Device3 DXDevice3 { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -460,7 +438,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -484,7 +462,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -648,9 +626,8 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_GenerateTextureMipmapping_Evergine_Common_Graphics_Texture_">GraphicsContext.GenerateTextureMipmapping(Texture)</a></div>
   <a id="Evergine_DirectX11_DX11GraphicsContext_GetNativePointer_" data-uid="Evergine.DirectX11.DX11GraphicsContext.GetNativePointer*"></a>
-  <h4 id="Evergine_DirectX11_DX11GraphicsContext_GetNativePointer_System_String_System_IntPtr__" data-uid="Evergine.DirectX11.DX11GraphicsContext.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
-</div>
+  <h4 id="Evergine_DirectX11_DX11GraphicsContext_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.DirectX11.DX11GraphicsContext.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -669,14 +646,12 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">pointerKey</span></td>
-        <td><p>The pointer key.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
-        <td><p>The native pointer.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -691,21 +666,17 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if there are an available pointer with this key.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_GetNativePointer_System_String_System_IntPtr__">GraphicsContext.GetNativePointer(String, out IntPtr)</a></div>
   <a id="Evergine_DirectX11_DX11GraphicsContext_InternalUpdateBufferData_" data-uid="Evergine.DirectX11.DX11GraphicsContext.InternalUpdateBufferData*"></a>
-  <h4 id="Evergine_DirectX11_DX11GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11GraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
-</div>
+  <h4 id="Evergine_DirectX11_DX11GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11GraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -720,31 +691,25 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">buffer</span></td>
-        <td><p>Buffer instance.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
-        <td><p>The data pointer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceSizeInBytes</span></td>
-        <td><p>The size in bytes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationOffsetInBytes</span></td>
-        <td><p>The offset in bytes.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11GraphicsContext_MapMemory_" data-uid="Evergine.DirectX11.DX11GraphicsContext.MapMemory*"></a>
   <h4 id="Evergine_DirectX11_DX11GraphicsContext_MapMemory_Evergine_Common_Graphics_GraphicsResource_Evergine_Common_Graphics_MapMode_System_UInt32_" data-uid="Evergine.DirectX11.DX11GraphicsContext.MapMemory(Evergine.Common.Graphics.GraphicsResource,Evergine.Common.Graphics.MapMode,System.UInt32)">MapMemory(GraphicsResource, MapMode, UInt32)</h4>
   <div class="markdown level1 summary"><p>Maps a <a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a> or <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into a CPU-accessible data region.</p>
@@ -752,7 +717,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -872,7 +837,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -901,13 +866,12 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UnmapMemory_Evergine_Common_Graphics_GraphicsResource_System_UInt32_">GraphicsContext.UnmapMemory(GraphicsResource, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11GraphicsContext_UpdateTextureData_" data-uid="Evergine.DirectX11.DX11GraphicsContext.UpdateTextureData*"></a>
-  <h4 id="Evergine_DirectX11_DX11GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11GraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,System.IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
-</div>
+  <h4 id="Evergine_DirectX11_DX11GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11GraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void UpdateTextureData(Texture texture, IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void UpdateTextureData(Texture texture, IntPtr source, uint sourceSizeInBytes, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -922,35 +886,26 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">texture</span></td>
-        <td><p>Texture instance.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
-        <td><p>The data pointer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceSizeInBytes</span></td>
-        <td><p>The size in bytes.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">subResource</span></td>
-        <td><p>The subResource index.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</a></div>
   <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

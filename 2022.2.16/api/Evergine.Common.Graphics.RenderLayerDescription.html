@@ -100,35 +100,14 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Graphics_RenderLayerDescription_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RenderLayerDescription : ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class RenderLayerDescription : object, ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -149,8 +128,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RenderPropertyAsInput(-512, 511, AsSlider = true, DesiredChange = 1, DesiredLargeChange = 5)]
-public int Order</code></pre>
+    <pre><code class="lang-csharp hljs">public int Order</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,7 +189,7 @@ public int Order</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -235,7 +213,7 @@ public int Order</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -259,7 +237,7 @@ public int Order</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Version</span></td>
+        <td><span class="xref">Version</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -321,8 +299,6 @@ public int Order</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <a id="Evergine_Common_Graphics_RenderLayerDescription_Invalidate_" data-uid="Evergine.Common.Graphics.RenderLayerDescription.Invalidate*"></a>
   <h4 id="Evergine_Common_Graphics_RenderLayerDescription_Invalidate_Evergine_Common_ILoadable_" data-uid="Evergine.Common.Graphics.RenderLayerDescription.Invalidate(Evergine.Common.ILoadable)">Invalidate(ILoadable)</h4>
   <div class="markdown level1 summary"><p>Invalidates this instance and raise the <a class="xref" href="Evergine.Common.ILoadable.html#Evergine_Common_ILoadable_Invalidated">Invalidated</a> event with the new <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a> instance.</p>
@@ -379,7 +355,7 @@ public int Order</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -402,7 +378,7 @@ public int Order</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -412,7 +388,7 @@ public int Order</code></pre>
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

@@ -96,35 +96,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">MaterialPbrMetallicRoughness</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="glTFLoader.Schema.html">glTFLoader.Schema</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="glTFLoader_Schema_MaterialPbrMetallicRoughness_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MaterialPbrMetallicRoughness</code></pre>
+    <pre><code class="lang-csharp hljs">public class MaterialPbrMetallicRoughness : object</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -135,9 +111,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
-[JsonProperty(&quot;baseColorFactor&quot;)]
-public float[] BaseColorFactor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float[] BaseColorFactor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,8 +135,7 @@ public float[] BaseColorFactor { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;baseColorTexture&quot;)]
-public TextureInfo BaseColorTexture { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TextureInfo BaseColorTexture { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -186,8 +159,7 @@ public TextureInfo BaseColorTexture { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extensions&quot;)]
-public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,8 +183,7 @@ public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extras&quot;)]
-public Extras Extras { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Extras Extras { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,8 +207,7 @@ public Extras Extras { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;metallicFactor&quot;)]
-public float MetallicFactor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float MetallicFactor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,8 +231,7 @@ public float MetallicFactor { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;metallicRoughnessTexture&quot;)]
-public TextureInfo MetallicRoughnessTexture { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TextureInfo MetallicRoughnessTexture { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,8 +255,7 @@ public TextureInfo MetallicRoughnessTexture { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;roughnessFactor&quot;)]
-public float RoughnessFactor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float RoughnessFactor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

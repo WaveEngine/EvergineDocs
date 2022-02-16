@@ -97,35 +97,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DX12ShaderTable</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX12.dll</h6>
   <h5 id="Evergine_DirectX12_DX12ShaderTable_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX12ShaderTable</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX12ShaderTable : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -176,7 +152,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ID3D12Resource</span></td>
+        <td><span class="xref">ID3D12Resource</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -184,7 +160,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_DirectX12_DX12ShaderTable_AddHitGroupProgram_" data-uid="Evergine.DirectX12.DX12ShaderTable.AddHitGroupProgram*"></a>
-  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddHitGroupProgram_System_String_Vortice_Direct3D12_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddHitGroupProgram(System.String,Vortice.Direct3D12.GpuDescriptorHandle[])">AddHitGroupProgram(String, GpuDescriptorHandle[])</h4>
+  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddHitGroupProgram_System_String_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddHitGroupProgram(System.String,GpuDescriptorHandle[])">AddHitGroupProgram(String, GpuDescriptorHandle[])</h4>
   <div class="markdown level1 summary"><p>Add HitGroup Program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -209,7 +185,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.GpuDescriptorHandle</span>[]</td>
+        <td><span class="xref">GpuDescriptorHandle</span>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>GPU Descriptor Handles.</p>
 </td>
@@ -217,7 +193,7 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12ShaderTable_AddMissProgram_" data-uid="Evergine.DirectX12.DX12ShaderTable.AddMissProgram*"></a>
-  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddMissProgram_System_String_Vortice_Direct3D12_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddMissProgram(System.String,Vortice.Direct3D12.GpuDescriptorHandle[])">AddMissProgram(String, GpuDescriptorHandle[])</h4>
+  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddMissProgram_System_String_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddMissProgram(System.String,GpuDescriptorHandle[])">AddMissProgram(String, GpuDescriptorHandle[])</h4>
   <div class="markdown level1 summary"><p>Add Miss Program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -242,7 +218,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.GpuDescriptorHandle</span>[]</td>
+        <td><span class="xref">GpuDescriptorHandle</span>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>GPU Descriptor Handles.</p>
 </td>
@@ -250,7 +226,7 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12ShaderTable_AddRayGenProgram_" data-uid="Evergine.DirectX12.DX12ShaderTable.AddRayGenProgram*"></a>
-  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddRayGenProgram_System_String_Vortice_Direct3D12_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddRayGenProgram(System.String,Vortice.Direct3D12.GpuDescriptorHandle[])">AddRayGenProgram(String, GpuDescriptorHandle[])</h4>
+  <h4 id="Evergine_DirectX12_DX12ShaderTable_AddRayGenProgram_System_String_GpuDescriptorHandle___" data-uid="Evergine.DirectX12.DX12ShaderTable.AddRayGenProgram(System.String,GpuDescriptorHandle[])">AddRayGenProgram(String, GpuDescriptorHandle[])</h4>
   <div class="markdown level1 summary"><p>Add Raygen Program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -275,7 +251,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.GpuDescriptorHandle</span>[]</td>
+        <td><span class="xref">GpuDescriptorHandle</span>[]</td>
         <td><span class="parametername">handlers</span></td>
         <td><p>GPU Descriptor Handles.</p>
 </td>
@@ -283,7 +259,7 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12ShaderTable_Generate_" data-uid="Evergine.DirectX12.DX12ShaderTable.Generate*"></a>
-  <h4 id="Evergine_DirectX12_DX12ShaderTable_Generate_Vortice_Direct3D12_ID3D12StateObject_" data-uid="Evergine.DirectX12.DX12ShaderTable.Generate(Vortice.Direct3D12.ID3D12StateObject)">Generate(ID3D12StateObject)</h4>
+  <h4 id="Evergine_DirectX12_DX12ShaderTable_Generate_ID3D12StateObject_" data-uid="Evergine.DirectX12.DX12ShaderTable.Generate(ID3D12StateObject)">Generate(ID3D12StateObject)</h4>
   <div class="markdown level1 summary"><p>Generate ShaderTable (filling buffer).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -302,7 +278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D12.ID3D12StateObject</span></td>
+        <td><span class="xref">ID3D12StateObject</span></td>
         <td><span class="parametername">pipeline</span></td>
         <td><p>Raytracing pipeline.</p>
 </td>

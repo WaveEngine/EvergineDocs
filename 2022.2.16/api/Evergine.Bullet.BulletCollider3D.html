@@ -101,37 +101,13 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Framework.Physics3D.IColliderShape3D.html">IColliderShape3D</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Bullet.html">Evergine.Bullet</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Bullet.dll</h6>
   <h5 id="Evergine_Bullet_BulletCollider3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BulletCollider3D : IColliderShape3D, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BulletCollider3D : object, IColliderShape3D, IDisposable</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -283,7 +259,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Bullet_BulletCollider3D_ColliderOffsetTransformChanged_" data-uid="Evergine.Bullet.BulletCollider3D.ColliderOffsetTransformChanged*"></a>
-  <h4 id="Evergine_Bullet_BulletCollider3D_ColliderOffsetTransformChanged_System_Object_System_EventArgs_" data-uid="Evergine.Bullet.BulletCollider3D.ColliderOffsetTransformChanged(System.Object,System.EventArgs)">ColliderOffsetTransformChanged(Object, EventArgs)</h4>
+  <h4 id="Evergine_Bullet_BulletCollider3D_ColliderOffsetTransformChanged_System_Object_EventArgs_" data-uid="Evergine.Bullet.BulletCollider3D.ColliderOffsetTransformChanged(System.Object,EventArgs)">ColliderOffsetTransformChanged(Object, EventArgs)</h4>
   <div class="markdown level1 summary"><p>Refresh the offset transform of the collider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -308,7 +284,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="xref">EventArgs</span></td>
         <td><span class="parametername">e</span></td>
         <td><p>The arguments.</p>
 </td>
@@ -356,7 +332,7 @@
       <a class="xref" href="Evergine.Framework.Physics3D.IColliderShape3D.html">IColliderShape3D</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

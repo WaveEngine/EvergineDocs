@@ -98,14 +98,13 @@
     <div class="level1"><a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html">WindowsSystem</a></div>
     <div class="level2"><span class="xref">FormsWindowsSystem</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_Run_System_Action_System_Action_">WindowsSystem.Run(Action, Action)</a>
+      <a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_Run_Action_Action_">WindowsSystem.Run(Action, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_CreateLoopThread_Action_Action_">WindowsSystem.CreateLoopThread(Action, Action)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_Dispose">WindowsSystem.Dispose()</a>
@@ -113,40 +112,18 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_Destroy">WindowsSystem.Destroy()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Forms.html">Evergine.Forms</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Forms.dll</h6>
   <h5 id="Evergine_Forms_FormsWindowsSystem_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FormsWindowsSystem : WindowsSystem, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class FormsWindowsSystem : WindowsSystem</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Forms_FormsWindowsSystem_CreateLoopThread_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateLoopThread*"></a>
   <h4 id="Evergine_Forms_FormsWindowsSystem_CreateLoopThread_System_Action_System_Action_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateLoopThread(System.Action,System.Action)">CreateLoopThread(Action, Action)</h4>
-  <div class="markdown level1 summary"><p>Creates a loop thread.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -165,23 +142,18 @@
       <tr>
         <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">loadAction</span></td>
-        <td><p>The load action.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">renderCallback</span></td>
-        <td><p>The render callback action.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_CreateLoopThread_System_Action_System_Action_">WindowsSystem.CreateLoopThread(Action, Action)</a></div>
   <a id="Evergine_Forms_FormsWindowsSystem_CreateSurface_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateSurface*"></a>
   <h4 id="Evergine_Forms_FormsWindowsSystem_CreateSurface_System_Object_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateSurface(System.Object)">CreateSurface(Object)</h4>
-  <div class="markdown level1 summary"><p>Create a surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,8 +172,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">nativeSurface</span></td>
-        <td><p>The native surface control.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -216,17 +187,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Surface.html">Surface</a></td>
-        <td><p>Surface instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_CreateSurface_System_Object_">WindowsSystem.CreateSurface(Object)</a></div>
   <a id="Evergine_Forms_FormsWindowsSystem_CreateSurface_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateSurface*"></a>
   <h4 id="Evergine_Forms_FormsWindowsSystem_CreateSurface_System_UInt32_System_UInt32_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateSurface(System.UInt32,System.UInt32)">CreateSurface(UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Create a surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -245,14 +212,12 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">width</span></td>
-        <td><p>Surface width.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">height</span></td>
-        <td><p>Surface height.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -267,17 +232,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Surface.html">Surface</a></td>
-        <td><p>Surface instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_CreateSurface_System_UInt32_System_UInt32_">WindowsSystem.CreateSurface(UInt32, UInt32)</a></div>
   <a id="Evergine_Forms_FormsWindowsSystem_CreateWindow_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateWindow*"></a>
   <h4 id="Evergine_Forms_FormsWindowsSystem_CreateWindow_System_String_System_UInt32_System_UInt32_System_Boolean_" data-uid="Evergine.Forms.FormsWindowsSystem.CreateWindow(System.String,System.UInt32,System.UInt32,System.Boolean)">CreateWindow(String, UInt32, UInt32, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Create a Window.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,26 +257,22 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">title</span></td>
-        <td><p>Window title.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">width</span></td>
-        <td><p>Window width.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">height</span></td>
-        <td><p>Window height.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">visible</span></td>
-        <td><p>Window visibility.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -330,17 +287,10 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Window.html">Window</a></td>
-        <td><p>Window instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.WindowsSystem.html#Evergine_Common_Graphics_WindowsSystem_CreateWindow_System_String_System_UInt32_System_UInt32_System_Boolean_">WindowsSystem.CreateWindow(String, UInt32, UInt32, Boolean)</a></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

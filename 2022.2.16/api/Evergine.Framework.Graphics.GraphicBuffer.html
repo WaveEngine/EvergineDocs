@@ -99,34 +99,6 @@
       <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.IndexBuffer.html">IndexBuffer</a></div>
       <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.VertexBuffer.html">VertexBuffer</a></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_GraphicBuffer_syntax">Syntax</h5>
@@ -136,13 +108,13 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Framework_Graphics_GraphicBuffer__ctor_" data-uid="Evergine.Framework.Graphics.GraphicBuffer.#ctor*"></a>
-  <h4 id="Evergine_Framework_Graphics_GraphicBuffer__ctor_Evergine_Common_Graphics_Buffer_System_Int32_System_Int32_System_IntPtr_" data-uid="Evergine.Framework.Graphics.GraphicBuffer.#ctor(Evergine.Common.Graphics.Buffer,System.Int32,System.Int32,System.IntPtr)">GraphicBuffer(Buffer, Int32, Int32, IntPtr)</h4>
+  <h4 id="Evergine_Framework_Graphics_GraphicBuffer__ctor_Evergine_Common_Graphics_Buffer_System_Int32_System_Int32_IntPtr_" data-uid="Evergine.Framework.Graphics.GraphicBuffer.#ctor(Evergine.Common.Graphics.Buffer,System.Int32,System.Int32,IntPtr)">GraphicBuffer(Buffer, Int32, Int32, IntPtr)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.Graphics.GraphicBuffer.html">GraphicBuffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GraphicBuffer(Buffer buffer, int offset = 0, int size = 0, IntPtr data = default(IntPtr))</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicBuffer(Buffer buffer, int offset = 0, int size = 0, IntPtr data = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,7 +145,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>The specified.</p>
 </td>
@@ -272,7 +244,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -323,10 +295,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

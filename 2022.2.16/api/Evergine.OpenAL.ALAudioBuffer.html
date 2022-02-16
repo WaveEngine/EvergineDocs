@@ -101,8 +101,9 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
+    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -134,10 +135,10 @@
       <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_SampleCount">AudioBuffer.SampleCount</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_FillAsync_System_IO_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_">AudioBuffer.FillAsync(Stream, Int32, WaveFormat)</a>
+      <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_FillAsync_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_">AudioBuffer.FillAsync(Stream, Int32, WaveFormat)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_Fill_System_IO_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_">AudioBuffer.Fill(Stream, Int32, WaveFormat)</a>
+      <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_Fill_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_">AudioBuffer.Fill(Stream, Int32, WaveFormat)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_Fill__1___0___System_Int32_System_Int32_Evergine_Common_Audio_WaveFormat_">AudioBuffer.Fill&lt;TBuffer&gt;(TBuffer[], Int32, Int32, WaveFormat)</a>
@@ -148,30 +149,12 @@
     <div>
       <a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_ReleaseUnusedMemory">AudioBuffer.ReleaseUnusedMemory()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenAL.html">Evergine.OpenAL</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenAL.dll</h6>
   <h5 id="Evergine_OpenAL_ALAudioBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ALAudioBuffer : AudioBuffer, ILoadable, IDependencyObject, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class ALAudioBuffer : AudioBuffer, ILoadable, IDisposable, IDependencyObject, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -223,9 +206,8 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_Dispose">AudioBuffer.Dispose()</a></div>
   <a id="Evergine_OpenAL_ALAudioBuffer_InternalFill_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFill*"></a>
-  <h4 id="Evergine_OpenAL_ALAudioBuffer_InternalFill_System_IO_Stream_System_Int32_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFill(System.IO.Stream,System.Int32)">InternalFill(Stream, Int32)</h4>
-  <div class="markdown level1 summary"><p>Fills the audio buffer with a specific stream.</p>
-</div>
+  <h4 id="Evergine_OpenAL_ALAudioBuffer_InternalFill_Stream_System_Int32_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFill(Stream,System.Int32)">InternalFill(Stream, Int32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -242,21 +224,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td><p>The source stream.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">bufferSize</span></td>
-        <td><p>The buffer size.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_InternalFill_System_IO_Stream_System_Int32_">AudioBuffer.InternalFill(Stream, Int32)</a></div>
   <a id="Evergine_OpenAL_ALAudioBuffer_InternalFill_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFill*"></a>
   <h4 id="Evergine_OpenAL_ALAudioBuffer_InternalFill__1___0___System_Int32_System_Int32_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFill``1(``0[],System.Int32,System.Int32)">InternalFill&lt;TBuffer&gt;(TBuffer[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Fills the audio buffer with a specific buffer.</p>
@@ -316,9 +294,8 @@
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">Evergine.Common.Audio.AudioBuffer.InternalFill&lt;TBuffer&gt;(TBuffer[], System.Int32, System.Int32)</span></div>
   <a id="Evergine_OpenAL_ALAudioBuffer_InternalFillAsync_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFillAsync*"></a>
-  <h4 id="Evergine_OpenAL_ALAudioBuffer_InternalFillAsync_System_IO_Stream_System_Int32_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFillAsync(System.IO.Stream,System.Int32)">InternalFillAsync(Stream, Int32)</h4>
-  <div class="markdown level1 summary"><p>Fills the audio buffer with a specific stream.</p>
-</div>
+  <h4 id="Evergine_OpenAL_ALAudioBuffer_InternalFillAsync_Stream_System_Int32_" data-uid="Evergine.OpenAL.ALAudioBuffer.InternalFillAsync(Stream,System.Int32)">InternalFillAsync(Stream, Int32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -335,16 +312,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td><p>The source stream.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">bufferSize</span></td>
-        <td><p>The buffer size.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -358,14 +333,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>Awaitable task of the operation.</p>
-</td>
+        <td><span class="xref">Task</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Audio.AudioBuffer.html#Evergine_Common_Audio_AudioBuffer_InternalFillAsync_System_IO_Stream_System_Int32_">AudioBuffer.InternalFillAsync(Stream, Int32)</a></div>
   <a id="Evergine_OpenAL_ALAudioBuffer_ToString_" data-uid="Evergine.OpenAL.ALAudioBuffer.ToString*"></a>
   <h4 id="Evergine_OpenAL_ALAudioBuffer_ToString" data-uid="Evergine.OpenAL.ALAudioBuffer.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -389,17 +361,18 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
+      <span class="xref">IDisposable</span>
+  </div>
+  <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
