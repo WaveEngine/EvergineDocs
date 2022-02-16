@@ -1,0 +1,16 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<div class="subnav navbar navbar-default">
+  <div class="container flex-container">
+    <label for="version" class="select-label">Version:</label>
+    <select id="select-version" class="select-version" name="version" title="version">
+      <option value="2022.2.16" class="option-version">2022.2.16</option>
+      <option value="2021.11.17" class="option-version">2021.11.17</option>
+    </select>
+    <div class="hide-when-search" id="breadcrumb">
+      <ul class="breadcrumb">
+        <li>{{_tocTitle}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

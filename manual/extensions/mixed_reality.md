@@ -1,2 +1,0 @@
-# Mixed Reality
-Coming soon

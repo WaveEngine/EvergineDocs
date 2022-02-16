@@ -22,3 +22,4 @@ You can read it from start to finish, or use it as a reference
 - [Physics](physics/index.md)
 - [XR](xr/index.md)
 - [Extensions](extensions/index.md)
+- [Addons](addons/index.md)
