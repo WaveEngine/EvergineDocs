@@ -1,6 +1,5 @@
-- name: General overview
-  href: overview.md
 - name: XR Platform
   href: xrplatform.md
-- name: XR Devices
-  href: xrdevices.md
+- name: Input Devices
+  href: input_tracking/toc.yml
+  homepage: input_tracking/index.md
