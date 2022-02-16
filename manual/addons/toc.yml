@@ -1,4 +1,5 @@
 - name: MRTK
-  href: mrtk.md
+  href: mrtk/toc.yml
+  homepage: mrtk/index.md
 - name: ARR
   href: arr.md

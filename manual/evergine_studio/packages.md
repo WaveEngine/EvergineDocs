@@ -66,9 +66,6 @@ You can perform typical add, update or remove operations over packages from this
 
 If you modify the collection of used packages, Evergine Studio will be reloaded once you close Project Settings window.
 
-> [!Note]
-> Notice that to use packages that have third NuGet package dependencies, you still need to install them by hand. Add the nuget dependencies to your root project, the one that contains the `EvergineContent.cs` file.
-
 ### Core add-ons
 Some packages like _Evergine.Core_ are required to be synchronized with project's Evergine version, so they are considered as special packages and can't be managed using this panel.
 

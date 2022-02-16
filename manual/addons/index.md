@@ -36,5 +36,5 @@ The ability to include new add-ons to external companies will be available comin
 
 ## In this section
 
-* [MRTK](mrtk.md)
+* [MRTK](mrtk/index.md)
 * [ARR](arr.md)
