@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -91,6 +98,10 @@
     <div class="level1"><a class="xref" href="Evergine.Framework.DisposableObject.html">DisposableObject</a></div>
     <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></div>
     <div class="level3"><span class="xref">LightDrawContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -259,12 +270,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_LightDrawContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LightDrawContext : DrawContext</code></pre>
+    <pre><code class="lang-csharp hljs">public class LightDrawContext : DrawContext, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -353,7 +385,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -537,7 +569,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector4.html">Vector4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -563,7 +595,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -589,7 +621,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -615,7 +647,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -641,7 +673,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -693,7 +725,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -719,7 +751,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -745,7 +777,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -771,7 +803,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -797,7 +829,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -897,7 +929,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -981,7 +1013,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1007,7 +1039,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1033,7 +1065,7 @@ but in ViewIndex strategy the instanceCount is 1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1154,6 +1186,10 @@ but in ViewIndex strategy the instanceCount is 1.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html#Evergine_Framework_Graphics_DrawContext_SetPerViewEngineParameters">DrawContext.SetPerViewEngineParameters()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

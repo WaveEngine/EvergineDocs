@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -82,12 +89,33 @@
   
   <h1 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1" class="text-break">Struct EvergineConfiguredAwaiter&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Provides an awaitable object that allows for configured awaits on <see cref="!:System.Threading.Tasks.Task&lt;T>"></see>.</p>
+  <div class="markdown level0 summary"><p>Provides an awaitable object that allows for configured awaits on <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">INotifyCompletion</span></div>
+    <div><span class="xref">System.Runtime.CompilerServices.INotifyCompletion</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Threading.html">Evergine.Framework.Threading</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
@@ -117,7 +145,7 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1__ctor_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.#ctor*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1__ctor_Task__0__Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.#ctor(Task{`0},Evergine.Framework.Threading.EvergineTaskContinueOn)">EvergineConfiguredAwaiter(Task&lt;T&gt;, EvergineTaskContinueOn)</h4>
+  <h4 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1__ctor_System_Threading_Tasks_Task__0__Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.#ctor(System.Threading.Tasks.Task{`0},Evergine.Framework.Threading.EvergineTaskContinueOn)">EvergineConfiguredAwaiter(Task&lt;T&gt;, EvergineTaskContinueOn)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.Threading.EvergineConfiguredAwaiter-1.html">EvergineConfiguredAwaiter&lt;T&gt;</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -136,9 +164,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
         <td><span class="parametername">task</span></td>
-        <td><p>The awaitable <see cref="!:Task"></see>.</p>
+        <td><p>The awaitable <span class="xref">System.Threading.Tasks.Task</span>.</p>
 </td>
       </tr>
       <tr>
@@ -178,6 +206,22 @@
   <h5 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_IsCompleted_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is intended for compiler user rather than use directly in code.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>The awaiter was not properly initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_GetAwaiter_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.GetAwaiter*"></a>
@@ -207,7 +251,7 @@
   </table>
   <a id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_GetResult_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.GetResult*"></a>
   <h4 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_GetResult" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.GetResult">GetResult()</h4>
-  <div class="markdown level1 summary"><p>Ends the await on the completed <see cref="!:System.Threading.Tasks.Task&lt;TResult>"></see>.</p>
+  <div class="markdown level1 summary"><p>Ends the await on the completed <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -225,14 +269,40 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The result of the completed <see cref="!:System.Threading.Tasks.Task&lt;TResult>"></see>.</p>
+        <td><p>The result of the completed <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>The awaiter was not properly initialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.TaskCanceledException</span></td>
+        <td><p>The task was canceled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>The task completed in a Faulted state.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_OnCompleted_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.OnCompleted*"></a>
-  <h4 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_OnCompleted_Action_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.OnCompleted(Action)">OnCompleted(Action)</h4>
-  <div class="markdown level1 summary"><p>Schedules the continuation onto the <see cref="!:System.Threading.Tasks.Task"></see> associated with this <see cref="!:TaskAwaiter"></see>.</p>
+  <h4 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_OnCompleted_System_Action_" data-uid="Evergine.Framework.Threading.EvergineConfiguredAwaiter`1.OnCompleted(System.Action)">OnCompleted(Action)</h4>
+  <div class="markdown level1 summary"><p>Schedules the continuation onto the <span class="xref">System.Threading.Tasks.Task</span> associated with this <span class="xref">System.Runtime.CompilerServices.TaskAwaiter</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -250,19 +320,47 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">continuation</span></td>
         <td><p>The action to invoke when the await operation completes.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_OnCompleted_Action__remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Threading_EvergineConfiguredAwaiter_1_OnCompleted_System_Action__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is intended for compiler user rather than use directly in code.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">continuation</code> argument is null (Nothing in Visual Basic).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>The awaiter was not properly initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">INotifyCompletion</span>
+      <span class="xref">System.Runtime.CompilerServices.INotifyCompletion</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

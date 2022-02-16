@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -134,6 +141,27 @@
     <div>
       <a class="xref" href="Evergine.Components.WorkActions.WorkAction.html#Evergine_Components_WorkActions_WorkAction_PerformCompleted">WorkAction.PerformCompleted()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.WorkActions.html">Evergine.Components.WorkActions</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
@@ -144,7 +172,7 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_Evergine_Framework_Entity_Vector3_Vector3_TimeSpan_Evergine_Components_WorkActions_EaseFunction_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor(Evergine.Framework.Entity,Vector3,Vector3,TimeSpan,Evergine.Components.WorkActions.EaseFunction)">Vector3AnimationWorkAction(Entity, Vector3, Vector3, TimeSpan, EaseFunction)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_Evergine_Framework_Entity_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_TimeSpan_Evergine_Components_WorkActions_EaseFunction_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor(Evergine.Framework.Entity,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.TimeSpan,Evergine.Components.WorkActions.EaseFunction)">Vector3AnimationWorkAction(Entity, Vector3, Vector3, TimeSpan, EaseFunction)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Components.WorkActions.Vector3AnimationWorkAction.html">Vector3AnimationWorkAction</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -169,19 +197,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">from</span></td>
         <td><p>Initial value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>End value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">time</span></td>
         <td><p>The time of the animation.</p>
 </td>
@@ -195,7 +223,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_Evergine_Framework_Entity_Vector3_Vector3_TimeSpan_Evergine_Components_WorkActions_EaseFunction_Action_Vector3__" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor(Evergine.Framework.Entity,Vector3,Vector3,TimeSpan,Evergine.Components.WorkActions.EaseFunction,Action{Vector3})">Vector3AnimationWorkAction(Entity, Vector3, Vector3, TimeSpan, EaseFunction, Action&lt;Vector3&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction__ctor_Evergine_Framework_Entity_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_TimeSpan_Evergine_Components_WorkActions_EaseFunction_System_Action_Evergine_Mathematics_Vector3__" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.#ctor(Evergine.Framework.Entity,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.TimeSpan,Evergine.Components.WorkActions.EaseFunction,System.Action{Evergine.Mathematics.Vector3})">Vector3AnimationWorkAction(Entity, Vector3, Vector3, TimeSpan, EaseFunction, Action&lt;Vector3&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Components.WorkActions.Vector3AnimationWorkAction.html">Vector3AnimationWorkAction</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -220,19 +248,19 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">from</span></td>
         <td><p>Initial value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>End value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">time</span></td>
         <td><p>The time of the animation.</p>
 </td>
@@ -244,7 +272,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a>&gt;</td>
         <td><span class="parametername">updateAction</span></td>
         <td><p>The action when needs to be updated.</p>
 </td>
@@ -271,7 +299,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -294,7 +322,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -317,7 +345,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -325,7 +353,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInEase(System.Single,Vector3,Vector3,System.Single)">BackInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BackInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Back in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -350,13 +378,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -379,14 +407,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInOutEase(System.Single,Vector3,Vector3,System.Single)">BackInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BackInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Back in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -411,13 +439,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -440,14 +468,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackOutEase(System.Single,Vector3,Vector3,System.Single)">BackOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BackOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BackOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BackOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Back out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -472,13 +500,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -501,14 +529,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInEase(System.Single,Vector3,Vector3,System.Single)">BounceInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BounceInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Bounce in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -533,13 +561,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -562,14 +590,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInOutEase(System.Single,Vector3,Vector3,System.Single)">BounceInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BounceInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Bounce in out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -594,13 +622,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -623,14 +651,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceOutEase(System.Single,Vector3,Vector3,System.Single)">BounceOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_BounceOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.BounceOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">BounceOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Bounce out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -655,13 +683,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -684,14 +712,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInEase(System.Single,Vector3,Vector3,System.Single)">CircleInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CircleInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Circle in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -716,13 +744,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -745,14 +773,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInOutEase(System.Single,Vector3,Vector3,System.Single)">CircleInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CircleInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Circle in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -777,13 +805,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -806,14 +834,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleOutEase(System.Single,Vector3,Vector3,System.Single)">CircleOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CircleOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CircleOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CircleOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Circle out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -838,13 +866,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -867,14 +895,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInEase(System.Single,Vector3,Vector3,System.Single)">CubicInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CubicInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Cubic in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -899,13 +927,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -928,14 +956,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInOutEase(System.Single,Vector3,Vector3,System.Single)">CubicInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubicInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubicInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CubicInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Cubic in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -960,13 +988,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -989,14 +1017,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubitOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubitOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubitOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubitOutEase(System.Single,Vector3,Vector3,System.Single)">CubitOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_CubitOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.CubitOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">CubitOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Cubit out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1021,13 +1049,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1050,14 +1078,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_DeltaFunction_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.DeltaFunction*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_DeltaFunction_Evergine_Components_WorkActions_EaseFunction_Vector3_Vector3_System_Single_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.DeltaFunction(Evergine.Components.WorkActions.EaseFunction,Vector3,Vector3,System.Single,System.Single)">DeltaFunction(EaseFunction, Vector3, Vector3, Single, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_DeltaFunction_Evergine_Components_WorkActions_EaseFunction_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.DeltaFunction(Evergine.Components.WorkActions.EaseFunction,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single,System.Single)">DeltaFunction(EaseFunction, Vector3, Vector3, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Delta Function method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1082,13 +1110,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">from</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>End value.</p>
 </td>
@@ -1117,14 +1145,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>Delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInEase(System.Single,Vector3,Vector3,System.Single)">ElasticInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ElasticInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Elastic in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1149,13 +1177,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1178,14 +1206,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInOutEase(System.Single,Vector3,Vector3,System.Single)">ElasticInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ElasticInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Elastic in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1210,13 +1238,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1239,14 +1267,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticOutEase(System.Single,Vector3,Vector3,System.Single)">ElasticOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ElasticOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ElasticOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ElasticOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Elastic out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1271,13 +1299,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1300,14 +1328,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInEase(System.Single,Vector3,Vector3,System.Single)">ExponentialInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ExponentialInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Exponential in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1332,13 +1360,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1361,14 +1389,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInOutEase(System.Single,Vector3,Vector3,System.Single)">ExponentialInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ExponentialInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Exponential in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1393,13 +1421,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1422,14 +1450,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialOutEase(System.Single,Vector3,Vector3,System.Single)">ExponentialOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_ExponentialOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.ExponentialOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">ExponentialOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Exponential out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1454,13 +1482,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1483,14 +1511,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_LinearStep_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.LinearStep*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_LinearStep_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.LinearStep(System.Single,Vector3,Vector3,System.Single)">LinearStep(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_LinearStep_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.LinearStep(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">LinearStep(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Smooth Step method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1515,13 +1543,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">value1</span></td>
         <td><p>value1.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">value2</span></td>
         <td><p>value2.</p>
 </td>
@@ -1544,7 +1572,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>Vector3.</p>
 </td>
       </tr>
@@ -1600,7 +1628,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Components.WorkActions.WorkAction.html#Evergine_Components_WorkActions_WorkAction_PerformSkip">WorkAction.PerformSkip()</a></div>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInEase(System.Single,Vector3,Vector3,System.Single)">QuadraticInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuadraticInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quadratic in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1625,13 +1653,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1654,14 +1682,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInOutEase(System.Single,Vector3,Vector3,System.Single)">QuadraticInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuadraticInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quadratic in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1686,13 +1714,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1715,14 +1743,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticOutEase(System.Single,Vector3,Vector3,System.Single)">QuadraticOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuadraticOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuadraticOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuadraticOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quadratic out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1747,13 +1775,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1776,14 +1804,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInEase(System.Single,Vector3,Vector3,System.Single)">QuarticInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuarticInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quartic in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1808,13 +1836,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1837,14 +1865,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInOutEase(System.Single,Vector3,Vector3,System.Single)">QuarticInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuarticInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quartic in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1869,13 +1897,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1898,14 +1926,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticOutEase(System.Single,Vector3,Vector3,System.Single)">QuarticOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuarticOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuarticOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuarticOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quartic out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1930,13 +1958,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -1959,14 +1987,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInEase(System.Single,Vector3,Vector3,System.Single)">QuinticInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuinticInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quintic in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1991,13 +2019,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2020,14 +2048,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInOutEase(System.Single,Vector3,Vector3,System.Single)">QuinticInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuinticInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quintic in out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2052,13 +2080,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2081,14 +2109,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticOutEase(System.Single,Vector3,Vector3,System.Single)">QuinticOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_QuinticOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.QuinticOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">QuinticOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Quintic out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2113,13 +2141,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2142,14 +2170,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInEase(System.Single,Vector3,Vector3,System.Single)">SineInEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">SineInEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Sine in ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2174,13 +2202,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2203,14 +2231,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInOutEase(System.Single,Vector3,Vector3,System.Single)">SineInOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineInOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineInOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">SineInOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Sine in and out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2235,13 +2263,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2264,14 +2292,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineOutEase_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineOutEase*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineOutEase_System_Single_Vector3_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineOutEase(System.Single,Vector3,Vector3,System.Single)">SineOutEase(Single, Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_SineOutEase_System_Single_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.SineOutEase(System.Single,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">SineOutEase(Single, Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Sine out ease function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2296,13 +2324,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">b</span></td>
         <td><p>Start value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">c</span></td>
         <td><p>End value.</p>
 </td>
@@ -2325,14 +2353,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>delta value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_Update_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.Update*"></a>
-  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_Update_TimeSpan_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Components_WorkActions_Vector3AnimationWorkAction_Update_System_TimeSpan_" data-uid="Evergine.Components.WorkActions.Vector3AnimationWorkAction.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the single work action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2351,7 +2379,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The elapsed gameTime.</p>
 </td>
@@ -2359,12 +2387,42 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Components.WorkActions.UpdatableWorkAction.html#Evergine_Components_WorkActions_UpdatableWorkAction_Update_TimeSpan_">UpdatableWorkAction.Update(TimeSpan)</a></div>
+  <div><a class="xref" href="Evergine.Components.WorkActions.UpdatableWorkAction.html#Evergine_Components_WorkActions_UpdatableWorkAction_Update_System_TimeSpan_">UpdatableWorkAction.Update(TimeSpan)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_System_Action_">WorkActionFactory.ContinueWithAction(IWorkAction, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_System_TimeSpan_">WorkActionFactory.Delay(IWorkAction, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_">WorkActionFactory.AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.AsSkippableWorkAction(IWorkAction)</a>
+  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>

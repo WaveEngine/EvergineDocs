@@ -102,7 +102,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -144,7 +144,7 @@
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireMaterialStateChanged">BaseMaterial.FireMaterialStateChanged()</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireRenderLayerStateChanged_System_Object_EventArgs_">BaseMaterial.FireRenderLayerStateChanged(Object, EventArgs)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireRenderLayerStateChanged_System_Object_System_EventArgs_">BaseMaterial.FireRenderLayerStateChanged(Object, EventArgs)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_ActiveDirectivesNames">BaseMaterial.ActiveDirectivesNames</a>
@@ -162,7 +162,7 @@
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_Prepare_Evergine_Common_Graphics_CommandBuffer_">BaseMaterial.Prepare(CommandBuffer)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetParameterValue_System_String_Type_System_Byte___">BaseMaterial.SetParameterValue(String, Type, Byte[])</a>
+      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetParameterValue_System_String_System_Type_System_Byte___">BaseMaterial.SetParameterValue(String, Type, Byte[])</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetTextureValue_Evergine_Common_Graphics_Texture_System_String_">BaseMaterial.SetTextureValue(Texture, String)</a>
@@ -196,6 +196,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -300,7 +321,8 @@
   </table>
   <a id="Evergine_Framework_Graphics_Material_Dependencies_" data-uid="Evergine.Framework.Graphics.Material.Dependencies*"></a>
   <h4 id="Evergine_Framework_Graphics_Material_Dependencies" data-uid="Evergine.Framework.Graphics.Material.Dependencies">Dependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the dependency list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,14 +338,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Material_Id_" data-uid="Evergine.Framework.Graphics.Material.Id*"></a>
   <h4 id="Evergine_Framework_Graphics_Material_Id" data-uid="Evergine.Framework.Graphics.Material.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,8 +362,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,7 +400,8 @@ This value is used to modify the rendering order of the meshes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int OrderBias { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsInput(-512, 511, AsSlider = true, DesiredChange = 1, DesiredLargeChange = 5)]
+public int OrderBias { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,7 +420,8 @@ This value is used to modify the rendering order of the meshes.</p>
   </table>
   <a id="Evergine_Framework_Graphics_Material_ReaderVersion_" data-uid="Evergine.Framework.Graphics.Material.ReaderVersion*"></a>
   <h4 id="Evergine_Framework_Graphics_Material_ReaderVersion" data-uid="Evergine.Framework.Graphics.Material.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -411,8 +437,9 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -592,7 +619,8 @@ This value is used to modify the rendering order of the meshes.</p>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Framework_Graphics_Material_Invalidated" data-uid="Evergine.Framework.Graphics.Material.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -608,7 +636,7 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -618,7 +646,7 @@ This value is used to modify the rendering order of the meshes.</p>
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

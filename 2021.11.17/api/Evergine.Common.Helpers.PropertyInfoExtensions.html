@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PropertyInfoExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Helpers.html">Evergine.Common.Helpers</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Helpers_PropertyInfoExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PropertyInfoExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class PropertyInfoExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueGetter_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueGetter*"></a>
-  <h4 id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueGetter_PropertyInfo_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueGetter(PropertyInfo)">GetValueGetter(PropertyInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueGetter_System_Reflection_PropertyInfo_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueGetter(System.Reflection.PropertyInfo)">GetValueGetter(PropertyInfo)</h4>
   <div class="markdown level1 summary"><p>Get the expression of a value getter for a property. Compile the expression to execute or combine it with other expressions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -118,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PropertyInfo</span></td>
+        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
         <td><span class="parametername">propertyInfo</span></td>
         <td><p>The property info.</p>
 </td>
@@ -135,14 +166,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><p>The value property getter.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueSetter_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueSetter*"></a>
-  <h4 id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueSetter_PropertyInfo_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueSetter(PropertyInfo)">GetValueSetter(PropertyInfo)</h4>
+  <h4 id="Evergine_Common_Helpers_PropertyInfoExtensions_GetValueSetter_System_Reflection_PropertyInfo_" data-uid="Evergine.Common.Helpers.PropertyInfoExtensions.GetValueSetter(System.Reflection.PropertyInfo)">GetValueSetter(PropertyInfo)</h4>
   <div class="markdown level1 summary"><p>Get the expression of a value setter for a property. Compile the expression to execute or combine it with other expressions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -161,7 +192,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PropertyInfo</span></td>
+        <td><span class="xref">System.Reflection.PropertyInfo</span></td>
         <td><span class="parametername">propertyInfo</span></td>
         <td><p>The property info.</p>
 </td>
@@ -178,7 +209,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><p>The value property setter.</p>
 </td>
       </tr>

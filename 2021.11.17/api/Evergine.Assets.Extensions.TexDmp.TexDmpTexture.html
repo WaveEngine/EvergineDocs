@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TexDmpTexture</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Assets.Extensions.TexDmp.html">Evergine.Assets.Extensions.TexDmp</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TexDmpTexture : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class TexDmpTexture</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -116,7 +147,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -139,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -193,7 +224,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Load_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Load*"></a>
-  <h4 id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Load_BinaryReader_System_Boolean_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Load(BinaryReader,System.Boolean)">Load(BinaryReader, Boolean)</h4>
+  <h4 id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Load_System_IO_BinaryReader_System_Boolean_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Load(System.IO.BinaryReader,System.Boolean)">Load(BinaryReader, Boolean)</h4>
   <div class="markdown level1 summary"><p>Loads the texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -212,7 +243,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td><p>The binary reader.</p>
 </td>
@@ -242,7 +273,7 @@
     </tbody>
   </table>
   <a id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Write_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Write*"></a>
-  <h4 id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Write_Evergine_Common_Graphics_GraphicsContext_BinaryWriter_Evergine_Common_Graphics_Texture_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Write(Evergine.Common.Graphics.GraphicsContext,BinaryWriter,Evergine.Common.Graphics.Texture)">Write(GraphicsContext, BinaryWriter, Texture)</h4>
+  <h4 id="Evergine_Assets_Extensions_TexDmp_TexDmpTexture_Write_Evergine_Common_Graphics_GraphicsContext_System_IO_BinaryWriter_Evergine_Common_Graphics_Texture_" data-uid="Evergine.Assets.Extensions.TexDmp.TexDmpTexture.Write(Evergine.Common.Graphics.GraphicsContext,System.IO.BinaryWriter,Evergine.Common.Graphics.Texture)">Write(GraphicsContext, BinaryWriter, Texture)</h4>
   <div class="markdown level1 summary"><p>Loads the texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -267,7 +298,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>The binary writer.</p>
 </td>

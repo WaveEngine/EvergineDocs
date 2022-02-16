@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -95,9 +102,8 @@ that are associated with a given <a class="xref" href="Evergine.Framework.Scene.
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -105,14 +111,35 @@ that are associated with a given <a class="xref" href="Evergine.Framework.Scene.
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.html">Evergine.Framework</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Scene_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Scene : IdentifiableObject, IDisposable, ILoadable, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Scene : IdentifiableObject, ILoadable, IDisposable</code></pre>
   </div>
   <h5 id="Evergine_Framework_Scene_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p><strong>Scene managers</strong></p><ul><li><a class="xref" href="Evergine.Framework.Managers.EntityManager.html">EntityManager</a> handles the adding or removal of <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> instances.</li><li><a class="xref" href="Evergine.Framework.Managers.BehaviorManager.html">BehaviorManager</a> handles the update of <a class="xref" href="Evergine.Framework.Component.html">Component</a> instances.</li><li><a class="xref" href="Evergine.Framework.Managers.RenderManager.html">RenderManager</a> handles the drawing of <a class="xref" href="Evergine.Framework.Component.html">Component</a> instances.</li></ul>
@@ -352,7 +379,7 @@ that are associated with a given <a class="xref" href="Evergine.Framework.Scene.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
+        <td><span class="xref">System.Version</span></td>
         <td><p>The reader version.</p>
 </td>
       </tr>
@@ -377,7 +404,7 @@ that are associated with a given <a class="xref" href="Evergine.Framework.Scene.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -463,7 +490,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Scene_Draw_" data-uid="Evergine.Framework.Scene.Draw*"></a>
-  <h4 id="Evergine_Framework_Scene_Draw_TimeSpan_" data-uid="Evergine.Framework.Scene.Draw(TimeSpan)">Draw(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Scene_Draw_System_TimeSpan_" data-uid="Evergine.Framework.Scene.Draw(System.TimeSpan)">Draw(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Draw the scene.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -482,7 +509,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>
@@ -517,6 +544,27 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If graphicsDevice is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Scene_Invalidate_" data-uid="Evergine.Framework.Scene.Invalidate*"></a>
   <h4 id="Evergine_Framework_Scene_Invalidate_Evergine_Common_ILoadable_" data-uid="Evergine.Framework.Scene.Invalidate(Evergine.Common.ILoadable)">Invalidate(ILoadable)</h4>
   <div class="markdown level1 summary"><p>Invalidates this instance and raise the <a class="xref" href="Evergine.Common.ILoadable.html#Evergine_Common_ILoadable_Invalidated">Invalidated</a> event with the new <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a> instance.</p>
@@ -545,7 +593,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Scene_NextStep_" data-uid="Evergine.Framework.Scene.NextStep*"></a>
-  <h4 id="Evergine_Framework_Scene_NextStep_TimeSpan_" data-uid="Evergine.Framework.Scene.NextStep(TimeSpan)">NextStep(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Scene_NextStep_System_TimeSpan_" data-uid="Evergine.Framework.Scene.NextStep(System.TimeSpan)">NextStep(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Update the scene one cycle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -564,9 +612,25 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The elapsed game time since the last update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -580,6 +644,22 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Pause()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Scene_RegisterManagers_" data-uid="Evergine.Framework.Scene.RegisterManagers*"></a>
   <h4 id="Evergine_Framework_Scene_RegisterManagers" data-uid="Evergine.Framework.Scene.RegisterManagers">RegisterManagers()</h4>
   <div class="markdown level1 summary"><p>Registers scene managers.</p>
@@ -607,6 +687,22 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Resume()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Scene_Start_" data-uid="Evergine.Framework.Scene.Start*"></a>
   <h4 id="Evergine_Framework_Scene_Start" data-uid="Evergine.Framework.Scene.Start">Start()</h4>
   <div class="markdown level1 summary"><p>Allows to perform custom code when this instance is started.</p>
@@ -620,7 +716,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
   <div class="markdown level1 remarks"><p>This base method performs a layout pass.</p>
 </div>
   <a id="Evergine_Framework_Scene_Update_" data-uid="Evergine.Framework.Scene.Update*"></a>
-  <h4 id="Evergine_Framework_Scene_Update_TimeSpan_" data-uid="Evergine.Framework.Scene.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Scene_Update_System_TimeSpan_" data-uid="Evergine.Framework.Scene.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the scene.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -639,7 +735,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>
@@ -666,13 +762,14 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h4 id="Evergine_Framework_Scene_Invalidated" data-uid="Evergine.Framework.Scene.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -688,7 +785,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -711,7 +808,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -734,7 +831,7 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -757,57 +854,54 @@ For example, a value of 2 will make the scene to run at 2x times.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IDisposable</span>
-  </div>
-  <div>
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateEmptyWorkAction_Evergine_Framework_Scene_">WorkActionFactory.CreateEmptyWorkAction(Scene)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_Evergine_Framework_Scene_TimeSpan_">WorkActionFactory.CreateDelayWorkAction(Scene, TimeSpan)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_Evergine_Framework_Scene_System_TimeSpan_">WorkActionFactory.CreateDelayWorkAction(Scene, TimeSpan)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_Evergine_Framework_Scene_Action_">WorkActionFactory.CreateWorkActionFromAction(Scene, Action)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_Evergine_Framework_Scene_System_Action_">WorkActionFactory.CreateWorkActionFromAction(Scene, Action)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_Evergine_Framework_Scene_TimeSpan_">WorkActionFactory.CreateWaitWorkAction(Scene, TimeSpan)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_Evergine_Framework_Scene_System_TimeSpan_">WorkActionFactory.CreateWaitWorkAction(Scene, TimeSpan)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_Evergine_Framework_Scene_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.CreateWorkAction(Scene, IWorkAction)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_Evergine_Framework_Scene_Func_System_Boolean__System_Int32_">WorkActionFactory.CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_Evergine_Framework_Scene_System_Func_System_Boolean__System_Int32_">WorkActionFactory.CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_IEnumerable_Func_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Collections_Generic_IEnumerable_System_Func_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.CreateParallelWorkActions(Scene, IWorkAction[])</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction__Func_System_Boolean__">WorkActionFactory.CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</a>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction__System_Func_System_Boolean__">WorkActionFactory.CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

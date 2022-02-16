@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ImageHelpers</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Assets.Extensions.html">Evergine.Framework.Assets.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Assets_Extensions_ImageHelpers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ImageHelpers : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ImageHelpers</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -252,7 +283,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt16_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt16*"></a>
-  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt16_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt16(BinaryReader)">ReadLittleEndianInt16(BinaryReader)</h4>
+  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt16_System_IO_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt16(System.IO.BinaryReader)">ReadLittleEndianInt16(BinaryReader)</h4>
   <div class="markdown level1 summary"><p>Read int16 from binaryReader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -271,7 +302,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">binaryReader</span></td>
         <td><p>binary reader.</p>
 </td>
@@ -295,7 +326,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt32_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt32*"></a>
-  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt32_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt32(BinaryReader)">ReadLittleEndianInt32(BinaryReader)</h4>
+  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianInt32_System_IO_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianInt32(System.IO.BinaryReader)">ReadLittleEndianInt32(BinaryReader)</h4>
   <div class="markdown level1 summary"><p>Read int32 from binary reader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -314,7 +345,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">binaryReader</span></td>
         <td><p>binary reader.</p>
 </td>
@@ -338,7 +369,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianUInt16_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianUInt16*"></a>
-  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianUInt16_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianUInt16(BinaryReader)">ReadLittleEndianUInt16(BinaryReader)</h4>
+  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadLittleEndianUInt16_System_IO_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadLittleEndianUInt16(System.IO.BinaryReader)">ReadLittleEndianUInt16(BinaryReader)</h4>
   <div class="markdown level1 summary"><p>Read UInt16 from binary reader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -357,7 +388,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">binaryReader</span></td>
         <td><p>binary reader.</p>
 </td>
@@ -381,7 +412,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadStruct_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadStruct*"></a>
-  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadStruct__1_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadStruct``1(BinaryReader)">ReadStruct&lt;T&gt;(BinaryReader)</h4>
+  <h4 id="Evergine_Framework_Assets_Extensions_ImageHelpers_ReadStruct__1_System_IO_BinaryReader_" data-uid="Evergine.Framework.Assets.Extensions.ImageHelpers.ReadStruct``1(System.IO.BinaryReader)">ReadStruct&lt;T&gt;(BinaryReader)</h4>
   <div class="markdown level1 summary"><p>Read struct from a binary reader.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -400,7 +431,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td><p>The binary reader.</p>
 </td>

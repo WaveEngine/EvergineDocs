@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -93,11 +100,29 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
     <div class="level1"><span class="xref">TrackableResult</span></div>
       <div class="level2"><a class="xref" href="Evergine.Vuforia.TrackableResult-1.html">TrackableResult&lt;T&gt;</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vuforia.html">Evergine.Vuforia</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Vuforia.dll</h6>
   <h5 id="Evergine_Vuforia_TrackableResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class TrackableResult : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class TrackableResult</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -132,7 +157,7 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mathematics.Matrix4x4 Pose { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Matrix4x4 Pose { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,7 +226,7 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
   </h3>
   <a id="Evergine_Vuforia_TrackableResult_Equals_" data-uid="Evergine.Vuforia.TrackableResult.Equals*"></a>
   <h4 id="Evergine_Vuforia_TrackableResult_Equals_System_Object_" data-uid="Evergine.Vuforia.TrackableResult.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see>, is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span>, is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -221,7 +246,7 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -237,11 +262,13 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <a id="Evergine_Vuforia_TrackableResult_GetHashCode_" data-uid="Evergine.Vuforia.TrackableResult.GetHashCode*"></a>
   <h4 id="Evergine_Vuforia_TrackableResult_GetHashCode" data-uid="Evergine.Vuforia.TrackableResult.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
@@ -267,6 +294,8 @@ Trackable, a type, a 6DOF pose and a status(e.g.tracked).</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

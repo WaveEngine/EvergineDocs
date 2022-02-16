@@ -97,6 +97,28 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">InputLayouts</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Evergine.Common.Graphics.InputLayouts.html">InputLayouts</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Graphics_InputLayouts_syntax">Syntax</h5>
@@ -134,7 +156,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Common.Graphics.LayoutDescription.html">LayoutDescription</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Common.Graphics.LayoutDescription.html">LayoutDescription</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -238,7 +260,7 @@
   </table>
   <a id="Evergine_Common_Graphics_InputLayouts_Equals_" data-uid="Evergine.Common.Graphics.InputLayouts.Equals*"></a>
   <h4 id="Evergine_Common_Graphics_InputLayouts_Equals_System_Object_" data-uid="Evergine.Common.Graphics.InputLayouts.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -258,7 +280,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -274,11 +296,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <a id="Evergine_Common_Graphics_InputLayouts_FindLayoutElementByUsage_" data-uid="Evergine.Common.Graphics.InputLayouts.FindLayoutElementByUsage*"></a>
   <h4 id="Evergine_Common_Graphics_InputLayouts_FindLayoutElementByUsage_Evergine_Common_Graphics_ElementSemanticType_System_Int32_Evergine_Common_Graphics_ElementDescription__System_Int32__" data-uid="Evergine.Common.Graphics.InputLayouts.FindLayoutElementByUsage(Evergine.Common.Graphics.ElementSemanticType,System.Int32,Evergine.Common.Graphics.ElementDescription@,System.Int32@)">FindLayoutElementByUsage(ElementSemanticType, Int32, out ElementDescription, out Int32)</h4>
   <div class="markdown level1 summary"><p>Finds an layout element description. by its usage semantic.</p>
@@ -365,6 +389,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <a id="Evergine_Common_Graphics_InputLayouts_IsAssignable_" data-uid="Evergine.Common.Graphics.InputLayouts.IsAssignable*"></a>
   <h4 id="Evergine_Common_Graphics_InputLayouts_IsAssignable_Evergine_Common_Graphics_InputLayouts_" data-uid="Evergine.Common.Graphics.InputLayouts.IsAssignable(Evergine.Common.Graphics.InputLayouts)">IsAssignable(InputLayouts)</h4>
   <div class="markdown level1 summary"><p>If the current layout is assignable to the parameter input layout.</p>
@@ -409,7 +435,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_InputLayouts_Read_" data-uid="Evergine.Common.Graphics.InputLayouts.Read*"></a>
-  <h4 id="Evergine_Common_Graphics_InputLayouts_Read_BinaryReader_" data-uid="Evergine.Common.Graphics.InputLayouts.Read(BinaryReader)">Read(BinaryReader)</h4>
+  <h4 id="Evergine_Common_Graphics_InputLayouts_Read_System_IO_BinaryReader_" data-uid="Evergine.Common.Graphics.InputLayouts.Read(System.IO.BinaryReader)">Read(BinaryReader)</h4>
   <div class="markdown level1 summary"><p>Read InputLayouts from binary file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -428,7 +454,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryReader</span></td>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
         <td><p>The binary reader.</p>
 </td>
@@ -507,7 +533,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_InputLayouts_Write_" data-uid="Evergine.Common.Graphics.InputLayouts.Write*"></a>
-  <h4 id="Evergine_Common_Graphics_InputLayouts_Write_BinaryWriter_" data-uid="Evergine.Common.Graphics.InputLayouts.Write(BinaryWriter)">Write(BinaryWriter)</h4>
+  <h4 id="Evergine_Common_Graphics_InputLayouts_Write_System_IO_BinaryWriter_" data-uid="Evergine.Common.Graphics.InputLayouts.Write(System.IO.BinaryWriter)">Write(BinaryWriter)</h4>
   <div class="markdown level1 summary"><p>Write InputLayouts in a binary file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -526,7 +552,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>The binary writer.</p>
 </td>
@@ -633,6 +659,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

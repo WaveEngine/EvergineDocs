@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -185,7 +192,28 @@ It's used to store and manipulate the position, rotation and scale of the entity
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -225,7 +253,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -248,7 +276,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -271,7 +299,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -294,7 +322,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -305,7 +333,8 @@ It's used to store and manipulate the position, rotation and scale of the entity
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D parentTransform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(false, false, BindComponentSource.ParentsSkipOwner, null)]
+protected Transform3D parentTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -366,7 +395,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -390,7 +419,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -402,7 +431,8 @@ It's used to store and manipulate the position, rotation and scale of the entity
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalPosition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Position&quot;, Tooltip = &quot;The entity position in local space&quot;)]
+public Vector3 LocalPosition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -414,7 +444,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -426,7 +456,8 @@ It's used to store and manipulate the position, rotation and scale of the entity
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalRotation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(typeof(Vector3RadianToDegreeConverter), CustomPropertyName = &quot;Local Rotation&quot;, Tooltip = &quot;The global rotation expressed in Euler angles (yaw, pitch, roll)&quot;)]
+public Vector3 LocalRotation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -438,7 +469,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -450,7 +481,8 @@ It's used to store and manipulate the position, rotation and scale of the entity
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalScale { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Scale&quot;, Tooltip = &quot;The entity scale in local space&quot;)]
+public Vector3 LocalScale { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -462,7 +494,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -486,7 +518,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -510,7 +542,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -558,7 +590,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -582,7 +614,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -606,7 +638,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -630,7 +662,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -654,7 +686,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -678,7 +710,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -686,7 +718,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Graphics_Transform3D_LocalLookAt_" data-uid="Evergine.Framework.Graphics.Transform3D.LocalLookAt*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_LocalLookAt_Vector3_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LocalLookAt(Vector3,Vector3)">LocalLookAt(Vector3, Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_LocalLookAt_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LocalLookAt(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3)">LocalLookAt(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector (in Local space).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -705,13 +737,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">targetPosition</span></td>
         <td><p>The world position to look at.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">up</span></td>
         <td><p>The up vector.</p>
 </td>
@@ -719,7 +751,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_LookAt_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_LookAt_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt(Vector3)">LookAt(Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_LookAt_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt(Evergine.Mathematics.Vector3)">LookAt(Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -738,7 +770,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">targetPosition</span></td>
         <td><p>The world position to look at.</p>
 </td>
@@ -746,7 +778,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_LookAt_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_LookAt_Vector3_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt(Vector3,Vector3)">LookAt(Vector3, Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_LookAt_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.LookAt(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3)">LookAt(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector (in World space).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -765,13 +797,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">targetPosition</span></td>
         <td><p>The world position to look at.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">up</span></td>
         <td><p>The up vector.</p>
 </td>
@@ -826,7 +858,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     <pre><code class="lang-csharp hljs">protected virtual void ResetDirtyFlags()</code></pre>
   </div>
   <a id="Evergine_Framework_Graphics_Transform3D_RotateAround_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Vector3_Quaternion_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Vector3,Quaternion)">RotateAround(Vector3, Quaternion)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Evergine_Mathematics_Vector3_Evergine_Mathematics_Quaternion_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Evergine.Mathematics.Vector3,Evergine.Mathematics.Quaternion)">RotateAround(Vector3, Quaternion)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using the quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -845,13 +877,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">point</span></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">quaternion</span></td>
         <td><p>The rotation specified as a quaternion.</p>
 </td>
@@ -859,7 +891,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_RotateAround_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Vector3_Vector3_System_Single_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Vector3,Vector3,System.Single)">RotateAround(Vector3, Vector3, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_System_Single_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,System.Single)">RotateAround(Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using an axis and angle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -878,13 +910,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">point</span></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">axis</span></td>
         <td><p>The axis of rotation.</p>
 </td>
@@ -898,7 +930,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_RotateAround_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Vector3__Quaternion__" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Vector3@,Quaternion@)">RotateAround(ref Vector3, ref Quaternion)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Evergine_Mathematics_Vector3__Evergine_Mathematics_Quaternion__" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Quaternion@)">RotateAround(ref Vector3, ref Quaternion)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using the quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -917,13 +949,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">point</span></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">quaternion</span></td>
         <td><p>The rotation specified as a quaternion.</p>
 </td>
@@ -931,7 +963,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_RotateAround_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Vector3__Vector3__System_Single_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Vector3@,Vector3@,System.Single)">RotateAround(ref Vector3, ref Vector3, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_RotateAround_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__System_Single_" data-uid="Evergine.Framework.Graphics.Transform3D.RotateAround(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,System.Single)">RotateAround(ref Vector3, ref Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using an axis and angle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -950,13 +982,13 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">point</span></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">axis</span></td>
         <td><p>The axis of rotation.</p>
 </td>
@@ -970,7 +1002,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3_Quaternion_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform(Vector3,Quaternion,Vector3)">SetLocalTransform(Vector3, Quaternion, Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_Evergine_Mathematics_Vector3_Evergine_Mathematics_Quaternion_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform(Evergine.Mathematics.Vector3,Evergine.Mathematics.Quaternion,Evergine.Mathematics.Vector3)">SetLocalTransform(Vector3, Quaternion, Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the local transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -989,19 +1021,19 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">localPosition</span></td>
         <td><p>The local position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">localOrientation</span></td>
         <td><p>The local orientation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">localScale</span></td>
         <td><p>The local scale.</p>
 </td>
@@ -1009,7 +1041,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform*"></a>
-  <h4 id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3__Quaternion__Vector3__" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform(Vector3@,Quaternion@,Vector3@)">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Transform3D_SetLocalTransform_Evergine_Mathematics_Vector3__Evergine_Mathematics_Quaternion__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Graphics.Transform3D.SetLocalTransform(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Quaternion@,Evergine.Mathematics.Vector3@)">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the local transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1028,19 +1060,19 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">localPosition</span></td>
         <td><p>The local position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">localOrientation</span></td>
         <td><p>The local orientation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">localScale</span></td>
         <td><p>The local scale.</p>
 </td>
@@ -1067,7 +1099,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1090,7 +1122,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1113,7 +1145,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1136,7 +1168,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1159,7 +1191,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1182,7 +1214,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1205,7 +1237,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1228,7 +1260,7 @@ It's used to store and manipulate the position, rotation and scale of the entity
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

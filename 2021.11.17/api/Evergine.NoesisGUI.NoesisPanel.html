@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -189,7 +196,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.NoesisGUI.html">Evergine.NoesisGUI</a></h6>
@@ -275,7 +303,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Array</span></td>
+        <td><span class="xref">System.Array</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -332,7 +360,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GraphicsContext graphicsContext</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected GraphicsContext graphicsContext</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -355,7 +384,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GraphicsPresenter graphicsPresenter</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected GraphicsPresenter graphicsPresenter</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -401,7 +431,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Mathematics.Point lastMouse</code></pre>
+    <pre><code class="lang-csharp hljs">protected Point lastMouse</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -447,7 +477,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected NoesisService noesisService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(false)]
+protected NoesisService noesisService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -680,7 +711,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color BackgroundColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Background Color&quot;, Tooltip = &quot;The background color for the transparent areas in the XAML design.&quot;)]
+public Color BackgroundColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -704,7 +736,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClearFlags ClearFlags { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Clear Flags&quot;, Tooltip = &quot;The clear flags for the panel.&quot;)]
+public ClearFlags ClearFlags { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -800,7 +833,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EnableKeyboard { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Enable Keyboard&quot;, Tooltip = &quot;Indicates whether the panel will receive keyboard events.&quot;)]
+public bool EnableKeyboard { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -824,7 +858,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EnableMouse { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Enable Mouse&quot;, Tooltip = &quot;Indicates whether the panel will receive mouse events.&quot;)]
+public bool EnableMouse { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -848,7 +883,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EnableTouch { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Enable Touch&quot;, Tooltip = &quot;Indicates whether the panel will receive touch events.&quot;)]
+public bool EnableTouch { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -872,7 +908,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FlipY { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Flip Y&quot;, Tooltip = &quot;Indicates whether to flip the Y axis in the UI.&quot;)]
+public bool FlipY { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -920,7 +957,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint Height { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Height&quot;, Tooltip = &quot;The panel render height.&quot;)]
+public uint Height { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -944,7 +982,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PPAAEnabled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;PPAA Anti-aliasing Mode&quot;, Tooltip = &quot;The PPAA anti-aliasing mode that the panel will use when rendering vector graphics.&quot;)]
+public bool PPAAEnabled { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -968,7 +1007,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderFlags RenderFlags { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Render Flags&quot;, Tooltip = &quot;Flags used for rendering debug purposes.&quot;)]
+public RenderFlags RenderFlags { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -992,7 +1032,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TessellationMaxPixelError TessellationQuality { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Tessellation Quality&quot;, Tooltip = &quot;The tessellation quality that the panel will apply when rendering vector graphics.&quot;)]
+public TessellationMaxPixelError TessellationQuality { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1016,7 +1057,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float TouchDeadzoneRadius { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;The radius of the deadzone for touch events. Dragging interactions will not be sent to the panel until the touch reaches this distance from the initial touch point.&quot;)]
+public float TouchDeadzoneRadius { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1040,7 +1082,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint Width { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Width&quot;, Tooltip = &quot;The panel render width.&quot;)]
+public uint Width { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1227,13 +1270,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_OnDetach">Behavior.OnDetach()</a></div>
   <a id="Evergine_NoesisGUI_NoesisPanel_ProjectPointer_" data-uid="Evergine.NoesisGUI.NoesisPanel.ProjectPointer*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_ProjectPointer_Evergine_Mathematics_Point_Evergine_Mathematics_Point__" data-uid="Evergine.NoesisGUI.NoesisPanel.ProjectPointer(Evergine.Mathematics.Point,Evergine.Mathematics.Point@)">ProjectPointer(Mathematics.Point, out Mathematics.Point)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_ProjectPointer_Evergine_Mathematics_Point_Evergine_Mathematics_Point__" data-uid="Evergine.NoesisGUI.NoesisPanel.ProjectPointer(Evergine.Mathematics.Point,Evergine.Mathematics.Point@)">ProjectPointer(Point, out Point)</h4>
   <div class="markdown level1 summary"><p>Get the projected position of a mouse or touch input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract bool ProjectPointer(Mathematics.Point screen, out Mathematics.Point projected)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract bool ProjectPointer(Point screen, out Point projected)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1303,7 +1346,7 @@
     <pre><code class="lang-csharp hljs">protected abstract void UnregisterRenderEvents()</code></pre>
   </div>
   <a id="Evergine_NoesisGUI_NoesisPanel_Update_" data-uid="Evergine.NoesisGUI.NoesisPanel.Update*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_Update_TimeSpan_" data-uid="Evergine.NoesisGUI.NoesisPanel.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_Update_System_TimeSpan_" data-uid="Evergine.NoesisGUI.NoesisPanel.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Update all methods required for this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1322,13 +1365,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The current game time.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_Update_System_TimeSpan_">Behavior.Update(TimeSpan)</a></div>
   <a id="Evergine_NoesisGUI_NoesisPanel_UpdateCharEvent_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateCharEvent*"></a>
   <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateCharEvent_Evergine_Common_Input_Keyboard_KeyCharEventArgs_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateCharEvent(Evergine.Common.Input.Keyboard.KeyCharEventArgs)">UpdateCharEvent(KeyCharEventArgs)</h4>
   <div class="markdown level1 summary"><p>Notifies that a key was translated to the corresponding character.</p>
@@ -1411,13 +1456,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseButtonEvent_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseButtonEvent*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseButtonEvent_Evergine_Mathematics_Point__Evergine_Common_Input_ButtonState_Evergine_Common_Input_Mouse_MouseButtons_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseButtonEvent(Evergine.Mathematics.Point@,Evergine.Common.Input.ButtonState,Evergine.Common.Input.Mouse.MouseButtons)">UpdateMouseButtonEvent(ref Mathematics.Point, ButtonState, MouseButtons)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseButtonEvent_Evergine_Mathematics_Point__Evergine_Common_Input_ButtonState_Evergine_Common_Input_Mouse_MouseButtons_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseButtonEvent(Evergine.Mathematics.Point@,Evergine.Common.Input.ButtonState,Evergine.Common.Input.Mouse.MouseButtons)">UpdateMouseButtonEvent(ref Point, ButtonState, MouseButtons)</h4>
   <div class="markdown level1 summary"><p>Update the mouse button state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateMouseButtonEvent(ref Mathematics.Point mousePos, ButtonState state, MouseButtons button)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateMouseButtonEvent(ref Point mousePos, ButtonState state, MouseButtons button)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1450,13 +1495,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_UpdateMousePosition_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMousePosition*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMousePosition_Evergine_Mathematics_Point__" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMousePosition(Evergine.Mathematics.Point@)">UpdateMousePosition(ref Mathematics.Point)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMousePosition_Evergine_Mathematics_Point__" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMousePosition(Evergine.Mathematics.Point@)">UpdateMousePosition(ref Point)</h4>
   <div class="markdown level1 summary"><p>Update the mouse position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateMousePosition(ref Mathematics.Point mousePos)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateMousePosition(ref Point mousePos)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1477,13 +1522,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseScrollEvent_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseScrollEvent*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseScrollEvent_Evergine_Mathematics_Point__System_Int32_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseScrollEvent(Evergine.Mathematics.Point@,System.Int32)">UpdateMouseScrollEvent(ref Mathematics.Point, Int32)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateMouseScrollEvent_Evergine_Mathematics_Point__System_Int32_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateMouseScrollEvent(Evergine.Mathematics.Point@,System.Int32)">UpdateMouseScrollEvent(ref Point, Int32)</h4>
   <div class="markdown level1 summary"><p>Update the scroll wheel of the mouse.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateMouseScrollEvent(ref Mathematics.Point mousePos, int scrollWheel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateMouseScrollEvent(ref Point mousePos, int scrollWheel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1510,13 +1555,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_UpdateTouchEvent_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateTouchEvent*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateTouchEvent_Evergine_Mathematics_Point__Evergine_Common_Input_ButtonState_System_Int64_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateTouchEvent(Evergine.Mathematics.Point@,Evergine.Common.Input.ButtonState,System.Int64)">UpdateTouchEvent(ref Mathematics.Point, ButtonState, Int64)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_UpdateTouchEvent_Evergine_Mathematics_Point__Evergine_Common_Input_ButtonState_System_Int64_" data-uid="Evergine.NoesisGUI.NoesisPanel.UpdateTouchEvent(Evergine.Mathematics.Point@,Evergine.Common.Input.ButtonState,System.Int64)">UpdateTouchEvent(ref Point, ButtonState, Int64)</h4>
   <div class="markdown level1 summary"><p>Updates the panel by point coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateTouchEvent(ref Mathematics.Point positionInNoesisPanel, ButtonState touchState, long touchId)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateTouchEvent(ref Point positionInNoesisPanel, ButtonState touchState, long touchId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1549,13 +1594,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_ViewTouchMove_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchMove*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_ViewTouchMove_Evergine_Mathematics_Point__System_UInt64_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchMove(Evergine.Mathematics.Point@,System.UInt64)">ViewTouchMove(ref Mathematics.Point, UInt64)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_ViewTouchMove_Evergine_Mathematics_Point__System_UInt64_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchMove(Evergine.Mathematics.Point@,System.UInt64)">ViewTouchMove(ref Point, UInt64)</h4>
   <div class="markdown level1 summary"><p>Calls panel touch move methos if view attribute is set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ViewTouchMove(ref Mathematics.Point touchPosition, ulong touchId)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ViewTouchMove(ref Point touchPosition, ulong touchId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1582,13 +1627,13 @@
     </tbody>
   </table>
   <a id="Evergine_NoesisGUI_NoesisPanel_ViewTouchUp_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchUp*"></a>
-  <h4 id="Evergine_NoesisGUI_NoesisPanel_ViewTouchUp_Evergine_Mathematics_Point__System_UInt64_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchUp(Evergine.Mathematics.Point@,System.UInt64)">ViewTouchUp(ref Mathematics.Point, UInt64)</h4>
+  <h4 id="Evergine_NoesisGUI_NoesisPanel_ViewTouchUp_Evergine_Mathematics_Point__System_UInt64_" data-uid="Evergine.NoesisGUI.NoesisPanel.ViewTouchUp(Evergine.Mathematics.Point@,System.UInt64)">ViewTouchUp(ref Point, UInt64)</h4>
   <div class="markdown level1 summary"><p>Calls panel touch up methos if view attribute is set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ViewTouchUp(ref Mathematics.Point touchPosition, ulong touchId)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ViewTouchUp(ref Point touchPosition, ulong touchId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1634,7 +1679,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Noesis.EventHandler</span>&lt;<span class="xref">Noesis.View</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">Noesis.View</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

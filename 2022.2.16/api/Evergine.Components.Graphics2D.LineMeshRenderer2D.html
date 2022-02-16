@@ -216,14 +216,36 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Graphics2D.html">Evergine.Components.Graphics2D</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
   <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LineMeshRenderer2D : Drawable2D, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;Evergine.Components.Graphics2D&quot;)]
+public class LineMeshRenderer2D : Drawable2D, IDependencyObject</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -233,7 +255,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LineMeshBase lineMesh</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(false, true, BindComponentSource.Owner, null)]
+protected LineMeshBase lineMesh</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">

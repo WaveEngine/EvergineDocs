@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SceneManagers</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Managers.html">Evergine.Framework.Managers</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Managers_SceneManagers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SceneManagers : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class SceneManagers</code></pre>
   </div>
   <h5 id="Evergine_Framework_Managers_SceneManagers_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Registered <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instances that inherit from <a class="xref" href="Evergine.Framework.Managers.UpdatableSceneManager.html">UpdatableSceneManager</a>
@@ -271,7 +302,7 @@ will be updated automatically by this instance. This update order depends on the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -409,6 +440,32 @@ will be updated automatically by this instance. This update order depends on the
   <div class="markdown level1 remarks"><p>If the instance to register inherits from <a class="xref" href="Evergine.Framework.Managers.UpdatableSceneManager.html">UpdatableSceneManager</a> this class
 will handle the update automatically.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If sceneManager is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>If sceneManager is disposed or already attached.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> with the same type was already registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_SceneManagers_AddManager_" data-uid="Evergine.Framework.Managers.SceneManagers.AddManager*"></a>
   <h4 id="Evergine_Framework_Managers_SceneManagers_AddManager__1___0_" data-uid="Evergine.Framework.Managers.SceneManagers.AddManager``1(``0)">AddManager&lt;T&gt;(T)</h4>
   <div class="markdown level1 summary"><p>Registers a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instance.</p>
@@ -473,6 +530,32 @@ will handle the update automatically.</p>
   <div class="markdown level1 remarks"><p>If the instance to register inherits from <a class="xref" href="Evergine.Framework.Managers.UpdatableSceneManager.html">UpdatableSceneManager</a> this class
 will handle the update automatically.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If sceneManager is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>If sceneManager is disposed or already attached.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> with the same type was already registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_SceneManagers_AttachManagers_" data-uid="Evergine.Framework.Managers.SceneManagers.AttachManagers*"></a>
   <h4 id="Evergine_Framework_Managers_SceneManagers_AttachManagers" data-uid="Evergine.Framework.Managers.SceneManagers.AttachManagers">AttachManagers()</h4>
   <div class="markdown level1 summary"><p>Activate scene managers.</p>
@@ -532,7 +615,7 @@ will handle the update automatically.</p>
   <div class="markdown level1 remarks"><p>The unregistered <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> will be disposed.</p>
 </div>
   <a id="Evergine_Framework_Managers_SceneManagers_DrawSceneManagers_" data-uid="Evergine.Framework.Managers.SceneManagers.DrawSceneManagers*"></a>
-  <h4 id="Evergine_Framework_Managers_SceneManagers_DrawSceneManagers_TimeSpan_" data-uid="Evergine.Framework.Managers.SceneManagers.DrawSceneManagers(TimeSpan)">DrawSceneManagers(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Managers_SceneManagers_DrawSceneManagers_System_TimeSpan_" data-uid="Evergine.Framework.Managers.SceneManagers.DrawSceneManagers(System.TimeSpan)">DrawSceneManagers(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the registered <a class="xref" href="Evergine.Framework.Managers.DrawableSceneManager.html">DrawableSceneManager</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -551,7 +634,7 @@ will handle the update automatically.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>
@@ -559,7 +642,7 @@ will handle the update automatically.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_SceneManagers_FindManager_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManager*"></a>
-  <h4 id="Evergine_Framework_Managers_SceneManagers_FindManager_Type_System_Boolean_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManager(Type,System.Boolean)">FindManager(Type, Boolean)</h4>
+  <h4 id="Evergine_Framework_Managers_SceneManagers_FindManager_System_Type_System_Boolean_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManager(System.Type,System.Boolean)">FindManager(Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -578,7 +661,7 @@ will handle the update automatically.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">sceneManagerType</span></td>
         <td><p>Type of the sceneManager to get.</p>
 </td>
@@ -670,7 +753,7 @@ with the selected type registered.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_SceneManagers_FindManagers_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManagers*"></a>
-  <h4 id="Evergine_Framework_Managers_SceneManagers_FindManagers_Type_System_Boolean_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManagers(Type,System.Boolean)">FindManagers(Type, Boolean)</h4>
+  <h4 id="Evergine_Framework_Managers_SceneManagers_FindManagers_System_Type_System_Boolean_" data-uid="Evergine.Framework.Managers.SceneManagers.FindManagers(System.Type,System.Boolean)">FindManagers(Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -689,7 +772,7 @@ with the selected type registered.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">sceneManagerType</span></td>
         <td><p>Type of the sceneManager to get.</p>
 </td>
@@ -712,7 +795,7 @@ with the selected type registered.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>&gt;</td>
         <td><p>The <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instance found, or null if there was not a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>
 with the selected type registered.</p>
 </td>
@@ -757,7 +840,7 @@ with the selected type registered.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The collection of <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a> instances searched, or null if there was not a <a class="xref" href="Evergine.Framework.Managers.SceneManager.html">SceneManager</a>
 with the selected type registered.</p>
 </td>
@@ -936,7 +1019,7 @@ with the selected type registered.</p>
   <div class="markdown level1 remarks"><p>This method initialize only new sceneManagers, not initialized yet.</p>
 </div>
   <a id="Evergine_Framework_Managers_SceneManagers_UpdateSceneManagers_" data-uid="Evergine.Framework.Managers.SceneManagers.UpdateSceneManagers*"></a>
-  <h4 id="Evergine_Framework_Managers_SceneManagers_UpdateSceneManagers_TimeSpan_" data-uid="Evergine.Framework.Managers.SceneManagers.UpdateSceneManagers(TimeSpan)">UpdateSceneManagers(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Managers_SceneManagers_UpdateSceneManagers_System_TimeSpan_" data-uid="Evergine.Framework.Managers.SceneManagers.UpdateSceneManagers(System.TimeSpan)">UpdateSceneManagers(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the registered <a class="xref" href="Evergine.Framework.Managers.UpdatableSceneManager.html">UpdatableSceneManager</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -955,7 +1038,7 @@ with the selected type registered.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>

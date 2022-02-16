@@ -85,7 +85,75 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="import-a-model">Import a Model</h1>
 
-<p>Coming soon</p>
+<p><img src="images/ModelImport.png" alt="Drag and Drop Asset"></p>
+<p>In <strong>Evergine Studio</strong>, importing an 3d model file will create a <strong>Model</strong> asset, as explained <a href="../../evergine_studio/assets/create.html">in this article</a>.</p>
+<h2 id="embedded-assets">Embedded assets</h2>
+<p>Depending of the 3d model file, when importing a <strong>Model</strong> it may also import other embedded assets. A new folder will be created at the same level than the 3d file, with the name <strong><code>[ModelName]_Embedded</code></strong> (So, for example, the file <code>car.fbx</code> will generate a folder named <code>car_Embedded</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Location</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Material</strong></td>
+<td><code>[ModelName]_Embedded/Materials</code></td>
+<td>The most common one. Every material that the 3d file uses is generated as a specific <strong>Material</strong> asset and referenced into the <strong>Model</strong>.</td>
+</tr>
+<tr>
+<td><strong>Texture</strong></td>
+<td><code>[ModelName]_Embedded/Textures</code></td>
+<td>Some 3d file formats can embed textures. For every embedded <strong>Texture</strong> an asset is generated.</td>
+</tr>
+<tr>
+<td><strong>Sampler</strong></td>
+<td><code>[ModelName]_Embedded/Samplers</code></td>
+<td>Some 3d file formats specify the sampler states for their textures. In this case <strong>Samplers</strong> are generated.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="inspect-models-in-asset-details">Inspect Models in Asset Details</h2>
+<p>You can find the model assets in the <em>Assets Details</em> panel when you select a folder in the <em>Project Explorer</em>.</p>
+<p><img src="images/ModelGallery.png" alt="Texture view"></p>
+<p>The picture shows both the <strong>Model</strong> asset and the <strong>Embededed</strong> folder for all the generated assets.</p>
+<h2 id="model-files-in-content-directory">Model files in content directory</h2>
+<p><strong>Models</strong> imported in <strong>Evergine</strong> create an aditional metadata <code>.wemd</code> file.</p>
+<p><img src="images/ModelFiles.png" alt="Model files"></p>
+<h2 id="supported-formats">Supported formats:</h2>
+<p><strong>Evergine</strong> supports the following model formats:</p>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.gltf</code>, <code>.glb</code></td>
+<td><div><p>Open source format. <a href="https://www.khronos.org/">Kronnos Group</a>  created this format for 3D web, AR, VR, games and 3D advertising. It’s the first really well-defined standard for 3D. This file format supports geometry, materials, textures, colors, and animations. This includes PBR (Physical Based Rendering).</p> <p><strong>GLTF</strong> is based on JSON, so it stores some data in external files like textures (JPEG or PNG), shaders (GLSL), or geometry and animation data (BIN). <strong>GLB</strong> files store all this data internally. The Khronos groups is continually improving and updating this file format. It is quickly becoming the standard for 3D shopping. </p></div></td>
+</tr>
+<tr>
+<td><code>.fbx</code></td>
+<td><strong>FBX</strong> is a proprietary 3D file format. AutoDesk then purchased them in 2006 and continued supporting FBX. It is widely used in the film and video game industry. It supports geometry, appearance (color and texture), as well as animations (skeletal and morphs). FBX is most popular for animation and is used as an exchange format between different programs like Maya, 3DSMax, AutoCAD, Roman’s CAD, and others.</td>
+</tr>
+<tr>
+<td><code>.obj</code></td>
+<td>An <strong>OBJ</strong> file contains information about the geometry of 3D objects. Developers use the file format for exchanging information and in CAD and 3D printing applications. OBJ files can support unlimited colors, and one file can define multiple objects. The current version is 3.0. The objects in an OBJ file are defined by polygon faces and normals, curves, texture maps, and surfaces. OBJ is a vector file, which makes the defined objects scalable.</td>
+</tr>
+<tr>
+<td><code>.3ds</code></td>
+<td>A <strong>3DS</strong> file is a 3D image format used by Autodesk 3D Studio. It contains mesh data, material attributes, bitmap references, smoothing group data, viewport configurations, camera locations, and lighting information. 3DS files may also include object animation data.</td>
+</tr>
+<tr>
+<td><code>.dae</code></td>
+<td>A <strong>DAE</strong> file is a Digital Asset Exchange file format that is used for exchanging data between interactive 3D applications. This file format is based on the COLLADA (COLLAborative Design Activity) XML schema which is an open standard XML schema for the exchange of digital assets among graphics software applications.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           

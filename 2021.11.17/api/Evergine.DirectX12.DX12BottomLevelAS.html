@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -92,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.Raytracing.BottomLevelAS.html">BottomLevelAS</a></div>
     <div class="level3"><span class="xref">DX12BottomLevelAS</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -106,12 +117,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX12.dll</h6>
   <h5 id="Evergine_DirectX12_DX12BottomLevelAS_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX12BottomLevelAS : BottomLevelAS</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX12BottomLevelAS : BottomLevelAS, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -168,7 +200,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D12Resource</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ID3D12Resource</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -194,7 +226,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -214,6 +246,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Dispose">GraphicsResource.Dispose()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

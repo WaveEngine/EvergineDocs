@@ -196,7 +196,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Particles.html">Evergine.Framework.Particles</a></h6>
@@ -236,7 +257,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ParticleSystem particleSystem</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected ParticleSystem particleSystem</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -417,7 +439,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -441,7 +463,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -458,7 +480,7 @@
     <pre><code class="lang-csharp hljs">public virtual void BindShape()</code></pre>
   </div>
   <a id="Evergine_Framework_Particles_BaseShapeEmitter_EmitParticle_" data-uid="Evergine.Framework.Particles.BaseShapeEmitter.EmitParticle*"></a>
-  <h4 id="Evergine_Framework_Particles_BaseShapeEmitter_EmitParticle_System_UInt32__Vector3__Vector3__" data-uid="Evergine.Framework.Particles.BaseShapeEmitter.EmitParticle(System.UInt32@,Vector3@,Vector3@)">EmitParticle(ref UInt32, ref Vector3, out Vector3)</h4>
+  <h4 id="Evergine_Framework_Particles_BaseShapeEmitter_EmitParticle_System_UInt32__Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Particles.BaseShapeEmitter.EmitParticle(System.UInt32@,Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@)">EmitParticle(ref UInt32, ref Vector3, out Vector3)</h4>
   <div class="markdown level1 summary"><p>CPU particle emission.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -483,13 +505,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The init position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">initDirection</span></td>
         <td><p>The init direction.</p>
 </td>

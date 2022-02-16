@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -93,13 +100,37 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Prefabs.html">Evergine.Framework.Prefabs</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Prefabs_Prefab_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Prefab : object, ILoadable, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Prefab : ILoadable, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -134,7 +165,8 @@
   </h3>
   <a id="Evergine_Framework_Prefabs_Prefab_Id_" data-uid="Evergine.Framework.Prefabs.Prefab.Id*"></a>
   <h4 id="Evergine_Framework_Prefabs_Prefab_Id" data-uid="Evergine.Framework.Prefabs.Prefab.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -150,14 +182,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Prefabs_Prefab_ReaderVersion_" data-uid="Evergine.Framework.Prefabs.Prefab.ReaderVersion*"></a>
   <h4 id="Evergine_Framework_Prefabs_Prefab_ReaderVersion" data-uid="Evergine.Framework.Prefabs.Prefab.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,8 +207,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -304,7 +339,8 @@
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Framework_Prefabs_Prefab_Invalidated" data-uid="Evergine.Framework.Prefabs.Prefab.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +356,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -330,7 +366,7 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,26 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">WaveFormat</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Audio.html">Evergine.Common.Audio</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Audio_WaveFormat_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WaveFormat : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class WaveFormat</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -321,8 +343,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
-        <td><p>The duration as a <see cref="!:TimeSpan"></see> equivalent to the specified size in bytes.</p>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><p>The duration as a <span class="xref">System.TimeSpan</span> equivalent to the specified size in bytes.</p>
 </td>
       </tr>
     </tbody>
@@ -371,7 +393,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_WaveFormat_ConvertDurationToByteSize_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToByteSize*"></a>
-  <h4 id="Evergine_Common_Audio_WaveFormat_ConvertDurationToByteSize_TimeSpan_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToByteSize(TimeSpan)">ConvertDurationToByteSize(TimeSpan)</h4>
+  <h4 id="Evergine_Common_Audio_WaveFormat_ConvertDurationToByteSize_System_TimeSpan_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToByteSize(System.TimeSpan)">ConvertDurationToByteSize(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Gets the size in bytes of a wave buffer equivalent to the specified duration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -390,9 +412,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">duration</span></td>
-        <td><p>The duration as a <see cref="!:TimeSpan"></see>.</p>
+        <td><p>The duration as a <span class="xref">System.TimeSpan</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -414,7 +436,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_WaveFormat_ConvertDurationToSampleCount_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToSampleCount*"></a>
-  <h4 id="Evergine_Common_Audio_WaveFormat_ConvertDurationToSampleCount_TimeSpan_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToSampleCount(TimeSpan)">ConvertDurationToSampleCount(TimeSpan)</h4>
+  <h4 id="Evergine_Common_Audio_WaveFormat_ConvertDurationToSampleCount_System_TimeSpan_" data-uid="Evergine.Common.Audio.WaveFormat.ConvertDurationToSampleCount(System.TimeSpan)">ConvertDurationToSampleCount(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Gets the number of samples of a wave buffer equivalent to the specified duration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -433,9 +455,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">duration</span></td>
-        <td><p>The duration as a <see cref="!:TimeSpan"></see>.</p>
+        <td><p>The duration as a <span class="xref">System.TimeSpan</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -536,8 +558,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
-        <td><p>The duration as a <see cref="!:TimeSpan"></see> equivalent to the specified number of samples.</p>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><p>The duration as a <span class="xref">System.TimeSpan</span> equivalent to the specified number of samples.</p>
 </td>
       </tr>
     </tbody>
@@ -582,6 +604,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <a id="Evergine_Common_Audio_WaveFormat_GetHashCode_" data-uid="Evergine.Common.Audio.WaveFormat.GetHashCode*"></a>
   <h4 id="Evergine_Common_Audio_WaveFormat_GetHashCode" data-uid="Evergine.Common.Audio.WaveFormat.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -605,6 +629,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
   <a id="Evergine_Common_Audio_WaveFormat_IsAlignedByteSize_" data-uid="Evergine.Common.Audio.WaveFormat.IsAlignedByteSize*"></a>
   <h4 id="Evergine_Common_Audio_WaveFormat_IsAlignedByteSize_System_Int32_" data-uid="Evergine.Common.Audio.WaveFormat.IsAlignedByteSize(System.Int32)">IsAlignedByteSize(Int32)</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the specified byte size is block-aligned.</p>
@@ -714,18 +740,20 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.XAudio2.DXExtensionsMethods.html#Evergine_XAudio2_DXExtensionsMethods_ToDXWaveFormat_Evergine_Common_Audio_WaveFormat_">DXExtensionsMethods.ToDXWaveFormat(WaveFormat)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Assets.Importers.Audio.NAudioHelpers.html#Evergine_Assets_Importers_Audio_NAudioHelpers_ToNAudioWaveFormat_Evergine_Common_Audio_WaveFormat_">NAudioHelpers.ToNAudioWaveFormat(WaveFormat)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Assets.Importers.Audio.NAudioHelpers.html#Evergine_Assets_Importers_Audio_NAudioHelpers_ToNAudioWaveFormat_Evergine_Common_Audio_WaveFormat_">NAudioHelpers.ToNAudioWaveFormat(WaveFormat)</a>
   </div>
 </article>
           </div>

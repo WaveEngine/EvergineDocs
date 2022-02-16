@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -87,17 +94,17 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkBooleanPropertySync-1.html">NetworkBooleanPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Boolean"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Boolean</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkByteArrayPropertySync-1.html">NetworkByteArrayPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Byte"></see> array property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Byte</span> array property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkBytePropertySync-1.html">NetworkBytePropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Byte"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Byte</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
@@ -111,7 +118,7 @@ entity or any of its parents.</p>
 <a class="xref" href="Evergine.Networking.Components.NetworkPropertySync-2.html">NetworkPropertySync&lt;K, V&gt;</a> components.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkDateTimePropertySync-1.html">NetworkDateTimePropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:DateTime"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.DateTime</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
@@ -121,17 +128,17 @@ entity or any of its parents.</p>
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkFloatPropertySync-1.html">NetworkFloatPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Single"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Single</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkIntegerPropertySync-1.html">NetworkIntegerPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Int32"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Int32</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkLongIntegerPropertySync-1.html">NetworkLongIntegerPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Int64"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Int64</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
@@ -165,17 +172,17 @@ entity or any of its parents.</p>
 <a class="xref" href="Evergine.Networking.Components.NetworkPropertySync-2.html">NetworkPropertySync&lt;K, V&gt;</a> components.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkSerializablePropertySync-2.html">NetworkSerializablePropertySync&lt;K, V&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.Boolean"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.Boolean</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkStringPropertySync-1.html">NetworkStringPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:System.String"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.String</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>
       <h4><a class="xref" href="Evergine.Networking.Components.NetworkTimeSpanPropertySync-1.html">NetworkTimeSpanPropertySync&lt;K&gt;</a></h4>
-      <section><p>Provides an abstraction to track changes on a <see cref="!:TimeSpan"></see> property contained on a
+      <section><p>Provides an abstraction to track changes on a <span class="xref">System.TimeSpan</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </section>

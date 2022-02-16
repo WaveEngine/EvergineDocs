@@ -97,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">IncomingMessage</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Connection.Messages.html">Evergine.Networking.Connection.Messages</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Networking.dll</h6>
   <h5 id="Evergine_Networking_Connection_Messages_IncomingMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IncomingMessage : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class IncomingMessage</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Networking_Connection_Messages_IncomingMessage__ctor_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.#ctor*"></a>
-  <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage__ctor_NetIncomingMessage_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.#ctor(NetIncomingMessage)">IncomingMessage(NetIncomingMessage)</h4>
+  <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage__ctor_Lidgren_Network_NetIncomingMessage_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.#ctor(Lidgren.Network.NetIncomingMessage)">IncomingMessage(NetIncomingMessage)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Networking.Connection.Messages.IncomingMessage.html">IncomingMessage</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -125,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">NetIncomingMessage</span></td>
+        <td><span class="xref">Lidgren.Network.NetIncomingMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message.</p>
 </td>
@@ -301,6 +325,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>ReadByte(bits) can only read between 1 and 8 bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadBytes_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadBytes*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadBytes" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadBytes">ReadBytes()</h4>
   <div class="markdown level1 summary"><p>Reads the bytes of length of next int.</p>
@@ -353,7 +393,7 @@
   </table>
   <a id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadDateTime_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadDateTime*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadDateTime" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadDateTime">ReadDateTime()</h4>
-  <div class="markdown level1 summary"><p>Reads the next <see cref="!:DateTime"></see>.</p>
+  <div class="markdown level1 summary"><p>Reads the next <span class="xref">System.DateTime</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -370,8 +410,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><p>The next <see cref="!:DateTime"></see> in the message.</p>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>The next <span class="xref">System.DateTime</span> in the message.</p>
 </td>
       </tr>
     </tbody>
@@ -578,7 +618,7 @@
   </table>
   <a id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadTimeSpan_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadTimeSpan*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadTimeSpan_System_Boolean_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadTimeSpan(System.Boolean)">ReadTimeSpan(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Reads the next <see cref="!:TimeSpan"></see>.</p>
+  <div class="markdown level1 summary"><p>Reads the next <span class="xref">System.TimeSpan</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -598,7 +638,7 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">highPrecision</span></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be read using high precision (ticks) or not (milliseconds).</p>
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be read using high precision (ticks) or not (milliseconds).</p>
 </td>
       </tr>
     </tbody>
@@ -613,14 +653,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
-        <td><p>The next <see cref="!:TimeSpan"></see> in the message.</p>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><p>The next <span class="xref">System.TimeSpan</span> in the message.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadTimeSpan_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <a id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadVector2_" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadVector2*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_IncomingMessage_ReadVector2" data-uid="Evergine.Networking.Connection.Messages.IncomingMessage.ReadVector2">ReadVector2()</h4>

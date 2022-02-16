@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -94,11 +101,35 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Framework.Physics3D.ISimulationDebugDraw3D.html">ISimulationDebugDraw3D</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Physics3D.html">Evergine.Framework.Physics3D</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PhysicsDebugDraw3D : object, ISimulationDebugDraw3D</code></pre>
+    <pre><code class="lang-csharp hljs">public class PhysicsDebugDraw3D : ISimulationDebugDraw3D</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -132,7 +163,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_Draw3dText_" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.Draw3dText*"></a>
-  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_Draw3dText_Vector3__System_String_" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.Draw3dText(Vector3@,System.String)">Draw3dText(ref Vector3, String)</h4>
+  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_Draw3dText_Evergine_Mathematics_Vector3__System_String_" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.Draw3dText(Evergine.Mathematics.Vector3@,System.String)">Draw3dText(ref Vector3, String)</h4>
   <div class="markdown level1 summary"><p>Draw a 3D text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -151,7 +182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">location</span></td>
         <td><p>The text position.</p>
 </td>
@@ -165,7 +196,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawCircle_" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawCircle*"></a>
-  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawCircle_System_Single_Matrix4x4__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawCircle(System.Single,Matrix4x4@,Evergine.Common.Graphics.Color@)">DrawCircle(Single, ref Matrix4x4, ref Color)</h4>
+  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawCircle_System_Single_Evergine_Mathematics_Matrix4x4__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawCircle(System.Single,Evergine.Mathematics.Matrix4x4@,Evergine.Common.Graphics.Color@)">DrawCircle(Single, ref Matrix4x4, ref Color)</h4>
   <div class="markdown level1 summary"><p>Draw a line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -190,7 +221,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">transform</span></td>
         <td><p>The circle transform.</p>
 </td>
@@ -204,7 +235,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawLine_" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawLine*"></a>
-  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawLine_Vector3__Vector3__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawLine(Vector3@,Vector3@,Evergine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
+  <h4 id="Evergine_Framework_Physics3D_PhysicsDebugDraw3D_DrawLine_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Physics3D.PhysicsDebugDraw3D.DrawLine(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
   <div class="markdown level1 summary"><p>Draw a line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -223,13 +254,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">from</span></td>
         <td><p>Start position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>End position.</p>
 </td>

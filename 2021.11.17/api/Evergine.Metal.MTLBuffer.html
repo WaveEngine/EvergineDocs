@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -92,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></div>
     <div class="level3"><span class="xref">MTLBuffer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -109,17 +120,38 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Metal.html">Evergine.Metal</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Metal.dll</h6>
   <h5 id="Evergine_Metal_MTLBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MTLBuffer : Buffer</code></pre>
+    <pre><code class="lang-csharp hljs">public class MTLBuffer : Buffer, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Metal_MTLBuffer__ctor_" data-uid="Evergine.Metal.MTLBuffer.#ctor*"></a>
-  <h4 id="Evergine_Metal_MTLBuffer__ctor_Evergine_Metal_MTLGraphicsContext_IntPtr_Evergine_Common_Graphics_BufferDescription__" data-uid="Evergine.Metal.MTLBuffer.#ctor(Evergine.Metal.MTLGraphicsContext,IntPtr,Evergine.Common.Graphics.BufferDescription@)">MTLBuffer(MTLGraphicsContext, IntPtr, ref BufferDescription)</h4>
+  <h4 id="Evergine_Metal_MTLBuffer__ctor_Evergine_Metal_MTLGraphicsContext_System_IntPtr_Evergine_Common_Graphics_BufferDescription__" data-uid="Evergine.Metal.MTLBuffer.#ctor(Evergine.Metal.MTLGraphicsContext,System.IntPtr,Evergine.Common.Graphics.BufferDescription@)">MTLBuffer(MTLGraphicsContext, IntPtr, ref BufferDescription)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Metal.MTLBuffer.html">MTLBuffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -144,7 +176,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -204,7 +236,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -214,13 +246,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Metal_MTLBuffer_CopyTo_" data-uid="Evergine.Metal.MTLBuffer.CopyTo*"></a>
-  <h4 id="Evergine_Metal_MTLBuffer_CopyTo_MTLBlitCommandEncoder_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.Metal.MTLBuffer.CopyTo(MTLBlitCommandEncoder,Evergine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">CopyTo(MTLBlitCommandEncoder, Buffer, UInt32, UInt32, UInt32)</h4>
+  <h4 id="Evergine_Metal_MTLBuffer_CopyTo_Veldrid_MetalBindings_MTLBlitCommandEncoder_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.Metal.MTLBuffer.CopyTo(Veldrid.MetalBindings.MTLBlitCommandEncoder,Evergine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">CopyTo(MTLBlitCommandEncoder, Buffer, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Copy this buffer in the destination buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CopyTo(MTLBlitCommandEncoder commandBuffer, Buffer destination, uint sizeInBytes, uint sourceOffset = null, uint destinationOffset = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CopyTo(MTLBlitCommandEncoder commandBuffer, Buffer destination, uint sizeInBytes, uint sourceOffset = 0U, uint destinationOffset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,7 +265,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MTLBlitCommandEncoder</span></td>
+        <td><span class="xref">Veldrid.MetalBindings.MTLBlitCommandEncoder</span></td>
         <td><span class="parametername">commandBuffer</span></td>
         <td><p>the blitcommand encoder.</p>
 </td>
@@ -276,13 +308,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Dispose">GraphicsResource.Dispose()</a></div>
   <a id="Evergine_Metal_MTLBuffer_SetData_" data-uid="Evergine.Metal.MTLBuffer.SetData*"></a>
-  <h4 id="Evergine_Metal_MTLBuffer_SetData_MTLBlitCommandEncoder_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Metal.MTLBuffer.SetData(MTLBlitCommandEncoder,IntPtr,System.UInt32,System.UInt32)">SetData(MTLBlitCommandEncoder, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_Metal_MTLBuffer_SetData_Veldrid_MetalBindings_MTLBlitCommandEncoder_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Metal.MTLBuffer.SetData(Veldrid.MetalBindings.MTLBlitCommandEncoder,System.IntPtr,System.UInt32,System.UInt32)">SetData(MTLBlitCommandEncoder, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(MTLBlitCommandEncoder commandBuffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(MTLBlitCommandEncoder commandBuffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -295,13 +327,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MTLBlitCommandEncoder</span></td>
+        <td><span class="xref">Veldrid.MetalBindings.MTLBlitCommandEncoder</span></td>
         <td><span class="parametername">commandBuffer</span></td>
         <td><p>the blitcommand encoder.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -320,6 +352,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

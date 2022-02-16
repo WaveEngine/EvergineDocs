@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -91,6 +98,34 @@ object that handles managing the observed surfaces and the rendering of surface 
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SpatialMappingSurface</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.XR.SpatialMapping.html">Evergine.Framework.XR.SpatialMapping</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface_syntax">Syntax</h5>
@@ -100,7 +135,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface__ctor_" data-uid="Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface.#ctor*"></a>
-  <h4 id="Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface__ctor_Guid_Evergine_Framework_XR_SpatialMapping_SpatialMappingObserver_" data-uid="Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface.#ctor(Guid,Evergine.Framework.XR.SpatialMapping.SpatialMappingObserver)">SpatialMappingSurface(Guid, SpatialMappingObserver)</h4>
+  <h4 id="Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface__ctor_System_Guid_Evergine_Framework_XR_SpatialMapping_SpatialMappingObserver_" data-uid="Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface.#ctor(System.Guid,Evergine.Framework.XR.SpatialMapping.SpatialMappingObserver)">SpatialMappingSurface(Guid, SpatialMappingObserver)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface.html">SpatialMappingSurface</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -119,7 +154,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>The mesh id.</p>
 </td>
@@ -152,7 +187,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingBox</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -175,7 +210,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -244,7 +279,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -267,7 +302,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -290,7 +325,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -359,7 +394,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="xref">System.DateTimeOffset</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -385,7 +420,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingBox</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -433,7 +468,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -457,7 +492,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -481,7 +516,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -505,7 +540,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="xref">System.DateTimeOffset</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -627,6 +662,10 @@ object that handles managing the observed surfaces and the rendering of surface 
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

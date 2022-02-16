@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -89,6 +96,34 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SpatialAnchorStore</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.XR.SpatialAnchors.html">Evergine.Framework.XR.SpatialAnchors</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
@@ -141,7 +176,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Framework.XR.SpatialAnchors.SpatialAnchor.html">SpatialAnchor</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Framework.XR.SpatialAnchors.SpatialAnchor.html">SpatialAnchor</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -149,7 +184,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor*"></a>
-  <h4 id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_Vector3_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor(Vector3)">CreateSpatialAnchor(Vector3)</h4>
+  <h4 id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor(Evergine.Mathematics.Vector3)">CreateSpatialAnchor(Vector3)</h4>
   <div class="markdown level1 summary"><p>Creates a spatial Anchor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -168,7 +203,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The anchor position.</p>
 </td>
@@ -192,7 +227,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor*"></a>
-  <h4 id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_Vector3_Quaternion_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor(Vector3,Quaternion)">CreateSpatialAnchor(Vector3, Quaternion)</h4>
+  <h4 id="Evergine_Framework_XR_SpatialAnchors_SpatialAnchorStore_CreateSpatialAnchor_Evergine_Mathematics_Vector3_Evergine_Mathematics_Quaternion_" data-uid="Evergine.Framework.XR.SpatialAnchors.SpatialAnchorStore.CreateSpatialAnchor(Evergine.Mathematics.Vector3,Evergine.Mathematics.Quaternion)">CreateSpatialAnchor(Vector3, Quaternion)</h4>
   <div class="markdown level1 summary"><p>Creates a spatial Anchor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -211,13 +246,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The anchor position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">orientation</span></td>
         <td><p>The anchor orientation.</p>
 </td>
@@ -388,6 +423,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

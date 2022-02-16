@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -85,6 +92,12 @@
   <div class="markdown level0 summary"><p>Interface for body of 3D physics.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Physics3D.html">Evergine.Framework.Physics3D</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Physics3D_IPhysicBody3D_syntax">Syntax</h5>
@@ -112,7 +125,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -215,7 +228,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.IColliderShape3D.html">IColliderShape3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.IColliderShape3D.html">IColliderShape3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -503,7 +516,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -527,7 +540,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -551,7 +564,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -767,7 +780,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -872,7 +885,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_IPhysicBody3D_SetTransform_" data-uid="Evergine.Framework.Physics3D.IPhysicBody3D.SetTransform*"></a>
-  <h4 id="Evergine_Framework_Physics3D_IPhysicBody3D_SetTransform_Vector3_Quaternion_Vector3_" data-uid="Evergine.Framework.Physics3D.IPhysicBody3D.SetTransform(Vector3,Quaternion,Vector3)">SetTransform(Vector3, Quaternion, Vector3)</h4>
+  <h4 id="Evergine_Framework_Physics3D_IPhysicBody3D_SetTransform_Evergine_Mathematics_Vector3_Evergine_Mathematics_Quaternion_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Physics3D.IPhysicBody3D.SetTransform(Evergine.Mathematics.Vector3,Evergine.Mathematics.Quaternion,Evergine.Mathematics.Vector3)">SetTransform(Vector3, Quaternion, Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the position of the body's origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body's transform may cause non-physical behavior.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -891,19 +904,19 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>the world position of the body's local origin.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">orientation</span></td>
         <td><p>the world rotation as a quaternion.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">scale</span></td>
         <td><p>the world scale.</p>
 </td>

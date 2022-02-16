@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -97,7 +104,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -210,7 +238,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid EffectID { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember(2)]
+public Guid EffectID { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,7 +251,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +287,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;PostProcessingInputNodePort&gt; Inputs { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember]
+public List&lt;PostProcessingInputNodePort&gt; Inputs { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,7 +300,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.PostProcessingInputNodePort.html">PostProcessingInputNodePort</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.PostProcessingInputNodePort.html">PostProcessingInputNodePort</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -282,7 +312,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember(0)]
+public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -306,7 +337,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;PostProcessingOutputNodePort&gt; Outputs { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember]
+public List&lt;PostProcessingOutputNodePort&gt; Outputs { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,7 +350,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.PostProcessingOutputNodePort.html">PostProcessingOutputNodePort</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.PostProcessingOutputNodePort.html">PostProcessingOutputNodePort</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -330,7 +362,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Position { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember(1)]
+public Vector2 Position { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -342,7 +375,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -355,7 +388,8 @@ Ej. Dispatch(imageWidth/divisorX, ..., ...).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ThreadGroupDivisorX { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember]
+public int ThreadGroupDivisorX { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -380,7 +414,8 @@ Ej. Dispatch(..., imageHeight/divisorY, ...).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ThreadGroupDivisorY { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember]
+public int ThreadGroupDivisorY { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -405,7 +440,8 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ThreadGroupDivisorZ { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[EvergineMember]
+public int ThreadGroupDivisorZ { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -511,7 +547,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingNode_GetInputPortByID_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetInputPortByID*"></a>
-  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetInputPortByID_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetInputPortByID(Guid)">GetInputPortByID(Guid)</h4>
+  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetInputPortByID_System_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetInputPortByID(System.Guid)">GetInputPortByID(Guid)</h4>
   <div class="markdown level1 summary"><p>Gets the input port by id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -530,7 +566,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">portId</span></td>
         <td><p>the port id.</p>
 </td>
@@ -597,7 +633,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingNode_GetOutputPortByID_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetOutputPortByID*"></a>
-  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetOutputPortByID_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetOutputPortByID(Guid)">GetOutputPortByID(Guid)</h4>
+  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetOutputPortByID_System_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetOutputPortByID(System.Guid)">GetOutputPortByID(Guid)</h4>
   <div class="markdown level1 summary"><p>Gets the output port by id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -616,7 +652,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">portId</span></td>
         <td><p>the port id.</p>
 </td>
@@ -683,7 +719,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingNode_GetPortByID_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetPortByID*"></a>
-  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetPortByID_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetPortByID(Guid)">GetPortByID(Guid)</h4>
+  <h4 id="Evergine_Framework_Graphics_PostProcessingNode_GetPortByID_System_Guid_" data-uid="Evergine.Framework.Graphics.PostProcessingNode.GetPortByID(System.Guid)">GetPortByID(Guid)</h4>
   <div class="markdown level1 summary"><p>Gets port by a port id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -702,7 +738,7 @@ Ej. Dispatch(..., ..., 1/divisorZ).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">portId</span></td>
         <td><p>The port id.</p>
 </td>

@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -126,6 +133,24 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Components.WorkActions.WorkAction.html#Evergine_Components_WorkActions_WorkAction_PerformCompleted">WorkAction.PerformCompleted()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.WorkActions.html">Evergine.Components.WorkActions</a></h6>
@@ -203,7 +228,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionNode__ctor_" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionNode__ctor_Evergine_Framework_Services_IWorkAction_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor(Evergine.Framework.Services.IWorkAction,Func{Evergine.Framework.Services.IWorkAction})">WorkActionNode(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionNode__ctor_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor(Evergine.Framework.Services.IWorkAction,System.Func{Evergine.Framework.Services.IWorkAction})">WorkActionNode(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Components.WorkActions.WorkActionNode.html">WorkActionNode</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -228,7 +253,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">actionFunction</span></td>
         <td><p>The wrapped work action.</p>
 </td>
@@ -236,7 +261,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionNode__ctor_" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionNode__ctor_Func_Evergine_Framework_Services_IWorkAction__Evergine_Framework_Scene_" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor(Func{Evergine.Framework.Services.IWorkAction},Evergine.Framework.Scene)">WorkActionNode(Func&lt;IWorkAction&gt;, Scene)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionNode__ctor_System_Func_Evergine_Framework_Services_IWorkAction__Evergine_Framework_Scene_" data-uid="Evergine.Components.WorkActions.WorkActionNode.#ctor(System.Func{Evergine.Framework.Services.IWorkAction},Evergine.Framework.Scene)">WorkActionNode(Func&lt;IWorkAction&gt;, Scene)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Components.WorkActions.WorkActionNode.html">WorkActionNode</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -255,7 +280,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">actionFunction</span></td>
         <td><p>The wrapped work action.</p>
 </td>
@@ -314,7 +339,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><p>The child tasks.</p>
 </td>
       </tr>
@@ -375,7 +400,7 @@
   <div><a class="xref" href="Evergine.Components.WorkActions.WorkAction.html#Evergine_Components_WorkActions_WorkAction_PerformSkip">WorkAction.PerformSkip()</a></div>
   <a id="Evergine_Components_WorkActions_WorkActionNode_ToString_" data-uid="Evergine.Components.WorkActions.WorkActionNode.ToString*"></a>
   <h4 id="Evergine_Components_WorkActions_WorkActionNode_ToString" data-uid="Evergine.Components.WorkActions.WorkActionNode.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a <see cref="!:System.String"></see> that represents this instance.</p>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -393,16 +418,48 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <see cref="!:System.String"></see> that represents this instance.</p>
+        <td><p>A <span class="xref">System.String</span> that represents this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_System_Action_">WorkActionFactory.ContinueWithAction(IWorkAction, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_System_TimeSpan_">WorkActionFactory.Delay(IWorkAction, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_">WorkActionFactory.AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.AsSkippableWorkAction(IWorkAction)</a>
+  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>

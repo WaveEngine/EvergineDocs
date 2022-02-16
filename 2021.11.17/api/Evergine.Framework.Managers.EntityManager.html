@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -162,7 +169,28 @@ As a collection, it supports common operations like adding and removing entities
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Managers.html">Evergine.Framework.Managers</a></h6>
@@ -182,6 +210,22 @@ As a collection, it supports common operations like adding and removing entities
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EntityManager()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If adapter or scene are null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="Evergine_Framework_Managers_EntityManager_AllEntities_" data-uid="Evergine.Framework.Managers.EntityManager.AllEntities*"></a>
@@ -205,8 +249,24 @@ including its children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p><em>Every</em> <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>EntityManager has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -239,7 +299,7 @@ including its children.</p>
   <a id="Evergine_Framework_Managers_EntityManager_EntityGraph_" data-uid="Evergine.Framework.Managers.EntityManager.EntityGraph*"></a>
   <h4 id="Evergine_Framework_Managers_EntityManager_EntityGraph" data-uid="Evergine.Framework.Managers.EntityManager.EntityGraph">EntityGraph</h4>
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> instances
-(see <see pref="ObjectGraph"></see> if you prefer a collection of <see cref="!:System.Object"></see>).
+(see <see pref="ObjectGraph"></see> if you prefer a collection of <span class="xref">System.Object</span>).
 IMPORTANT NOTE: Just the parents are contained within the returning value (i.e.
 just the instances subject to an Add() call). Children will not be considered here.
 See <see pref="AllEntities"></see> if you are looking also for children.</p>
@@ -259,8 +319,24 @@ See <see pref="AllEntities"></see> if you are looking also for children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p>The <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> instances.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>EntityManager has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -294,8 +370,29 @@ See <see pref="AllEntities"></see> if you are looking also for children.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there is already an entity added to this instance with the same name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_EntityManager_Add_" data-uid="Evergine.Framework.Managers.EntityManager.Add*"></a>
-  <h4 id="Evergine_Framework_Managers_EntityManager_Add_IEnumerable_Evergine_Framework_Entity__" data-uid="Evergine.Framework.Managers.EntityManager.Add(IEnumerable{Evergine.Framework.Entity})">Add(IEnumerable&lt;Entity&gt;)</h4>
+  <h4 id="Evergine_Framework_Managers_EntityManager_Add_System_Collections_Generic_IEnumerable_Evergine_Framework_Entity__" data-uid="Evergine.Framework.Managers.EntityManager.Add(System.Collections.Generic.IEnumerable{Evergine.Framework.Entity})">Add(IEnumerable&lt;Entity&gt;)</h4>
   <div class="markdown level1 summary"><p>Adds a list of <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> to EntityManager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -314,9 +411,30 @@ See <see pref="AllEntities"></see> if you are looking also for children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><span class="parametername">newEntities</span></td>
         <td><p>The <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> list to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there is already an entity added to this instance with the same name.</p>
 </td>
       </tr>
     </tbody>
@@ -361,6 +479,22 @@ through its <see pref="Entity.Name"></see> property.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if this instance contains the specified <a class="xref" href="Evergine.Framework.Entity.html">Entity</a>; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
 </td>
       </tr>
     </tbody>
@@ -411,8 +545,24 @@ through its <see pref="Entity.Name"></see> property.</p>
   <h5 id="Evergine_Framework_Managers_EntityManager_Detach_Evergine_Framework_Entity__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The entity is <code>disposed</code> when it is detached from this instance.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_EntityManager_Find_" data-uid="Evergine.Framework.Managers.EntityManager.Find*"></a>
-  <h4 id="Evergine_Framework_Managers_EntityManager_Find_Guid_" data-uid="Evergine.Framework.Managers.EntityManager.Find(Guid)">Find(Guid)</h4>
+  <h4 id="Evergine_Framework_Managers_EntityManager_Find_System_Guid_" data-uid="Evergine.Framework.Managers.EntityManager.Find(System.Guid)">Find(Guid)</h4>
   <div class="markdown level1 summary"><p>Looks for an <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> entity
 in the <see pref="EntityGraph"></see>, through its name.</p>
 </div>
@@ -432,7 +582,7 @@ in the <see pref="EntityGraph"></see>, through its name.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">entityId</span></td>
         <td><p>The entity Id to find.</p>
 </td>
@@ -452,6 +602,22 @@ in the <see pref="EntityGraph"></see>, through its name.</p>
         <td><a class="xref" href="Evergine.Framework.Entity.html">Entity</a></td>
         <td><p>The <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> with the specified <code data-dev-comment-type="paramref" class="paramref">entityId</code>,
 or null if no entity was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If the entity id is an empty Guid.</p>
 </td>
       </tr>
     </tbody>
@@ -505,6 +671,22 @@ or null if no entity was found.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_EntityManager_FindAllByTag_" data-uid="Evergine.Framework.Managers.EntityManager.FindAllByTag*"></a>
   <h4 id="Evergine_Framework_Managers_EntityManager_FindAllByTag_System_String_" data-uid="Evergine.Framework.Managers.EntityManager.FindAllByTag(System.String)">FindAllByTag(String)</h4>
   <div class="markdown level1 summary"><p>Finds all entities with the same <code data-dev-comment-type="paramref" class="paramref">tag</code>
@@ -543,7 +725,7 @@ in the <see pref="ObjectGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p>All entities with the same <code data-dev-comment-type="paramref" class="paramref">tag</code>
 in the <see pref="EntityGraph"></see>.</p>
 </td>
@@ -660,7 +842,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>Components collection.</p>
 </td>
       </tr>
@@ -683,7 +865,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_" data-uid="Evergine.Framework.Managers.EntityManager.FindComponentsOfType*"></a>
-  <h4 id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_Type_System_Boolean_System_String_" data-uid="Evergine.Framework.Managers.EntityManager.FindComponentsOfType(Type,System.Boolean,System.String)">FindComponentsOfType(Type, Boolean, String)</h4>
+  <h4 id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_System_Type_System_Boolean_System_String_" data-uid="Evergine.Framework.Managers.EntityManager.FindComponentsOfType(System.Type,System.Boolean,System.String)">FindComponentsOfType(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Iterate through the entire entity hierarchy and return all component instances of the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -702,7 +884,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The component type.</p>
 </td>
@@ -731,13 +913,13 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Component.html">Component</a>&gt;</td>
         <td><p>The component enumerable.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_Type_System_Boolean_System_String__remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_System_Type_System_Boolean_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <a id="Evergine_Framework_Managers_EntityManager_FindComponentsOfType_" data-uid="Evergine.Framework.Managers.EntityManager.FindComponentsOfType*"></a>
@@ -784,7 +966,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The component enumerable.</p>
 </td>
       </tr>
@@ -810,7 +992,7 @@ in the <see pref="EntityGraph"></see>.</p>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <a id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_" data-uid="Evergine.Framework.Managers.EntityManager.FindFirstComponentOfType*"></a>
-  <h4 id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_Type_System_Boolean_System_String_" data-uid="Evergine.Framework.Managers.EntityManager.FindFirstComponentOfType(Type,System.Boolean,System.String)">FindFirstComponentOfType(Type, Boolean, String)</h4>
+  <h4 id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_System_Type_System_Boolean_System_String_" data-uid="Evergine.Framework.Managers.EntityManager.FindFirstComponentOfType(System.Type,System.Boolean,System.String)">FindFirstComponentOfType(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Iterate through the entire entity hierarchy and return the first component instance of the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -829,7 +1011,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The component type.</p>
 </td>
@@ -864,7 +1046,7 @@ in the <see pref="EntityGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_Type_System_Boolean_System_String__remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_System_Type_System_Boolean_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <a id="Evergine_Framework_Managers_EntityManager_FindFirstComponentOfType_" data-uid="Evergine.Framework.Managers.EntityManager.FindFirstComponentOfType*"></a>
@@ -1047,6 +1229,22 @@ in the <see pref="EntityGraph"></see>.</p>
   <h5 id="Evergine_Framework_Managers_EntityManager_Remove_Evergine_Framework_Entity__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The entity is <code>disposed</code> when it is removed from this instance.</p>
 </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_EntityManager_Start_" data-uid="Evergine.Framework.Managers.EntityManager.Start*"></a>
   <h4 id="Evergine_Framework_Managers_EntityManager_Start" data-uid="Evergine.Framework.Managers.EntityManager.Start">Start()</h4>
   <div class="markdown level1 summary"><p>Invoked to start the object.</p>
@@ -1078,7 +1276,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1105,7 +1303,7 @@ So this event will be fired for removed entities too.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1116,10 +1314,10 @@ So this event will be fired for removed entities too.
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Evergine.Framework.Extensions.EntityHierarchyExtensions.html#Evergine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_Evergine_Framework_Managers_EntityManager_Guid_System_Nullable_Guid__">EntityHierarchyExtensions.MoveEntityBefore(EntityManager, Guid, Nullable&lt;Guid&gt;)</a>
+      <a class="xref" href="Evergine.Framework.Extensions.EntityHierarchyExtensions.html#Evergine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_Evergine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__">EntityHierarchyExtensions.MoveEntityBefore(EntityManager, Guid, Nullable&lt;Guid&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Framework.Extensions.EntityHierarchyExtensions.html#Evergine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_Evergine_Framework_Managers_EntityManager_Guid_System_Nullable_Guid__">EntityHierarchyExtensions.MoveEntityAfter(EntityManager, Guid, Nullable&lt;Guid&gt;)</a>
+      <a class="xref" href="Evergine.Framework.Extensions.EntityHierarchyExtensions.html#Evergine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_Evergine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__">EntityHierarchyExtensions.MoveEntityAfter(EntityManager, Guid, Nullable&lt;Guid&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

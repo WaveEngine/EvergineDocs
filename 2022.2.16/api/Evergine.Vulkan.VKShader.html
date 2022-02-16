@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.Shader.html">Shader</a></div>
     <div class="level3"><span class="xref">VKShader</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,12 +120,30 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vulkan.html">Evergine.Vulkan</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Vulkan.dll</h6>
   <h5 id="Evergine_Vulkan_VKShader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VKShader : Shader</code></pre>
+    <pre><code class="lang-csharp hljs">public class VKShader : Shader, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -178,7 +200,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkShaderModule</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkShaderModule</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -230,7 +252,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -256,7 +278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPipelineShaderStageCreateInfo</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPipelineShaderStageCreateInfo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -274,6 +296,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Dispose">GraphicsResource.Dispose()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

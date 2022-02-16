@@ -100,6 +100,10 @@
     <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.LightRenderPath.html">LightRenderPath</a></div>
     <div class="level4"><span class="xref">ShadowRenderPath</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -156,12 +160,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_ShadowRenderPath_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ShadowRenderPath : LightRenderPath</code></pre>
+    <pre><code class="lang-csharp hljs">public class ShadowRenderPath : LightRenderPath, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -240,6 +265,10 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.LightRenderPath.html#Evergine_Framework_Graphics_LightRenderPath_Render_Evergine_Framework_Graphics_LightDrawContext_Evergine_Common_Graphics_CommandBuffer_">LightRenderPath.Render(LightDrawContext, CommandBuffer)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

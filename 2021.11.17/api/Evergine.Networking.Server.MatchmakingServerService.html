@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -165,7 +172,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Server.html">Evergine.Networking.Server</a></h6>
@@ -206,7 +234,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -230,7 +258,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -303,7 +331,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -351,7 +379,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -375,7 +403,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -532,8 +560,8 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
@@ -575,15 +603,39 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Application identifier parameter can't be null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p><a class="xref" href="Evergine.Networking.Server.MatchmakingServerService.html#Evergine_Networking_Server_MatchmakingServerService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before initialize.
+or
+You can't call multiple times to Start method.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Networking_Server_MatchmakingServerService_Update_" data-uid="Evergine.Networking.Server.MatchmakingServerService.Update*"></a>
-  <h4 id="Evergine_Networking_Server_MatchmakingServerService_Update_TimeSpan_" data-uid="Evergine.Networking.Server.MatchmakingServerService.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Networking_Server_MatchmakingServerService_Update_System_TimeSpan_" data-uid="Evergine.Networking.Server.MatchmakingServerService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Updates this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -600,12 +652,15 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
-        <td></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Framework.Services.UpdatableService.html#Evergine_Framework_Services_UpdatableService_Update_System_TimeSpan_">UpdatableService.Update(TimeSpan)</a></div>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Networking_Server_MatchmakingServerService_MessageReceivedFromClient" data-uid="Evergine.Networking.Server.MatchmakingServerService.MessageReceivedFromClient">MessageReceivedFromClient</h4>
@@ -626,7 +681,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -649,7 +704,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -672,7 +727,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -695,7 +750,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -719,7 +774,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.PlayerJoiningEventArgs.html">PlayerJoiningEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.PlayerJoiningEventArgs.html">PlayerJoiningEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -742,7 +797,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -765,7 +820,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -788,7 +843,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -811,7 +866,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -834,7 +889,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -857,7 +912,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

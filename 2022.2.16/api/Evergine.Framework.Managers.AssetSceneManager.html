@@ -171,7 +171,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Managers.html">Evergine.Framework.Managers</a></h6>
@@ -199,7 +220,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AssetsService assetService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected AssetsService assetService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,7 +241,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Managers_AssetSceneManager_AddReference_" data-uid="Evergine.Framework.Managers.AssetSceneManager.AddReference*"></a>
-  <h4 id="Evergine_Framework_Managers_AssetSceneManager_AddReference_Guid_System_Int32_" data-uid="Evergine.Framework.Managers.AssetSceneManager.AddReference(Guid,System.Int32)">AddReference(Guid, Int32)</h4>
+  <h4 id="Evergine_Framework_Managers_AssetSceneManager_AddReference_System_Guid_System_Int32_" data-uid="Evergine.Framework.Managers.AssetSceneManager.AddReference(System.Guid,System.Int32)">AddReference(Guid, Int32)</h4>
   <div class="markdown level1 summary"><p>Adds an asset reference to the dictionary.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -238,7 +260,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>The asset's id.</p>
 </td>
@@ -252,7 +274,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_AssetSceneManager_Load_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load*"></a>
-  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Load__1_Guid_System_Boolean_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load``1(Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
+  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Load__1_System_Guid_System_Boolean_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load``1(System.Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
   <div class="markdown level1 summary"><p>Load an asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -272,7 +294,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>The asset id to load.</p>
 </td>
@@ -313,78 +335,6 @@
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>The asset type to load.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Framework_Managers_AssetSceneManager_Load_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load*"></a>
-  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Load__1_System_String_Stream_System_Boolean_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load``1(System.String,Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Loads an asset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
-    where T : ILoadable</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>The stream of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">forceNewInstance</span></td>
-        <td><p>True to force a new instance of the asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The loaded asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Type of the asset to load.</p>
 </td>
       </tr>
     </tbody>
@@ -455,6 +405,99 @@
       </tr>
     </tbody>
   </table>
+  <a id="Evergine_Framework_Managers_AssetSceneManager_Load_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load*"></a>
+  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_IO_Stream_System_Boolean_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Load``1(System.String,System.IO.Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
+    where T : ILoadable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forceNewInstance</span></td>
+        <td><p>True to force a new instance of the asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The loaded asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the asset to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Stream is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Asset name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_AssetSceneManager_OnAttached_" data-uid="Evergine.Framework.Managers.AssetSceneManager.OnAttached*"></a>
   <h4 id="Evergine_Framework_Managers_AssetSceneManager_OnAttached" data-uid="Evergine.Framework.Managers.AssetSceneManager.OnAttached">OnAttached()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
@@ -494,7 +537,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Managers.SceneManager.html#Evergine_Framework_Managers_SceneManager_OnDestroy">SceneManager.OnDestroy()</a></div>
   <a id="Evergine_Framework_Managers_AssetSceneManager_Unload_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Unload*"></a>
-  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Unload_Guid_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Unload(Guid)">Unload(Guid)</h4>
+  <h4 id="Evergine_Framework_Managers_AssetSceneManager_Unload_System_Guid_" data-uid="Evergine.Framework.Managers.AssetSceneManager.Unload(System.Guid)">Unload(Guid)</h4>
   <div class="markdown level1 summary"><p>Unload scene asset by Guid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -513,7 +556,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>Asset guid.</p>
 </td>

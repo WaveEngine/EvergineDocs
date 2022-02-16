@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -91,11 +98,35 @@
     <div class="level1"><span class="xref">ContainerInterceptor</span></div>
       <div class="level2"><a class="xref" href="Evergine.Framework.ContainerInterceptor-1.html">ContainerInterceptor&lt;T&gt;</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.html">Evergine.Framework</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_ContainerInterceptor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ContainerInterceptor : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ContainerInterceptor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -110,7 +141,7 @@ every type registered in the container.</p>
     <pre><code class="lang-csharp hljs">public ContainerInterceptor()</code></pre>
   </div>
   <a id="Evergine_Framework_ContainerInterceptor__ctor_" data-uid="Evergine.Framework.ContainerInterceptor.#ctor*"></a>
-  <h4 id="Evergine_Framework_ContainerInterceptor__ctor_Type_" data-uid="Evergine.Framework.ContainerInterceptor.#ctor(Type)">ContainerInterceptor(Type)</h4>
+  <h4 id="Evergine_Framework_ContainerInterceptor__ctor_System_Type_" data-uid="Evergine.Framework.ContainerInterceptor.#ctor(System.Type)">ContainerInterceptor(Type)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.ContainerInterceptor.html">ContainerInterceptor</a> class. It will receive events for
 the specified type or any of its base types registered in the container.</p>
 </div>
@@ -130,7 +161,7 @@ the specified type or any of its base types registered in the container.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type or base type to be intercepted.</p>
 </td>
@@ -182,7 +213,7 @@ the specified type or any of its base types registered in the container.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,7 +248,7 @@ the specified type or any of its base types registered in the container.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_ContainerInterceptor_OnRegistered_" data-uid="Evergine.Framework.ContainerInterceptor.OnRegistered*"></a>
-  <h4 id="Evergine_Framework_ContainerInterceptor_OnRegistered_Type_" data-uid="Evergine.Framework.ContainerInterceptor.OnRegistered(Type)">OnRegistered(Type)</h4>
+  <h4 id="Evergine_Framework_ContainerInterceptor_OnRegistered_System_Type_" data-uid="Evergine.Framework.ContainerInterceptor.OnRegistered(System.Type)">OnRegistered(Type)</h4>
   <div class="markdown level1 summary"><p>Called when a type assignable from <see param="type"></see> is registered in the container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -236,7 +267,7 @@ the specified type or any of its base types registered in the container.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The registered type.</p>
 </td>
@@ -244,7 +275,7 @@ the specified type or any of its base types registered in the container.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_ContainerInterceptor_OnUnregistered_" data-uid="Evergine.Framework.ContainerInterceptor.OnUnregistered*"></a>
-  <h4 id="Evergine_Framework_ContainerInterceptor_OnUnregistered_Type_" data-uid="Evergine.Framework.ContainerInterceptor.OnUnregistered(Type)">OnUnregistered(Type)</h4>
+  <h4 id="Evergine_Framework_ContainerInterceptor_OnUnregistered_System_Type_" data-uid="Evergine.Framework.ContainerInterceptor.OnUnregistered(System.Type)">OnUnregistered(Type)</h4>
   <div class="markdown level1 summary"><p>Called when a type assignable from <see param="type"></see> is unregistered from the container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -263,7 +294,7 @@ the specified type or any of its base types registered in the container.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The unregistered type.</p>
 </td>

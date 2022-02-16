@@ -102,14 +102,38 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Audio.html">Evergine.Common.Audio</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Audio_AudioBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class AudioBuffer : IDisposable, ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class AudioBuffer : ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -132,7 +156,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -156,7 +180,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -204,7 +228,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><p>The asset path.</p>
 </td>
       </tr>
@@ -253,7 +277,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
+        <td><span class="xref">System.Version</span></td>
         <td><p>The reader version.</p>
 </td>
       </tr>
@@ -318,7 +342,7 @@
     <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
   </div>
   <a id="Evergine_Common_Audio_AudioBuffer_Fill_" data-uid="Evergine.Common.Audio.AudioBuffer.Fill*"></a>
-  <h4 id="Evergine_Common_Audio_AudioBuffer_Fill_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_" data-uid="Evergine.Common.Audio.AudioBuffer.Fill(Stream,System.Int32,Evergine.Common.Audio.WaveFormat)">Fill(Stream, Int32, WaveFormat)</h4>
+  <h4 id="Evergine_Common_Audio_AudioBuffer_Fill_System_IO_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_" data-uid="Evergine.Common.Audio.AudioBuffer.Fill(System.IO.Stream,System.Int32,Evergine.Common.Audio.WaveFormat)">Fill(Stream, Int32, WaveFormat)</h4>
   <div class="markdown level1 summary"><p>Reads the bytes from the specified stream and writes them to audio buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -337,7 +361,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream from which the contents will be copied.</p>
 </td>
@@ -419,7 +443,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_AudioBuffer_FillAsync_" data-uid="Evergine.Common.Audio.AudioBuffer.FillAsync*"></a>
-  <h4 id="Evergine_Common_Audio_AudioBuffer_FillAsync_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_" data-uid="Evergine.Common.Audio.AudioBuffer.FillAsync(Stream,System.Int32,Evergine.Common.Audio.WaveFormat)">FillAsync(Stream, Int32, WaveFormat)</h4>
+  <h4 id="Evergine_Common_Audio_AudioBuffer_FillAsync_System_IO_Stream_System_Int32_Evergine_Common_Audio_WaveFormat_" data-uid="Evergine.Common.Audio.AudioBuffer.FillAsync(System.IO.Stream,System.Int32,Evergine.Common.Audio.WaveFormat)">FillAsync(Stream, Int32, WaveFormat)</h4>
   <div class="markdown level1 summary"><p>Asynchronously reads the bytes from the specified stream and writes them to audio buffer, using a specified buffer size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -438,7 +462,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The stream from which the contents will be copied.</p>
 </td>
@@ -468,14 +492,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>A task that represents the asynchronous copy operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_AudioBuffer_InternalFill_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFill*"></a>
-  <h4 id="Evergine_Common_Audio_AudioBuffer_InternalFill_Stream_System_Int32_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFill(Stream,System.Int32)">InternalFill(Stream, Int32)</h4>
+  <h4 id="Evergine_Common_Audio_AudioBuffer_InternalFill_System_IO_Stream_System_Int32_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFill(System.IO.Stream,System.Int32)">InternalFill(Stream, Int32)</h4>
   <div class="markdown level1 summary"><p>Fills the audio buffer with a specific stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -494,7 +518,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The source stream.</p>
 </td>
@@ -564,7 +588,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_AudioBuffer_InternalFillAsync_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFillAsync*"></a>
-  <h4 id="Evergine_Common_Audio_AudioBuffer_InternalFillAsync_Stream_System_Int32_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFillAsync(Stream,System.Int32)">InternalFillAsync(Stream, Int32)</h4>
+  <h4 id="Evergine_Common_Audio_AudioBuffer_InternalFillAsync_System_IO_Stream_System_Int32_" data-uid="Evergine.Common.Audio.AudioBuffer.InternalFillAsync(System.IO.Stream,System.Int32)">InternalFillAsync(Stream, Int32)</h4>
   <div class="markdown level1 summary"><p>Fills the audio buffer with a specific stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -583,7 +607,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The source stream.</p>
 </td>
@@ -606,7 +630,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>Awaitable task of the operation.</p>
 </td>
       </tr>
@@ -668,7 +692,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -678,7 +702,7 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

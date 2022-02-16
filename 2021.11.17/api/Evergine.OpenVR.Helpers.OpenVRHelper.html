@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">OpenVRHelper</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenVR.Helpers.html">Evergine.OpenVR.Helpers</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenVR.dll</h6>
   <h5 id="Evergine_OpenVR_Helpers_OpenVRHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class OpenVRHelper : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class OpenVRHelper</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -314,14 +345,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ButtonState</span></td>
+        <td><a class="xref" href="Evergine.Common.Input.ButtonState.html">ButtonState</a></td>
         <td><p>Pressed state on true value. Release otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_Valve_VR_HmdVector3_t_Vector3__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine(Valve.VR.HmdVector3_t,Vector3@)">ToEvergine(HmdVector3_t, out Vector3)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_Valve_VR_HmdVector3_t_Evergine_Mathematics_Vector3__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine(Valve.VR.HmdVector3_t,Evergine.Mathematics.Vector3@)">ToEvergine(HmdVector3_t, out Vector3)</h4>
   <div class="markdown level1 summary"><p>Converts a HmwVector3 to Wave Vector3.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -346,7 +377,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>Evergine Vector3.</p>
 </td>
@@ -354,7 +385,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_Valve_VR_HmdVector3_t__Vector3__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine(Valve.VR.HmdVector3_t@,Vector3@)">ToEvergine(ref HmdVector3_t, out Vector3)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToEvergine_Valve_VR_HmdVector3_t__Evergine_Mathematics_Vector3__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToEvergine(Valve.VR.HmdVector3_t@,Evergine.Mathematics.Vector3@)">ToEvergine(ref HmdVector3_t, out Vector3)</h4>
   <div class="markdown level1 summary"><p>Converts a HmwVector3 to Wave Vector3.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -379,7 +410,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>Evergine Vector3.</p>
 </td>
@@ -420,7 +451,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix34_t_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t,Matrix4x4@)">ToMatrix(HmdMatrix34_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix34_t_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t,Evergine.Mathematics.Matrix4x4@)">ToMatrix(HmdMatrix34_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Convert an ovrMatrix44f to a Wave Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -445,7 +476,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>Wave Matrix, based on the ovrMatrix4f.</p>
 </td>
@@ -453,7 +484,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix34_t__Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t@,Matrix4x4@)">ToMatrix(ref HmdMatrix34_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix34_t__Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t@,Evergine.Mathematics.Matrix4x4@)">ToMatrix(ref HmdMatrix34_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Convert an ovrMatrix34f to a Wave Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -478,7 +509,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>Wave Matrix, based on the ovrMatrix4f.</p>
 </td>
@@ -486,7 +517,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix44_t_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t,Matrix4x4@)">ToMatrix(HmdMatrix44_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix44_t_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t,Evergine.Mathematics.Matrix4x4@)">ToMatrix(HmdMatrix44_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Convert an ovrMatrix44f to a Wave Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -511,7 +542,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>Wave Matrix, based on the ovrMatrix4f.</p>
 </td>
@@ -519,7 +550,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix44_t__Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t@,Matrix4x4@)">ToMatrix(ref HmdMatrix44_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_HmdMatrix44_t__Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t@,Evergine.Mathematics.Matrix4x4@)">ToMatrix(ref HmdMatrix44_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Convert an ovrMatrix44f to a Wave Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -544,7 +575,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>Wave Matrix, based on the ovrMatrix4f.</p>
 </td>
@@ -552,7 +583,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_TrackedDevicePose_t_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t,Matrix4x4@)">ToMatrix(TrackedDevicePose_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToMatrix_Valve_VR_TrackedDevicePose_t_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t,Evergine.Mathematics.Matrix4x4@)">ToMatrix(TrackedDevicePose_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Converts Pose to Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -577,7 +608,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>Matrix output parameter.</p>
 </td>
@@ -585,7 +616,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToTextureType_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToTextureType*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToTextureType_GraphicsBackend_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToTextureType(GraphicsBackend)">ToTextureType(GraphicsBackend)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToTextureType_Evergine_Common_Graphics_GraphicsBackend_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToTextureType(Evergine.Common.Graphics.GraphicsBackend)">ToTextureType(GraphicsBackend)</h4>
   <div class="markdown level1 summary"><p>Converts graphics backend to Texture type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -604,7 +635,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GraphicsBackend</span></td>
+        <td><a class="xref" href="Evergine.Common.Graphics.GraphicsBackend.html">GraphicsBackend</a></td>
         <td><span class="parametername">backend</span></td>
         <td><p>Graphics backend.</p>
 </td>
@@ -704,7 +735,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToUInt_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToUInt*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToUInt_TextureSampleCount_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToUInt(TextureSampleCount)">ToUInt(TextureSampleCount)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToUInt_Evergine_Common_Graphics_TextureSampleCount_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToUInt(Evergine.Common.Graphics.TextureSampleCount)">ToUInt(TextureSampleCount)</h4>
   <div class="markdown level1 summary"><p>Converts the sample count to integer value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -723,7 +754,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TextureSampleCount</span></td>
+        <td><a class="xref" href="Evergine.Common.Graphics.TextureSampleCount.html">TextureSampleCount</a></td>
         <td><span class="parametername">sampleCount</span></td>
         <td><p>The sample count enumerate.</p>
 </td>
@@ -747,7 +778,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVRPose_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVRPose*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVRPose_Valve_VR_TrackedDevicePose_t_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t,Matrix4x4@)">ToVRPose(TrackedDevicePose_t, out Matrix4x4)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVRPose_Valve_VR_TrackedDevicePose_t_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t,Evergine.Mathematics.Matrix4x4@)">ToVRPose(TrackedDevicePose_t, out Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Converts TrackedDevicePose to Wave Matrix4x4.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -772,7 +803,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">pose</span></td>
         <td><p>Matrix output parameter.</p>
 </td>
@@ -780,7 +811,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVulkan_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVulkan*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVulkan_PixelFormat_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVulkan(PixelFormat)">ToVulkan(PixelFormat)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToVulkan_Evergine_Common_Graphics_PixelFormat_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToVulkan(Evergine.Common.Graphics.PixelFormat)">ToVulkan(PixelFormat)</h4>
   <div class="markdown level1 summary"><p>Converts the pixel format to Vulkan pixel format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -799,7 +830,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">PixelFormat</span></td>
+        <td><a class="xref" href="Evergine.Common.Graphics.PixelFormat.html">PixelFormat</a></td>
         <td><span class="parametername">pixelFormat</span></td>
         <td><p>The pixel format.</p>
 </td>
@@ -823,7 +854,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_Matrix4x4_Evergine_Framework_Graphics_ViewPose__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose(Matrix4x4,Evergine.Framework.Graphics.ViewPose@)">ToXRPose(Matrix4x4, out ViewPose)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_Evergine_Mathematics_Matrix4x4_Evergine_Framework_Graphics_ViewPose__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose(Evergine.Mathematics.Matrix4x4,Evergine.Framework.Graphics.ViewPose@)">ToXRPose(Matrix4x4, out ViewPose)</h4>
   <div class="markdown level1 summary"><p>Converts matrix to XR Pose.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -842,7 +873,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix.</p>
 </td>
@@ -856,7 +887,7 @@
     </tbody>
   </table>
   <a id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose*"></a>
-  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_Matrix4x4__Evergine_Framework_Graphics_ViewPose__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose(Matrix4x4@,Evergine.Framework.Graphics.ViewPose@)">ToXRPose(ref Matrix4x4, out ViewPose)</h4>
+  <h4 id="Evergine_OpenVR_Helpers_OpenVRHelper_ToXRPose_Evergine_Mathematics_Matrix4x4__Evergine_Framework_Graphics_ViewPose__" data-uid="Evergine.OpenVR.Helpers.OpenVRHelper.ToXRPose(Evergine.Mathematics.Matrix4x4@,Evergine.Framework.Graphics.ViewPose@)">ToXRPose(ref Matrix4x4, out ViewPose)</h4>
   <div class="markdown level1 summary"><p>Converts matrix to XR Pose.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -875,7 +906,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">matrix</span></td>
         <td><p>The matrix.</p>
 </td>

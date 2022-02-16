@@ -110,12 +110,6 @@
       <a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_UpdateRootPath_System_String_">AssetsDirectoryBase.UpdateRootPath(String)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_SearchOption_">AssetsDirectoryBase.EnumerateDirectories(String, String, SearchOption)</a>
-    </div>
-    <div>
-      <a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_System_String_System_String_SearchOption_">AssetsDirectoryBase.EnumerateFiles(String, String, SearchOption)</a>
-    </div>
-    <div>
       <a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_">AssetsDirectoryBase.EnumerateDirectories(String)</a>
     </div>
     <div>
@@ -132,6 +126,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_GetFullPath_System_String_">AssetsDirectoryBase.GetFullPath(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Platform.html">Evergine.Platform</a></h6>
@@ -182,7 +197,9 @@
   </h3>
   <a id="Evergine_Platform_AssetsDirectory_EnumerateDirectories_" data-uid="Evergine.Platform.AssetsDirectory.EnumerateDirectories*"></a>
   <h4 id="Evergine_Platform_AssetsDirectory_EnumerateDirectories_System_String_System_String_System_IO_SearchOption_" data-uid="Evergine.Platform.AssetsDirectory.EnumerateDirectories(System.String,System.String,System.IO.SearchOption)">EnumerateDirectories(String, String, SearchOption)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an enumerable collection of subdirectories that match the specified search pattern in the specified
+relative path in the assets directory, and optionally searches subdirectories.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -201,12 +218,15 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The relative path in the assets directory.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">searchPattern</span></td>
-        <td></td>
+        <td><p>The search string to match against the names of files in path. This parameter can contain a combination of
+valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.IO.SearchOption</span></td>
@@ -226,13 +246,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>An enumerable collection of subdirectories the specified relative path in the assets directory that match
+the specified criteria, or an empty enumerable collection if no directories are found.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_System_IO_SearchOption_">AssetsDirectoryBase.EnumerateDirectories(String, String, SearchOption)</a></div>
+  <h5 id="Evergine_Platform_AssetsDirectory_EnumerateDirectories_System_String_System_String_System_IO_SearchOption__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If an existing directory is empty, it will be discarded in the enumerable collection.</p>
+</div>
   <a id="Evergine_Platform_AssetsDirectory_EnumerateFiles_" data-uid="Evergine.Platform.AssetsDirectory.EnumerateFiles*"></a>
   <h4 id="Evergine_Platform_AssetsDirectory_EnumerateFiles_System_String_System_String_System_IO_SearchOption_" data-uid="Evergine.Platform.AssetsDirectory.EnumerateFiles(System.String,System.String,System.IO.SearchOption)">EnumerateFiles(String, String, SearchOption)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the names of files that match the specified search pattern in the specified relative path in the
+assets directory, and optionally searches subdirectories.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,12 +280,15 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The relative path in the assets directory.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">searchPattern</span></td>
-        <td></td>
+        <td><p>The search string to match against the names of files in path. This parameter can contain a combination of
+valid literal path and wildcard (* and ?) characters, but it doesn't support regular expressions.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.IO.SearchOption</span></td>
@@ -276,13 +308,18 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>An enumerable collection of names for the files in the specified relative path in the assets directory that
+match the specified criteria, or an empty enumerable collection if no directories are found.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_System_String_System_String_System_IO_SearchOption_">AssetsDirectoryBase.EnumerateFiles(String, String, SearchOption)</a></div>
   <a id="Evergine_Platform_AssetsDirectory_Exists_" data-uid="Evergine.Platform.AssetsDirectory.Exists*"></a>
   <h4 id="Evergine_Platform_AssetsDirectory_Exists_System_String_" data-uid="Evergine.Platform.AssetsDirectory.Exists(System.String)">Exists(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified asset file exists.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -301,7 +338,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The asset file path to check.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -316,13 +354,17 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if the assets directory contains the specified file name; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_Exists_System_String_">AssetsDirectoryBase.Exists(String)</a></div>
   <a id="Evergine_Platform_AssetsDirectory_Open_" data-uid="Evergine.Platform.AssetsDirectory.Open*"></a>
   <h4 id="Evergine_Platform_AssetsDirectory_Open_System_String_" data-uid="Evergine.Platform.AssetsDirectory.Open(System.String)">Open(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Opens the specified asset file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -341,7 +383,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The relative path to the asset file.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -356,10 +399,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.IO.AssetStream.html">AssetStream</a></td>
-        <td></td>
+        <td><p>The result.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.IO.AssetsDirectoryBase.html#Evergine_Common_IO_AssetsDirectoryBase_Open_System_String_">AssetsDirectoryBase.Open(String)</a></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

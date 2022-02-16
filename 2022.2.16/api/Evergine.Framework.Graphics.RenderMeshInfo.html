@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></div>
     <div class="level3"><span class="xref">RenderMeshInfo</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -149,12 +153,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_RenderMeshInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RenderMeshInfo : RenderObjectInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public class RenderMeshInfo : RenderObjectInfo, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -192,7 +217,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_RenderMeshInfo__ctor_" data-uid="Evergine.Framework.Graphics.RenderMeshInfo.#ctor*"></a>
-  <h4 id="Evergine_Framework_Graphics_RenderMeshInfo__ctor_Evergine_Framework_Graphics_Mesh_Evergine_Framework_Graphics_Material_System_Nullable_Matrix4x4__" data-uid="Evergine.Framework.Graphics.RenderMeshInfo.#ctor(Evergine.Framework.Graphics.Mesh,Evergine.Framework.Graphics.Material,System.Nullable{Matrix4x4})">RenderMeshInfo(Mesh, Material, Nullable&lt;Matrix4x4&gt;)</h4>
+  <h4 id="Evergine_Framework_Graphics_RenderMeshInfo__ctor_Evergine_Framework_Graphics_Mesh_Evergine_Framework_Graphics_Material_System_Nullable_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.Framework.Graphics.RenderMeshInfo.#ctor(Evergine.Framework.Graphics.Mesh,Evergine.Framework.Graphics.Material,System.Nullable{Evergine.Mathematics.Matrix4x4})">RenderMeshInfo(Mesh, Material, Nullable&lt;Matrix4x4&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.Graphics.RenderMeshInfo.html">RenderMeshInfo</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -223,7 +248,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Matrix4x4</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>&gt;</td>
         <td><span class="parametername">rootInverseBindPose</span></td>
         <td><p>The root inverse matrix pose.</p>
 </td>
@@ -273,7 +298,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.MaterialResourcesCacheEntry.html">MaterialResourcesCacheEntry</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.MaterialResourcesCacheEntry.html">MaterialResourcesCacheEntry</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -607,7 +632,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Matrix4x4</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -756,6 +781,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

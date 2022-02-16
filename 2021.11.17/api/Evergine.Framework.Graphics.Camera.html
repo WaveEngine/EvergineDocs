@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -186,7 +193,28 @@ Cameras are the devices that capture and display the world to the player.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -295,7 +323,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -318,7 +346,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -433,7 +461,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Matrix4x4</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -789,7 +817,8 @@ Cameras are the devices that capture and display the world to the player.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GraphicsPresenter graphicsPresenter</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected GraphicsPresenter graphicsPresenter</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -824,7 +853,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -870,7 +899,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -985,7 +1014,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1008,7 +1037,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1031,7 +1060,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1054,7 +1083,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1065,7 +1094,8 @@ Cameras are the devices that capture and display the world to the player.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected RenderManager RenderManager</code></pre>
+    <pre><code class="lang-csharp hljs">[BindSceneManager(false, true)]
+protected RenderManager RenderManager</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1100,7 +1130,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1123,7 +1153,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1192,7 +1222,7 @@ Cameras are the devices that capture and display the world to the player.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1311,7 +1341,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1334,7 +1364,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1357,7 +1387,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1380,7 +1410,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1403,7 +1433,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1449,7 +1479,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1518,7 +1548,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1541,7 +1571,7 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1578,7 +1608,8 @@ In other case, the ResolvedFrameBuffer is obtained from the Display.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Aperture { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Aperture&quot;, Tooltip = &quot;The aperture of the camera in f-stops (Default f/16)&quot;)]
+public float Aperture { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1693,7 +1724,7 @@ In addition to the exposition, the aperture setting controls the depth of field.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1753,7 +1784,8 @@ In addition to the exposition, the aperture setting controls the depth of field.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float ClearDepth { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsFInput(MinLimit = 0F, MaxLimit = 1F)]
+public float ClearDepth { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1825,7 +1857,8 @@ In addition to the exposition, the aperture setting controls the depth of field.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Compensation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Compensation&quot;, Tooltip = &quot;&quot;)]
+public float Compensation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1894,7 +1927,7 @@ closing down the aperture of the lens (or reducing shutter speed or reducing sen
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Matrix4x4</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2099,7 +2132,8 @@ closing down the aperture of the lens (or reducing shutter speed or reducing sen
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float FieldOfView { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(typeof(FloatRadianToDegreeConverter), CustomPropertyName = &quot;Field of View&quot;, Tooltip = &quot;The field of view of the camera in radians.&quot;)]
+public virtual float FieldOfView { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2198,7 +2232,8 @@ Larger values give a narrower field of view.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float FocalLength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Focal Length&quot;, Tooltip = &quot;The simulated distance between the lens and the sensor of the camera. Larger values give a narrower field of view&quot;)]
+public float FocalLength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2356,7 +2391,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2404,7 +2439,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><p>The layers dictionary.</p>
 </td>
       </tr>
@@ -2526,7 +2561,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector4.html">Vector4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -2550,7 +2585,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -2574,7 +2609,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -2598,7 +2633,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -2622,7 +2657,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -2671,7 +2706,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2695,7 +2730,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2719,7 +2754,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2743,7 +2778,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The projection matrix.</p>
 </td>
       </tr>
@@ -2768,7 +2803,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2816,7 +2851,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The render projection matrix.</p>
 </td>
       </tr>
@@ -2841,7 +2876,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2865,7 +2900,7 @@ Larger values give a narrower field of view.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2877,7 +2912,8 @@ Larger values give a narrower field of view.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Sensitivity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Sensitivity&quot;, Tooltip = &quot;The camera sensitivity, expressed in ISO (Default 100)&quot;)]
+public float Sensitivity { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2906,7 +2942,8 @@ In addition to the exposition, the sensitivity setting controls the amount of no
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 SensorSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Sensor Size&quot;, Tooltip = &quot;The size of the camera sensor in milimeters (Default: 36x24 mm)&quot;)]
+public Vector2 SensorSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2918,7 +2955,7 @@ In addition to the exposition, the sensitivity setting controls the amount of no
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2930,7 +2967,8 @@ In addition to the exposition, the sensitivity setting controls the amount of no
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float ShutterSpeed { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Shutter Speed&quot;, Tooltip = &quot;The shutter speed of the camera in seconds (Default 1/125 seconds)&quot;)]
+public float ShutterSpeed { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3019,7 +3057,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3043,7 +3081,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3067,7 +3105,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3079,7 +3117,8 @@ Indicate the speed exposure adaptation.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UsePhysicalParameters { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 1, CustomPropertyName = &quot;Use Physical Parameters&quot;, Tooltip = &quot;Indicating whether the FOV and Exposure will be calculate with physical camera parameters&quot;)]
+public bool UsePhysicalParameters { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3115,7 +3154,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3139,7 +3178,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3187,7 +3226,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3211,7 +3250,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3219,7 +3258,7 @@ Indicate the speed exposure adaptation.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Graphics_Camera_AddAdditionalDirectives_" data-uid="Evergine.Framework.Graphics.Camera.AddAdditionalDirectives*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_AddAdditionalDirectives_List_System_String__" data-uid="Evergine.Framework.Graphics.Camera.AddAdditionalDirectives(List{System.String})">AddAdditionalDirectives(List&lt;String&gt;)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_AddAdditionalDirectives_System_Collections_Generic_List_System_String__" data-uid="Evergine.Framework.Graphics.Camera.AddAdditionalDirectives(System.Collections.Generic.List{System.String})">AddAdditionalDirectives(List&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Set additional directives.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3238,7 +3277,7 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">directiveList</span></td>
         <td><p>the directive list.</p>
 </td>
@@ -3246,7 +3285,7 @@ Indicate the speed exposure adaptation.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_CalculateRay_" data-uid="Evergine.Framework.Graphics.Camera.CalculateRay*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_CalculateRay_Vector2__Ray__" data-uid="Evergine.Framework.Graphics.Camera.CalculateRay(Vector2@,Ray@)">CalculateRay(ref Vector2, out Ray)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_CalculateRay_Evergine_Mathematics_Vector2__Evergine_Mathematics_Ray__" data-uid="Evergine.Framework.Graphics.Camera.CalculateRay(Evergine.Mathematics.Vector2@,Evergine.Mathematics.Ray@)">CalculateRay(ref Vector2, out Ray)</h4>
   <div class="markdown level1 summary"><p>Calculate a Ray of a camera from a given 2D screen position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3265,13 +3304,13 @@ Indicate the speed exposure adaptation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">screenPosition</span></td>
         <td><p>2D screen position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Ray</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Ray.html">Ray</a></td>
         <td><span class="parametername">ray</span></td>
         <td><p>The ray position.</p>
 </td>
@@ -3425,7 +3464,7 @@ Indicate the speed exposure adaptation.</p>
     <pre><code class="lang-csharp hljs">public void ResetCustomProjection()</code></pre>
   </div>
   <a id="Evergine_Framework_Graphics_Camera_ScreenToWorld_" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_ScreenToWorld_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld(Vector3@)">ScreenToWorld(ref Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_ScreenToWorld_Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld(Evergine.Mathematics.Vector3@)">ScreenToWorld(ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
 provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
 Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
@@ -3447,7 +3486,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
 </td>
@@ -3464,14 +3503,14 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><p>The world space <a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a> created by converting the screen space point at the provided distance z from the camera plane.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_ScreenToWorld_" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_ScreenToWorld_Vector3__Vector3__" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld(Vector3@,Vector3@)">ScreenToWorld(ref Vector3, out Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_ScreenToWorld_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.ScreenToWorld(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@)">ScreenToWorld(ref Vector3, out Vector3)</h4>
   <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
 provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
 Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
@@ -3493,21 +3532,21 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">result</span></td>
-        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
+        <td><p>The world space <a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a> created by converting the screen space point at the provided distance z from the camera plane.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_SetCustomProjection_" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4_" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection(Matrix4x4)">SetCustomProjection(Matrix4x4)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_SetCustomProjection_Evergine_Mathematics_Matrix4x4_" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection(Evergine.Mathematics.Matrix4x4)">SetCustomProjection(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Specify a custom projection to that camera. This methods override the default projection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3526,7 +3565,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">customProjection</span></td>
         <td><p>The new custom projection.</p>
 </td>
@@ -3534,7 +3573,7 @@ The z position is in world units from the camera.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_SetCustomProjection_" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4__" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection(Matrix4x4@)">SetCustomProjection(ref Matrix4x4)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_SetCustomProjection_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.Framework.Graphics.Camera.SetCustomProjection(Evergine.Mathematics.Matrix4x4@)">SetCustomProjection(ref Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Specify a custom projection to that camera. This methods override the default projection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3553,7 +3592,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">customProjection</span></td>
         <td><p>The new custom projection.</p>
 </td>
@@ -3606,7 +3645,7 @@ The z position is in world units from the camera.</p>
     <pre><code class="lang-csharp hljs">protected void UnsuscribeDisplayEvents()</code></pre>
   </div>
   <a id="Evergine_Framework_Graphics_Camera_UpdateJittering_" data-uid="Evergine.Framework.Graphics.Camera.UpdateJittering*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_UpdateJittering_Matrix4x4__" data-uid="Evergine.Framework.Graphics.Camera.UpdateJittering(Matrix4x4@)">UpdateJittering(ref Matrix4x4)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_UpdateJittering_Evergine_Mathematics_Matrix4x4__" data-uid="Evergine.Framework.Graphics.Camera.UpdateJittering(Evergine.Mathematics.Matrix4x4@)">UpdateJittering(ref Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>If temporal Anti-aliasing is enabled in drawcontext update de camera projection matrix and remove the jittering whether not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3625,7 +3664,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">projectionMatrix</span></td>
         <td><p>Camera Projection matrix (Stereo or  Simple).</p>
 </td>
@@ -3682,7 +3721,7 @@ The z position is in world units from the camera.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_WorldToScreen_" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_WorldToScreen_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen(Vector3@)">WorldToScreen(ref Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_WorldToScreen_Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen(Evergine.Mathematics.Vector3@)">WorldToScreen(ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
 Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
 The z position is in world units from the camera.</p>
@@ -3703,7 +3742,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>A world space position.</p>
 </td>
@@ -3720,14 +3759,14 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><p>The screen space point <a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a> created by converting the world space position.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Camera_WorldToScreen_" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera_WorldToScreen_Vector3__Vector3__" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen(Vector3@,Vector3@)">WorldToScreen(ref Vector3, out Vector3)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera_WorldToScreen_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Graphics.Camera.WorldToScreen(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@)">WorldToScreen(ref Vector3, out Vector3)</h4>
   <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
 Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
 The z position is in world units from the camera.</p>
@@ -3748,15 +3787,15 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>A world space position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">result</span></td>
-        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
+        <td><p>The screen space point <a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a> created by converting the world space position.</p>
 </td>
       </tr>
     </tbody>
@@ -3781,7 +3820,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Single</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -3804,7 +3843,7 @@ The z position is in world units from the camera.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.RenderPath.html">RenderPath</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.RenderPath.html">RenderPath</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

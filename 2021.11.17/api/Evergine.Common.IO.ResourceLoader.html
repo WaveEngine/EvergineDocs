@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ResourceLoader</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.IO.html">Evergine.Common.IO</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_IO_ResourceLoader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ResourceLoader : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ResourceLoader</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_IO_ResourceLoader_EmbeddedResourceExists_" data-uid="Evergine.Common.IO.ResourceLoader.EmbeddedResourceExists*"></a>
-  <h4 id="Evergine_Common_IO_ResourceLoader_EmbeddedResourceExists_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.EmbeddedResourceExists(Assembly,System.String)">EmbeddedResourceExists(Assembly, String)</h4>
+  <h4 id="Evergine_Common_IO_ResourceLoader_EmbeddedResourceExists_System_Reflection_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.EmbeddedResourceExists(System.Reflection.Assembly,System.String)">EmbeddedResourceExists(Assembly, String)</h4>
   <div class="markdown level1 summary"><p>Embeddeds the resource exists.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -118,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">targetAssembly</span></td>
         <td><p>The target assembly.</p>
 </td>
@@ -148,7 +179,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceData_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceData*"></a>
-  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceData_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceData(Assembly,System.String)">GetEmbeddedResourceData(Assembly, String)</h4>
+  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceData_System_Reflection_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceData(System.Reflection.Assembly,System.String)">GetEmbeddedResourceData(Assembly, String)</h4>
   <div class="markdown level1 summary"><p>Gets the embedded resource data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -167,7 +198,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">targetAssembly</span></td>
         <td><p>The assembly.</p>
 </td>
@@ -197,7 +228,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceStream_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceStream*"></a>
-  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceStream_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceStream(Assembly,System.String)">GetEmbeddedResourceStream(Assembly, String)</h4>
+  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedResourceStream_System_Reflection_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedResourceStream(System.Reflection.Assembly,System.String)">GetEmbeddedResourceStream(Assembly, String)</h4>
   <div class="markdown level1 summary"><p>Gets the embedded resource stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -216,7 +247,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">targetAssembly</span></td>
         <td><p>The assembly.</p>
 </td>
@@ -239,14 +270,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>Resource stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_IO_ResourceLoader_GetEmbeddedTextFile_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedTextFile*"></a>
-  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedTextFile_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedTextFile(Assembly,System.String)">GetEmbeddedTextFile(Assembly, String)</h4>
+  <h4 id="Evergine_Common_IO_ResourceLoader_GetEmbeddedTextFile_System_Reflection_Assembly_System_String_" data-uid="Evergine.Common.IO.ResourceLoader.GetEmbeddedTextFile(System.Reflection.Assembly,System.String)">GetEmbeddedTextFile(Assembly, String)</h4>
   <div class="markdown level1 summary"><p>Gets the embedded text file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -265,7 +296,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">targetAssembly</span></td>
         <td><p>The assembly.</p>
 </td>

@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -187,7 +194,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_IWorkActionSet_WaitPredicate_" data-uid="Evergine.Components.WorkActions.IWorkActionSet.WaitPredicate*"></a>
-  <h4 id="Evergine_Components_WorkActions_IWorkActionSet_WaitPredicate_Func_System_Boolean_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.IWorkActionSet.WaitPredicate(Func{System.Boolean,Evergine.Framework.Services.IWorkAction[]})">WaitPredicate(Func&lt;Boolean, IWorkAction[]&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_IWorkActionSet_WaitPredicate_System_Func_System_Boolean_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.IWorkActionSet.WaitPredicate(System.Func{System.Boolean,Evergine.Framework.Services.IWorkAction[]})">WaitPredicate(Func&lt;Boolean, IWorkAction[]&gt;)</h4>
   <div class="markdown level1 summary"><p>Waits the predicate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -206,7 +213,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>, <a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>[]&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>, <a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>[]&gt;</td>
         <td><span class="parametername">waitingTaskPredicate</span></td>
         <td><p>The waiting task predicate.</p>
 </td>

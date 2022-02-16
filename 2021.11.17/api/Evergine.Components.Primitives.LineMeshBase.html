@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -226,7 +233,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Primitives.html">Evergine.Components.Primitives</a></h6>
@@ -254,7 +282,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GraphicsContext graphicsContext</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected GraphicsContext graphicsContext</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,7 +364,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Components.Primitives.LinePointInfo.html">LinePointInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Components.Primitives.LinePointInfo.html">LinePointInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -384,7 +413,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">BoundingBox</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
         <td><p>The bounding box.</p>
 </td>
       </tr>
@@ -453,7 +482,8 @@ See <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> for
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsCameraAligned { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Is Camera Aligned&quot;, Tooltip = &quot;Indicates whether the line will be oriented to the camera&quot;)]
+public bool IsCameraAligned { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -529,7 +559,8 @@ See <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> for
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 TexcoordOffset { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Texture Coordinate Offset&quot;, Tooltip = &quot;Texture coordinate offset&quot;)]
+public Vector2 TexcoordOffset { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,7 +572,7 @@ See <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> for
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -553,7 +584,8 @@ See <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> for
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 TextureTiling { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Texture Tiling&quot;, Tooltip = &quot;Sets the tiling for the texture [U,V] coordinates&quot;)]
+public Vector2 TextureTiling { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -565,7 +597,7 @@ See <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> for
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -578,7 +610,8 @@ the <a class="xref" href="Evergine.Framework.Graphics.Transform3D.html">Transfor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseWorldSpace { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Use World Space&quot;, Tooltip = &quot;Indicates whether the points are considered as world space coordinates&quot;)]
+public bool UseWorldSpace { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

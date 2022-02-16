@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -482,25 +489,25 @@ Cameras are the devices that capture and display the world to the player.</p>
       <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_JitteringEnabled">Camera.JitteringEnabled</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_CalculateRay_Vector2__Ray__">Camera.CalculateRay(Vector2, Ray)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_CalculateRay_Evergine_Mathematics_Vector2__Evergine_Mathematics_Ray__">Camera.CalculateRay(Vector2, Ray)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_WorldToScreen_Vector3__">Camera.WorldToScreen(Vector3)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_WorldToScreen_Evergine_Mathematics_Vector3__">Camera.WorldToScreen(Vector3)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_WorldToScreen_Vector3__Vector3__">Camera.WorldToScreen(Vector3, Vector3)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_WorldToScreen_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__">Camera.WorldToScreen(Vector3, Vector3)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ScreenToWorld_Vector3__">Camera.ScreenToWorld(Vector3)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ScreenToWorld_Evergine_Mathematics_Vector3__">Camera.ScreenToWorld(Vector3)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ScreenToWorld_Vector3__Vector3__">Camera.ScreenToWorld(Vector3, Vector3)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ScreenToWorld_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__">Camera.ScreenToWorld(Vector3, Vector3)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4__">Camera.SetCustomProjection(Matrix4x4)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SetCustomProjection_Evergine_Mathematics_Matrix4x4__">Camera.SetCustomProjection(Matrix4x4)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4_">Camera.SetCustomProjection(Matrix4x4)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SetCustomProjection_Evergine_Mathematics_Matrix4x4_">Camera.SetCustomProjection(Matrix4x4)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ResetCustomProjection">Camera.ResetCustomProjection()</a>
@@ -539,13 +546,13 @@ Cameras are the devices that capture and display the world to the player.</p>
       <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SetStereoProperties_Evergine_Framework_Graphics_ViewProperties___">Camera.SetStereoProperties(ViewProperties[])</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_AddAdditionalDirectives_List_System_String__">Camera.AddAdditionalDirectives(List&lt;String&gt;)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_AddAdditionalDirectives_System_Collections_Generic_List_System_String__">Camera.AddAdditionalDirectives(List&lt;String&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_RefreshPhysicalFieldOfView">Camera.RefreshPhysicalFieldOfView()</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_UpdateJittering_Matrix4x4__">Camera.UpdateJittering(Matrix4x4)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_UpdateJittering_Evergine_Mathematics_Matrix4x4__">Camera.UpdateJittering(Matrix4x4)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_Owner">Component.Owner</a>
@@ -629,7 +636,28 @@ Cameras are the devices that capture and display the world to the player.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -771,7 +799,7 @@ Such values are percentages where 1 means the 100% of the rectangle's width/heig
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -853,7 +881,7 @@ Such values are percentages where 1 means the 100% of the rectangle's width/heig
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_RefreshView">Camera.RefreshView()</a></div>
   <a id="Evergine_Framework_Graphics_Camera2D_Unproject_" data-uid="Evergine.Framework.Graphics.Camera2D.Unproject*"></a>
-  <h4 id="Evergine_Framework_Graphics_Camera2D_Unproject_Vector2__Vector2__" data-uid="Evergine.Framework.Graphics.Camera2D.Unproject(Vector2@,Vector2@)">Unproject(ref Vector2, out Vector2)</h4>
+  <h4 id="Evergine_Framework_Graphics_Camera2D_Unproject_Evergine_Mathematics_Vector2__Evergine_Mathematics_Vector2__" data-uid="Evergine.Framework.Graphics.Camera2D.Unproject(Evergine.Mathematics.Vector2@,Evergine.Mathematics.Vector2@)">Unproject(ref Vector2, out Vector2)</h4>
   <div class="markdown level1 summary"><p>Unprojects the specified source.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -872,13 +900,13 @@ Such values are percentages where 1 means the 100% of the rectangle's width/heig
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">source</span></td>
         <td><p>The source.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>Unprojected position.</p>
 </td>

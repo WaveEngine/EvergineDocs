@@ -94,7 +94,19 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IEquatable</span>&lt;<a class="xref" href="Evergine.Mathematics.Plane.html">Plane</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Evergine.Mathematics.Plane.html">Plane</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Mathematics.html">Evergine.Mathematics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Mathematics.dll</h6>
@@ -614,7 +626,7 @@
   </table>
   <a id="Evergine_Mathematics_Plane_Equals_" data-uid="Evergine.Mathematics.Plane.Equals*"></a>
   <h4 id="Evergine_Mathematics_Plane_Equals_System_Object_" data-uid="Evergine.Mathematics.Plane.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -634,7 +646,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -650,11 +662,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <a id="Evergine_Mathematics_Plane_GetHashCode_" data-uid="Evergine.Mathematics.Plane.GetHashCode*"></a>
   <h4 id="Evergine_Mathematics_Plane_GetHashCode" data-uid="Evergine.Mathematics.Plane.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
@@ -680,6 +694,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Evergine_Mathematics_Plane_Intersects_" data-uid="Evergine.Mathematics.Plane.Intersects*"></a>
   <h4 id="Evergine_Mathematics_Plane_Intersects_Evergine_Mathematics_BoundingBox_" data-uid="Evergine.Mathematics.Plane.Intersects(Evergine.Mathematics.BoundingBox)">Intersects(BoundingBox)</h4>
   <div class="markdown level1 summary"><p>Intersectses the specified box.</p>
@@ -1124,7 +1140,7 @@
   </table>
   <a id="Evergine_Mathematics_Plane_ToString_" data-uid="Evergine.Mathematics.Plane.ToString*"></a>
   <h4 id="Evergine_Mathematics_Plane_ToString" data-uid="Evergine.Mathematics.Plane.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a <see cref="!:System.String"></see> that represents this instance.</p>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1142,11 +1158,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <see cref="!:System.String"></see> that represents this instance.</p>
+        <td><p>A <span class="xref">System.String</span> that represents this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
   <a id="Evergine_Mathematics_Plane_Transform_" data-uid="Evergine.Mathematics.Plane.Transform*"></a>
   <h4 id="Evergine_Mathematics_Plane_Transform_Evergine_Mathematics_Plane_Evergine_Mathematics_Matrix4x4_" data-uid="Evergine.Mathematics.Plane.Transform(Evergine.Mathematics.Plane,Evergine.Mathematics.Matrix4x4)">Transform(Plane, Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Transforms the specified plane.</p>
@@ -1425,7 +1443,14 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IEquatable&lt;&gt;</span>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

@@ -97,22 +97,47 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">VKHelpers</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vulkan.html">Evergine.Vulkan</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Vulkan.dll</h6>
   <h5 id="Evergine_Vulkan_VKHelpers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VKHelpers : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class VKHelpers</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Vulkan_VKHelpers_CheckErrors_" data-uid="Evergine.Vulkan.VKHelpers.CheckErrors*"></a>
-  <h4 id="Evergine_Vulkan_VKHelpers_CheckErrors_Evergine_Common_Graphics_GraphicsContext_VkResult_" data-uid="Evergine.Vulkan.VKHelpers.CheckErrors(Evergine.Common.Graphics.GraphicsContext,VkResult)">CheckErrors(GraphicsContext, VkResult)</h4>
+  <h4 id="Evergine_Vulkan_VKHelpers_CheckErrors_Evergine_Common_Graphics_GraphicsContext_WaveEngine_Bindings_Vulkan_VkResult_" data-uid="Evergine.Vulkan.VKHelpers.CheckErrors(Evergine.Common.Graphics.GraphicsContext,WaveEngine.Bindings.Vulkan.VkResult)">CheckErrors(GraphicsContext, VkResult)</h4>
   <div class="markdown level1 summary"><p>Check errors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CheckErrors(GraphicsContext context, VkResult result)</code></pre>
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void CheckErrors(GraphicsContext context, VkResult result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +156,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">VkResult</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkResult</span></td>
         <td><span class="parametername">result</span></td>
         <td><p>The result of last operation.</p>
 </td>
@@ -225,7 +250,7 @@
     </tbody>
   </table>
   <a id="Evergine_Vulkan_VKHelpers_FindMemoryType_" data-uid="Evergine.Vulkan.VKHelpers.FindMemoryType*"></a>
-  <h4 id="Evergine_Vulkan_VKHelpers_FindMemoryType_Evergine_Vulkan_VKGraphicsContext_System_UInt32_VkMemoryPropertyFlags_" data-uid="Evergine.Vulkan.VKHelpers.FindMemoryType(Evergine.Vulkan.VKGraphicsContext,System.UInt32,VkMemoryPropertyFlags)">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</h4>
+  <h4 id="Evergine_Vulkan_VKHelpers_FindMemoryType_Evergine_Vulkan_VKGraphicsContext_System_UInt32_WaveEngine_Bindings_Vulkan_VkMemoryPropertyFlags_" data-uid="Evergine.Vulkan.VKHelpers.FindMemoryType(Evergine.Vulkan.VKGraphicsContext,System.UInt32,WaveEngine.Bindings.Vulkan.VkMemoryPropertyFlags)">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</h4>
   <div class="markdown level1 summary"><p>Find a memory type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -256,7 +281,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">VkMemoryPropertyFlags</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkMemoryPropertyFlags</span></td>
         <td><span class="parametername">properties</span></td>
         <td><p>The memory properties.</p>
 </td>
@@ -348,7 +373,7 @@
     </tbody>
   </table>
   <a id="Evergine_Vulkan_VKHelpers_GetMemoryType_" data-uid="Evergine.Vulkan.VKHelpers.GetMemoryType*"></a>
-  <h4 id="Evergine_Vulkan_VKHelpers_GetMemoryType_VkPhysicalDeviceMemoryProperties_System_UInt32_" data-uid="Evergine.Vulkan.VKHelpers.GetMemoryType(VkPhysicalDeviceMemoryProperties,System.UInt32)">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</h4>
+  <h4 id="Evergine_Vulkan_VKHelpers_GetMemoryType_WaveEngine_Bindings_Vulkan_VkPhysicalDeviceMemoryProperties_System_UInt32_" data-uid="Evergine.Vulkan.VKHelpers.GetMemoryType(WaveEngine.Bindings.Vulkan.VkPhysicalDeviceMemoryProperties,System.UInt32)">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</h4>
   <div class="markdown level1 summary"><p>Gets the memory type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -367,7 +392,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceMemoryProperties</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceMemoryProperties</span></td>
         <td><span class="parametername">memoryProperties</span></td>
         <td><p>The device memory properties.</p>
 </td>
@@ -390,7 +415,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkMemoryType</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkMemoryType</span></td>
         <td><p>The result memory type.</p>
 </td>
       </tr>
@@ -476,7 +501,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkTransformMatrixKHR</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkTransformMatrixKHR</span></td>
         <td><p>The Vulkan transform matrix.</p>
 </td>
       </tr>

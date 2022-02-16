@@ -95,18 +95,135 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AssetStream</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">System.IO.Stream</span></div>
+    <div class="level3"><span class="xref">AssetStream</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IO.Stream.Null</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CreateWaitHandle()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndRead(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndWrite(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ObjectInvariant()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadByte()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Synchronized(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteByte(System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CanTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.IO.html">Evergine.Common.IO</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_IO_AssetStream_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssetStream : Stream</code></pre>
+    <pre><code class="lang-csharp hljs">public class AssetStream : Stream, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Common_IO_AssetStream__ctor_" data-uid="Evergine.Common.IO.AssetStream.#ctor*"></a>
-  <h4 id="Evergine_Common_IO_AssetStream__ctor_System_String_Stream_" data-uid="Evergine.Common.IO.AssetStream.#ctor(System.String,Stream)">AssetStream(String, Stream)</h4>
+  <h4 id="Evergine_Common_IO_AssetStream__ctor_System_String_System_IO_Stream_" data-uid="Evergine.Common.IO.AssetStream.#ctor(System.String,System.IO.Stream)">AssetStream(String, Stream)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Common.IO.AssetStream.html">AssetStream</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -131,7 +248,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The asset stream.</p>
 </td>
@@ -139,7 +256,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_IO_AssetStream__ctor_" data-uid="Evergine.Common.IO.AssetStream.#ctor*"></a>
-  <h4 id="Evergine_Common_IO_AssetStream__ctor_System_String_Stream_System_Boolean_" data-uid="Evergine.Common.IO.AssetStream.#ctor(System.String,Stream,System.Boolean)">AssetStream(String, Stream, Boolean)</h4>
+  <h4 id="Evergine_Common_IO_AssetStream__ctor_System_String_System_IO_Stream_System_Boolean_" data-uid="Evergine.Common.IO.AssetStream.#ctor(System.String,System.IO.Stream,System.Boolean)">AssetStream(String, Stream, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Common.IO.AssetStream.html">AssetStream</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -164,7 +281,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
         <td><p>The asset stream.</p>
 </td>
@@ -202,6 +319,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanRead</span></div>
   <a id="Evergine_Common_IO_AssetStream_CanSeek_" data-uid="Evergine.Common.IO.AssetStream.CanSeek*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_CanSeek" data-uid="Evergine.Common.IO.AssetStream.CanSeek">CanSeek</h4>
   <div class="markdown level1 summary"></div>
@@ -225,6 +344,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanSeek</span></div>
   <a id="Evergine_Common_IO_AssetStream_CanWrite_" data-uid="Evergine.Common.IO.AssetStream.CanWrite*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_CanWrite" data-uid="Evergine.Common.IO.AssetStream.CanWrite">CanWrite</h4>
   <div class="markdown level1 summary"></div>
@@ -248,6 +369,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanWrite</span></div>
   <a id="Evergine_Common_IO_AssetStream_Length_" data-uid="Evergine.Common.IO.AssetStream.Length*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_Length" data-uid="Evergine.Common.IO.AssetStream.Length">Length</h4>
   <div class="markdown level1 summary"></div>
@@ -271,6 +394,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Length</span></div>
   <a id="Evergine_Common_IO_AssetStream_Path_" data-uid="Evergine.Common.IO.AssetStream.Path*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_Path" data-uid="Evergine.Common.IO.AssetStream.Path">Path</h4>
   <div class="markdown level1 summary"><p>Gets the asset path.</p>
@@ -318,6 +443,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Position</span></div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_IO_AssetStream_Dispose_" data-uid="Evergine.Common.IO.AssetStream.Dispose*"></a>
@@ -345,6 +472,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Dispose(System.Boolean)</span></div>
   <a id="Evergine_Common_IO_AssetStream_Flush_" data-uid="Evergine.Common.IO.AssetStream.Flush*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_Flush" data-uid="Evergine.Common.IO.AssetStream.Flush">Flush()</h4>
   <div class="markdown level1 summary"></div>
@@ -353,6 +482,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Flush()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Flush()</span></div>
   <a id="Evergine_Common_IO_AssetStream_Read_" data-uid="Evergine.Common.IO.AssetStream.Read*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_Read_System_Byte___System_Int32_System_Int32_" data-uid="Evergine.Common.IO.AssetStream.Read(System.Byte[],System.Int32,System.Int32)">Read(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -403,8 +534,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)</span></div>
   <a id="Evergine_Common_IO_AssetStream_Seek_" data-uid="Evergine.Common.IO.AssetStream.Seek*"></a>
-  <h4 id="Evergine_Common_IO_AssetStream_Seek_System_Int64_SeekOrigin_" data-uid="Evergine.Common.IO.AssetStream.Seek(System.Int64,SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
+  <h4 id="Evergine_Common_IO_AssetStream_Seek_System_Int64_System_IO_SeekOrigin_" data-uid="Evergine.Common.IO.AssetStream.Seek(System.Int64,System.IO.SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -427,7 +560,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">SeekOrigin</span></td>
+        <td><span class="xref">System.IO.SeekOrigin</span></td>
         <td><span class="parametername">origin</span></td>
         <td></td>
       </tr>
@@ -448,6 +581,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)</span></div>
   <a id="Evergine_Common_IO_AssetStream_SetLength_" data-uid="Evergine.Common.IO.AssetStream.SetLength*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_SetLength_System_Int64_" data-uid="Evergine.Common.IO.AssetStream.SetLength(System.Int64)">SetLength(Int64)</h4>
   <div class="markdown level1 summary"></div>
@@ -473,6 +608,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.SetLength(System.Int64)</span></div>
   <a id="Evergine_Common_IO_AssetStream_Write_" data-uid="Evergine.Common.IO.AssetStream.Write*"></a>
   <h4 id="Evergine_Common_IO_AssetStream_Write_System_Byte___System_Int32_System_Int32_" data-uid="Evergine.Common.IO.AssetStream.Write(System.Byte[],System.Int32,System.Int32)">Write(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -508,6 +645,12 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

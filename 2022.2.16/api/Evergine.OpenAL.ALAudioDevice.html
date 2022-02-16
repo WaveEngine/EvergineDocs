@@ -98,17 +98,42 @@
     <div class="level1"><a class="xref" href="Evergine.Common.Audio.AudioDevice.html">AudioDevice</a></div>
     <div class="level2"><span class="xref">ALAudioDevice</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_MasterVolume">AudioDevice.MasterVolume</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenAL.html">Evergine.OpenAL</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenAL.dll</h6>
   <h5 id="Evergine_OpenAL_ALAudioDevice_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ALAudioDevice : AudioDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class ALAudioDevice : AudioDevice, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -192,7 +217,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -382,6 +407,10 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_SetMasterVolume_System_Single_">AudioDevice.SetMasterVolume(Single)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

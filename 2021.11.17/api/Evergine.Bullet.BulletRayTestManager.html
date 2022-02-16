@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BulletRayTestManager</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Bullet.html">Evergine.Bullet</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Bullet.dll</h6>
   <h5 id="Evergine_Bullet_BulletRayTestManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BulletRayTestManager : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class BulletRayTestManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -153,7 +184,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Bullet_BulletRayTestManager_AllConvexTest_" data-uid="Evergine.Bullet.BulletRayTestManager.AllConvexTest*"></a>
-  <h4 id="Evergine_Bullet_BulletRayTestManager_AllConvexTest_Evergine_Bullet_BulletCollider3D_Evergine_Mathematics_Matrix4x4__Evergine_Mathematics_Matrix4x4__Evergine_Framework_Physics3D_CollisionCategory3D_ICollection_Evergine_Framework_Physics3D_HitResult3D__" data-uid="Evergine.Bullet.BulletRayTestManager.AllConvexTest(Evergine.Bullet.BulletCollider3D,Evergine.Mathematics.Matrix4x4@,Evergine.Mathematics.Matrix4x4@,Evergine.Framework.Physics3D.CollisionCategory3D,ICollection{Evergine.Framework.Physics3D.HitResult3D})">AllConvexTest(BulletCollider3D, ref Matrix4x4, ref Matrix4x4, CollisionCategory3D, ICollection&lt;HitResult3D&gt;)</h4>
+  <h4 id="Evergine_Bullet_BulletRayTestManager_AllConvexTest_Evergine_Bullet_BulletCollider3D_Evergine_Mathematics_Matrix4x4__Evergine_Mathematics_Matrix4x4__Evergine_Framework_Physics3D_CollisionCategory3D_System_Collections_Generic_ICollection_Evergine_Framework_Physics3D_HitResult3D__" data-uid="Evergine.Bullet.BulletRayTestManager.AllConvexTest(Evergine.Bullet.BulletCollider3D,Evergine.Mathematics.Matrix4x4@,Evergine.Mathematics.Matrix4x4@,Evergine.Framework.Physics3D.CollisionCategory3D,System.Collections.Generic.ICollection{Evergine.Framework.Physics3D.HitResult3D})">AllConvexTest(BulletCollider3D, ref Matrix4x4, ref Matrix4x4, CollisionCategory3D, ICollection&lt;HitResult3D&gt;)</h4>
   <div class="markdown level1 summary"><p>Process the raycast.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -196,7 +227,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
         <td><span class="parametername">resultList</span></td>
         <td><p>The result.</p>
 </td>
@@ -204,7 +235,7 @@
     </tbody>
   </table>
   <a id="Evergine_Bullet_BulletRayTestManager_AllRaycast_" data-uid="Evergine.Bullet.BulletRayTestManager.AllRaycast*"></a>
-  <h4 id="Evergine_Bullet_BulletRayTestManager_AllRaycast_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Framework_Physics3D_CollisionCategory3D_ICollection_Evergine_Framework_Physics3D_HitResult3D__" data-uid="Evergine.Bullet.BulletRayTestManager.AllRaycast(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Framework.Physics3D.CollisionCategory3D,ICollection{Evergine.Framework.Physics3D.HitResult3D})">AllRaycast(ref Vector3, ref Vector3, CollisionCategory3D, ICollection&lt;HitResult3D&gt;)</h4>
+  <h4 id="Evergine_Bullet_BulletRayTestManager_AllRaycast_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Framework_Physics3D_CollisionCategory3D_System_Collections_Generic_ICollection_Evergine_Framework_Physics3D_HitResult3D__" data-uid="Evergine.Bullet.BulletRayTestManager.AllRaycast(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Framework.Physics3D.CollisionCategory3D,System.Collections.Generic.ICollection{Evergine.Framework.Physics3D.HitResult3D})">AllRaycast(ref Vector3, ref Vector3, CollisionCategory3D, ICollection&lt;HitResult3D&gt;)</h4>
   <div class="markdown level1 summary"><p>Process the raycast.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -241,7 +272,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
         <td><span class="parametername">resultList</span></td>
         <td><p>The collection where the results will be included.</p>
 </td>

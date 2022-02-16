@@ -89,7 +89,7 @@
   
   <h1 id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1" class="text-break">Class NetworkTimeSpanPropertySync&lt;K&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Provides an abstraction to track changes on a <see cref="!:TimeSpan"></see> property contained on a
+  <div class="markdown level0 summary"><p>Provides an abstraction to track changes on a <span class="xref">System.TimeSpan</span> property contained on a
 <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>. A <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> component is needed in the same
 entity or any of its parents.</p>
 </div>
@@ -102,7 +102,7 @@ entity or any of its parents.</p>
     <div class="level3"><a class="xref" href="Evergine.Framework.AttachableObject.html">AttachableObject</a></div>
     <div class="level4"><a class="xref" href="Evergine.Framework.PrefabInstanceObject.html">PrefabInstanceObject</a></div>
     <div class="level5"><a class="xref" href="Evergine.Framework.Component.html">Component</a></div>
-    <div class="level6"><a class="xref" href="Evergine.Networking.Components.NetworkPropertySync-2.html">NetworkPropertySync</a>&lt;K, <span class="xref">TimeSpan</span>&gt;</div>
+    <div class="level6"><a class="xref" href="Evergine.Networking.Components.NetworkPropertySync-2.html">NetworkPropertySync</a>&lt;K, <span class="xref">System.TimeSpan</span>&gt;</div>
     <div class="level7"><span class="xref">NetworkTimeSpanPropertySync&lt;K&gt;</span></div>
   </div>
   <div classs="implements">
@@ -250,7 +250,28 @@ entity or any of its parents.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Components.html">Evergine.Networking.Components</a></h6>
@@ -270,7 +291,7 @@ entity or any of its parents.</p>
     <tbody>
       <tr>
         <td><span class="parametername">K</span></td>
-        <td><p>The type of the property key. Must be <see cref="!:System.Byte"></see> or <see cref="!:Enum"></see>.</p>
+        <td><p>The type of the property key. Must be <span class="xref">System.Byte</span> or <span class="xref">System.Enum</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -279,13 +300,14 @@ entity or any of its parents.</p>
   </h3>
   <a id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_HighPrecision_" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1.HighPrecision*"></a>
   <h4 id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_HighPrecision" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1.HighPrecision">HighPrecision</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the <see cref="!:TimeSpan"></see> will be stored using high precision
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the <span class="xref">System.TimeSpan</span> will be stored using high precision
 (ticks) or not (milliseconds).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HighPrecision { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Indicates whether the TimeSpan will be stored using high precision (ticks) or not (milliseconds)&quot;)]
+public bool HighPrecision { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,7 +325,7 @@ entity or any of its parents.</p>
     </tbody>
   </table>
   <h5 id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_HighPrecision_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to
 &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <h3 id="methods">Methods
@@ -345,16 +367,16 @@ entity or any of its parents.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>The property value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Evergine.Networking.Components.NetworkPropertySync&lt;K, TimeSpan&gt;.ReadValue(Evergine.Networking.NetworkPropertiesTable)</span></div>
+  <div><span class="xref">Evergine.Networking.Components.NetworkPropertySync&lt;K, System.TimeSpan&gt;.ReadValue(Evergine.Networking.NetworkPropertiesTable)</span></div>
   <a id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_WriteValue_" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1.WriteValue*"></a>
-  <h4 id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_WriteValue_Evergine_Networking_NetworkPropertiesTable_TimeSpan_" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1.WriteValue(Evergine.Networking.NetworkPropertiesTable,TimeSpan)">WriteValue(NetworkPropertiesTable, TimeSpan)</h4>
+  <h4 id="Evergine_Networking_Components_NetworkTimeSpanPropertySync_1_WriteValue_Evergine_Networking_NetworkPropertiesTable_System_TimeSpan_" data-uid="Evergine.Networking.Components.NetworkTimeSpanPropertySync`1.WriteValue(Evergine.Networking.NetworkPropertiesTable,System.TimeSpan)">WriteValue(NetworkPropertiesTable, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Defines a delegate to write the value in the player <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -379,14 +401,14 @@ entity or any of its parents.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Evergine.Networking.Components.NetworkPropertySync&lt;K, TimeSpan&gt;.WriteValue(Evergine.Networking.NetworkPropertiesTable, TimeSpan)</span></div>
+  <div><span class="xref">Evergine.Networking.Components.NetworkPropertySync&lt;K, System.TimeSpan&gt;.WriteValue(Evergine.Networking.NetworkPropertiesTable, System.TimeSpan)</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

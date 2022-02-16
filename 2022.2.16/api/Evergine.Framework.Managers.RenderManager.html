@@ -167,7 +167,28 @@ and updates them.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Managers.html">Evergine.Framework.Managers</a></h6>
@@ -207,7 +228,7 @@ and updates them.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;[]</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -230,7 +251,7 @@ and updates them.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.RenderFeature.html">RenderFeature</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.RenderFeature.html">RenderFeature</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -428,7 +449,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -561,6 +582,22 @@ This property is suitable to use in Drawables 2D components.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If drawable is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_RenderManager_AddLight_" data-uid="Evergine.Framework.Managers.RenderManager.AddLight*"></a>
   <h4 id="Evergine_Framework_Managers_RenderManager_AddLight_Evergine_Framework_Graphics_Light_" data-uid="Evergine.Framework.Managers.RenderManager.AddLight(Evergine.Framework.Graphics.Light)">AddLight(Light)</h4>
   <div class="markdown level1 summary"><p>Add a light.</p>
@@ -641,7 +678,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_RenderManager_Draw_" data-uid="Evergine.Framework.Managers.RenderManager.Draw*"></a>
-  <h4 id="Evergine_Framework_Managers_RenderManager_Draw_TimeSpan_" data-uid="Evergine.Framework.Managers.RenderManager.Draw(TimeSpan)">Draw(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Managers_RenderManager_Draw_System_TimeSpan_" data-uid="Evergine.Framework.Managers.RenderManager.Draw(System.TimeSpan)">Draw(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Update this manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -660,7 +697,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>
@@ -668,7 +705,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.Managers.DrawableSceneManager.html#Evergine_Framework_Managers_DrawableSceneManager_Draw_TimeSpan_">DrawableSceneManager.Draw(TimeSpan)</a></div>
+  <div><a class="xref" href="Evergine.Framework.Managers.DrawableSceneManager.html#Evergine_Framework_Managers_DrawableSceneManager_Draw_System_TimeSpan_">DrawableSceneManager.Draw(TimeSpan)</a></div>
   <a id="Evergine_Framework_Managers_RenderManager_FindFeatureByObjectType_" data-uid="Evergine.Framework.Managers.RenderManager.FindFeatureByObjectType*"></a>
   <h4 id="Evergine_Framework_Managers_RenderManager_FindFeatureByObjectType_Evergine_Framework_Graphics_RenderObjectInfo_" data-uid="Evergine.Framework.Managers.RenderManager.FindFeatureByObjectType(Evergine.Framework.Graphics.RenderObjectInfo)">FindFeatureByObjectType(RenderObjectInfo)</h4>
   <div class="markdown level1 summary"><p>Gets a render feature that is responsible to process the render object.</p>
@@ -713,7 +750,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_RenderManager_FindRenderFeature_" data-uid="Evergine.Framework.Managers.RenderManager.FindRenderFeature*"></a>
-  <h4 id="Evergine_Framework_Managers_RenderManager_FindRenderFeature_Type_" data-uid="Evergine.Framework.Managers.RenderManager.FindRenderFeature(Type)">FindRenderFeature(Type)</h4>
+  <h4 id="Evergine_Framework_Managers_RenderManager_FindRenderFeature_System_Type_" data-uid="Evergine.Framework.Managers.RenderManager.FindRenderFeature(System.Type)">FindRenderFeature(Type)</h4>
   <div class="markdown level1 summary"><p>Find a mesh processor by its type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -732,7 +769,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">renderFeatureType</span></td>
         <td><p>The mesh processor type.</p>
 </td>
@@ -938,6 +975,22 @@ This property is suitable to use in Drawables 2D components.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If drawable is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Managers_RenderManager_RemoveLight_" data-uid="Evergine.Framework.Managers.RenderManager.RemoveLight*"></a>
   <h4 id="Evergine_Framework_Managers_RenderManager_RemoveLight_Evergine_Framework_Graphics_Light_" data-uid="Evergine.Framework.Managers.RenderManager.RemoveLight(Evergine.Framework.Graphics.Light)">RemoveLight(Light)</h4>
   <div class="markdown level1 summary"><p>Remove a light.</p>
@@ -1118,7 +1171,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Managers_RenderManager_UnregisterRenderFeature_" data-uid="Evergine.Framework.Managers.RenderManager.UnregisterRenderFeature*"></a>
-  <h4 id="Evergine_Framework_Managers_RenderManager_UnregisterRenderFeature_Type_" data-uid="Evergine.Framework.Managers.RenderManager.UnregisterRenderFeature(Type)">UnregisterRenderFeature(Type)</h4>
+  <h4 id="Evergine_Framework_Managers_RenderManager_UnregisterRenderFeature_System_Type_" data-uid="Evergine.Framework.Managers.RenderManager.UnregisterRenderFeature(System.Type)">UnregisterRenderFeature(Type)</h4>
   <div class="markdown level1 summary"><p>Unregister a render feature.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1137,7 +1190,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">renderFeatureType</span></td>
         <td><p>The render feature type.</p>
 </td>
@@ -1164,7 +1217,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1187,7 +1240,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1210,7 +1263,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Light.html">Light</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Light.html">Light</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1233,7 +1286,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Managers.RenderManager.html">RenderManager</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Managers.RenderManager.html">RenderManager</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1256,7 +1309,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Managers.RenderManager.html">RenderManager</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Managers.RenderManager.html">RenderManager</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1279,7 +1332,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Camera.html">Camera</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1302,7 +1355,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1325,7 +1378,7 @@ This property is suitable to use in Drawables 2D components.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Light.html">Light</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Framework.Graphics.Light.html">Light</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

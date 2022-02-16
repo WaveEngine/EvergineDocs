@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -96,7 +103,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -109,6 +116,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.Effects.html">Evergine.Framework.Graphics.Effects</a></h6>
@@ -263,7 +291,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -286,7 +314,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.Effects.EffectTechnique.html">EffectTechnique</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.Effects.EffectTechnique.html">EffectTechnique</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -295,7 +323,8 @@
   </h3>
   <a id="Evergine_Framework_Graphics_Effects_Effect_Dependencies_" data-uid="Evergine.Framework.Graphics.Effects.Effect.Dependencies*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_Effect_Dependencies" data-uid="Evergine.Framework.Graphics.Effects.Effect.Dependencies">Dependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the dependency list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -311,7 +340,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -390,7 +419,8 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_Effect_Id_" data-uid="Evergine.Framework.Graphics.Effects.Effect.Id*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_Effect_Id" data-uid="Evergine.Framework.Graphics.Effects.Effect.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -406,8 +436,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -437,7 +468,8 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_Effect_ReaderVersion_" data-uid="Evergine.Framework.Graphics.Effects.Effect.ReaderVersion*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_Effect_ReaderVersion" data-uid="Evergine.Framework.Graphics.Effects.Effect.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -453,8 +485,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -477,7 +510,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="Evergine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -770,7 +803,8 @@
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Framework_Graphics_Effects_Effect_Invalidated" data-uid="Evergine.Framework.Graphics.Effects.Effect.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -786,7 +820,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -796,7 +830,7 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

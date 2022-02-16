@@ -85,7 +85,82 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="imgui">ImGUI</h1>
 
-<p>Coming soon</p>
+<p>--</p>
+<p>Dear ImGui is an immediate-mode graphical user interface library that is very lightweight and easy to use. It can be very useful when creating debugging tools.
+You will find more information about the original library used by this extension at <a href="https://github.com/ocornut/imgui">the github project</a>.</p>
+<p><img src="images/imgui.png" alt="Graphics"></p>
+<h2 id="install-evergineimgui-extension">Install Evergine.ImGUI extension</h2>
+<p>To start using this extension, just add Evergine.ImGui package to your project using NuGet package manager from Visual Studio.</p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Evergine.ImGui&quot; Version=&quot;2021.11.17.2-preview&quot; /&gt;
+</code></pre>
+<p>Register the ImGuiManager on your scene:</p>
+<pre><code class="lang-csharp">public class ImGuiSceneTest : Scene
+{
+    public override void RegisterManagers()
+    {
+        this.Managers.AddManager(new ImGuiManager());
+        base.RegisterManagers();
+    }
+...
+}
+</code></pre>
+<p>And add the namespace ImGuiNET:</p>
+<pre><code class="lang-csharp">using ImGuiNET;
+</code></pre>
+<p>Now you can start calling the ImGui API from everywhere using the static reference:</p>
+<pre><code class="lang-csharp">ImGui.ShowDemoWindow();
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>The UI is generated every frame and all the controls between Begin and End will be drawn.</p>
+<p>Here you have a simple example:</p>
+<pre><code class="lang-csharp">ImGui.Begin(&quot;Debug&quot;);
+
+ImGui.Text(&quot;Hello, world 123&quot;);
+if (ImGui.Button(&quot;Save&quot;))
+{
+    // MySaveFunction();
+}
+ImGui.SliderFloat(&quot;float&quot;, ref f, 0.0f, 1.0f);
+
+ImGui.End();
+</code></pre>
+<p>And this is the result:</p>
+<p><img src="images/imgui-simple.png" alt="Graphics"></p>
+<p><br><br></p>
+<p>And now will see a more advanced example:</p>
+<pre><code class="lang-csharp">ImGui.Begin(&quot;Path Tracing&quot;);
+
+float x = this.worldInfo.LightPosition.X;
+float y = this.worldInfo.LightPosition.Y;
+float z = this.worldInfo.LightPosition.Z;
+
+ImGui.SliderFloat(&quot;Camera Pos X&quot;, ref x, -10, 10);
+ImGui.SliderFloat(&quot;Camera Pos Y&quot;, ref y, -10, 10);
+ImGui.SliderFloat(&quot;Camera Pos Z&quot;, ref z, -10, 10);
+
+this.worldInfo.LightPosition.X = x;
+this.worldInfo.LightPosition.Y = y;
+this.worldInfo.LightPosition.Z = z;
+ImGui.SliderFloat(&quot;Light Radius&quot;, ref this.worldInfo.LightRadius, 0.0f, 2.0f);
+
+ImGui.SliderInt(&quot;AO Num Rays&quot;, ref this.worldInfo.NumRays, 0, 32);
+ImGui.SliderFloat(&quot;AO Radius&quot;, ref this.worldInfo.AORadius, 0.0f, 2.0f);
+
+ImGui.SliderInt(&quot;GI Num Bounces&quot;, ref this.worldInfo.NumBounces, 0, 2);
+
+ImGui.Spacing();
+ImGui.Separator();
+ImGui.Spacing();
+
+ImGui.SliderInt(&quot;Num Samples&quot;, ref this.pathTracerNumSamples, 0, 1024);
+ImGui.ProgressBar((float)this.pathTracerSampleIndex / (float)this.pathTracerNumSamples);
+
+ImGui.End();
+</code></pre>
+<p>This is the result:</p>
+<p><img src="images/imgui-pathtracerui.png" alt="Graphics"></p>
+<p>Take a look this in our <a href="https://github.com/EvergineTeam/Raytracing">path tracer demo</a>.</p>
+<p>Note: This project need to create a ImGuiRenderer because is using the <strong>Evergine</strong> low level api, but this is not necessary in a default project created from the <strong>Evergine Studio</strong>.</p>
 </article>
           </div>
           

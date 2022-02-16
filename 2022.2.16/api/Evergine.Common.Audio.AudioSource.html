@@ -99,6 +99,34 @@
       <div class="level2"><a class="xref" href="Evergine.OpenAL.ALAudioSource.html">ALAudioSource</a></div>
       <div class="level2"><a class="xref" href="Evergine.XAudio2.XAudioSource.html">XAudioSource</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Audio.html">Evergine.Common.Audio</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Audio_AudioSource_syntax">Syntax</h5>
@@ -257,7 +285,7 @@ including <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBuffer.html">AudioBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBuffer.html">AudioBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -313,7 +341,7 @@ Default value is <code>1.0f</code>.</p>
     </tbody>
   </table>
   <h5 id="Evergine_Common_Audio_AudioSource_Pitch_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Pitch is ranging from <a class="xref" href="Evergine.Mathematics.MathHelper.html#Evergine_Mathematics_MathHelper_Epsilon">Epsilon</a> to <see cref="!:float.MaxValue"></see>. Values beyond this
+  <div class="markdown level1 remarks"><p>Pitch is ranging from <a class="xref" href="Evergine.Mathematics.MathHelper.html#Evergine_Mathematics_MathHelper_Epsilon">Epsilon</a> to <span class="xref">System.Single.MaxValue</span>. Values beyond this
 range are clamped.
 Each reduction by 50 percent equals a pitch shift of -12 semitones(one octave reduction).
 Each doubling equals a pitch shift of 12 semitones(one octave increase).</p>
@@ -338,7 +366,7 @@ every loop.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -362,7 +390,7 @@ every loop.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -386,16 +414,16 @@ every loop.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="Evergine_Common_Audio_AudioSource_QueuePlayPosition_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>QueuePosition is ranging from <see cref="!:TimeSpan.Zero"></see> to <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_QueueDuration">QueueDuration</a>. Values beyond this
+  <div class="markdown level1 remarks"><p>QueuePosition is ranging from <span class="xref">System.TimeSpan.Zero</span> to <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_QueueDuration">QueueDuration</a>. Values beyond this
 range are clamped.
 When the audio source is in <a class="xref" href="Evergine.Common.Media.PlayState.html#Evergine_Common_Media_PlayState_Stopped">Stopped</a> state and the value is higher than
-<see cref="!:TimeSpan.Zero"></see> the state will change to <a class="xref" href="Evergine.Common.Media.PlayState.html#Evergine_Common_Media_PlayState_Paused">Paused</a>.
+<span class="xref">System.TimeSpan.Zero</span> the state will change to <a class="xref" href="Evergine.Common.Media.PlayState.html#Evergine_Common_Media_PlayState_Paused">Paused</a>.
 The position is relative to the beginning of all the queued buffers for the source, and any queued buffers
 traversed by a set value will raise the event <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_BufferEnded">BufferEnded</a>.</p>
 </div>
@@ -542,7 +570,7 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the current play position.</p>
 </td>
       </tr>
@@ -567,7 +595,7 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the Queue Play Position.</p>
 </td>
       </tr>
@@ -819,7 +847,7 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </tbody>
   </table>
   <a id="Evergine_Common_Audio_AudioSource_SetQueuePlayPosition_" data-uid="Evergine.Common.Audio.AudioSource.SetQueuePlayPosition*"></a>
-  <h4 id="Evergine_Common_Audio_AudioSource_SetQueuePlayPosition_TimeSpan_" data-uid="Evergine.Common.Audio.AudioSource.SetQueuePlayPosition(TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
+  <h4 id="Evergine_Common_Audio_AudioSource_SetQueuePlayPosition_System_TimeSpan_" data-uid="Evergine.Common.Audio.AudioSource.SetQueuePlayPosition(System.TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Sets the queue play TimeSpan position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -838,7 +866,7 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">position</span></td>
         <td><p>The new TimeSpan position.</p>
 </td>
@@ -901,7 +929,7 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBufferEventArgs.html">AudioBufferEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBufferEventArgs.html">AudioBufferEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -924,11 +952,15 @@ traversed by a set value will raise the event <a class="xref" href="Evergine.Com
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBufferEventArgs.html">AudioBufferEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBufferEventArgs.html">AudioBufferEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

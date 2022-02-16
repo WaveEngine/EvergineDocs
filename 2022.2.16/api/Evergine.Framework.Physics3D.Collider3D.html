@@ -191,7 +191,28 @@ through physics engine.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Physics3D.html">Evergine.Framework.Physics3D</a></h6>
@@ -265,7 +286,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected BaseModel model</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(false, false, BindComponentSource.Owner, null)]
+protected BaseModel model</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,7 +322,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -334,7 +356,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform3D Transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Transform3D Transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,7 +418,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -431,7 +454,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Margin { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsFInput(MinLimit = 0F)]
+public float Margin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,7 +491,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -491,7 +515,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -613,7 +637,7 @@ through physics engine.</p>
     <pre><code class="lang-csharp hljs">protected virtual void OnModelRefreshed()</code></pre>
   </div>
   <a id="Evergine_Framework_Physics3D_Collider3D_OnScaleChanged_" data-uid="Evergine.Framework.Physics3D.Collider3D.OnScaleChanged*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_EventArgs_" data-uid="Evergine.Framework.Physics3D.Collider3D.OnScaleChanged(System.Object,EventArgs)">OnScaleChanged(Object, EventArgs)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_System_EventArgs_" data-uid="Evergine.Framework.Physics3D.Collider3D.OnScaleChanged(System.Object,System.EventArgs)">OnScaleChanged(Object, EventArgs)</h4>
   <div class="markdown level1 summary"><p>On scale changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -638,7 +662,7 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">EventArgs</span></td>
+        <td><span class="xref">System.EventArgs</span></td>
         <td><span class="parametername">e</span></td>
         <td><p>The event arguments.</p>
 </td>
@@ -646,7 +670,7 @@ through physics engine.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_Collider3D_PointTest_" data-uid="Evergine.Framework.Physics3D.Collider3D.PointTest*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_PointTest_Vector3_" data-uid="Evergine.Framework.Physics3D.Collider3D.PointTest(Vector3)">PointTest(Vector3)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_PointTest_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Physics3D.Collider3D.PointTest(Evergine.Mathematics.Vector3)">PointTest(Vector3)</h4>
   <div class="markdown level1 summary"><p>Test if a point is inside this collider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -665,7 +689,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The position in world coordinates.</p>
 </td>
@@ -707,7 +731,7 @@ through physics engine.</p>
     <pre><code class="lang-csharp hljs">protected virtual void RefreshHierarchyTransform()</code></pre>
   </div>
   <a id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Vector3)">RefreshOffsetTransform(Vector3)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Evergine.Mathematics.Vector3)">RefreshOffsetTransform(Vector3)</h4>
   <div class="markdown level1 summary"><p>Refresh the hierarchy transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -726,7 +750,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">initialOffset</span></td>
         <td><p>The initial offset.</p>
 </td>
@@ -743,14 +767,14 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The offset transform.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_Quaternion_System_Boolean_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Vector3,Quaternion,System.Boolean)">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Evergine_Mathematics_Vector3_Evergine_Mathematics_Quaternion_System_Boolean_" data-uid="Evergine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Evergine.Mathematics.Vector3,Evergine.Mathematics.Quaternion,System.Boolean)">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</h4>
   <div class="markdown level1 summary"><p>Refresh the hierarchy transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -769,13 +793,13 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">initialOffset</span></td>
         <td><p>The initial offset.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">initialOrientation</span></td>
         <td><p>The initial orientation.</p>
 </td>
@@ -798,7 +822,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The offset transform.</p>
 </td>
       </tr>
@@ -834,13 +858,13 @@ through physics engine.</p>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_Start">Component.Start()</a></div>
   <a id="Evergine_Framework_Physics3D_Collider3D_SweepTest_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTest*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_SweepTest_Vector3_System_Single_Evergine_Framework_Physics3D_CollisionCategory3D_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTest(Vector3,System.Single,Evergine.Framework.Physics3D.CollisionCategory3D)">SweepTest(Vector3, Single, CollisionCategory3D)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_SweepTest_Evergine_Mathematics_Vector3_System_Single_Evergine_Framework_Physics3D_CollisionCategory3D_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTest(Evergine.Mathematics.Vector3,System.Single,Evergine.Framework.Physics3D.CollisionCategory3D)">SweepTest(Vector3, Single, CollisionCategory3D)</h4>
   <div class="markdown level1 summary"><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HitResult3D SweepTest(Vector3 direction, float maxDistance, CollisionCategory3D filterMask = default(CollisionCategory3D))</code></pre>
+    <pre><code class="lang-csharp hljs">public HitResult3D SweepTest(Vector3 direction, float maxDistance, CollisionCategory3D filterMask = CollisionCategory3D.All)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -853,7 +877,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">direction</span></td>
         <td><p>The direction.</p>
 </td>
@@ -889,13 +913,13 @@ through physics engine.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_Collider3D_SweepTestAll_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTestAll*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Collider3D_SweepTestAll_Vector3_System_Single_ICollection_Evergine_Framework_Physics3D_HitResult3D__Evergine_Framework_Physics3D_CollisionCategory3D_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTestAll(Vector3,System.Single,ICollection{Evergine.Framework.Physics3D.HitResult3D},Evergine.Framework.Physics3D.CollisionCategory3D)">SweepTestAll(Vector3, Single, ICollection&lt;HitResult3D&gt;, CollisionCategory3D)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Collider3D_SweepTestAll_Evergine_Mathematics_Vector3_System_Single_System_Collections_Generic_ICollection_Evergine_Framework_Physics3D_HitResult3D__Evergine_Framework_Physics3D_CollisionCategory3D_" data-uid="Evergine.Framework.Physics3D.Collider3D.SweepTestAll(Evergine.Mathematics.Vector3,System.Single,System.Collections.Generic.ICollection{Evergine.Framework.Physics3D.HitResult3D},Evergine.Framework.Physics3D.CollisionCategory3D)">SweepTestAll(Vector3, Single, ICollection&lt;HitResult3D&gt;, CollisionCategory3D)</h4>
   <div class="markdown level1 summary"><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SweepTestAll(Vector3 direction, float maxDistance, ICollection&lt;HitResult3D&gt; resultsOutput, CollisionCategory3D filterMask = default(CollisionCategory3D))</code></pre>
+    <pre><code class="lang-csharp hljs">public void SweepTestAll(Vector3 direction, float maxDistance, ICollection&lt;HitResult3D&gt; resultsOutput, CollisionCategory3D filterMask = CollisionCategory3D.All)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -908,7 +932,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">direction</span></td>
         <td><p>The direction.</p>
 </td>
@@ -920,7 +944,7 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
         <td><span class="parametername">resultsOutput</span></td>
         <td><p>The collection where the contact results will be included.</p>
 </td>
@@ -953,7 +977,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

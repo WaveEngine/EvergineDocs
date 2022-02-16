@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -89,6 +96,34 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DX11PipelineStateCache</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX11.html">Evergine.DirectX11</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX11.dll</h6>
@@ -200,7 +235,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D11BlendState</span></td>
+        <td><span class="xref">Vortice.Direct3D11.ID3D11BlendState</span></td>
         <td><p>The native blendState.</p>
 </td>
       </tr>
@@ -243,7 +278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D11DepthStencilState</span></td>
+        <td><span class="xref">Vortice.Direct3D11.ID3D11DepthStencilState</span></td>
         <td><p>the native depthStencilState.</p>
 </td>
       </tr>
@@ -292,7 +327,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D11InputLayout</span></td>
+        <td><span class="xref">Vortice.Direct3D11.ID3D11InputLayout</span></td>
         <td><p>Input layout.</p>
 </td>
       </tr>
@@ -341,12 +376,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D11RasterizerState</span></td>
+        <td><span class="xref">Vortice.Direct3D11.ID3D11RasterizerState</span></td>
         <td><p>The native rasterizerState.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

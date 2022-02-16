@@ -98,6 +98,10 @@
     <div class="level1"><a class="xref" href="Evergine.Framework.DisposableObject.html">DisposableObject</a></div>
     <div class="level2"><span class="xref">VuforiaDataSet</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -109,12 +113,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vuforia.html">Evergine.Vuforia</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Vuforia.dll</h6>
   <h5 id="Evergine_Vuforia_VuforiaDataSet_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VuforiaDataSet : DisposableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class VuforiaDataSet : DisposableObject, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -188,7 +213,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Vuforia.Trackable.html">Trackable</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Vuforia.Trackable.html">Trackable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -312,6 +337,10 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void RefreshDataSetActivation()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

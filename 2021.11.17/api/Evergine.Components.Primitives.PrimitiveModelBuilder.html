@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PrimitiveModelBuilder</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Primitives.html">Evergine.Components.Primitives</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
   <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PrimitiveModelBuilder : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class PrimitiveModelBuilder</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -156,7 +187,7 @@
 before InitializePrimitive.</p>
 </div>
   <a id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Vector3,Vector3)">AddVertex(Vector3, Vector3)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3)">AddVertex(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Adds a new vertex to the primitive model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -175,25 +206,25 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">normal</span></td>
         <td><p>The normal.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3__remarks">Remarks</h5>
+  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This should only be called during the initialization process,
 before InitializePrimitive.</p>
 </div>
   <a id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector2_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Vector3,Vector3,Vector2)">AddVertex(Vector3, Vector3, Vector2)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector2)">AddVertex(Vector3, Vector3, Vector2)</h4>
   <div class="markdown level1 summary"><p>Adds a new vertex to the primitive model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -212,31 +243,31 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">normal</span></td>
         <td><p>The normal.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">texcoord</span></td>
         <td><p>The texture coordinate.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector2__remarks">Remarks</h5>
+  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This should only be called during the initialization process,
 before InitializePrimitive.</p>
 </div>
   <a id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector3_Vector2_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Vector3,Vector3,Vector3,Vector2)">AddVertex(Vector3, Vector3, Vector3, Vector2)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector2)">AddVertex(Vector3, Vector3, Vector3, Vector2)</h4>
   <div class="markdown level1 summary"><p>Adds a new vertex to the primitive model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -255,37 +286,37 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">normal</span></td>
         <td><p>The normal.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">tangent</span></td>
         <td><p>The tangent.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">texcoord</span></td>
         <td><p>The texture coordinate.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector3_Vector2__remarks">Remarks</h5>
+  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This should only be called during the initialization process,
 before InitializePrimitive.</p>
 </div>
   <a id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector3_Vector2_Evergine_Common_Graphics_Color_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Vector3,Vector3,Vector3,Vector2,Evergine.Common.Graphics.Color)">AddVertex(Vector3, Vector3, Vector3, Vector2, Color)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2_Evergine_Common_Graphics_Color_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.AddVertex(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector2,Evergine.Common.Graphics.Color)">AddVertex(Vector3, Vector3, Vector3, Vector2, Color)</h4>
   <div class="markdown level1 summary"><p>Adds a new vertex to the primitive model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -304,25 +335,25 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">position</span></td>
         <td><p>The position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">normal</span></td>
         <td><p>The normal.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">tangent</span></td>
         <td><p>The tangent.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">texcoord</span></td>
         <td><p>The texture coordinate.</p>
 </td>
@@ -335,7 +366,7 @@ before InitializePrimitive.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Vector3_Vector3_Vector3_Vector2_Evergine_Common_Graphics_Color__remarks">Remarks</h5>
+  <h5 id="Evergine_Components_Primitives_PrimitiveModelBuilder_AddVertex_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector2_Evergine_Common_Graphics_Color__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This should only be called during the initialization process,
 before InitializePrimitive.</p>
 </div>
@@ -401,7 +432,7 @@ before InitializePrimitive.</p>
     </tbody>
   </table>
   <a id="Evergine_Components_Primitives_PrimitiveModelBuilder_GetSphericalTexCoord_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.GetSphericalTexCoord*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_GetSphericalTexCoord_Vector3_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.GetSphericalTexCoord(Vector3)">GetSphericalTexCoord(Vector3)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelBuilder_GetSphericalTexCoord_Evergine_Mathematics_Vector3_" data-uid="Evergine.Components.Primitives.PrimitiveModelBuilder.GetSphericalTexCoord(Evergine.Mathematics.Vector3)">GetSphericalTexCoord(Vector3)</h4>
   <div class="markdown level1 summary"><p>Gets the spherical texture coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -420,7 +451,7 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">normal</span></td>
         <td><p>The normal.</p>
 </td>
@@ -437,7 +468,7 @@ before InitializePrimitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td><p>Spherical coordinates.</p>
 </td>
       </tr>

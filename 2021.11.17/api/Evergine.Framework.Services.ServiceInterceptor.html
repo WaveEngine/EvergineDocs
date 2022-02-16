@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -102,6 +109,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.ContainerInterceptor.html#Evergine_Framework_ContainerInterceptor_Container">ContainerInterceptor.Container</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Services.html">Evergine.Framework.Services</a></h6>
@@ -291,7 +319,7 @@ will be updated automatically by this instance. This update order depends on the
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">Evergine.Framework.ContainerInterceptor&lt;Evergine.Framework.Services.Service&gt;.OnInstanced(Evergine.Framework.Services.Service)</span></div>
   <a id="Evergine_Framework_Services_ServiceInterceptor_OnRegistered_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnRegistered*"></a>
-  <h4 id="Evergine_Framework_Services_ServiceInterceptor_OnRegistered_Type_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnRegistered(Type)">OnRegistered(Type)</h4>
+  <h4 id="Evergine_Framework_Services_ServiceInterceptor_OnRegistered_System_Type_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnRegistered(System.Type)">OnRegistered(Type)</h4>
   <div class="markdown level1 summary"><p>Called when a type assignable from <see param="type"></see> is registered in the container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -310,7 +338,7 @@ will be updated automatically by this instance. This update order depends on the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The registered type.</p>
 </td>
@@ -318,9 +346,9 @@ will be updated automatically by this instance. This update order depends on the
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.ContainerInterceptor.html#Evergine_Framework_ContainerInterceptor_OnRegistered_Type_">ContainerInterceptor.OnRegistered(Type)</a></div>
+  <div><a class="xref" href="Evergine.Framework.ContainerInterceptor.html#Evergine_Framework_ContainerInterceptor_OnRegistered_System_Type_">ContainerInterceptor.OnRegistered(Type)</a></div>
   <a id="Evergine_Framework_Services_ServiceInterceptor_OnUnregistered_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnUnregistered*"></a>
-  <h4 id="Evergine_Framework_Services_ServiceInterceptor_OnUnregistered_Type_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnUnregistered(Type)">OnUnregistered(Type)</h4>
+  <h4 id="Evergine_Framework_Services_ServiceInterceptor_OnUnregistered_System_Type_" data-uid="Evergine.Framework.Services.ServiceInterceptor.OnUnregistered(System.Type)">OnUnregistered(Type)</h4>
   <div class="markdown level1 summary"><p>Called when a type assignable from <see param="type"></see> is unregistered from the container.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -339,7 +367,7 @@ will be updated automatically by this instance. This update order depends on the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The unregistered type.</p>
 </td>
@@ -347,9 +375,9 @@ will be updated automatically by this instance. This update order depends on the
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.ContainerInterceptor.html#Evergine_Framework_ContainerInterceptor_OnUnregistered_Type_">ContainerInterceptor.OnUnregistered(Type)</a></div>
+  <div><a class="xref" href="Evergine.Framework.ContainerInterceptor.html#Evergine_Framework_ContainerInterceptor_OnUnregistered_System_Type_">ContainerInterceptor.OnUnregistered(Type)</a></div>
   <a id="Evergine_Framework_Services_ServiceInterceptor_UpdateServices_" data-uid="Evergine.Framework.Services.ServiceInterceptor.UpdateServices*"></a>
-  <h4 id="Evergine_Framework_Services_ServiceInterceptor_UpdateServices_TimeSpan_" data-uid="Evergine.Framework.Services.ServiceInterceptor.UpdateServices(TimeSpan)">UpdateServices(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Services_ServiceInterceptor_UpdateServices_System_TimeSpan_" data-uid="Evergine.Framework.Services.ServiceInterceptor.UpdateServices(System.TimeSpan)">UpdateServices(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the registered <a class="xref" href="Evergine.Framework.Services.UpdatableService.html">UpdatableService</a> instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -368,7 +396,7 @@ will be updated automatically by this instance. This update order depends on the
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>

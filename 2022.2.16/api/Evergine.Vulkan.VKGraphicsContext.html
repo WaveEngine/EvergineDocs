@@ -100,6 +100,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a></div>
   </div>
   <div class="inheritedMembers">
@@ -138,7 +139,7 @@
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData__1_Evergine_Common_Graphics_Buffer___0__System_UInt32_">GraphicsContext.UpdateBufferData&lt;T&gt;(Buffer, T, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
+      <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateTextureData__1_Evergine_Common_Graphics_Texture___0___System_UInt32_">GraphicsContext.UpdateTextureData&lt;T&gt;(Texture, T[], UInt32)</a>
@@ -155,12 +156,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_Dispose">GraphicsContext.Dispose()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vulkan.html">Evergine.Vulkan</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Vulkan.dll</h6>
   <h5 id="Evergine_Vulkan_VKGraphicsContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VKGraphicsContext : GraphicsContext, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class VKGraphicsContext : GraphicsContext, IDisposable, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -174,7 +196,7 @@
     <pre><code class="lang-csharp hljs">public VKGraphicsContext()</code></pre>
   </div>
   <a id="Evergine_Vulkan_VKGraphicsContext__ctor_" data-uid="Evergine.Vulkan.VKGraphicsContext.#ctor*"></a>
-  <h4 id="Evergine_Vulkan_VKGraphicsContext__ctor_IEnumerable_System_String__IEnumerable_System_String__" data-uid="Evergine.Vulkan.VKGraphicsContext.#ctor(IEnumerable{System.String},IEnumerable{System.String})">VKGraphicsContext(IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</h4>
+  <h4 id="Evergine_Vulkan_VKGraphicsContext__ctor_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="Evergine.Vulkan.VKGraphicsContext.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">VKGraphicsContext(IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Vulkan.VKGraphicsContext.html">VKGraphicsContext</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -193,13 +215,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">deviceExtensionsToEnable</span></td>
         <td><p>Set of device extensions to be enabled for this application.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">instanceExtensionsToEnable</span></td>
         <td><p>Set of device instance extensions to be enabled for this application.</p>
 </td>
@@ -226,7 +248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkCommandBuffer</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkCommandBuffer</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -249,7 +271,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -298,7 +320,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceVulkan11Features</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceVulkan11Features</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -321,7 +343,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceVulkan12Features</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceVulkan12Features</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -344,7 +366,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -370,7 +392,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkDevice</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkDevice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -393,7 +415,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkInstance</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkInstance</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -416,7 +438,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDevice</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDevice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -439,7 +461,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceFeatures2</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceFeatures2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -462,7 +484,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceMemoryProperties</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceMemoryProperties</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -485,7 +507,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceProperties2</span></td>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPhysicalDeviceProperties2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -563,7 +585,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -703,8 +725,9 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_GenerateTextureMipmapping_Evergine_Common_Graphics_Texture_">GraphicsContext.GenerateTextureMipmapping(Texture)</a></div>
   <a id="Evergine_Vulkan_VKGraphicsContext_GetNativePointer_" data-uid="Evergine.Vulkan.VKGraphicsContext.GetNativePointer*"></a>
-  <h4 id="Evergine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.Vulkan.VKGraphicsContext.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_System_IntPtr__" data-uid="Evergine.Vulkan.VKGraphicsContext.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -723,12 +746,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">pointerKey</span></td>
-        <td></td>
+        <td><p>The pointer key.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
-        <td></td>
+        <td><p>The native pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -743,17 +768,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if there are an available pointer with this key.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_GetNativePointer_System_String_System_IntPtr__">GraphicsContext.GetNativePointer(String, out IntPtr)</a></div>
   <a id="Evergine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_" data-uid="Evergine.Vulkan.VKGraphicsContext.InternalUpdateBufferData*"></a>
-  <h4 id="Evergine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKGraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKGraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,25 +797,31 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><span class="parametername">buffer</span></td>
-        <td></td>
+        <td><p>Buffer instance.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The data pointer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceSizeInBytes</span></td>
-        <td></td>
+        <td><p>The size in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">destinationOffsetInBytes</span></td>
-        <td></td>
+        <td><p>The offset in bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a></div>
   <a id="Evergine_Vulkan_VKGraphicsContext_MapMemory_" data-uid="Evergine.Vulkan.VKGraphicsContext.MapMemory*"></a>
   <h4 id="Evergine_Vulkan_VKGraphicsContext_MapMemory_Evergine_Common_Graphics_GraphicsResource_Evergine_Common_Graphics_MapMode_System_UInt32_" data-uid="Evergine.Vulkan.VKGraphicsContext.MapMemory(Evergine.Common.Graphics.GraphicsResource,Evergine.Common.Graphics.MapMode,System.UInt32)">MapMemory(GraphicsResource, MapMode, UInt32)</h4>
   <div class="markdown level1 summary"><p>Maps a <a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a> or <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into a CPU-accessible data region.</p>
@@ -794,7 +829,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -925,7 +960,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -954,8 +989,9 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UnmapMemory_Evergine_Common_Graphics_GraphicsResource_System_UInt32_">GraphicsContext.UnmapMemory(GraphicsResource, UInt32)</a></div>
   <a id="Evergine_Vulkan_VKGraphicsContext_UpdateTextureData_" data-uid="Evergine.Vulkan.VKGraphicsContext.UpdateTextureData*"></a>
-  <h4 id="Evergine_Vulkan_VKGraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKGraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Vulkan_VKGraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKGraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,System.IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -974,26 +1010,35 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">texture</span></td>
-        <td></td>
+        <td><p>Texture instance.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The data pointer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">sourceSizeInBytes</span></td>
-        <td></td>
+        <td><p>The size in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">subResource</span></td>
-        <td></td>
+        <td><p>The subResource index.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.Graphics.GraphicsContext.html#Evergine_Common_Graphics_GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_">GraphicsContext.UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</a></div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

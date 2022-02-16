@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -193,7 +200,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vuforia.html">Evergine.Vuforia</a></h6>
@@ -221,7 +249,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VuforiaService vuforiaService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected VuforiaService vuforiaService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,7 +288,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -272,7 +301,8 @@ This is only used when <a class="xref" href="Evergine.Vuforia.WorldCenterMode.ht
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsStatic { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Is Static&quot;, Tooltip = &quot;Indicates whether the entity pose will only be set the first time the target is tracked. This is only used when 'WorldCenterMode.Camera' tracking mode is active&quot;)]
+public bool IsStatic { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -403,7 +433,7 @@ This is only used when <a class="xref" href="Evergine.Vuforia.WorldCenterMode.ht
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_OnDetach">Behavior.OnDetach()</a></div>
   <a id="Evergine_Vuforia_VuforiaTargetBehavior_Update_" data-uid="Evergine.Vuforia.VuforiaTargetBehavior.Update*"></a>
-  <h4 id="Evergine_Vuforia_VuforiaTargetBehavior_Update_TimeSpan_" data-uid="Evergine.Vuforia.VuforiaTargetBehavior.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Vuforia_VuforiaTargetBehavior_Update_System_TimeSpan_" data-uid="Evergine.Vuforia.VuforiaTargetBehavior.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -422,14 +452,16 @@ This is only used when <a class="xref" href="Evergine.Vuforia.WorldCenterMode.ht
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The game time.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Vuforia_VuforiaTargetBehavior_Update_TimeSpan__remarks">Remarks</h5>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_Update_System_TimeSpan_">Behavior.Update(TimeSpan)</a></div>
+  <h5 id="Evergine_Vuforia_VuforiaTargetBehavior_Update_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This is only executed if the instance is active.</p>
 </div>
   <h3 id="implements">Implements</h3>

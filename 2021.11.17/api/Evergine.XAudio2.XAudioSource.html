@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,6 +97,10 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Evergine.Common.Audio.AudioSource.html">AudioSource</a></div>
     <div class="level2"><span class="xref">XAudioSource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -153,12 +164,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_OnBufferProccessed_System_Boolean_">AudioSource.OnBufferProccessed(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.XAudio2.html">Evergine.XAudio2</a></h6>
   <h6><strong>Assembly</strong>: Evergine.XAudio2.dll</h6>
   <h5 id="Evergine_XAudio2_XAudioSource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class XAudioSource : AudioSource</code></pre>
+    <pre><code class="lang-csharp hljs">public class XAudioSource : AudioSource, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -215,7 +247,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IXAudio2SourceVoice</span></td>
+        <td><span class="xref">Vortice.XAudio2.IXAudio2SourceVoice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -291,7 +323,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the current play position.</p>
 </td>
       </tr>
@@ -318,7 +350,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the Queue Play Position.</p>
 </td>
       </tr>
@@ -536,8 +568,9 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_SetPitch_System_Single_">AudioSource.SetPitch(Single)</a></div>
   <a id="Evergine_XAudio2_XAudioSource_SetQueuePlayPosition_" data-uid="Evergine.XAudio2.XAudioSource.SetQueuePlayPosition*"></a>
-  <h4 id="Evergine_XAudio2_XAudioSource_SetQueuePlayPosition_TimeSpan_" data-uid="Evergine.XAudio2.XAudioSource.SetQueuePlayPosition(TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_XAudio2_XAudioSource_SetQueuePlayPosition_System_TimeSpan_" data-uid="Evergine.XAudio2.XAudioSource.SetQueuePlayPosition(System.TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Sets the queue play TimeSpan position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -554,12 +587,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">position</span></td>
-        <td></td>
+        <td><p>The new TimeSpan position.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_SetQueuePlayPosition_System_TimeSpan_">AudioSource.SetQueuePlayPosition(TimeSpan)</a></div>
   <a id="Evergine_XAudio2_XAudioSource_SetVolume_" data-uid="Evergine.XAudio2.XAudioSource.SetVolume*"></a>
   <h4 id="Evergine_XAudio2_XAudioSource_SetVolume_System_Single_" data-uid="Evergine.XAudio2.XAudioSource.SetVolume(System.Single)">SetVolume(Single)</h4>
   <div class="markdown level1 summary"><p>Sets the volume of this source.</p>
@@ -589,6 +625,10 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_SetVolume_System_Single_">AudioSource.SetVolume(Single)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

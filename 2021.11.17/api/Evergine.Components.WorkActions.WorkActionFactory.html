@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -90,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">WorkActionFactory</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.WorkActions.html">Evergine.Components.WorkActions</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
   <h5 id="Evergine_Components_WorkActions_WorkActionFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class WorkActionFactory : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class WorkActionFactory</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.AndWaitCondition*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_Func_System_Boolean__System_Int32_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.AndWaitCondition(Evergine.Framework.Services.IWorkAction,Func{System.Boolean},System.Int32)">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.AndWaitCondition(Evergine.Framework.Services.IWorkAction,System.Func{System.Boolean},System.Int32)">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Ands the wait condition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -124,7 +155,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">breakPredicate</span></td>
         <td><p>The predicate.</p>
 </td>
@@ -245,6 +276,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
   <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction___" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,Evergine.Framework.Services.IWorkAction[])">ContinueWith(IWorkAction, IWorkAction[])</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
@@ -294,106 +341,24 @@
       </tr>
     </tbody>
   </table>
-  <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,Func{Evergine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
-  <div class="markdown level1 summary"><p>Continue with another action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkAction ContinueWith(this IWorkAction parent, Func&lt;IWorkAction&gt; nextActionGenerator)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td><p>The parent action.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
-        <td><span class="parametername">nextActionGenerator</span></td>
-        <td><p>The next action generator.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
-        <td><p>An action that continue with the next action when the parent is completed.</p>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Func_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,Func{Evergine.Framework.Services.IWorkAction}[])">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Continue with another action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkActionSet ContinueWith(this IWorkAction parent, params Func&lt;IWorkAction&gt;[] childTaskGenerators)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
-        <td><span class="parametername">parent</span></td>
-        <td><p>The parent action.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
-        <td><span class="parametername">childTaskGenerators</span></td>
-        <td><p>The child task generators.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Evergine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
-        <td><p>An action that continue with the next action when the parent is completed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,IEnumerable{Evergine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,System.Collections.Generic.IEnumerable{Evergine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -418,7 +383,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">childTasks</span></td>
         <td><p>The child tasks.</p>
 </td>
@@ -441,8 +406,154 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,System.Func{Evergine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
+  <div class="markdown level1 summary"><p>Continue with another action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkAction ContinueWith(this IWorkAction parent, Func&lt;IWorkAction&gt; nextActionGenerator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="parametername">nextActionGenerator</span></td>
+        <td><p>The next action generator.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
+        <td><p>An action that continue with the next action when the parent is completed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith*"></a>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWith(Evergine.Framework.Services.IWorkAction,System.Func{Evergine.Framework.Services.IWorkAction}[])">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Continue with another action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkActionSet ContinueWith(this IWorkAction parent, params Func&lt;IWorkAction&gt;[] childTaskGenerators)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
+        <td><span class="parametername">childTaskGenerators</span></td>
+        <td><p>The child task generators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
+        <td><p>An action that continue with the next action when the parent is completed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWithAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_Action_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWithAction(Evergine.Framework.Services.IWorkAction,Action)">ContinueWithAction(IWorkAction, Action)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_System_Action_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.ContinueWithAction(Evergine.Framework.Services.IWorkAction,System.Action)">ContinueWithAction(IWorkAction, Action)</h4>
   <div class="markdown level1 summary"><p>Continue with another an action function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -467,7 +578,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The next action.</p>
 </td>
@@ -490,8 +601,24 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateDelayWorkAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_Evergine_Framework_Scene_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateDelayWorkAction(Evergine.Framework.Scene,TimeSpan)">CreateDelayWorkAction(Scene, TimeSpan)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_Evergine_Framework_Scene_System_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateDelayWorkAction(Evergine.Framework.Scene,System.TimeSpan)">CreateDelayWorkAction(Scene, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Creates a delay action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -516,7 +643,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">time</span></td>
         <td><p>The time.</p>
 </td>
@@ -583,7 +710,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateLoopWorkActionUntil*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction__Func_System_Boolean__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateLoopWorkActionUntil(Evergine.Framework.Scene,Func{Evergine.Framework.Services.IWorkAction},Func{System.Boolean})">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction__System_Func_System_Boolean__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateLoopWorkActionUntil(Evergine.Framework.Scene,System.Func{Evergine.Framework.Services.IWorkAction},System.Func{System.Boolean})">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates the repeat task until.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -608,13 +735,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">actionGenerator</span></td>
         <td><p>The action generator.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">stopCondition</span></td>
         <td><p>The until predicate.</p>
 </td>
@@ -687,56 +814,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,Func{Evergine.Framework.Services.IWorkAction}[])">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Create parallel actions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, params Func&lt;IWorkAction&gt;[] actionGenerators)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Evergine.Framework.Scene.html">Scene</a></td>
-        <td><span class="parametername">scene</span></td>
-        <td><p>The scene.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
-        <td><span class="parametername">actionGenerators</span></td>
-        <td><p>The action generators.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Evergine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
-        <td><p>The action.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,IEnumerable{Evergine.Framework.Services.IWorkAction})">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,System.Collections.Generic.IEnumerable{Evergine.Framework.Services.IWorkAction})">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Create parallel actions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -761,7 +839,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">actions</span></td>
         <td><p>The actions.</p>
 </td>
@@ -785,7 +863,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_IEnumerable_Func_Evergine_Framework_Services_IWorkAction___" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,IEnumerable{Func{Evergine.Framework.Services.IWorkAction}})">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Collections_Generic_IEnumerable_System_Func_Evergine_Framework_Services_IWorkAction___" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,System.Collections.Generic.IEnumerable{System.Func{Evergine.Framework.Services.IWorkAction}})">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Create parallel actions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -810,7 +888,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;&gt;</td>
         <td><span class="parametername">actionGenerators</span></td>
         <td><p>The action generators.</p>
 </td>
@@ -834,7 +912,56 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Services.IWorkAction,IEnumerable{Evergine.Framework.Services.IWorkAction})">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction____" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Scene,System.Func{Evergine.Framework.Services.IWorkAction}[])">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Create parallel actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, params Func&lt;IWorkAction&gt;[] actionGenerators)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Framework.Scene.html">Scene</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td><p>The scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
+        <td><span class="parametername">actionGenerators</span></td>
+        <td><p>The action generators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
+        <td><p>The action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions*"></a>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(Evergine.Framework.Services.IWorkAction,System.Collections.Generic.IEnumerable{Evergine.Framework.Services.IWorkAction})">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -859,7 +986,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">childTasks</span></td>
         <td><p>The child tasks.</p>
 </td>
@@ -882,8 +1009,24 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitConditionWorkAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_Evergine_Framework_Scene_Func_System_Boolean__System_Int32_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitConditionWorkAction(Evergine.Framework.Scene,Func{System.Boolean},System.Int32)">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_Evergine_Framework_Scene_System_Func_System_Boolean__System_Int32_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitConditionWorkAction(Evergine.Framework.Scene,System.Func{System.Boolean},System.Int32)">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Create a wait condition action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -908,7 +1051,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">breakPredicate</span></td>
         <td><p>The predicate.</p>
 </td>
@@ -938,7 +1081,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitWorkAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_Evergine_Framework_Scene_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitWorkAction(Evergine.Framework.Scene,TimeSpan)">CreateWaitWorkAction(Scene, TimeSpan)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_Evergine_Framework_Scene_System_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWaitWorkAction(Evergine.Framework.Scene,System.TimeSpan)">CreateWaitWorkAction(Scene, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Creates the wait action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -963,7 +1106,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">timeSpan</span></td>
         <td><p>The time span.</p>
 </td>
@@ -1036,7 +1179,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_Evergine_Framework_Scene_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkAction(Evergine.Framework.Scene,Func{Evergine.Framework.Services.IWorkAction})">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkAction_Evergine_Framework_Scene_System_Func_Evergine_Framework_Services_IWorkAction__" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkAction(Evergine.Framework.Scene,System.Func{Evergine.Framework.Services.IWorkAction})">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a work action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1061,7 +1204,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><span class="parametername">actionGenerator</span></td>
         <td><p>The action generator method.</p>
 </td>
@@ -1085,7 +1228,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkActionFromAction*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_Evergine_Framework_Scene_Action_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkActionFromAction(Evergine.Framework.Scene,Action)">CreateWorkActionFromAction(Scene, Action)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_Evergine_Framework_Scene_System_Action_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.CreateWorkActionFromAction(Evergine.Framework.Scene,System.Action)">CreateWorkActionFromAction(Scene, Action)</h4>
   <div class="markdown level1 summary"><p>Creates an empty work action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1110,7 +1253,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>simple code to be executed.</p>
 </td>
@@ -1134,7 +1277,7 @@
     </tbody>
   </table>
   <a id="Evergine_Components_WorkActions_WorkActionFactory_Delay_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.Delay*"></a>
-  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.Delay(Evergine.Framework.Services.IWorkAction,TimeSpan)">Delay(IWorkAction, TimeSpan)</h4>
+  <h4 id="Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_System_TimeSpan_" data-uid="Evergine.Components.WorkActions.WorkActionFactory.Delay(Evergine.Framework.Services.IWorkAction,System.TimeSpan)">Delay(IWorkAction, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Add a delay action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1159,7 +1302,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">time</span></td>
         <td><p>The time.</p>
 </td>

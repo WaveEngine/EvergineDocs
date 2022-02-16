@@ -94,7 +94,22 @@
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IEquatable</span>&lt;<a class="xref" href="Evergine.Common.Graphics.BlendStateRenderTargetDescription.html">BlendStateRenderTargetDescription</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Evergine.Common.Graphics.BlendStateRenderTargetDescription.html">BlendStateRenderTargetDescription</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
@@ -110,7 +125,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool BlendEnable</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 1)]
+public bool BlendEnable</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,7 +149,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlendOperation BlendOperationAlpha</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public BlendOperation BlendOperationAlpha</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,7 +173,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlendOperation BlendOperationColor</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public BlendOperation BlendOperationColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,7 +197,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ColorWriteChannels ColorWriteChannels</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public ColorWriteChannels ColorWriteChannels</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -204,7 +223,8 @@ and DestBlendAlpha operations.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Blend DestinationBlendAlpha</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public Blend DestinationBlendAlpha</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,7 +248,8 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Blend DestinationBlendColor</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public Blend DestinationBlendColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,7 +274,8 @@ and DestBlendAlpha operations.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Blend SourceBlendAlpha</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public Blend SourceBlendAlpha</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -277,7 +299,8 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Blend SourceBlendColor</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true)]
+public Blend SourceBlendColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -367,7 +390,7 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
   </table>
   <a id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_Equals_" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.Equals*"></a>
   <h4 id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_Equals_System_Object_" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -387,7 +410,7 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -403,11 +426,13 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <a id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_GetHashCode_" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.GetHashCode*"></a>
   <h4 id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_GetHashCode" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
@@ -433,6 +458,8 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_SetDefault_" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.SetDefault*"></a>
   <h4 id="Evergine_Common_Graphics_BlendStateRenderTargetDescription_SetDefault" data-uid="Evergine.Common.Graphics.BlendStateRenderTargetDescription.SetDefault">SetDefault()</h4>
   <div class="markdown level1 summary"><p>Default BlendStateDescription values.</p>
@@ -544,7 +571,14 @@ The BlendOp member defines how to combine the SrcBlend and DestBlend operations.
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IEquatable&lt;&gt;</span>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

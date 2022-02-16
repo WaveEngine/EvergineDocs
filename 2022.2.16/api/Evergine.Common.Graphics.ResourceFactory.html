@@ -102,11 +102,35 @@
       <div class="level2"><a class="xref" href="Evergine.OpenGL.GLResourceFactory.html">GLResourceFactory</a></div>
       <div class="level2"><a class="xref" href="Evergine.Vulkan.VKResourceFactory.html">VKResourceFactory</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Graphics_ResourceFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ResourceFactory : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ResourceFactory</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -186,7 +210,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_ResourceFactory_CreateBuffer_" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBuffer*"></a>
-  <h4 id="Evergine_Common_Graphics_ResourceFactory_CreateBuffer_IntPtr_Evergine_Common_Graphics_BufferDescription__System_String_" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBuffer(IntPtr,Evergine.Common.Graphics.BufferDescription@,System.String)">CreateBuffer(IntPtr, ref BufferDescription, String)</h4>
+  <h4 id="Evergine_Common_Graphics_ResourceFactory_CreateBuffer_System_IntPtr_Evergine_Common_Graphics_BufferDescription__System_String_" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBuffer(System.IntPtr,Evergine.Common.Graphics.BufferDescription@,System.String)">CreateBuffer(IntPtr, ref BufferDescription, String)</h4>
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -205,7 +229,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>Data pointer.</p>
 </td>
@@ -385,7 +409,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_ResourceFactory_CreateBufferInternal_" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBufferInternal*"></a>
-  <h4 id="Evergine_Common_Graphics_ResourceFactory_CreateBufferInternal_IntPtr_Evergine_Common_Graphics_BufferDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBufferInternal(IntPtr,Evergine.Common.Graphics.BufferDescription@)">CreateBufferInternal(IntPtr, ref BufferDescription)</h4>
+  <h4 id="Evergine_Common_Graphics_ResourceFactory_CreateBufferInternal_System_IntPtr_Evergine_Common_Graphics_BufferDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.CreateBufferInternal(System.IntPtr,Evergine.Common.Graphics.BufferDescription@)">CreateBufferInternal(IntPtr, ref BufferDescription)</h4>
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Evergine.Common.Graphics.Buffer.html">Buffer</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -404,7 +428,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>Data pointer.</p>
 </td>
@@ -440,7 +464,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommandQueue CreateCommandQueue(CommandQueueType queueType = default(CommandQueueType))</code></pre>
+    <pre><code class="lang-csharp hljs">public CommandQueue CreateCommandQueue(CommandQueueType queueType = CommandQueueType.Graphics)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -483,7 +507,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract CommandQueue CreateCommandQueueInternal(CommandQueueType queueType = default(CommandQueueType))</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract CommandQueue CreateCommandQueueInternal(CommandQueueType queueType = CommandQueueType.Graphics)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1562,7 +1586,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointer_" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointer*"></a>
-  <h4 id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointer_IntPtr_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointer(IntPtr,Evergine.Common.Graphics.TextureDescription@)">GetTextureFromNativePointer(IntPtr, ref TextureDescription)</h4>
+  <h4 id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointer_System_IntPtr_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointer(System.IntPtr,Evergine.Common.Graphics.TextureDescription@)">GetTextureFromNativePointer(IntPtr, ref TextureDescription)</h4>
   <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> instance from an existing texture using the specified native pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1581,7 +1605,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">texturePointer</span></td>
         <td><p>The pointer of the texture.</p>
 </td>
@@ -1611,7 +1635,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointerInternal_" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointerInternal*"></a>
-  <h4 id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointerInternal_IntPtr_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointerInternal(IntPtr,Evergine.Common.Graphics.TextureDescription@)">GetTextureFromNativePointerInternal(IntPtr, ref TextureDescription)</h4>
+  <h4 id="Evergine_Common_Graphics_ResourceFactory_GetTextureFromNativePointerInternal_System_IntPtr_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.Common.Graphics.ResourceFactory.GetTextureFromNativePointerInternal(System.IntPtr,Evergine.Common.Graphics.TextureDescription@)">GetTextureFromNativePointerInternal(IntPtr, ref TextureDescription)</h4>
   <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> instance from an existing texture using the specified native pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1630,7 +1654,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">texturePointer</span></td>
         <td><p>The pointer of the texture.</p>
 </td>

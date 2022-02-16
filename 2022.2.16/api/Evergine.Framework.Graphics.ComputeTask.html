@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html">BaseMaterial</a></div>
     <div class="level3"><span class="xref">ComputeTask</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -138,7 +142,7 @@
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireMaterialStateChanged">BaseMaterial.FireMaterialStateChanged()</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireRenderLayerStateChanged_System_Object_EventArgs_">BaseMaterial.FireRenderLayerStateChanged(Object, EventArgs)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_FireRenderLayerStateChanged_System_Object_System_EventArgs_">BaseMaterial.FireRenderLayerStateChanged(Object, EventArgs)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_ActiveDirectivesNames">BaseMaterial.ActiveDirectivesNames</a>
@@ -159,7 +163,7 @@
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_Prepare_Evergine_Common_Graphics_CommandBuffer_">BaseMaterial.Prepare(CommandBuffer)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetParameterValue_System_String_Type_System_Byte___">BaseMaterial.SetParameterValue(String, Type, Byte[])</a>
+      <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetParameterValue_System_String_System_Type_System_Byte___">BaseMaterial.SetParameterValue(String, Type, Byte[])</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.BaseMaterial.html#Evergine_Framework_Graphics_BaseMaterial_SetTextureValue_Evergine_Common_Graphics_Texture_System_String_">BaseMaterial.SetTextureValue(Texture, String)</a>
@@ -203,12 +207,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_ComputeTask_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ComputeTask : BaseMaterial</code></pre>
+    <pre><code class="lang-csharp hljs">public class ComputeTask : BaseMaterial, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -396,7 +421,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Run1D(CommandBuffer computeCommandBuffer, uint threadCountX, uint groupSizeX = null, string pass = &quot;Default&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Run1D(CommandBuffer computeCommandBuffer, uint threadCountX, uint groupSizeX = 64U, string pass = &quot;Default&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -441,7 +466,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Run1D(uint threadCountX, uint groupSizeX = null, string pass = &quot;Default&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Run1D(uint threadCountX, uint groupSizeX = 64U, string pass = &quot;Default&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -480,7 +505,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Run2D(CommandBuffer computeCommandBuffer, uint threadCountX, uint threadCountY, uint groupSizeX = null, uint groupSizeY = null, string pass = &quot;Default&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Run2D(CommandBuffer computeCommandBuffer, uint threadCountX, uint threadCountY, uint groupSizeX = 8U, uint groupSizeY = 8U, string pass = &quot;Default&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -537,7 +562,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Run2D(uint threadCountX, uint threadCountY, uint groupSizeX = null, uint groupSizeY = null, string pass = &quot;Default&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Run2D(uint threadCountX, uint threadCountY, uint groupSizeX = 8U, uint groupSizeY = 8U, string pass = &quot;Default&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -713,6 +738,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

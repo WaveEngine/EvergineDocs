@@ -50,10 +50,17 @@
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+          <div class="container flex-container">
+            <label for="version" class="select-label">Version:</label>
+            <select id="select-version" class="select-version" name="version" title="version">
+              <option value="2022.2.16" class="option-version">2022.2.16
+              <option value="2021.11.17" class="option-version">2021.11.17
+            </select>
+            <div class="hide-when-search" id="breadcrumb">
+              <ul class="breadcrumb">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
@@ -156,7 +163,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Services.html">Evergine.Framework.Services</a></h6>
@@ -168,7 +196,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Services_TimerFactory_CreateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_TimeSpan_Action_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.String,TimeSpan,Action)">CreateTimer(String, TimeSpan, Action)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_System_TimeSpan_System_Action_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.String,System.TimeSpan,System.Action)">CreateTimer(String, TimeSpan, Action)</h4>
   <div class="markdown level1 summary"><p>Adds a new timer. If there is already a timer with the selected name, this call will overwrite it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -193,13 +221,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The interval between each timer firing.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute when the timer fires.</p>
 </td>
@@ -222,11 +250,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_TimeSpan_Action__remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_System_TimeSpan_System_Action__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Looped is true by default, use the other overload to change it.</p>
 </div>
   <a id="Evergine_Framework_Services_TimerFactory_CreateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_TimeSpan_Action_System_Boolean_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.String,TimeSpan,Action,System.Boolean,Evergine.Framework.Scene)">CreateTimer(String, TimeSpan, Action, Boolean, Scene)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_String_System_TimeSpan_System_Action_System_Boolean_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.String,System.TimeSpan,System.Action,System.Boolean,Evergine.Framework.Scene)">CreateTimer(String, TimeSpan, Action, Boolean, Scene)</h4>
   <div class="markdown level1 summary"><p>Adds a new timer. If there is already a timer with the selected name, this call will overwrite it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -251,13 +279,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The interval between each timer firing.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute when the timer fires.</p>
 </td>
@@ -292,8 +320,34 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Already exists a timer with same name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>If already exists a timer with same name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_CreateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_TimeSpan_Action_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(TimeSpan,Action)">CreateTimer(TimeSpan, Action)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_TimeSpan_System_Action_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.TimeSpan,System.Action)">CreateTimer(TimeSpan, Action)</h4>
   <div class="markdown level1 summary"><p>Adds a new timer. If there is already a timer with the selected name, this call will overwrite it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -312,13 +366,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The interval between each timer firing.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute when the timer fires.</p>
 </td>
@@ -341,11 +395,11 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Services_TimerFactory_CreateTimer_TimeSpan_Action__remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_TimeSpan_System_Action__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Looped is true by default, use the other overload to change it.</p>
 </div>
   <a id="Evergine_Framework_Services_TimerFactory_CreateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_TimeSpan_Action_System_Boolean_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(TimeSpan,Action,System.Boolean,Evergine.Framework.Scene)">CreateTimer(TimeSpan, Action, Boolean, Scene)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_CreateTimer_System_TimeSpan_System_Action_System_Boolean_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.CreateTimer(System.TimeSpan,System.Action,System.Boolean,Evergine.Framework.Scene)">CreateTimer(TimeSpan, Action, Boolean, Scene)</h4>
   <div class="markdown level1 summary"><p>Adds a new timer. If there is already a timer with the selected name, this call will overwrite it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -364,13 +418,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The interval between each timer firing.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute when the timer fires.</p>
 </td>
@@ -481,6 +535,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>TimerFactory was disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_RemoveAllTimers_" data-uid="Evergine.Framework.Services.TimerFactory.RemoveAllTimers*"></a>
   <h4 id="Evergine_Framework_Services_TimerFactory_RemoveAllTimers" data-uid="Evergine.Framework.Services.TimerFactory.RemoveAllTimers">RemoveAllTimers()</h4>
   <div class="markdown level1 summary"><p>Removes all timers.</p>
@@ -490,6 +560,22 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void RemoveAllTimers()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>TimerFactory was disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_RemoveSceneTimers_" data-uid="Evergine.Framework.Services.TimerFactory.RemoveSceneTimers*"></a>
   <h4 id="Evergine_Framework_Services_TimerFactory_RemoveSceneTimers_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.RemoveSceneTimers(Evergine.Framework.Scene)">RemoveSceneTimers(Scene)</h4>
   <div class="markdown level1 summary"><p>Removes all scene timers.</p>
@@ -513,6 +599,22 @@
         <td><a class="xref" href="Evergine.Framework.Scene.html">Scene</a></td>
         <td><span class="parametername">scene</span></td>
         <td><p>The scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>TimerFactory was disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -560,6 +662,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Timer cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_RemoveTimer_" data-uid="Evergine.Framework.Services.TimerFactory.RemoveTimer*"></a>
   <h4 id="Evergine_Framework_Services_TimerFactory_RemoveTimer_System_String_" data-uid="Evergine.Framework.Services.TimerFactory.RemoveTimer(System.String)">RemoveTimer(String)</h4>
   <div class="markdown level1 summary"><p>Removes a timer.</p>
@@ -603,6 +721,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>TimerFactory was disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Parameter name cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_ResumeSceneTimers_" data-uid="Evergine.Framework.Services.TimerFactory.ResumeSceneTimers*"></a>
   <h4 id="Evergine_Framework_Services_TimerFactory_ResumeSceneTimers_Evergine_Framework_Scene_" data-uid="Evergine.Framework.Services.TimerFactory.ResumeSceneTimers(Evergine.Framework.Scene)">ResumeSceneTimers(Scene)</h4>
   <div class="markdown level1 summary"><p>Resume all scene timers.</p>
@@ -630,8 +769,24 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>TimerFactory was disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_Update_" data-uid="Evergine.Framework.Services.TimerFactory.Update*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_Update_TimeSpan_" data-uid="Evergine.Framework.Services.TimerFactory.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_Update_System_TimeSpan_" data-uid="Evergine.Framework.Services.TimerFactory.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -650,7 +805,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td><p>The elapsed game time since the last update.</p>
 </td>
@@ -658,9 +813,9 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.Services.UpdatableService.html#Evergine_Framework_Services_UpdatableService_Update_TimeSpan_">UpdatableService.Update(TimeSpan)</a></div>
+  <div><a class="xref" href="Evergine.Framework.Services.UpdatableService.html#Evergine_Framework_Services_UpdatableService_Update_System_TimeSpan_">UpdatableService.Update(TimeSpan)</a></div>
   <a id="Evergine_Framework_Services_TimerFactory_UpdateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_UpdateTimer_System_String_TimeSpan_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer(System.String,TimeSpan)">UpdateTimer(String, TimeSpan)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_UpdateTimer_System_String_System_TimeSpan_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer(System.String,System.TimeSpan)">UpdateTimer(String, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates a timer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -685,15 +840,31 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The new interval between each timer firing.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Framework_Services_TimerFactory_UpdateTimer_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer*"></a>
-  <h4 id="Evergine_Framework_Services_TimerFactory_UpdateTimer_System_String_TimeSpan_Action_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer(System.String,TimeSpan,Action)">UpdateTimer(String, TimeSpan, Action)</h4>
+  <h4 id="Evergine_Framework_Services_TimerFactory_UpdateTimer_System_String_System_TimeSpan_System_Action_" data-uid="Evergine.Framework.Services.TimerFactory.UpdateTimer(System.String,System.TimeSpan,System.Action)">UpdateTimer(String, TimeSpan, Action)</h4>
   <div class="markdown level1 summary"><p>Updates a timer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -718,15 +889,36 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The new interval between each timer firing.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute when the timer fires.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If action is null.</p>
 </td>
       </tr>
     </tbody>
