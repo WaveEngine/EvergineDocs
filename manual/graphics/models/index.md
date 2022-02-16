@@ -39,7 +39,7 @@ The **NodeContent** refers to the class that represents one node. It contains th
 | Property | Description | 
 |----------|------------ |
 | Name | Name of the node |
-| Children| Array of the **NdeContent** children of the node.
+| Children| Array of the **NodeContent** children of the node.
 | Translation | Local Vector3 translation of the node. |
 | Orientation | Local Quaternion orientation of the node. |
 | Scale | Local Vector3 scale of the node. |
@@ -77,9 +77,16 @@ The **SkinContent** class contain this information:
 
 Using this properties animating the nodes referenced by this **SkinContent** will animate the geometry accordingly.
 
+In order for the skinned mesh to work properly, the **Vertex Buffer** of the skinned mesh needs the following fields:
+
+| Semantic | Type | Description |
+|----------|------| ------------|
+| **BoneIndices** | ´int4short´ | Vector that contains the indices of the bones (from the            Nodes list) affected by this vertex.
+| **BoneWeights** | float4 | For every bone from he previous field, the weight indicates the percentaje of the box transforms that applies to this vertex.
+
 ## Animations
 
-In ##Evergine## model animation is achieved by animating nodes. If those nodes are part of a skinning bones, it will also animate the skinned mesh accordingly.
+In **Evergine** model animation is achieved by animating nodes. If those nodes are part of a skinning bones, it will also animate the skinned mesh accordingly.
 
 ## In this section
 * [Import Models](import_model.md)

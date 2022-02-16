@@ -31,7 +31,7 @@ protected override void CreateScene()
 ```
 
 ## Create a Texture from code
-Creting a **Texture** demands a little bit more effort, and it's defined in [this article](../low_level_api/texture.md). Bassically we need to define two main things:
+Creating a **Texture** demands a little bit more effort, and it's defined in [this article](../low_level_api/texture.md). Bassically we need to define two main things:
 - **TextureDescription** structure. 
 - **DataBoxes** with the texture data.
 
