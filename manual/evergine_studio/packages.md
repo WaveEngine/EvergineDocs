@@ -54,29 +54,20 @@ Evergine is on continuous development, and more upcoming packages are coming:
 | **CAD Formats** | Take your industrial CAD/3D model and bring it into your Evergine application. |
 | **Bing Maps** | Provides [Bing Maps](https://www.bingmapsportal.com/) integration with Evergine, that allows you to utilize Bing Maps 3D mapping data in your application. |
 
-## Add a new package
+## Add, update or remove a package
 
-Unfortunately, there is no way right now from Evergine Studio to automatically search and install an extension in a project. For now, a slightly more manual steps must be done:
+To open Package Manager go to Settings > Project Settings main menu option, or just right click on "Dependencies" node in Assets hierarchy panel and select "Manage dependencies" option.
 
-1. Check each package documentation for its Id, version and nuget dependencies.
-1. Add it manually to the `weproj` file at your project root, under the Packages yaml list.
+![evergine studio packages manager](Images/package_manager.png)
 
-```yaml
-Packages:
-  - Id: Evergine.Core
-    Version: ...
-  - Id: [PACKAGE ID]
-    Version: [VERSION ACCORDING TO YOUR EVERGINE VERSION]
-```
+Browse tab shows all available packages. Dependending on usage of each package on your project, an indicator may appear to display availability or not of new package versions.
 
-For example:
+You can perform typical add, update or remove operations over packages from this section.
 
-```yaml
-- Id: Evergine.MRTK.Assets
-  Version: 2021.9.29.2-nightly
-```
+If you modify the collection of used packages, Evergine Studio will be reloaded once you close Project Settings window.
 
-3. Finally, add the nuget dependencies to your root project, the one that contains the `EvergineContent.cs` file.
+> [!Note]
+> Notice that to use packages that have third NuGet package dependencies, you still need to install them by hand. Add the nuget dependencies to your root project, the one that contains the `EvergineContent.cs` file.
 
 ## Customize assets
 

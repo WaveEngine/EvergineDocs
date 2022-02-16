@@ -36,13 +36,15 @@
 - name: Environment
   href: environment.md  
 - name: Line Batch
-  href: linebatch.md  
+  href: linebatch/toc.yml
+  homepage: linebatch/index.md
 - name: Lines 3D
   href: lines_3d.md
 - name: Sprites
   href: sprites.md
 - name: Billboards
-  href: billboards.md
+  href: billboard/toc.yml
+  homepage: billboard/index.md
 - name: Low-level API
   href: low_level_api/toc.yml
   homepage: low_level_api/index.md
