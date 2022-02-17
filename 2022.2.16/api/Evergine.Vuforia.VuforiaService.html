@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -166,28 +164,7 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vuforia.html">Evergine.Vuforia</a></h6>
@@ -217,7 +194,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Vuforia.VuforiaDataSet.html">VuforiaDataSet</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Vuforia.VuforiaDataSet.html">VuforiaDataSet</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -302,8 +279,7 @@ is attached.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;License Key&quot;, Tooltip = &quot;The Vuforia license key that is used for this app&quot;)]
-public string LicenseKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string LicenseKey { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -317,22 +293,6 @@ public string LicenseKey { get; set; }</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>License key cannot be changed while Vuforia tracking is active.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -440,7 +400,7 @@ is attached.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Vuforia.TrackableResult.html">TrackableResult</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Vuforia.TrackableResult.html">TrackableResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -657,7 +617,7 @@ is attached.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p><code>true</code>, if tracking was started, <code>false</code> otherwise.</p>
 </td>
       </tr>
@@ -682,14 +642,14 @@ is attached.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p><code>true</code>, if tracking was stopped, <code>false</code> otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Vuforia_VuforiaService_Update_" data-uid="Evergine.Vuforia.VuforiaService.Update*"></a>
-  <h4 id="Evergine_Vuforia_VuforiaService_Update_System_TimeSpan_" data-uid="Evergine.Vuforia.VuforiaService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Vuforia_VuforiaService_Update_TimeSpan_" data-uid="Evergine.Vuforia.VuforiaService.Update(TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -707,14 +667,12 @@ is attached.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.Services.UpdatableService.html#Evergine_Framework_Services_UpdatableService_Update_System_TimeSpan_">UpdatableService.Update(TimeSpan)</a></div>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Vuforia_VuforiaService_OnTrackingStateChanged" data-uid="Evergine.Vuforia.VuforiaService.OnTrackingStateChanged">OnTrackingStateChanged</h4>
@@ -735,7 +693,7 @@ is attached.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Vuforia.VuforiaState.html">VuforiaState</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Vuforia.VuforiaState.html">VuforiaState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

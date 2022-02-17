@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,41 +95,17 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">TaskExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Threading.html">Evergine.Framework.Threading</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Threading_TaskExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class TaskExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TaskExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait*"></a>
-  <h4 id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait_System_Threading_Tasks_Task_Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait(System.Threading.Tasks.Task,Evergine.Framework.Threading.EvergineTaskContinueOn)">ConfigureEvergineAwait(Task, EvergineTaskContinueOn)</h4>
-  <div class="markdown level1 summary"><p>Configures the awaiter used to await this <span class="xref">System.Threading.Tasks.Task</span>.</p>
+  <h4 id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait_Task_Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait(Task,Evergine.Framework.Threading.EvergineTaskContinueOn)">ConfigureEvergineAwait(Task, EvergineTaskContinueOn)</h4>
+  <div class="markdown level1 summary"><p>Configures the awaiter used to await this <see cref="!:Task"></see>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -149,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><span class="parametername">task</span></td>
         <td><p>The task to be awaited.</p>
 </td>
@@ -179,8 +153,8 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait*"></a>
-  <h4 id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait__1_System_Threading_Tasks_Task___0__Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait``1(System.Threading.Tasks.Task{``0},Evergine.Framework.Threading.EvergineTaskContinueOn)">ConfigureEvergineAwait&lt;T&gt;(Task&lt;T&gt;, EvergineTaskContinueOn)</h4>
-  <div class="markdown level1 summary"><p>Configures the awaiter used to await this <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>.</p>
+  <h4 id="Evergine_Framework_Threading_TaskExtensions_ConfigureEvergineAwait__1_Task___0__Evergine_Framework_Threading_EvergineTaskContinueOn_" data-uid="Evergine.Framework.Threading.TaskExtensions.ConfigureEvergineAwait``1(Task{``0},Evergine.Framework.Threading.EvergineTaskContinueOn)">ConfigureEvergineAwait&lt;T&gt;(Task&lt;T&gt;, EvergineTaskContinueOn)</h4>
+  <div class="markdown level1 summary"><p>Configures the awaiter used to await this <see cref="!:Task&lt;T>"></see>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -198,7 +172,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><span class="xref">Task</span>&lt;T&gt;</td>
         <td><span class="parametername">task</span></td>
         <td><p>The task to be awaited.</p>
 </td>

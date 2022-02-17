@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -104,32 +102,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
@@ -182,7 +155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -360,7 +333,7 @@ The initial size of this uploaders is defined by this property, The Default valu
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -550,7 +523,7 @@ The initial size of this uploaders is defined by this property, The Default valu
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_GraphicsContext_GetNativePointer_" data-uid="Evergine.Common.Graphics.GraphicsContext.GetNativePointer*"></a>
-  <h4 id="Evergine_Common_Graphics_GraphicsContext_GetNativePointer_System_String_System_IntPtr__" data-uid="Evergine.Common.Graphics.GraphicsContext.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
+  <h4 id="Evergine_Common_Graphics_GraphicsContext_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.Common.Graphics.GraphicsContext.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -573,7 +546,7 @@ The initial size of this uploaders is defined by this property, The Default valu
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
         <td></td>
       </tr>
@@ -595,13 +568,13 @@ The initial size of this uploaders is defined by this property, The Default valu
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_GraphicsContext_InternalUpdateBufferData_" data-uid="Evergine.Common.Graphics.GraphicsContext.InternalUpdateBufferData*"></a>
-  <h4 id="Evergine_Common_Graphics_GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_Common_Graphics_GraphicsContext_InternalUpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.InternalUpdateBufferData(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,7 +593,7 @@ The initial size of this uploaders is defined by this property, The Default valu
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -646,7 +619,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -826,7 +799,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void UnmapMemory(GraphicsResource resource, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void UnmapMemory(GraphicsResource resource, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -853,13 +826,13 @@ The initial size of this uploaders is defined by this property, The Default valu
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateBufferData*"></a>
-  <h4 id="Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateBufferData(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_Common_Graphics_GraphicsContext_UpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateBufferData(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -878,7 +851,7 @@ The initial size of this uploaders is defined by this property, The Default valu
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -904,7 +877,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, ref T data, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, ref T data, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -961,7 +934,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -1018,7 +991,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint count, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint count, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -1075,7 +1048,7 @@ The initial size of this uploaders is defined by this property, The Default valu
     </tbody>
   </table>
   <a id="Evergine_Common_Graphics_GraphicsContext_UpdateTextureData_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateTextureData*"></a>
-  <h4 id="Evergine_Common_Graphics_GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,System.IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_Common_Graphics_GraphicsContext_UpdateTextureData_Evergine_Common_Graphics_Texture_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.GraphicsContext.UpdateTextureData(Evergine.Common.Graphics.Texture,IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1100,7 +1073,7 @@ The initial size of this uploaders is defined by this property, The Default valu
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -1126,7 +1099,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, ref T data, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, ref T data, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -1183,7 +1156,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -1240,7 +1213,7 @@ The initial size of this uploaders is defined by this property, The Default valu
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint count, uint destinationOffsetInBytes = 0U)
+    <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint count, uint destinationOffsetInBytes = null)
 
     where T : struct</code></pre>
   </div>
@@ -1297,9 +1270,6 @@ The initial size of this uploaders is defined by this property, The Default valu
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

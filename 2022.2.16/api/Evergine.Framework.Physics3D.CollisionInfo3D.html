@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -99,35 +97,11 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     <div class="level1"><span class="xref">CollisionInfo3D</span></div>
       <div class="level2"><a class="xref" href="Evergine.Bullet.BulletCollisionInfo3D.html">BulletCollisionInfo3D</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Physics3D.html">Evergine.Framework.Physics3D</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Physics3D_CollisionInfo3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CollisionInfo3D</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CollisionInfo3D : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -357,7 +331,7 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_CollisionInfo3D_GetContacts_" data-uid="Evergine.Framework.Physics3D.CollisionInfo3D.GetContacts*"></a>
-  <h4 id="Evergine_Framework_Physics3D_CollisionInfo3D_GetContacts_System_Collections_Generic_ICollection_Evergine_Framework_Physics3D_ContactPoint3D__" data-uid="Evergine.Framework.Physics3D.CollisionInfo3D.GetContacts(System.Collections.Generic.ICollection{Evergine.Framework.Physics3D.ContactPoint3D})">GetContacts(ICollection&lt;ContactPoint3D&gt;)</h4>
+  <h4 id="Evergine_Framework_Physics3D_CollisionInfo3D_GetContacts_ICollection_Evergine_Framework_Physics3D_ContactPoint3D__" data-uid="Evergine.Framework.Physics3D.CollisionInfo3D.GetContacts(ICollection{Evergine.Framework.Physics3D.ContactPoint3D})">GetContacts(ICollection&lt;ContactPoint3D&gt;)</h4>
   <div class="markdown level1 summary"><p>Retrieve all contact points for this collision.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -376,14 +350,14 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="Evergine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
         <td><span class="parametername">contacts</span></td>
         <td><p>A collection of contacts used to retrieve the results.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Framework_Physics3D_CollisionInfo3D_GetContacts_System_Collections_Generic_ICollection_Evergine_Framework_Physics3D_ContactPoint3D___remarks">Remarks</h5>
+  <h5 id="Evergine_Framework_Physics3D_CollisionInfo3D_GetContacts_ICollection_Evergine_Framework_Physics3D_ContactPoint3D___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The collection is not cleared.</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>

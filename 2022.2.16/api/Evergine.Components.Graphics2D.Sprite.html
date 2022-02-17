@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -194,28 +192,7 @@ which is generated from a main PNG or JPEG file format.</p>
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Graphics2D.html">Evergine.Components.Graphics2D</a></h6>
@@ -261,22 +238,6 @@ See <a class="xref" href="Evergine.Components.Graphics2D.Sprite.html#Evergine_Co
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
         <td><span class="parametername">texture</span></td>
         <td><p>The texture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Texture can not be null.</p>
 </td>
       </tr>
     </tbody>
@@ -392,8 +353,7 @@ See <a class="xref" href="Evergine.Components.Graphics2D.Sprite.html#Evergine_Co
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
-public Transform2D Transform2D</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform2D Transform2D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -483,7 +443,7 @@ texture's rectangle) to be drawn.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Rectangle.html">Rectangle</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Rectangle</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -578,22 +538,6 @@ By default, it is white.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void UpdateSourceRectangle()</code></pre>
   </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
-        <td><p>Sprite has been disposed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Components_Graphics2D_Sprite_SamplerChanged" data-uid="Evergine.Components.Graphics2D.Sprite.SamplerChanged">SamplerChanged</h4>
@@ -614,7 +558,7 @@ By default, it is white.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -637,7 +581,7 @@ By default, it is white.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

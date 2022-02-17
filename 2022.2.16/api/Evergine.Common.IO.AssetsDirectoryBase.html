@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -98,35 +96,11 @@
     <div class="level1"><span class="xref">AssetsDirectoryBase</span></div>
       <div class="level2"><a class="xref" href="Evergine.Platform.AssetsDirectory.html">AssetsDirectory</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.IO.html">Evergine.Common.IO</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_IO_AssetsDirectoryBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class AssetsDirectoryBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class AssetsDirectoryBase : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -174,7 +148,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string DefaultFolderName = &quot;Content&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string DefaultFolderName = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -256,7 +230,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of subdirectories the specified relative path in the assets directory, or an empty
 enumerable collection if no directories are found.</p>
 </td>
@@ -311,7 +285,7 @@ valid literal path and wildcard (* and ?) characters, but it doesn't support reg
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of subdirectories the specified relative path in the assets directory that match
 the specified criteria, or an empty enumerable collection if no directories are found.</p>
 </td>
@@ -322,7 +296,7 @@ the specified criteria, or an empty enumerable collection if no directories are 
   <div class="markdown level1 remarks"><p>If an existing directory is empty, it will be discarded in the enumerable collection.</p>
 </div>
   <a id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateDirectories*"></a>
-  <h4 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_System_IO_SearchOption_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateDirectories(System.String,System.String,System.IO.SearchOption)">EnumerateDirectories(String, String, SearchOption)</h4>
+  <h4 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_SearchOption_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateDirectories(System.String,System.String,SearchOption)">EnumerateDirectories(String, String, SearchOption)</h4>
   <div class="markdown level1 summary"><p>Returns an enumerable collection of subdirectories that match the specified search pattern in the specified
 relative path in the assets directory, and optionally searches subdirectories.</p>
 </div>
@@ -355,7 +329,7 @@ valid literal path and wildcard (* and ?) characters, but it doesn't support reg
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.SearchOption</span></td>
+        <td><span class="xref">SearchOption</span></td>
         <td><span class="parametername">searchOption</span></td>
         <td><p>One of the enumeration values that specifies whether the search operation should include all subdirectories
 or only the current directory.</p>
@@ -373,14 +347,14 @@ or only the current directory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of subdirectories the specified relative path in the assets directory that match
 the specified criteria, or an empty enumerable collection if no directories are found.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_System_IO_SearchOption__remarks">Remarks</h5>
+  <h5 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateDirectories_System_String_System_String_SearchOption__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If an existing directory is empty, it will be discarded in the enumerable collection.</p>
 </div>
   <a id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateFiles*"></a>
@@ -420,7 +394,7 @@ the specified criteria, or an empty enumerable collection if no directories are 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of names for the files in the specified relative path in the assets directory, or
 an empty enumerable collection if no directories are found.</p>
 </td>
@@ -472,7 +446,7 @@ valid literal path and wildcard (* and ?) characters, but it doesn't support reg
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of names for the files in the specified relative path in the assets directory that
 match the specified criteria, or an empty enumerable collection if no directories are found.</p>
 </td>
@@ -480,7 +454,7 @@ match the specified criteria, or an empty enumerable collection if no directorie
     </tbody>
   </table>
   <a id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateFiles*"></a>
-  <h4 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_System_String_System_String_System_IO_SearchOption_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateFiles(System.String,System.String,System.IO.SearchOption)">EnumerateFiles(String, String, SearchOption)</h4>
+  <h4 id="Evergine_Common_IO_AssetsDirectoryBase_EnumerateFiles_System_String_System_String_SearchOption_" data-uid="Evergine.Common.IO.AssetsDirectoryBase.EnumerateFiles(System.String,System.String,SearchOption)">EnumerateFiles(String, String, SearchOption)</h4>
   <div class="markdown level1 summary"><p>Returns the names of files that match the specified search pattern in the specified relative path in the
 assets directory, and optionally searches subdirectories.</p>
 </div>
@@ -513,7 +487,7 @@ valid literal path and wildcard (* and ?) characters, but it doesn't support reg
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.SearchOption</span></td>
+        <td><span class="xref">SearchOption</span></td>
         <td><span class="parametername">searchOption</span></td>
         <td><p>One of the enumeration values that specifies whether the search operation should include all subdirectories
 or only the current directory.</p>
@@ -531,7 +505,7 @@ or only the current directory.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>An enumerable collection of names for the files in the specified relative path in the assets directory that
 match the specified criteria, or an empty enumerable collection if no directories are found.</p>
 </td>
@@ -704,7 +678,7 @@ match the specified criteria, or an empty enumerable collection if no directorie
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>A task that represents the asynchronous read operation. The value of the TResult parameter contains
 a string with the characters of the specified asset file.</p>
 </td>

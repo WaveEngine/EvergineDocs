@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -102,7 +100,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -154,27 +152,6 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.FrameBuffer.html#Evergine_Common_Graphics_FrameBuffer_ReleaseUnusedMemory">FrameBuffer.ReleaseUnusedMemory()</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Vulkan.html">Evergine.Vulkan</a></h6>
@@ -238,7 +215,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkImage</span>[]</td>
+        <td><span class="xref">VkImage</span>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -346,7 +323,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VkFramebuffer CurrentBackBuffer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public WaveEngine.Bindings.Vulkan.VkFramebuffer CurrentBackBuffer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -445,7 +422,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.FrameBuffer.html#Evergine_Common_Graphics_FrameBuffer_Dispose_System_Boolean_">FrameBuffer.Dispose(Boolean)</a></div>
   <a id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToFinalLayout_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToFinalLayout*"></a>
-  <h4 id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToFinalLayout_WaveEngine_Bindings_Vulkan_VkCommandBuffer_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToFinalLayout(WaveEngine.Bindings.Vulkan.VkCommandBuffer)">TransitionToFinalLayout(VkCommandBuffer)</h4>
+  <h4 id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToFinalLayout_VkCommandBuffer_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToFinalLayout(VkCommandBuffer)">TransitionToFinalLayout(VkCommandBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -463,16 +440,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkCommandBuffer</span></td>
+        <td><span class="xref">VkCommandBuffer</span></td>
         <td><span class="parametername">cb</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Vulkan.VKFrameBufferBase.html#Evergine_Vulkan_VKFrameBufferBase_TransitionToFinalLayout_WaveEngine_Bindings_Vulkan_VkCommandBuffer_">VKFrameBufferBase.TransitionToFinalLayout(VkCommandBuffer)</a></div>
+  <div><a class="xref" href="Evergine.Vulkan.VKFrameBufferBase.html#Evergine_Vulkan_VKFrameBufferBase_TransitionToFinalLayout_VkCommandBuffer_">VKFrameBufferBase.TransitionToFinalLayout(VkCommandBuffer)</a></div>
   <a id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToIntermedialLayout_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToIntermedialLayout*"></a>
-  <h4 id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToIntermedialLayout_WaveEngine_Bindings_Vulkan_VkCommandBuffer_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToIntermedialLayout(WaveEngine.Bindings.Vulkan.VkCommandBuffer)">TransitionToIntermedialLayout(VkCommandBuffer)</h4>
+  <h4 id="Evergine_Vulkan_VKSwapChainFrameBuffer_TransitionToIntermedialLayout_VkCommandBuffer_" data-uid="Evergine.Vulkan.VKSwapChainFrameBuffer.TransitionToIntermedialLayout(VkCommandBuffer)">TransitionToIntermedialLayout(VkCommandBuffer)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -490,20 +467,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkCommandBuffer</span></td>
+        <td><span class="xref">VkCommandBuffer</span></td>
         <td><span class="parametername">cb</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Vulkan.VKFrameBufferBase.html#Evergine_Vulkan_VKFrameBufferBase_TransitionToIntermedialLayout_WaveEngine_Bindings_Vulkan_VkCommandBuffer_">VKFrameBufferBase.TransitionToIntermedialLayout(VkCommandBuffer)</a></div>
+  <div><a class="xref" href="Evergine.Vulkan.VKFrameBufferBase.html#Evergine_Vulkan_VKFrameBufferBase_TransitionToIntermedialLayout_VkCommandBuffer_">VKFrameBufferBase.TransitionToIntermedialLayout(VkCommandBuffer)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

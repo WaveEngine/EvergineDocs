@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -98,35 +96,11 @@
     <div class="level1"><span class="xref">AnimationCurve</span></div>
       <div class="level2"><a class="xref" href="Evergine.Framework.Animation.AnimationCurve-1.html">AnimationCurve&lt;T&gt;</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Animation.html">Evergine.Framework.Animation</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Animation_AnimationCurve_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class AnimationCurve</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class AnimationCurve : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -159,7 +133,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected const double TimeKeySnap = 0.0010000000474974513</code></pre>
+    <pre><code class="lang-csharp hljs">protected const double TimeKeySnap = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +195,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -485,7 +459,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Animation_AnimationCurve_Write_" data-uid="Evergine.Framework.Animation.AnimationCurve.Write*"></a>
-  <h4 id="Evergine_Framework_Animation_AnimationCurve_Write_System_IO_BinaryWriter_" data-uid="Evergine.Framework.Animation.AnimationCurve.Write(System.IO.BinaryWriter)">Write(BinaryWriter)</h4>
+  <h4 id="Evergine_Framework_Animation_AnimationCurve_Write_BinaryWriter_" data-uid="Evergine.Framework.Animation.AnimationCurve.Write(BinaryWriter)">Write(BinaryWriter)</h4>
   <div class="markdown level1 summary"><p>Write animation keyframe channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -504,7 +478,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="xref">BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>The binary writer.</p>
 </td>

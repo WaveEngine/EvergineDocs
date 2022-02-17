@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -117,28 +115,7 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Assets.Exporters.html">Evergine.Assets.Exporters</a></h6>
@@ -206,8 +183,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[EvergineMember]
-public TProfile DefaultProfile { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TProfile DefaultProfile { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,8 +202,7 @@ public TProfile DefaultProfile { get; protected set; }</code></pre>
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_ExportAsRaw_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.ExportAsRaw*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_ExportAsRaw" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.ExportAsRaw">ExportAsRaw</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this assets will be exported as raw.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,8 +326,7 @@ public TProfile DefaultProfile { get; protected set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[EvergineMember]
-public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +338,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, TProfile&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, TProfile&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -406,8 +380,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Export_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Export*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Export_Evergine_Assets_Exporters_ExportContext_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Export(Evergine.Assets.Exporters.ExportContext)">Export(ExportContext)</h4>
-  <div class="markdown level1 summary"><p>Exports the meta file.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,8 +399,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
       <tr>
         <td><a class="xref" href="Evergine.Assets.Exporters.ExportContext.html">ExportContext</a></td>
         <td><span class="parametername">exportContext</span></td>
-        <td><p>The export context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -441,16 +413,14 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a>&gt;</td>
-        <td><p>An awaitable task of the operation, with the export result.</p>
-</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Assets.Exporters.ExportResult.html">ExportResult</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_GetExportOutputPath_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.GetExportOutputPath*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_GetExportOutputPath_Evergine_Assets_Exporters_ExportContext_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.GetExportOutputPath(Evergine.Assets.Exporters.ExportContext)">GetExportOutputPath(ExportContext)</h4>
-  <div class="markdown level1 summary"><p>Gets the export output path.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -469,8 +439,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
       <tr>
         <td><a class="xref" href="Evergine.Assets.Exporters.ExportContext.html">ExportContext</a></td>
         <td><span class="parametername">exportContext</span></td>
-        <td><p>The export context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -485,8 +454,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The export output path.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -607,8 +575,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
   </h3>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_AddProfile_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#AddProfile*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_AddProfile_System_String_Evergine_Assets_Exporters_AssetProfile_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#AddProfile(System.String,Evergine.Assets.Exporters.AssetProfile)">IAssetMetaFile.AddProfile(String, AssetProfile)</h4>
-  <div class="markdown level1 summary"><p>Adds a profile.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -627,21 +594,18 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The profile name.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Assets.Exporters.AssetProfile.html">AssetProfile</a></td>
         <td><span class="parametername">profile</span></td>
-        <td><p>The profile instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_DefaultProfile_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#DefaultProfile*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_DefaultProfile" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#DefaultProfile">IAssetMetaFile.DefaultProfile</h4>
-  <div class="markdown level1 summary"><p>Gets the default profile.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -664,8 +628,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_Exporter_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#Exporter*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_Exporter" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#Exporter">IAssetMetaFile.Exporter</h4>
-  <div class="markdown level1 summary"><p>Gets the asset exporter.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -688,8 +651,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_GetProfileOrDefault_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#GetProfileOrDefault*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_GetProfileOrDefault_System_String_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#GetProfileOrDefault(System.String)">IAssetMetaFile.GetProfileOrDefault(String)</h4>
-  <div class="markdown level1 summary"><p>Gets the specified profile from the metafile, or default profile.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -708,8 +670,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The profile name.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -724,8 +685,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Assets.Exporters.AssetProfile.html">AssetProfile</a></td>
-        <td><p>The specified profile or default.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -748,15 +708,14 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Assets.Exporters.AssetProfile.html">AssetProfile</a>&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Assets.Exporters.AssetProfile.html">AssetProfile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_RemoveProfile_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#RemoveProfile*"></a>
   <h4 id="Evergine_Assets_Exporters_AssetMetafile_2_Evergine_Assets_Exporters_IAssetMetaFile_RemoveProfile_System_String_" data-uid="Evergine.Assets.Exporters.AssetMetafile`2.Evergine#Assets#Exporters#IAssetMetaFile#RemoveProfile(System.String)">IAssetMetaFile.RemoveProfile(String)</h4>
-  <div class="markdown level1 summary"><p>Removes a profile from the metafile.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -775,8 +734,7 @@ public IReadOnlyDictionary&lt;string, TProfile&gt; Profiles { get; }</code></pre
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The profile name.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

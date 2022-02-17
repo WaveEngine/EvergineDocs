@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -99,10 +97,6 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></div>
     <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.LineBatch.html">LineBatch</a></div>
     <div class="level4"><span class="xref">LineBatch2D</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -167,13 +161,13 @@
       <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_Reset">LineBatch.Reset()</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_DrawLine_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Common_Graphics_Color_">LineBatch.DrawLine(Vector3, Vector3, Color)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_DrawLine_Vector3_Vector3_Evergine_Common_Graphics_Color_">LineBatch.DrawLine(Vector3, Vector3, Color)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_DrawLine_Evergine_Framework_Graphics_Line__">LineBatch.DrawLine(Line)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_DrawLine_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Common_Graphics_Color__">LineBatch.DrawLine(Vector3, Vector3, Color)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_DrawLine_Vector3__Vector3__Evergine_Common_Graphics_Color__">LineBatch.DrawLine(Vector3, Vector3, Color)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.LineBatch.html#Evergine_Framework_Graphics_LineBatch_RefreshBoundingBox">LineBatch.RefreshBoundingBox()</a>
@@ -238,33 +232,12 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_LineBatch2D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LineBatch2D : LineBatch, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class LineBatch2D : LineBatch</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -304,7 +277,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawBoundingBox_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawBoundingBox*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawBoundingBox_Evergine_Mathematics_BoundingBox_Evergine_Common_Graphics_Color_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawBoundingBox(Evergine.Mathematics.BoundingBox,Evergine.Common.Graphics.Color)">DrawBoundingBox(BoundingBox, Color)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawBoundingBox_BoundingBox_Evergine_Common_Graphics_Color_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawBoundingBox(BoundingBox,Evergine.Common.Graphics.Color)">DrawBoundingBox(BoundingBox, Color)</h4>
   <div class="markdown level1 summary"><p>Draws the rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -323,7 +296,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
+        <td><span class="xref">BoundingBox</span></td>
         <td><span class="parametername">boundingBox</span></td>
         <td><p>The Bounding Box.</p>
 </td>
@@ -337,7 +310,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_Evergine_Mathematics_Vector2_System_Single_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle(Evergine.Mathematics.Vector2,System.Single,Evergine.Common.Graphics.Color,System.Single)">DrawCircle(Vector2, Single, Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_Vector2_System_Single_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle(Vector2,System.Single,Evergine.Common.Graphics.Color,System.Single)">DrawCircle(Vector2, Single, Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the circle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -356,7 +329,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">center</span></td>
         <td><p>The center.</p>
 </td>
@@ -382,7 +355,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_Evergine_Mathematics_Vector2__System_Single_Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle(Evergine.Mathematics.Vector2@,System.Single,Evergine.Common.Graphics.Color@,System.Single)">DrawCircle(ref Vector2, Single, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawCircle_Vector2__System_Single_Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawCircle(Vector2@,System.Single,Evergine.Common.Graphics.Color@,System.Single)">DrawCircle(ref Vector2, Single, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the circle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -401,7 +374,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">center</span></td>
         <td><p>The center.</p>
 </td>
@@ -427,7 +400,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawLine_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawLine*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawLine_Evergine_Mathematics_Vector2__Evergine_Mathematics_Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawLine(Evergine.Mathematics.Vector2@,Evergine.Mathematics.Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawLine(ref Vector2, ref Vector2, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawLine_Vector2__Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawLine(Vector2@,Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawLine(ref Vector2, ref Vector2, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -446,13 +419,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">startPoint</span></td>
         <td><p>The start point.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">endPoint</span></td>
         <td><p>The end point.</p>
 </td>
@@ -472,7 +445,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_Evergine_Mathematics_Vector2_System_Single_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint(Evergine.Mathematics.Vector2,System.Single,Evergine.Common.Graphics.Color,System.Single)">DrawPoint(Vector2, Single, Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_Vector2_System_Single_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint(Vector2,System.Single,Evergine.Common.Graphics.Color,System.Single)">DrawPoint(Vector2, Single, Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draw the point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -491,7 +464,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">point</span></td>
         <td><p>Point object.</p>
 </td>
@@ -517,7 +490,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_Evergine_Mathematics_Vector2__System_Single_Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint(Evergine.Mathematics.Vector2@,System.Single,Evergine.Common.Graphics.Color@,System.Single)">DrawPoint(ref Vector2, Single, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawPoint_Vector2__System_Single_Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawPoint(Vector2@,System.Single,Evergine.Common.Graphics.Color@,System.Single)">DrawPoint(ref Vector2, Single, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draw the point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -536,7 +509,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">point</span></td>
         <td><p>Point object.</p>
 </td>
@@ -562,7 +535,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Evergine_Mathematics_RectangleF_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Evergine.Mathematics.RectangleF,Evergine.Common.Graphics.Color,System.Single)">DrawRectangle(RectangleF, Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_RectangleF_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(RectangleF,Evergine.Common.Graphics.Color,System.Single)">DrawRectangle(RectangleF, Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draw the rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -581,7 +554,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.RectangleF.html">RectangleF</a></td>
+        <td><span class="xref">RectangleF</span></td>
         <td><span class="parametername">rectangle</span></td>
         <td><p>Rectangle object.</p>
 </td>
@@ -601,7 +574,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Evergine_Mathematics_RectangleF__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Evergine.Mathematics.RectangleF@,Evergine.Common.Graphics.Color@,System.Single)">DrawRectangle(ref RectangleF, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_RectangleF__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(RectangleF@,Evergine.Common.Graphics.Color@,System.Single)">DrawRectangle(ref RectangleF, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draw the rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -620,7 +593,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.RectangleF.html">RectangleF</a></td>
+        <td><span class="xref">RectangleF</span></td>
         <td><span class="parametername">rectangle</span></td>
         <td><p>Reference Rectangle object.</p>
 </td>
@@ -640,7 +613,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Evergine_Mathematics_Vector2_Evergine_Mathematics_Vector2_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Evergine.Mathematics.Vector2,Evergine.Mathematics.Vector2,Evergine.Common.Graphics.Color,System.Single)">DrawRectangle(Vector2, Vector2, Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Vector2_Vector2_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Vector2,Vector2,Evergine.Common.Graphics.Color,System.Single)">DrawRectangle(Vector2, Vector2, Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -659,13 +632,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">min</span></td>
         <td><p>The min.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">max</span></td>
         <td><p>The max.</p>
 </td>
@@ -685,7 +658,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Evergine_Mathematics_Vector2__Evergine_Mathematics_Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Evergine.Mathematics.Vector2@,Evergine.Mathematics.Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawRectangle(ref Vector2, ref Vector2, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawRectangle_Vector2__Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawRectangle(Vector2@,Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawRectangle(ref Vector2, ref Vector2, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the rectangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -704,13 +677,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">min</span></td>
         <td><p>The min.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">max</span></td>
         <td><p>The max.</p>
 </td>
@@ -730,7 +703,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_Evergine_Mathematics_Vector2_Evergine_Mathematics_Vector2_Evergine_Mathematics_Vector2_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle(Evergine.Mathematics.Vector2,Evergine.Mathematics.Vector2,Evergine.Mathematics.Vector2,Evergine.Common.Graphics.Color,System.Single)">DrawTriangle(Vector2, Vector2, Vector2, Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_Vector2_Vector2_Vector2_Evergine_Common_Graphics_Color_System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle(Vector2,Vector2,Vector2,Evergine.Common.Graphics.Color,System.Single)">DrawTriangle(Vector2, Vector2, Vector2, Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the triangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -749,19 +722,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">a</span></td>
         <td><p>First triangle vertex.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">b</span></td>
         <td><p>Second triangle vertex.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">c</span></td>
         <td><p>Third triangle vertex.</p>
 </td>
@@ -781,7 +754,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_Evergine_Mathematics_Vector2__Evergine_Mathematics_Vector2__Evergine_Mathematics_Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle(Evergine.Mathematics.Vector2@,Evergine.Mathematics.Vector2@,Evergine.Mathematics.Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawTriangle(ref Vector2, ref Vector2, ref Vector2, ref Color, Single)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch2D_DrawTriangle_Vector2__Vector2__Vector2__Evergine_Common_Graphics_Color__System_Single_" data-uid="Evergine.Framework.Graphics.LineBatch2D.DrawTriangle(Vector2@,Vector2@,Vector2@,Evergine.Common.Graphics.Color@,System.Single)">DrawTriangle(ref Vector2, ref Vector2, ref Vector2, ref Color, Single)</h4>
   <div class="markdown level1 summary"><p>Draws the triangle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -800,19 +773,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">a</span></td>
         <td><p>First triangle vertex.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">b</span></td>
         <td><p>Second triangle vertex.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="xref">Vector2</span></td>
         <td><span class="parametername">c</span></td>
         <td><p>Third triangle vertex.</p>
 </td>
@@ -831,10 +804,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

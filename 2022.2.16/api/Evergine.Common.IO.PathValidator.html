@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,35 +95,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">PathValidator</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.IO.html">Evergine.Common.IO</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_IO_PathValidator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class PathValidator</code></pre>
+    <pre><code class="lang-csharp hljs">public static class PathValidator : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -159,27 +133,6 @@
   <h5 id="Evergine_Common_IO_PathValidator_EnsureCorrectFileSystemName_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Throws an exception if <code data-dev-comment-type="paramref" class="paramref">filename</code> is not a correct file system path, otherwise no.</p>
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">filename</code> is <code>null</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">filename</code> is a zero-length string, contains only white space, or contains invalid characters as defined in <span class="xref">System.IO.Path.GetInvalidPathChars</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Common_IO_PathValidator_EnsureCorrectFileSystemPath_" data-uid="Evergine.Common.IO.PathValidator.EnsureCorrectFileSystemPath*"></a>
   <h4 id="Evergine_Common_IO_PathValidator_EnsureCorrectFileSystemPath_System_String_" data-uid="Evergine.Common.IO.PathValidator.EnsureCorrectFileSystemPath(System.String)">EnsureCorrectFileSystemPath(String)</h4>
   <div class="markdown level1 summary"><p>Ensures the correct file system path.</p>
@@ -210,27 +163,6 @@
   <h5 id="Evergine_Common_IO_PathValidator_EnsureCorrectFileSystemPath_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Throws an exception if <code data-dev-comment-type="paramref" class="paramref">path</code> is not a correct file system path, otherwise no.</p>
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is <code>null</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is a zero-length string, contains only white space, or contains invalid characters as defined in <span class="xref">System.IO.Path.GetInvalidPathChars</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

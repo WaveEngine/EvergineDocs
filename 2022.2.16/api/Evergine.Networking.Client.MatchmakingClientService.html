@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -169,28 +167,7 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Client.html">Evergine.Networking.Client</a></h6>
@@ -304,7 +281,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -453,7 +430,7 @@ The ID will be -1 outside of rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -477,7 +454,7 @@ The ID will be -1 outside of rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Rooms.RoomInfo.html">RoomInfo</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Rooms.RoomInfo.html">RoomInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -521,26 +498,8 @@ The ID will be -1 outside of rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p>An a value indicating whether the connection was succeed or not.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p>You can't call Connect method while is connected to a matchmaking server. Call before to <a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html#Evergine_Networking_Client_MatchmakingClientService_Disconnect">Disconnect()</a> method.
-or
-<a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html#Evergine_Networking_Client_MatchmakingClientService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before trying to connect.</p>
 </td>
       </tr>
     </tbody>
@@ -607,7 +566,7 @@ or
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -668,24 +627,6 @@ Register to <a class="xref" href="Evergine.Networking.Client.MatchmakingClientSe
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.InvalidOperationException</span></td>
-        <td><p><a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html#Evergine_Networking_Client_MatchmakingClientService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before trying to connect.
-or
-You can't call discovery method while is connected to a matchmaking server. Call before to <a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html#Evergine_Networking_Client_MatchmakingClientService_Disconnect">Disconnect()</a> method.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Networking_Client_MatchmakingClientService_JoinOrCreateRoomAsync_" data-uid="Evergine.Networking.Client.MatchmakingClientService.JoinOrCreateRoomAsync*"></a>
   <h4 id="Evergine_Networking_Client_MatchmakingClientService_JoinOrCreateRoomAsync_Evergine_Networking_RoomOptions_" data-uid="Evergine.Networking.Client.MatchmakingClientService.JoinOrCreateRoomAsync(Evergine.Networking.RoomOptions)">JoinOrCreateRoomAsync(RoomOptions)</h4>
   <div class="markdown level1 summary"><p>Joins a specific room by name. If the room does not exist (yet), it will be created implicitly.</p>
@@ -723,7 +664,7 @@ You can't call discovery method while is connected to a matchmaking server. Call
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -786,7 +727,7 @@ Note that the player properties will be cached locally and sent to any next room
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -984,7 +925,7 @@ Then it does not matter if the room is already setup.</p>
     </tbody>
   </table>
   <a id="Evergine_Networking_Client_MatchmakingClientService_Update_" data-uid="Evergine.Networking.Client.MatchmakingClientService.Update*"></a>
-  <h4 id="Evergine_Networking_Client_MatchmakingClientService_Update_System_TimeSpan_" data-uid="Evergine.Networking.Client.MatchmakingClientService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="Evergine_Networking_Client_MatchmakingClientService_Update_TimeSpan_" data-uid="Evergine.Networking.Client.MatchmakingClientService.Update(TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1002,14 +943,12 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.Services.UpdatableService.html#Evergine_Framework_Services_UpdatableService_Update_System_TimeSpan_">UpdatableService.Update(TimeSpan)</a></div>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Networking_Client_MatchmakingClientService_ClientStateChanged" data-uid="Evergine.Networking.Client.MatchmakingClientService.ClientStateChanged">ClientStateChanged</h4>
@@ -1030,7 +969,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.ClientStates.html">ClientStates</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.ClientStates.html">ClientStates</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1056,7 +995,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1082,7 +1021,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1108,7 +1047,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1134,7 +1073,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1157,7 +1096,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1185,7 +1124,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.HostDiscoveredEventArgs.html">HostDiscoveredEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.HostDiscoveredEventArgs.html">HostDiscoveredEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

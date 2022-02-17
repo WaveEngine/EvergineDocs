@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,46 +95,22 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DX12ExtensionsMethods</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX12.dll</h6>
   <h5 id="Evergine_DirectX12_DX12ExtensionsMethods_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DX12ExtensionsMethods</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DX12ExtensionsMethods : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX*"></a>
-  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_Direct3D12_ResourceFlags_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.Direct3D12.ResourceFlags)">FromDirectX(ResourceFlags)</h4>
+  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_Direct3D12_ResourceFlags_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.Direct3D12.ResourceFlags)">FromDirectX(Vortice.Direct3D12.ResourceFlags)</h4>
   <div class="markdown level1 summary"><p>To convert from DirectX BindFlags to TextureFlags.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TextureFlags FromDirectX(this ResourceFlags flags)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TextureFlags FromDirectX(this Vortice.Direct3D12.ResourceFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,13 +147,13 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX*"></a>
-  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_DXGI_Format_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.DXGI.Format)">FromDirectX(Format)</h4>
+  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_DXGI_Format_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.DXGI.Format)">FromDirectX(Vortice.DXGI.Format)</h4>
   <div class="markdown level1 summary"><p>Convert to Evergine PixelFormat to DirectX Pixel Format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static PixelFormat FromDirectX(this Format pixelFormat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static PixelFormat FromDirectX(this Vortice.DXGI.Format pixelFormat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -216,13 +190,13 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX*"></a>
-  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_DXGI_SampleDescription_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.DXGI.SampleDescription)">FromDirectX(SampleDescription)</h4>
+  <h4 id="Evergine_DirectX12_DX12ExtensionsMethods_FromDirectX_Vortice_DXGI_SampleDescription_" data-uid="Evergine.DirectX12.DX12ExtensionsMethods.FromDirectX(Vortice.DXGI.SampleDescription)">FromDirectX(Vortice.DXGI.SampleDescription)</h4>
   <div class="markdown level1 summary"><p>To convert from DirectX SampleDescription to TextureSampleCount.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TextureSampleCount FromDirectX(this SampleDescription sampleDescription)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TextureSampleCount FromDirectX(this Vortice.DXGI.SampleDescription sampleDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -265,7 +239,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Format ToDepthStencilFormat(this PixelFormat pixelFormat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.Format ToDepthStencilFormat(this PixelFormat pixelFormat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,7 +282,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CommandListType ToDirectX(this CommandQueueType queueType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.CommandListType ToDirectX(this CommandQueueType queueType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -351,7 +325,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ComparisonFunction ToDirectX(this ComparisonFunction function)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.ComparisonFunction ToDirectX(this ComparisonFunction function)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -394,7 +368,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Format ToDirectX(this ElementFormat format)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.Format ToDirectX(this ElementFormat format)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,7 +411,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DxcShaderModel ToDirectX(this GraphicsProfile profile)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Dxc.DxcShaderModel ToDirectX(this GraphicsProfile profile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -480,7 +454,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Format ToDirectX(this IndexFormat format)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.Format ToDirectX(this IndexFormat format)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +497,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Format ToDirectX(this PixelFormat pixelFormat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.Format ToDirectX(this PixelFormat pixelFormat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -566,7 +540,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HitGroupType ToDirectX(this HitGroupDescription.HitGroupType hitGroupType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.HitGroupType ToDirectX(this HitGroupDescription.HitGroupType hitGroupType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -609,7 +583,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DescriptorRangeType ToDirectX(this ResourceType resourceType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.DescriptorRangeType ToDirectX(this ResourceType resourceType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -652,7 +626,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Color4 ToDirectX(this SamplerBorderColor borderColor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Mathematics.Color4 ToDirectX(this SamplerBorderColor borderColor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -695,7 +669,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TextureAddressMode ToDirectX(this TextureAddressMode addressMode)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.TextureAddressMode ToDirectX(this TextureAddressMode addressMode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -738,7 +712,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Filter ToDirectX(this TextureFilter filter, bool isComparison)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.Filter ToDirectX(this TextureFilter filter, bool isComparison)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -787,7 +761,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ResourceFlags ToDirectX(this TextureFlags flags)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.ResourceFlags ToDirectX(this TextureFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -830,7 +804,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SampleDescription ToDirectX(this TextureSampleCount sampleCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.SampleDescription ToDirectX(this TextureSampleCount sampleCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -873,7 +847,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static InputClassification ToDirectX(this VertexStepFunction stepFunction)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.InputClassification ToDirectX(this VertexStepFunction stepFunction)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -916,7 +890,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DxcShaderStage ToDirectXStage(this ShaderStages stage)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.Dxc.DxcShaderStage ToDirectXStage(this ShaderStages stage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

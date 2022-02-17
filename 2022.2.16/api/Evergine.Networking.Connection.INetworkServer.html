@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -216,7 +214,7 @@
     </tbody>
   </table>
   <a id="Evergine_Networking_Connection_INetworkServer_Send_" data-uid="Evergine.Networking.Connection.INetworkServer.Send*"></a>
-  <h4 id="Evergine_Networking_Connection_INetworkServer_Send_Evergine_Networking_Connection_Messages_IncomingMessage_Evergine_Networking_Messages_DeliveryMethod_System_Collections_Generic_IEnumerable_Evergine_Networking_NetworkEndpoint__" data-uid="Evergine.Networking.Connection.INetworkServer.Send(Evergine.Networking.Connection.Messages.IncomingMessage,Evergine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{Evergine.Networking.NetworkEndpoint})">Send(IncomingMessage, DeliveryMethod, IEnumerable&lt;NetworkEndpoint&gt;)</h4>
+  <h4 id="Evergine_Networking_Connection_INetworkServer_Send_Evergine_Networking_Connection_Messages_IncomingMessage_Evergine_Networking_Messages_DeliveryMethod_IEnumerable_Evergine_Networking_NetworkEndpoint__" data-uid="Evergine.Networking.Connection.INetworkServer.Send(Evergine.Networking.Connection.Messages.IncomingMessage,Evergine.Networking.Messages.DeliveryMethod,IEnumerable{Evergine.Networking.NetworkEndpoint})">Send(IncomingMessage, DeliveryMethod, IEnumerable&lt;NetworkEndpoint&gt;)</h4>
   <div class="markdown level1 summary"><p>Sends the specified incoming message to the specified clients.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -247,7 +245,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.NetworkEndpoint.html">NetworkEndpoint</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.NetworkEndpoint.html">NetworkEndpoint</a>&gt;</td>
         <td><span class="parametername">destinationClients</span></td>
         <td><p>The destination clients.</p>
 </td>
@@ -327,7 +325,7 @@
     </tbody>
   </table>
   <a id="Evergine_Networking_Connection_INetworkServer_Send_" data-uid="Evergine.Networking.Connection.INetworkServer.Send*"></a>
-  <h4 id="Evergine_Networking_Connection_INetworkServer_Send_Evergine_Networking_Connection_Messages_OutgoingMessage_Evergine_Networking_Messages_DeliveryMethod_System_Collections_Generic_IEnumerable_Evergine_Networking_NetworkEndpoint__" data-uid="Evergine.Networking.Connection.INetworkServer.Send(Evergine.Networking.Connection.Messages.OutgoingMessage,Evergine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{Evergine.Networking.NetworkEndpoint})">Send(OutgoingMessage, DeliveryMethod, IEnumerable&lt;NetworkEndpoint&gt;)</h4>
+  <h4 id="Evergine_Networking_Connection_INetworkServer_Send_Evergine_Networking_Connection_Messages_OutgoingMessage_Evergine_Networking_Messages_DeliveryMethod_IEnumerable_Evergine_Networking_NetworkEndpoint__" data-uid="Evergine.Networking.Connection.INetworkServer.Send(Evergine.Networking.Connection.Messages.OutgoingMessage,Evergine.Networking.Messages.DeliveryMethod,IEnumerable{Evergine.Networking.NetworkEndpoint})">Send(OutgoingMessage, DeliveryMethod, IEnumerable&lt;NetworkEndpoint&gt;)</h4>
   <div class="markdown level1 summary"><p>Sends the specified outgoing message to the specified clients.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -358,7 +356,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.NetworkEndpoint.html">NetworkEndpoint</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.NetworkEndpoint.html">NetworkEndpoint</a>&gt;</td>
         <td><span class="parametername">destinationClients</span></td>
         <td><p>The destination clients.</p>
 </td>
@@ -384,8 +382,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
@@ -409,8 +407,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
@@ -435,7 +433,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientConnectedEventArgs.html">ClientConnectedEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientConnectedEventArgs.html">ClientConnectedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -461,7 +459,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientConnectingEventArgs.html">ClientConnectingEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientConnectingEventArgs.html">ClientConnectingEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -484,7 +482,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientDisconnectedEventArgs.html">ClientDisconnectedEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.ClientDisconnectedEventArgs.html">ClientDisconnectedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -507,7 +505,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -103,10 +101,6 @@
       <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.RenderMeshInfo.html">RenderMeshInfo</a></div>
       <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.SpriteInfo.html">SpriteInfo</a></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -121,33 +115,12 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Destroy">DisposableObject.Destroy()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_RenderObjectInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RenderObjectInfo : DisposableObject, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RenderObjectInfo : DisposableObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -180,7 +153,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">BoundingBox</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -367,7 +340,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">BoundingBox</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -727,7 +700,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="xref">Matrix4x4</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -778,10 +751,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected abstract void RefreshBoundingBox()</code></pre>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

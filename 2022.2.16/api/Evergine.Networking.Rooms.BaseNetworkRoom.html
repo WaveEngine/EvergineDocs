@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -103,35 +101,11 @@
     <div><a class="xref" href="Evergine.Networking.Rooms.INetworkRoom.html">INetworkRoom</a></div>
     <div><a class="xref" href="Evergine.Networking.Rooms.IRoomInfo.html">IRoomInfo</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Rooms.html">Evergine.Networking.Rooms</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Networking.dll</h6>
   <h5 id="Evergine_Networking_Rooms_BaseNetworkRoom_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseNetworkRoom : INetworkRoom, IRoomInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseNetworkRoom : object, INetworkRoom, IRoomInfo</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -179,7 +153,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected const int FirstPlayerId = 0</code></pre>
+    <pre><code class="lang-csharp hljs">protected const int FirstPlayerId = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,7 +213,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Players.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Players.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -423,7 +397,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -641,7 +615,7 @@ Only useful when in a Room, as Ids are only valid per Room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span></td>
+        <td><span class="xref">EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

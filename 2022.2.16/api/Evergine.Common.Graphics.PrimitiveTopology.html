@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,7 +95,7 @@ These primitive topology values determine how the vertex data is rendered on scr
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Graphics_PrimitiveTopology_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum PrimitiveTopology</code></pre>
+    <pre><code class="lang-csharp hljs">public enum PrimitiveTopology : int</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -168,15 +166,6 @@ These primitive topology values determine how the vertex data is rendered on scr
   </thead></thead></table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Evergine.Common.Helpers.EnumExtensions.html#Evergine_Common_Helpers_EnumExtensions_HasFlag_System_Enum_System_Enum_">EnumExtensions.HasFlag(Enum)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly()</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName()</a>
-  </div>
-  <div>
       <a class="xref" href="Evergine.Common.Graphics.PrimitiveTopologyExtensions.html#Evergine_Common_Graphics_PrimitiveTopologyExtensions_ControlPoints_Evergine_Common_Graphics_PrimitiveTopology_System_Int32_">PrimitiveTopologyExtensions.ControlPoints(Int32)</a>
   </div>
   <div>
@@ -186,10 +175,10 @@ These primitive topology values determine how the vertex data is rendered on scr
       <a class="xref" href="Evergine.Common.Graphics.PrimitiveTopologyExtension.html#Evergine_Common_Graphics_PrimitiveTopologyExtension_ToIndexCount_Evergine_Common_Graphics_PrimitiveTopology_System_Int32_">PrimitiveTopologyExtension.ToIndexCount(Int32)</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Vulkan.VKExtensionsMethods.html#Evergine_Vulkan_VKExtensionsMethods_ToVulkan_Evergine_Common_Graphics_PrimitiveTopology_">VKExtensionsMethods.ToVulkan()</a>
+      <a class="xref" href="Evergine.Metal.MTLExtensionsMethods.html#Evergine_Metal_MTLExtensionsMethods_ToMetal_Evergine_Common_Graphics_PrimitiveTopology_">MTLExtensionsMethods.ToMetal()</a>
   </div>
   <div>
-      <a class="xref" href="Evergine.Metal.MTLExtensionsMethods.html#Evergine_Metal_MTLExtensionsMethods_ToMetal_Evergine_Common_Graphics_PrimitiveTopology_">MTLExtensionsMethods.ToMetal()</a>
+      <a class="xref" href="Evergine.Vulkan.VKExtensionsMethods.html#Evergine_Vulkan_VKExtensionsMethods_ToVulkan_Evergine_Common_Graphics_PrimitiveTopology_">VKExtensionsMethods.ToVulkan()</a>
   </div>
 </article>
           </div>

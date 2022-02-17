@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -96,34 +94,6 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">WorkScheduler</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Threading.html">Evergine.Framework.Threading</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
@@ -306,13 +276,13 @@
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
   <a id="Evergine_Framework_Threading_WorkScheduler_For_" data-uid="Evergine.Framework.Threading.WorkScheduler.For*"></a>
-  <h4 id="Evergine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_System_Action_System_Int32__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.For(System.Int32,System.Int32,System.Action{System.Int32},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="Evergine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_Action_System_Int32__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.For(System.Int32,System.Int32,Action{System.Int32},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Schedule For works.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle For(int fromInclusive, int toExclusive, Action&lt;int&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle For(int fromInclusive, int toExclusive, Action&lt;int&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -337,7 +307,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>The action to execute.</p>
 </td>
@@ -373,13 +343,13 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Threading_WorkScheduler_ForEach_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach*"></a>
-  <h4 id="Evergine_Framework_Threading_WorkScheduler_ForEach__1___0___System_Action___0__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach``1(``0[],System.Action{``0},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="Evergine_Framework_Threading_WorkScheduler_ForEach__1___0___Action___0__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach``1(``0[],Action{``0},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Executes an action on every work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(T[] array, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(T[] array, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -398,7 +368,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>Action to execute.</p>
 </td>
@@ -450,13 +420,13 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Threading_WorkScheduler_ForEach_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach*"></a>
-  <h4 id="Evergine_Framework_Threading_WorkScheduler_ForEach__1_System_Collections_Generic_IList___0__System_Action___0__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach``1(System.Collections.Generic.IList{``0},System.Action{``0},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="Evergine_Framework_Threading_WorkScheduler_ForEach__1_IList___0__Action___0__Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.ForEach``1(IList{``0},Action{``0},Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Executes an action on every work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(IList&lt;T&gt; list, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(IList&lt;T&gt; list, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -469,13 +439,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</td>
+        <td><span class="xref">IList</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>Work collection list.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">action</span></td>
         <td><p>Action to execute.</p>
 </td>
@@ -536,13 +506,13 @@
     <pre><code class="lang-csharp hljs">public void ResetStats()</code></pre>
   </div>
   <a id="Evergine_Framework_Threading_WorkScheduler_Schedule_" data-uid="Evergine.Framework.Threading.WorkScheduler.Schedule*"></a>
-  <h4 id="Evergine_Framework_Threading_WorkScheduler_Schedule_System_Action_Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.Schedule(System.Action,Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">Schedule(Action, WorkHandle, WorkPriority)</h4>
+  <h4 id="Evergine_Framework_Threading_WorkScheduler_Schedule_Action_Evergine_Framework_Threading_WorkHandle_Evergine_Framework_Threading_WorkPriority_" data-uid="Evergine.Framework.Threading.WorkScheduler.Schedule(Action,Evergine.Framework.Threading.WorkHandle,Evergine.Framework.Threading.WorkPriority)">Schedule(Action, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Schedule work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle Schedule(Action workItem, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle Schedule(Action workItem, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -555,7 +525,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">workItem</span></td>
         <td><p>The action to execute.</p>
 </td>
@@ -590,10 +560,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

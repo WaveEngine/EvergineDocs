@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -103,7 +101,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -155,27 +153,6 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenGL.html">Evergine.OpenGL</a></h6>
@@ -245,7 +222,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -376,13 +353,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.Texture.html#Evergine_Common_Graphics_Texture_Dispose">Texture.Dispose()</a></div>
   <a id="Evergine_OpenGL_GLTexture_SetData_" data-uid="Evergine.OpenGL.GLTexture.SetData*"></a>
-  <h4 id="Evergine_OpenGL_GLTexture_SetData_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLTexture.SetData(System.IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_OpenGL_GLTexture_SetData_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLTexture.SetData(IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -395,7 +372,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -419,23 +396,23 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
-  </div>
-  <div>
       <a class="xref" href="Evergine.Assets.TextureExtension.html#Evergine_Assets_TextureExtension_SaveToFile_Evergine_Common_Graphics_Texture_Evergine_Common_Graphics_GraphicsContext_System_String_">TextureExtension.SaveToFile(Texture, GraphicsContext, String)</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Assets.TextureExtension.html#Evergine_Assets_TextureExtension_SafeToStream_Evergine_Common_Graphics_Texture_Evergine_Common_Graphics_GraphicsContext_">TextureExtension.SafeToStream(Texture, GraphicsContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

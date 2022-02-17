@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -119,7 +117,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><p>The child tasks.</p>
 </td>
       </tr>
@@ -241,7 +239,7 @@ If a running task is not skippable but it has children, then it searches its int
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -264,7 +262,7 @@ If a running task is not skippable but it has children, then it searches its int
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -287,42 +285,12 @@ If a running task is not skippable but it has children, then it searches its int
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Evergine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_System_Action_">WorkActionFactory.ContinueWithAction(IWorkAction, Action)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction[])</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_System_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_System_TimeSpan_">WorkActionFactory.Delay(IWorkAction, TimeSpan)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_">WorkActionFactory.AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.AsSkippableWorkAction(IWorkAction)</a>
-  </div>
   <div>
       <a class="xref" href="Evergine.Framework.Threading.WorkActionExtensions.html#Evergine_Framework_Threading_WorkActionExtensions_AsTask_Evergine_Framework_Services_IWorkAction_">WorkActionExtensions.AsTask(IWorkAction)</a>
   </div>
@@ -331,6 +299,36 @@ If a running task is not skippable but it has children, then it searches its int
   </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Func_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWithAction_Evergine_Framework_Services_IWorkAction_Action_">WorkActionFactory.ContinueWithAction(IWorkAction, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Evergine_Framework_Services_IWorkAction___">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_ContinueWith_Evergine_Framework_Services_IWorkAction_Func_Evergine_Framework_Services_IWorkAction____">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_Delay_Evergine_Framework_Services_IWorkAction_TimeSpan_">WorkActionFactory.Delay(IWorkAction, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AndWaitCondition_Evergine_Framework_Services_IWorkAction_Func_System_Boolean__System_Int32_">WorkActionFactory.AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_Evergine_Framework_Services_IWorkAction_IEnumerable_Evergine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Evergine.Components.WorkActions.WorkActionFactory.html#Evergine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_Evergine_Framework_Services_IWorkAction_">WorkActionFactory.AsSkippableWorkAction(IWorkAction)</a>
   </div>
 </article>
           </div>

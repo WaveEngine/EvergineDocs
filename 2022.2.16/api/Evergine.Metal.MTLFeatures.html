@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,40 +95,16 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">MTLFeatures</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Metal.html">Evergine.Metal</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Metal.dll</h6>
   <h5 id="Evergine_Metal_MTLFeatures_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MTLFeatures</code></pre>
+    <pre><code class="lang-csharp hljs">public class MTLFeatures : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Metal_MTLFeatures__ctor_" data-uid="Evergine.Metal.MTLFeatures.#ctor*"></a>
-  <h4 id="Evergine_Metal_MTLFeatures__ctor_Veldrid_MetalBindings_MTLDevice_" data-uid="Evergine.Metal.MTLFeatures.#ctor(Veldrid.MetalBindings.MTLDevice)">MTLFeatures(MTLDevice)</h4>
+  <h4 id="Evergine_Metal_MTLFeatures__ctor_MTLDevice_" data-uid="Evergine.Metal.MTLFeatures.#ctor(MTLDevice)">MTLFeatures(MTLDevice)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Metal.MTLFeatures.html">MTLFeatures</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -149,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Veldrid.MetalBindings.MTLDevice</span></td>
+        <td><span class="xref">MTLDevice</span></td>
         <td><span class="parametername">device</span></td>
         <td><p>The native metal device.</p>
 </td>
@@ -201,7 +175,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Veldrid.MetalBindings.MTLFeatureSet</span></td>
+        <td><span class="xref">MTLFeatureSet</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -209,7 +183,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Metal_MTLFeatures_IsSupported_" data-uid="Evergine.Metal.MTLFeatures.IsSupported*"></a>
-  <h4 id="Evergine_Metal_MTLFeatures_IsSupported_Veldrid_MetalBindings_MTLFeatureSet_" data-uid="Evergine.Metal.MTLFeatures.IsSupported(Veldrid.MetalBindings.MTLFeatureSet)">IsSupported(MTLFeatureSet)</h4>
+  <h4 id="Evergine_Metal_MTLFeatures_IsSupported_MTLFeatureSet_" data-uid="Evergine.Metal.MTLFeatures.IsSupported(MTLFeatureSet)">IsSupported(MTLFeatureSet)</h4>
   <div class="markdown level1 summary"><p>Whether a feature set is supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -228,7 +202,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Veldrid.MetalBindings.MTLFeatureSet</span></td>
+        <td><span class="xref">MTLFeatureSet</span></td>
         <td><span class="parametername">featureSet</span></td>
         <td><p>The features set.</p>
 </td>

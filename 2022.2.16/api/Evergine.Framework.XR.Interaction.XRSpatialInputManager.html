@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -98,10 +96,6 @@
     <div class="level1"><a class="xref" href="Evergine.Framework.DisposableObject.html">DisposableObject</a></div>
     <div class="level2"><span class="xref">XRSpatialInputManager</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,33 +110,12 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Destroy">DisposableObject.Destroy()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.XR.Interaction.html">Evergine.Framework.XR.Interaction</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class XRSpatialInputManager : DisposableObject, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class XRSpatialInputManager : DisposableObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -383,7 +356,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationCompletedEvent_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationCompletedEvent*"></a>
-  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationCompletedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationCompletedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Evergine.Mathematics.Vector3)">FireManipulationCompletedEvent(SpatialSource, Vector3)</h4>
+  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationCompletedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationCompletedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Vector3)">FireManipulationCompletedEvent(SpatialSource, Vector3)</h4>
   <div class="markdown level1 summary"><p>Fire Manipulation completed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -408,7 +381,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">cumulativeDelta</span></td>
         <td><p>The cumulative delta.</p>
 </td>
@@ -443,7 +416,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationUpdatedEvent_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationUpdatedEvent*"></a>
-  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationUpdatedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationUpdatedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Evergine.Mathematics.Vector3)">FireManipulationUpdatedEvent(SpatialSource, Vector3)</h4>
+  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireManipulationUpdatedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireManipulationUpdatedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Vector3)">FireManipulationUpdatedEvent(SpatialSource, Vector3)</h4>
   <div class="markdown level1 summary"><p>Fire Manipulation updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -468,7 +441,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">cumulativeDelta</span></td>
         <td><p>The cumulative delta.</p>
 </td>
@@ -503,7 +476,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationCompletedEvent_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationCompletedEvent*"></a>
-  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationCompletedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationCompletedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Evergine.Mathematics.Vector3)">FireNavigationCompletedEvent(SpatialSource, Vector3)</h4>
+  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationCompletedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationCompletedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Vector3)">FireNavigationCompletedEvent(SpatialSource, Vector3)</h4>
   <div class="markdown level1 summary"><p>Fire Navigation completed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -528,7 +501,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">normalizedOffset</span></td>
         <td><p>The normalized offset.</p>
 </td>
@@ -581,7 +554,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationUpdatedEvent_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationUpdatedEvent*"></a>
-  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationUpdatedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Evergine_Mathematics_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationUpdatedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Evergine.Mathematics.Vector3)">FireNavigationUpdatedEvent(SpatialSource, Vector3)</h4>
+  <h4 id="Evergine_Framework_XR_Interaction_XRSpatialInputManager_FireNavigationUpdatedEvent_Evergine_Framework_XR_Interaction_SpatialSource_Vector3_" data-uid="Evergine.Framework.XR.Interaction.XRSpatialInputManager.FireNavigationUpdatedEvent(Evergine.Framework.XR.Interaction.SpatialSource,Vector3)">FireNavigationUpdatedEvent(SpatialSource, Vector3)</h4>
   <div class="markdown level1 summary"><p>Fire Navigation updated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -606,7 +579,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">normalizedOffset</span></td>
         <td><p>The normalized offset.</p>
 </td>
@@ -1193,10 +1166,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

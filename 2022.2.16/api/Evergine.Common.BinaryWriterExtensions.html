@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,370 +95,16 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BinaryWriterExtensions</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.html">Evergine.Common</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_BinaryWriterExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class BinaryWriterExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class BinaryWriterExtensions : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_BoundingBox_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.BoundingBox)">Write(BinaryWriter, BoundingBox)</h4>
-  <div class="markdown level1 summary"><p>Writes a Bounding Box into a BinaryWriter.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, BoundingBox boundingBox)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The BinaryWriter object.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
-        <td><span class="parametername">boundingBox</span></td>
-        <td><p>The Bounding Box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Byte4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Byte4)">Write(BinaryWriter, Byte4)</h4>
-  <div class="markdown level1 summary"><p>Writes the byte4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Byte4 b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Byte4.html">Byte4</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>The byte.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Matrix4x4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Matrix4x4)">Write(BinaryWriter, Matrix4x4)</h4>
-  <div class="markdown level1 summary"><p>Writes the matrix.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Matrix4x4 m)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
-        <td><span class="parametername">m</span></td>
-        <td><p>The matrix.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Point_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Point)">Write(BinaryWriter, Point)</h4>
-  <div class="markdown level1 summary"><p>Writes the Point.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Point v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Point.html">Point</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The vector2.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Quaternion_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Quaternion)">Write(BinaryWriter, Quaternion)</h4>
-  <div class="markdown level1 summary"><p>Writes the vector4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Quaternion q)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
-        <td><span class="parametername">q</span></td>
-        <td><p>The quaternion.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Rectangle_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Rectangle)">Write(BinaryWriter, Rectangle)</h4>
-  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Rectangle r)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Rectangle.html">Rectangle</a></td>
-        <td><span class="parametername">r</span></td>
-        <td><p>The rectangle.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_RectangleF_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.RectangleF)">Write(BinaryWriter, RectangleF)</h4>
-  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, RectangleF r)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.RectangleF.html">RectangleF</a></td>
-        <td><span class="parametername">r</span></td>
-        <td><p>The rectangle.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Vector2_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Vector2)">Write(BinaryWriter, Vector2)</h4>
-  <div class="markdown level1 summary"><p>Writes the vector2.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector2 v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The vector2.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Vector3_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Vector3)">Write(BinaryWriter, Vector3)</h4>
-  <div class="markdown level1 summary"><p>Writes the vector3.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector3 v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The vector3.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_Evergine_Mathematics_Vector4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,Evergine.Mathematics.Vector4)">Write(BinaryWriter, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Writes the vector4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector4 v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">writer</span></td>
-        <td><p>The writer.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Evergine.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The vector4.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Collections_Generic_Dictionary_System_String_System_Int32__" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,System.Collections.Generic.Dictionary{System.String,System.Int32})">Write(BinaryWriter, Dictionary&lt;String, Int32&gt;)</h4>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Dictionary_System_String_System_Int32__" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Dictionary{System.String,System.Int32})">Write(BinaryWriter, Dictionary&lt;String, Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Writes a vertex attributes dictionary to the binary stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -479,13 +123,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="xref">BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>The Binary Writer.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">vertexAttributes</span></td>
         <td><p>The vertex attribute dictionary.</p>
 </td>
@@ -493,7 +137,337 @@
     </tbody>
   </table>
   <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
-  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Nullable_Evergine_Mathematics_BoundingBox__" data-uid="Evergine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,System.Nullable{Evergine.Mathematics.BoundingBox})">Write(BinaryWriter, Nullable&lt;BoundingBox&gt;)</h4>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_BoundingBox_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.BoundingBox)">Write(BinaryWriter, BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Writes a Bounding Box into a BinaryWriter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, BoundingBox boundingBox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The BinaryWriter object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
+        <td><span class="parametername">boundingBox</span></td>
+        <td><p>The Bounding Box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Byte4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Byte4)">Write(BinaryWriter, Byte4)</h4>
+  <div class="markdown level1 summary"><p>Writes the byte4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Byte4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Byte4.html">Byte4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The byte.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Matrix4x4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Matrix4x4)">Write(BinaryWriter, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Writes the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Matrix4x4 m)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Point_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Point)">Write(BinaryWriter, Point)</h4>
+  <div class="markdown level1 summary"><p>Writes the Point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Point v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Point.html">Point</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vector2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Quaternion_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Quaternion)">Write(BinaryWriter, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Quaternion q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">q</span></td>
+        <td><p>The quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Rectangle_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Rectangle)">Write(BinaryWriter, Rectangle)</h4>
+  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Rectangle r)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_RectangleF_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.RectangleF)">Write(BinaryWriter, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, RectangleF r)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.RectangleF.html">RectangleF</a></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Vector2_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Vector2)">Write(BinaryWriter, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector2 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vector2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Vector3_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Vector3)">Write(BinaryWriter, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector3 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vector3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_Evergine_Mathematics_Vector4_" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,Evergine.Mathematics.Vector4)">Write(BinaryWriter, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector4 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Mathematics.Vector4.html">Vector4</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The vector4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_BinaryWriterExtensions_Write_" data-uid="Evergine.Common.BinaryWriterExtensions.Write*"></a>
+  <h4 id="Evergine_Common_BinaryWriterExtensions_Write_BinaryWriter_System_Nullable_Evergine_Mathematics_BoundingBox__" data-uid="Evergine.Common.BinaryWriterExtensions.Write(BinaryWriter,System.Nullable{Evergine.Mathematics.BoundingBox})">Write(BinaryWriter, Nullable&lt;BoundingBox&gt;)</h4>
   <div class="markdown level1 summary"><p>Writes a nullable Bounding Box into a Binary Writer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -512,7 +486,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="xref">BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>The Binary Writer.</p>
 </td>

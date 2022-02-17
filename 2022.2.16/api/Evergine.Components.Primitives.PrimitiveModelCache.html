@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -177,25 +175,7 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Primitives.html">Evergine.Components.Primitives</a></h6>
@@ -212,8 +192,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[BindService(true)]
-protected GraphicsContext graphicsContext</code></pre>
+    <pre><code class="lang-csharp hljs">protected GraphicsContext graphicsContext</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,7 +238,7 @@ protected GraphicsContext graphicsContext</code></pre>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Components_Primitives_PrimitiveModelCache_LoadOrCreateModel_" data-uid="Evergine.Components.Primitives.PrimitiveModelCache.LoadOrCreateModel*"></a>
-  <h4 id="Evergine_Components_Primitives_PrimitiveModelCache_LoadOrCreateModel_System_Int32_System_String_System_Action_Evergine_Components_Primitives_PrimitiveModelBuilder__" data-uid="Evergine.Components.Primitives.PrimitiveModelCache.LoadOrCreateModel(System.Int32,System.String,System.Action{Evergine.Components.Primitives.PrimitiveModelBuilder})">LoadOrCreateModel(Int32, String, Action&lt;PrimitiveModelBuilder&gt;)</h4>
+  <h4 id="Evergine_Components_Primitives_PrimitiveModelCache_LoadOrCreateModel_System_Int32_System_String_Action_Evergine_Components_Primitives_PrimitiveModelBuilder__" data-uid="Evergine.Components.Primitives.PrimitiveModelCache.LoadOrCreateModel(System.Int32,System.String,Action{Evergine.Components.Primitives.PrimitiveModelBuilder})">LoadOrCreateModel(Int32, String, Action&lt;PrimitiveModelBuilder&gt;)</h4>
   <div class="markdown level1 summary"><p>Loads a model from the cache. If the model does not exists a new one is created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -290,7 +269,7 @@ protected GraphicsContext graphicsContext</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Evergine.Components.Primitives.PrimitiveModelBuilder.html">PrimitiveModelBuilder</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Evergine.Components.Primitives.PrimitiveModelBuilder.html">PrimitiveModelBuilder</a>&gt;</td>
         <td><span class="parametername">buildAction</span></td>
         <td><p>The build action based on <a class="xref" href="Evergine.Components.Primitives.PrimitiveModelBuilder.html">PrimitiveModelBuilder</a>.</p>
 </td>
@@ -336,8 +315,6 @@ protected GraphicsContext graphicsContext</code></pre>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Object.ToString()</span></div>
   <a id="Evergine_Components_Primitives_PrimitiveModelCache_UnloadModel_" data-uid="Evergine.Components.Primitives.PrimitiveModelCache.UnloadModel*"></a>
   <h4 id="Evergine_Components_Primitives_PrimitiveModelCache_UnloadModel_System_Int32_" data-uid="Evergine.Components.Primitives.PrimitiveModelCache.UnloadModel(System.Int32)">UnloadModel(Int32)</h4>
   <div class="markdown level1 summary"><p>Dereferences the model associated with the primitive hash code from the cache.</p>

@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -101,35 +99,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.IDependencyLink.html">IDependencyLink</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.html">Evergine.Common</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_LoadableDependencyLink_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LoadableDependencyLink&lt;T&gt; : IDependencyLink where T : class, ILoadable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoadableDependencyLink&lt;T&gt; : object, IDependencyLink where T : class, ILoadable, IDependencyObject</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,7 +124,7 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Common_LoadableDependencyLink_1__ctor_" data-uid="Evergine.Common.LoadableDependencyLink`1.#ctor*"></a>
-  <h4 id="Evergine_Common_LoadableDependencyLink_1__ctor_Evergine_Common_IDependencyObject__0_System_Reflection_MethodInfo_System_Object___" data-uid="Evergine.Common.LoadableDependencyLink`1.#ctor(Evergine.Common.IDependencyObject,`0,System.Reflection.MethodInfo,System.Object[])">LoadableDependencyLink(IDependencyObject, T, MethodInfo, Object[])</h4>
+  <h4 id="Evergine_Common_LoadableDependencyLink_1__ctor_Evergine_Common_IDependencyObject__0_MethodInfo_System_Object___" data-uid="Evergine.Common.LoadableDependencyLink`1.#ctor(Evergine.Common.IDependencyObject,`0,MethodInfo,System.Object[])">LoadableDependencyLink(IDependencyObject, T, MethodInfo, Object[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Common.LoadableDependencyLink-1.html">LoadableDependencyLink&lt;T&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -181,7 +155,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td><span class="xref">MethodInfo</span></td>
         <td><span class="parametername">methodInfo</span></td>
         <td><p>The method information.</p>
 </td>
@@ -246,7 +220,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_LoadableDependencyLink_1_IsTheSameLink_" data-uid="Evergine.Common.LoadableDependencyLink`1.IsTheSameLink*"></a>
-  <h4 id="Evergine_Common_LoadableDependencyLink_1_IsTheSameLink_Evergine_Common_IDependencyObject_System_Reflection_MethodInfo_System_Object___" data-uid="Evergine.Common.LoadableDependencyLink`1.IsTheSameLink(Evergine.Common.IDependencyObject,System.Reflection.MethodInfo,System.Object[])">IsTheSameLink(IDependencyObject, MethodInfo, Object[])</h4>
+  <h4 id="Evergine_Common_LoadableDependencyLink_1_IsTheSameLink_Evergine_Common_IDependencyObject_MethodInfo_System_Object___" data-uid="Evergine.Common.LoadableDependencyLink`1.IsTheSameLink(Evergine.Common.IDependencyObject,MethodInfo,System.Object[])">IsTheSameLink(IDependencyObject, MethodInfo, Object[])</h4>
   <div class="markdown level1 summary"><p>Determines whether this instance represents the link for the specified parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -271,7 +245,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Reflection.MethodInfo</span></td>
+        <td><span class="xref">MethodInfo</span></td>
         <td><span class="parametername">methodInfo</span></td>
         <td><p>The method information.</p>
 </td>

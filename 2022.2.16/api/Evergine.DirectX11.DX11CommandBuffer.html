@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -100,7 +98,6 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a></div>
   </div>
   <div class="inheritedMembers">
@@ -142,7 +139,7 @@
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData__1_Evergine_Common_Graphics_Buffer___0__System_UInt32_">CommandBuffer.UpdateBufferData&lt;T&gt;(Buffer, T, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
+      <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferData_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_CopyBufferDataTo_Evergine_Common_Graphics_Buffer_Evergine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.CopyBufferDataTo(Buffer, Buffer, UInt32, UInt32, UInt32)</a>
@@ -168,33 +165,12 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_Dispatch3D_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CommandBuffer.Dispatch3D(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX11.html">Evergine.DirectX11</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX11.dll</h6>
   <h5 id="Evergine_DirectX11_DX11CommandBuffer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX11CommandBuffer : CommandBuffer, IDisposable, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX11CommandBuffer : CommandBuffer, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -251,7 +227,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vortice.Direct3D11.ID3D11CommandList</span></td>
+        <td><span class="xref">ID3D11CommandList</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -276,7 +252,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -352,7 +328,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -642,7 +618,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer buffer, Buffer destination, uint sizeInBytes, uint sourceOffset = 0U, uint destinationOffset = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer buffer, Buffer destination, uint sizeInBytes, uint sourceOffset = null, uint destinationOffset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -924,7 +900,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -956,7 +932,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = null, uint baseVertexLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -993,7 +969,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = null, uint baseVertexLocation = null, uint startInstanceLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1082,7 +1058,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = null, uint startInstanceLocation = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1250,7 +1226,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_GenerateMipmaps_Evergine_Common_Graphics_Texture_">CommandBuffer.GenerateMipmaps(Texture)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_GetNativePointer_" data-uid="Evergine.DirectX11.DX11CommandBuffer.GetNativePointer*"></a>
-  <h4 id="Evergine_DirectX11_DX11CommandBuffer_GetNativePointer_System_String_System_IntPtr__" data-uid="Evergine.DirectX11.DX11CommandBuffer.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
+  <h4 id="Evergine_DirectX11_DX11CommandBuffer_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.DirectX11.DX11CommandBuffer.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1273,7 +1249,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
         <td></td>
       </tr>
@@ -1294,8 +1270,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_GetNativePointer_System_String_System_IntPtr__">CommandBuffer.GetNativePointer(String, out IntPtr)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_InsertDebugMarker_" data-uid="Evergine.DirectX11.DX11CommandBuffer.InsertDebugMarker*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_InsertDebugMarker_System_String_" data-uid="Evergine.DirectX11.DX11CommandBuffer.InsertDebugMarker(System.String)">InsertDebugMarker(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -1451,7 +1425,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetIndexBuffer(Buffer buffer, IndexFormat format = IndexFormat.UInt16, uint offset = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetIndexBuffer(Buffer buffer, IndexFormat format = IndexFormat.UInt16, uint offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1670,12 +1644,12 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_SetViewports_Evergine_Common_Graphics_Viewport___">CommandBuffer.SetViewports(Viewport[])</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_UpdateBufferDataInternal_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateBufferDataInternal*"></a>
-  <h4 id="Evergine_DirectX11_DX11CommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateBufferDataInternal(Evergine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_DirectX11_DX11CommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateBufferDataInternal(Evergine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1693,7 +1667,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
@@ -1709,8 +1683,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_UpdateBufferDataInternal_Evergine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">CommandBuffer.UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</a></div>
   <a id="Evergine_DirectX11_DX11CommandBuffer_UpdateRaytracingAccelerationStructure_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateRaytracingAccelerationStructure*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandBuffer_UpdateRaytracingAccelerationStructure_Evergine_Common_Graphics_Raytracing_TopLevelAS__Evergine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="Evergine.DirectX11.DX11CommandBuffer.UpdateRaytracingAccelerationStructure(Evergine.Common.Graphics.Raytracing.TopLevelAS@,Evergine.Common.Graphics.Raytracing.TopLevelASDescription)">UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</h4>
   <div class="markdown level1 summary"></div>
@@ -1776,9 +1748,6 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html#Evergine_Common_Graphics_CommandBuffer_WriteTimestamp_Evergine_Common_Graphics_QueryHeap_System_UInt32_">CommandBuffer.WriteTimestamp(QueryHeap, UInt32)</a></div>
   <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -216,36 +214,14 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Graphics2D.html">Evergine.Components.Graphics2D</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
   <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;Evergine.Components.Graphics2D&quot;)]
-public class LineMeshRenderer2D : Drawable2D, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class LineMeshRenderer2D : Drawable2D, IDependencyObject</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -255,8 +231,7 @@ public class LineMeshRenderer2D : Drawable2D, IDependencyObject</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[BindComponent(false, true, BindComponentSource.Owner, null)]
-protected LineMeshBase lineMesh</code></pre>
+    <pre><code class="lang-csharp hljs">protected LineMeshBase lineMesh</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -306,8 +281,7 @@ protected LineMeshBase lineMesh</code></pre>
   </h3>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.Draw*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.Draw(Evergine.Framework.Graphics.DrawContext)">Draw(DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Allows to perform custom drawing.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,21 +300,15 @@ protected LineMeshBase lineMesh</code></pre>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_Draw_Evergine_Framework_Graphics_DrawContext_">Drawable.Draw(DrawContext)</a></div>
-  <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_Evergine_Framework_Graphics_DrawContext__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method will only be called if all the following points are true:</p>
-<ul><li>The entity passes the culling test.</li><li>The parent of the owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> cascades its visibility to its children and it is visible.</li><li>The <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active.</li><li>The owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active and visible.</li></ul>
-</div>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.DrawDebugLines*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.DrawDebugLines">DrawDebugLines()</h4>
-  <div class="markdown level1 summary"><p>Helper method that draws debug lines.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -348,10 +316,6 @@ protected LineMeshBase lineMesh</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.Drawable2D.html#Evergine_Framework_Graphics_Drawable2D_DrawDebugLines">Drawable2D.DrawDebugLines()</a></div>
-  <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method will only work on debug mode and if RenderManager.DebugLines /&gt;
-is set to <code>true</code>.</p>
-</div>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_OnActivated_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.OnActivated*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_OnActivated" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.OnActivated">OnActivated()</h4>
   <div class="markdown level1 summary"></div>

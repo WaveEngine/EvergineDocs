@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -97,40 +95,16 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">QRCode</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.XR.QR.html">Evergine.Framework.XR.QR</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_XR_QR_QRCode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class QRCode</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class QRCode : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Framework_XR_QR_QRCode__ctor_" data-uid="Evergine.Framework.XR.QR.QRCode.#ctor*"></a>
-  <h4 id="Evergine_Framework_XR_QR_QRCode__ctor_System_Guid_System_String_" data-uid="Evergine.Framework.XR.QR.QRCode.#ctor(System.Guid,System.String)">QRCode(Guid, String)</h4>
+  <h4 id="Evergine_Framework_XR_QR_QRCode__ctor_Guid_System_String_" data-uid="Evergine.Framework.XR.QR.QRCode.#ctor(Guid,System.String)">QRCode(Guid, String)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Framework.XR.QR.QRCode.html">QRCode</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -149,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>The unique id that identifies this QR code.</p>
 </td>
@@ -207,7 +181,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -231,7 +205,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -279,7 +253,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Matrix4x4</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

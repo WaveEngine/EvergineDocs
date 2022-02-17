@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -101,9 +99,10 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Framework.Physics3D.IHingeJoint3D.html">IHingeJoint3D</a></div>
     <div><a class="xref" href="Evergine.Framework.Physics3D.IJoint3D.html">IJoint3D</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -161,33 +160,12 @@
     <div>
       <a class="xref" href="Evergine.Bullet.BulletJoint3D.html#Evergine_Bullet_BulletJoint3D_Dispose">BulletJoint3D.Dispose()</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Bullet.html">Evergine.Bullet</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Bullet.dll</h6>
   <h5 id="Evergine_Bullet_BulletHingeJoint3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BulletHingeJoint3D : BulletJoint3D&lt;HingeConstraint, HingeJointDef3D&gt;, IHingeJoint3D, IJoint3D, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BulletHingeJoint3D : BulletJoint3D&lt;HingeConstraint, HingeJointDef3D&gt;, IDisposable, IHingeJoint3D, IJoint3D, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -951,13 +929,16 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <span class="xref">IDisposable</span>
+  </div>
+  <div>
       <a class="xref" href="Evergine.Framework.Physics3D.IHingeJoint3D.html">IHingeJoint3D</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Framework.Physics3D.IJoint3D.html">IJoint3D</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

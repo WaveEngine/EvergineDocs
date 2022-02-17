@@ -53,8 +53,6 @@
           <div class="container flex-container">
             <label for="version" class="select-label">Version:</label>
             <select id="select-version" class="select-version" name="version" title="version">
-              <option value="2022.2.16" class="option-version">2022.2.16
-              <option value="2021.11.17" class="option-version">2021.11.17
             </select>
             <div class="hide-when-search" id="breadcrumb">
               <ul class="breadcrumb">
@@ -95,15 +93,14 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer</span></div>
-    <div class="level2"><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlObjectSerializer.html">CustomYamlObjectSerializer</a></div>
-    <div class="level3"><a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html">BaseYamlAssetSerializer</a>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBuffer.html">AudioBuffer</a>&gt;</div>
-    <div class="level4"><span class="xref">SoundYamlSerializer</span></div>
+    <div class="level1"><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlObjectSerializer.html">CustomYamlObjectSerializer</a></div>
+    <div class="level2"><a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html">BaseYamlAssetSerializer</a>&lt;<a class="xref" href="Evergine.Common.Audio.AudioBuffer.html">AudioBuffer</a>&gt;</div>
+    <div class="level3"><span class="xref">SoundYamlSerializer</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">SharpYaml.Serialization.IYamlSerializable</span></div>
-    <div><span class="xref">SharpYaml.Serialization.IYamlSerializableFactory</span></div>
+    <div><span class="xref">IYamlSerializable</span></div>
+    <div><span class="xref">IYamlSerializableFactory</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -114,76 +111,13 @@
       <a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html#Evergine_Framework_Assets_Serialization_BaseYamlAssetSerializer_1_IsFactory">BaseYamlAssetSerializer&lt;AudioBuffer&gt;.IsFactory</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html#Evergine_Framework_Assets_Serialization_BaseYamlAssetSerializer_1_ReadYaml_SharpYaml_Serialization_ObjectContext__">BaseYamlAssetSerializer&lt;AudioBuffer&gt;.ReadYaml(ObjectContext)</a>
+      <a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html#Evergine_Framework_Assets_Serialization_BaseYamlAssetSerializer_1_ReadYaml_ObjectContext__">BaseYamlAssetSerializer&lt;AudioBuffer&gt;.ReadYaml(ObjectContext)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html#Evergine_Framework_Assets_Serialization_BaseYamlAssetSerializer_1_WriteYaml_SharpYaml_Serialization_ObjectContext__">BaseYamlAssetSerializer&lt;AudioBuffer&gt;.WriteYaml(ObjectContext)</a>
+      <a class="xref" href="Evergine.Framework.Assets.Serialization.BaseYamlAssetSerializer-1.html#Evergine_Framework_Assets_Serialization_BaseYamlAssetSerializer_1_WriteYaml_ObjectContext__">BaseYamlAssetSerializer&lt;AudioBuffer&gt;.WriteYaml(ObjectContext)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlObjectSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlObjectSerializer_TryCreate_SharpYaml_Serialization_SerializerContext_SharpYaml_Serialization_ITypeDescriptor_">CustomYamlObjectSerializer.TryCreate(SerializerContext, ITypeDescriptor)</a>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.CheckIsSequence(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.GetStyle(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.CreateOrTransformObject(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.TransformObjectAfterRead(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.ReadMembers&lt;TStart, TEnd&gt;(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.ReadMember(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.TryReadMember(SharpYaml.Serialization.ObjectContext, System.String)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.TryReadMember(SharpYaml.Serialization.ObjectContext, SharpYaml.Events.Scalar, System.String)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.ReadMemberName(SharpYaml.Serialization.ObjectContext, System.String, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.ReadMemberValue(SharpYaml.Serialization.ObjectContext, SharpYaml.Serialization.IMemberDescriptor, System.Object, System.Type)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.WriteMembers(SharpYaml.Serialization.ObjectContext)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.WriteMember(SharpYaml.Serialization.ObjectContext, SharpYaml.Serialization.IMemberDescriptor)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.WriteMemberName(SharpYaml.Serialization.ObjectContext, SharpYaml.Serialization.IMemberDescriptor, System.String)</span>
-    </div>
-    <div>
-      <span class="xref">SharpYaml.Serialization.Serializers.ObjectSerializer.WriteMemberValue(SharpYaml.Serialization.ObjectContext, SharpYaml.Serialization.IMemberDescriptor, System.Object, System.Type)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlObjectSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlObjectSerializer_TryCreate_SerializerContext_ITypeDescriptor_">CustomYamlObjectSerializer.TryCreate(SerializerContext, ITypeDescriptor)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Assets.Serialization.html">Evergine.Framework.Assets.Serialization</a></h6>
@@ -194,10 +128,10 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">SharpYaml.Serialization.IYamlSerializable</span>
+      <span class="xref">IYamlSerializable</span>
   </div>
   <div>
-      <span class="xref">SharpYaml.Serialization.IYamlSerializableFactory</span>
+      <span class="xref">IYamlSerializableFactory</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
