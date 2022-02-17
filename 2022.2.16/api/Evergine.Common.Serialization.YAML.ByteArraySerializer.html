@@ -95,13 +95,14 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html">CustomYamlScalarSerializer</a></div>
-    <div class="level2"><span class="xref">ByteArraySerializer</span></div>
+    <div class="level1"><span class="xref">SharpYaml.Serialization.Serializers.ScalarSerializerBase</span></div>
+    <div class="level2"><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html">CustomYamlScalarSerializer</a></div>
+    <div class="level3"><span class="xref">ByteArraySerializer</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IYamlSerializable</span></div>
-    <div><span class="xref">IYamlSerializableFactory</span></div>
+    <div><span class="xref">SharpYaml.Serialization.IYamlSerializable</span></div>
+    <div><span class="xref">SharpYaml.Serialization.IYamlSerializableFactory</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,13 +110,43 @@
       <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_IsFactory">CustomYamlScalarSerializer.IsFactory</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_TryCreate_SerializerContext_ITypeDescriptor_">CustomYamlScalarSerializer.TryCreate(SerializerContext, ITypeDescriptor)</a>
+      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_TryCreate_SharpYaml_Serialization_SerializerContext_SharpYaml_Serialization_ITypeDescriptor_">CustomYamlScalarSerializer.TryCreate(SerializerContext, ITypeDescriptor)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertFrom_ObjectContext__Scalar_">CustomYamlScalarSerializer.ConvertFrom(ObjectContext, Scalar)</a>
+      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertFrom_SharpYaml_Serialization_ObjectContext__SharpYaml_Events_Scalar_">CustomYamlScalarSerializer.ConvertFrom(ObjectContext, Scalar)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertTo_ObjectContext__">CustomYamlScalarSerializer.ConvertTo(ObjectContext)</a>
+      <a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertTo_SharpYaml_Serialization_ObjectContext__">CustomYamlScalarSerializer.ConvertTo(ObjectContext)</a>
+    </div>
+    <div>
+      <span class="xref">SharpYaml.Serialization.Serializers.ScalarSerializerBase.ReadYaml(SharpYaml.Serialization.ObjectContext)</span>
+    </div>
+    <div>
+      <span class="xref">SharpYaml.Serialization.Serializers.ScalarSerializerBase.WriteYaml(SharpYaml.Serialization.ObjectContext)</span>
+    </div>
+    <div>
+      <span class="xref">SharpYaml.Serialization.Serializers.ScalarSerializerBase.WriteScalar(SharpYaml.Serialization.ObjectContext, SharpYaml.Serialization.ScalarEventInfo)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Serialization.YAML.html">Evergine.Common.Serialization.YAML</a></h6>
@@ -128,8 +159,7 @@
   </h3>
   <a id="Evergine_Common_Serialization_YAML_ByteArraySerializer_Type_" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.Type*"></a>
   <h4 id="Evergine_Common_Serialization_YAML_ByteArraySerializer_Type" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.Type">Type</h4>
-  <div class="markdown level1 summary"><p>Gets the type of the scalar.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,7 +175,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -156,8 +186,7 @@
   </h3>
   <a id="Evergine_Common_Serialization_YAML_ByteArraySerializer_ConvertFromString_" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.ConvertFromString*"></a>
   <h4 id="Evergine_Common_Serialization_YAML_ByteArraySerializer_ConvertFromString_System_String_" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.ConvertFromString(System.String)">ConvertFromString(String)</h4>
-  <div class="markdown level1 summary"><p>Converts a string into the scalar type instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,8 +205,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The string value containing the scalar info.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -192,8 +220,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td><p>The scalar type instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -201,8 +228,7 @@
   <div><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertFromString_System_String_">CustomYamlScalarSerializer.ConvertFromString(String)</a></div>
   <a id="Evergine_Common_Serialization_YAML_ByteArraySerializer_ConvertToString_" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.ConvertToString*"></a>
   <h4 id="Evergine_Common_Serialization_YAML_ByteArraySerializer_ConvertToString_System_Object_" data-uid="Evergine.Common.Serialization.YAML.ByteArraySerializer.ConvertToString(System.Object)">ConvertToString(Object)</h4>
-  <div class="markdown level1 summary"><p>Converts the scalar instance into a string.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,8 +247,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The scalar instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -237,8 +262,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A string containing the scalar info.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -246,10 +270,10 @@
   <div><a class="xref" href="Evergine.Common.Serialization.YAML.CustomYamlScalarSerializer.html#Evergine_Common_Serialization_YAML_CustomYamlScalarSerializer_ConvertToString_System_Object_">CustomYamlScalarSerializer.ConvertToString(Object)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IYamlSerializable</span>
+      <span class="xref">SharpYaml.Serialization.IYamlSerializable</span>
   </div>
   <div>
-      <span class="xref">IYamlSerializableFactory</span>
+      <span class="xref">SharpYaml.Serialization.IYamlSerializableFactory</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

@@ -89,14 +89,17 @@
   
   <h1 id="Evergine_WPF_WPFSurface" data-uid="Evergine.WPF.WPFSurface" class="text-break">Class WPFSurface
   </h1>
-  <div class="markdown level0 summary"><p>Represent a control/widget on a WindowSystem.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Evergine.Common.Graphics.Surface.html">Surface</a></div>
     <div class="level2"><span class="xref">WPFSurface</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -142,12 +145,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_OnInfoChanged">Surface.OnInfoChanged()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.WPF.html">Evergine.WPF</a></h6>
   <h6><strong>Assembly</strong>: Evergine.WPF.dll</h6>
   <h5 id="Evergine_WPF_WPFSurface_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WPFSurface : Surface</code></pre>
+    <pre><code class="lang-csharp hljs">public class WPFSurface : Surface, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -212,8 +236,7 @@
   </table>
   <a id="Evergine_WPF_WPFSurface_KeyboardDispatcher_" data-uid="Evergine.WPF.WPFSurface.KeyboardDispatcher*"></a>
   <h4 id="Evergine_WPF_WPFSurface_KeyboardDispatcher" data-uid="Evergine.WPF.WPFSurface.KeyboardDispatcher">KeyboardDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the keyboard events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,8 +261,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_KeyboardDispatcher">Surface.KeyboardDispatcher</a></div>
   <a id="Evergine_WPF_WPFSurface_MouseDispatcher_" data-uid="Evergine.WPF.WPFSurface.MouseDispatcher*"></a>
   <h4 id="Evergine_WPF_WPFSurface_MouseDispatcher" data-uid="Evergine.WPF.WPFSurface.MouseDispatcher">MouseDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the mouse events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -360,8 +382,7 @@
   </table>
   <a id="Evergine_WPF_WPFSurface_TouchDispatcher_" data-uid="Evergine.WPF.WPFSurface.TouchDispatcher*"></a>
   <h4 id="Evergine_WPF_WPFSurface_TouchDispatcher" data-uid="Evergine.WPF.WPFSurface.TouchDispatcher">TouchDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the touch events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -388,8 +409,7 @@
   </h3>
   <a id="Evergine_WPF_WPFSurface_Destroy_" data-uid="Evergine.WPF.WPFSurface.Destroy*"></a>
   <h4 id="Evergine_WPF_WPFSurface_Destroy" data-uid="Evergine.WPF.WPFSurface.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Remove managed resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,6 +417,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_Destroy">Surface.Destroy()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

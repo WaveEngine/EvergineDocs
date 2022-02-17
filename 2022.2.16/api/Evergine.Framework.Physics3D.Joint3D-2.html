@@ -114,7 +114,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -200,7 +200,28 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Physics3D.html">Evergine.Framework.Physics3D</a></h6>
@@ -341,7 +362,8 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected RigidBody3D rigidBody</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected RigidBody3D rigidBody</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +386,8 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -414,7 +437,8 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float BreakPoint { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Joint Breakpoint Property. MaxValue by default&quot;)]
+public float BreakPoint { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -438,7 +462,8 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CollideConnected { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Indicating whether the attached bodies should collide themselves.&quot;)]
+public bool CollideConnected { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -486,7 +511,8 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float DebugDrawSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsFInput(MinLimit = 0F, MaxLimit = 3.40282347E+38F)]
+public float DebugDrawSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -691,7 +717,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameX_" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameX*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameX_Vector3__Vector3__Vector3__" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameX(Vector3@,Vector3@,Vector3@)">GetFrameX(ref Vector3, ref Vector3, ref Vector3)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameX_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameX(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@)">GetFrameX(ref Vector3, ref Vector3, ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Gets the frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -710,19 +736,19 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">a</span></td>
         <td><p>The axis.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>The offset.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">scale</span></td>
         <td><p>The scale.</p>
 </td>
@@ -739,14 +765,14 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The frame matrix.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameZ_" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameZ*"></a>
-  <h4 id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameZ_Vector3__Vector3__Vector3__" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameZ(Vector3@,Vector3@,Vector3@)">GetFrameZ(ref Vector3, ref Vector3, ref Vector3)</h4>
+  <h4 id="Evergine_Framework_Physics3D_Joint3D_2_GetFrameZ_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__" data-uid="Evergine.Framework.Physics3D.Joint3D`2.GetFrameZ(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@)">GetFrameZ(ref Vector3, ref Vector3, ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Gets the frame.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -765,19 +791,19 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">a</span></td>
         <td><p>The axis.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>The offset.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">scale</span></td>
         <td><p>The scale.</p>
 </td>
@@ -794,7 +820,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The frame matrix.</p>
 </td>
       </tr>
@@ -811,8 +837,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   </div>
   <a id="Evergine_Framework_Physics3D_Joint3D_2_OnAttached_" data-uid="Evergine.Framework.Physics3D.Joint3D`2.OnAttached*"></a>
   <h4 id="Evergine_Framework_Physics3D_Joint3D_2_OnAttached" data-uid="Evergine.Framework.Physics3D.Joint3D`2.OnAttached">OnAttached()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -829,8 +854,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if all is OK.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -838,8 +862,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnAttached">Component.OnAttached()</a></div>
   <a id="Evergine_Framework_Physics3D_Joint3D_2_OnDetach_" data-uid="Evergine.Framework.Physics3D.Joint3D`2.OnDetach*"></a>
   <h4 id="Evergine_Framework_Physics3D_Joint3D_2_OnDetach" data-uid="Evergine.Framework.Physics3D.Joint3D`2.OnDetach">OnDetach()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -944,7 +967,7 @@ All Joints restrict some degrees of freedom, seeking a specific configuration.</
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

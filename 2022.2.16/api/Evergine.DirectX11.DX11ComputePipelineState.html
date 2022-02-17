@@ -99,17 +99,42 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.ComputePipelineState.html">ComputePipelineState</a></div>
     <div class="level3"><span class="xref">DX11ComputePipelineState</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.ComputePipelineState.html#Evergine_Common_Graphics_ComputePipelineState_Description">ComputePipelineState.Description</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX11.html">Evergine.DirectX11</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX11.dll</h6>
   <h5 id="Evergine_DirectX11_DX11ComputePipelineState_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX11ComputePipelineState : ComputePipelineState</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX11ComputePipelineState : ComputePipelineState, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -150,8 +175,7 @@
   </h3>
   <a id="Evergine_DirectX11_DX11ComputePipelineState_Name_" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Name*"></a>
   <h4 id="Evergine_DirectX11_DX11ComputePipelineState_Name" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,7 +201,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_DirectX11_DX11ComputePipelineState_Apply_" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Apply*"></a>
-  <h4 id="Evergine_DirectX11_DX11ComputePipelineState_Apply_ID3D11DeviceContext_Evergine_DirectX11_DX11ComputePipelineState_" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Apply(ID3D11DeviceContext,Evergine.DirectX11.DX11ComputePipelineState)">Apply(ID3D11DeviceContext, DX11ComputePipelineState)</h4>
+  <h4 id="Evergine_DirectX11_DX11ComputePipelineState_Apply_Vortice_Direct3D11_ID3D11DeviceContext_Evergine_DirectX11_DX11ComputePipelineState_" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Apply(Vortice.Direct3D11.ID3D11DeviceContext,Evergine.DirectX11.DX11ComputePipelineState)">Apply(ID3D11DeviceContext, DX11ComputePipelineState)</h4>
   <div class="markdown level1 summary"><p>Apply only changes compare with the previous pipelineState.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -196,7 +220,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D11DeviceContext</span></td>
+        <td><span class="xref">Vortice.Direct3D11.ID3D11DeviceContext</span></td>
         <td><span class="parametername">deviceContext</span></td>
         <td><p>The device context.</p>
 </td>
@@ -211,8 +235,7 @@
   </table>
   <a id="Evergine_DirectX11_DX11ComputePipelineState_Dispose_" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Dispose*"></a>
   <h4 id="Evergine_DirectX11_DX11ComputePipelineState_Dispose" data-uid="Evergine.DirectX11.DX11ComputePipelineState.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,6 +243,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.PipelineState.html#Evergine_Common_Graphics_PipelineState_Dispose">PipelineState.Dispose()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

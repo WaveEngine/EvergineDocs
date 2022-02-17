@@ -98,6 +98,10 @@
     <div class="level1"><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html">MeshProcessor</a></div>
     <div class="level2"><span class="xref">SpriteMeshProcessor</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -112,12 +116,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_Dispose">MeshProcessor.Dispose()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.Sprite.html">Evergine.Framework.Graphics.Sprite</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SpriteMeshProcessor : MeshProcessor</code></pre>
+    <pre><code class="lang-csharp hljs">public class SpriteMeshProcessor : MeshProcessor, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -162,8 +187,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Collect_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Collect*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Collect" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Collect">Collect()</h4>
-  <div class="markdown level1 summary"><p>Collect batches to be rendered.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,8 +197,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_Collect">MeshProcessor.Collect()</a></div>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_CouldBatch_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.CouldBatch*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_CouldBatch_Evergine_Framework_Graphics_RenderObjectInfo_Evergine_Framework_Graphics_RenderObjectInfo_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.CouldBatch(Evergine.Framework.Graphics.RenderObjectInfo,Evergine.Framework.Graphics.RenderObjectInfo)">CouldBatch(RenderObjectInfo, RenderObjectInfo)</h4>
-  <div class="markdown level1 summary"><p>Compare if this processor could batch these two meshes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,8 +236,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if the batch is possible.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -222,8 +244,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_CouldBatch_Evergine_Framework_Graphics_RenderObjectInfo_Evergine_Framework_Graphics_RenderObjectInfo_">MeshProcessor.CouldBatch(RenderObjectInfo, RenderObjectInfo)</a></div>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_CouldRenderObject_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.CouldRenderObject*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_CouldRenderObject_Evergine_Framework_Graphics_RenderObjectInfo_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.CouldRenderObject(Evergine.Framework.Graphics.RenderObjectInfo)">CouldRenderObject(RenderObjectInfo)</h4>
-  <div class="markdown level1 summary"><p>Could render a single render object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -242,8 +263,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></td>
         <td><span class="parametername">renderObjectInfo</span></td>
-        <td><p>The render object info.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -258,8 +278,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if this mesh processor could render an object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -303,8 +322,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_Destroy">MeshProcessor.Destroy()</a></div>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_EmitBatch_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.EmitBatch*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_EmitBatch_System_Int32_System_Int32_Evergine_Framework_Graphics_DrawContext_Evergine_Framework_Graphics_MeshProcessor_RenderObjectInfoAccessor_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.EmitBatch(System.Int32,System.Int32,Evergine.Framework.Graphics.DrawContext,Evergine.Framework.Graphics.MeshProcessor.RenderObjectInfoAccessor)">EmitBatch(Int32, Int32, DrawContext, MeshProcessor.RenderObjectInfoAccessor)</h4>
-  <div class="markdown level1 summary"><p>Emit a render batch.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -323,8 +341,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">startIndex</span></td>
-        <td><p>start mesh index.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
@@ -334,14 +351,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.RenderObjectInfoAccessor.html">MeshProcessor.RenderObjectInfoAccessor</a></td>
         <td><span class="parametername">renderObjectInfoAccessor</span></td>
-        <td><p>Function to obtain the a renderObjectInfo by its index.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -356,8 +371,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.RenderUnit.html">RenderUnit</a></td>
-        <td><p>Id of this batch inside mesh processor.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -420,8 +434,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Initialize_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Initialize*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Initialize" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Initialize">Initialize()</h4>
-  <div class="markdown level1 summary"><p>Initialize this mesh processor.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -431,8 +444,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_Initialize">MeshProcessor.Initialize()</a></div>
   <a id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Reset_" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Reset*"></a>
   <h4 id="Evergine_Framework_Graphics_Sprite_SpriteMeshProcessor_Reset" data-uid="Evergine.Framework.Graphics.Sprite.SpriteMeshProcessor.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Reset processors to be ready for batch collecting.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -440,6 +452,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.MeshProcessor.html#Evergine_Framework_Graphics_MeshProcessor_Reset">MeshProcessor.Reset()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

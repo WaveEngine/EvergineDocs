@@ -190,14 +190,36 @@ object that handles managing the observed surfaces and the rendering of surface 
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.XR.html">Evergine.Components.XR</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Components.dll</h6>
   <h5 id="Evergine_Components_XR_BaseSpatialMapping_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseSpatialMapping : Behavior, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;Evergine.MixedReality.SpatialMapping&quot;)]
+public abstract class BaseSpatialMapping : Behavior, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -264,7 +286,8 @@ object that handles managing the observed surfaces and the rendering of surface 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TimerFactory timerFactory</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected TimerFactory timerFactory</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,7 +310,8 @@ object that handles managing the observed surfaces and the rendering of surface 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected XRPlatform xrPlatform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected XRPlatform xrPlatform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -325,7 +349,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -397,7 +421,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -406,8 +430,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   </h3>
   <a id="Evergine_Components_XR_BaseSpatialMapping_OnActivated_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnActivated*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnActivated" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnActivated">OnActivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -417,8 +440,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnActivated">Component.OnActivated()</a></div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_OnAttached_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnAttached*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnAttached" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnAttached">OnAttached()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -435,8 +457,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if all is OK.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -444,8 +465,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_OnAttached">Behavior.OnAttached()</a></div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_OnDeactivated_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnDeactivated*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnDeactivated" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnDeactivated">OnDeactivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -455,8 +475,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDeactivated">Component.OnDeactivated()</a></div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_OnDetach_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnDetach*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnDetach" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnDetach">OnDetach()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -465,7 +484,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_OnDetach">Behavior.OnDetach()</a></div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_OnSurfaceChanged_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnSurfaceChanged*"></a>
-  <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnSurfaceChanged_Guid_Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface_Evergine_Framework_XR_SpatialMapping_SurfaceChange_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnSurfaceChanged(Guid,Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface,Evergine.Framework.XR.SpatialMapping.SurfaceChange)">OnSurfaceChanged(Guid, SpatialMappingSurface, SurfaceChange)</h4>
+  <h4 id="Evergine_Components_XR_BaseSpatialMapping_OnSurfaceChanged_System_Guid_Evergine_Framework_XR_SpatialMapping_SpatialMappingSurface_Evergine_Framework_XR_SpatialMapping_SurfaceChange_" data-uid="Evergine.Components.XR.BaseSpatialMapping.OnSurfaceChanged(System.Guid,Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface,Evergine.Framework.XR.SpatialMapping.SurfaceChange)">OnSurfaceChanged(Guid, SpatialMappingSurface, SurfaceChange)</h4>
   <div class="markdown level1 summary"><p>Handles the SurfaceObserver's OnSurfaceChanged event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -484,7 +503,7 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">id</span></td>
         <td><p>The identifier assigned to the surface which has changed.</p>
 </td>
@@ -505,8 +524,7 @@ object that handles managing the observed surfaces and the rendering of surface 
   </table>
   <a id="Evergine_Components_XR_BaseSpatialMapping_Start_" data-uid="Evergine.Components.XR.BaseSpatialMapping.Start*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_Start" data-uid="Evergine.Components.XR.BaseSpatialMapping.Start">Start()</h4>
-  <div class="markdown level1 summary"><p>Invoked to start the object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -515,8 +533,9 @@ object that handles managing the observed surfaces and the rendering of surface 
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_Start">Component.Start()</a></div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_Update_" data-uid="Evergine.Components.XR.BaseSpatialMapping.Update*"></a>
-  <h4 id="Evergine_Components_XR_BaseSpatialMapping_Update_TimeSpan_" data-uid="Evergine.Components.XR.BaseSpatialMapping.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Components_XR_BaseSpatialMapping_Update_System_TimeSpan_" data-uid="Evergine.Components.XR.BaseSpatialMapping.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -533,12 +552,19 @@ object that handles managing the observed surfaces and the rendering of surface 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
-        <td></td>
+        <td><p>The game time.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_Update_System_TimeSpan_">Behavior.Update(TimeSpan)</a></div>
+  <h5 id="Evergine_Components_XR_BaseSpatialMapping_Update_System_TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not be executed if the <a class="xref" href="Evergine.Framework.Component.html">Component</a>, or the <a class="xref" href="Evergine.Framework.Entity.html">Entity</a>
+owning it are not <code>Active</code>.</p>
+</div>
   <a id="Evergine_Components_XR_BaseSpatialMapping_UpdateSurfaces_" data-uid="Evergine.Components.XR.BaseSpatialMapping.UpdateSurfaces*"></a>
   <h4 id="Evergine_Components_XR_BaseSpatialMapping_UpdateSurfaces" data-uid="Evergine.Components.XR.BaseSpatialMapping.UpdateSurfaces">UpdateSurfaces()</h4>
   <div class="markdown level1 summary"><p>Update surfaces.</p>

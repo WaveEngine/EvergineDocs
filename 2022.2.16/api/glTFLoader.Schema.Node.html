@@ -96,11 +96,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Node</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="glTFLoader.Schema.html">glTFLoader.Schema</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="glTFLoader_Schema_Node_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Node : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Node</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -111,7 +135,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Nullable&lt;int&gt; Camera { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;camera&quot;)]
+public int? Camera { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,7 +160,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int[] Children { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;children&quot;)]
+public int[] Children { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +186,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Collections.Generic.Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extensions&quot;)]
+public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +211,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Extras Extras { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extras&quot;)]
+public Extras Extras { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +236,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[] Matrix { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;matrix&quot;)]
+public float[] Matrix { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,7 +262,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Nullable&lt;int&gt; Mesh { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;mesh&quot;)]
+public int? Mesh { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -255,7 +287,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,7 +312,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[] Rotation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;rotation&quot;)]
+public float[] Rotation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,7 +338,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[] Scale { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;scale&quot;)]
+public float[] Scale { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -327,7 +364,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Nullable&lt;int&gt; Skin { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;skin&quot;)]
+public int? Skin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -351,7 +389,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[] Translation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;translation&quot;)]
+public float[] Translation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -375,7 +415,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float[] Weights { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(ArrayConverter))]
+[JsonProperty(&quot;weights&quot;)]
+public float[] Weights { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

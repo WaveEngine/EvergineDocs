@@ -95,7 +95,56 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ForegroundTaskScheduler</span></div>
+    <div class="level1"><span class="xref">System.Threading.Tasks.TaskScheduler</span></div>
+    <div class="level2"><span class="xref">ForegroundTaskScheduler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext()</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.TryDequeue(System.Threading.Tasks.Task)</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.TryExecuteTask(System.Threading.Tasks.Task)</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.Current</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.Default</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.Id</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.MaximumConcurrencyLevel</span>
+    </div>
+    <div>
+      <span class="xref">System.Threading.Tasks.TaskScheduler.UnobservedTaskException</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Threading.html">Evergine.Framework.Threading</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
@@ -178,12 +227,14 @@ currently queued to the scheduler waiting to be executed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
         <td><p>An enumerable that allows traversal of tasks currently queued to this scheduler.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Threading.Tasks.TaskScheduler.GetScheduledTasks()</span></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -201,7 +252,7 @@ currently queued to the scheduler waiting to be executed.</p>
     </tbody>
   </table>
   <a id="Evergine_Framework_Threading_ForegroundTaskScheduler_QueueTask_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.QueueTask*"></a>
-  <h4 id="Evergine_Framework_Threading_ForegroundTaskScheduler_QueueTask_Task_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.QueueTask(Task)">QueueTask(Task)</h4>
+  <h4 id="Evergine_Framework_Threading_ForegroundTaskScheduler_QueueTask_System_Threading_Tasks_Task_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.QueueTask(System.Threading.Tasks.Task)">QueueTask(Task)</h4>
   <div class="markdown level1 summary"><p>Queues a <span class="xref">System.Threading.Tasks.Task</span> to the scheduler.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -220,15 +271,17 @@ currently queued to the scheduler waiting to be executed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><span class="parametername">task</span></td>
         <td><p>The <span class="xref">System.Threading.Tasks.Task</span> to be queued.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Threading.Tasks.TaskScheduler.QueueTask(System.Threading.Tasks.Task)</span></div>
   <a id="Evergine_Framework_Threading_ForegroundTaskScheduler_TryExecuteTaskInline_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.TryExecuteTaskInline*"></a>
-  <h4 id="Evergine_Framework_Threading_ForegroundTaskScheduler_TryExecuteTaskInline_Task_System_Boolean_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.TryExecuteTaskInline(Task,System.Boolean)">TryExecuteTaskInline(Task, Boolean)</h4>
+  <h4 id="Evergine_Framework_Threading_ForegroundTaskScheduler_TryExecuteTaskInline_System_Threading_Tasks_Task_System_Boolean_" data-uid="Evergine.Framework.Threading.ForegroundTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)">TryExecuteTaskInline(Task, Boolean)</h4>
   <div class="markdown level1 summary"><p>Determines whether the provided <span class="xref">System.Threading.Tasks.Task</span>
 can be executed synchronously in this call, and if it can, executes it.</p>
 </div>
@@ -248,7 +301,7 @@ can be executed synchronously in this call, and if it can, executes it.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><span class="parametername">task</span></td>
         <td><p>The <span class="xref">System.Threading.Tasks.Task</span> to be
 executed.</p>
@@ -281,6 +334,8 @@ execute the task inline without queuing it.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task, System.Boolean)</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

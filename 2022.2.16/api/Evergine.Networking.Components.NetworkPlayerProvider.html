@@ -107,7 +107,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -211,7 +211,28 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Components.html">Evergine.Networking.Components</a></h6>
@@ -264,7 +285,8 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PlayerId { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsInput(MinLimit = -1, Tooltip = &quot;The identifier of the target player. If set to -1 the target will be the local player&quot;)]
+public int PlayerId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,8 +307,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
   </h3>
   <a id="Evergine_Networking_Components_NetworkPlayerProvider_GetCustomProperties_" data-uid="Evergine.Networking.Components.NetworkPlayerProvider.GetCustomProperties*"></a>
   <h4 id="Evergine_Networking_Components_NetworkPlayerProvider_GetCustomProperties_Evergine_Networking_Client_MatchmakingClientService_" data-uid="Evergine.Networking.Components.NetworkPlayerProvider.GetCustomProperties(Evergine.Networking.Client.MatchmakingClientService)">GetCustomProperties(MatchmakingClientService)</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,8 +326,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
       <tr>
         <td><a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html">MatchmakingClientService</a></td>
         <td><span class="parametername">matchmakingClientService</span></td>
-        <td><p>The <a class="xref" href="Evergine.Networking.Client.MatchmakingClientService.html">MatchmakingClientService</a> reference.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -321,8 +341,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a></td>
-        <td><p>The <a class="xref" href="Evergine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a> instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -330,8 +349,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
   <div><a class="xref" href="Evergine.Networking.Components.NetworkCustomPropertiesProvider.html#Evergine_Networking_Components_NetworkCustomPropertiesProvider_GetCustomProperties_Evergine_Networking_Client_MatchmakingClientService_">NetworkCustomPropertiesProvider.GetCustomProperties(MatchmakingClientService)</a></div>
   <a id="Evergine_Networking_Components_NetworkPlayerProvider_OnAttached_" data-uid="Evergine.Networking.Components.NetworkPlayerProvider.OnAttached*"></a>
   <h4 id="Evergine_Networking_Components_NetworkPlayerProvider_OnAttached" data-uid="Evergine.Networking.Components.NetworkPlayerProvider.OnAttached">OnAttached()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -348,8 +366,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if all is OK.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -375,7 +392,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Players.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Players.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -385,7 +402,7 @@ neccessary for <a class="xref" href="Evergine.Networking.Components.NetworkPrope
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

@@ -101,10 +101,9 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IDisposable</span></div>
     <div><a class="xref" href="Evergine.Framework.Physics3D.IConeTwistJoint3D.html">IConeTwistJoint3D</a></div>
     <div><a class="xref" href="Evergine.Framework.Physics3D.IJoint3D.html">IJoint3D</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -162,12 +161,33 @@
     <div>
       <a class="xref" href="Evergine.Bullet.BulletJoint3D.html#Evergine_Bullet_BulletJoint3D_Dispose">BulletJoint3D.Dispose()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Bullet.html">Evergine.Bullet</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Bullet.dll</h6>
   <h5 id="Evergine_Bullet_BulletConeTwistJoint3D_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BulletConeTwistJoint3D : BulletJoint3D&lt;ConeTwistConstraint, ConeTwistJointDef3D&gt;, IDisposable, IConeTwistJoint3D, IJoint3D, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BulletConeTwistJoint3D : BulletJoint3D&lt;ConeTwistConstraint, ConeTwistJointDef3D&gt;, IConeTwistJoint3D, IJoint3D, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -714,8 +734,7 @@
   </h3>
   <a id="Evergine_Bullet_BulletConeTwistJoint3D_CreateJoint_" data-uid="Evergine.Bullet.BulletConeTwistJoint3D.CreateJoint*"></a>
   <h4 id="Evergine_Bullet_BulletConeTwistJoint3D_CreateJoint" data-uid="Evergine.Bullet.BulletConeTwistJoint3D.CreateJoint">CreateJoint()</h4>
-  <div class="markdown level1 summary"><p>Instantiate joint.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -732,8 +751,7 @@
     <tbody>
       <tr>
         <td><span class="xref">BulletSharp.ConeTwistConstraint</span></td>
-        <td><p>The new joint.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -779,7 +797,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness = null, float biasFactor = 0.3F, float relaxationFactor = 1F)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness = 1F, float biasFactor = 0.3F, float relaxationFactor = 1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -885,16 +903,13 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IDisposable</span>
-  </div>
-  <div>
       <a class="xref" href="Evergine.Framework.Physics3D.IConeTwistJoint3D.html">IConeTwistJoint3D</a>
   </div>
   <div>
       <a class="xref" href="Evergine.Framework.Physics3D.IJoint3D.html">IJoint3D</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

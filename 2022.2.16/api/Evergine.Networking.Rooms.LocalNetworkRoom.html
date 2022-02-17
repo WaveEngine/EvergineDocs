@@ -154,6 +154,27 @@
     <div>
       <a class="xref" href="Evergine.Networking.Rooms.BaseNetworkRoom.html#Evergine_Networking_Rooms_BaseNetworkRoom_OnChange_Evergine_Networking_Rooms_BaseNetworkRoom_RoomFieldsFlags_">BaseNetworkRoom.OnChange(BaseNetworkRoom.RoomFieldsFlags)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Rooms.html">Evergine.Networking.Rooms</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Networking.dll</h6>
@@ -252,9 +273,6 @@ Used by <span class="xref">Evergine.Networking.Rooms.LocalNetworkRoom.FromJoinMe
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Networking.Rooms.BaseNetworkRoom.html#Evergine_Networking_Rooms_BaseNetworkRoom_IsVisible">BaseNetworkRoom.IsVisible</a></div>
-  <h5 id="Evergine_Networking_Rooms_LocalNetworkRoom_IsVisible_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Rooms can be created invisible, or changed to invisible.</p>
-</div>
   <a id="Evergine_Networking_Rooms_LocalNetworkRoom_MaxPlayers_" data-uid="Evergine.Networking.Rooms.LocalNetworkRoom.MaxPlayers*"></a>
   <h4 id="Evergine_Networking_Rooms_LocalNetworkRoom_MaxPlayers" data-uid="Evergine.Networking.Rooms.LocalNetworkRoom.MaxPlayers">MaxPlayers</h4>
   <div class="markdown level1 summary"><p>Gets or sets the limit of players for this room. This property is shown in lobby, too.
@@ -282,9 +300,6 @@ If the room is full (players count == maxplayers), joining this room will fail.<
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Networking.Rooms.BaseNetworkRoom.html#Evergine_Networking_Rooms_BaseNetworkRoom_MaxPlayers">BaseNetworkRoom.MaxPlayers</a></div>
-  <h5 id="Evergine_Networking_Rooms_LocalNetworkRoom_MaxPlayers_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the player has joined the room, the setter will update the server and all clients.</p>
-</div>
   <a id="Evergine_Networking_Rooms_LocalNetworkRoom_RemotePlayers_" data-uid="Evergine.Networking.Rooms.LocalNetworkRoom.RemotePlayers*"></a>
   <h4 id="Evergine_Networking_Rooms_LocalNetworkRoom_RemotePlayers" data-uid="Evergine.Networking.Rooms.LocalNetworkRoom.RemotePlayers">RemotePlayers</h4>
   <div class="markdown level1 summary"><p>Gets the &quot;list&quot; of remote players who are also in that room. Only updated while inside a Room.</p>
@@ -304,7 +319,7 @@ If the room is full (players count == maxplayers), joining this room will fail.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -329,7 +344,7 @@ If the room is full (players count == maxplayers), joining this room will fail.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -352,7 +367,7 @@ If the room is full (players count == maxplayers), joining this room will fail.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -375,7 +390,7 @@ If the room is full (players count == maxplayers), joining this room will fail.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -398,7 +413,7 @@ If the room is full (players count == maxplayers), joining this room will fail.<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Networking.Client.Players.RemoteNetworkPlayer.html">RemoteNetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

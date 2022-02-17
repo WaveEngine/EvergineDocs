@@ -102,7 +102,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -142,6 +142,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
@@ -205,7 +226,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vortice.Direct3D12.ID3D12Resource NativeBuffer</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D12Resource NativeBuffer</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,7 +261,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ResourceStates</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ResourceStates</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -251,7 +272,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vortice.Direct3D12.ID3D12Resource NativeTexture</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D12Resource NativeTexture</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,8 +293,7 @@
   </h3>
   <a id="Evergine_DirectX12_DX12Texture_Name_" data-uid="Evergine.DirectX12.DX12Texture.Name*"></a>
   <h4 id="Evergine_DirectX12_DX12Texture_Name" data-uid="Evergine.DirectX12.DX12Texture.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -298,8 +318,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Texture.html#Evergine_Common_Graphics_Texture_Name">Texture.Name</a></div>
   <a id="Evergine_DirectX12_DX12Texture_NativePointer_" data-uid="Evergine.DirectX12.DX12Texture.NativePointer*"></a>
   <h4 id="Evergine_DirectX12_DX12Texture_NativePointer" data-uid="Evergine.DirectX12.DX12Texture.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -315,7 +334,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -341,7 +360,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -365,7 +384,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -373,7 +392,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_DirectX12_DX12Texture_CopyTo_" data-uid="Evergine.DirectX12.DX12Texture.CopyTo*"></a>
-  <h4 id="Evergine_DirectX12_DX12Texture_CopyTo_ID3D12GraphicsCommandList_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX12.DX12Texture.CopyTo(ID3D12GraphicsCommandList,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTo(ID3D12GraphicsCommandList, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
+  <h4 id="Evergine_DirectX12_DX12Texture_CopyTo_Vortice_Direct3D12_ID3D12GraphicsCommandList_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX12.DX12Texture.CopyTo(Vortice.Direct3D12.ID3D12GraphicsCommandList,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTo(ID3D12GraphicsCommandList, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Copy a pixel region from source to destination texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -392,7 +411,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D12GraphicsCommandList</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ID3D12GraphicsCommandList</span></td>
         <td><span class="parametername">commandList</span></td>
         <td><p>The CommandList where execute commands.</p>
 </td>
@@ -501,7 +520,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.Texture.html#Evergine_Common_Graphics_Texture_Dispose">Texture.Dispose()</a></div>
   <a id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture*"></a>
-  <h4 id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_Evergine_DirectX12_DX12GraphicsContext_IntPtr_System_Nullable_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture(Evergine.DirectX12.DX12GraphicsContext,IntPtr,System.Nullable{Evergine.Common.Graphics.TextureDescription})">FromDirectXTexture(DX12GraphicsContext, IntPtr, Nullable&lt;TextureDescription&gt;)</h4>
+  <h4 id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_Evergine_DirectX12_DX12GraphicsContext_System_IntPtr_System_Nullable_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture(Evergine.DirectX12.DX12GraphicsContext,System.IntPtr,System.Nullable{Evergine.Common.Graphics.TextureDescription})">FromDirectXTexture(DX12GraphicsContext, IntPtr, Nullable&lt;TextureDescription&gt;)</h4>
   <div class="markdown level1 summary"><p>Generate a DXTexture from Vortice Texture2D.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -526,7 +545,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">texturePointer</span></td>
         <td><p>DirectX Texture pointer.</p>
 </td>
@@ -556,13 +575,13 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture*"></a>
-  <h4 id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_Evergine_DirectX12_DX12GraphicsContext_Vortice_Direct3D12_ID3D12Resource_System_Nullable_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture(Evergine.DirectX12.DX12GraphicsContext,Vortice.Direct3D12.ID3D12Resource,System.Nullable{Evergine.Common.Graphics.TextureDescription})">FromDirectXTexture(DX12GraphicsContext, Vortice.Direct3D12.ID3D12Resource, Nullable&lt;TextureDescription&gt;)</h4>
+  <h4 id="Evergine_DirectX12_DX12Texture_FromDirectXTexture_Evergine_DirectX12_DX12GraphicsContext_Vortice_Direct3D12_ID3D12Resource_System_Nullable_Evergine_Common_Graphics_TextureDescription__" data-uid="Evergine.DirectX12.DX12Texture.FromDirectXTexture(Evergine.DirectX12.DX12GraphicsContext,Vortice.Direct3D12.ID3D12Resource,System.Nullable{Evergine.Common.Graphics.TextureDescription})">FromDirectXTexture(DX12GraphicsContext, ID3D12Resource, Nullable&lt;TextureDescription&gt;)</h4>
   <div class="markdown level1 summary"><p>Generate a DXTexture from Vortice Texture2D.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DX12Texture FromDirectXTexture(DX12GraphicsContext context, Vortice.Direct3D12.ID3D12Resource nativeTexture, TextureDescription? textureDescription = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DX12Texture FromDirectXTexture(DX12GraphicsContext context, ID3D12Resource nativeTexture, TextureDescription? textureDescription = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -659,7 +678,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td><p>A new DepthStencil view.</p>
 </td>
       </tr>
@@ -714,7 +733,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td><p>A new RenderTargetView instance.</p>
 </td>
       </tr>
@@ -769,7 +788,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td><p>A new ShaderResource view.</p>
 </td>
       </tr>
@@ -818,14 +837,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CpuDescriptorHandle</span></td>
+        <td><span class="xref">Vortice.Direct3D12.CpuDescriptorHandle</span></td>
         <td><p>A new UnorderedAccessView.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12Texture_ResourceTransition_" data-uid="Evergine.DirectX12.DX12Texture.ResourceTransition*"></a>
-  <h4 id="Evergine_DirectX12_DX12Texture_ResourceTransition_ID3D12GraphicsCommandList_ResourceStates_System_Int32_" data-uid="Evergine.DirectX12.DX12Texture.ResourceTransition(ID3D12GraphicsCommandList,ResourceStates,System.Int32)">ResourceTransition(ID3D12GraphicsCommandList, ResourceStates, Int32)</h4>
+  <h4 id="Evergine_DirectX12_DX12Texture_ResourceTransition_Vortice_Direct3D12_ID3D12GraphicsCommandList_Vortice_Direct3D12_ResourceStates_System_Int32_" data-uid="Evergine.DirectX12.DX12Texture.ResourceTransition(Vortice.Direct3D12.ID3D12GraphicsCommandList,Vortice.Direct3D12.ResourceStates,System.Int32)">ResourceTransition(ID3D12GraphicsCommandList, ResourceStates, Int32)</h4>
   <div class="markdown level1 summary"><p>Transition this texture to another native state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -844,13 +863,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D12GraphicsCommandList</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ID3D12GraphicsCommandList</span></td>
         <td><span class="parametername">commandList</span></td>
         <td><p>The commandlist used to execute the barrier transition.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ResourceStates</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ResourceStates</span></td>
         <td><span class="parametername">newResourceState</span></td>
         <td><p>The new native state for this texture.</p>
 </td>
@@ -864,13 +883,13 @@
     </tbody>
   </table>
   <a id="Evergine_DirectX12_DX12Texture_SetData_" data-uid="Evergine.DirectX12.DX12Texture.SetData*"></a>
-  <h4 id="Evergine_DirectX12_DX12Texture_SetData_ID3D12GraphicsCommandList_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX12.DX12Texture.SetData(ID3D12GraphicsCommandList,IntPtr,System.UInt32,System.UInt32)">SetData(ID3D12GraphicsCommandList, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_DirectX12_DX12Texture_SetData_Vortice_Direct3D12_ID3D12GraphicsCommandList_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX12.DX12Texture.SetData(Vortice.Direct3D12.ID3D12GraphicsCommandList,System.IntPtr,System.UInt32,System.UInt32)">SetData(ID3D12GraphicsCommandList, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(ID3D12GraphicsCommandList commandList, IntPtr source, uint sourceSizeInBytes, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(ID3D12GraphicsCommandList commandList, IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -883,13 +902,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ID3D12GraphicsCommandList</span></td>
+        <td><span class="xref">Vortice.Direct3D12.ID3D12GraphicsCommandList</span></td>
         <td><span class="parametername">commandList</span></td>
         <td><p>The CommandList where execute commands.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -938,7 +957,7 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

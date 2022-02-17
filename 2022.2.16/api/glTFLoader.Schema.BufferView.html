@@ -96,11 +96,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BufferView</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="glTFLoader.Schema.html">glTFLoader.Schema</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Assets.dll</h6>
   <h5 id="glTFLoader_Schema_BufferView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BufferView : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class BufferView</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -111,7 +135,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Buffer { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonRequired]
+[JsonProperty(&quot;buffer&quot;)]
+public int Buffer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,7 +161,9 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ByteLength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonRequired]
+[JsonProperty(&quot;byteLength&quot;)]
+public int ByteLength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +187,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ByteOffset { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;byteOffset&quot;)]
+public int ByteOffset { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -183,7 +212,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Nullable&lt;int&gt; ByteStride { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;byteStride&quot;)]
+public int? ByteStride { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,7 +237,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Collections.Generic.Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extensions&quot;)]
+public Dictionary&lt;string, object&gt; Extensions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,7 +262,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Extras Extras { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;extras&quot;)]
+public Extras Extras { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -255,7 +287,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,7 +312,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public System.Nullable&lt;BufferView.TargetEnum&gt; Target { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;target&quot;)]
+public BufferView.TargetEnum? Target { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

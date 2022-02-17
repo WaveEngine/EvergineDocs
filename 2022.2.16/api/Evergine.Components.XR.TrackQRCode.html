@@ -194,7 +194,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.XR.html">Evergine.Components.XR</a></h6>
@@ -211,7 +232,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IQRCodeWatcherService qRCodeWatcherService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected IQRCodeWatcherService qRCodeWatcherService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,7 +279,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -406,8 +429,7 @@ When set to <code>null</code>, first detected QR will be matched.</p>
   </h3>
   <a id="Evergine_Components_XR_TrackQRCode_OnActivated_" data-uid="Evergine.Components.XR.TrackQRCode.OnActivated*"></a>
   <h4 id="Evergine_Components_XR_TrackQRCode_OnActivated" data-uid="Evergine.Components.XR.TrackQRCode.OnActivated">OnActivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -417,8 +439,7 @@ When set to <code>null</code>, first detected QR will be matched.</p>
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnActivated">Component.OnActivated()</a></div>
   <a id="Evergine_Components_XR_TrackQRCode_OnDeactivated_" data-uid="Evergine.Components.XR.TrackQRCode.OnDeactivated*"></a>
   <h4 id="Evergine_Components_XR_TrackQRCode_OnDeactivated" data-uid="Evergine.Components.XR.TrackQRCode.OnDeactivated">OnDeactivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -428,8 +449,7 @@ When set to <code>null</code>, first detected QR will be matched.</p>
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDeactivated">Component.OnDeactivated()</a></div>
   <a id="Evergine_Components_XR_TrackQRCode_OnDetach_" data-uid="Evergine.Components.XR.TrackQRCode.OnDetach*"></a>
   <h4 id="Evergine_Components_XR_TrackQRCode_OnDetach" data-uid="Evergine.Components.XR.TrackQRCode.OnDetach">OnDetach()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -463,8 +483,9 @@ When set to <code>null</code>, first detected QR will be matched.</p>
     </tbody>
   </table>
   <a id="Evergine_Components_XR_TrackQRCode_Update_" data-uid="Evergine.Components.XR.TrackQRCode.Update*"></a>
-  <h4 id="Evergine_Components_XR_TrackQRCode_Update_TimeSpan_" data-uid="Evergine.Components.XR.TrackQRCode.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Evergine_Components_XR_TrackQRCode_Update_System_TimeSpan_" data-uid="Evergine.Components.XR.TrackQRCode.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -481,12 +502,19 @@ When set to <code>null</code>, first detected QR will be matched.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">gameTime</span></td>
-        <td></td>
+        <td><p>The game time.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Evergine.Framework.Behavior.html#Evergine_Framework_Behavior_Update_System_TimeSpan_">Behavior.Update(TimeSpan)</a></div>
+  <h5 id="Evergine_Components_XR_TrackQRCode_Update_System_TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not be executed if the <a class="xref" href="Evergine.Framework.Component.html">Component</a>, or the <a class="xref" href="Evergine.Framework.Entity.html">Entity</a>
+owning it are not <code>Active</code>.</p>
+</div>
   <h3 id="events">Events
   </h3>
   <h4 id="Evergine_Components_XR_TrackQRCode_Updated" data-uid="Evergine.Components.XR.TrackQRCode.Updated">Updated</h4>
@@ -507,7 +535,7 @@ When set to <code>null</code>, first detected QR will be matched.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -114,11 +114,35 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Framework.Assets.IAssetSource.html">IAssetSource</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Assets.html">Evergine.Framework.Assets</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Assets_AssetSource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class AssetSource : object, IAssetSource</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class AssetSource : IAssetSource</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -177,7 +201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Assets.AssetPart.html">AssetPart</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -225,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -297,7 +321,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -312,6 +336,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TPart FindAssetPart&lt;TPart&gt;(int index = 0)
+
     where TPart : AssetPart</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -372,6 +397,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;TPart&gt; FindAssetParts&lt;TPart&gt;()
+
     where TPart : AssetPart</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -384,7 +410,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;TPart&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TPart&gt;</td>
         <td><p>The asset part list.</p>
 </td>
       </tr>
@@ -466,6 +492,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateAssetPart&lt;TPart&gt;(TPart newPart, int index = 0)
+
     where TPart : AssetPart</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

@@ -227,7 +227,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Particles.Forces.html">Evergine.Framework.Particles.Forces</a></h6>
@@ -245,7 +266,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CutoutEnabled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 2)]
+public bool CutoutEnabled { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,7 +291,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float CutoutRange { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 2, AttachToValue = true)]
+public float CutoutRange { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,7 +316,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float CutoutStrength { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 2, AttachToValue = true)]
+public float CutoutStrength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -312,8 +336,7 @@
   </table>
   <a id="Evergine_Framework_Particles_Forces_PointAttractorForce_ForceType_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.ForceType*"></a>
   <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_ForceType" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.ForceType">ForceType</h4>
-  <div class="markdown level1 summary"><p>Gets the force type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,8 +363,7 @@
   </h3>
   <a id="Evergine_Framework_Particles_Forces_PointAttractorForce_ApplyForce_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.ApplyForce*"></a>
   <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_ApplyForce_System_Int32_Evergine_Framework_Particles_ParticleSystem_ParticleVertex__Evergine_Framework_Graphics_Computes_ParticleStateB__System_Single_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.ApplyForce(System.Int32,Evergine.Framework.Particles.ParticleSystem.ParticleVertex@,Evergine.Framework.Graphics.Computes.ParticleStateB@,System.Single)">ApplyForce(Int32, ref ParticleSystem.ParticleVertex, ref ParticleStateB, Single)</h4>
-  <div class="markdown level1 summary"><p>Apply force to a single particle.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -360,26 +382,22 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td><p>The id of the particle.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Particles.ParticleSystem.ParticleVertex.html">ParticleSystem.ParticleVertex</a></td>
         <td><span class="parametername">p</span></td>
-        <td><p>The particle pointer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.Computes.ParticleStateB.html">ParticleStateB</a></td>
         <td><span class="parametername">pB</span></td>
-        <td><p>The particle struct B pointer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">ellapsedTime</span></td>
-        <td><p>The ellapsed time in seconds.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -387,8 +405,7 @@
   <div><a class="xref" href="Evergine.Framework.Particles.Forces.BaseForce.html#Evergine_Framework_Particles_Forces_BaseForce_ApplyForce_System_Int32_Evergine_Framework_Particles_ParticleSystem_ParticleVertex__Evergine_Framework_Graphics_Computes_ParticleStateB__System_Single_">BaseForce.ApplyForce(Int32, ref ParticleSystem.ParticleVertex, ref ParticleStateB, Single)</a></div>
   <a id="Evergine_Framework_Particles_Forces_PointAttractorForce_CreateComputeTask_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.CreateComputeTask*"></a>
   <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_CreateComputeTask_Evergine_Framework_Particles_ParticleSystem_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.CreateComputeTask(Evergine.Framework.Particles.ParticleSystem)">CreateComputeTask(ParticleSystem)</h4>
-  <div class="markdown level1 summary"><p>Creates a compute task for a particle system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -407,8 +424,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Particles.ParticleSystem.html">ParticleSystem</a></td>
         <td><span class="parametername">particleSystem</span></td>
-        <td><p>The particle systme.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -423,17 +439,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.ComputeTaskDecorator.html">ComputeTaskDecorator</a></td>
-        <td><p>The compute task.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Particles.Forces.BaseForce.html#Evergine_Framework_Particles_Forces_BaseForce_CreateComputeTask_Evergine_Framework_Particles_ParticleSystem_">BaseForce.CreateComputeTask(ParticleSystem)</a></div>
   <a id="Evergine_Framework_Particles_Forces_PointAttractorForce_RefreshComputeMatrices_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.RefreshComputeMatrices*"></a>
-  <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_RefreshComputeMatrices_Evergine_Framework_Graphics_ComputeTaskDecorator_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Particles_ParticleSystem_TimeSpan_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.RefreshComputeMatrices(Evergine.Framework.Graphics.ComputeTaskDecorator,Evergine.Common.Graphics.CommandBuffer,Evergine.Framework.Particles.ParticleSystem,TimeSpan)">RefreshComputeMatrices(ComputeTaskDecorator, CommandBuffer, ParticleSystem, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Refreshes a compute task matrices for a particle system.</p>
-</div>
+  <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_RefreshComputeMatrices_Evergine_Framework_Graphics_ComputeTaskDecorator_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Particles_ParticleSystem_System_TimeSpan_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.RefreshComputeMatrices(Evergine.Framework.Graphics.ComputeTaskDecorator,Evergine.Common.Graphics.CommandBuffer,Evergine.Framework.Particles.ParticleSystem,System.TimeSpan)">RefreshComputeMatrices(ComputeTaskDecorator, CommandBuffer, ParticleSystem, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -452,35 +466,30 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.ComputeTaskDecorator.html">ComputeTaskDecorator</a></td>
         <td><span class="parametername">computeTask</span></td>
-        <td><p>The compute task to refresh.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
         <td><span class="parametername">commandBuffer</span></td>
-        <td><p>The command buffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Particles.ParticleSystem.html">ParticleSystem</a></td>
         <td><span class="parametername">particleSystem</span></td>
-        <td><p>The particle systme.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">ellapsedTime</span></td>
-        <td><p>The ellapsed time.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Evergine.Framework.Particles.Forces.BaseForce.html#Evergine_Framework_Particles_Forces_BaseForce_RefreshComputeMatrices_Evergine_Framework_Graphics_ComputeTaskDecorator_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Particles_ParticleSystem_TimeSpan_">BaseForce.RefreshComputeMatrices(ComputeTaskDecorator, CommandBuffer, ParticleSystem, TimeSpan)</a></div>
+  <div><a class="xref" href="Evergine.Framework.Particles.Forces.BaseForce.html#Evergine_Framework_Particles_Forces_BaseForce_RefreshComputeMatrices_Evergine_Framework_Graphics_ComputeTaskDecorator_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Particles_ParticleSystem_System_TimeSpan_">BaseForce.RefreshComputeMatrices(ComputeTaskDecorator, CommandBuffer, ParticleSystem, TimeSpan)</a></div>
   <a id="Evergine_Framework_Particles_Forces_PointAttractorForce_RefreshComputeParams_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.RefreshComputeParams*"></a>
   <h4 id="Evergine_Framework_Particles_Forces_PointAttractorForce_RefreshComputeParams_Evergine_Framework_Graphics_ComputeTaskDecorator_Evergine_Framework_Particles_ParticleSystem_" data-uid="Evergine.Framework.Particles.Forces.PointAttractorForce.RefreshComputeParams(Evergine.Framework.Graphics.ComputeTaskDecorator,Evergine.Framework.Particles.ParticleSystem)">RefreshComputeParams(ComputeTaskDecorator, ParticleSystem)</h4>
-  <div class="markdown level1 summary"><p>Refreshes a compute task for a particle system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -499,14 +508,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.ComputeTaskDecorator.html">ComputeTaskDecorator</a></td>
         <td><span class="parametername">computeTask</span></td>
-        <td><p>The compute task to refresh.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Particles.ParticleSystem.html">ParticleSystem</a></td>
         <td><span class="parametername">particleSystem</span></td>
-        <td><p>The particle systme.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -97,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">NetworkPropertiesTable</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.html">Evergine.Networking</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Networking.dll</h6>
   <h5 id="Evergine_Networking_NetworkPropertiesTable_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NetworkPropertiesTable : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class NetworkPropertiesTable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -148,7 +172,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -405,7 +429,7 @@
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_GetDateTime_" data-uid="Evergine.Networking.NetworkPropertiesTable.GetDateTime*"></a>
   <h4 id="Evergine_Networking_NetworkPropertiesTable_GetDateTime_System_Byte_" data-uid="Evergine.Networking.NetworkPropertiesTable.GetDateTime(System.Byte)">GetDateTime(Byte)</h4>
-  <div class="markdown level1 summary"><p>Gets a <see cref="!:DateTime"></see> value from the specified key from the properties table.</p>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.DateTime</span> value from the specified key from the properties table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -440,8 +464,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><p>A <see cref="!:DateTime"></see> value.</p>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>A <span class="xref">System.DateTime</span> value.</p>
 </td>
       </tr>
     </tbody>
@@ -755,6 +779,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T GetSerializable&lt;T&gt;(byte key)
+
     where T : INetworkSerializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -852,7 +877,7 @@
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_GetTimeSpan_" data-uid="Evergine.Networking.NetworkPropertiesTable.GetTimeSpan*"></a>
   <h4 id="Evergine_Networking_NetworkPropertiesTable_GetTimeSpan_System_Byte_System_Boolean_" data-uid="Evergine.Networking.NetworkPropertiesTable.GetTimeSpan(System.Byte,System.Boolean)">GetTimeSpan(Byte, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Gets a <see cref="!:TimeSpan"></see> value from the specified key from the properties table.</p>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.TimeSpan</span> value from the specified key from the properties table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -878,7 +903,7 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">highPrecision</span></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be read using high precision (ticks)
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be read using high precision (ticks)
 or not (milliseconds).</p>
 </td>
       </tr>
@@ -894,14 +919,14 @@ or not (milliseconds).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
-        <td><p>A <see cref="!:TimeSpan"></see> value.</p>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><p>A <span class="xref">System.TimeSpan</span> value.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Evergine_Networking_NetworkPropertiesTable_GetTimeSpan_System_Byte_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to
 &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <a id="Evergine_Networking_NetworkPropertiesTable_GetVector2_" data-uid="Evergine.Networking.NetworkPropertiesTable.GetVector2*"></a>
@@ -1073,39 +1098,6 @@ or not (milliseconds).</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if the element is successfully found and removed; otherwise, <code>false</code>.
 This method returns <code>false</code> if key is not found in the properties table.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Evergine_Networking_NetworkPropertiesTable_Set_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set*"></a>
-  <h4 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_DateTime_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set(System.Byte,DateTime)">Set(Byte, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Set a <see cref="!:DateTime"></see> value for the specified key in the properties table.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set(byte key, DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The byte key.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The <see cref="!:DateTime"></see> value.</p>
 </td>
       </tr>
     </tbody>
@@ -1474,6 +1466,39 @@ This method returns <code>false</code> if key is not found in the properties tab
     </tbody>
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_Set_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set*"></a>
+  <h4 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_System_DateTime_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set(System.Byte,System.DateTime)">Set(Byte, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Set a <span class="xref">System.DateTime</span> value for the specified key in the properties table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(byte key, DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The byte key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The <span class="xref">System.DateTime</span> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Networking_NetworkPropertiesTable_Set_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set*"></a>
   <h4 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_System_Int32_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set(System.Byte,System.Int32)">Set(Byte, Int32)</h4>
   <div class="markdown level1 summary"><p>Set a integer value for the specified key in the properties table.</p>
 </div>
@@ -1606,8 +1631,8 @@ This method returns <code>false</code> if key is not found in the properties tab
     </tbody>
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_Set_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set*"></a>
-  <h4 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_TimeSpan_System_Boolean_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set(System.Byte,TimeSpan,System.Boolean)">Set(Byte, TimeSpan, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Set a <see cref="!:TimeSpan"></see> value for the specified key in the properties table.</p>
+  <h4 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_System_TimeSpan_System_Boolean_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set(System.Byte,System.TimeSpan,System.Boolean)">Set(Byte, TimeSpan, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set a <span class="xref">System.TimeSpan</span> value for the specified key in the properties table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1631,22 +1656,22 @@ This method returns <code>false</code> if key is not found in the properties tab
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The <see cref="!:TimeSpan"></see> value.</p>
+        <td><p>The <span class="xref">System.TimeSpan</span> value.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">highPrecision</span></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be written using high precision (ticks)
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be written using high precision (ticks)
 or not (milliseconds).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_TimeSpan_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to
+  <h5 id="Evergine_Networking_NetworkPropertiesTable_Set_System_Byte_System_TimeSpan_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to
 &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <a id="Evergine_Networking_NetworkPropertiesTable_Set_" data-uid="Evergine.Networking.NetworkPropertiesTable.Set*"></a>
@@ -1657,6 +1682,7 @@ or not (milliseconds).</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(byte key, T value)
+
     where T : INetworkSerializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1900,8 +1926,8 @@ parameter type.</p>
     </tbody>
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_TryGetDateTime_" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetDateTime*"></a>
-  <h4 id="Evergine_Networking_NetworkPropertiesTable_TryGetDateTime_System_Byte_DateTime__" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetDateTime(System.Byte,DateTime@)">TryGetDateTime(Byte, out DateTime)</h4>
-  <div class="markdown level1 summary"><p>Gets a <see cref="!:DateTime"></see> value from the specified key from the properties table.</p>
+  <h4 id="Evergine_Networking_NetworkPropertiesTable_TryGetDateTime_System_Byte_System_DateTime__" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetDateTime(System.Byte,System.DateTime@)">TryGetDateTime(Byte, out DateTime)</h4>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.DateTime</span> value from the specified key from the properties table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1925,7 +1951,7 @@ parameter type.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value associated with the specified key, if the key exists; otherwise, the predefined value for the
 parameter type.</p>
@@ -2307,6 +2333,7 @@ parameter type.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool TryGetSerializable&lt;T&gt;(byte key, out T value)
+
     where T : INetworkSerializable, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2417,8 +2444,8 @@ parameter type.</p>
     </tbody>
   </table>
   <a id="Evergine_Networking_NetworkPropertiesTable_TryGetTimeSpan_" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetTimeSpan*"></a>
-  <h4 id="Evergine_Networking_NetworkPropertiesTable_TryGetTimeSpan_System_Byte_System_Boolean_TimeSpan__" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetTimeSpan(System.Byte,System.Boolean,TimeSpan@)">TryGetTimeSpan(Byte, Boolean, out TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Gets a <see cref="!:TimeSpan"></see> value from the specified key from the properties table.</p>
+  <h4 id="Evergine_Networking_NetworkPropertiesTable_TryGetTimeSpan_System_Byte_System_Boolean_System_TimeSpan__" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetTimeSpan(System.Byte,System.Boolean,System.TimeSpan@)">TryGetTimeSpan(Byte, Boolean, out TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.TimeSpan</span> value from the specified key from the properties table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2444,12 +2471,12 @@ parameter type.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">highPrecision</span></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be read using high precision (ticks)
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be read using high precision (ticks)
 or not (milliseconds).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value associated with the specified key, if the key exists; otherwise, the predefined value for the
 parameter type.</p>
@@ -2473,8 +2500,8 @@ parameter type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Networking_NetworkPropertiesTable_TryGetTimeSpan_System_Byte_System_Boolean_TimeSpan___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to
+  <h5 id="Evergine_Networking_NetworkPropertiesTable_TryGetTimeSpan_System_Byte_System_Boolean_System_TimeSpan___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to
 &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <a id="Evergine_Networking_NetworkPropertiesTable_TryGetVector2_" data-uid="Evergine.Networking.NetworkPropertiesTable.TryGetVector2*"></a>
@@ -2647,7 +2674,7 @@ parameter type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2670,7 +2697,7 @@ parameter type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2693,7 +2720,7 @@ parameter type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

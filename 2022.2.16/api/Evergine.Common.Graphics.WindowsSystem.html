@@ -100,6 +100,34 @@
       <div class="level2"><a class="xref" href="Evergine.SDL.SDLWindowsSystem.html">SDLWindowsSystem</a></div>
       <div class="level2"><a class="xref" href="Evergine.WPF.WPFWindowsSystem.html">WPFWindowsSystem</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Graphics_WindowsSystem_syntax">Syntax</h5>
@@ -109,7 +137,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_Graphics_WindowsSystem_CreateLoopThread_" data-uid="Evergine.Common.Graphics.WindowsSystem.CreateLoopThread*"></a>
-  <h4 id="Evergine_Common_Graphics_WindowsSystem_CreateLoopThread_Action_Action_" data-uid="Evergine.Common.Graphics.WindowsSystem.CreateLoopThread(Action,Action)">CreateLoopThread(Action, Action)</h4>
+  <h4 id="Evergine_Common_Graphics_WindowsSystem_CreateLoopThread_System_Action_System_Action_" data-uid="Evergine.Common.Graphics.WindowsSystem.CreateLoopThread(System.Action,System.Action)">CreateLoopThread(Action, Action)</h4>
   <div class="markdown level1 summary"><p>Creates a loop thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -128,13 +156,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">loadAction</span></td>
         <td><p>The load action.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">renderCallback</span></td>
         <td><p>The render callback action.</p>
 </td>
@@ -313,7 +341,7 @@
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
   <a id="Evergine_Common_Graphics_WindowsSystem_Run_" data-uid="Evergine.Common.Graphics.WindowsSystem.Run*"></a>
-  <h4 id="Evergine_Common_Graphics_WindowsSystem_Run_Action_Action_" data-uid="Evergine.Common.Graphics.WindowsSystem.Run(Action,Action)">Run(Action, Action)</h4>
+  <h4 id="Evergine_Common_Graphics_WindowsSystem_Run_System_Action_System_Action_" data-uid="Evergine.Common.Graphics.WindowsSystem.Run(System.Action,System.Action)">Run(Action, Action)</h4>
   <div class="markdown level1 summary"><p>Run the windows system.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -332,19 +360,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">loadAction</span></td>
         <td><p>Action does in load thread.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">renderCallback</span></td>
         <td><p>Action to be executed every render loop.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

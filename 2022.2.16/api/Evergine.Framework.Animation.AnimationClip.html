@@ -97,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AnimationClip</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Animation.html">Evergine.Framework.Animation</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Animation_AnimationClip_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AnimationClip : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class AnimationClip</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -123,7 +147,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Evergine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Evergine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -146,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Evergine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -192,7 +216,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SortedList</span>&lt;<span class="xref">System.Single</span>, <a class="xref" href="Evergine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.SortedList</span>&lt;<span class="xref">System.Single</span>, <a class="xref" href="Evergine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -414,7 +438,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Animation_AnimationClip_ComputeRootMotion_" data-uid="Evergine.Framework.Animation.AnimationClip.ComputeRootMotion*"></a>
-  <h4 id="Evergine_Framework_Animation_AnimationClip_ComputeRootMotion_Matrix4x4_" data-uid="Evergine.Framework.Animation.AnimationClip.ComputeRootMotion(Matrix4x4)">ComputeRootMotion(Matrix4x4)</h4>
+  <h4 id="Evergine_Framework_Animation_AnimationClip_ComputeRootMotion_Evergine_Mathematics_Matrix4x4_" data-uid="Evergine.Framework.Animation.AnimationClip.ComputeRootMotion(Evergine.Mathematics.Matrix4x4)">ComputeRootMotion(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Initialize some values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -433,7 +457,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><span class="parametername">rootMotionNodeWorldTransform</span></td>
         <td><p>The root motion world transform.</p>
 </td>
@@ -447,7 +471,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, AnimationTrackContext context, float playbackRate = null, int loopCount = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, AnimationTrackContext context, float playbackRate = 1F, int loopCount = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -498,7 +522,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, float playbackRate = null, int loopCount = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, float playbackRate = 1F, int loopCount = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

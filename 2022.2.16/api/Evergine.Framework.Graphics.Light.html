@@ -192,7 +192,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -232,7 +253,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -278,7 +299,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -301,7 +322,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -324,7 +345,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -404,7 +425,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform3D Transform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Transform3D Transform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -439,7 +461,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -462,7 +484,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -488,7 +510,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -573,7 +595,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool IsShadowEnabled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 1, CustomPropertyName = &quot;Shadow enabled&quot;)]
+public virtual bool IsShadowEnabled { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -681,7 +704,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -705,7 +728,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -729,7 +752,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -741,7 +764,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float ShadowBias { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Shadow Bias&quot;)]
+public virtual float ShadowBias { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -765,7 +789,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float ShadowOpacity { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsFInput(AsSlider = true, MaxLimit = 1F, MinLimit = 0F, AttachToTag = 1, AttachToValue = true, CustomPropertyName = &quot;Shadow Opacity&quot;)]
+public virtual float ShadowOpacity { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -801,7 +826,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -825,7 +850,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -833,7 +858,7 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Framework_Graphics_Light_ComputeBoundingBox_" data-uid="Evergine.Framework.Graphics.Light.ComputeBoundingBox*"></a>
-  <h4 id="Evergine_Framework_Graphics_Light_ComputeBoundingBox_BoundingBox__" data-uid="Evergine.Framework.Graphics.Light.ComputeBoundingBox(BoundingBox@)">ComputeBoundingBox(out BoundingBox)</h4>
+  <h4 id="Evergine_Framework_Graphics_Light_ComputeBoundingBox_Evergine_Mathematics_BoundingBox__" data-uid="Evergine.Framework.Graphics.Light.ComputeBoundingBox(Evergine.Mathematics.BoundingBox@)">ComputeBoundingBox(out BoundingBox)</h4>
   <div class="markdown level1 summary"><p>Compute the bounding box of the light.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -852,7 +877,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingBox</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
         <td><span class="parametername">boundingBox</span></td>
         <td><p>The bounding box.</p>
 </td>
@@ -869,7 +894,7 @@
     <pre><code class="lang-csharp hljs">protected void FireOnShadowEnabledChanged()</code></pre>
   </div>
   <a id="Evergine_Framework_Graphics_Light_Intersects_" data-uid="Evergine.Framework.Graphics.Light.Intersects*"></a>
-  <h4 id="Evergine_Framework_Graphics_Light_Intersects_BoundingBox__" data-uid="Evergine.Framework.Graphics.Light.Intersects(BoundingBox@)">Intersects(ref BoundingBox)</h4>
+  <h4 id="Evergine_Framework_Graphics_Light_Intersects_Evergine_Mathematics_BoundingBox__" data-uid="Evergine.Framework.Graphics.Light.Intersects(Evergine.Mathematics.BoundingBox@)">Intersects(ref BoundingBox)</h4>
   <div class="markdown level1 summary"><p>Check if the current light intersect with the specified bbox.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -888,7 +913,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingBox</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a></td>
         <td><span class="parametername">aabb</span></td>
         <td><p>The frustum.</p>
 </td>
@@ -912,7 +937,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Light_Intersects_" data-uid="Evergine.Framework.Graphics.Light.Intersects*"></a>
-  <h4 id="Evergine_Framework_Graphics_Light_Intersects_BoundingFrustum__" data-uid="Evergine.Framework.Graphics.Light.Intersects(BoundingFrustum@)">Intersects(ref BoundingFrustum)</h4>
+  <h4 id="Evergine_Framework_Graphics_Light_Intersects_Evergine_Mathematics_BoundingFrustum__" data-uid="Evergine.Framework.Graphics.Light.Intersects(Evergine.Mathematics.BoundingFrustum@)">Intersects(ref BoundingFrustum)</h4>
   <div class="markdown level1 summary"><p>Check if the current light is inside the specified frustum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -931,7 +956,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BoundingFrustum</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.BoundingFrustum.html">BoundingFrustum</a></td>
         <td><span class="parametername">frustum</span></td>
         <td><p>The frustum.</p>
 </td>
@@ -1012,7 +1037,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Graphics.Color.html">Color</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Evergine.Common.Graphics.Color.html">Color</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1035,7 +1060,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Single</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1058,7 +1083,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

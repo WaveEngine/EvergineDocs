@@ -97,11 +97,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">LoadableDependenciesManager</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Dependencies.html">Evergine.Common.Dependencies</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Dependencies_LoadableDependenciesManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LoadableDependenciesManager : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoadableDependenciesManager</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -113,6 +137,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void RegisterDelegateDependencyLink&lt;T&gt;(IDependencyObject source, T target, string updateMethodName, params object[] parameters)
+
     where T : class, ILoadable, IDependencyObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -175,6 +200,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static LoadableDependencyLink&lt;T&gt; RegisterPropertyDependencyLink&lt;T&gt;(IDependencyObject source, string propertyName)
+
     where T : class, ILoadable, IDependencyObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -241,6 +267,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;(T loadable)
+
     where T : IDependencyObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -285,6 +312,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void UnregisterDelegateDependencyLink&lt;T&gt;(IDependencyObject source, T target, string updateMethodName, params object[] parameters)
+
     where T : class, ILoadable, IDependencyObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

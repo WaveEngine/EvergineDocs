@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.Window.html">Window</a></div>
     <div class="level3"><span class="xref">SDLWindow</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -143,12 +147,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_OnInfoChanged">Surface.OnInfoChanged()</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.SDL.html">Evergine.SDL</a></h6>
   <h6><strong>Assembly</strong>: Evergine.SDL.dll</h6>
   <h5 id="Evergine_SDL_SDLWindow_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SDLWindow : Window</code></pre>
+    <pre><code class="lang-csharp hljs">public class SDLWindow : Window, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -201,8 +226,7 @@
   </h3>
   <a id="Evergine_SDL_SDLWindow_KeyboardDispatcher_" data-uid="Evergine.SDL.SDLWindow.KeyboardDispatcher*"></a>
   <h4 id="Evergine_SDL_SDLWindow_KeyboardDispatcher" data-uid="Evergine.SDL.SDLWindow.KeyboardDispatcher">KeyboardDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the keyboard events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,8 +251,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_KeyboardDispatcher">Surface.KeyboardDispatcher</a></div>
   <a id="Evergine_SDL_SDLWindow_MouseDispatcher_" data-uid="Evergine.SDL.SDLWindow.MouseDispatcher*"></a>
   <h4 id="Evergine_SDL_SDLWindow_MouseDispatcher" data-uid="Evergine.SDL.SDLWindow.MouseDispatcher">MouseDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the mouse events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,15 +293,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_SDL_SDLWindow_Title_" data-uid="Evergine.SDL.SDLWindow.Title*"></a>
   <h4 id="Evergine_SDL_SDLWindow_Title" data-uid="Evergine.SDL.SDLWindow.Title">Title</h4>
-  <div class="markdown level1 summary"><p>Gets or sets window title.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,8 +325,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Window.html#Evergine_Common_Graphics_Window_Title">Window.Title</a></div>
   <a id="Evergine_SDL_SDLWindow_TouchDispatcher_" data-uid="Evergine.SDL.SDLWindow.TouchDispatcher*"></a>
   <h4 id="Evergine_SDL_SDLWindow_TouchDispatcher" data-uid="Evergine.SDL.SDLWindow.TouchDispatcher">TouchDispatcher</h4>
-  <div class="markdown level1 summary"><p>Gets the touch events dispatcher associated to this surface.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -329,8 +350,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_TouchDispatcher">Surface.TouchDispatcher</a></div>
   <a id="Evergine_SDL_SDLWindow_Visible_" data-uid="Evergine.SDL.SDLWindow.Visible*"></a>
   <h4 id="Evergine_SDL_SDLWindow_Visible" data-uid="Evergine.SDL.SDLWindow.Visible">Visible</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the window is visible.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -357,8 +377,7 @@
   </h3>
   <a id="Evergine_SDL_SDLWindow_Destroy_" data-uid="Evergine.SDL.SDLWindow.Destroy*"></a>
   <h4 id="Evergine_SDL_SDLWindow_Destroy" data-uid="Evergine.SDL.SDLWindow.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Remove managed resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -367,7 +386,7 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.Surface.html#Evergine_Common_Graphics_Surface_Destroy">Surface.Destroy()</a></div>
   <a id="Evergine_SDL_SDLWindow_OnEvent_" data-uid="Evergine.SDL.SDLWindow.OnEvent*"></a>
-  <h4 id="Evergine_SDL_SDLWindow_OnEvent_SDL_Event_" data-uid="Evergine.SDL.SDLWindow.OnEvent(SDL_Event)">OnEvent(SDL_Event)</h4>
+  <h4 id="Evergine_SDL_SDLWindow_OnEvent_Veldrid_Sdl2_SDL_Event_" data-uid="Evergine.SDL.SDLWindow.OnEvent(Veldrid.Sdl2.SDL_Event)">OnEvent(SDL_Event)</h4>
   <div class="markdown level1 summary"><p>SDL Event manager method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -386,13 +405,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SDL_Event</span></td>
+        <td><span class="xref">Veldrid.Sdl2.SDL_Event</span></td>
         <td><span class="parametername">ev</span></td>
         <td><p>SDL event.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

@@ -97,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ReflectionHelper</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Helpers.html">Evergine.Common.Helpers</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Helpers_ReflectionHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ReflectionHelper : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ReflectionHelper</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Evergine_Common_Helpers_ReflectionHelper_FindTypes_" data-uid="Evergine.Common.Helpers.ReflectionHelper.FindTypes*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_FindTypes_Assembly_Func_Type_System_Boolean__" data-uid="Evergine.Common.Helpers.ReflectionHelper.FindTypes(Assembly,Func{Type,System.Boolean})">FindTypes(Assembly, Func&lt;Type, Boolean&gt;)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_FindTypes_System_Reflection_Assembly_System_Func_System_Type_System_Boolean__" data-uid="Evergine.Common.Helpers.ReflectionHelper.FindTypes(System.Reflection.Assembly,System.Func{System.Type,System.Boolean})">FindTypes(Assembly, Func&lt;Type, Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Find the types that match the corresponding predicate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -125,13 +149,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">assembly</span></td>
         <td><p>The target search assembly.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">Type</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Type</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
         <td><p>The predicate to filter types.</p>
 </td>
@@ -148,14 +172,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Type</span>&gt;</td>
         <td><p>A collection of matching types.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetBaseType_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetBaseType*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetBaseType_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetBaseType(Type)">GetBaseType(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetBaseType_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetBaseType(System.Type)">GetBaseType(Type)</h4>
   <div class="markdown level1 summary"><p>Gets the type from which the current System.Type directly inherits.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -174,7 +198,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -191,15 +215,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
-        <td><p>The <see cref="!:Type"></see> from which the current System.Type directly inherits, or null
-if the current <see cref="!:Type"></see> represents the System.Object class or an interface.</p>
+        <td><span class="xref">System.Type</span></td>
+        <td><p>The <span class="xref">System.Type</span> from which the current System.Type directly inherits, or null
+if the current <span class="xref">System.Type</span> represents the System.Object class or an interface.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetFullNameWithoutAssemblyInfo_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetFullNameWithoutAssemblyInfo*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetFullNameWithoutAssemblyInfo_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetFullNameWithoutAssemblyInfo(Type)">GetFullNameWithoutAssemblyInfo(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetFullNameWithoutAssemblyInfo_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetFullNameWithoutAssemblyInfo(System.Type)">GetFullNameWithoutAssemblyInfo(Type)</h4>
   <div class="markdown level1 summary"><p>Gets the full name of the name of the specified type without assembly full name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -218,7 +242,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -242,8 +266,8 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetGenericTypeDefinition_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetGenericTypeDefinition*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetGenericTypeDefinition_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetGenericTypeDefinition(Type)">GetGenericTypeDefinition(Type)</h4>
-  <div class="markdown level1 summary"><p>Returns a <see cref="!:Type"></see> object that represents a generic type definition from which the current generic type can be constructed.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetGenericTypeDefinition_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetGenericTypeDefinition(System.Type)">GetGenericTypeDefinition(Type)</h4>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.Type</span> object that represents a generic type definition from which the current generic type can be constructed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -261,7 +285,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -278,14 +302,14 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
-        <td><p>A <see cref="!:Type"></see> object representing a generic type from which the current type can be constructed.</p>
+        <td><span class="xref">System.Type</span></td>
+        <td><p>A <span class="xref">System.Type</span> object representing a generic type from which the current type can be constructed.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetInterfaces_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetInterfaces*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetInterfaces_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetInterfaces(Type)">GetInterfaces(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetInterfaces_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetInterfaces(System.Type)">GetInterfaces(Type)</h4>
   <div class="markdown level1 summary"><p>Gets the interfaces.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -304,7 +328,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -321,7 +345,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span>[]</td>
+        <td><span class="xref">System.Type</span>[]</td>
         <td><p>The interfaces.</p>
 </td>
       </tr>
@@ -329,7 +353,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetMemberAssembly*"></a>
   <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)">GetMemberAssembly(Object)</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:Assembly"></see> in which the member type is declared. For generic types, gets the <see cref="!:Assembly"></see> in which the generic type is defined.</p>
+  <div class="markdown level1 summary"><p>Gets the <span class="xref">System.Reflection.Assembly</span> in which the member type is declared. For generic types, gets the <span class="xref">System.Reflection.Assembly</span> in which the generic type is defined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -364,7 +388,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><p>The type assembly.</p>
 </td>
       </tr>
@@ -412,8 +436,8 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssembly_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssembly*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssembly_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssembly(Type)">GetTypeAssembly(Type)</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:Assembly"></see> in which the type is declared. For generic types, gets the <see cref="!:Assembly"></see> in which the generic type is defined.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssembly_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssembly(System.Type)">GetTypeAssembly(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the <span class="xref">System.Reflection.Assembly</span> in which the type is declared. For generic types, gets the <span class="xref">System.Reflection.Assembly</span> in which the generic type is defined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -431,7 +455,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -448,15 +472,15 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><p>The type assembly.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssemblyName_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssemblyName*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssemblyName_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssemblyName(Type)">GetTypeAssemblyName(Type)</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:Assembly"></see> name in which the type is declared. For generic types, gets the <see cref="!:Assembly"></see> name in which the generic type is defined.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_GetTypeAssemblyName_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.GetTypeAssemblyName(System.Type)">GetTypeAssemblyName(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the <span class="xref">System.Reflection.Assembly</span> name in which the type is declared. For generic types, gets the <span class="xref">System.Reflection.Assembly</span> name in which the generic type is defined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -474,7 +498,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -492,7 +516,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <see cref="!:System.String"></see> containing the name of this member assembly.</p>
+        <td><p>A <span class="xref">System.String</span> containing the name of this member assembly.</p>
 </td>
       </tr>
     </tbody>
@@ -535,13 +559,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <see cref="!:System.String"></see> containing the name of this member type.</p>
+        <td><p>A <span class="xref">System.String</span> containing the name of this member type.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsAssignableFrom_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAssignableFrom*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsAssignableFrom_Type_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAssignableFrom(Type,Type)">IsAssignableFrom(Type, Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsAssignableFrom_System_Type_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAssignableFrom(System.Type,System.Type)">IsAssignableFrom(Type, Type)</h4>
   <div class="markdown level1 summary"><p>Determines whether an instance of the second specified type can be assigned to the first specified type instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -560,13 +584,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">first</span></td>
         <td><p>The first type.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">second</span></td>
         <td><p>The type to check.</p>
 </td>
@@ -590,13 +614,14 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsAttributeDefined_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAttributeDefined*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsAttributeDefined__1_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAttributeDefined``1(Type)">IsAttributeDefined&lt;TAttribute&gt;(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsAttributeDefined__1_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsAttributeDefined``1(System.Type)">IsAttributeDefined&lt;TAttribute&gt;(Type)</h4>
   <div class="markdown level1 summary"><p>Indicates whether custom attributes of a specified type are applied to a specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool IsAttributeDefined&lt;TAttribute&gt;(this Type type)
+
     where TAttribute : Attribute</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -610,7 +635,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -650,7 +675,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsCastableFrom_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsCastableFrom*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsCastableFrom_Type_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsCastableFrom(Type,Type)">IsCastableFrom(Type, Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsCastableFrom_System_Type_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsCastableFrom(System.Type,System.Type)">IsCastableFrom(Type, Type)</h4>
   <div class="markdown level1 summary"><p>Determines whether an instance of the second specified type can be casted to the first specified type instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -669,13 +694,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">first</span></td>
         <td><p>The first type.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">second</span></td>
         <td><p>The type to check.</p>
 </td>
@@ -699,8 +724,8 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsEnum_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsEnum*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsEnum_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsEnum(Type)">IsEnum(Type)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:Type"></see> is enum.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsEnum_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsEnum(System.Type)">IsEnum(Type)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Type</span> is enum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -718,7 +743,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -736,14 +761,14 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is a enum type; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is a enum type; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsGenericType_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericType*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsGenericType_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericType(Type)">IsGenericType(Type)</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the specified <see cref="!:Type"></see> is a generic type.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsGenericType_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericType(System.Type)">IsGenericType(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the specified <span class="xref">System.Type</span> is a generic type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -761,7 +786,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -779,13 +804,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is a generic type; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is a generic type; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsGenericTypeDefinition_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericTypeDefinition*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsGenericTypeDefinition_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericTypeDefinition(Type)">IsGenericTypeDefinition(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsGenericTypeDefinition_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsGenericTypeDefinition(System.Type)">IsGenericTypeDefinition(Type)</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the specified type is a generic type definition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -804,7 +829,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -822,13 +847,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is a generic type definition; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is a generic type definition; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsInterface_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsInterface*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsInterface_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsInterface(Type)">IsInterface(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsInterface_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsInterface(System.Type)">IsInterface(Type)</h4>
   <div class="markdown level1 summary"><p>Determines whether the specified type is an interface.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -847,7 +872,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -865,14 +890,14 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is a enum type; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is a enum type; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsPrimitive_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsPrimitive*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsPrimitive_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsPrimitive(Type)">IsPrimitive(Type)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:Type"></see> is one of the primitive types.</p>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsPrimitive_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsPrimitive(System.Type)">IsPrimitive(Type)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Type</span> is one of the primitive types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -890,7 +915,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -908,13 +933,13 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is one of the primitive types; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is one of the primitive types; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Common_Helpers_ReflectionHelper_IsValueType_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsValueType*"></a>
-  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsValueType_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsValueType(Type)">IsValueType(Type)</h4>
+  <h4 id="Evergine_Common_Helpers_ReflectionHelper_IsValueType_System_Type_" data-uid="Evergine.Common.Helpers.ReflectionHelper.IsValueType(System.Type)">IsValueType(Type)</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the specified type is a value type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -933,7 +958,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type.</p>
 </td>
@@ -951,7 +976,7 @@ if the current <see cref="!:Type"></see> represents the System.Object class or a
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <see cref="!:Type"></see> is a value type; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <span class="xref">System.Type</span> is a value type; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>

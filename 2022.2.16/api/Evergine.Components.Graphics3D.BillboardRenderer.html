@@ -211,7 +211,28 @@ The owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> must 
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Components.Graphics3D.html">Evergine.Components.Graphics3D</a></h6>
@@ -239,7 +260,8 @@ The owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> must 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AssetsService assetsService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected AssetsService assetsService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,7 +285,8 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Billboard Billboard</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Billboard Billboard</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,7 +310,8 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform3D Transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Transform3D Transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -368,8 +392,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
 </div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnActivated_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnActivated*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnActivated" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnActivated">OnActivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -379,8 +402,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnActivated">Component.OnActivated()</a></div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnAttached_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnAttached*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnAttached" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnAttached">OnAttached()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,8 +419,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if all is OK.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -406,8 +427,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_OnAttached">Drawable.OnAttached()</a></div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnDeactivated_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDeactivated*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnDeactivated" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDeactivated">OnDeactivated()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -417,8 +437,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDeactivated">Component.OnDeactivated()</a></div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnDestroy_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDestroy*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnDestroy" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDestroy">OnDestroy()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is going to be disposed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -428,8 +447,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div><a class="xref" href="Evergine.Framework.Component.html#Evergine_Framework_Component_OnDestroy">Component.OnDestroy()</a></div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnDetach_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDetach*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnDetach" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnDetach">OnDetach()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -439,8 +457,7 @@ It provides where to draw the <a class="xref" href="Evergine.Components.Graphics
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_OnDetach">Drawable.OnDetach()</a></div>
   <a id="Evergine_Components_Graphics3D_BillboardRenderer_OnLoaded_" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnLoaded*"></a>
   <h4 id="Evergine_Components_Graphics3D_BillboardRenderer_OnLoaded" data-uid="Evergine.Components.Graphics3D.BillboardRenderer.OnLoaded">OnLoaded()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is loaded.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

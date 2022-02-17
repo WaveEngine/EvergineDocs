@@ -95,18 +95,135 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">WavFileWriter</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">System.IO.Stream</span></div>
+    <div class="level3"><span class="xref">WavFileWriter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IO.Stream.Null</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Close()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CreateWaitHandle()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndRead(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.EndWrite(System.IAsyncResult)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.FlushAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ObjectInvariant()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadByte()</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.Synchronized(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteByte(System.Byte)</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.CanTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.ReadTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.IO.Stream.WriteTimeout</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Media.html">Evergine.Common.Media</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
   <h5 id="Evergine_Common_Media_WavFileWriter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WavFileWriter : Stream</code></pre>
+    <pre><code class="lang-csharp hljs">public class WavFileWriter : Stream, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Common_Media_WavFileWriter__ctor_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor*"></a>
-  <h4 id="Evergine_Common_Media_WavFileWriter__ctor_Stream_Evergine_Common_Media_WavFormat_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor(Stream,Evergine.Common.Media.WavFormat)">WavFileWriter(Stream, WavFormat)</h4>
+  <h4 id="Evergine_Common_Media_WavFileWriter__ctor_System_IO_Stream_Evergine_Common_Media_WavFormat_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor(System.IO.Stream,Evergine.Common.Media.WavFormat)">WavFileWriter(Stream, WavFormat)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -125,7 +242,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">outStream</span></td>
         <td><p>Stream to be written to.</p>
 </td>
@@ -139,7 +256,7 @@
     </tbody>
   </table>
   <a id="Evergine_Common_Media_WavFileWriter__ctor_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor*"></a>
-  <h4 id="Evergine_Common_Media_WavFileWriter__ctor_Stream_Evergine_Common_Media_WavFormat_System_Boolean_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor(Stream,Evergine.Common.Media.WavFormat,System.Boolean)">WavFileWriter(Stream, WavFormat, Boolean)</h4>
+  <h4 id="Evergine_Common_Media_WavFileWriter__ctor_System_IO_Stream_Evergine_Common_Media_WavFormat_System_Boolean_" data-uid="Evergine.Common.Media.WavFileWriter.#ctor(System.IO.Stream,Evergine.Common.Media.WavFormat,System.Boolean)">WavFileWriter(Stream, WavFormat, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -158,7 +275,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">outStream</span></td>
         <td><p>Stream to be written to.</p>
 </td>
@@ -203,6 +320,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanRead</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_CanSeek_" data-uid="Evergine.Common.Media.WavFileWriter.CanSeek*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_CanSeek" data-uid="Evergine.Common.Media.WavFileWriter.CanSeek">CanSeek</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether returns false: Cannot seek within a WaveFileWriter.</p>
@@ -227,6 +346,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanSeek</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_CanWrite_" data-uid="Evergine.Common.Media.WavFileWriter.CanWrite*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_CanWrite" data-uid="Evergine.Common.Media.WavFileWriter.CanWrite">CanWrite</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether can write (Returns true: Can write to a WaveFileWriter).</p>
@@ -251,6 +372,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.CanWrite</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_Length_" data-uid="Evergine.Common.Media.WavFileWriter.Length*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_Length" data-uid="Evergine.Common.Media.WavFileWriter.Length">Length</h4>
   <div class="markdown level1 summary"><p>Gets the Number of bytes of audio in the data chunk.</p>
@@ -275,6 +398,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Length</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_Position_" data-uid="Evergine.Common.Media.WavFileWriter.Position*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_Position" data-uid="Evergine.Common.Media.WavFileWriter.Position">Position</h4>
   <div class="markdown level1 summary"><p>Gets or sets gets the Position in the WaveFile (i.e. number of bytes written so far).</p>
@@ -299,6 +424,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Position</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_WaveFormat_" data-uid="Evergine.Common.Media.WavFileWriter.WaveFormat*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_WaveFormat" data-uid="Evergine.Common.Media.WavFileWriter.WaveFormat">WaveFormat</h4>
   <div class="markdown level1 summary"><p>Gets the WaveFormat of this wave file.</p>
@@ -352,6 +479,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Dispose(System.Boolean)</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_Finalize_" data-uid="Evergine.Common.Media.WavFileWriter.Finalize*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_Finalize" data-uid="Evergine.Common.Media.WavFileWriter.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="Evergine.Common.Media.WavFileWriter.html">WavFileWriter</a> class. Should only be called if the user forgot to close this WaveFileWriter</p>
@@ -370,6 +499,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Flush()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Flush()</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_Read_" data-uid="Evergine.Common.Media.WavFileWriter.Read*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_Read_System_Byte___System_Int32_System_Int32_" data-uid="Evergine.Common.Media.WavFileWriter.Read(System.Byte[],System.Int32,System.Int32)">Read(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Read is not supported for a WaveFileWriter.</p>
@@ -425,8 +556,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_Seek_" data-uid="Evergine.Common.Media.WavFileWriter.Seek*"></a>
-  <h4 id="Evergine_Common_Media_WavFileWriter_Seek_System_Int64_SeekOrigin_" data-uid="Evergine.Common.Media.WavFileWriter.Seek(System.Int64,SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
+  <h4 id="Evergine_Common_Media_WavFileWriter_Seek_System_Int64_System_IO_SeekOrigin_" data-uid="Evergine.Common.Media.WavFileWriter.Seek(System.Int64,System.IO.SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
   <div class="markdown level1 summary"><p>Seek is not supported for a WaveFileWriter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -451,7 +584,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">SeekOrigin</span></td>
+        <td><span class="xref">System.IO.SeekOrigin</span></td>
         <td><span class="parametername">origin</span></td>
         <td><p>Origin of the seek.</p>
 </td>
@@ -474,6 +607,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_SetLength_" data-uid="Evergine.Common.Media.WavFileWriter.SetLength*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_SetLength_System_Int64_" data-uid="Evergine.Common.Media.WavFileWriter.SetLength(System.Int64)">SetLength(Int64)</h4>
   <div class="markdown level1 summary"><p>SetLength is not supported for EvergineFileWriter.</p>
@@ -501,8 +636,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.SetLength(System.Int64)</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_UpdateHeader_" data-uid="Evergine.Common.Media.WavFileWriter.UpdateHeader*"></a>
-  <h4 id="Evergine_Common_Media_WavFileWriter_UpdateHeader_BinaryWriter_" data-uid="Evergine.Common.Media.WavFileWriter.UpdateHeader(BinaryWriter)">UpdateHeader(BinaryWriter)</h4>
+  <h4 id="Evergine_Common_Media_WavFileWriter_UpdateHeader_System_IO_BinaryWriter_" data-uid="Evergine.Common.Media.WavFileWriter.UpdateHeader(System.IO.BinaryWriter)">UpdateHeader(BinaryWriter)</h4>
   <div class="markdown level1 summary"><p>Updates the header with file size information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -521,7 +658,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
         <td><span class="parametername">writer</span></td>
         <td><p>Binary writer.</p>
 </td>
@@ -567,6 +704,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)</span></div>
   <a id="Evergine_Common_Media_WavFileWriter_WriteData_" data-uid="Evergine.Common.Media.WavFileWriter.WriteData*"></a>
   <h4 id="Evergine_Common_Media_WavFileWriter_WriteData_System_Int16___System_Int32_System_Int32_" data-uid="Evergine.Common.Media.WavFileWriter.WriteData(System.Int16[],System.Int32,System.Int32)">WriteData(Int16[], Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Writes 16 bit samples to the Wave file.</p>
@@ -574,7 +713,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteData(short[] samples, int offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WriteSamples instead&quot;)]
+public void WriteData(short[] samples, int offset, int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -712,6 +852,10 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

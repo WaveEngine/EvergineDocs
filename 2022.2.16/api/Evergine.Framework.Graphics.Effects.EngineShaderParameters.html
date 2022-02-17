@@ -100,6 +100,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Framework.Graphics.Effects.IEngineShaderParameters.html">IEngineShaderParameters</a></div>
   </div>
   <div class="inheritedMembers">
@@ -113,12 +114,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.Effects.html">Evergine.Framework.Graphics.Effects</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EngineShaderParameters : DisposableObject, IEngineShaderParameters</code></pre>
+    <pre><code class="lang-csharp hljs">public class EngineShaderParameters : DisposableObject, IDisposable, IEngineShaderParameters</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -201,8 +223,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraAperture_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraAperture*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraAperture" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraAperture">CameraAperture</h4>
-  <div class="markdown level1 summary"><p>Gets the camera aperture.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,8 +246,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraExposure_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraExposure*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraExposure" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraExposure">CameraExposure</h4>
-  <div class="markdown level1 summary"><p>Gets the camera exposure.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -249,8 +269,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFarPlane_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFarPlane*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFarPlane" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFarPlane">CameraFarPlane</h4>
-  <div class="markdown level1 summary"><p>Gets the far plane of the camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,8 +292,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFocalDistance_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFocalDistance*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFocalDistance" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFocalDistance">CameraFocalDistance</h4>
-  <div class="markdown level1 summary"><p>Gets the camera focal distance (used with DoF).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -297,8 +315,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFocalLength_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFocalLength*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraFocalLength" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraFocalLength">CameraFocalLength</h4>
-  <div class="markdown level1 summary"><p>Gets the camera focal length.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -321,8 +338,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraForward_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraForward*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraForward" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraForward">CameraForward</h4>
-  <div class="markdown level1 summary"><p>Gets the forward component of the camera orientation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -338,15 +354,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraJitter_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraJitter*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraJitter" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraJitter">CameraJitter</h4>
-  <div class="markdown level1 summary"><p>Gets the current frame camera jittering.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,15 +377,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraNearPlane_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraNearPlane*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraNearPlane" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraNearPlane">CameraNearPlane</h4>
-  <div class="markdown level1 summary"><p>Gets the near plane of the camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -393,8 +407,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraPosition_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraPosition*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraPosition" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraPosition">CameraPosition</h4>
-  <div class="markdown level1 summary"><p>Gets the position value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -410,15 +423,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraPreviousJitter_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraPreviousJitter*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraPreviousJitter" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraPreviousJitter">CameraPreviousJitter</h4>
-  <div class="markdown level1 summary"><p>Gets the previous frame camera jittering.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -434,15 +446,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraRight_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraRight*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraRight" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraRight">CameraRight</h4>
-  <div class="markdown level1 summary"><p>Gets the right component of the camera orientation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -458,15 +469,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraUp_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraUp*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_CameraUp" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.CameraUp">CameraUp</h4>
-  <div class="markdown level1 summary"><p>Gets the up component of the camera orientation.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -482,15 +492,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_DrawContextID_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.DrawContextID*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_DrawContextID" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.DrawContextID">DrawContextID</h4>
-  <div class="markdown level1 summary"><p>Gets drawcontext ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -513,8 +522,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_DrawContextViewIndex_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.DrawContextViewIndex*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_DrawContextViewIndex" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.DrawContextViewIndex">DrawContextViewIndex</h4>
-  <div class="markdown level1 summary"><p>Gets the view index of this draw context. A draw context can contains several views (cascade shadow, point light shadows, reflection probe, etc...).</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -537,8 +545,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_EV100_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.EV100*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_EV100" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.EV100">EV100</h4>
-  <div class="markdown level1 summary"><p>Gets the Exposition Value at ISO 100.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -561,8 +568,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Exposure_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Exposure*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Exposure" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Exposure">Exposure</h4>
-  <div class="markdown level1 summary"><p>Gets the camera exposure.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -585,8 +591,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ForwardLightMask_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ForwardLightMask*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ForwardLightMask" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ForwardLightMask">ForwardLightMask</h4>
-  <div class="markdown level1 summary"><p>Gets the lighting mask, used in Forward passes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,8 +614,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_FrameID_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.FrameID*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_FrameID" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.FrameID">FrameID</h4>
-  <div class="markdown level1 summary"><p>Gets Frame ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -633,8 +637,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IBLLuminance_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IBLLuminance*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IBLLuminance" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IBLLuminance">IBLLuminance</h4>
-  <div class="markdown level1 summary"><p>Gets the IBL luminance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -657,8 +660,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IBLMipMapLevel_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IBLMipMapLevel*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IBLMipMapLevel" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IBLMipMapLevel">IBLMipMapLevel</h4>
-  <div class="markdown level1 summary"><p>Gets the IBL texture mipmap level.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -681,8 +683,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IrradianceSHBufferSize_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IrradianceSHBufferSize*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IrradianceSHBufferSize" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IrradianceSHBufferSize">IrradianceSHBufferSize</h4>
-  <div class="markdown level1 summary"><p>Gets the irradiance spherical harmonics buffer size.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -705,8 +706,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IrradianceSHPtr_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IrradianceSHPtr*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_IrradianceSHPtr" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.IrradianceSHPtr">IrradianceSHPtr</h4>
-  <div class="markdown level1 summary"><p>Gets the irradiance spherical harmonics buffer ptr.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -722,15 +722,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightBufferPtr_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightBufferPtr*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightBufferPtr" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightBufferPtr">LightBufferPtr</h4>
-  <div class="markdown level1 summary"><p>Gets the light buffer ptr.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -746,15 +745,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightBufferSize_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightBufferSize*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightBufferSize" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightBufferSize">LightBufferSize</h4>
-  <div class="markdown level1 summary"><p>Gets the light buffer size.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -777,8 +775,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightCount_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightCount*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_LightCount" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.LightCount">LightCount</h4>
-  <div class="markdown level1 summary"><p>Gets the number of lights.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -842,7 +839,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector4.html">Vector4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -866,7 +863,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -890,7 +887,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -914,7 +911,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -938,15 +935,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span>[]</td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_PreviousViewProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.PreviousViewProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_PreviousViewProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.PreviousViewProjection">PreviousViewProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the view projection value of the current camera in the previous frame.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -962,15 +958,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Projection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Projection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Projection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Projection">Projection</h4>
-  <div class="markdown level1 summary"><p>Gets the projection value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -986,15 +981,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ProjectionInverse_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ProjectionInverse*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ProjectionInverse" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ProjectionInverse">ProjectionInverse</h4>
-  <div class="markdown level1 summary"><p>Gets the projection inverse value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1010,15 +1004,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ShadowViewProjectionBufferPtr_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ShadowViewProjectionBufferPtr*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ShadowViewProjectionBufferPtr" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ShadowViewProjectionBufferPtr">ShadowViewProjectionBufferPtr</h4>
-  <div class="markdown level1 summary"><p>Gets the shadow view projection buffer pointer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1034,15 +1027,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ShadowViewProjectionBufferSize_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ShadowViewProjectionBufferSize*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ShadowViewProjectionBufferSize" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ShadowViewProjectionBufferSize">ShadowViewProjectionBufferSize</h4>
-  <div class="markdown level1 summary"><p>Gets the shadow view projection buffer size.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1065,8 +1057,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SkyboxTransform_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SkyboxTransform*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SkyboxTransform" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SkyboxTransform">SkyboxTransform</h4>
-  <div class="markdown level1 summary"><p>Gets the skybox transform.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1082,15 +1073,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunColor_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunColor*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunColor" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunColor">SunColor</h4>
-  <div class="markdown level1 summary"><p>Gets the sun color.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1106,15 +1096,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunDirection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunDirection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunDirection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunDirection">SunDirection</h4>
-  <div class="markdown level1 summary"><p>Gets the sun direction.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1130,15 +1119,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunIntensity_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunIntensity*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_SunIntensity" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.SunIntensity">SunIntensity</h4>
-  <div class="markdown level1 summary"><p>Gets the sun intensity.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1161,8 +1149,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Time_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Time*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Time" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Time">Time</h4>
-  <div class="markdown level1 summary"><p>Gets the time value since the game has started.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1185,8 +1172,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredProjection">UnjitteredProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the unjittered projection value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1202,15 +1188,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredViewProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredViewProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredViewProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredViewProjection">UnjitteredViewProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the unjittered view projection value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1226,15 +1211,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredWorldViewProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredWorldViewProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_UnjitteredWorldViewProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.UnjitteredWorldViewProjection">UnjitteredWorldViewProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the unjittered (TAA) world view projection value of the current camera and mesh.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1250,15 +1234,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_View_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.View*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_View" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.View">View</h4>
-  <div class="markdown level1 summary"><p>Gets the view value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1274,15 +1257,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewInverse_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewInverse*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewInverse" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewInverse">ViewInverse</h4>
-  <div class="markdown level1 summary"><p>Gets the view inverse value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1298,15 +1280,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewProjection">ViewProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the view projection value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1322,15 +1303,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewProjectionInverse_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewProjectionInverse*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_ViewProjectionInverse" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.ViewProjectionInverse">ViewProjectionInverse</h4>
-  <div class="markdown level1 summary"><p>Gets the inverse of the view projection value of the current camera.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1346,15 +1326,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_World_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.World*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_World" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.World">World</h4>
-  <div class="markdown level1 summary"><p>Gets the world value of the current render mesh.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1370,15 +1349,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldInverse_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldInverse*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldInverse" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldInverse">WorldInverse</h4>
-  <div class="markdown level1 summary"><p>Gets the inverse world value of the current render mesh.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1394,15 +1372,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldInverseTranspose_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldInverseTranspose*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldInverseTranspose" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldInverseTranspose">WorldInverseTranspose</h4>
-  <div class="markdown level1 summary"><p>Gets the world inverse transpose of the current mesh.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1418,15 +1395,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldViewProjection_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldViewProjection*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_WorldViewProjection" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.WorldViewProjection">WorldViewProjection</h4>
-  <div class="markdown level1 summary"><p>Gets the world view projection value of the current camera and mesh.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1442,7 +1418,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1451,8 +1427,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Destroy_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Destroy*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_Destroy" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1462,8 +1437,7 @@
   <div><a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Destroy">DisposableObject.Destroy()</a></div>
   <a id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_GetTexture_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.GetTexture*"></a>
   <h4 id="Evergine_Framework_Graphics_Effects_EngineShaderParameters_GetTexture_Evergine_Framework_Graphics_Effects_Analyzer_TextureInfo_TextureSemantic_System_Int32_" data-uid="Evergine.Framework.Graphics.Effects.EngineShaderParameters.GetTexture(Evergine.Framework.Graphics.Effects.Analyzer.TextureInfo.TextureSemantic,System.Int32)">GetTexture(TextureInfo.TextureSemantic, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets the texture semantic and texture index.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1482,14 +1456,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.Effects.Analyzer.TextureInfo.TextureSemantic.html">TextureInfo.TextureSemantic</a></td>
         <td><span class="parametername">textureSemantic</span></td>
-        <td><p>Texture semantic.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">textureIndex</span></td>
-        <td><p>Texture index.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1504,12 +1476,14 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
-        <td><p>Framebuffer texture.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <div>
       <a class="xref" href="Evergine.Framework.Graphics.Effects.IEngineShaderParameters.html">IEngineShaderParameters</a>
   </div>

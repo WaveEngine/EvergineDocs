@@ -101,6 +101,10 @@
       <div class="level4"><a class="xref" href="Evergine.Framework.Graphics.LineBatch2D.html">LineBatch2D</a></div>
       <div class="level4"><a class="xref" href="Evergine.Framework.Graphics.LineBatch3D.html">LineBatch3D</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -157,12 +161,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_LineBatch_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class LineBatch : RenderObjectInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class LineBatch : RenderObjectInfo, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -349,8 +374,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_LineBatch_DrawableType_" data-uid="Evergine.Framework.Graphics.LineBatch.DrawableType*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_DrawableType" data-uid="Evergine.Framework.Graphics.LineBatch.DrawableType">DrawableType</h4>
-  <div class="markdown level1 summary"><p>Gets the drawable type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -375,8 +399,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_DrawableType">RenderObjectInfo.DrawableType</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_InputLayoutID_" data-uid="Evergine.Framework.Graphics.LineBatch.InputLayoutID*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_InputLayoutID" data-uid="Evergine.Framework.Graphics.LineBatch.InputLayoutID">InputLayoutID</h4>
-  <div class="markdown level1 summary"><p>Gets the InputLayout ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -401,8 +424,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_InputLayoutID">RenderObjectInfo.InputLayoutID</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_InputLayouts_" data-uid="Evergine.Framework.Graphics.LineBatch.InputLayouts*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_InputLayouts" data-uid="Evergine.Framework.Graphics.LineBatch.InputLayouts">InputLayouts</h4>
-  <div class="markdown level1 summary"><p>Gets the input layout.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,8 +449,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_InputLayouts">RenderObjectInfo.InputLayouts</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_IsReady_" data-uid="Evergine.Framework.Graphics.LineBatch.IsReady*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_IsReady" data-uid="Evergine.Framework.Graphics.LineBatch.IsReady">IsReady</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is ready to be rendered.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -453,8 +474,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_IsReady">RenderObjectInfo.IsReady</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_Material_" data-uid="Evergine.Framework.Graphics.LineBatch.Material*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_Material" data-uid="Evergine.Framework.Graphics.LineBatch.Material">Material</h4>
-  <div class="markdown level1 summary"><p>Gets the material.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -479,8 +499,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_Material">RenderObjectInfo.Material</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_MaterialID_" data-uid="Evergine.Framework.Graphics.LineBatch.MaterialID*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_MaterialID" data-uid="Evergine.Framework.Graphics.LineBatch.MaterialID">MaterialID</h4>
-  <div class="markdown level1 summary"><p>Gets the material ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -529,8 +548,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch_OrderBias_" data-uid="Evergine.Framework.Graphics.LineBatch.OrderBias*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_OrderBias" data-uid="Evergine.Framework.Graphics.LineBatch.OrderBias">OrderBias</h4>
-  <div class="markdown level1 summary"><p>Gets the order bias.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -555,8 +573,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_OrderBias">RenderObjectInfo.OrderBias</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_PrimitiveTopology_" data-uid="Evergine.Framework.Graphics.LineBatch.PrimitiveTopology*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_PrimitiveTopology" data-uid="Evergine.Framework.Graphics.LineBatch.PrimitiveTopology">PrimitiveTopology</h4>
-  <div class="markdown level1 summary"><p>Gets the primitive topology.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -605,8 +622,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch_RenderStateOrder_" data-uid="Evergine.Framework.Graphics.LineBatch.RenderStateOrder*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_RenderStateOrder" data-uid="Evergine.Framework.Graphics.LineBatch.RenderStateOrder">RenderStateOrder</h4>
-  <div class="markdown level1 summary"><p>Gets the order of the Render State.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -631,8 +647,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_RenderStateOrder">RenderObjectInfo.RenderStateOrder</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_SortMode_" data-uid="Evergine.Framework.Graphics.LineBatch.SortMode*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_SortMode" data-uid="Evergine.Framework.Graphics.LineBatch.SortMode">SortMode</h4>
-  <div class="markdown level1 summary"><p>Gets the Sorting mode.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -659,8 +674,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_LineBatch_Collect_" data-uid="Evergine.Framework.Graphics.LineBatch.Collect*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_Collect_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Framework.Graphics.LineBatch.Collect(Evergine.Framework.Graphics.DrawContext)">Collect(DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Prepare this object with the specified draw context.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -679,8 +693,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -688,8 +701,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_Collect_Evergine_Framework_Graphics_DrawContext_">RenderObjectInfo.Collect(DrawContext)</a></div>
   <a id="Evergine_Framework_Graphics_LineBatch_Destroy_" data-uid="Evergine.Framework.Graphics.LineBatch.Destroy*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_Destroy" data-uid="Evergine.Framework.Graphics.LineBatch.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -725,7 +737,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch_DrawLine_" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch_DrawLine_Vector3_Vector3_Evergine_Common_Graphics_Color_" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine(Vector3,Vector3,Evergine.Common.Graphics.Color)">DrawLine(Vector3, Vector3, Color)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch_DrawLine_Evergine_Mathematics_Vector3_Evergine_Mathematics_Vector3_Evergine_Common_Graphics_Color_" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine(Evergine.Mathematics.Vector3,Evergine.Mathematics.Vector3,Evergine.Common.Graphics.Color)">DrawLine(Vector3, Vector3, Color)</h4>
   <div class="markdown level1 summary"><p>Draws the line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -744,13 +756,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">start</span></td>
         <td><p>The start.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">end</span></td>
         <td><p>The end.</p>
 </td>
@@ -764,7 +776,7 @@
     </tbody>
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch_DrawLine_" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine*"></a>
-  <h4 id="Evergine_Framework_Graphics_LineBatch_DrawLine_Vector3__Vector3__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine(Vector3@,Vector3@,Evergine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
+  <h4 id="Evergine_Framework_Graphics_LineBatch_DrawLine_Evergine_Mathematics_Vector3__Evergine_Mathematics_Vector3__Evergine_Common_Graphics_Color__" data-uid="Evergine.Framework.Graphics.LineBatch.DrawLine(Evergine.Mathematics.Vector3@,Evergine.Mathematics.Vector3@,Evergine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
   <div class="markdown level1 summary"><p>Draws the line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -783,13 +795,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">startPoint</span></td>
         <td><p>The start point.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="Evergine.Mathematics.Vector3.html">Vector3</a></td>
         <td><span class="parametername">endPoint</span></td>
         <td><p>The end point.</p>
 </td>
@@ -804,8 +816,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_LineBatch_RefreshBoundingBox_" data-uid="Evergine.Framework.Graphics.LineBatch.RefreshBoundingBox*"></a>
   <h4 id="Evergine_Framework_Graphics_LineBatch_RefreshBoundingBox" data-uid="Evergine.Framework.Graphics.LineBatch.RefreshBoundingBox">RefreshBoundingBox()</h4>
-  <div class="markdown level1 summary"><p>Refresh the bounding box.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -848,6 +859,10 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

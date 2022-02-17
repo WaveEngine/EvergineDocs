@@ -95,20 +95,79 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Evergine.Framework.Helpers.BoolEvaluation.Exceptions.ParseException.html">ParseException</a></div>
-    <div class="level2"><span class="xref">UnknownIdentifierException</span></div>
+    <div class="level1"><span class="xref">System.Exception</span></div>
+    <div class="level2"><a class="xref" href="Evergine.Framework.Helpers.BoolEvaluation.Exceptions.ParseException.html">ParseException</a></div>
+    <div class="level3"><span class="xref">UnknownIdentifierException</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Evergine.Framework.Helpers.BoolEvaluation.Exceptions.ParseException.html#Evergine_Framework_Helpers_BoolEvaluation_Exceptions_ParseException_Position">ParseException.Position</a>
     </div>
+    <div>
+      <span class="xref">System.Exception.GetBaseException()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Data</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.HelpLink</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.HResult</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.InnerException</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Message</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.Source</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.StackTrace</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.TargetSite</span>
+    </div>
+    <div>
+      <span class="xref">System.Exception.SerializeObjectState</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Helpers.BoolEvaluation.Exceptions.html">Evergine.Framework.Helpers.BoolEvaluation.Exceptions</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Helpers_BoolEvaluation_Exceptions_UnknownIdentifierException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UnknownIdentifierException : ParseException</code></pre>
+    <pre><code class="lang-csharp hljs">public class UnknownIdentifierException : ParseException, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -171,6 +230,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

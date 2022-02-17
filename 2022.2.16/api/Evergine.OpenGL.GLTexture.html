@@ -103,7 +103,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a></div>
-    <div><span class="xref">IDisposable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
     <div><a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a></div>
   </div>
   <div class="inheritedMembers">
@@ -155,6 +155,27 @@
     </div>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenGL.html">Evergine.OpenGL</a></h6>
@@ -208,8 +229,7 @@
   </h3>
   <a id="Evergine_OpenGL_GLTexture_NativePointer_" data-uid="Evergine.OpenGL.GLTexture.NativePointer*"></a>
   <h4 id="Evergine_OpenGL_GLTexture_NativePointer" data-uid="Evergine.OpenGL.GLTexture.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,7 +245,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -347,8 +367,7 @@
   </table>
   <a id="Evergine_OpenGL_GLTexture_Dispose_" data-uid="Evergine.OpenGL.GLTexture.Dispose*"></a>
   <h4 id="Evergine_OpenGL_GLTexture_Dispose" data-uid="Evergine.OpenGL.GLTexture.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Dispose this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -357,13 +376,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.Texture.html#Evergine_Common_Graphics_Texture_Dispose">Texture.Dispose()</a></div>
   <a id="Evergine_OpenGL_GLTexture_SetData_" data-uid="Evergine.OpenGL.GLTexture.SetData*"></a>
-  <h4 id="Evergine_OpenGL_GLTexture_SetData_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLTexture.SetData(IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
+  <h4 id="Evergine_OpenGL_GLTexture_SetData_System_IntPtr_System_UInt32_System_UInt32_" data-uid="Evergine.OpenGL.GLTexture.SetData(System.IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -376,7 +395,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">source</span></td>
         <td><p>The data pointer.</p>
 </td>
@@ -400,7 +419,7 @@
       <a class="xref" href="Evergine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="Evergine.Common.IDependencyObject.html">IDependencyObject</a>

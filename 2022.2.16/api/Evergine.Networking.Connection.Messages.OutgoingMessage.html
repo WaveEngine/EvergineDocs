@@ -97,16 +97,40 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">OutgoingMessage</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Networking.Connection.Messages.html">Evergine.Networking.Connection.Messages</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Networking.dll</h6>
   <h5 id="Evergine_Networking_Connection_Messages_OutgoingMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OutgoingMessage : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class OutgoingMessage</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_Networking_Connection_Messages_OutgoingMessage__ctor_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.#ctor*"></a>
-  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage__ctor_NetOutgoingMessage_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.#ctor(NetOutgoingMessage)">OutgoingMessage(NetOutgoingMessage)</h4>
+  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage__ctor_Lidgren_Network_NetOutgoingMessage_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.#ctor(Lidgren.Network.NetOutgoingMessage)">OutgoingMessage(NetOutgoingMessage)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.Networking.Connection.Messages.OutgoingMessage.html">OutgoingMessage</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -125,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">NetOutgoingMessage</span></td>
+        <td><span class="xref">Lidgren.Network.NetOutgoingMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message.</p>
 </td>
@@ -208,33 +232,6 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write*"></a>
-  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_DateTime_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(DateTime)">Write(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Writes the specified value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Write(DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_Evergine_Common_Graphics_Color_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(Evergine.Common.Graphics.Color)">Write(Color)</h4>
   <div class="markdown level1 summary"><p>Writes the specified value.</p>
@@ -511,6 +508,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>ReadByte(bits) can only read between 1 and 8 bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write*"></a>
   <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_System_Byte___" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(System.Byte[])">Write(Byte[])</h4>
   <div class="markdown level1 summary"><p>Writes all bytes in an array, preceded with the length as an integer.</p>
@@ -573,6 +586,33 @@
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">numberOfBytes</span></td>
         <td><p>Numbers of bytes to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write*"></a>
+  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_System_DateTime_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(System.DateTime)">Write(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Writes the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
 </td>
       </tr>
     </tbody>
@@ -713,7 +753,7 @@
     </tbody>
   </table>
   <a id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write*"></a>
-  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_TimeSpan_System_Boolean_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(TimeSpan,System.Boolean)">Write(TimeSpan, Boolean)</h4>
+  <h4 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_System_TimeSpan_System_Boolean_" data-uid="Evergine.Networking.Connection.Messages.OutgoingMessage.Write(System.TimeSpan,System.Boolean)">Write(TimeSpan, Boolean)</h4>
   <div class="markdown level1 summary"><p>Writes the specified value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -732,7 +772,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value.</p>
 </td>
@@ -740,13 +780,13 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">highPrecision</span></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be written using high precision (ticks) or not (milliseconds).</p>
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be written using high precision (ticks) or not (milliseconds).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_TimeSpan_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
+  <h5 id="Evergine_Networking_Connection_Messages_OutgoingMessage_Write_System_TimeSpan_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

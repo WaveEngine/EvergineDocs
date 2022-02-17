@@ -98,6 +98,10 @@
     <div class="level1"><a class="xref" href="Evergine.Common.Graphics.SwapChain.html">SwapChain</a></div>
     <div class="level2"><span class="xref">DX12SwapChain</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -115,12 +119,33 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_VerticalSync">SwapChain.VerticalSync</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX12.html">Evergine.DirectX12</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX12.dll</h6>
   <h5 id="Evergine_DirectX12_DX12SwapChain_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX12SwapChain : SwapChain</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX12SwapChain : SwapChain, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -165,7 +190,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int SwapChainBufferCount = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int SwapChainBufferCount = 3</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -210,8 +235,7 @@
   </table>
   <a id="Evergine_DirectX12_DX12SwapChain_Name_" data-uid="Evergine.DirectX12.DX12SwapChain.Name*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_Name" data-uid="Evergine.DirectX12.DX12SwapChain.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,8 +260,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_Name">SwapChain.Name</a></div>
   <a id="Evergine_DirectX12_DX12SwapChain_NativeSwapChainPointer_" data-uid="Evergine.DirectX12.DX12SwapChain.NativeSwapChainPointer*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_NativeSwapChainPointer" data-uid="Evergine.DirectX12.DX12SwapChain.NativeSwapChainPointer">NativeSwapChainPointer</h4>
-  <div class="markdown level1 summary"><p>Gets the native SwapChain pointer. Default value is returned if the platform does not support it.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -253,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -264,8 +287,7 @@
   </h3>
   <a id="Evergine_DirectX12_DX12SwapChain_Dispose_" data-uid="Evergine.DirectX12.DX12SwapChain.Dispose*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_Dispose" data-uid="Evergine.DirectX12.DX12SwapChain.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,8 +297,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_Dispose">SwapChain.Dispose()</a></div>
   <a id="Evergine_DirectX12_DX12SwapChain_GetCurrentFramebufferTexture_" data-uid="Evergine.DirectX12.DX12SwapChain.GetCurrentFramebufferTexture*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_GetCurrentFramebufferTexture" data-uid="Evergine.DirectX12.DX12SwapChain.GetCurrentFramebufferTexture">GetCurrentFramebufferTexture()</h4>
-  <div class="markdown level1 summary"><p>Gets the current Framebuffer Texture.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -293,8 +314,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
-        <td><p>Framebuffer texture.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -302,8 +322,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_GetCurrentFramebufferTexture">SwapChain.GetCurrentFramebufferTexture()</a></div>
   <a id="Evergine_DirectX12_DX12SwapChain_Present_" data-uid="Evergine.DirectX12.DX12SwapChain.Present*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_Present" data-uid="Evergine.DirectX12.DX12SwapChain.Present">Present()</h4>
-  <div class="markdown level1 summary"><p>Presents a rendered image to the user.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -313,8 +332,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_Present">SwapChain.Present()</a></div>
   <a id="Evergine_DirectX12_DX12SwapChain_RefreshSurfaceInfo_" data-uid="Evergine.DirectX12.DX12SwapChain.RefreshSurfaceInfo*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_RefreshSurfaceInfo_Evergine_Common_Graphics_SurfaceInfo_" data-uid="Evergine.DirectX12.DX12SwapChain.RefreshSurfaceInfo(Evergine.Common.Graphics.SurfaceInfo)">RefreshSurfaceInfo(SurfaceInfo)</h4>
-  <div class="markdown level1 summary"><p>The swapchain surface info has changed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -333,8 +351,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.SurfaceInfo.html">SurfaceInfo</a></td>
         <td><span class="parametername">surfaceInfo</span></td>
-        <td><p>The surface info.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -342,8 +359,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_RefreshSurfaceInfo_Evergine_Common_Graphics_SurfaceInfo_">SwapChain.RefreshSurfaceInfo(SurfaceInfo)</a></div>
   <a id="Evergine_DirectX12_DX12SwapChain_ResizeSwapChain_" data-uid="Evergine.DirectX12.DX12SwapChain.ResizeSwapChain*"></a>
   <h4 id="Evergine_DirectX12_DX12SwapChain_ResizeSwapChain_System_UInt32_System_UInt32_" data-uid="Evergine.DirectX12.DX12SwapChain.ResizeSwapChain(System.UInt32,System.UInt32)">ResizeSwapChain(UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Resize SwapChain.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,19 +378,21 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">width</span></td>
-        <td><p>New width.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">height</span></td>
-        <td><p>New height.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.SwapChain.html#Evergine_Common_Graphics_SwapChain_ResizeSwapChain_System_UInt32_System_UInt32_">SwapChain.ResizeSwapChain(UInt32, UInt32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

@@ -89,8 +89,7 @@
   
   <h1 id="Evergine_XAudio2_XAudioDevice" data-uid="Evergine.XAudio2.XAudioDevice" class="text-break">Class XAudioDevice
   </h1>
-  <div class="markdown level0 summary"><p>Represents a audio output device.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -98,17 +97,42 @@
     <div class="level1"><a class="xref" href="Evergine.Common.Audio.AudioDevice.html">AudioDevice</a></div>
     <div class="level2"><span class="xref">XAudioDevice</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_MasterVolume">AudioDevice.MasterVolume</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.XAudio2.html">Evergine.XAudio2</a></h6>
   <h6><strong>Assembly</strong>: Evergine.XAudio2.dll</h6>
   <h5 id="Evergine_XAudio2_XAudioDevice_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class XAudioDevice : AudioDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class XAudioDevice : AudioDevice, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -141,7 +165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IXAudio2MasteringVoice</span></td>
+        <td><span class="xref">Vortice.XAudio2.IXAudio2MasteringVoice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -164,7 +188,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">X3DAudio</span></td>
+        <td><span class="xref">Vortice.XAudio2.X3DAudio</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -187,7 +211,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IXAudio2</span></td>
+        <td><span class="xref">Vortice.XAudio2.IXAudio2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,8 +220,7 @@
   </h3>
   <a id="Evergine_XAudio2_XAudioDevice_DefaultListener_" data-uid="Evergine.XAudio2.XAudioDevice.DefaultListener*"></a>
   <h4 id="Evergine_XAudio2_XAudioDevice_DefaultListener" data-uid="Evergine.XAudio2.XAudioDevice.DefaultListener">DefaultListener</h4>
-  <div class="markdown level1 summary"><p>Gets the default listener used by <a class="xref" href="Evergine.Common.Audio.AudioSource.html#Evergine_Common_Audio_AudioSource_Apply3D_Evergine_Common_Audio_AudioEmitter_">Apply3D(AudioEmitter)</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,8 +247,7 @@
   </h3>
   <a id="Evergine_XAudio2_XAudioDevice_CreateAudioBuffer_" data-uid="Evergine.XAudio2.XAudioDevice.CreateAudioBuffer*"></a>
   <h4 id="Evergine_XAudio2_XAudioDevice_CreateAudioBuffer" data-uid="Evergine.XAudio2.XAudioDevice.CreateAudioBuffer">CreateAudioBuffer()</h4>
-  <div class="markdown level1 summary"><p>Creates an audio buffer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -242,8 +264,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Audio.AudioBuffer.html">AudioBuffer</a></td>
-        <td><p>The result AudioBuffer object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -251,8 +272,7 @@
   <div><a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_CreateAudioBuffer">AudioDevice.CreateAudioBuffer()</a></div>
   <a id="Evergine_XAudio2_XAudioDevice_CreateAudioSource_" data-uid="Evergine.XAudio2.XAudioDevice.CreateAudioSource*"></a>
   <h4 id="Evergine_XAudio2_XAudioDevice_CreateAudioSource_Evergine_Common_Audio_WaveFormat_" data-uid="Evergine.XAudio2.XAudioDevice.CreateAudioSource(Evergine.Common.Audio.WaveFormat)">CreateAudioSource(WaveFormat)</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Evergine.Common.Audio.AudioSource.html">AudioSource</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,8 +291,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Audio.WaveFormat.html">WaveFormat</a></td>
         <td><span class="parametername">format</span></td>
-        <td><p>The format of the audio source.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -287,8 +306,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Audio.AudioSource.html">AudioSource</a></td>
-        <td><p>A new <a class="xref" href="Evergine.Common.Audio.AudioSource.html">AudioSource</a> instance.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -306,8 +324,7 @@
   <div><a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_Dispose">AudioDevice.Dispose()</a></div>
   <a id="Evergine_XAudio2_XAudioDevice_SetMasterVolume_" data-uid="Evergine.XAudio2.XAudioDevice.SetMasterVolume*"></a>
   <h4 id="Evergine_XAudio2_XAudioDevice_SetMasterVolume_System_Single_" data-uid="Evergine.XAudio2.XAudioDevice.SetMasterVolume(System.Single)">SetMasterVolume(Single)</h4>
-  <div class="markdown level1 summary"><p>Sets the master volume of the device.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,13 +343,16 @@
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">volume</span></td>
-        <td><p>The new volume.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Audio.AudioDevice.html#Evergine_Common_Audio_AudioDevice_SetMasterVolume_System_Single_">AudioDevice.SetMasterVolume(Single)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

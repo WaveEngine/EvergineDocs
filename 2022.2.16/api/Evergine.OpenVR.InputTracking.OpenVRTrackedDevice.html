@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a></div>
     <div class="level3"><span class="xref">OpenVRTrackedDevice</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -146,19 +150,39 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenVR.InputTracking.html">Evergine.OpenVR.InputTracking</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenVR.dll</h6>
   <h5 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenVRTrackedDevice : XRTrackedDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class OpenVRTrackedDevice : XRTrackedDevice, IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <a id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_DeviceType_" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.DeviceType*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_DeviceType" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.DeviceType">DeviceType</h4>
-  <div class="markdown level1 summary"><p>Gets the device type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,8 +207,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html#Evergine_Framework_XR_TrackedDevices_XRTrackedDevice_DeviceType">XRTrackedDevice.DeviceType</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_Name_" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.Name*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_Name" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets the device name.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -211,8 +234,7 @@
   </h3>
   <a id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_GetControllerState_" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.GetControllerState*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_GetControllerState_Evergine_Framework_XR_XRControllerGenericState__" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.GetControllerState(Evergine.Framework.XR.XRControllerGenericState@)">GetControllerState(out XRControllerGenericState)</h4>
-  <div class="markdown level1 summary"><p>Gets the controller state if this device is a controller.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,8 +253,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.XR.XRControllerGenericState.html">XRControllerGenericState</a></td>
         <td><span class="parametername">controllerState</span></td>
-        <td><p>The controller state.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -247,8 +268,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>False if this device is not a controller.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -256,8 +276,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html#Evergine_Framework_XR_TrackedDevices_XRTrackedDevice_GetControllerState_Evergine_Framework_XR_XRControllerGenericState__">XRTrackedDevice.GetControllerState(out XRControllerGenericState)</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_GetTrackingState_" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.GetTrackingState*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_GetTrackingState_Evergine_Framework_XR_TrackedDevices_XRTrackedDeviceState__" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.GetTrackingState(Evergine.Framework.XR.TrackedDevices.XRTrackedDeviceState@)">GetTrackingState(out XRTrackedDeviceState)</h4>
-  <div class="markdown level1 summary"><p>Gets the tracking state of this device.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -291,8 +310,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>False if the device is not connected.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -300,8 +318,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html#Evergine_Framework_XR_TrackedDevices_XRTrackedDevice_GetTrackingState_Evergine_Framework_XR_TrackedDevices_XRTrackedDeviceState__">XRTrackedDevice.GetTrackingState(out XRTrackedDeviceState)</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_TryGetRenderableModelAsync_" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.TryGetRenderableModelAsync*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRTrackedDevice_TryGetRenderableModelAsync" data-uid="Evergine.OpenVR.InputTracking.OpenVRTrackedDevice.TryGetRenderableModelAsync">TryGetRenderableModelAsync()</h4>
-  <div class="markdown level1 summary"><p>Gets a renderable model for this tracked device.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -317,14 +334,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
-        <td><p>An awaitable task that returns the entity that contains the renderable model.</p>
-</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Evergine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html#Evergine_Framework_XR_TrackedDevices_XRTrackedDevice_TryGetRenderableModelAsync">XRTrackedDevice.TryGetRenderableModelAsync()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

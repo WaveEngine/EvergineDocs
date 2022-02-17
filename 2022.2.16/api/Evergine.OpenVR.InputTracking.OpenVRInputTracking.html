@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRInputTracking.html">XRInputTracking</a></div>
     <div class="level3"><span class="xref">OpenVRInputTracking</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -125,12 +129,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.OpenVR.InputTracking.html">Evergine.OpenVR.InputTracking</a></h6>
   <h6><strong>Assembly</strong>: Evergine.OpenVR.dll</h6>
   <h5 id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenVRInputTracking : XRInputTracking</code></pre>
+    <pre><code class="lang-csharp hljs">public class OpenVRInputTracking : XRInputTracking, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -213,8 +238,7 @@
   </h3>
   <a id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByHandedness_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByHandedness*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByHandedness_Evergine_Framework_XR_XRHandedness_System_Int32_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByHandedness(Evergine.Framework.XR.XRHandedness,System.Int32)">GetDeviceByHandedness(XRHandedness, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets device by handedness.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,8 +262,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td><p>Device count.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -254,8 +277,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a></td>
-        <td><p>Tracked device.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -263,8 +285,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRInputTracking.html#Evergine_Framework_XR_TrackedDevices_XRInputTracking_GetDeviceByHandedness_Evergine_Framework_XR_XRHandedness_System_Int32_">XRInputTracking.GetDeviceByHandedness(XRHandedness, Int32)</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByIndex_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByIndex*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByIndex_System_UInt32_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByIndex(System.UInt32)">GetDeviceByIndex(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Gets device by index.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,8 +304,7 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">deviceIndex</span></td>
-        <td><p>Device index.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -299,8 +319,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a></td>
-        <td><p>Tracked device.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -308,8 +327,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRInputTracking.html#Evergine_Framework_XR_TrackedDevices_XRInputTracking_GetDeviceByIndex_System_UInt32_">XRInputTracking.GetDeviceByIndex(UInt32)</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByType_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByType*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByType_Evergine_Framework_XR_TrackedDevices_XRTrackedDeviceType_System_Int32_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByType(Evergine.Framework.XR.TrackedDevices.XRTrackedDeviceType,System.Int32)">GetDeviceByType(XRTrackedDeviceType, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets device by type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -328,14 +346,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDeviceType.html">XRTrackedDeviceType</a></td>
         <td><span class="parametername">type</span></td>
-        <td><p>Device type.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">count</span></td>
-        <td><p>Device count.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -350,8 +366,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a></td>
-        <td><p>Tacked device.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -359,8 +374,7 @@
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRInputTracking.html#Evergine_Framework_XR_TrackedDevices_XRInputTracking_GetDeviceByType_Evergine_Framework_XR_TrackedDevices_XRTrackedDeviceType_System_Int32_">XRInputTracking.GetDeviceByType(XRTrackedDeviceType, Int32)</a></div>
   <a id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_Initialize_" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.Initialize*"></a>
   <h4 id="Evergine_OpenVR_InputTracking_OpenVRInputTracking_Initialize" data-uid="Evergine.OpenVR.InputTracking.OpenVRInputTracking.Initialize">Initialize()</h4>
-  <div class="markdown level1 summary"><p>Initialize this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -368,6 +382,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.XR.TrackedDevices.XRInputTracking.html#Evergine_Framework_XR_TrackedDevices_XRInputTracking_Initialize">XRInputTracking.Initialize()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

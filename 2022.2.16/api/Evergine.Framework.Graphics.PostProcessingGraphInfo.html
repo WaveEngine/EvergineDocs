@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></div>
     <div class="level3"><span class="xref">PostProcessingGraphInfo</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -155,12 +159,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PostProcessingGraphInfo : RenderObjectInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public class PostProcessingGraphInfo : RenderObjectInfo, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -226,8 +251,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_DrawableType_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.DrawableType*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_DrawableType" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.DrawableType">DrawableType</h4>
-  <div class="markdown level1 summary"><p>Gets the drawable type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,8 +324,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_InputLayoutID_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.InputLayoutID*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_InputLayoutID" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.InputLayoutID">InputLayoutID</h4>
-  <div class="markdown level1 summary"><p>Gets the InputLayout ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,8 +349,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_InputLayoutID">RenderObjectInfo.InputLayoutID</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_InputLayouts_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.InputLayouts*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_InputLayouts" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.InputLayouts">InputLayouts</h4>
-  <div class="markdown level1 summary"><p>Gets the input layout.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,8 +398,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_IsReady_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.IsReady*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_IsReady" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.IsReady">IsReady</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is ready to be rendered.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,8 +447,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Material_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Material*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Material" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Material">Material</h4>
-  <div class="markdown level1 summary"><p>Gets the material.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -452,8 +472,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_Material">RenderObjectInfo.Material</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_MaterialID_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.MaterialID*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_MaterialID" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.MaterialID">MaterialID</h4>
-  <div class="markdown level1 summary"><p>Gets the material ID.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -478,8 +497,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_MaterialID">RenderObjectInfo.MaterialID</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_OrderBias_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.OrderBias*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_OrderBias" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.OrderBias">OrderBias</h4>
-  <div class="markdown level1 summary"><p>Gets the order bias.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -504,8 +522,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_OrderBias">RenderObjectInfo.OrderBias</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_PrimitiveTopology_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.PrimitiveTopology*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_PrimitiveTopology" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.PrimitiveTopology">PrimitiveTopology</h4>
-  <div class="markdown level1 summary"><p>Gets the primitive topology.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -530,8 +547,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_PrimitiveTopology">RenderObjectInfo.PrimitiveTopology</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_RenderStateOrder_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.RenderStateOrder*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_RenderStateOrder" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.RenderStateOrder">RenderStateOrder</h4>
-  <div class="markdown level1 summary"><p>Gets the order of the Render State.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -556,8 +572,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_RenderStateOrder">RenderObjectInfo.RenderStateOrder</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_SortMode_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.SortMode*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_SortMode" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.SortMode">SortMode</h4>
-  <div class="markdown level1 summary"><p>Gets the Sorting mode.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -584,8 +599,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Collect_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Collect*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Collect_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Collect(Evergine.Framework.Graphics.DrawContext)">Collect(DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Prepare this object with the specified draw context.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -604,8 +618,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -613,8 +626,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_Collect_Evergine_Framework_Graphics_DrawContext_">RenderObjectInfo.Collect(DrawContext)</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Destroy_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Destroy*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_Destroy" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -624,8 +636,7 @@
   <div><a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Destroy">DisposableObject.Destroy()</a></div>
   <a id="Evergine_Framework_Graphics_PostProcessingGraphInfo_RefreshBoundingBox_" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.RefreshBoundingBox*"></a>
   <h4 id="Evergine_Framework_Graphics_PostProcessingGraphInfo_RefreshBoundingBox" data-uid="Evergine.Framework.Graphics.PostProcessingGraphInfo.RefreshBoundingBox">RefreshBoundingBox()</h4>
-  <div class="markdown level1 summary"><p>Refresh the bounding box.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -633,6 +644,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html#Evergine_Framework_Graphics_RenderObjectInfo_RefreshBoundingBox">RenderObjectInfo.RefreshBoundingBox()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

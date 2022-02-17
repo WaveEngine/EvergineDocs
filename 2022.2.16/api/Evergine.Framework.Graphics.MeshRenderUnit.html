@@ -99,6 +99,30 @@
     <div class="level2"><span class="xref">MeshRenderUnit</span></div>
       <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.Instancing.InstancingBatchRenderUnit.html">InstancingBatchRenderUnit</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_MeshRenderUnit_syntax">Syntax</h5>
@@ -114,7 +138,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshRenderUnit(RenderMeshInfo info, uint instanceCount = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public MeshRenderUnit(RenderMeshInfo info, uint instanceCount = 1U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,7 +171,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MeshRenderUnit(uint instanceCount = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public MeshRenderUnit(uint instanceCount = 1U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,8 +243,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_MeshRenderUnit_BoundingBox_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.BoundingBox*"></a>
   <h4 id="Evergine_Framework_Graphics_MeshRenderUnit_BoundingBox" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.BoundingBox">BoundingBox</h4>
-  <div class="markdown level1 summary"><p>Gets the bounding box of this render unit.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,7 +259,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">BoundingBox</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Evergine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -247,8 +270,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_MeshRenderUnit_Collect_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Collect*"></a>
   <h4 id="Evergine_Framework_Graphics_MeshRenderUnit_Collect_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Collect(Evergine.Framework.Graphics.DrawContext)">Collect(DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Collect all the information to be rendered.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,8 +289,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -276,8 +297,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderUnit.html#Evergine_Framework_Graphics_RenderUnit_Collect_Evergine_Framework_Graphics_DrawContext_">RenderUnit.Collect(DrawContext)</a></div>
   <a id="Evergine_Framework_Graphics_MeshRenderUnit_PassIsAvailable_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.PassIsAvailable*"></a>
   <h4 id="Evergine_Framework_Graphics_MeshRenderUnit_PassIsAvailable_Evergine_Framework_Graphics_DrawContext_System_Int32_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.PassIsAvailable(Evergine.Framework.Graphics.DrawContext,System.Int32)">PassIsAvailable(DrawContext, Int32)</h4>
-  <div class="markdown level1 summary"><p>Return if the pass is available in this render unit.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,14 +316,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The DrawContext.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">passId</span></td>
-        <td><p>The Pass Id.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -318,8 +336,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if the pass is available.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -327,8 +344,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderUnit.html#Evergine_Framework_Graphics_RenderUnit_PassIsAvailable_Evergine_Framework_Graphics_DrawContext_System_Int32_">RenderUnit.PassIsAvailable(DrawContext, Int32)</a></div>
   <a id="Evergine_Framework_Graphics_MeshRenderUnit_Prepare_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Prepare*"></a>
   <h4 id="Evergine_Framework_Graphics_MeshRenderUnit_Prepare_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Prepare(Evergine.Common.Graphics.CommandBuffer,Evergine.Framework.Graphics.DrawContext)">Prepare(CommandBuffer, DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Prepare this unit to be rendered.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,14 +363,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
         <td><span class="parametername">commandBuffer</span></td>
-        <td><p>The command buffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -362,8 +376,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.RenderUnit.html#Evergine_Framework_Graphics_RenderUnit_Prepare_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Graphics_DrawContext_">RenderUnit.Prepare(CommandBuffer, DrawContext)</a></div>
   <a id="Evergine_Framework_Graphics_MeshRenderUnit_Render_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Render*"></a>
   <h4 id="Evergine_Framework_Graphics_MeshRenderUnit_Render_Evergine_Common_Graphics_CommandBuffer_Evergine_Framework_Graphics_DrawContext_System_Int32_" data-uid="Evergine.Framework.Graphics.MeshRenderUnit.Render(Evergine.Common.Graphics.CommandBuffer,Evergine.Framework.Graphics.DrawContext,System.Int32)">Render(CommandBuffer, DrawContext, Int32)</h4>
-  <div class="markdown level1 summary"><p>Render a element, using the specified commandBuffer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -382,20 +395,17 @@
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
         <td><span class="parametername">commandBuffer</span></td>
-        <td><p>The command buffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td><p>The draw context.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">passId</span></td>
-        <td><p>The pass id.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -99,6 +99,10 @@
     <div class="level2"><a class="xref" href="Evergine.Common.Graphics.Shader.html">Shader</a></div>
     <div class="level3"><span class="xref">MTLShader</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -116,12 +120,30 @@
     <div>
       <a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Disposed">GraphicsResource.Disposed</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Metal.html">Evergine.Metal</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Metal.dll</h6>
   <h5 id="Evergine_Metal_MTLShader_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MTLShader : Shader</code></pre>
+    <pre><code class="lang-csharp hljs">public class MTLShader : Shader, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -178,7 +200,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MTLFunction</span></td>
+        <td><span class="xref">Veldrid.MetalBindings.MTLFunction</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -201,7 +223,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MTLLibrary</span></td>
+        <td><span class="xref">Veldrid.MetalBindings.MTLLibrary</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -210,8 +232,7 @@
   </h3>
   <a id="Evergine_Metal_MTLShader_Name_" data-uid="Evergine.Metal.MTLShader.Name*"></a>
   <h4 id="Evergine_Metal_MTLShader_Name" data-uid="Evergine.Metal.MTLShader.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,8 +257,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Shader.html#Evergine_Common_Graphics_Shader_Name">Shader.Name</a></div>
   <a id="Evergine_Metal_MTLShader_NativePointer_" data-uid="Evergine.Metal.MTLShader.NativePointer*"></a>
   <h4 id="Evergine_Metal_MTLShader_NativePointer" data-uid="Evergine.Metal.MTLShader.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -253,7 +273,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -264,8 +284,7 @@
   </h3>
   <a id="Evergine_Metal_MTLShader_Dispose_" data-uid="Evergine.Metal.MTLShader.Dispose*"></a>
   <h4 id="Evergine_Metal_MTLShader_Dispose" data-uid="Evergine.Metal.MTLShader.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Dispose this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -334,6 +353,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

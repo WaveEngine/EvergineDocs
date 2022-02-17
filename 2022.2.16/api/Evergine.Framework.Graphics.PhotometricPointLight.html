@@ -125,13 +125,13 @@
       <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_Falloff">PointLight.Falloff</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_Intersects_BoundingFrustum__">PointLight.Intersects(BoundingFrustum)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_Intersects_Evergine_Mathematics_BoundingFrustum__">PointLight.Intersects(BoundingFrustum)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_Intersects_BoundingBox__">PointLight.Intersects(BoundingBox)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_Intersects_Evergine_Mathematics_BoundingBox__">PointLight.Intersects(BoundingBox)</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_ComputeBoundingBox_BoundingBox__">PointLight.ComputeBoundingBox(BoundingBox)</a>
+      <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_ComputeBoundingBox_Evergine_Mathematics_BoundingBox__">PointLight.ComputeBoundingBox(BoundingBox)</a>
     </div>
     <div>
       <a class="xref" href="Evergine.Framework.Graphics.PointLight.html#Evergine_Framework_Graphics_PointLight_OnAttached">PointLight.OnAttached()</a>
@@ -314,7 +314,28 @@
       <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_Id">IdentifiableObject.Id</a>
     </div>
     <div>
-      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+      <a class="xref" href="Evergine.Common.IdentifiableObject.html#Evergine_Common_IdentifiableObject_IdHasChanged_System_Guid_">IdentifiableObject.IdHasChanged(Guid)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
@@ -338,12 +359,12 @@
   </h3>
   <a id="Evergine_Framework_Graphics_PhotometricPointLight_Color_" data-uid="Evergine.Framework.Graphics.PhotometricPointLight.Color*"></a>
   <h4 id="Evergine_Framework_Graphics_PhotometricPointLight_Color" data-uid="Evergine.Framework.Graphics.PhotometricPointLight.Color">Color</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the light color.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Color Color { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToValue = false, AttachToTag = 1)]
+public override Color Color { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -356,8 +377,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Color.html">Color</a></td>
-        <td><p>The color of the diffuse.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -370,7 +390,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ColorByTemperature { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 1)]
+public bool ColorByTemperature { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -389,8 +410,7 @@
   </table>
   <a id="Evergine_Framework_Graphics_PhotometricPointLight_Intensity_" data-uid="Evergine.Framework.Graphics.PhotometricPointLight.Intensity*"></a>
   <h4 id="Evergine_Framework_Graphics_PhotometricPointLight_Intensity" data-uid="Evergine.Framework.Graphics.PhotometricPointLight.Intensity">Intensity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the light intensity.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -420,7 +440,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float LuminousPower { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Luminous Power (Lumen)&quot;)]
+public float LuminousPower { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -444,7 +465,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Temperature { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttachToValue = true, AttachToTag = 1)]
+public float Temperature { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

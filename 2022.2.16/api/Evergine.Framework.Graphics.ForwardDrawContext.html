@@ -100,6 +100,10 @@
     <div class="level3"><a class="xref" href="Evergine.Framework.Graphics.CameraDrawContext.html">CameraDrawContext</a></div>
     <div class="level4"><span class="xref">ForwardDrawContext</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -399,12 +403,33 @@
     <div>
       <a class="xref" href="Evergine.Framework.DisposableObject.html#Evergine_Framework_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Framework.Graphics.html">Evergine.Framework.Graphics</a></h6>
   <h6><strong>Assembly</strong>: Evergine.Framework.dll</h6>
   <h5 id="Evergine_Framework_Graphics_ForwardDrawContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ForwardDrawContext : CameraDrawContext</code></pre>
+    <pre><code class="lang-csharp hljs">public class ForwardDrawContext : CameraDrawContext, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -549,8 +574,7 @@
   </h3>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_CollectBatch_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CollectBatch*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_CollectBatch_Evergine_Framework_Graphics_RenderBatch__" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CollectBatch(Evergine.Framework.Graphics.RenderBatch@)">CollectBatch(ref RenderBatch)</h4>
-  <div class="markdown level1 summary"><p>Collect a batch.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -569,8 +593,7 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.RenderBatch.html">RenderBatch</a></td>
         <td><span class="parametername">batch</span></td>
-        <td><p>The batch info to be collected.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -578,8 +601,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html#Evergine_Framework_Graphics_DrawContext_CollectBatch_Evergine_Framework_Graphics_RenderBatch__">DrawContext.CollectBatch(ref RenderBatch)</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_CollectBatches_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CollectBatches*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_CollectBatches" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CollectBatches">CollectBatches()</h4>
-  <div class="markdown level1 summary"><p>Collect render batches from the visible meshes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -589,8 +611,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html#Evergine_Framework_Graphics_DrawContext_CollectBatches">DrawContext.CollectBatches()</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_CouldBatch_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CouldBatch*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_CouldBatch_System_Int32_Evergine_Framework_Graphics_RenderObjectInfo_System_Int32_Evergine_Framework_Graphics_RenderObjectInfo_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.CouldBatch(System.Int32,Evergine.Framework.Graphics.RenderObjectInfo,System.Int32,Evergine.Framework.Graphics.RenderObjectInfo)">CouldBatch(Int32, RenderObjectInfo, Int32, RenderObjectInfo)</h4>
-  <div class="markdown level1 summary"><p>Method that indicates if this drawContext could batch this meshes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,26 +630,22 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idxA</span></td>
-        <td><p>Mesh Index A.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></td>
         <td><span class="parametername">meshA</span></td>
-        <td><p>Mesh A.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idxB</span></td>
-        <td><p>Mesh Index B.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.RenderObjectInfo.html">RenderObjectInfo</a></td>
         <td><span class="parametername">meshB</span></td>
-        <td><p>Mesh B.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -643,8 +660,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if all is OK.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -652,8 +668,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html#Evergine_Framework_Graphics_DrawContext_CouldBatch_System_Int32_Evergine_Framework_Graphics_RenderObjectInfo_System_Int32_Evergine_Framework_Graphics_RenderObjectInfo_">DrawContext.CouldBatch(Int32, RenderObjectInfo, Int32, RenderObjectInfo)</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_Destroy_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.Destroy*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_Destroy" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"><p>Destroy the resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -663,8 +678,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.CameraDrawContext.html#Evergine_Framework_Graphics_CameraDrawContext_Destroy">CameraDrawContext.Destroy()</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_GetPassFramebuffer_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.GetPassFramebuffer*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_GetPassFramebuffer_System_Int32_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.GetPassFramebuffer(System.Int32)">GetPassFramebuffer(Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets the framebuffer associated to the specified pass.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -683,8 +697,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">passID</span></td>
-        <td><p>The pass ID.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -699,8 +712,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.FrameBuffer.html">FrameBuffer</a></td>
-        <td><p>The framebuffer.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -708,8 +720,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html#Evergine_Framework_Graphics_DrawContext_GetPassFramebuffer_System_Int32_">DrawContext.GetPassFramebuffer(Int32)</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_GetTexture_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.GetTexture*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_GetTexture_Evergine_Framework_Graphics_Effects_Analyzer_TextureInfo_TextureSemantic_System_Int32_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.GetTexture(Evergine.Framework.Graphics.Effects.Analyzer.TextureInfo.TextureSemantic,System.Int32)">GetTexture(TextureInfo.TextureSemantic, Int32)</h4>
-  <div class="markdown level1 summary"><p>Gets the texture.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -728,14 +739,12 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.Effects.Analyzer.TextureInfo.TextureSemantic.html">TextureInfo.TextureSemantic</a></td>
         <td><span class="parametername">textureSemantic</span></td>
-        <td><p>Texture semantic.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">textureIndex</span></td>
-        <td><p>Texture index.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -750,8 +759,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
-        <td><p>The found texture.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -759,8 +767,7 @@
   <div><a class="xref" href="Evergine.Framework.Graphics.CameraDrawContext.html#Evergine_Framework_Graphics_CameraDrawContext_GetTexture_Evergine_Framework_Graphics_Effects_Analyzer_TextureInfo_TextureSemantic_System_Int32_">CameraDrawContext.GetTexture(TextureInfo.TextureSemantic, Int32)</a></div>
   <a id="Evergine_Framework_Graphics_ForwardDrawContext_SetPerViewEngineParameters_" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.SetPerViewEngineParameters*"></a>
   <h4 id="Evergine_Framework_Graphics_ForwardDrawContext_SetPerViewEngineParameters" data-uid="Evergine.Framework.Graphics.ForwardDrawContext.SetPerViewEngineParameters">SetPerViewEngineParameters()</h4>
-  <div class="markdown level1 summary"><p>Collect shader resources per view.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -768,6 +775,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.CameraDrawContext.html#Evergine_Framework_Graphics_CameraDrawContext_SetPerViewEngineParameters">CameraDrawContext.SetPerViewEngineParameters()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

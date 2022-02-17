@@ -98,17 +98,42 @@
     <div class="level1"><a class="xref" href="Evergine.Common.Graphics.CommandQueue.html">CommandQueue</a></div>
     <div class="level2"><span class="xref">DX11CommandQueue</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_CommandBufferArraySize">CommandQueue.CommandBufferArraySize</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.DirectX11.html">Evergine.DirectX11</a></h6>
   <h6><strong>Assembly</strong>: Evergine.DirectX11.dll</h6>
   <h5 id="Evergine_DirectX11_DX11CommandQueue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX11CommandQueue : CommandQueue</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX11CommandQueue : CommandQueue, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -143,8 +168,7 @@
   </h3>
   <a id="Evergine_DirectX11_DX11CommandQueue_Name_" data-uid="Evergine.DirectX11.DX11CommandQueue.Name*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandQueue_Name" data-uid="Evergine.DirectX11.DX11CommandQueue.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,8 +195,7 @@
   </h3>
   <a id="Evergine_DirectX11_DX11CommandQueue_CommandBuffer_" data-uid="Evergine.DirectX11.DX11CommandQueue.CommandBuffer*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandQueue_CommandBuffer" data-uid="Evergine.DirectX11.DX11CommandQueue.CommandBuffer">CommandBuffer()</h4>
-  <div class="markdown level1 summary"><p>Gets the next <a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_CommandBuffer">CommandBuffer()</a>.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,8 +212,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
-        <td><p>The CommandBuffer.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -198,8 +220,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_CommandBuffer">CommandQueue.CommandBuffer()</a></div>
   <a id="Evergine_DirectX11_DX11CommandQueue_Dispose_" data-uid="Evergine.DirectX11.DX11CommandQueue.Dispose*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandQueue_Dispose" data-uid="Evergine.DirectX11.DX11CommandQueue.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,8 +257,7 @@
   </table>
   <a id="Evergine_DirectX11_DX11CommandQueue_Submit_" data-uid="Evergine.DirectX11.DX11CommandQueue.Submit*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandQueue_Submit" data-uid="Evergine.DirectX11.DX11CommandQueue.Submit">Submit()</h4>
-  <div class="markdown level1 summary"><p>Submits a CommandBuffer list to be executed by the GPU.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,8 +267,7 @@
   <div><a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_Submit">CommandQueue.Submit()</a></div>
   <a id="Evergine_DirectX11_DX11CommandQueue_WaitIdle_" data-uid="Evergine.DirectX11.DX11CommandQueue.WaitIdle*"></a>
   <h4 id="Evergine_DirectX11_DX11CommandQueue_WaitIdle" data-uid="Evergine.DirectX11.DX11CommandQueue.WaitIdle">WaitIdle()</h4>
-  <div class="markdown level1 summary"><p>Wait for all command buffers are executed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,6 +275,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.CommandQueue.html#Evergine_Common_Graphics_CommandQueue_WaitIdle">CommandQueue.WaitIdle()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
