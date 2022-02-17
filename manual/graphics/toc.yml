@@ -14,32 +14,32 @@
 - name: Models
   href: models/toc.yml
   homepage: models/index.md
-- name: Meshes
-  href: meshes.md
+# - name: Meshes
+#   href: meshes.md
 - name: Primitives
   href: primitives.md
-- name: Render Layers
-  href: render_layers.md
-- name: Samplers
-  href: samplers.md
+# - name: Render Layers
+#   href: render_layers.md
+# - name: Samplers
+#   href: samplers.md
 - name: Post Processing Graph
   href: postprocessing_graph/toc.yml
   homepage: postprocessing_graph/index.md
-- name: Particles
-  href: particles.md
+# - name: Particles
+#   href: particles.md
 - name: Effects
   href: effects/toc.yml
   homepage: effects/index.md
 - name: Compute Tasks
   href: compute_tasks/toc.yml
   homepage: compute_tasks/index.md
-- name: Environment
-  href: environment.md  
+# - name: Environment
+#   href: environment.md  
 - name: Line Batch
   href: linebatch/toc.yml
   homepage: linebatch/index.md
-- name: Lines 3D
-  href: lines_3d.md
+# - name: Lines 3D
+#   href: lines_3d.md
 - name: Sprites
   href: sprites.md
 - name: Billboards

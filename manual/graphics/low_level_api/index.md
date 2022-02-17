@@ -19,11 +19,11 @@ It is a new graphics API inspired on the latest advances on DirectX 12, Vulkan a
 * [Swapchain](swapchain.md)
 * [Framebuffer](framebuffer.md)
 * [QueryHeap](queryheap.md)
-* [Shader](shader.md)
+<!-- * [Shader](shader.md)
 * [ResourceLayout](resourcelayout.md)
 * [GraphicsPipeline](graphicspipeline.md)
 * [ComputePipeline](computepipeline.md)
 * [RayTracingPipeline](raytracingpipeline.md)
 * [ResourceSet](resourceset.md)
 * [CommandQueue](commandqueue.md)
-* [CommandBuffer](commandbuffer.md)
+* [CommandBuffer](commandbuffer.md) -->

@@ -1,12 +1,28 @@
+// Select version from URL
 const selectVersion = document.getElementById('select-version');
 const indexOfFirstSlash = window.location.pathname.indexOf('/', 1);
 const indexOfSecondSlash = window.location.pathname.indexOf('/', indexOfFirstSlash + 1);
 const firstSegment = window.location.pathname.substring(1, indexOfFirstSlash);
 const secondSegment = window.location.pathname.substring(indexOfFirstSlash + 1, indexOfSecondSlash);
-
 var useFirstSegment = firstSegment.toLowerCase() !== 'everginedocs'? true : false;
-selectVersion.value = useFirstSegment? firstSegment : secondSegment;
 
+// Load versions
+const versionsUrl = useFirstSegment ? '/versions.json' : '/EvergineDocs/versions.json';
+fetch(versionsUrl)
+  .then(response => response.json())
+  .then(json => {
+      json.versions.forEach(version => {
+        let option = document.createElement('option');
+        option.value = version;
+        option.innerText = version;
+        option.className = "option-version";
+        selectVersion.appendChild(option);
+      });
+    
+      selectVersion.value = useFirstSegment? firstSegment : secondSegment;
+    });
+
+// Subscribe to version change
 selectVersion.onchange = function() {
     const hostVersion = window.location.host;
     const pathVersion = window.location.pathname;

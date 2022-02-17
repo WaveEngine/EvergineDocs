@@ -14,19 +14,19 @@
   href: framebuffer.md
 - name: QueryHeap
   href: queryheap.md
-- name: Shader
-  href: shader.md
-- name: ResourceLayout
-  href: resourcelayout.md
-- name: GraphicsPipeline
-  href: graphicspipeline.md
-- name: ComputePipeline
-  href: computepipeline.md
-- name: RayTracingPipeline
-  href: raytracingpipeline.md
-- name: ResourceSet
-  href: resourceset.md
-- name: CommandQueue
-  href: commandqueue.md
-- name: CommandBuffer
-  href: commandbuffer.md
+# - name: Shader
+#   href: shader.md
+# - name: ResourceLayout
+#   href: resourcelayout.md
+# - name: GraphicsPipeline
+#   href: graphicspipeline.md
+# - name: ComputePipeline
+#   href: computepipeline.md
+# - name: RayTracingPipeline
+#   href: raytracingpipeline.md
+# - name: ResourceSet
+#   href: resourceset.md
+# - name: CommandQueue
+#   href: commandqueue.md
+# - name: CommandBuffer
+#   href: commandbuffer.md
