@@ -281,7 +281,8 @@
   </h3>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.Draw*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_Evergine_Framework_Graphics_DrawContext_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.Draw(Evergine.Framework.Graphics.DrawContext)">Draw(DrawContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Allows to perform custom drawing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,15 +301,21 @@
       <tr>
         <td><a class="xref" href="Evergine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><span class="parametername">drawContext</span></td>
-        <td></td>
+        <td><p>The draw context.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Drawable.html#Evergine_Framework_Drawable_Draw_Evergine_Framework_Graphics_DrawContext_">Drawable.Draw(DrawContext)</a></div>
+  <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_Draw_Evergine_Framework_Graphics_DrawContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only be called if all the following points are true:</p>
+<ul><li>The entity passes the culling test.</li><li>The parent of the owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> cascades its visibility to its children and it is visible.</li><li>The <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active.</li><li>The owner <a class="xref" href="Evergine.Framework.Entity.html">Entity</a> of the <a class="xref" href="Evergine.Framework.Drawable.html">Drawable</a> is active and visible.</li></ul>
+</div>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.DrawDebugLines*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.DrawDebugLines">DrawDebugLines()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Helper method that draws debug lines.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,6 +323,10 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Framework.Graphics.Drawable2D.html#Evergine_Framework_Graphics_Drawable2D_DrawDebugLines">Drawable2D.DrawDebugLines()</a></div>
+  <h5 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_DrawDebugLines_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will only work on debug mode and if RenderManager.DebugLines /&gt;
+is set to <code>true</code>.</p>
+</div>
   <a id="Evergine_Components_Graphics2D_LineMeshRenderer2D_OnActivated_" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.OnActivated*"></a>
   <h4 id="Evergine_Components_Graphics2D_LineMeshRenderer2D_OnActivated" data-uid="Evergine.Components.Graphics2D.LineMeshRenderer2D.OnActivated">OnActivated()</h4>
   <div class="markdown level1 summary"></div>
