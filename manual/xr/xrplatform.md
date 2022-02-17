@@ -99,8 +99,7 @@ A small example of how to use eye gazing in your application:
 XRPlatforms allows you to access more functionality that has been described before. 
 In the following documents these areas will be covered:
 
-- **[Input Tracking](input_tracking.md)**
+- **[Input Tracking](input_tracking/index.md)**
 - Spatial Mapping
 - Spatial Input
 - Spatial Anchor
-- 
