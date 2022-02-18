@@ -5,7 +5,7 @@ All MRTK controls use custom interfaces in order to receive user interaction eve
 ## Focus events
 Components that implement the *IMixedRealityFocusHandler* interface will receive focus events. A control gets focus in the following scenarios:
 - When a *near pointer* is close to the entity.
-- when a *far pointer* is pointing to the entity using the ray.
+- When a *far pointer* is pointing to the entity using the ray.
 - When the user is looking at the entity (using the GazeProvider).
 
 The default button style makes use of the focus event by raising the icon and text when acquiring focus.
