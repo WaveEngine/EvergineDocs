@@ -139,7 +139,8 @@
   </h3>
   <a id="Evergine_Common_Graphics_GraphicsContext_AvailablePointerKeys_" data-uid="Evergine.Common.Graphics.GraphicsContext.AvailablePointerKeys*"></a>
   <h4 id="Evergine_Common_Graphics_GraphicsContext_AvailablePointerKeys" data-uid="Evergine.Common.Graphics.GraphicsContext.AvailablePointerKeys">AvailablePointerKeys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of all available keys to obtain native pointers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -524,7 +525,8 @@ The initial size of this uploaders is defined by this property, The Default valu
   </table>
   <a id="Evergine_Common_Graphics_GraphicsContext_GetNativePointer_" data-uid="Evergine.Common.Graphics.GraphicsContext.GetNativePointer*"></a>
   <h4 id="Evergine_Common_Graphics_GraphicsContext_GetNativePointer_System_String_IntPtr__" data-uid="Evergine.Common.Graphics.GraphicsContext.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -543,12 +545,14 @@ The initial size of this uploaders is defined by this property, The Default valu
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">pointerKey</span></td>
-        <td></td>
+        <td><p>The pointer key.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
-        <td></td>
+        <td><p>The native pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -563,7 +567,8 @@ The initial size of this uploaders is defined by this property, The Default valu
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if there are an available pointer with this key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -878,7 +883,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, ref T data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -935,7 +939,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -992,7 +995,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint count, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1100,7 +1102,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, ref T data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1157,7 +1158,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1214,7 +1214,6 @@ The initial size of this uploaders is defined by this property, The Default valu
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateTextureData&lt;T&gt;(Texture texture, T[] data, uint count, uint destinationOffsetInBytes = null)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

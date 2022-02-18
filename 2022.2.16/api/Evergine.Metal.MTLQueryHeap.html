@@ -157,7 +157,8 @@
   </h3>
   <a id="Evergine_Metal_MTLQueryHeap_NativePointer_" data-uid="Evergine.Metal.MTLQueryHeap.NativePointer*"></a>
   <h4 id="Evergine_Metal_MTLQueryHeap_NativePointer" data-uid="Evergine.Metal.MTLQueryHeap.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -184,7 +185,8 @@
   </h3>
   <a id="Evergine_Metal_MTLQueryHeap_Dispose_" data-uid="Evergine.Metal.MTLQueryHeap.Dispose*"></a>
   <h4 id="Evergine_Metal_MTLQueryHeap_Dispose" data-uid="Evergine.Metal.MTLQueryHeap.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Dispose this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,7 +196,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_Dispose">GraphicsResource.Dispose()</a></div>
   <a id="Evergine_Metal_MTLQueryHeap_ReadData_" data-uid="Evergine.Metal.MTLQueryHeap.ReadData*"></a>
   <h4 id="Evergine_Metal_MTLQueryHeap_ReadData_System_UInt32_System_UInt32_System_UInt64___" data-uid="Evergine.Metal.MTLQueryHeap.ReadData(System.UInt32,System.UInt32,System.UInt64[])">ReadData(UInt32, UInt32, UInt64[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Extract data from one or more queries.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,17 +216,20 @@
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">startIndex</span></td>
-        <td></td>
+        <td><p>Specifies the index of the fist query to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><span class="parametername">count</span></td>
-        <td></td>
+        <td><p>Specifies the number of queries to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt64</span>[]</td>
         <td><span class="parametername">results</span></td>
-        <td></td>
+        <td><p>ulong buffer with the extracted queries data.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -238,12 +244,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Return true if all queries to read are available and false if not.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Evergine.Common.Graphics.QueryHeap.html#Evergine_Common_Graphics_QueryHeap_ReadData_System_UInt32_System_UInt32_System_UInt64___">QueryHeap.ReadData(UInt32, UInt32, UInt64[])</a></div>
+  <h5 id="Evergine_Metal_MTLQueryHeap_ReadData_System_UInt32_System_UInt32_System_UInt64____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the result is false, the results will conttains the latest available results.</p>
+</div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Evergine.Common.Helpers.ReflectionHelper.html#Evergine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
