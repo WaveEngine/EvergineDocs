@@ -39,7 +39,7 @@ this.matchmakingServerService.ServerName = "MyServer";
 
 ### Start a server
 
-Once you have your server configures it's time to start it, to make it able to receive incoming client connections.
+Once you have your server configured it's time to start it, to make it able to receive incoming client connections.
 
 ```csharp
 int port = 12345;
