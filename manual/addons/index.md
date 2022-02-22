@@ -8,7 +8,7 @@ They may contain assets, prefabs, behaviors, components and nuget packages that 
 ## Available Add-ons
 
 * [MRTK](mrtk/index.md)
-* [ARR](arr.md)
+* [ARR](arr/index.md)
 
 ## Add-ons in Evergine Studio
 
