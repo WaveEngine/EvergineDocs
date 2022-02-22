@@ -5,7 +5,5 @@
   homepage: assets/index.md
 - name: Project Properties & Manage profiles
   href: project_profiles.md
-- name: Packages
-  href: packages.md
 - name: Profile with RenderDoc
   href: renderdoc.md
