@@ -16,4 +16,4 @@ After editing your scene from Evergine Studio as usual, run the _Web.server_ pro
 
 ![Robot sample](images/sample.png)
 
-Finally, check it out [how to deploy the app](ops.md) and [improve its performance](tips).
+Finally, check it out [how to deploy the app](ops.md) and [improve its performance](tips.md).
