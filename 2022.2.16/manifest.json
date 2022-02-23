@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/azp/agent/_work/4/s/EvergineDocs",
+  "source_base_path": "C:/azp/agent/_work/5/s/EDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -2169,7 +2169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Audio.WaveFormat.html",
-          "hash": "HUZJtFzYlz3IhqhDARk/JKijzOpp16ubJU3pbvLhlkk="
+          "hash": "zo/wb9vA2BTnhZ5dTrfDn7ipYufoKX6s4o8wCywpadQ="
         }
       },
       "is_incremental": false,
@@ -2889,7 +2889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.ComparisonFunction.html",
-          "hash": "7f6LBae/EAJcjQZ2O1oQ9LF5mTVSrrjLHPEA8qS54Es="
+          "hash": "DsEcSyQ8m8HJn2ltU77CzyeJe2bZL1qnH0fpKY7kg7E="
         }
       },
       "is_incremental": false,
@@ -3105,7 +3105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.ElementFormat.html",
-          "hash": "isCsOaHpjrm9kZaSvn31osBuSWEeQ5bhSRaykO9jq6M="
+          "hash": "vnGaPI6Ti8VlnaywQGlUX7UYi4fvqHdaQRqNXb0dvxc="
         }
       },
       "is_incremental": false,
@@ -3117,7 +3117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.ElementSemanticType.html",
-          "hash": "edl8QXmxcT9QYBAhXWJXR2JVlu6QnlI/V8hsrtrrIP0="
+          "hash": "3ciamqgwTdV9My549ZHRCv1ef8K8EjnBgbuDtjWGIhA="
         }
       },
       "is_incremental": false,
@@ -3273,7 +3273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.GraphicsProfile.html",
-          "hash": "Ee3o9IDmaT+iIGrnCxSZSW0sHwXTdc7sYgsUyThbtC4="
+          "hash": "i8+BGpJCv/ycE6LzjTDcZrOSkBMkoUcovAocnrZyra0="
         }
       },
       "is_incremental": false,
@@ -3321,7 +3321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.IndexFormat.html",
-          "hash": "4K1n7qB+iHkCuIGW7smoA4gTL/JEsnSZxeNGVHAbK0o="
+          "hash": "5d7m2Zge1HBECCrdwD9sf4hha1Bs1LMz23BWthLhukU="
         }
       },
       "is_incremental": false,
@@ -3513,7 +3513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.PixelFormat.html",
-          "hash": "Fl33aNbINIedA2QCAvCmZ29XMpOF33U7Yn2RinqLKL4="
+          "hash": "u3m7o4Cu7vCu2Zibz5gOIbZSDFl19pXvT250HOxHl1s="
         }
       },
       "is_incremental": false,
@@ -3969,7 +3969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.ResourceType.html",
-          "hash": "o00OXh7tNXcH7rQbTEXbiCXu9tJHSbQwxmyG/Fau8+Q="
+          "hash": "/PLeiP0Pj452gXn8VNLD4o01DckHNQHg59Z6GrGXBD0="
         }
       },
       "is_incremental": false,
@@ -3993,7 +3993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.SamplerBorderColor.html",
-          "hash": "ZeYtquBSnaqtLymzftRVQPcNXmMDjpd/EPiwZ6q1uYE="
+          "hash": "Gy26LuEx2JL/DcWDcURV5BlIsjiZEQ1XKtqybKAxAeA="
         }
       },
       "is_incremental": false,
@@ -4089,7 +4089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.ShaderStages.html",
-          "hash": "TuKeQIC/WR7gP+C9tRaP3OM6WpELM4MV2Te0Dh3cgQ4="
+          "hash": "0vWfmos9OwBPpLnE1adwLWZ53bkzfoibswRmPTB/Oyo="
         }
       },
       "is_incremental": false,
@@ -4269,7 +4269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.TextureAddressMode.html",
-          "hash": "WQN0NMIXwT2B/+bCHJ32TuWBzekmWPKnJHLtP+pGvGA="
+          "hash": "GfczPcTVp2eRRjDeeG1FjapBggDMfOYha0tOD3TFqOo="
         }
       },
       "is_incremental": false,
@@ -4293,7 +4293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.TextureFilter.html",
-          "hash": "QXYpCjb0+HL2Vbprb3Bg9Ngd4wVRdlfdI4NtpsLJGo8="
+          "hash": "kNna0jWbt81T4A67MC9eXpRrC9YjH8dRM7a/5t5i6Do="
         }
       },
       "is_incremental": false,
@@ -4305,7 +4305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.TextureFlags.html",
-          "hash": "iJ5S+f4Lggq8jvycAYgdVtNLtmOlGjY1cos4Kb5Xhag="
+          "hash": "U0GXT7xuILrkHMDeWKyXEBV3wpiHm0+G46IWrSI3XVA="
         }
       },
       "is_incremental": false,
@@ -4329,7 +4329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.TextureSampleCount.html",
-          "hash": "2hSrddUphxkFf2THCyRfL8AJ2VULnhVgMVSgRMi1IhI="
+          "hash": "d2150PF3A0FgSrZr70lVqu427Os7YBBTrfDO1ZrDvF4="
         }
       },
       "is_incremental": false,
@@ -4617,7 +4617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Common.Graphics.VertexStepFunction.html",
-          "hash": "NapF8kzV/RO94wfTDZFC89TYSVfY2hKNGQQs63kC4gk="
+          "hash": "djX7W3y8CxyGIov/LijJN1Q7p8wdpVpge1A+02cBCrI="
         }
       },
       "is_incremental": false,
@@ -11349,7 +11349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Entity.html",
-          "hash": "J165B/6jzVFTuSROEIv36bSzPEZ6WcQyiUckK5vsGsI="
+          "hash": "OU94KH9Qg37sdcXDTM7C5l/nwFLQc+eXIqUHEnh20ds="
         }
       },
       "is_incremental": false,
@@ -14769,7 +14769,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Managers.EntityManager.html",
-          "hash": "sfj9ai4/wrrWrhW2MPz9VZd3kOVB5+mQlUiMl++RvtY="
+          "hash": "OAajQdhFkApDDdY+sdIjl1M9AATRtf6Oo7mz670tseQ="
         }
       },
       "is_incremental": false,
@@ -15165,7 +15165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Particles.Helpers.EntityMeshCPUData.html",
-          "hash": "lACwwGTKAQbf45QSq5ESjIl5WsiZN1Er70uvJO6Co+U="
+          "hash": "6oCOkgQZChfc7y0MTJeu7Cwbovp/u+4c7lqAPdBA4uQ="
         }
       },
       "is_incremental": false,
@@ -15177,7 +15177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Particles.Helpers.EntityMeshComputeData.html",
-          "hash": "8sGLCcRxoO1GEqYghzhZbOwhpIdCi3LQ+QNNDVBEyDg="
+          "hash": "ISl0GJ4Iwk2f0HWuA6TLKZCqGQNLr+tLeTCovjhGcdI="
         }
       },
       "is_incremental": false,
@@ -15189,7 +15189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Particles.Helpers.EntityMeshData.html",
-          "hash": "CJaA0Mk+AHl36n0/pWjkkr5EU1Jqqs3bvfffVgyrptU="
+          "hash": "5PGbs0Zqc3tv2j7ZbVP0ME0bAhICBtGdP/9qC9rMO1U="
         }
       },
       "is_incremental": false,
@@ -16389,7 +16389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Scene.html",
-          "hash": "xG8gQa8Jdg1g+geCK9rz572Yfr+e7S0y7xZG9TrX36w="
+          "hash": "pcQDrXrZnoAfwewMglgu+75IoYlG7NOS9f6wz1IWW6k="
         }
       },
       "is_incremental": false,
@@ -16521,7 +16521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Services.IUpdatableWorkAction.html",
-          "hash": "vPFfLsrg7d18lVC4jNcVudhuXcF3262EW6ZsBo+MSBQ="
+          "hash": "PO73HMIpmaJw/e2ca+IfHKkZ4aDZIdidkN/WLaNwbSY="
         }
       },
       "is_incremental": false,
@@ -16533,7 +16533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Services.IWorkAction-1.html",
-          "hash": "L/TXNIZKmFDYRyT5RHPiRl7pnJ+BYnVAzXRdZIDH/PE="
+          "hash": "bBAmYPRP4yX/+HE2kLCQUpdT9iHbzMyfujQUOBX7KNQ="
         }
       },
       "is_incremental": false,
@@ -16545,7 +16545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Framework.Services.IWorkAction.html",
-          "hash": "c27no5gQ7+bkZ4WdMnmF3aDB/MSI3dx26SOUHf0SaLg="
+          "hash": "lr4wAYhP4GsTySKmonXps4GOaXKidGeJzR7bT1D1exU="
         }
       },
       "is_incremental": false,
@@ -17721,7 +17721,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Mathematics.Matrix4x4.html",
-          "hash": "+1y+HyCwSVarVhbsh7JKbeH/ur9OUmVh0ZKr2GrrI24="
+          "hash": "ssaqs91gxYnjwL1dVav0mPpceSL1qmqJ2swgFTCkMpM="
         }
       },
       "is_incremental": false,
@@ -21831,11 +21831,67 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/addons/arr.md",
+      "source_relative_path": "manual/addons/arr/getting_started.md",
       "output": {
         ".html": {
-          "relative_path": "manual/addons/arr.html",
-          "hash": "RMOyum2KtMTzQiyFJVZS5gOvcm0N+NHqgyaQJzcN84Y="
+          "relative_path": "manual/addons/arr/getting_started.html",
+          "hash": "hwQ6k4sl9BM/ylI4p+rGuOCmrBOejuDvGIB7HRRVy4A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/addons/arr/images/addon_installation.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/arr/images/addon_installation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/addons/arr/images/arr_model.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/arr/images/arr_model.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/addons/arr/images/arr_proxy_camera.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/arr/images/arr_proxy_camera.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/addons/arr/images/arr_session_manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/arr/images/arr_session_manager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/addons/arr/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/arr/index.html",
+          "hash": "uBqfDJKC7Qyn7oih3sRWqcBaX9tKVJExBEkk1CjjSa4="
         }
       },
       "is_incremental": false,
@@ -21935,7 +21991,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/addons/index.html",
-          "hash": "EQS/LSOWzy8RPlyEKy07X6kPifNnx0AzlVibQCBzfoo="
+          "hash": "R91D7Cq2c3NZgzkz6jv8vUAfbaUdslEK8mm2h7FMaI4="
         }
       },
       "is_incremental": false,
@@ -21984,17 +22040,6 @@
         ".html": {
           "relative_path": "manual/addons/mrtk/getting_started.html",
           "hash": "uWgkQ1pCab9LG/JMekFOcdIhcu3YWqRVt2mUWAOg9Jw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "manual/addons/mrtk/images/Evergine_MRTK_banner.png",
-      "output": {
-        "resource": {
-          "relative_path": "manual/addons/mrtk/images/Evergine_MRTK_banner.png"
         }
       },
       "is_incremental": false,
@@ -22144,6 +22189,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/addons/mrtk/index.md",
       "output": {
@@ -23932,7 +23980,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extensions/networking.html",
-          "hash": "S14SbfIRl2NS0Jbnf12dYWn9oWK5Bb8UfxeoPsoGgV0="
+          "hash": "0S1MN5XFD+xpjTvlEFyALP9XZP16MUZdbon5jv7IQMQ="
         }
       },
       "is_incremental": false,
@@ -27373,7 +27421,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "qyv1SXN+t2qgJTfX2hb2NVHuouJfHYEIVhUn9x3JXZI="
+          "hash": "4JuYVsIGG6BvpNjCKaKh7IwfNoUhgSYcKPZ7vKq+J0I="
         }
       },
       "is_incremental": false,
@@ -27528,7 +27576,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "simBEcjxPBdR6Pzyrp1cSKVXlpcjmPxvc7aGbCcNxJg="
+          "hash": "qOF8SX23aolhUfVApp9rHRcMgWirE8IvI/2H0TyYqn4="
         }
       },
       "is_incremental": false,
@@ -27755,7 +27803,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 169,
+          "total_file_count": 170,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

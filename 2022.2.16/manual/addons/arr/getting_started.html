@@ -5,21 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum IndexFormat
-   | Evergine Doc </title>
+    <title>Getting started | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum IndexFormat
-   | Evergine Doc ">
+    <meta name="title" content="Getting started | Evergine Doc ">
     <meta name="generator" content="docfx 2.58.4.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -35,8 +33,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -82,52 +80,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Evergine.Common.Graphics.IndexFormat">
-  
-  
-  <h1 id="Evergine_Common_Graphics_IndexFormat" data-uid="Evergine.Common.Graphics.IndexFormat" class="text-break">Enum IndexFormat
-  </h1>
-  <div class="markdown level0 summary"><p>The index data format.</p>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<hr>
+<p>Follow the steps below to quickly start running Azure Remote Rendering on your Evergine project:</p>
+<ol>
+<li>Create an Azure Remote Rendering instance at Azure portal (you need an Azure account).
+<ul>
+<li>Once created, copy your account id, key, and domain. You will need them to configure the session on your app.</li>
+</ul>
+</li>
+<li>Create a new Evergine project, or open an existing one.</li>
+<li>Install the Evergine.ARR add-on using the add-on managemer in Evergine Studio.</li>
+</ol>
+<p><img src="images/addon_installation.png" alt="Add-on installation"></p>
+<ol start="4">
+<li>Add the Azure Remote Rendering service to your Application</li>
+</ol>
+<pre><code class="lang-csharp">public partial class MainApplication : Application
+{
+    public MainApplication()
+    {
+        ...
+        this.Container.RegisterInstance(new AzureRemoteRenderingService());
+
+        ForegroundTaskScheduler.Foreground.Configure(this.Container);
+        BackgroundTaskScheduler.Background.Configure(this.Container);
+    }
+    ...
+</code></pre>
+<ol start="5">
+<li>Go to Evergine Studio, add the ARRSessionManager component on the Environment manager entity and configure it using your credentials.</li>
+</ol>
+<p><img src="images/arr_session_manager.png" alt="Session Manager"></p>
+<ol start="6">
+<li>Add the Azure Remote Rendering proxy camera component to the main camera.</li>
+</ol>
+<p><img src="images/arr_proxy_camera.png" alt="Proxy Camera"></p>
+<ol start="7">
+<li>For each big model that you want to render remotely, add an entity with <em>ARRModelLoader</em> and <em>ARREntitySync</em> components.</li>
+</ol>
+<p><img src="images/arr_model.png" alt="Proxy Camera"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Url of your model can be obtained from Azure Remote Rendering instance in Azure Portal. If you don't have any, you can use the default builtin://Engine.</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Evergine.Common.Graphics.html">Evergine.Common.Graphics</a></h6>
-  <h6><strong>Assembly</strong>: Evergine.Common.dll</h6>
-  <h5 id="Evergine_Common_Graphics_IndexFormat_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum IndexFormat : byte</code></pre>
-  </div>
-  <h3 id="fields">Fields
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    <thead>
-    <tbody>
-      <tr>
-        <td id="Evergine_Common_Graphics_IndexFormat_UInt16">UInt16</td>
-        <td><p>Unsigned 16 bits integer format.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Evergine_Common_Graphics_IndexFormat_UInt32">UInt32</td>
-        <td><p>Unsigned 32 bits integer format.</p>
-</td>
-      </tr>
-    </tbody>
-  </thead></thead></table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Evergine.DirectX11.DX11ExtensionsMethods.html#Evergine_DirectX11_DX11ExtensionsMethods_ToDirectX_Evergine_Common_Graphics_IndexFormat_">DX11ExtensionsMethods.ToDirectX()</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.Vulkan.VKExtensionsMethods.html#Evergine_Vulkan_VKExtensionsMethods_ToVulkan_Evergine_Common_Graphics_IndexFormat_">VKExtensionsMethods.ToVulkan()</a>
-  </div>
-  <div>
-      <a class="xref" href="Evergine.DirectX12.DX12ExtensionsMethods.html#Evergine_DirectX12_DX12ExtensionsMethods_ToDirectX_Evergine_Common_Graphics_IndexFormat_">DX12ExtensionsMethods.ToDirectX()</a>
-  </div>
+<p>And that's it! The project should be ready to render the model(s) on windows or other platforms like UWP or Mixed Reality. Check out the <a href="https://github.com/EvergineTeam/AzureRemoteRendering">demo</a> for more information or the <a href="https://github.com/EvergineTeam/MixedRealityToolkit">MRTK add-on</a> to add AR controls to your project and start interacting with your models.</p>
 </article>
           </div>
           
@@ -159,8 +158,8 @@
         </div>
       </footer>    </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>
