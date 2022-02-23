@@ -3,10 +3,13 @@
   homepage: get_started/index.md
 - name: Basics
   href: basics/toc.yml
-  homepage: basics/index.md  
+  homepage: basics/index.md
 - name: Evergine Studio
   href:  evergine_studio/toc.yml
   homepage: evergine_studio/index.md
+- name: Platforms
+  href: platforms/toc.yml
+  homepage: platforms/index.md
 - name: Graphics
   href: graphics/toc.yml
   homepage: graphics/index.md
