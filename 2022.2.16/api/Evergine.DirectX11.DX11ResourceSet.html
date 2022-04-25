@@ -111,13 +111,13 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Evergine_DirectX11_DX11ResourceSet__ctor_" data-uid="Evergine.DirectX11.DX11ResourceSet.#ctor*"></a>
-  <h4 id="Evergine_DirectX11_DX11ResourceSet__ctor_Evergine_Common_Graphics_ResourceSetDescription__" data-uid="Evergine.DirectX11.DX11ResourceSet.#ctor(Evergine.Common.Graphics.ResourceSetDescription@)">DX11ResourceSet(ref ResourceSetDescription)</h4>
+  <h4 id="Evergine_DirectX11_DX11ResourceSet__ctor_Evergine_DirectX11_DX11GraphicsContext_Evergine_Common_Graphics_ResourceSetDescription__" data-uid="Evergine.DirectX11.DX11ResourceSet.#ctor(Evergine.DirectX11.DX11GraphicsContext,Evergine.Common.Graphics.ResourceSetDescription@)">DX11ResourceSet(DX11GraphicsContext, ref ResourceSetDescription)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Evergine.DirectX11.DX11ResourceSet.html">DX11ResourceSet</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DX11ResourceSet(ref ResourceSetDescription description)</code></pre>
+    <pre><code class="lang-csharp hljs">public DX11ResourceSet(DX11GraphicsContext context, ref ResourceSetDescription description)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,6 +129,12 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.DirectX11.DX11GraphicsContext.html">DX11GraphicsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The DX11 graphics context instance.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="Evergine.Common.Graphics.ResourceSetDescription.html">ResourceSetDescription</a></td>
         <td><span class="parametername">description</span></td>
