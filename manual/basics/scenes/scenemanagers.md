@@ -102,3 +102,26 @@ PhysicsManager3D physics = this.Managers.FindManager<PhysicsManager3D>();
 RenderManager renderManager = this.Managers.RenderManager;
 
 ```
+
+## Scene managers in Evergine Studio
+Until _Evergine 2022.2.16_, default scene template included an entity named _SceneManagers_ to configure some of built-in managers. From now, this entity is no longer included when you create a new scene, as scene managers are included in a separate panel.
+
+ ![Scene managers panel](images/managers-panel.jpg)
+
+In that panel, you count with a user interface very similar to _Entity Details_ panel, where you can manage components for an entity. In this case, you can manage scene managers for your scene.
+
+By default, managers search window will scan all available managers in your project and Evergine core libraries. If you don't want that one of your custom managers to be selectable, mark your class with _[Discoverable(false)]_ attribute.
+
+```
+[Discoverable(false)]
+public class MyManager : SceneManager
+{
+}
+```
+
+### Migrating older scenes
+For scenes created with Until _Evergine 2022.2.16_ or below, _Evergine Studio_ will ask you for asset update once you open the scene file. It will automatically copy your custom values for shadows and environment managers located in obsolete _SceneManagers_ entity to scene managers saved within your scene. 
+
+ ![Scene update for managers](images/managers-scene-update.jpg)
+
+It is recommendable to confirm scene update when requested, but this process can't be undone if, for some reason, you decide to go back to _Evergine 2022.2.16_. Once scene asset is updated, _SceneManagers_ entity will be removed and replaced by entries in managers file section.
