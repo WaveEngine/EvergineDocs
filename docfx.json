@@ -72,7 +72,7 @@
     },
     "fileMetadataFiles": [],
     "template": ["default", "templates/darkfx"],
-    "postProcessors": [],
+    "postProcessors": ["ExtractSearchIndex"],
     "markdownEngineName": "markdig",
     "disableGitFeatures": false,
     "noLangKeyword": false,

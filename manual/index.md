@@ -15,6 +15,7 @@ You can read it from start to finish, or use it as a reference
 - [Getting started](get_started/index.md)
 - [Basics](basics/index.md)
 - [Evergine Studio](evergine_studio/index.md)
+- [Platforms](platforms/index.md)
 - [Graphics](graphics/index.md)
 - [Input](input/index.md)
 <!-- - [Audio](audio/index.md)
