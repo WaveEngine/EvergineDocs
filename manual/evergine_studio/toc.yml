@@ -3,7 +3,7 @@
 - name: Assets
   href: assets/toc.yml
   homepage: assets/index.md
-- name: Project Properties & Manage profiles
+- name: Project Settings & Manage profiles
   href: project_profiles.md
 - name: Profile with RenderDoc
   href: renderdoc.md
