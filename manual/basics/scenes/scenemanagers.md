@@ -108,7 +108,9 @@ Until _Evergine 2022.2.16_, default scene template included an entity named _Sce
 
  ![Scene managers panel](images/managers-panel.jpg)
 
-In that panel, you count with a user interface very similar to _Entity Details_ panel, where you can manage components for an entity. In this case, you can manage scene managers for your scene.
+In that panel, you count with a user interface very similar to _Entity Details_ panel, where you can manage components for an entity. In this case, you can manage scene managers for your scene. Behavior is the same: to add a new manager, just make use of add button and search for the element you want.
+
+![Scene update for managers](images/managers-add.jpg)
 
 By default, managers search window will scan all available managers in your project and Evergine core libraries. If you don't want that one of your custom managers to be selectable, mark your class with _[Discoverable(false)]_ attribute.
 
@@ -118,6 +120,10 @@ public class MyManager : SceneManager
 {
 }
 ```
+
+To remove a manager from a scene, just right click over the element and select remove option. There are a few managers that are required for the engine to correctly work, so you should be careful about removing them. Anyways, a confirmation message will be displayed if you try to remove one of those managers.
+
+![Scene update for managers](images/managers-remove.jpg)
 
 ### Migrating older scenes
 For scenes created with Until _Evergine 2022.2.16_ or below, _Evergine Studio_ will ask you for asset update once you open the scene file. It will automatically copy your custom values for shadows and environment managers located in obsolete _SceneManagers_ entity to scene managers saved within your scene. 
