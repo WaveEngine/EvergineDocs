@@ -9,5 +9,5 @@ This section documents the different platforms that Evergine can be deployed on.
 * [Web](web/index.md)
 * UWP
 * Linux
-* Android
+* [Android](android/index.md)
 * iOS

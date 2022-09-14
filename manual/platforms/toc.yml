@@ -1,3 +1,5 @@
+- name: Android
+  homepage: android/index.md
 - name: Web
   href: web/toc.yml
   homepage: web/index.md
