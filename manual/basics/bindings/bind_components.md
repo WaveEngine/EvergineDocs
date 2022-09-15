@@ -18,7 +18,7 @@ private List<Camera3D> sceneCameras;
 ## [BindComponent] Properties
 This attribute offers several ways to customize:
 
-### IsRequired (default `true`)
+### isRequired (default `true`)
 
 If the value is true the dependency is required to be resolved, in the oher case, the current Component won't be attached.
 
@@ -50,7 +50,7 @@ Entity anotherEntity = new Entity()
     .AddComponent(new MyComponent());
 ```
 
-### IsExactType (default `true`)
+### isExactType (default `true`)
 
 If the value is true indicates that the Type of the component to bound must be the same as the type required (nor subclass or parent class).
 
@@ -83,7 +83,7 @@ public class MyComponent : Component
 }
 ```
 
-### Source (default `BindComponentSource.Owner`)
+### source (default `BindComponentSource.Owner`)
 
 This property indicates where the component or components will be searched. There are several values:
 
@@ -113,9 +113,13 @@ public class MyComponent : Component
 }
 ```
 
-### Tag (default `null`)
+### isRecursive (default `true`)
 
-If the Tag has value, it will only find components in entities that has the specified Tag. It works for filtering entities.
+If set to `true` the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include the direct descendants.
+
+### tag (default `null`)
+
+If the tag has value, it will only find components in entities that has the specified Tag. It works for filtering entities.
 
 ```csharp
 public class MyComponent : Component

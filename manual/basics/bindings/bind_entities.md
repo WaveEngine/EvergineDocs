@@ -17,16 +17,10 @@ private List<Entity> itemList;
 > [!NOTE]
 > [BindEntity] can only be used inside Components. In other case the binding cannot be resolved
 
-## [BindComponent] Properties
+## [BindEntity] Properties
 This attribute offers several ways to customize:
 
-### IsRequired (default `true`)
-
-If the value is true the dependency is required to be resolved, in other case, the current Component won't be attached.
-
-The IsRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).
-
-### Source (default `BindEntitySource.Scene`)
+### source (default `BindEntitySource.Scene`)
 
 This property indicates where the component or components will be searched. There are several values:
 
@@ -34,6 +28,10 @@ This property indicates where the component or components will be searched. Ther
 | --- | --- |
 | `Scene` (default)| The Entity is searched in the entire Scene. It iterates over all entities in the scene. |
 | `Children` | Search the Entity in its descendant entities, **excluding the owner entity** |
+| `ChildrenSkipOwner` | Search the Entity in its descendant entities, **not including the owner entity** |
+| `Parents` | Search the Entity in the ascendant entities, **including the owner entity** |
+| `ParentsSkipOwner` | Search the Entity in its ascendant entities, **not including the owner entity** |
+
 
 A brief example:
 
@@ -47,6 +45,16 @@ public class MyComponent : Component
 }
 ```
 
-### Tag (default `null`)
+### isRequired (default `true`)
 
-The Entities will be filtered by its Tag value.
+If the value is `true` the dependency is required to be resolved, in other case, the current Component won't be attached.
+
+The IsRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).
+
+### isRecursive (default `true`)
+
+If set to `true` the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include the direct descendants.
+
+### tag (default `null`)
+
+The Entities will be filtered by its tag value.
