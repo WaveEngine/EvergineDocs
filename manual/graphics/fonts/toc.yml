@@ -1,8 +1,8 @@
-- name: Create Materials
-  href: create_materials.md
-- name: Using Materials
-  href: using_materials.md
-- name: Material Editor
-  href: material_editor.md
-- name: Material Decorators
-  href: material_decorators.md
+- name: Import Fonts
+  href: import_fonts.md
+- name: Font Editor
+  href: font_editor.md
+- name: Create Text3D
+  href: create_text.md
+- name: Using Text3D
+  href: using_text3D.md
