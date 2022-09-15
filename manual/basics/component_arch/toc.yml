@@ -5,4 +5,4 @@
   href: components/toc.yml
   homepage: components/index.md
 - name: Prefabs
-  href: prefabs.md
+  href: prefabs/index.md
