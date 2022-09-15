@@ -14,11 +14,11 @@ private GraphicsContext transform;
 ## [BindService] Properties
 This attribute offers several ways to customize:
 
-### IsRequired (default `true`)
+### isRequired (default `true`)
 
 If the value is true the dependency is required to be resolved, in other case, the current Component won't be attached.
 
-The IsRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).
+The isRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).
 
 For example, if this is all Services registered inside the Application Container:
 
