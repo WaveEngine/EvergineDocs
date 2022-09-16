@@ -13,7 +13,7 @@ To start using this extension, just add Evergine.Networking package to your proj
 ```
 
 ## Server configuration
-To create a networking server, you should make use of built-in service named _MatchmakingServerService_. This service is part of the extension and manages server rooms, players and provides different events that you can use to be notified when a player (client) connects or disconnects from the server, joins or leaves a room, etc. For a complete list of events, take a look to [_MatchmakingServerService_ API documentation](~/api/Evergine.Networking.Server.MatchmakingServerService.html).
+To create a networking server, you should make use of built-in service named _MatchmakingServerService_. This service is part of the extension and manages server rooms, players and provides different events that you can use to be notified when a player (client) connects or disconnects from the server, joins or leaves a room, etc. For a complete list of events, take a look to [_MatchmakingServerService_ API documentation](xref:Evergine.Networking.Server.MatchmakingServerService).
 
 Just register _MatchmakingServerService_ in Evergine dependencies container to start using it.
 
@@ -46,7 +46,7 @@ int port = 12345;
 await this.matchmakingServerService.StartAsync(port);
 ```
 
-Our recommendation is to create a custom [Service](~/api/Evergine.Framework.Services.Service.html) or component to contain all server initialization code, and also make use of _MatchmakingServerService_ to log events, very useful for debugging purposes.
+Our recommendation is to create a custom [Service](xref:Evergine.Framework.Services.Service) or component to contain all server initialization code, and also make use of _MatchmakingServerService_ to log events, very useful for debugging purposes.
 
 ```csharp
 this.matchmakingServerService.PlayerConnected += this.MatchmakingServerService_PlayerConnected;
