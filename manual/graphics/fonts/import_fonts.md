@@ -5,45 +5,20 @@
 The **font** asset allow you render text in your project using differents font families and styles.
 
 ## Import a Font asset in Evergine Studio
-You can create a font click button on ![Plus Icon](../images/plusIcon.jpg) from [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create material"_
+You can create a font by dragging a font file to the [Assets Details](../../evergine_studio/interface.md) panel, as explained [in this article](../../evergine_studio/assets/create.md).
 
 ![Create new material menu option](images/import_fonts.png)
 
-### Inspect materials in Asset Details
-You can find the material assets in the [**Assets Details**](../../evergine_studio/interface.md) panel when you select a folder in the [**Project Explorer**](../../evergine_studio/interface.md).
+## Font files in content directory
+**Fonts** imported in **Evergine** create an aditional metadata `.weft` file.
 
-![Material asset](images/materialAsset.jpg)
+![Font file](images/fontFile.jpg)
 
-### Material files in content directory
-The material file has the `.wemt` extension.
+## Supported formats:
+**Evergine** supports the following font file formats:
 
-![Material file](images/materialFile.jpg)
 
-## Create a new Material from code
-The following sample code can be used to create a new material and apply to an entity in your scene.
-In that case the material will be created using the **StandardEffect** effect and the **Opaque** render layer:
-
-```csharp
-protected override void CreateScene()
-{
-    var assetsService = Application.Current.Container.Resolve<AssetsService>();
-
-    // Load the effect...
-    Effect standardEffect = assetsService.Load<Effect>(EvergineContent.Effects.StandardEffect);
-
-    // Load a Render Layer description...
-    RenderLayerDescription layer = assetsService.Load<RenderLayerDescription>(EvergineContent.RenderLayers.Opaque);
-
-    // Create your own material...
-    Material material = new Material(standardEffect);
-    material.LayerDescription = layer;
-
-    // Apply to an entity
-    Entity primitive = new Entity()
-            .AddComponent(new Transform3D())
-            .AddComponent(new MaterialComponent() { Material = material })  
-            .AddComponent(new SphereMesh())
-            .AddComponent(new MeshRenderer());
-
-    this.Managers.EntityManager.Add(primitive);
-}
+| Extension |  Description | 
+| ----| ----| 
+| `.ttf`| <div><p>**TrueType** is an outline font standard developed by Apple in the late 1980s as a competitor to Adobe's Type 1 fonts used in PostScript. It has become the most common format for fonts on the classic Mac OS, macOS, and Microsoft Windows operating systems.</p> <p>The primary strength of TrueType was originally that it offered font developers a high degree of control over precisely how their fonts are displayed, right down to particular pixels, at various font sizes. With widely varying rendering technologies in use today, pixel-level control is no longer certain in a TrueType font. </p></div>|
+| `.otf` | <div><p>**OpenType** is a format for scalable computer fonts. It was built on its predecessor TrueType, retaining TrueType's basic structure and adding many intricate data structures for prescribing typographic behavior. OpenType is a registered trademark of Microsoft Corporation.</p><p>The specification germinated at Microsoft, with Adobe Systems also contributing by the time of the public announcement in 1996.</p><p>Because of wide availability and typographic flexibility, including provisions for handling the diverse behaviors of all the world's writing systems, OpenType fonts are used commonly on major computer platforms.</p> 
