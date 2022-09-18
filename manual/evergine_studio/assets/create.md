@@ -19,7 +19,8 @@ You can drag any file into the **Evergine Studio** to import that asset file int
 | Texture | `.wetx` | `.jpg `, `.jpeg `, `.png `, `.bmp `, `.tga `, `.ktx `, `.dds `, `.hdr` |
 | Model | `.wemd` |  `.gltf `, `.glb `, `.fbx `, `.3ds `, `.obj `, `.dxf `, `.dae` |
 | Sound | `.wesn` |  `.wav `, `.mp3 `, `.ogg` | 
-| File | `.wefile` |  Any other file. 
+| File | `.wefile` |  Any other file. |
+| Font | `.weft`  | `.ttf`, `.otf` | 
 
 Import an asset by dragging and dropping a resource file from your _File Explorer_ to the **Assets Detail** panel.
 
