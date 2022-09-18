@@ -39,3 +39,5 @@ This functionality will be covered in the following documents of this section.
 
 * [XRPlatform](xrplatform.md)
 * [Input Devices](input_tracking/index.md)
+* [Spatial Mapping](spatial_mapping.md) 
+* [Spatial Anchors](spatial_anchors.md)

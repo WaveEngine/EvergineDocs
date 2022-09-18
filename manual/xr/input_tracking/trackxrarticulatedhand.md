@@ -13,8 +13,6 @@ Evergine supports a list of hand joints to be tracked, it is described using the
 > [!Note]
 > The entity transform will use the `Palm` joint pose.
 
-
-
 ## Properties
 
 The following properties has been added to this component in order to acces hand joint information:

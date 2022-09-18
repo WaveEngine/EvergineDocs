@@ -100,6 +100,5 @@ XRPlatforms allows you to access more functionality that has been described befo
 In the following documents these areas will be covered:
 
 - **[Input Tracking](input_tracking/index.md)**
-- Spatial Mapping
-- Spatial Input
-- Spatial Anchor
+- **[Spatial Mapping](spatial_mapping.md)**
+- **[Spatial Anchors](spatial_anchors.md)**

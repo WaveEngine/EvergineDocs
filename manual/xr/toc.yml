@@ -3,3 +3,7 @@
 - name: Input Devices
   href: input_tracking/toc.yml
   homepage: input_tracking/index.md
+- name: Spatial Mapping
+  href: spatial_mapping.md
+- name: Spatial Anchors
+  href: spatial_anchors.md
