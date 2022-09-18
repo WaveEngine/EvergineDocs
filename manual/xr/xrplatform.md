@@ -13,16 +13,16 @@
 > Is it possible (and common), that some XRPlatform providers does not implement all functionality exposed by this service. For example: SteamVR implementation (Evergine.OpenVR extension) doesn't provide Spatial Mapping functionality or Hand Tracking) 
 
 
-## Camera HMD tracking
+## Camera3D and HMD tracking
 
 One of the main purposes of a XR platform is to track the head position and setup properly the render output to be displayed on the HMD device.
 
-With Evergine.XR, and using XRPlatform, you don't need to create special Components or creat XR Camera prefabs.
+With Evergine.XR, and using XRPlatform, you don't need to create special Components or instantiate XR Camera prefabs.
 
 You only need to create a common [Camera 3D](../graphics/cameras.md) of your scene, and XRPlatform will update every frame its properties to match the HMD devide properties. This approach has a lot of advantages, one of them are that you can develop your application with or without XR integration without any change in your scene.
 
 XRPlatform sets the following Camera properties:
-* **Camera Position & Orientation:** Updates the HMD device pose, including its position and orientation.
+* **Camera Position & Orientation:** Updates with the HMD device pose, including its position and orientation.
 * **Camera Projection:** The Camera Projection properties is changed to match the projection required by the device.
 
 If you register the XRPlatform display as the default Display, the Camera will render directly to the HMD device display.

@@ -1,13 +1,19 @@
 # TrackXRController
 
-This component is used to obtain the controller input state (buttons, triggers, etc...). It inherit from **[TrackXRDevice](trackxrdevice.md)**, so all the previous described functionality is maintained in this component.
-
 ![TrackXRController](images/trackxrcontroller.jpg)
 
-The only addition of this component is the following property:
+This component is used to track and obtain the controller input state (buttons, triggers, etc...). Most of VR platforms supports controller devices, such as Oculus Touchs, Vive Controllers, or Valve Idnex Controllers.
+
+## Properties
+When you add this component to your entity, you will show this in Evergine Studio:
+
+![TrackXRController](images/trackxrcontroller.png)
+
 
 | Property | Description |
 | --- | --- |
+| **Handedness** | With this property you will indicate the handedness of the device that you want to track: <ul><li>`LeftHand` to specify the left hand.</li><li>`RightHand` to specify the right hand.</li><li>`Undefined` if the device has no specific handedness.</li></ul> |
+| **TrackingLostMode** | Specify the strategy to follow in case that the device is not well tracked: <ul><li>`DisableEntityOnPoseInvalid` disable the entity if the tracked pose is not valid. In the case that the device is well tracked again, the entity will be enabled again. *This is the default value.*</li><li>`KeepLastPose` stop to track the entity if the pose is not valid, maintaining the entity with the last pose received.</li><li>`DisableEntityOnDisconnection` disable the entity only if the selected device is no longer connected.</li></ul> |
 | **ControllerState** | Structure that expose the controller input state. |
 
 ## Controller State
@@ -29,7 +35,7 @@ Give the user access to the following properties through the `XRControllerGeneri
 
 ## Using TrackXRController
 
-### Create a TrakcXRController from code
+### Create a TrackXRController from code
 In the following code you will find how to create an entity that track a controller from code:
 
 ```csharp
@@ -47,10 +53,9 @@ In the following code you will find how to create an entity that track a control
                 .AddComponent(new MaterialComponent() { Material = material })
                 .AddComponent(new TeapotMesh() { Size = 0.15f })
                 .AddComponent(new MeshRenderer())
-                .AddComponent(new TrackXRDevice()
+                .AddComponent(new TrackXRController()
                 {
-                    SelectionStrategy = TrackXRDevice.SelectionDeviceStrategy.ByHandedness,
-                    Handedness = Evergine.Framework.XR.XRHandedness.RightHand // select the left device
+                    Handedness = XRHandedness.LeftHand // select the left device
                 })
                 .AddComponent(new ScaleEntityWithController()); // Described in the next section :)
 
