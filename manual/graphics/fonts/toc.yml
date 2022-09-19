@@ -3,6 +3,4 @@
 - name: Font Editor
   href: font_editor.md
 - name: Create Text3D
-  href: create_text.md
-- name: Using Text3D
-  href: using_text3D.md
+  href: create_text3D.md

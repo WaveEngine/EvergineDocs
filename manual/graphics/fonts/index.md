@@ -1,4 +1,4 @@
-# Materials
+# Fonts and Texts
 ---
 ![Fonts and Texts](../images/fonts.jpg)
 
@@ -14,4 +14,3 @@ Default Evergine project template imports the [ **Evergine.Core** package](../..
 * [Import Fonts](import_fonts.md)
 * [Font Editor](font_editor.md)
 * [Create Text3D](create_text3D.md)
-* [Using Text3D](using_text3D.md)
