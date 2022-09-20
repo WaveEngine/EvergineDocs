@@ -2,6 +2,14 @@
 A **trackable** is something that can be tracked during application execution. This is, and object which changes on its position and orientation can be detected. Then, you can use that information to 
 add 3D elements assoiciated to those trackables. While a trackable is detected, its world transform matrix is updated depending on real-world object changes. There are different types of trackables that can be detected by _Evergine_: planes, images and faces. They all extend [XRTrackableItem](xref:Evergine.Framework.XR.TrackableItems.XRTrackableItem) as base class.
 
+## Supported Devices
+
+Currently in Evergine, the following devices has **Trackable Items** support:
+
+| Device | XR Platform |
+| --- | --- |
+| **Android** | ARCore |
+
 ## XRTrackableItem
 This base class holds information that is common to any trackable element.
 

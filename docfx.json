@@ -29,7 +29,8 @@
             "src/Extensions/Evergine.NoesisGUI/Evergine.NoesisGUI.csproj",
             "src/Extensions/Evergine.Vuforia/Evergine.Vuforia/Evergine.Vuforia.csproj",
             "src/Extensions/Evergine.Vuforia/VuforiaSharp/Evergine.VuforiaSharp.csproj",
-            "src/Extensions/Evergine.Networking/Evergine.Networking.csproj"
+            "src/Extensions/Evergine.Networking/Evergine.Networking.csproj",
+            "src/Extensions/Evergine.ARMobile/Evergine.ARMobile.csproj"
           ],
           "src": "../"
         }
