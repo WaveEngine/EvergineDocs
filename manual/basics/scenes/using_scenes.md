@@ -37,3 +37,4 @@ ScreenContext screenContext = new ScreenContext(scene, uiScene);
 screenContextManager.To(screenContext);
 
 ```
+For more details read the [ScreenContextManager](../application/screen_context_manager.md) section.

@@ -18,3 +18,4 @@ There can be only one instance of Application class in your Evergine project, an
 ## In this section
 * [Application Container](container.md)
 * [Using Application](using_application.md)
+* [ScreenContext Manager](screen_context_manager.md)
