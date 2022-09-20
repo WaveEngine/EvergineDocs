@@ -8,7 +8,7 @@ While HLSL is only supported by DirectX backends (DX11 and DX12), The effects ar
 
 ## Standard Effect
 
-Default evergine project template imports the [ **Evergine.Core** package](../../evergine_studio/packages.md) package and this package includes several effects like the [**Standard Effect**](builtin_effects.md) used by Default Material asset. Effects are a type of asset and have a dedicated Editor [Effect Editor](effect_editor.md).
+Default evergine project template imports the [ **Evergine.Core** package](../../addons/index.md) package and this package includes several effects like the [**Standard Effect**](builtin_effects.md) used by Default Material asset. Effects are a type of asset and have a dedicated Editor [Effect Editor](effect_editor.md).
 
 ## In this section
 

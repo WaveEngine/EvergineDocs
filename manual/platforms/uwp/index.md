@@ -18,7 +18,7 @@ You have to install target SDKs to build and run the application. You can find d
 ### Application deployment
 As a standard _UWP_ application, you can deploy your application in your local Windows device, in a remote device or in a physical device connected by _USB_ to your development machine.
 
-## Mixed Reality
+## <a name="Mixed-Reality"></a>Mixed Reality
 
 If you want to create an Evergine project for _HoloLens_ you should use _Mixed Reality_ template.
 

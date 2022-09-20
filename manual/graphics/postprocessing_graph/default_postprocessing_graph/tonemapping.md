@@ -56,6 +56,6 @@ A vignette is a decrease in brightness of a photograph towards its edges compare
 This is a visual effect that simulates the effect produced by the refraccion of the light. Refraction produces when you see through the vidrio or the fire smoke could be some examples of this effect.
 
 > [!Tip]
-> This effect required to use the **[Distortion Material](../../effects/builtin_effects.md)** include in the [**Evergine.core** package](../../../evergine_studio/packages.md)
+> This effect required to use the **[Distortion Material](../../effects/builtin_effects.md)** include in the [**Evergine.core** package](../../../addons/index.md)
 
 ![Distortion effect](images/Distortion.jpg)

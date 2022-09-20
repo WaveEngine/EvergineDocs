@@ -1,5 +1,5 @@
 # ARMobile (Preview)
-_ARMobile_ is an extension to work with _augmented reality_ experiences, so you will need compatible devices to run this kind of applications. By now, only supported platform is _Android (ARCore)_ but we also plan to support _iOS (ARKit)_ in the future. AR Mobile is based on [XR Platform](../xr/index.md).
+_ARMobile_ is an extension to work with _augmented reality_ experiences, so you will need compatible devices to run this kind of applications. By now, only supported platform is _Android (ARCore)_ but we also plan to support _iOS (ARKit)_ in the future. AR Mobile is based on [XR Platform](../../xr/index.md).
 
 > [!NOTE]
 > Please, note that _Evergine.ARMobile_ extension is in _preview_ state, so it has some limitations and known issues described at [Known issues](#known-issues).

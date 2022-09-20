@@ -34,7 +34,7 @@ However, some assets represents just abstract elements that can only be created 
 | [Effect](../../graphics/effects/index.md) | Contains a **HLSL shader**. It automatically translates to other shading languages like **GLSL**. They are also flavored with custom attributes and annotations for a better integration.
 | [Post Processing Graph](../../graphics/postprocessing_graph/index.md) | Defines a visual post processing graph node, using **compute shaders** for effects like _anti-aliasing_, _tone mapping_, _SSAO_, and many others.
 | [Material](../../graphics/materials/index.md) | Represents how a geometry is rendered. It references an Effect asset and describes its parameters like textures and values.
-| [Prefab](../../basics/component_arch/prefabs.md) | Contains an entity hierarchy that can be instanced in any scene.
+| [Prefab](../../basics/component_arch/prefabs/index.md) | Contains an entity hierarchy that can be instanced in any scene.
 | [Render Layer](../../graphics/render_layers.md) | Contains **Rasterizer**, **Blending**, **Depth** and **Stencil** information. Every material needs a Render Layer asset.
 | [Sampler State](../../graphics/samplers.md) | Element that represents a texture sampler state description, like **filtering**, **clamping** or **wrapping** information.|
 
