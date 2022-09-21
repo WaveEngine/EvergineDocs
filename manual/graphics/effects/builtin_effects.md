@@ -1,6 +1,6 @@
 # Built-in Effects
 ---
-In this section are described the effects included in [**Evergine.Core** package](../../evergine_studio/packages.md)
+In this section are described the effects included in [**Evergine.Core** package](../../addons/index.md)
 
 ## Standard Effect
 

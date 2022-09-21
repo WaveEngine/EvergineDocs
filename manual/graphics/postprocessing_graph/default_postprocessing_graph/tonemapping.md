@@ -17,7 +17,7 @@ In the above image the left side is the render without tonemapping applied and t
 | HDR Enabled | Enabled/Disabled mapping of High Dynamic Range (HDR) to Low Dynamic Range (LDR). |
 | Curve       | Defines how to map the image color to output image. There are the following curves availables: Reinhard, ReinhardSQ, LumaReinhard, Filmic, ACES, RombindAHouse. Default curve is ACES.|
 | LUT Enable  | Enabled/Disabled use the Lookup Table (LUT) Texture table to map de colors |
-| LUT Texture | Represents a Lookup Table (LUT) 16x16x16 color neutral unwrapped to a 256x16 texture. <br> There are two LUT Texture samples: <br>  HDR: ![LUT HDR](images/LUTHDR.png)  Vintage: ![LUT Vintage](images/LUTVintage.png)|
+| LUT Texture | Represents a Lookup Table (LUT) 16x16x16 color neutral unwrapped to a 256x16 texture. <br> There are two LUT Texture samples: <br>  <p>HDR: ![LUT HDR](images/LUTHDR.png)</p><p>Vintage: ![LUT Vintage](images/LUTVintage.png)</p>|
 
 ## Chromatic aberration
 
