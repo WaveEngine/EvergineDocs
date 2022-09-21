@@ -57,7 +57,8 @@ Under _Dependencies > Evergine.ARMobile > AR_ you will find default images datas
 - First column is the relative path to the image file. Second column is expected image size in real world, measured in meters. So, for default image, we expect it to be 20 centimeters wide.
 - For each one of the images, we use file name (without extension) as image name, that we internally register in dataset database. This is why default _ImageName_ value for _XRImageTracking_ component in _Image_ prefab is _arimage_, as this is the file name for default image in _Evergine.ARMobile_ add-on.
 
-If you want a custom set of images, just create your own dataset within your project folders. Then, you have to change _ImageDataSetPath_ value in _ARMobileManager_ scene manager to meet your dataset path.
+If you want a custom set of images, just create your own dataset within your project folders. Then, you have to change _ImageDataSetPath_ value in _ARMobileManager_ scene manager to meet your dataset path. To ensure your images are optimal for tracking, please follow platform recommendations:
+- Android: use [arcoreimg tool](https://developers.google.com/ar/develop/augmented-images/arcoreimg) to evaluate your images quality.
 
 ### Planes prefab
 We provide this prefab to visualize detected planes. For this, drag and drop _Planes_ prefab to your scene and set its position to (0, 0, 0). Then, go to _Scene Managers_ and 
