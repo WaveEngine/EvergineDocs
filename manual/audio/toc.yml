@@ -1,7 +1,10 @@
-- name: Sound Components
-  href: sound_components.md
-- name: Audio 3D
-  href: audio_3d.md
-- name: Sounds
-  href: sounds/toc.yml
-  homepage: sounds/index.md
+- name: Import Audios
+  href: import_audio.md
+- name: Audio Editor
+  href: audio_editor.md
+- name: Using Audio 3D
+  href: using_audio3d.md
+- name: Create Audio from Code
+  href: audio_from_code.md
+- name: Using Audio 2D from Code
+  href: using_audio2d.md

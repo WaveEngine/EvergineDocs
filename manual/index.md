@@ -18,8 +18,8 @@ You can read it from start to finish, or use it as a reference
 - [Platforms](platforms/index.md)
 - [Graphics](graphics/index.md)
 - [Input](input/index.md)
-<!-- - [Audio](audio/index.md)
-- [Animation](animation/index.md)
+- [Audio](audio/index.md)
+<!--- [Animation](animation/index.md)
 - [Physics](physics/index.md) -->
 - [XR](xr/index.md)
 - [Extensions](extensions/index.md)

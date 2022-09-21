@@ -1,8 +1,0 @@
-- name: Import a Sound
-  href: import_sound.md
-- name: Using Sounds
-  href: using_sounds.md
-- name: How to create a sound from code
-  href: create_sound_from_code.md
-- name: Sound Editor
-  href: sound_editor.md

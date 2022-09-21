@@ -2,12 +2,12 @@
 ---
 ![Fonts header](../images/fonts.jpg)
 
-The **font** asset allow you render text in your project using differents font families and styles.
+The **font** asset allows you render text in your project using differents font families and styles.
 
 ## Import a Font asset in Evergine Studio
-You can create a font by dragging a font file to the [Assets Details](../../evergine_studio/interface.md) panel, as explained [in this article](../../evergine_studio/assets/create.md).
+You can create a font asset by dragging a font file to the [Assets Details](../../evergine_studio/interface.md) panel, as explained [in this article](../../evergine_studio/assets/create.md).
 
-![Create new material menu option](images/import_fonts.png)
+![Create new font menu option](images/import_fonts.png)
 
 ## Font files in content directory
 **Fonts** imported in **Evergine** create an aditional metadata `.weft` file.
