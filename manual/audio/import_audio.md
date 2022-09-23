@@ -2,7 +2,7 @@
 ---
 ![Audio header](images/importAudios.jpg)
 
-The **Audio** asset allows you play sounds effects and music in your project.
+The **Audio** asset allows you to play sound effects and music in your project.
 
 ## Import a Audio asset in Evergine Studio
 You can create an audio asset by dragging an audio file to the [Assets Details](../../evergine_studio/interface.md) panel, as explained [in this article](../../evergine_studio/assets/create.md).

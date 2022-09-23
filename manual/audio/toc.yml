@@ -2,9 +2,7 @@
   href: import_audio.md
 - name: Audio Editor
   href: audio_editor.md
-- name: Using Audio 3D
-  href: using_audio3d.md
-- name: Create Audio from Code
-  href: audio_from_code.md
-- name: Using Audio 2D from Code
-  href: using_audio2d.md
+- name: Using Audio from Evergine Studio
+  href: using_audio_from_editor.md
+- name: Using Audio from Code
+  href: using_audio_from_code.md
