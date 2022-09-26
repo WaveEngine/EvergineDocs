@@ -20,7 +20,7 @@ This widget display a 3D cube in a corner of the screen that represent the view 
 
 ## ImGuizmo widget
 
-This widget allow you to draw 3D helpers useful to move, scale and transform 3D geometry, this widgets compute the result 4x4 Matrix to make it easy to apply it to the geometry. 
+This widget allow you to draw 3D helpers useful to move, scale and transform 3D geometry, this widgets compute the result 4x4 Matrix to make it easy to apply it to the geometry.
 
 ![ImGuizmo](images/ImGuizmo_1.gif)
 ![ImGuizmo](images/ImGuizmo_2.gif)
