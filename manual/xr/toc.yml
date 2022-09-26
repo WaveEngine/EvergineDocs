@@ -1,5 +1,8 @@
 - name: XR Platform
   href: xrplatform.md
+- name: XR Integrations
+  href: integrations/toc.yml
+  homepage: integrations/index.md
 - name: Input Devices
   href: input_tracking/toc.yml
   homepage: input_tracking/index.md
