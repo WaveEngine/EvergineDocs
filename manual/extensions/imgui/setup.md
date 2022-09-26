@@ -1,10 +1,7 @@
-# ImGUI
---
+# Getting Started
+---
 
-Dear ImGui is an immediate-mode graphical user interface library that is very lightweight and easy to use. It can be very useful when creating debugging tools.
-You will find more information about the original library used by this extension at [the github project](https://github.com/ocornut/imgui).
-
-![Graphics](images/imgui.png)
+![Graphics](images/imgui_features.png)
 
 ## Install Evergine.ImGUI extension
 
@@ -61,7 +58,7 @@ ImGui.End();
 
 And this is the result:
 
-![Graphics](images/imgui-simple.png)
+![Graphics](images/imgui_simple.png)
 
 <br><br>
 
@@ -100,7 +97,7 @@ ImGui.End();
 
 This is the result:
 
-![Graphics](images/imgui-pathtracerui.png)
+![Graphics](images/imgui_pathtracerui.png)
 
 Take a look this in our [path tracer demo](https://github.com/EvergineTeam/Raytracing).
 
