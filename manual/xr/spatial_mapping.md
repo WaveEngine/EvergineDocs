@@ -18,7 +18,7 @@ To start using Spatial Mapping in your application, you only need to create an E
 
 ![SpatialMapping Component in Evergine Studio](images/spatialmapping_component.png)
 
-This component will request to the XR Platform a collection of Spatial Mapping surfaces, wich consist in meshes that conforms the detected environment by the XR Device. Internally, this component will create a collection of child entities, each one is responsible to maintain and render a single surface with the giving properties wich will be described after.
+This component will request to the XR Platform a collection of Spatial Mapping surfaces, which consist in meshes that conforms the detected environment by the XR Device. Internally, this component will create a collection of child entities, each one is responsible to maintain and render a single surface with the giving properties which will be described after.
 
 ![SpatialMapping](images/spatial-mapping-500px.png)
 
@@ -32,8 +32,8 @@ The following properties specify how the spatial mapping meshes will be generate
 | --- | --- |
 | **TrianglesPerCubicMeter** (Default 500) | The triangles per cubic meter of the generated Spatial Mapping Meshes. With this property you can control the overall quality of the generated meshes. <br/> Lower values generate meshes with less quality but increase the overall performance, and greater values provides a better spatial mapping quality, but with a performance penalty. *Default value is 500* |
 | **ObtainNormals** (Default true) |  Indicates that the generated mesh will provides normals. *Default value is `true`* |
-| **Extends** (Default [6, 5, 6]) | This property define a volume area (measured in meters) centered in the XR Device user in wich all spatial mapping surfaces are updated and generated. Distant surfaces are discarded to prevent a performance penalty. *Default value is an area of 6m x 5m x 6m* |
-| **Material** | Specify wich material will be used to render the Spatial Mapping meshes. If no material is provided, the spatial mapping surfaces won't be rendered. *Default value is `null`* |
+| **Extends** (Default [6, 5, 6]) | This property define a volume area (measured in meters) centered in the XR Device user in which all spatial mapping surfaces are updated and generated. Distant surfaces are discarded to prevent a performance penalty. *Default value is an area of 6m x 5m x 6m* |
+| **Material** | Specify which material will be used to render the Spatial Mapping meshes. If no material is provided, the spatial mapping surfaces won't be rendered. *Default value is `null`* |
 
 #### Update Mesh properties
 
@@ -41,7 +41,7 @@ The following properties indicates how often the spatial mapping surfaces will b
 
 | Property | Description |
 | --- | --- |
-| **UpdateInterval** (Default 0) | Frequency (in seconds) in wich SpatialMapping component will update its surfaces. In case of 0, the spatial mapping will not be updated (keeping the first requested spatial mapping surfaces). Increase this value *Default value is 0* |
+| **UpdateInterval** (Default 0) | Frequency (in seconds) in which SpatialMapping component will update its surfaces. In case of 0, the spatial mapping will not be updated (keeping the first requested spatial mapping surfaces). Increase this value *Default value is 0* |
 | **MaxSurfaceUpdatesPerFarame** (Default 1) |  Indicate how many surfaces will be processed per frame. When SpatialMapping request an update, it gives a list of surfaces that require to update. Setting this value allows you to control how many surfaces will be processed in a single frame. This prevents the application to increase the CPU usage and cause a FPS drop. *Default value is 1* |
 
 #### Collision Mesh properties
@@ -50,9 +50,9 @@ One of most important utilities for Spatial Mapping is to generate Physics colli
 
 | Property | Description |
 | --- | --- |
-| **GenerateColliders** (Default false) | Indicates if physic colliders will be generated for detected spatial mapping surfaces. Generating colliders has an important performance penalty, so we reconmend to only enable colliders if it is neccesary  *Default value is `false`* |
-| **CollisionCategory** (Default Cat1) |  Specify the CollisionCategory property of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). *Default value is `Cat1`* |
-| **MaskBits** (Default All) |  Specify the MaskBits propery of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). *Default value is `All`* |
+| **GenerateColliders** (Default false) | Indicates if physic colliders will be generated for detected spatial mapping surfaces. Generating colliders has an important performance penalty, so we recommend to only enable colliders if it is necessary  *Default value is `false`* |
+| **CollisionCategory** (Default Cat1) |  Specify the CollisionCategory property of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physic_bodies/collision_filtering.md) for further details. *Default value is `Cat1`* |
+| **MaskBits** (Default All) |  Specify the MaskBits properly of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physic_bodies/collision_filtering.md) for further details. *Default value is `All`* |
 
 ## Using SpatialMapping from code
 

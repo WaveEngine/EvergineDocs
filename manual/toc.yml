@@ -22,9 +22,9 @@
 #- name: Animation
 #  href: animation/toc.yml
 #  homepage: animation/index.md
-#- name: Physics
-#  href: physics/toc.yml
-#  homepage: physics/index.md
+- name: Physics
+  href: physics/toc.yml
+  homepage: physics/index.md
 - name: XR
   href: xr/toc.yml
   homepage: xr/index.md
