@@ -36,6 +36,6 @@ As we mentioned before, a physic body itself doesn't define its shape. The entit
 * [Rigid Bodies](rigid_bodies.md)
 * [Static Bodies](static_bodies.md)
 * [Character Controller](character_controller.md)
-* [Collision filtering](collision_filtering.md)
+* [Collisions](collisions.md)
 * [Sensors](sensors.md)
 * [Using Physic Bodies](using_physic_bodies.md)
