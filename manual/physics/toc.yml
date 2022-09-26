@@ -1,10 +1,10 @@
+- name: PhysicManager and Bullet
+  href: physicmanager_bullet.md
 - name: Physic Bodies
   href: physic_bodies/toc.yml
   homepage: physic_bodies/index.md
 - name: Colliders
   href: colliders/toc.yml
   homepage: colliders/index.md
-- name: PhysicManager and Bullet
-  href: physicmanager_bullet.md
 - name: Queries
   href: queries.md
