@@ -64,6 +64,7 @@ It's like having a 1x1x1 cube and a vector with the sampling direction at its ce
 
 ## Texture 3D
 ![Texture 3D](Images/texture3D.png)
+
 A **3D Texture** is an image that contains information in three dimensions rather the standard two.
 
 #### Usage

@@ -17,7 +17,7 @@ In the above image the left side is the render without tonemapping applied and t
 | HDR Enabled | Enabled/Disabled mapping of High Dynamic Range (HDR) to Low Dynamic Range (LDR). |
 | Curve       | Defines how to map the image color to output image. There are the following curves availables: Reinhard, ReinhardSQ, LumaReinhard, Filmic, ACES, RombindAHouse. Default curve is ACES.|
 | LUT Enable  | Enabled/Disabled use the Lookup Table (LUT) Texture table to map de colors |
-| LUT Texture | Represents a Lookup Table (LUT) 16x16x16 color neutral unwrapped to a 256x16 texture. <br> There are two LUT Texture samples: <br>  HDR: ![LUT HDR](images/LUTHDR.png)  Vintage: ![LUT Vintage](images/LUTVintage.png)|
+| LUT Texture | Represents a Lookup Table (LUT) 16x16x16 color neutral unwrapped to a 256x16 texture. <br> There are two LUT Texture samples: <br>  <p>HDR: ![LUT HDR](images/LUTHDR.png)</p><p>Vintage: ![LUT Vintage](images/LUTVintage.png)</p>|
 
 ## Chromatic aberration
 
@@ -56,6 +56,6 @@ A vignette is a decrease in brightness of a photograph towards its edges compare
 This is a visual effect that simulates the effect produced by the refraccion of the light. Refraction produces when you see through the vidrio or the fire smoke could be some examples of this effect.
 
 > [!Tip]
-> This effect required to use the **[Distortion Material](../../effects/builtin_effects.md)** include in the [**Evergine.core** package](../../../evergine_studio/packages.md)
+> This effect required to use the **[Distortion Material](../../effects/builtin_effects.md)** include in the [**Evergine.core** package](../../../addons/index.md)
 
 ![Distortion effect](images/Distortion.jpg)

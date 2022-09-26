@@ -21,7 +21,7 @@ Evergine libraries are distributed using [NuGet package system](https://nuget.or
 ![NuGet packages](images/nugets.jpg)
 
 > [!CAUTION]
-> To update the version of your **Evergine application**, use [Evergine Launcher](../evergine_launcher/index.md) instead of NuGet Package Manager in Visual Studio.
+> To update the version of your **Evergine application**, use [Evergine Launcher](../evergine_launcher/manage_versions.md) evergine_launcher/index.md) instead of NuGet Package Manager in Visual Studio.
 
 ## In this section
 

@@ -4,7 +4,7 @@
 
 Evergine Studio's interface uses dockable panels to organize different section so you can create your own layout with the panel location that you prefer. The above image shows the default layout and his main panels are:
 
-* **Project Explorer**: Is used to manage the [assets](assets/index.md) and [packages](packages.md) of the current project.
+* **Project Explorer**: Is used to manage the [assets](assets/index.md) and [packages](../addons/index.md) of the current project.
 * **Assets Details**: Shows the assets of the current folder selected on Project Explorer. Allow you open, rename or create new assets.
 * **Asset Editor**: Is used to edit assets (scenes, materials, textures, etc..). Some asset types, such as scenes, have dedicated editors where you can edit it. To open a dedicated editor (when available), double-click the asset in the **Asset Details** region.
 

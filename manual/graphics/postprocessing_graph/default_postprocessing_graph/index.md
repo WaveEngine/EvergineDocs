@@ -2,7 +2,7 @@
 ---
 ![Default Postprocessing graph](images/defaultPostprocessingGraph.jpg)
 
-Default Evergine project template imports the [**Evergine.Core** package](../../../evergine_studio/packages.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project.
+Default Evergine project template imports the [**Evergine.Core** package](../../../addons/index.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project.
 
 ## Default Postprocessing effects
 The complete list of postprocessing effects cover by the default postprocessing graph are:

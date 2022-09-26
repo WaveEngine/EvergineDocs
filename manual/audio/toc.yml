@@ -1,7 +1,8 @@
-- name: Sound Components
-  href: sound_components.md
-- name: Audio 3D
-  href: audio_3d.md
-- name: Sounds
-  href: sounds/toc.yml
-  homepage: sounds/index.md
+- name: Import Audios
+  href: import_audio.md
+- name: Audio Editor
+  href: audio_editor.md
+- name: Using Audio from Evergine Studio
+  href: using_audio_from_editor.md
+- name: Using Audio from Code
+  href: using_audio_from_code.md

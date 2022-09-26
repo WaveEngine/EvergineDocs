@@ -16,9 +16,9 @@
 - name: Input
   href: input/toc.yml
   homepage: input/index.md
-#- name: Audio
-#  href: audio/toc.yml
-#  homepage: audio/index.md
+- name: Audio
+  href: audio/toc.yml
+  homepage: audio/index.md
 #- name: Animation
 #  href: animation/toc.yml
 #  homepage: animation/index.md

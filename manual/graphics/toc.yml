@@ -45,7 +45,7 @@
 - name: Billboards
   href: billboard/toc.yml
   homepage: billboard/index.md
-- name: Fonts
+- name: Fonts and Texts
   href: fonts/toc.yml
   homepage: fonts/index.md
 - name: Low-level API
