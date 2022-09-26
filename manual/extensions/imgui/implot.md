@@ -19,9 +19,15 @@ A **line plot** or chart plot is a type of chart which displays information as a
 ![Implot](images/LinePlots.png)
 
 ## Filled Line Plots
+
+A **Filled Line Plot** or area chart displays graphically quantitative data. It is based on the line chart. The area between axis and line are commonly emphasized with colors. Commonly one compares two or more quantities with an area chart.
+
 ![Implot](images/FilledLinePlots.png)
 
 ## Shaded Plots
+
+A **Shaded Plot** is a type of chart which display graphically the difference between to series based on lines. The area between two lines of the same graph is colored to highlight when they are further apart.
+
 ![Implot](images/ShadedPlots.png)
 
 ## Scatter Plots
@@ -31,30 +37,51 @@ A **scatter plot** is a type of plot or mathematical diagram using Cartesian coo
 ![Implot](images/ScatterPlots.png)
 
 ## Realtime Plots
+
+A **Realtime Plot** or Realtime chart is a type of chart which display information as a series with data capture in realtime. It is chart common to display fps (Frames per seconds) or other type of measurements in a graphic application.
+
 ![Implot](images/RealtimePlots.png)
 
 ## Stairstep Plots
+
+A **Stairstep plot** is a type of chart which represent digital signals that advancing discreetly by jumps or steps in an stairs.
+
 ![Implot](images/StairstepPlots.png)
 
 ## Bar Plots
 
-A bar chart or bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally.
+A **bar plot** or bar chart is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally.
 
 ![Implot](images/BarPlots.png)
 
 ## Bar Groups
+
+A **bar groups** or clustered chart is similar to a bar chart but in this case the bars in the same category are drawn together.
+ 
 ![Implot](images/BarGroups.png)
 
 ## Bar Stacks
+
+A **bar stack** is based on bar plot but in this case it stacks bars on top of each other so that the height of the resulting stack shows the combined result. Stacked bar charts are not suited to data sets having both positive and negative values.
+
 ![Implot](images/BarStacks.png)
 
 ## Error Bars
+
+A **Error bar chart** is a type of chart used to visualize series of data and the distance to errors in those data.
+ 
 ![Implot](images/ErrorBars.png)
 
 ## Stem Plots
+
+A **Stem plot** is a type of chart used to compare two or more stem series in the same chart. It is using vertical lines to highlight the area between the stem series.
+
 ![Implot](images/StemPlots.png)
 
 ## Infinite Lines
+
+A **Infinite line chart** is used to show a grid and the values are represented by horizontal lines as a constant values.
+
 ![Implot](images/InfiniteLines.png)
 
 ## Pie Charts
@@ -71,15 +98,17 @@ A heat map (or heatmap) is a data visualization technique that shows magnitude o
 
 ## Histogram
 
-A histogram is an approximate representation of the distribution of numerical data.
+A **histogram** is an approximate representation of the distribution of numerical data.
 To construct a histogram, the first step is the range of values that divide the entire range of values into a series of intervals and then count how many values fall into each interval.
 
 ![Implot](images/Histogram.png)
 
 ## Histogram 2D
 
-
+A **Histogram 2D chart** is similar to the histogram chart but in this case information from a legend is also displayed that allow you understand the colors displays. 
 ![Implot](images/Histogram2D.png)
 
 ## Digital Plots
+
+A **Digital Plot** is a type of chart which display digital or analog signal over time. This is useful to show electronic signal inside an application.
 ![Implot](images/DigitalPlots.png)
