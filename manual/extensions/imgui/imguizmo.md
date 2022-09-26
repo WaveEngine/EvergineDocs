@@ -5,8 +5,8 @@
 
 This add-on also allow you to use the ImGuizmo library, this is a collection of 3D widgets on top o ImGUI library, this project and source code is available on github at: https://github.com/CedricGuillemet/ImGuizmo.
 
-> Note
-> The C# wrapper is generated on top of a c-api wrapper version of this library, so some samples cannot be work directly but all the features are supported.
+> [!NOTE]
+> The C# wrapper is generated on top of a c-api wrapper version of this library, so some samples may not work directly but all the features are supported.
 
 ## Features
 
