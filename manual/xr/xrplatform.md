@@ -19,7 +19,7 @@ One of the main purposes of a XR platform is to track the head position and setu
 
 With Evergine.XR, and using XRPlatform, you don't need to create special Components or instantiate XR Camera prefabs.
 
-You only need to create a common [Camera 3D](../graphics/cameras.md) of your scene, and XRPlatform will update every frame its properties to match the HMD devide properties. This approach has a lot of advantages, one of them are that you can develop your application with or without XR integration without any change in your scene.
+You only need to create a common [Camera 3D](../graphics/cameras.md) of your scene, and XRPlatform will update every frame its properties to match the HMD device properties. This approach has a lot of advantages, one of them are that you can develop your application with or without XR integration without any change in your scene.
 
 XRPlatform sets the following Camera properties:
 * **Camera Position & Orientation:** Updates with the HMD device pose, including its position and orientation.
@@ -33,7 +33,7 @@ You can access to useful information of the current XR session by using the foll
 
 ### General properties
 
-| Propery | Description |
+| Property | Description |
 |--- | --- | --- |
 | **Display** | Returns the display that will be configured to render in the XR device. In order to render your scene, you need to setup your camera to render in that Display. It is done by default if you register the XR Display as the "DefaultDisplay" |
 | **MirrorDisplay** | This display will be used to mirror the content that is rendering in the XR device. Additionally, it is used too to provide access to [Input dispatchers](../input/index.md) in your application. |
@@ -45,17 +45,17 @@ You can access to useful information of the current XR session by using the foll
 
 You can access to properties regarding the HMD device:
 
-| Propery | Description |
+| Property | Description |
 |--- | --- | --- |
 | **TrackingState** | Gets the current device tracking state. It can indicates several tracking status, such as that everything is OK, or for contrary, the device is not initialized or can be out of range. |
 | **HeadGaze** | Ray that point from the head position to the direction of the device is facing. |
-| **EyeCount** | Number of eyes that this device will be rendered. In most commong XR applications, the number is 2. |
+| **EyeCount** | Number of eyes that this device will be rendered. In most common XR applications, the number is 2. |
 
 ### Eye Gaze
 
 Some XR devices has the possibility to track the eye look direction (HoloLens2 for instance). in that cases
 
-| Propery | Description |
+| Property | Description |
 |--- | --- | --- |
 | **EyeGaze** | Gets a ray that indicates the position and direction that the user are looking with their eyes. |
 | **IsEyeGazeValid** | Boolean that indicates if the eye gaze is providing valid values. This can be false in case that the eye is not well tracked, or in the case that the device doesn't support this feature, or doesn't have permission to track eyes. |

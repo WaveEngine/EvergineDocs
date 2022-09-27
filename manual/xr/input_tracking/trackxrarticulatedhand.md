@@ -91,9 +91,7 @@ Using the `XRDeviceRenderableModel` component add the possibility to obatains a 
 > [!Note]
 > You can add to the entity an optional `MaterialComponent` component, to specify which material will be used to render the hand meshes. If this component is not provided, they will be rendered by the default material.
 
-<video width="512" height="512" autoplay loop>
-  <source src="images/renderhandsvideo.mp4" type="video/mp4">
-</video>
+<video width="512" height="512" autoplay loop><source src="images/renderhandsvideo.mp4" type="video/mp4"></video>
 
 #### Render Hands from code
 

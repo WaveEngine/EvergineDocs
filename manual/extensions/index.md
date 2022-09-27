@@ -4,9 +4,8 @@
 
 Apart from this, Evergine gives several Extensions that provide integration and functionality with different technologies or libraries, but are too specific to be part of the main Evergine packages.
 
-
 ## In this section
 
+* [ARMobile](armobile/index.md)
 * [Networking](networking.md)
-* [ImGUI](imgui.md)
-<!-- * [OpenXR](openxr.md) -->
+* [ImGUI](imgui/index.md)

@@ -59,7 +59,7 @@ protected override void CreateScene()
 
 ## Low-Level Spatial Anchors
 
-While the most usual way to access to Spatia Anchors is using the `TrackSpatialAnchor`component, you can access to a low-level way that provides more functionality.
+While the most usual way to access to Spatial Anchors is using the `TrackSpatialAnchor`component, you can access to a low-level way that provides more functionality.
 
 The `XRPlatform.SpatialAnchorStore` gives access to all low-level functionality implemented by the XR Platform. If this property is `null` the XR device doesn't support Spatial Anchor.
 
@@ -81,7 +81,7 @@ This class represent a spatial anchor that can be persisted or updated in your X
 | --- | --- |
 | **SavedAnchors** | Read only dictionary <string, SpatialAnchor> that returns all stored anchors in this device. |
 | **CreateSpatialAnchor()** | Create a SpatialAnchor instance in the specified position and orientation. This method only create the SpatialAnchor instance, **but not persist this anchor in the device** |
-| **StoreAnchor(id, anchor)** | Store the specified SpatialAnchor instance with the given identifier. After this method, this anchor will be persisted and can be accessed everytime the application runs. |
+| **StoreAnchor(id, anchor)** | Store the specified SpatialAnchor instance with the given identifier. After this method, this anchor will be persisted and can be accessed every time the application runs. |
 | **RemoveAnchor(id)** | Remove a stored anchor with the given identifier. |
 | **RemoveAllAnchors()** | Remove all persisted anchors in this device. |
 
@@ -130,7 +130,7 @@ protected override void Start()
     }
 
     var material = this.Managers.AssetSceneManager
-        .Load<Material>(EvergineContneet.DefaultMaterialID);
+        .Load<Material>(EvergineContent.DefaultMaterialID);
 
     foreach (var anchorId in this.spatialAnchorStore.SavedAnchors.Keys)
     {
