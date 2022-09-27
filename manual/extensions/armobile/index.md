@@ -1,8 +1,8 @@
-# ARMobile (Preview)
+# ARMobile (Experimental)
 _ARMobile_ is an extension to work with _augmented reality_ experiences, so you will need compatible devices to run this kind of applications. By now, only supported platform is _Android (ARCore)_ but we also plan to support _iOS (ARKit)_ in the future. AR Mobile is based on [XR Platform](../../xr/index.md).
 
 > [!NOTE]
-> Please, note that _Evergine.ARMobile_ extension is in _preview_ state, so it has some limitations and known issues described at [Known issues](#known-issues).
+> Please, note that _Evergine.ARMobile_ extension is in _experimental_ state, so it has some limitations and known issues described at [Known issues](#known-issues).
 
 ## Create a project using ARMobile
 To make it easier to create _ARMobile_ projects, we have created a new project template for _Android ARCore_. It works with _OpenGL_ as graphics backend, due to limitations related with _ARCore_, that does not support _Vulkan_.
@@ -67,7 +67,7 @@ select a plane detection mode.
 Prefab counts with a [XRPlaneRenderer](xref:Evergine.Components.XR.XRPlaneRenderer) that lets you change the material used to draw the planes.
 
 ## Known issues
-As _ARMobile_ extension is in a _preview_ state, you could find some issues while running applications. This is a list of known issues:
+As _ARMobile_ extension is in _experimental_ state, you could find some issues while running applications. This is a list of known issues:
 - Application crashes when returning back from background.
 - You will find, in Debug configuration, some _Google.AR.Core.Exceptions.DeadlineExceededException_ exceptions that are written to output console, depending on _ARMobileManager_ configuration.
-- When dragging AR prefabs to the scene, you need to ensure that their _Transform3D_ location is set to (0, 0, 0) position. Any other position could provoke an _OpenGL_ rendering issue that results in a fullscreen green texture.
+- When dragging AR prefabs to the scene, you need to ensure that their _Transform3D_ location is set to (0, 0, 0) position. Any other position could provoke an _OpenGL_ rendering issue that results in a full screen green texture.
