@@ -10,40 +10,50 @@ You can create a material click button on ![Plus Icon](../images/plusIcon.jpg) f
 ![Create new particle system menu option](images/create_particles.png)
 
 ### Inspect Particle Systems in Asset Details
-You can find the material assets in the [**Assets Details**](../../evergine_studio/interface.md) panel when you select a folder in the [**Project Explorer**](../../evergine_studio/interface.md).
+You can find the particle system assets in the [**Assets Details**](../../evergine_studio/interface.md) panel when you select a folder in the [**Project Explorer**](../../evergine_studio/interface.md).
 
-![Material asset](images/materialAsset.jpg)
+![Material asset](images/list_particles.png)
 
 ### Particle System files in content directory
-The material file has the `.wemt` extension.
+The particle system file has the `.weps` extension.
 
-![Material file](images/materialFile.jpg)
+![Material file](images/list_files.png)
 
 ## Create a new Particle System from code
-The following sample code can be used to create a new material and apply to an entity in your scene.
-In that case the material will be created using the **StandardEffect** effect and the **Opaque** render layer:
+The following sample code can be used to create a new particle system and apply to an entity in your scene:
 
 ```csharp
-protected override void CreateScene()
+var assetsService = Application.Current.Container.Resolve<AssetsService>();
+var graphicsContext = Application.Current.Container.Resolve<GraphicsContext>();
+
+// Sets its particle emitter.
+ParticleEmitterDescription emitterDesc = new ParticleEmitterDescription()
 {
-    var assetsService = Application.Current.Container.Resolve<AssetsService>();
+    ParticleTexture = EvergineContent.Textures.particle_png,
+    ParticleSampler = EvergineContent.Samplers.LinearClampSampler,
+    RenderLayer = EvergineContent.RenderLayers.Alpha,
 
-    // Load the effect...
-    Effect standardEffect = assetsService.Load<Effect>(EvergineContent.Effects.StandardEffect);
+    MaxParticles = 1000,
 
-    // Load a Render Layer description...
-    RenderLayerDescription layer = assetsService.Load<RenderLayerDescription>(EvergineContent.RenderLayers.Opaque);
+    InitLife = 2,
+    InitSpeed = 1,
+    InitSize = 0.1f,
+    InitColor = Color.Red,
+};
 
-    // Create your own material...
-    Material material = new Material(standardEffect);
-    material.LayerDescription = layer;
+ParticlesEmitter emitter = new ParticlesEmitter(emitterDesc, graphicsContext, assetsService);
 
-    // Apply to an entity
-    Entity primitive = new Entity()
-            .AddComponent(new Transform3D())
-            .AddComponent(new MaterialComponent() { Material = material })  
-            .AddComponent(new SphereMesh())
-            .AddComponent(new MeshRenderer());
+// Creates the asset and sets its emitter.
+ParticleSystem pAsset = new ParticleSystem();
+pAsset.AddEmitter(emitter);
 
-    this.Managers.EntityManager.Add(primitive);
-}
+// Apply to an entity
+Entity pSystem = new Entity()
+        .AddComponent(new Transform3D())
+        .AddComponent(new ParticlesComponent()
+        {
+            ParticleSystem = pAsset
+        })
+        .AddComponent(new ParticlesRenderer());
+
+this.Managers.EntityManager.Add(pSystem);
