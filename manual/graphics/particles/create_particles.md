@@ -17,7 +17,7 @@ You can find the particle system assets in the [**Assets Details**](../../evergi
 ### Particle System files in content directory
 The particle system file has the `.weps` extension.
 
-![Material file](images/list_files.png)
+![Material file](images/list_files.png) 
 
 ## Create a new Particle System from code
 The following sample code can be used to create a new particle system and apply to an entity in your scene:
@@ -44,16 +44,6 @@ ParticleEmitterDescription emitterDesc = new ParticleEmitterDescription()
 ParticlesEmitter emitter = new ParticlesEmitter(emitterDesc, graphicsContext, assetsService);
 
 // Creates the asset and sets its emitter.
-ParticleSystem pAsset = new ParticleSystem();
-pAsset.AddEmitter(emitter);
-
-// Apply to an entity
-Entity pSystem = new Entity()
-        .AddComponent(new Transform3D())
-        .AddComponent(new ParticlesComponent()
-        {
-            ParticleSystem = pAsset
-        })
-        .AddComponent(new ParticlesRenderer());
-
-this.Managers.EntityManager.Add(pSystem);
+ParticleSystem particleSystem = new ParticleSystem();
+particleSystem.AddEmitter(emitter);
+```
