@@ -1,7 +1,7 @@
 # Features
 ---
 
-Let's take a look at the ImGui controls:
+There are a list of different controls that you can create with just a few lines of codes, here is the complete list:
 
 ## Window
 

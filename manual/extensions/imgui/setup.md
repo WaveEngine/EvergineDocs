@@ -8,7 +8,7 @@
 To start using this extension, just add Evergine.ImGui package to your project using NuGet package manager from Visual Studio.
 
 ```xml
-<PackageReference Include="Evergine.ImGui" Version="2021.11.17.2-preview" />
+<PackageReference Include="Evergine.ImGui" Version="2022.9.28.1" />
 ```
 
 Register the ImGuiManager on your scene:
@@ -18,8 +18,14 @@ public class ImGuiSceneTest : Scene
 {
     public override void RegisterManagers()
     {
-        this.Managers.AddManager(new ImGuiManager());
         base.RegisterManagers();
+        this.Managers.AddManager(new global::Evergine.Bullet.BulletPhysicManager3D());
+        this.Managers.AddManager(new ImGuiManager()
+        {
+            ImGuizmoEnabled = true,
+            ImPlotEnabled = true,
+            ImNodesEnabled = true,
+        });
     }
 ...
 }
@@ -34,7 +40,9 @@ using ImGuiNET;
 Now you can start calling the ImGui API from everywhere using the static reference:
 
 ```csharp
-ImGui.ShowDemoWindow();
+private bool imguiDemoOpen;
+...
+ImguiNative.igShowDemoWindow(this.imguiDemoOpen.Pointer());
 ```
 
 ## Usage
@@ -44,16 +52,18 @@ The UI is generated every frame and all the controls between Begin and End will 
 Here you have a simple example:
 
 ```csharp
-ImGui.Begin("Debug");
+bool open = true;
+ImguiNative.igBegin("Debug", open.Pointer(), ImGuiWindowFlags.None);
 
-ImGui.Text("Hello, world 123");
-if (ImGui.Button("Save"))
+ImguiNative.igText("Hello, world 123");
+if (ImguiNative.igButton("Save", Vector2.Zero))
 {
     // MySaveFunction();
 }
-ImGui.SliderFloat("float", ref f, 0.0f, 1.0f);
+float f = 0.5f;
+ImguiNative.igSliderFloat("float", &f, 0.0f, 1.0f, null, ImGuiSliderFlags.None);
 
-ImGui.End();
+ImguiNative.igEnd();
 ```
 
 And this is the result:
@@ -65,34 +75,55 @@ And this is the result:
 And now will see a more advanced example:
 
 ```csharp
-ImGui.Begin("Path Tracing");
+bool open = false;
+ImguiNative.igBegin("Path Tracing", open.Pointer(), ImGuiWindowFlags.None);
 
 float x = this.worldInfo.LightPosition.X;
 float y = this.worldInfo.LightPosition.Y;
 float z = this.worldInfo.LightPosition.Z;
 
-ImGui.SliderFloat("Camera Pos X", ref x, -10, 10);
-ImGui.SliderFloat("Camera Pos Y", ref y, -10, 10);
-ImGui.SliderFloat("Camera Pos Z", ref z, -10, 10);
+ImguiNative.igSliderFloat("Camera Pos X", &x, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
+ImguiNative.igSliderFloat("Camera Pos Y", &y, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
+ImguiNative.igSliderFloat("Camera Pos Z", &z, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
 
 this.worldInfo.LightPosition.X = x;
 this.worldInfo.LightPosition.Y = y;
 this.worldInfo.LightPosition.Z = z;
-ImGui.SliderFloat("Light Radius", ref this.worldInfo.LightRadius, 0.0f, 2.0f);
+float lightRadius = this.worldInfo.LightRadius;
+ImguiNative.igSliderFloat("Light Radius", &lightRadius, 0.0f, 0.2f, null, ImGuiSliderFlags.None);
+this.worldInfo.LightRadius = lightRadius;
 
-ImGui.SliderInt("AO Num Rays", ref this.worldInfo.NumRays, 0, 32);
-ImGui.SliderFloat("AO Radius", ref this.worldInfo.AORadius, 0.0f, 2.0f);
+int numRays = this.worldInfo.NumRays;
+ImguiNative.igSliderInt("AO Num Rays", &numRays, 0, 32, null, ImGuiSliderFlags.None);
+this.worldInfo.NumRays = numRays;
 
-ImGui.SliderInt("GI Num Bounces", ref this.worldInfo.NumBounces, 0, 2);
+float aoRadius = this.worldInfo.AORadius;
+ImguiNative.igSliderFloat("AO Radius", &aoRadius, 0.0f, 2.0f, null, ImGuiSliderFlags.None);
+this.worldInfo.AORadius = aoRadius;
 
-ImGui.Spacing();
-ImGui.Separator();
-ImGui.Spacing();
+int numBounces = this.worldInfo.NumBounces;
+ImguiNative.igSliderInt("GI Num Bounces", &numBounces, 0, 3, null, ImGuiSliderFlags.None);
+this.worldInfo.NumBounces = numBounces;
 
-ImGui.SliderInt("Num Samples", ref this.pathTracerNumSamples, 0, 1024);
-ImGui.ProgressBar((float)this.pathTracerSampleIndex / (float)this.pathTracerNumSamples);
+float reflectanceCoef = this.worldInfo.ReflectanceCoef;
+ImguiNative.igSliderFloat("Reflectance Coef", &reflectanceCoef, 0, 1, null, ImGuiSliderFlags.None);
+this.worldInfo.ReflectanceCoef = reflectanceCoef;
 
-ImGui.End();
+float roughness = this.worldInfo.Roughness;
+ImguiNative.igSliderFloat("Roughness", &roughness, 0,1, null, ImGuiSliderFlags.None);
+this.worldInfo.Roughness = roughness;
+
+ImguiNative.igSpacing();
+ImguiNative.igSeparator();
+ImguiNative.igSpacing();            
+
+int numSamples = this.pathTracerNumSamples;
+ImguiNative.igSliderInt("Num Samples", &numSamples, 0, 1024, null, ImGuiSliderFlags.None);
+this.pathTracerNumSamples = numSamples;
+
+ImguiNative.igProgressBar((float)this.pathTracerSampleIndex / (float)this.pathTracerNumSamples, Vector2.Zero, null);
+
+ImguiNative.igEnd();
 ```
 
 This is the result:
