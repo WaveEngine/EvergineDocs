@@ -19,9 +19,12 @@ Create nodes, links, and pins in an immediate-mode style. The user controls all 
 ## Usage
 
 ```csharp
-bool b = true;
-ImguiNative.igBegin("Imnodes Window", b.Ptr(), ImGuiWindowFlags.None);
+private bool imnodesDemoOpen = true;
+...
+ImguiNative.igSetNextWindowSize(new Vector2(500, 500), ImGuiCond.Appearing);
+ImguiNative.igBegin("ImNodes Demo", this.imnodesDemoOpen.Pointer(), ImGuiWindowFlags.None);
 
+string[] nodes = new string[] { "Node1", "Node2", "Node3" };
 ImnodesNative.imnodes_BeginNodeEditor();
 int id = 0;
 for (int i = 0; i < nodes.Length; i++)
@@ -31,7 +34,7 @@ for (int i = 0; i < nodes.Length; i++)
     ImnodesNative.imnodes_BeginNode(id++);
 
     ImnodesNative.imnodes_BeginNodeTitleBar();
-    ImguiNative.igText(node.name);
+    ImguiNative.igText(node);
     ImnodesNative.imnodes_EndNodeTitleBar();
 
     ImnodesNative.imnodes_BeginInputAttribute(id++, ImNodesPinShape.Circle);
@@ -46,9 +49,8 @@ for (int i = 0; i < nodes.Length; i++)
     ImnodesNative.imnodes_EndNode();
 }
 
-ImnodesNative.imnodes_EndNodeEditor();
-
 ImnodesNative.imnodes_MiniMap(0.25f, ImNodesMiniMapLocation.BottomRight, IntPtr.Zero, IntPtr.Zero);
+ImnodesNative.imnodes_EndNodeEditor();
 
 ImguiNative.igEnd();
 ```

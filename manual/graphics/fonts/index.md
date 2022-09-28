@@ -11,6 +11,6 @@ Evergine uses the **Multi-channel signed distance field** technique to generate 
 Default Evergine project template imports the [ **Evergine.Core** package](../../addons/index.md) and this package includes the [Arial Font](font_editor.md). Text3D component uses Arial font as default you can create your own font asset and change it in the Text3D component. Fonts are a type of [asset](../../evergine_studio/assets/index.md) and have a dedicated Editor [**Font Editor**](font_editor.md).
 
 ## In this section
-* [Import Fonts](import_fonts.md)
+* [Import Font](import_fonts.md)
 * [Font Editor](font_editor.md)
 * [Create Text3D](create_text3D.md)
