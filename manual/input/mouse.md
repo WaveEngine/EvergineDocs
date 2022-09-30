@@ -72,7 +72,7 @@ protected override void Update(TimeSpan time)
 {
     MouseDispatcher mouseDispatcher = this.graphicsPresenter.FocusedDisplay?.MouseDispatcher;
 
-    if (mouseDispatcher?.ReadKeyState(MouseButtons.Left) == ButtonState.Pressing)
+    if (mouseDispatcher?.ReadButtonState(MouseButtons.Left) == ButtonState.Pressing)
     {
         // Do something
     }
