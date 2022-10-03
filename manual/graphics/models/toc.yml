@@ -2,5 +2,7 @@
   href: import_model.md
 - name: Using Models
   href: using_models.md
+- name: Level of Detail
+  href: level_of_detail.md
 - name: Model Editor
   href: model_editor.md
