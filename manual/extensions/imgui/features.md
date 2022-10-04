@@ -7,25 +7,72 @@ There are a list of different controls that you can create with just a few lines
 
 **Windows** are drag-able containers of Controls. They can receive and lose focus when clicked. Because of this, they are implemented slightly differently from the other Controls. Each Window has an id number, and its contents are declared inside a separate function that is called when the Window has focus.
 
-## Label
+```csharp
+ImguiNative.igSetNextWindowPos(new Vector2(420, 120), ImGuiCond.Appearing, new Vector2(1, 0.5f));
+ImguiNative.igSetNextWindowSize(new Vector2(400, 100), ImGuiCond.Appearing);
+ImguiNative.igBegin("MyWindow", this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
 
-The **Label** is non-interactive. It is for display only. It cannot be clicked or otherwise moved. It is best for displaying information only.
+// Controls
+
+ImguiNative.igEnd();
+```
+
+![Window](images/Features_Window.png)
+
+## LabelText
+
+The **LabelText** is non-interactive. It is for display only. It cannot be clicked or otherwise moved. It is best for displaying information only.
+
+```csharp
+ImguiNative.igBegin("MyWindow", this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+ImguiNative.igLabelText("This is a label", "Value1");
+ImguiNative.igLabelText("This is other label", "Value2");
+
+ImguiNative.igEnd();
+```
+
+![Label](images/Features_Label.png)
 
 ## Button
 
 The **Button** is a typical interactive button. It will respond a single time when clicked, no matter how long the mouse remains depressed. The response occurs as soon as the mouse button is released.
 
-## RepeatButton
+```csharp
+ImguiNative.igBegin("MyWindow", this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
 
-**RepeatButton** is a variation of the regular Button. The difference is, RepeatButton will respond every frame that the mouse button remains depressed. This allows you to create click-and-hold functionality.
+if (ImguiNative.igButton("Press me", new Vector2(100, 25)))
+{
+    clicked++;
+}
 
-## TextField
+if (clicked > 0)
+{
+    ImguiNative.igText("Thanks for clicking me!");
+}
 
-The **TextField** Control is an interactive, editable single-line field containing a text string.
+ImguiNative.igEnd();
+```
 
-## TexArea
+![button](images/Features_Button.png)
 
-The **TextArea** Control is an interactive, editable multi-line area containing a text string.
+## Text
+
+The **Text** Control is an interactive, editable single-line field containing a text string.
+
+```csharp
+ImguiNative.igBegin("MyWindow", this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+ImguiNative.igText("This is a text control");
+
+ImguiNative.igEnd();
+```
+
+![Text](images/Features_Text.png)
+
+## InputText
+
+The **InputText** Control is an interactive, editable area containing a text string.
 
 ## Toggle
 
