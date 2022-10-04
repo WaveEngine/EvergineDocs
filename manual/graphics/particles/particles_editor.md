@@ -6,6 +6,15 @@
 
 ## Viewport
 Shows the **Particle System** with the current configuration. The user can orbit, zoom and pan the camera.
+![Particles Viewport](images/particles_viewport.png)
+
+
+
+| Actions | Description |
+|---------| ----------- |
+| Left mouse button | To rotate the camera around the particle system. |
+| Right mouse button | To rotate two lights around the particle system. |
+| Mouse wheel | To make zoom in/out camera. |
 
 ## Toolbar
 
@@ -23,31 +32,17 @@ Helps with the model visualization. Has the following options:
 
 ##Playback controls
 
-![Playback controls](Images/playbackToolbar.png)
+![Simulation controls](images/particle_simulation_controls.png)
 
-In case that the model has animations, the *Playback Toolbar* allows to play the selected clip.
+This bar controls some aspect of the particle simulation life.
 
 | Control | Description |
 | ---- | ----------- |
-| ![play](Images/playIcon.png) /  ![stop](Images/stopIcon.png)| Plays / Stop the current clip animationS. |
-| ![timeline](Images/slider.png) | The timeline slider. The handle will mark the current time in the animation, and its position can be modified. |
-| ![speed](Images/velocity.png) | Controls the **Speed Factor** of the reproduction. By default is **1.00**. |
+| ![reset](images/reset_icon.png)| Resets the particle system. |
+| ![play](images/play_icon.png) / ![stop](images/stop_icon.png)  | The timeline slider. The handle will mark the current time in the animation, and its position can be modified. |
+| ![Time factor](Images/time_factor.png) | Controls the **Time Factor** of the particle system. The same behavior of the **Particles Component** property.|
 
-## Properties
-Panel with all the **Model** properties. They don't depend on the profile.
+## Particles Properties
+Panel with all the **Particle System** properties. They don't depend on the profile.
 
-| Property | Description |
-|----------|-------------|
-| **SwapSwindingOrder** | Flips the normals of the model when activated..
-| **GenerateTangentSpace** | When checked will generate the tangent coordinates of every vertex. Useful when dealing with normal mapping.
-| **ExportAnimations** | For exporting the animation information of the model.
-| **ExportAsRaw**| Will export the model as the source file (`.fbx` for example), instead of creating a binary **Evergine** asset..
-
-## Animation clip properties
-For every animation contained in the model, it will show the following information.
-
-| Property | Description |
-|----------|-------------|
-| Index | The animation order. |
-| Name | the name of the clip. This string will be used in the **Animation3D** when we want to play the animation.
-| Duration | Timestamp of the duration.
+![Particles Properties](images/particles_properties.png)

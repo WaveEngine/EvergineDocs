@@ -4,3 +4,9 @@
   href: using_particles.md
 - name: Particles Editor
   href: particles_editor.md
+- name: Particle Properties
+  href: particle_properties.md
+- name: Particle Shapes
+  href: particle_shapes.md
+- name: Particle Forces
+  href: particle_forces.md

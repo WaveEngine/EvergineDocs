@@ -1,7 +1,9 @@
 # Particle System
 ---
 
-![Particles Header](images/particles.jpg)
+<video autoplay loop muted width="1100">
+  <source src="images/fire_low.mp4" type="video/mp4">
+</video>
 
 **Evergine** supports complex particle system simulations,  taking advantage of the **Compute Shaders** whenever it's possible. 
 
@@ -16,5 +18,7 @@ Particles are elements that are used in a large number to create a wide range of
 * [Create Particle Systems](create_particles.md)
 * [Using Particles](using_particles.md)
 * [Particles Editor](particle_editor.md)
-* [Particle parameters](particle_parameters.md)
+* [Particle properties](particle_properties.md)
+* [Particle shapes](particle_shapes.md)
+* [Particle spawn](particle_spawn.md)
 * [Particle System Forces](particle_forces.md)
