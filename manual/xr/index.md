@@ -29,7 +29,7 @@ The application ayers content over a digital view of the real world.
 
 In Evergine, you can develop with different XR platforms and solutions, and Evergine XR helps users to deal with multiples XR technologies.
 
-**Evergine XR** is an abstraction layer that allows multiple XR implementations (OpenXR, Mixed Reality, etc...) to be used in a standarized way in your interactive applications.
+**Evergine XR** is an abstraction layer that allows multiple XR implementations (OpenXR, Mixed Reality, etc...) to be used in a standardized way in your interactive applications.
 
 **Evergine XR** is included by default in the **Evergine.Framework** and **Evergine.Components** NuGet packages, and exposes an abstract Service (XRPlatform) which is the entry point to start creating XR applications. Different XR technologies integrations gives an implementation of the XRPlatform service, and it is provided using Evergine extensions or add-ons. 
 

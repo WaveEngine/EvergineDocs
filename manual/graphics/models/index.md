@@ -91,5 +91,5 @@ In **Evergine** model animation is achieved by animating nodes. If those nodes a
 ## In this section
 * [Import Models](import_model.md)
 * [Using Model](using_models.md)
-* [How to create a model from code](create_model_from_code.md)
+* [Level of Detail](level_of_detail.md)
 * [Model Editor](model_editor.md)

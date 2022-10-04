@@ -87,12 +87,13 @@ The component for create this primitive is `PlaneMesh`
 | **Width** | The width of the plane. Must be greater than 0.|
 | **Height** | The height of the plane. Must be greater than 0. |
 | **TwoSides** | Value indicating whether the plane has two sides. By default botton face of the plane is not generated. |
-| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.| 
-| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
-| **InitialU** | The horizontal texture coordinate offset.|
-| **InitialV** | The vertical texture coordinate offset.|
+| **UMirror** | Value indicating whether to flip the horizontal texture coordinate.| 
+| **VMirror** | Value indicating whether to flip the vertical texture coordinate.|
+| **UOffset** | Apply an offset to the horizontal texture coordinates. |
+| **VOffset** | Apply an offset to the vertical texture coordinates. |
 | **UTile** | The horizontal texture coordinate scale factor.|
 | **VTile** | The vertical texture coordinate scale factor.|
+| **Origin** | Represent the pivot in a normalized position. By default the value is (0.5, 0.5), which indicatest that the PlaneMesh position is measured from the center of the plane. |
 
 ## Teapot Parameters
 
