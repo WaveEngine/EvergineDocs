@@ -34,5 +34,5 @@ Evergine for _Mixed Reality_ relies on a set on interfaces and classes defined i
 
 ### Application deployment
 In this case, there are two options for application deployment: 
-- Deploy in _HoloLens_ emulator: before deploying, you need to install device emulator from [official documentation](https://docs.microsoft.com/es-es/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive) page.
+- Deploy in _HoloLens_ emulator: before deploying, you need to install device emulator from [official documentation](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive) page.
 - Deploy in a _HoloLens_ device: remember that you should mark _ARM64_ as active configuration to deploy an application for _HoloLens 2_. For more information, read [official documentation](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2).

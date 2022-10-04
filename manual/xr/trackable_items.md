@@ -21,7 +21,7 @@ This base class holds information that is common to any trackable element.
 | **Transform**  |  Stores position and orientation information for the detected trackable. Will be continuously updated while application is running with real-world object information.  |
 
 ## XRPlaneTrackable
-This class represents plane detection. Depending on XR platform implementation you can use  [XRPlaneDetectionType](xref:Evergine.Framework.XR.TrackableItems.XRPlaneDetectionType) to detect just vertical or horizontal planes, or even enable both types of plane detection.
+This class represents plane detection. Depending on XR platform implementation you can use  [XRPlaneDetectionType](xref:Evergine.Framework.XR.TrackableItems.Planes.XRPlaneDetectionType) to detect just vertical or horizontal planes, or even enable both types of plane detection.
 
 ### Properties and Methods
 | Property | Description |
