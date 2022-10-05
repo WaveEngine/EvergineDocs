@@ -87,16 +87,53 @@
 <p>There are a list of different controls that you can create with just a few lines of codes, here is the complete list:</p>
 <h2 id="window">Window</h2>
 <p><strong>Windows</strong> are drag-able containers of Controls. They can receive and lose focus when clicked. Because of this, they are implemented slightly differently from the other Controls. Each Window has an id number, and its contents are declared inside a separate function that is called when the Window has focus.</p>
-<h2 id="label">Label</h2>
-<p>The <strong>Label</strong> is non-interactive. It is for display only. It cannot be clicked or otherwise moved. It is best for displaying information only.</p>
+<pre><code class="lang-csharp">ImguiNative.igSetNextWindowPos(new Vector2(420, 120), ImGuiCond.Appearing, new Vector2(1, 0.5f));
+ImguiNative.igSetNextWindowSize(new Vector2(400, 100), ImGuiCond.Appearing);
+ImguiNative.igBegin(&quot;MyWindow&quot;, this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+// Controls
+
+ImguiNative.igEnd();
+</code></pre>
+<p><img src="images/Features_Window.png" alt="Window"></p>
+<h2 id="labeltext">LabelText</h2>
+<p>The <strong>LabelText</strong> is non-interactive. It is for display only. It cannot be clicked or otherwise moved. It is best for displaying information only.</p>
+<pre><code class="lang-csharp">ImguiNative.igBegin(&quot;MyWindow&quot;, this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+ImguiNative.igLabelText(&quot;This is a label&quot;, &quot;Value1&quot;);
+ImguiNative.igLabelText(&quot;This is other label&quot;, &quot;Value2&quot;);
+
+ImguiNative.igEnd();
+</code></pre>
+<p><img src="images/Features_Label.png" alt="Label"></p>
 <h2 id="button">Button</h2>
 <p>The <strong>Button</strong> is a typical interactive button. It will respond a single time when clicked, no matter how long the mouse remains depressed. The response occurs as soon as the mouse button is released.</p>
-<h2 id="repeatbutton">RepeatButton</h2>
-<p><strong>RepeatButton</strong> is a variation of the regular Button. The difference is, RepeatButton will respond every frame that the mouse button remains depressed. This allows you to create click-and-hold functionality.</p>
-<h2 id="textfield">TextField</h2>
-<p>The <strong>TextField</strong> Control is an interactive, editable single-line field containing a text string.</p>
-<h2 id="texarea">TexArea</h2>
-<p>The <strong>TextArea</strong> Control is an interactive, editable multi-line area containing a text string.</p>
+<pre><code class="lang-csharp">ImguiNative.igBegin(&quot;MyWindow&quot;, this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+if (ImguiNative.igButton(&quot;Press me&quot;, new Vector2(100, 25)))
+{
+    clicked++;
+}
+
+if (clicked &gt; 0)
+{
+    ImguiNative.igText(&quot;Thanks for clicking me!&quot;);
+}
+
+ImguiNative.igEnd();
+</code></pre>
+<p><img src="images/Features_Button.png" alt="button"></p>
+<h2 id="text">Text</h2>
+<p>The <strong>Text</strong> Control is an interactive, editable single-line field containing a text string.</p>
+<pre><code class="lang-csharp">ImguiNative.igBegin(&quot;MyWindow&quot;, this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
+
+ImguiNative.igText(&quot;This is a text control&quot;);
+
+ImguiNative.igEnd();
+</code></pre>
+<p><img src="images/Features_Text.png" alt="Text"></p>
+<h2 id="inputtext">InputText</h2>
+<p>The <strong>InputText</strong> Control is an interactive, editable area containing a text string.</p>
 <h2 id="toggle">Toggle</h2>
 <p>The <strong>Toggle</strong> Control creates a checkbox with a persistent on/off state. The user can change the state by clicking on it.</p>
 <h2 id="toolbar">Toolbar</h2>

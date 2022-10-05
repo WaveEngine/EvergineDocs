@@ -95,9 +95,12 @@
 <p>Create nodes, links, and pins in an immediate-mode style. The user controls all the state.</p>
 <p><img src="images/imnodes.gif" alt="ImNodes"></p>
 <h2 id="usage">Usage</h2>
-<pre><code class="lang-csharp">bool b = true;
-ImguiNative.igBegin(&quot;Imnodes Window&quot;, b.Ptr(), ImGuiWindowFlags.None);
+<pre><code class="lang-csharp">private bool imnodesDemoOpen = true;
+...
+ImguiNative.igSetNextWindowSize(new Vector2(500, 500), ImGuiCond.Appearing);
+ImguiNative.igBegin(&quot;ImNodes Demo&quot;, this.imnodesDemoOpen.Pointer(), ImGuiWindowFlags.None);
 
+string[] nodes = new string[] { &quot;Node1&quot;, &quot;Node2&quot;, &quot;Node3&quot; };
 ImnodesNative.imnodes_BeginNodeEditor();
 int id = 0;
 for (int i = 0; i &lt; nodes.Length; i++)
@@ -107,7 +110,7 @@ for (int i = 0; i &lt; nodes.Length; i++)
     ImnodesNative.imnodes_BeginNode(id++);
 
     ImnodesNative.imnodes_BeginNodeTitleBar();
-    ImguiNative.igText(node.name);
+    ImguiNative.igText(node);
     ImnodesNative.imnodes_EndNodeTitleBar();
 
     ImnodesNative.imnodes_BeginInputAttribute(id++, ImNodesPinShape.Circle);
@@ -122,9 +125,8 @@ for (int i = 0; i &lt; nodes.Length; i++)
     ImnodesNative.imnodes_EndNode();
 }
 
-ImnodesNative.imnodes_EndNodeEditor();
-
 ImnodesNative.imnodes_MiniMap(0.25f, ImNodesMiniMapLocation.BottomRight, IntPtr.Zero, IntPtr.Zero);
+ImnodesNative.imnodes_EndNodeEditor();
 
 ImguiNative.igEnd();
 </code></pre>

@@ -87,15 +87,21 @@
 <p><img src="images/imgui_features.png" alt="Graphics"></p>
 <h2 id="install-evergineimgui-extension">Install Evergine.ImGUI extension</h2>
 <p>To start using this extension, just add Evergine.ImGui package to your project using NuGet package manager from Visual Studio.</p>
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Evergine.ImGui&quot; Version=&quot;2021.11.17.2-preview&quot; /&gt;
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Evergine.ImGui&quot; Version=&quot;2022.9.28.1&quot; /&gt;
 </code></pre>
 <p>Register the ImGuiManager on your scene:</p>
 <pre><code class="lang-csharp">public class ImGuiSceneTest : Scene
 {
     public override void RegisterManagers()
     {
-        this.Managers.AddManager(new ImGuiManager());
         base.RegisterManagers();
+        this.Managers.AddManager(new global::Evergine.Bullet.BulletPhysicManager3D());
+        this.Managers.AddManager(new ImGuiManager()
+        {
+            ImGuizmoEnabled = true,
+            ImPlotEnabled = true,
+            ImNodesEnabled = true,
+        });
     }
 ...
 }
@@ -104,54 +110,79 @@
 <pre><code class="lang-csharp">using ImGuiNET;
 </code></pre>
 <p>Now you can start calling the ImGui API from everywhere using the static reference:</p>
-<pre><code class="lang-csharp">ImGui.ShowDemoWindow();
+<pre><code class="lang-csharp">private bool imguiDemoOpen;
+...
+ImguiNative.igShowDemoWindow(this.imguiDemoOpen.Pointer());
 </code></pre>
 <h2 id="usage">Usage</h2>
 <p>The UI is generated every frame and all the controls between Begin and End will be drawn.</p>
 <p>Here you have a simple example:</p>
-<pre><code class="lang-csharp">ImGui.Begin(&quot;Debug&quot;);
+<pre><code class="lang-csharp">bool open = true;
+ImguiNative.igBegin(&quot;Debug&quot;, open.Pointer(), ImGuiWindowFlags.None);
 
-ImGui.Text(&quot;Hello, world 123&quot;);
-if (ImGui.Button(&quot;Save&quot;))
+ImguiNative.igText(&quot;Hello, world 123&quot;);
+if (ImguiNative.igButton(&quot;Save&quot;, Vector2.Zero))
 {
     // MySaveFunction();
 }
-ImGui.SliderFloat(&quot;float&quot;, ref f, 0.0f, 1.0f);
+float f = 0.5f;
+ImguiNative.igSliderFloat(&quot;float&quot;, &amp;f, 0.0f, 1.0f, null, ImGuiSliderFlags.None);
 
-ImGui.End();
+ImguiNative.igEnd();
 </code></pre>
 <p>And this is the result:</p>
 <p><img src="images/imgui_simple.png" alt="Graphics"></p>
 <p><br><br></p>
 <p>And now will see a more advanced example:</p>
-<pre><code class="lang-csharp">ImGui.Begin(&quot;Path Tracing&quot;);
+<pre><code class="lang-csharp">bool open = false;
+ImguiNative.igBegin(&quot;Path Tracing&quot;, open.Pointer(), ImGuiWindowFlags.None);
 
 float x = this.worldInfo.LightPosition.X;
 float y = this.worldInfo.LightPosition.Y;
 float z = this.worldInfo.LightPosition.Z;
 
-ImGui.SliderFloat(&quot;Camera Pos X&quot;, ref x, -10, 10);
-ImGui.SliderFloat(&quot;Camera Pos Y&quot;, ref y, -10, 10);
-ImGui.SliderFloat(&quot;Camera Pos Z&quot;, ref z, -10, 10);
+ImguiNative.igSliderFloat(&quot;Camera Pos X&quot;, &amp;x, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
+ImguiNative.igSliderFloat(&quot;Camera Pos Y&quot;, &amp;y, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
+ImguiNative.igSliderFloat(&quot;Camera Pos Z&quot;, &amp;z, -10.0f, 10.0f, null, ImGuiSliderFlags.None);
 
 this.worldInfo.LightPosition.X = x;
 this.worldInfo.LightPosition.Y = y;
 this.worldInfo.LightPosition.Z = z;
-ImGui.SliderFloat(&quot;Light Radius&quot;, ref this.worldInfo.LightRadius, 0.0f, 2.0f);
+float lightRadius = this.worldInfo.LightRadius;
+ImguiNative.igSliderFloat(&quot;Light Radius&quot;, &amp;lightRadius, 0.0f, 0.2f, null, ImGuiSliderFlags.None);
+this.worldInfo.LightRadius = lightRadius;
 
-ImGui.SliderInt(&quot;AO Num Rays&quot;, ref this.worldInfo.NumRays, 0, 32);
-ImGui.SliderFloat(&quot;AO Radius&quot;, ref this.worldInfo.AORadius, 0.0f, 2.0f);
+int numRays = this.worldInfo.NumRays;
+ImguiNative.igSliderInt(&quot;AO Num Rays&quot;, &amp;numRays, 0, 32, null, ImGuiSliderFlags.None);
+this.worldInfo.NumRays = numRays;
 
-ImGui.SliderInt(&quot;GI Num Bounces&quot;, ref this.worldInfo.NumBounces, 0, 2);
+float aoRadius = this.worldInfo.AORadius;
+ImguiNative.igSliderFloat(&quot;AO Radius&quot;, &amp;aoRadius, 0.0f, 2.0f, null, ImGuiSliderFlags.None);
+this.worldInfo.AORadius = aoRadius;
 
-ImGui.Spacing();
-ImGui.Separator();
-ImGui.Spacing();
+int numBounces = this.worldInfo.NumBounces;
+ImguiNative.igSliderInt(&quot;GI Num Bounces&quot;, &amp;numBounces, 0, 3, null, ImGuiSliderFlags.None);
+this.worldInfo.NumBounces = numBounces;
 
-ImGui.SliderInt(&quot;Num Samples&quot;, ref this.pathTracerNumSamples, 0, 1024);
-ImGui.ProgressBar((float)this.pathTracerSampleIndex / (float)this.pathTracerNumSamples);
+float reflectanceCoef = this.worldInfo.ReflectanceCoef;
+ImguiNative.igSliderFloat(&quot;Reflectance Coef&quot;, &amp;reflectanceCoef, 0, 1, null, ImGuiSliderFlags.None);
+this.worldInfo.ReflectanceCoef = reflectanceCoef;
 
-ImGui.End();
+float roughness = this.worldInfo.Roughness;
+ImguiNative.igSliderFloat(&quot;Roughness&quot;, &amp;roughness, 0,1, null, ImGuiSliderFlags.None);
+this.worldInfo.Roughness = roughness;
+
+ImguiNative.igSpacing();
+ImguiNative.igSeparator();
+ImguiNative.igSpacing();            
+
+int numSamples = this.pathTracerNumSamples;
+ImguiNative.igSliderInt(&quot;Num Samples&quot;, &amp;numSamples, 0, 1024, null, ImGuiSliderFlags.None);
+this.pathTracerNumSamples = numSamples;
+
+ImguiNative.igProgressBar((float)this.pathTracerSampleIndex / (float)this.pathTracerNumSamples, Vector2.Zero, null);
+
+ImguiNative.igEnd();
 </code></pre>
 <p>This is the result:</p>
 <p><img src="images/imgui_pathtracerui.png" alt="Graphics"></p>

@@ -23884,7 +23884,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/audio/index.html",
-          "hash": "m/Hs9Z2sPHUoGMx34ELE6U1FwWxGawzAgi1h0mt0EeQ="
+          "hash": "DP6tkHCIi37l5vsJYaAVNS0tKJy7xIs8CH9/NVDFY8k="
         }
       },
       "is_incremental": false,
@@ -24863,12 +24863,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/basics/scenes/scenemanagers.md",
       "output": {
         ".html": {
           "relative_path": "manual/basics/scenes/scenemanagers.html",
-          "hash": "TGn/HQKqqvCYSA7zSz7zHCb746lPLaQQEY6M+qcpf+4="
+          "hash": "Eh/g9JzWF7CddlV4HrGju0QJijE6zj/6D2QOw0yTEbw="
         }
       },
       "is_incremental": false,
@@ -25739,7 +25742,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extensions/imgui/features.html",
-          "hash": "t+mgAJEXnFsMvXrm8jm6zxMFXaS1hoe0ez5hBeJFrFY="
+          "hash": "3M5YdCSrOLvTzQ6p/kYvgRyej5JUqUTTYCXYmA0qqUU="
         }
       },
       "is_incremental": false,
@@ -25795,6 +25798,50 @@
       "output": {
         "resource": {
           "relative_path": "manual/extensions/imgui/images/ErrorBars.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/extensions/imgui/images/Features_Button.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/extensions/imgui/images/Features_Button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/extensions/imgui/images/Features_Label.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/extensions/imgui/images/Features_Label.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/extensions/imgui/images/Features_Text.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/extensions/imgui/images/Features_Text.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/extensions/imgui/images/Features_Window.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/extensions/imgui/images/Features_Window.png"
         }
       },
       "is_incremental": false,
@@ -26115,7 +26162,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extensions/imgui/imnodes.html",
-          "hash": "90OzRg28jO1RSENNEU5MrRls/TxdmHnG8tiiPY7IL6Q="
+          "hash": "3zrvVVdakuXB5Wp++BRCs9chtAA8r/0zceUKcwxJXuk="
         }
       },
       "is_incremental": false,
@@ -26151,7 +26198,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extensions/imgui/setup.html",
-          "hash": "cAYzDg3x4h3nPFDZPD5v3L503dMEZnaS/p/skps9MrA="
+          "hash": "ljUG2QZrhPdURZVcXpAE7QuJcxvpMIU48wIOlcRh4Pk="
         }
       },
       "is_incremental": false,
@@ -26881,11 +26928,190 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/graphics/environment.md",
+      "source_relative_path": "manual/graphics/environment/environment_manager.md",
       "output": {
         ".html": {
-          "relative_path": "manual/graphics/environment.html",
-          "hash": "Fs45bSdtZC9dsMKotXIXLGwRXSzwHxVXfxDupt17Cr4="
+          "relative_path": "manual/graphics/environment/environment_manager.html",
+          "hash": "cn47nXgLjK1OVaGnjp5tE+yAf07jSCpldWmKuTyY1Fs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphics/environment/environment_textures.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/environment/environment_textures.html",
+          "hash": "o3cfV/6/vodaMYeZbRHxgzwMqkHXiGxRW8eq1IPaDYk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/atmosphere_controller.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/atmosphere_controller.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/environment_material.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/environment_material.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/environmentmanager.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/environmentmanager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/ibl.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/ibl.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/ibl_prefilter_map.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/ibl_prefilter_map.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/sky_alien.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/sky_alien.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/sky_atmosphere.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/sky_atmosphere.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/sky_atmosphere.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/sky_atmosphere.mp4"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/sky_everginestudio.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/sky_everginestudio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/sky_mars.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/sky_mars.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/skybox_effect.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/skybox_effect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/environment/images/venice_hdr.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/environment/images/venice_hdr.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphics/environment/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/environment/index.html",
+          "hash": "hU8N+yvLzuZDGinQ863Oq14v7ZU/uMmPlbYJdldAWys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphics/environment/sky_atmosphere.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/environment/sky_atmosphere.html",
+          "hash": "nLFVB/vPsk4FPlCzOqaM93IK6zyU1wXATyohttPypkA="
         }
       },
       "is_incremental": false,
@@ -27032,7 +27258,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/fonts/index.html",
-          "hash": "SO3JjwWsb0Io8WVSbg7lVZyqGprJPb6Gv1HQlu8aZWo="
+          "hash": "D+T06tYeVEsBhjwH27jDcPsGKkl3Djyuek7GHIe+GBc="
         }
       },
       "is_incremental": false,
@@ -27418,7 +27644,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/index.html",
-          "hash": "5YA28/4IgkypQyTUdbKcJCd+goGIcsyqGVrniKOPJIo="
+          "hash": "0t0+EXJL3M2AfiqLkGpSdHw51SVqXp2Y8bxmDL1VtJc="
         }
       },
       "is_incremental": false,
@@ -28128,6 +28354,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/LoD.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/LoD.mp4"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/LoD.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/LoD.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "manual/graphics/models/images/ModelEditor.jpg",
       "output": {
         "resource": {
@@ -28205,6 +28453,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/blender_lod.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/blender_lod.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "manual/graphics/models/images/boundingBox.png",
       "output": {
         "resource": {
@@ -28275,6 +28534,61 @@
       "output": {
         "resource": {
           "relative_path": "manual/graphics/models/images/importedModel.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/lod0.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/lod0.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/lod1.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/lod1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/lod_hierarchy.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/lod_hierarchy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/lodentry.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/lodentry.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/graphics/models/images/lodgroup.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/graphics/models/images/lodgroup.png"
         }
       },
       "is_incremental": false,
@@ -28485,7 +28799,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/models/index.html",
-          "hash": "pjwC1t3jTufmslpApxU6zXkCq40u+pk1aDuI4HtARnA="
+          "hash": "g5tYI5j2wL1ZaLf2Oue3kvHCNkRi4rII+SOVcF2GKQ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphics/models/level_of_detail.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/models/level_of_detail.html",
+          "hash": "hK+6WFTL1YrLid9JhcD/MmRsULg5JKYY1I/M7SID0sA="
         }
       },
       "is_incremental": false,
@@ -29167,7 +29493,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/primitives.html",
-          "hash": "0SC977JJU7wTtzNJtAqcNQgOSRejlejp9HVGza0kgQU="
+          "hash": "ccNttd0j9VKIz3tLRxcxr1xMwNJTmkjaiElzGTF/FhI="
         }
       },
       "is_incremental": false,
@@ -29756,7 +30082,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "QLP7t2yVWJd1oAvdxCO7voGti2uXS1TI+XkdOddOpvI="
+          "hash": "vqKKh70jGrK87C0aLUhFUXSM7+lVF3I+NLfkqBP7aSI="
         }
       },
       "is_incremental": false,
@@ -29815,7 +30141,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/input/mouse.html",
-          "hash": "tGAVeQBz0hozwp+kWKbXDSPsISXPbZ0dRh6X6dJ5x2g="
+          "hash": "13gMgC1Lb9X77tqdF8Z6P02V2pyiCJ7r+aYEia7ix50="
         }
       },
       "is_incremental": false,
@@ -29839,7 +30165,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/physics/colliders/box_collider.html",
-          "hash": "f+Q7VYsq7XA4dyt7MZ2e45DjcnvsfY2e8SLhqmhg+0Q="
+          "hash": "KaBk+RhR8sMl2pc+nAFW5zjoyIesGIXOnMk/nOyLhsQ="
         }
       },
       "is_incremental": false,
@@ -30275,7 +30601,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/physics/index.html",
-          "hash": "mlW6e3jMGbFJmeY8ACylsV2T9az2VXHVcqSr00d+oMM="
+          "hash": "MyDWMmPzRX3v/DcK+d8TzzDKk9sBfKrisFUu+LMOpuc="
         }
       },
       "is_incremental": false,
@@ -30640,7 +30966,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/platforms/uwp/index.html",
-          "hash": "uVNyHOacsJoTef9XfosfLzUl8ObwXnZafMzbV8hLqjM="
+          "hash": "h/HkTH+AhdAn3cqFKwmTtKJxXV7q2JisZj3OC05yTEc="
         }
       },
       "is_incremental": false,
@@ -30745,7 +31071,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "KQDGBUY2Ogr+5fVXI3DN5F2FkTpn4Rp59VSzHKBXryk="
+          "hash": "FyhcV6a+ClkweRlVlAJz8WIeDgO9ctlaBi2ZRXyh9Xs="
         }
       },
       "is_incremental": false,
@@ -30856,7 +31182,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/xr/index.html",
-          "hash": "EKd/w2Ovyw04kykqafao1xddurI+Bp/dBDIscUBAPKI="
+          "hash": "JQTO/2cMruwXTIsSv+d/d+Gg81Rkiq1IevsEdCNSxv8="
         }
       },
       "is_incremental": false,
@@ -31106,15 +31432,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/xr/trackable_items.md",
       "output": {
         ".html": {
           "relative_path": "manual/xr/trackable_items.html",
-          "hash": "0QrlQdYVQociUFPdgCrT4FBcznyCanYEk4aBB8nu8ec="
+          "hash": "s/Y0LxYPFkvX5AsqJ/EIQtODlSn7FR5+OJrsCpbfpMs="
         }
       },
       "is_incremental": false,
@@ -31159,7 +31482,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 204,
+          "total_file_count": 208,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

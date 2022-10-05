@@ -221,20 +221,20 @@
 <td>Value indicating whether the plane has two sides. By default botton face of the plane is not generated.</td>
 </tr>
 <tr>
-<td><strong>UVHorizontalFlip</strong></td>
+<td><strong>UMirror</strong></td>
 <td>Value indicating whether to flip the horizontal texture coordinate.</td>
 </tr>
 <tr>
-<td><strong>UVVerticalFlip</strong></td>
+<td><strong>VMirror</strong></td>
 <td>Value indicating whether to flip the vertical texture coordinate.</td>
 </tr>
 <tr>
-<td><strong>InitialU</strong></td>
-<td>The horizontal texture coordinate offset.</td>
+<td><strong>UOffset</strong></td>
+<td>Apply an offset to the horizontal texture coordinates.</td>
 </tr>
 <tr>
-<td><strong>InitialV</strong></td>
-<td>The vertical texture coordinate offset.</td>
+<td><strong>VOffset</strong></td>
+<td>Apply an offset to the vertical  texture coordinates.</td>
 </tr>
 <tr>
 <td><strong>UTile</strong></td>
@@ -243,6 +243,10 @@
 <tr>
 <td><strong>VTile</strong></td>
 <td>The vertical texture coordinate scale factor.</td>
+</tr>
+<tr>
+<td><strong>Origin</strong></td>
+<td>Represent the pivot in a normalized position. By default the value is (0.5, 0.5), which indicatest that the PlaneMesh position is measured from the center of the plane.</td>
 </tr>
 </tbody>
 </table>
