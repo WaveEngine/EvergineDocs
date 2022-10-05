@@ -33,28 +33,11 @@ The life configuration panel controls the particle remaining life time when it's
 | Init Life | _5_ | The initial color of the particle. |
 | Init Life 2 | _5_ | The second value of the initial color range.
 
-<table>
-    <tr>
-        <td>
-            <video autoplay loop muted width="200">
-                <source src="images/life_2.mp4" type="video/mp4">
-            </video>
-        </td>
-        <td>
-            <video autoplay loop muted width="200">
-                <source src="images/life_0_3.mp4" type="video/mp4">
-            </video>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Constant life value of 2.
-        </td>
-        <td>
-            Random life value between 0.5 and 3.
-        </td>
-    </tr>
-</table>
+The next video shows how different life parameters behave:
+
+<video autoplay loop muted width="256">
+    <source src="images/random_life.mp4" type="video/mp4">
+</video>
 
 ### Color
 The initial color configuration panel controls the particle color when it's emitted. 
@@ -92,6 +75,12 @@ The initial speed configuration panel controls the particle speed magnitude (in 
 | Init Speed | _0.1_ | The initial speed of the particle. |
 | Init Speed 2 | _0.1_ | The second value of the initial speed range.
 
+The next video shows how different speed parameters behave:
+
+<video autoplay loop muted width="256">
+    <source src="images/random_speed.mp4" type="video/mp4">
+</video>
+
 ### Angle
 The initial angle configuration panel controls the particle quad angle when it's emitted. 
 
@@ -100,6 +89,10 @@ The initial angle configuration panel controls the particle quad angle when it's
 | Init Angle mode | _Constant_ | Sets wether the initial angle is **Constant** (_Init Angle_) or **RandomBetweenTwoConstants** (A random value between _Init Angle_ and _Init Angle_). |
 | Init Angle | _0_ | The initial angle of the particle in degrees. |
 | Init Angle 2 | _0_ | The second value of the initial angle range in degrees.
+
+The next image shows two examples of initial size setting.
+
+![Random Size](images/random_angle.png)
 
 ### Angular Speed
 The angular speed configuration panel controls the particle rotation speed when it's emitted. The quad will spin facing the camera with this angular speed.
@@ -110,17 +103,33 @@ The angular speed configuration panel controls the particle rotation speed when 
 | Init Angular Speed | _0_ | The initial angular speed of the particle. |
 | Init Angular Speed 2 | _0_ | The second value of the initial angular speed range.
 
+
+
+The next video shows a random angular speed of **[-180, 180]**.
+
+<video autoplay loop muted width="128">
+    <source src="images/angular_speed.mp4" type="video/mp4">
+</video>
+
 ## Shapes
-The *Shape* property defines the volume or surface where the particles can be emitted.
+The *Shape* group defines all the properties to manage the volume or surface where the particles can be emitted.
 
 |  Property      | Default value | Description   |
 | ---- | ---- | ---- | 
-| **Shape**  | _(PointShapeEmitter object)_ | The maximum amount of particles the emitter can handle. The emission will be paused if it reaches this number. |
+| **Shape type**  | _Point_ | <p>_Enum_ that contains all the shape emitter types. Currently the options are:</p><li>Point</li><li>Sphere</li><li>Box</li><li>Circle</li><li>Entity</li><li>Edge</li>|
 
-More information in [this article](particle_shapes.md).
+More information about these shapes here: [Particle Shapes](particle_shapes.md).
 
 ## Spawn 
 The spawn information
+
+The *Spawn* property defines when and how many particles are emitted.
+
+|  Property      | Default value | Description   |
+| ---- | ---- | ---- | 
+| **Spawn type**  | _Rate_ | <p>_Enum_ that contains all the spawn emitter types. Currently the options are:</p><li>Rate</li><li>Burst</li><li>Distance</li> |
+
+More information about the spawn management here: [Particle Spawn](particle_spawn.md).
 
 ## Color over life
 ## Size over life
