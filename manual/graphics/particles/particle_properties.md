@@ -65,6 +65,12 @@ The initial color configuration panel controls the particle color when it's emit
 | Init Color | _White_ | The initial color of the particle. |
 | Init Color 2 | _White_ | The second value of the initial color range.
 
+<video autoplay loop muted width="200">
+    <source src="images/color_random.mp4" type="video/mp4">
+</video>
+
+* _Init Color_ set to **red** and _Init Color 2_ set to **cyan**.
+
 ### Size
 The initial size configuration panel controls the particle size when it's emitted. 
 
