@@ -90,7 +90,7 @@ The component for create this primitive is `PlaneMesh`
 | **UMirror** | Value indicating whether to flip the horizontal texture coordinate.| 
 | **VMirror** | Value indicating whether to flip the vertical texture coordinate.|
 | **UOffset** | Apply an offset to the horizontal texture coordinates. |
-| **VOffset** | Apply an offset to the vertical texture coordinates. |
+| **VOffset** | Apply an offset to the vertical  texture coordinates. |
 | **UTile** | The horizontal texture coordinate scale factor.|
 | **VTile** | The vertical texture coordinate scale factor.|
 | **Origin** | Represent the pivot in a normalized position. By default the value is (0.5, 0.5), which indicatest that the PlaneMesh position is measured from the center of the plane. |

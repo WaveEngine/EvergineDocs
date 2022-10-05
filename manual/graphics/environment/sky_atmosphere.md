@@ -4,11 +4,11 @@
 
 This is the default way to create environment lighting in Evergine. When you create a new Scene in Evergine Studio, it will use this method to provide the environmental lighting.
 
-They create a HDR sky texture that simulates physically the atmosphere properties. Additionally it will use a [Directional Light](../lights.md) to control the atmosphere light dispersion and light intensity and color.
+They create a HDR sky texture that simulates physically the atmosphere properties. Additionally it will use a [Directional Light](../lights.md#directional-lights--photometric-directional-light) to control the atmosphere light dispersion and light intensity and color.
 
 # SunComponent
 
-This component is used to mark a DirectionalLight as the light source that will use the atmosphere controller as the main source of light. When you create a Evergine Scene, it will create a DirectionalLight with a SunComponent.
+This component is used to mark a DirectionalLight as the light source that will use the atmosphere controller. When you create a Evergine Scene, it will create a DirectionalLight with a SunComponent.
 
 Changing the DirectionalLight rotation allows you to change the visual atmospheric, simulating effects like sunset, sunrise or daylight:
 
