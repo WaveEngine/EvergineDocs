@@ -34,8 +34,9 @@
 - name: Compute Tasks
   href: compute_tasks/toc.yml
   homepage: compute_tasks/index.md
-# - name: Environment
-#   href: environment.md  
+- name: Environment
+  href: environment/toc.yml
+  homepage: environment/index.md
 - name: Line Batch
   href: linebatch/toc.yml
   homepage: linebatch/index.md
