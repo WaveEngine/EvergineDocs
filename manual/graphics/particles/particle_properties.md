@@ -64,12 +64,11 @@ The initial color configuration panel controls the particle color when it's emit
 | Init Color mode | _Constant_ | Sets wether the initial color is **Constant** (_Init Color_) or **RandomBetweenTwoConstants** (A random value between _Init Color_ and _Init Color2_). |
 | Init Color | _White_ | The initial color of the particle. |
 | Init Color 2 | _White_ | The second value of the initial color range.
+| Preserve Highlights | _false_ | If true, the tint effect of the initial color on the particle texture will decay when the texture color gets whiter.  ![Preserve Highlights](images/preserve_highlights.png) |
 
-<video autoplay loop muted width="200">
-    <source src="images/color_random.mp4" type="video/mp4">
-</video>
+The next image shows two examples of initial color setting.
 
-* _Init Color_ set to **red** and _Init Color 2_ set to **cyan**.
+![Random Color](images/color_random.png)
 
 ### Size
 The initial size configuration panel controls the particle size when it's emitted. 
@@ -79,6 +78,10 @@ The initial size configuration panel controls the particle size when it's emitte
 | Init Size mode | _Constant_ | Sets wether the initial size is **Constant** (_Init Size_) or **RandomBetweenTwoConstants** (A random value between _Init Size_ and _Init Size_). |
 | Init Size | _0.1_ | The initial size of the particle. |
 | Init Size 2 | _0.1_ | The second value of the initial size range.
+
+The next image shows two examples of initial size setting.
+
+![Random Size](images/size_random.png)
 
 ### Speed
 The initial speed configuration panel controls the particle speed magnitude (in space units per second) when it's emitted. The initial **Velocity** of the particle will be the initial direction vector multiplied by the **Speed** of the particle.
