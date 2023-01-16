@@ -1,10 +1,28 @@
-# XRV
+# Extended Reality Viewer (XRV)
 
 ---
 
-TODO: here a description about XRV
+XRV is a library that we are using internally while developing custom XR experiences for our customers. It tries to gather in a single place different functionalities and features commonly required by applications we build.
 
-TODO: XrvService
+TODO: ¿algo más de texto? (apps para HoloLens y Quest)
+TODO: añadir captura
+
+## In this section
+* [Getting started](getting_started.md)
+* [Hand menu](hand_menu.md)
+* UI
+  * Windows system
+  * Tabs control
+* Settings system
+* Help
+* Voice commands
+* Messaging
+* Storage
+* Themes system
+* Localization
+* Logging
+* [Modules](modules/index.md)
+
 
 ## Subsystems and features
 
@@ -14,55 +32,3 @@ TODO for each one
 - Description
 - Usage (code snippets)
 - Configuration (if any)
-
-### Hand Menu
-
-TODO
-
-### UI
-
-TODO
-
-#### Windows
-
-#### Dialogs
-
-#### Tabs
-
-### Settings
-
-TODO
-
-### Help
-
-TODO
-
-### Voice Commands
-
-TODO
-
-### Messaging
-
-TODO
-
-### Storage
-
-TODO
-
-### Themes
-
-TODO
-
-### Localization
-
-TODO
-
-### Logging
-
-TODO
-
-## Modules
-
-TODO: small description to introduce separate section
-
-- [Modules](modules/index.md)
