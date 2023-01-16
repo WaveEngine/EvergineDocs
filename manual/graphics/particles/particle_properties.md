@@ -90,7 +90,7 @@ The initial angle configuration panel controls the particle quad angle when it's
 | Init Angle | _0_ | The initial angle of the particle in degrees. |
 | Init Angle 2 | _0_ | The second value of the initial angle range in degrees.
 
-The next image shows two examples of initial size setting.
+The next image shows three examples of initial angle setting.
 
 ![Random Size](images/random_angle.png)
 
@@ -133,11 +133,48 @@ More information about the spawn management here: [Particle Spawn](particle_spaw
 
 ## Color over life
 These properties manages how the particle color changes over life.
+In a next **Evergine** version we will implement a proper _Gradient Color_ editor, but meanwhile we've defined the color over life of the particle using the next properties according to this diagram:
+
+![Color Over Life Diagram](images/color_over_life.png)
+
+> [!Note]
+> The color of the gradient is applied as a tint over the initial color of the particle.
 
 | Property | Default value | Description |
 |----------|--------------|-------------|
 | Color Animated | _false_ | Sets whether the particle color is animated through its life time. |
-| Color Over Live 1 | _Transparent_ | Sets whether the particle color is animated through its life time. |
+| Color Over Life 1 | _Transparent_ | Color of the **first** point of the animation.|
+| Color Over Life 2 | _White_ | Color of the **second** point of the animation.|
+| Color Over Life 3 | _White_ | Color of the **third** point of the animation.|
+| Color Over Life 4 | _Transparent_ | Color of the **fourth** point of the animation.|
+| Color Over Life 2 Position | _0.2_ | Position in the curve of the **second** point of the animation. Must be in the range _[0, 1]_|
+| Color Over Life 3 Position | _0.8_ | Position in the curve of the **third** point of the animation. Must be in the range _[0, 1]_|
+
+The next picture shows a particle system using the color gradient previously seen.
+
+![Color Over Life Diagram View](images/color_over_life_view.png)
+
 ## Size over life
+
+These are the properties that controls how the particles change their size over their lifetime.
+In a next **Evergine** version we will implement a proper Curve Editor_ editor, but meanwhile we've defined the size over life of the particle using the next properties according to this diagram:
+
+![Size Over Life Diagram](images/size_over_life.png)
+
+> [!Note]
+> The size of the curve is applied as a multiplier over the initial size of the particle.
+
+| Property | Default value | Description |
+|----------|--------------|-------------|
+| Size Animated | _false_ | Sets whether the particle size is animated through its life time. |
+| Size Over Life 1 | _0_ | Size multiplier of the **first** point of the animation.|
+| Size Over Life 2 | _1_ | Size multiplier of the **second** point of the animation.|
+| Size Over Life 3 | _1_ | Size multiplier of the **third** point of the animation.|
+| Size Over Life 4 | _0_ | Size multiplier of the **fourth** point of the animation.|
+| Size Over Life 2 Position | _0.2_ | Position in the curve of the **second** point of the animation. Must be in the range _[0, 1]_|
+| Size Over Life 3 Position | _0.8_ | Position in the curve of the **third** point of the animation. Must be in the range _[0, 1]_|
+
+![Size Over Life View](images/size_over_life_view.png)
+
 ## Noise
 ## Forces
