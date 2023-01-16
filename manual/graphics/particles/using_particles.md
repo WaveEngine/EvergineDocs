@@ -21,11 +21,14 @@ The new created entity has a **Transform3D** component and 2 new components:
 This component loads the **Particle System** asset and manages its simulation and resources.
 
 It has the following methods:
+
 | Property | Description |
 | --------- | --------- |--------------- |
-| **StartEmitting**  | Starts the particle system emission if it was stopped |
-| **StopEmitting**  | Stops the particle system emission if it was already emitting |
-| **Reset**  | Resets all the particles to its initial state |
+| **StartEmitting()**  | Starts the particle system emission if it was stopped |
+| **StopEmitting()**  | Stops the particle system emission if it was already emitting |
+| **Reset()**  | Resets all the particles to its initial state |
+
+And the following properties:
 
 | Property | Type |Description |
 | --------- | --------- |--------------- |
@@ -34,8 +37,6 @@ It has the following methods:
 | **Emit Automatically** | _boolean_ | When _true_, starts emitting particles when the scene is loaded. If _false_ it will be idle until it's manually started. _(true by default)_
 | **Life Factor** | _float_ | Factor applied to the life time of the particle. 2 will cause particles life reduced by half. _(1 by default)_
 | **Time Factor** | _float_ | Time factor applied to the **whole particle simulation**. A value of 2 will cause particles move at double speed, while 0.5 will slow down particles to half speed. _(1 by default)_
-
-As you can see this, entity hierarchy mirrors the inner **Model** asset structure seen [here](index.md).
 
 ## Load Particle System from code
 The following sample code can be used to instantiate an existing material asset and apply to an entity in your scene.
