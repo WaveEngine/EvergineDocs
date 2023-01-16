@@ -2,6 +2,8 @@
 
 Load a video stream.
 
+![snapshot](images/snapshot.png)
+
 # Installation
 
 ```csharp
@@ -20,6 +22,4 @@ Load a video stream.
 
 # Usage
 
-Open from hand menu
-
-# Confifuration
+Open from hand menu ![snapshot](images/VideoStreaming.png)

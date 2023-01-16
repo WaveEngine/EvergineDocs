@@ -2,6 +2,8 @@
 
 Take measurements of space.
 
+![snapshot](images/snapshot.png)
+
 # Installation
 
 ```csharp
@@ -18,6 +20,10 @@ Take measurements of space.
 
 # Usage
 
-Open from hand menu
+Open from hand menu ![snapshot](images/measure.png)
+
+Drag and drop corners to move rule.
 
 # Confifuration
+
+On hand menu settings ![](../images/settings.png) you can open Rule config to change between meters and feets.

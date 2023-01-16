@@ -2,6 +2,8 @@
 
 Easyly Load images onto your application.
 
+![Snapshot](images/snapshot.png).
+
 # Installation
 
 ```csharp
@@ -28,8 +30,4 @@ Open from hand menu
 
 You can navigate between images by clickiing on
 
-Next: ![next](images/next.png)
-
-Previous: ![previous](images/previous.png).
-
-# Confifuration
+![next](images/next.png) ![previous](images/previous.png).

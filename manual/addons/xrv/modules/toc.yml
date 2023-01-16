@@ -8,3 +8,5 @@
   homepage: ruler/index.md
 - name: Streaming Viewer
   homepage: streamingviewer/index.md
+- name: Custom Modules
+  homepage: customModule/index.md
