@@ -1,6 +1,7 @@
 # XRV
 
 ---
+
 TODO: here a description about XRV
 
 TODO: XrvService
@@ -8,6 +9,7 @@ TODO: XrvService
 ## Subsystems and features
 
 TODO for each one
+
 - Separated MD file
 - Description
 - Usage (code snippets)
@@ -63,4 +65,4 @@ TODO
 
 TODO: small description to introduce separate section
 
-* [Modules](modules.md)
+- [Modules](modules/index.md)
