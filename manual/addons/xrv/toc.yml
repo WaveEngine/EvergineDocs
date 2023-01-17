@@ -2,6 +2,8 @@
   homepage: getting_started.md
 - name: Hand menu
   homepage: hand_menu.md
+- name: Windows System
+  homepage: windows_system.md
 - name: Modules
   href: modules/toc.yml
   homepage: modules/index.md
