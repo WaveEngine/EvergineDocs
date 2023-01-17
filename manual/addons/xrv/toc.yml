@@ -6,6 +6,8 @@
   homepage: windows_system.md
 - name: Voice Commands
   homepage: voice_commands.md
+- name: Logging
+  homepage: logging.md
 - name: Modules
   href: modules/toc.yml
   homepage: modules/index.md

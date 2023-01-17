@@ -21,7 +21,7 @@ TODO: añadir captura
 - Storage
 - Themes system
 - Localization
-- Logging
+- [Logging](logging.md)
 - [Modules](modules/index.md)
   - [Image Gallery](modules/imageGallery/index.md)
   - [Models Viewer](modules/modelsLoader/index.md)

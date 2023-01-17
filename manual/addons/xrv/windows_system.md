@@ -26,6 +26,22 @@ Windows system provides methods for create windows
 
 ## Examples
 
+### Get windows system anywhere
+
+Get windows system anywhere
+
+```csharp
+var windowSystem = Application.Current.Container.Resolve<XrvService>().WindowSystem;
+```
+
+### Get Windows System in component
+
+````csharp
+[BindService]
+private XrvService xrvService = null;
+
+private windowSystem =>  xrvService.WindowSystem;
+```
 ### Alert Dialog
 
 ```csharp
@@ -33,7 +49,7 @@ Windows system provides methods for create windows
 var alertDelete = this.xrvService.WindowSystem.ShowAlertDialog("Alert Title", "Sample Content.", "OK");
 // Show dialog
 alertDelete.Open();
-```
+````
 
 ### Confirmation Dialog
 

@@ -17,10 +17,23 @@ Provides a service where we can register key words, that the speech recognition 
 
 We want to add "close" "open" to voice command recognition
 
-```csharp
-// Get void service
-var voiceService = Application.Current.Container.Resolve<IVoiceCommandService>();
+### Get VoiceCommandService anywhere
 
+```csharp
+// Get logger
+var voiceService = Application.Current.Container.Resolve<IVoiceCommandService>();
+```
+
+### Get Logging in component
+
+```csharp
+[BindService]
+private IVoiceCommandService voiceService = null;
+```
+
+### Configure custom words
+
+```csharp
 // Add words
 voiceService?.ConfigureVoiceCommands(["close", "open"]);
 
