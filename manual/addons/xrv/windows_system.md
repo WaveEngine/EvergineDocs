@@ -14,12 +14,15 @@ You can also use windows system to create a window like view of your content, wi
 
 Windows system provides methods for create windows
 
-| Properties          | Description                                                                             |
+| Methods             | Description                                                                             |
 | ------------------- | --------------------------------------------------------------------------------------- |
 | `ShowAlertDialog`   | Shows alert dialog with title, content and text for the close button.                   |
 | `ShowConfirmDialog` | Shows a confirmation dialog with title, content and personalized text for yes/no button |
 | `CreateWindow`      | Shows a window with content.                                                            |
-| `Distances`         | You can set distance in meters where you want the window to appear.                     |
+
+| Properties  | Description                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| `Distances` | You can set distance in meters where you want the window to appear. |
 
 ## Examples
 

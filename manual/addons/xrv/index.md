@@ -16,7 +16,7 @@ TODO: añadir captura
   - Tabs control
 - Settings system
 - Help
-- Voice commands
+- [Voice commands](voice_commands.md)
 - Messaging
 - Storage
 - Themes system

@@ -4,6 +4,8 @@
   homepage: hand_menu.md
 - name: Windows System
   homepage: windows_system.md
+- name: Voice Commands
+  homepage: voice_commands.md
 - name: Modules
   href: modules/toc.yml
   homepage: modules/index.md
