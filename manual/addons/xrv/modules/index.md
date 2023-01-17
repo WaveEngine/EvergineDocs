@@ -2,36 +2,36 @@
 
 ---
 
-## [Image Gallery](imageGallery.md)
+## [Image Gallery](imageGallery/index.md)
 
-Now you will be able to load images, and hang them in the space.
+Add images in your scene.
 
 ![Image gallery sample](imageGallery/images/snapshot.png)
 
-## [Models Loader](modelsLoader.md)
+## [Models Loader](modelsLoader/index.md)
 
-Now you will be able to load 3D models, and hang them in the space.
+Add 3D models, and manipulate then in your scene.
 
 ![Image gallery sample](modelsLoader/images/snapshot2.png)
 
-## [Painter](painter.md)
+## [Painter](painter/index.md)
 
-Now you will be able to load 3D models, and hang them in the space.
+Add lines in your scene to help you to emphasize something in particular.
 
 ![Image gallery sample](painter/images/snapshot2.png)
 
-## [Ruler](ruler.md)
+## [Ruler](ruler/index.md)
 
-Now you will be able to take measures.
+Take measurements in your scene.
 
 ![Image gallery sample](ruler/images/snapshot.png)
 
-## [Streaming Viewer](streamingviewer.md)
+## [Streaming Viewer](streamingviewer/index.md)
 
-Now you will be able to attach to a video stream and load it onto your space.
+Attach a video stream and load it into your scene.
 
 ![Image gallery sample](streamingviewer/images/snapshot.png)
 
-## [Create your own Custom Module](customModule.md)
+## [Create your own Custom Module](customModule/index.md)
 
-You can create a module for your needs.
+Create a module that fit your needs.
