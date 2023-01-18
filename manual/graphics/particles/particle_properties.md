@@ -174,7 +174,11 @@ In a next **Evergine** version we will implement a proper Curve Editor_ editor, 
 | Size Over Life 2 Position | _0.2_ | Position in the curve of the **second** point of the animation. Must be in the range _[0, 1]_|
 | Size Over Life 3 Position | _0.8_ | Position in the curve of the **third** point of the animation. Must be in the range _[0, 1]_|
 
-![Size Over Life View](images/size_over_life_view.png)
+The next video shows a particle system using the size curve previously seen.
+
+<video autoplay loop muted width="320">
+    <source src="images/size_over_life_view.mp4" type="video/mp4">
+</video>
 
 ## Noise
 ## Forces

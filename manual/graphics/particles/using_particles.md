@@ -24,9 +24,9 @@ It has the following methods:
 
 | Property | Description |
 | --------- | --------- |--------------- |
-| **StartEmitting()**  | Starts the particle system emission if it was stopped |
-| **StopEmitting()**  | Stops the particle system emission if it was already emitting |
-| **Reset()**  | Resets all the particles to its initial state |
+| **StartEmitting ()**  | Starts the particle system emission if it was stopped |
+| **StopEmitting ()**  | Stops the particle system emission if it was already emitting |
+| **Reset ()**  | Resets all the particles to its initial state |
 
 And the following properties:
 
