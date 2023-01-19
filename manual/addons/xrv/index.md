@@ -13,7 +13,7 @@ TODO: añadir captura
 - [Hand menu](hand_menu.md)
 - UI
   - [Windows system](windows_system.md)
-  - Tabs control
+  - [Tabs control](tabs_control.md)
 - Settings system
 - Help
 - [Voice commands](voice_commands.md)
