@@ -14,7 +14,7 @@ TODO: añadir captura
 - UI
   - [Windows system](windows_system.md)
   - [Tabs control](tabs_control.md)
-- Settings system
+- [Settings system](settings_system.md)
 - Help
 - [Voice commands](voice_commands.md)
 - Messaging

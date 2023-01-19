@@ -47,14 +47,13 @@ Is the component used to manage tabs. It has a static builder to create tabs.
 Example to Create `TabItem` using `TabControlBuilder`
 
 ```csharp
-// Get logger
- var tabEntity = TabControl.Builder
-                .Create() // Gets builder
-                .WithSize(new Vector2(0.3f, 0.2f)) // Set size
-                .AddItem(new TabItem // Create tab
-                {
-                    Name = () => "Tab Name",
-                    Contents = () => this.CreateContent(), // Function to create content Func<Entity>
-                })
-                .Build(); // Initialize
+var tabEntity = TabControl.Builder
+    .Create() // Gets builder
+    .WithSize(new Vector2(0.3f, 0.2f)) // Set size
+    .AddItem(new TabItem // Create tab
+    {
+        Name = () => "Tab Name",
+        Contents = () => this.CreateContent(), // Function to create content Func<Entity>
+    })
+    .Build(); // Initialize
 ```

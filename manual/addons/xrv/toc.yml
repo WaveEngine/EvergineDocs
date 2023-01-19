@@ -6,6 +6,8 @@
   homepage: windows_system.md
 - name: Tabs Control
   homepage: tabs_control.md
+- name: Settings System
+  homepage: settings_system.md
 - name: Voice Commands
   homepage: voice_commands.md
 - name: Logging
