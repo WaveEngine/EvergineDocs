@@ -16,6 +16,6 @@ this.Settings = new TabItem()
 };
 ```
 
-Now a new tab will appear below general in settings section with your custom settings on it.
+Now a new tab will appear below General in settings section with your custom settings on it.
 
 ![settings hand menu](images/settings_system_panel.png)

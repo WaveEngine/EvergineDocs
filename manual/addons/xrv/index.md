@@ -15,7 +15,7 @@ TODO: añadir captura
   - [Windows system](windows_system.md)
   - [Tabs control](tabs_control.md)
 - [Settings system](settings_system.md)
-- Help
+- [Help system](help_system.md)
 - [Voice commands](voice_commands.md)
 - Messaging
 - Storage

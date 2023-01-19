@@ -8,6 +8,8 @@
   homepage: tabs_control.md
 - name: Settings System
   homepage: settings_system.md
+- name: Help System
+  homepage: help_system.md
 - name: Voice Commands
   homepage: voice_commands.md
 - name: Logging
