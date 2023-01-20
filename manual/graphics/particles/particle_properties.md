@@ -150,9 +150,11 @@ In a next **Evergine** version we will implement a proper _Gradient Color_ edito
 | Color Over Life 2 Position | _0.2_ | Position in the curve of the **second** point of the animation. Must be in the range _[0, 1]_|
 | Color Over Life 3 Position | _0.8_ | Position in the curve of the **third** point of the animation. Must be in the range _[0, 1]_|
 
-The next picture shows a particle system using the color gradient previously seen.
+The next video shows a particle system using the color gradient previously seen.
 
-![Color Over Life Diagram View](images/color_over_life_view.png)
+<video autoplay loop muted width="320">
+    <source src="images/color_over_life.mp4" type="video/mp4">
+</video>
 
 ## Size over life
 
@@ -181,4 +183,34 @@ The next video shows a particle system using the size curve previously seen.
 </video>
 
 ## Noise
+
+The noise panel allows to apply a turbulence field into the particle system. All the properties of this panel are used to control the parameters of that field.
+
+| Property | Default value | Description |
+|----------|--------------|-------------|
+| Noise Enabled  | _false_ | Sets whether the particle system is affected by the noise field.|
+| Noise Strength | _1_ | How much the particles are affected by the noise field. Bigger value will generate more chaos!|
+| Noise Size | _1_ | The scale of the noise field. Big values cause a more wavy noise, small values will change the behavior among close particles.|
+| Noise Frequency | _1_ | Represents the period at which the noise data is sampled.|
+| Noise Speed | _(1, 1, 1)_ | The velocity vector that the noise field is moving.|
+
+The next video shows a particle system affected by noise _(Strength 1, Size 10, Frequency 1, Speed (0, -1, 0))_.
+
+<video autoplay loop muted width="320">
+    <source src="images/noise_view.mp4" type="video/mp4">
+</video>
+
 ## Forces
+This panel is used to allow the particle system to be affected by forces and to tune which one can affect them.
+
+
+| Property | Default value | Description |
+|----------|--------------|-------------|
+| Forces Enabled  | _false_ | Sets whether the particle system is affected by the forces.|
+| Forces Category | _All_ | The particle system is only affected by forces with the same _Forces Category_ property.|
+
+The next video shows a particle system affected by a **Point Attractor Force**.
+
+<video autoplay loop muted width="480">
+    <source src="images/forces.mp4" type="video/mp4">
+</video>
