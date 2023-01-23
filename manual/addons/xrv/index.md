@@ -17,9 +17,9 @@ Most of the features are supported for many platforms, but some of them are not 
 
 - [Getting started](getting_started.md)
 - [Hand menu](hand_menu.md)
-- UI
-  - [Windows system](windows_system.md)
-  - [Tabs control](tabs_control.md)
+- [UI](ui/index.md)
+  - [Windows system](ui/windows_system.md)
+  - [Tabs control](ui/tabs_control.md)
 - [Settings system](settings_system.md)
 - [Help system](help_system.md)
 - [Voice commands](voice_commands.md)
