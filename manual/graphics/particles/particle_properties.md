@@ -203,6 +203,8 @@ The next video shows a particle system affected by noise _(Strength 1, Size 10, 
 ## Forces
 This panel is used to allow the particle system to be affected by forces and to tune which one can affect them.
 
+The different available forces are explained in [this article](particle_forces.md).
+
 
 | Property | Default value | Description |
 |----------|--------------|-------------|

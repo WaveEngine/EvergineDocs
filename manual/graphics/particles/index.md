@@ -1,7 +1,7 @@
 # Particle System
 ---
 
-<video autoplay loop muted width="1100">
+<video autoplay loop muted width="100%" height="auto">
   <source src="images/fire_low.mp4" type="video/mp4">
 </video>
 
@@ -21,4 +21,4 @@ Particles are elements that are used in a large number to create a wide range of
 * [Particle properties](particle_properties.md)
 * [Particle shapes](particle_shapes.md)
 * [Particle spawn](particle_spawn.md)
-* [Particle System Forces](particle_forces.md)
+* [Particle forces](particle_forces.md)
