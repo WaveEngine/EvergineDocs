@@ -37,7 +37,7 @@ var voiceSystem = this.xrvService.VoiceSystem;
 voiceSystem.RegisterCommands(new [] { "one command", "other command" });
 ```
 
-## Create a custom component that listens to voice commands
+## Create custom speech handler
 
 ```csharp
 public MySpeechRecognizer : SpeechHandler 
