@@ -17,7 +17,7 @@ public class MyModule : Module
         this.Settings = new TabItem()
         {
             Name = () => "Module Name",
-            Contents = this.CreateContents() // Entity containing settings control.
+            Contents = this.CreateContents() // Entity with configuration item contents.
         };
     }
 }
@@ -26,14 +26,14 @@ public class MyModule : Module
 - Using _SettingsSystem_ API
 
 ```csharp
-var settings = this.xrvService.Settings;
+var settings = this.xrvService.SettingsSystem;
 var item = new TabItem
 {
     Order = 1,
     Name = "My item",
     Contents = () => this.CreateContents(),
 };
-settings.AddTabItem(this.settingsItem);
+settings.AddTabItem(item);
 ```
 
 You can also remove an existing item using _RemoveTabItem_ method.
