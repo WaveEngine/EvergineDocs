@@ -39,7 +39,7 @@ And the following properties:
 | **Time Factor** | _float_ | Time factor applied to the **whole particle simulation**. A value of 2 will cause particles move at double speed, while 0.5 will slow down particles to half speed. _(1 by default)_
 
 ## Load Particle System from code
-The following sample code can be used to instantiate an existing material asset and apply to an entity in your scene.
+The following sample code can be used to create a new Particle force entity in your scene.
 ```csharp
 protected override void CreateScene()
 {
