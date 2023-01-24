@@ -1,6 +1,6 @@
 # Help System
 
-Other of the predefined that _XRV_ offers is _Help_ window. This window is intended to contain some text and images guidance for application users, to learn how to use it. It works in the same way as [Settings System](settings_system.md): you can associate a help section to your custom module, or you can add or remove items programmatically. To open _Help_ window, just press ![help hand menu](images/help.png) button that you can find in hand menu.
+Other of the predefined windows that _XRV_ offers is _Help_ window. This window is intended to contain some text and images guidance for application users, to learn how to use it. It works in the same way as [Settings System](settings_system.md): you can associate a help section to your custom module, or you can add or remove items programmatically. To open _Help_ window, just press ![help hand menu](images/help.png) button that you can find in hand menu.
 
 ![settings hand menu](images/help_system_menu.png)
 
@@ -26,14 +26,14 @@ public class MyModule : Module
 - Using _HelpSystem_ API
 
 ```csharp
-var settings = this.xrvService.Help;
+var help = this.xrvService.HelpSystem;
 var item = new TabItem
 {
     Order = 1,
     Name = "My item",
     Contents = () => this.CreateContents(),
 };
-settings.AddTabItem(this.settingsItem);
+help.AddTabItem(item);
 ```
 
 You can also remove an existing item using _RemoveTabItem_ method.

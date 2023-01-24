@@ -1,57 +1,51 @@
 # Voice Commands
 
-Provides a service where we can register key words, that the speech recognition service will detect and we can take actions when this happens.
-
-| Methods                  | Description                                                             |
-| ------------------------ | ----------------------------------------------------------------------- |
-| `ConfigureVoiceCommands` | You can set an array of key words that the system will be listening to. |
-| `CommandRecognized`      | Event that fires when a key word is recognized                          |
+Provides a service where we can register key words, that the speech recognition service will detect and we can take actions when this happens. It is based in [MRTK](../mrtk/index.md), so you should work with _SpeechHandler_ if you want to create handlers for your custom controls. If you are only interested in buttons and toggle buttons, you can make use of _PressableButtonSpeechHandler_ defined in _MRTK_, or _ToggleButtonSpeechHandler_ defined in _XRV_, to activate a button if associated voice command is recognized.
 
 > [!NOTE]
-> The device has to support speech recognition. If not speech recognition service is enabled or supported `CommandRecognized` will never be fired.
+> Current implementation supports voice commands for _HoloLens 2 (UWP)_ only. Speech recognition service must be enabled or command recognition will never be fired.
 
-> [!NOTE]
-> For example [MRTK](../mrtk/index.md) provides a `VoiceCommandService` that implements `IVoiceCommandService`.
+User can also activate or deactivate voice command recognition in _Configuration -> General_ section.
 
-## Examples
+## Associate voice commands programmatically
 
-We want to add "close" "open" to voice command recognition
-
-### Get VoiceCommandService anywhere
+You have two options to add custom voice commands:
+- Specify voice commands in [menu button description](hand_menu.md) for module definition.
 
 ```csharp
-// Get logger
-var voiceService = Application.Current.Container.Resolve<IVoiceCommandService>();
-```
-
-### Get Logging in component
-
-```csharp
-[BindService]
-private IVoiceCommandService voiceService = null;
-```
-
-### Configure custom words
-
-```csharp
-// Add words
-voiceService?.ConfigureVoiceCommands(["close", "open"]);
-
-// Get callback from recognized words
-voiceService.CommandRecognized += VoiceService_CommandRecognized;
-```
-
-Now we can set proper actions on `VoiceService_CommandRecognized method`.
-
-```csharp
-private void VoiceService_CommandRecognized(object sender, string e)
+public MyModule : Module 
 {
-    if (e == "close"){
-        // Do close stuff
-    }
-    else if (e == "open")
+    private const string VoiceCommandShow = "Show feature";
+    private const string VoiceCommandHide = "Hide feature";
+
+    public override IEnumerable<string> VoiceCommands => new[] { VoiceCommandShow, VoiceCommandHide };
+
+    public override void Initialize(Scene scene)
     {
-        // Do open stuff
+        this.HandMenuButton = new MenuButtonDescription()
+        {
+            VoiceCommandOff = VoiceCommandShow,
+            VoiceCommandOn = VoiceCommandHide,
+        };
+    }
+}
+```
+- Using _Voice System_ API to programmatically register voice commands. Please, note that this should only be invoked on application startup.
+
+```csharp
+var voiceSystem = this.xrvService.VoiceSystem;
+voiceSystem.RegisterCommands(new [] { "one command", "other command" });
+```
+
+## Create a custom component that listens to voice commands
+
+```csharp
+public MySpeechRecognizer : SpeechHandler 
+{
+    protected override void InternalOnSpeechKeywordRecognized(string keyword)
+    {
+        base.InternalOnSpeechKeywordRecognized(keyword);
+        // Do something depending on matching command
     }
 }
 ```
