@@ -1,7 +1,7 @@
 # UI
 
 ---
-// TODO:
+XRV provides some built-in components and artifacts that makes life easier to developer about creating uniform and consistent user interfaces.
 
 ## In this section
 
