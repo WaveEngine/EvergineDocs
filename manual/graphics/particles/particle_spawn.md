@@ -1,4 +1,9 @@
 # Particle spawn
+
+<video autoplay loop muted width="100%" height="auto">
+  <source src="images/particle_forces_header.mp4" type="video/mp4">
+</video>
+
 This module controls **when** the particles are spawned in our particle system.
 We mainly have 3 types:
 - Rate Spawn
