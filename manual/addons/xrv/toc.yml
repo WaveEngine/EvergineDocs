@@ -13,6 +13,8 @@
   homepage: voice_commands.md
 - name: Messaging
   homepage: messaging.md
+- name: Storage
+  homepage: storage.md
 - name: Localization
   homepage: localization.md
 - name: Logging

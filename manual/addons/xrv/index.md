@@ -24,9 +24,9 @@ Most of the features are supported for many platforms, but some of them are not 
 - [Help System](help_system.md)
 - [Voice commands](voice_commands.md)
 - [Messaging](messaging.md)
-- Storage
+- [Storage](storage.md)
 - Themes system
-- Localization
+- [Localization](localization.md)
 - [Logging](logging.md)
 - [Modules](modules/index.md)
   - [Image Gallery](modules/imageGallery/index.md)
