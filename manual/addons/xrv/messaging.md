@@ -22,7 +22,7 @@ var pubSub = this.xrvService.Services.Messaging;
 var message = new MyMessage("my-data", 1234);
 pubSub.Publish(message);
 ```
-
+\
 To receive messages of a given type, you should use _Subscription_ method. It returns a subscription token, that you must save to be able to unsubscribe, depending on your how your code behaves. For example, if you want to use it in a _Component_, the most common pattern will be subscription in _OnAttach/OnActivated_ and desubscribe in _OnDetach/OnDeactivated_.
 
 ```csharp

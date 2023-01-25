@@ -1,6 +1,6 @@
 # Voice Commands
 
-Provides a service where we can register key words, that the speech recognition service will detect and we can take actions when this happens. It is based in [MRTK](../mrtk/index.md), so you should work with _SpeechHandler_ if you want to create handlers for your custom controls. If you are only interested in buttons and toggle buttons, you can make use of _PressableButtonSpeechHandler_ defined in _MRTK_, or _ToggleButtonSpeechHandler_ defined in _XRV_, to activate a button if associated voice command is recognized.
+Provides a service where we can register key words, that the speech recognition service will detect and we can take actions when this happens. It is based on [MRTK](../mrtk/index.md), so you should work with _SpeechHandler_ if you want to create handlers for your custom controls. If you are only interested in buttons and toggle buttons, you can make use of _PressableButtonSpeechHandler_ defined in _MRTK_, or _ToggleButtonSpeechHandler_ defined in _XRV_, to activate a button if associated voice command is recognized.
 
 > [!NOTE]
 > Current implementation supports voice commands for _HoloLens 2 (UWP)_ only. Speech recognition service must be enabled or command recognition will never be fired.
