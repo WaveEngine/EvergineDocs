@@ -21,7 +21,7 @@ Most of the features are supported for many platforms, but some of them are not 
   - [Windows system](ui/windows_system.md)
   - [Tabs control](ui/tabs_control.md)
 - [Settings system](settings_system.md)
-- [Help system](help_system.md)
+- [Help System](help_system.md)
 - [Voice commands](voice_commands.md)
 - Messaging
 - Storage
