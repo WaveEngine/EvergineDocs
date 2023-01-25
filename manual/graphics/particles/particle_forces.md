@@ -90,6 +90,9 @@ It has the same **Cutout** parameters as previously stated, but in addition it h
 | Source Entity Path | _null_ | The path of the target entity of the force. |
 | Source Topology | _Vertex_ | The part of the mesh topology towards the particles are attracted. Its values can be _Vertex_ or _Triangle_ |
 
+>[!NOTE]
+>In this version **Evergine** does not spport  _Triangle_  as **Source Topology**.
+
 ### Wind Force
 
 The **Wind Force** push the particles in the **entity's forward direction** around its effect area (if the range is enabled). It doesn't have additional parameters. Its strength controls how much the particles are pushed by the wind.
