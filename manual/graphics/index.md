@@ -16,6 +16,7 @@ This section explains how to use Evergine for graphics and rendering.
 * [Models](models/index.md)
 * [Primitives](primitives.md)
 * [Post Processing Graph](postprocessing_graph/index.md)
+* [Particles](particles/index.md)
 * [Effects](effects/index.md)
 * [Environment](environment/index.md)
 * [Line Batch](linebatch/index.md)
