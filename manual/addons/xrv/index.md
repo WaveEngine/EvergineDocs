@@ -23,7 +23,7 @@ Most of the features are supported for many platforms, but some of them are not 
 - [Settings system](settings_system.md)
 - [Help system](help_system.md)
 - [Voice commands](voice_commands.md)
-- Messaging
+- [Messaging](messaging.md)
 - Storage
 - Themes system
 - Localization

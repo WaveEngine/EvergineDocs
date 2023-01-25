@@ -11,6 +11,8 @@
   homepage: help_system.md
 - name: Voice Commands
   homepage: voice_commands.md
+- name: Messaging
+  homepage: messaging.md
 - name: Localization
   homepage: localization.md
 - name: Logging
