@@ -17,6 +17,8 @@
   homepage: storage.md
 - name: Localization
   homepage: localization.md
+- name: Themes System
+  homepage: themes.md
 - name: Logging
   homepage: logging.md
 - name: Modules
