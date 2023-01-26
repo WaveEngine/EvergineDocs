@@ -13,6 +13,11 @@ We mainly have 3 types:
 ## Rate Spawn
 
 The **rate spawn** emits uniformly the particles according to a **rate**. It can emit for a specific amount of time or indefinitely. 
+
+<video autoplay loop muted width="auto" height="auto">
+    <source src="images/rate.mp4" type="video/mp4">
+</video>
+
 It has the following properties:
 
 | Property | Default Value | Description |
@@ -32,6 +37,11 @@ The **burst spawn** emits all the particles available by the system (The **Max P
 ## Distance Spawn
 
 The **distance spawn** emits at a rate **proportionally to the particle system speed**. A static particle system won't emit particles, but a moving one will emit accordingly to its speed and a specific defined factor.
+
+
+<video autoplay loop muted width="auto" height="auto">
+    <source src="images/distance_rate.mp4" type="video/mp4">
+</video>
 
 It has the following properties:
 
