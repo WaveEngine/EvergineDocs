@@ -12,13 +12,13 @@ It also supports several images and an easy way for switching between them.
 
 ![Image gallery sample](imageGallery/images/snapshot.png)
 
-## [Models Loader](modelsLoader/index.md)
+## [Model Viewer](modelViewer/index.md)
 
 With this module you can add 3D models, from different sources.
 
 Once loaded you can scale them and move them, you also have a menu with more features.
 
-![Image gallery sample](modelsLoader/images/snapshot2.png)
+![Image gallery sample](modelViewer/images/snapshot2.png)
 
 ## [Painter](painter/index.md)
 

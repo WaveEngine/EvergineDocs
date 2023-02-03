@@ -10,7 +10,7 @@ If you need to customize colors used by your application, you should know that _
 | **SecondaryColor1** | Color for inactive items in tab controls, backplate color for some buttons, text color for selections, some manipulators, etc. |
 | **SecondaryColor2** | Color applied to some manipulators. |
 | **SecondaryColor3** | Applies to accept option backplate in confirmation dialogs. |
-| **SecondaryColor4** | Windows front plate gradient start. |
+| **SecondaryColor4** | Windows front plate gradient start and plate color for dialog buttons. |
 | **SecondaryColor5** | Windows front plate gradient end. |
 
 Associated to these built-in colors, we provide a set of materials that you should use in your custom UI elements if you need to make use of themes and change default set of colors provided by _XRV_.
