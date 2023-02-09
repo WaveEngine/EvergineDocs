@@ -87,7 +87,6 @@ In the next table you can see the list of default text styles. As you may notice
 | **Xrv.Primary2.Size1** | font: ThemeFont.PrimaryFont2, scale = 0.007f,  color = ThemeColor.PrimaryColor3 |
 | **Xrv.Primary2.Size2** | font: ThemeFont.PrimaryFont2, scale = 0.006f,  color = ThemeColor.PrimaryColor3 |
 | **Xrv.Primary2.Size3** | font: ThemeFont.PrimaryFont2, scale = 0.005f,  color = ThemeColor.PrimaryColor3 |
-| **Xrv.Primary2.Size3.Alt** | font: ThemeFont.PrimaryFont2, scale = 0.005f,  color = ThemeColor.PrimaryColor1 |
 
 ### Add or modify an existing text style
 If you need to add new styles, or modify an existing one, you can do it implementing _ITextStyleRegistration_. Its single method named _Register_ passes as parameter the global styles dictionary: you can add new entries or modify existing ones. 
