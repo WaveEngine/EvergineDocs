@@ -8,7 +8,7 @@ Every type of light is modelled in Evergine using a **Light** component.
 
 ## Create a Light in Evergine Studio
 
-In the Entities Hierarchy panel of your Scene Editor, click the "Add Entity and select **Light**, then choose the kind of camera you want to create:
+In the Entities Hierarchy panel of your Scene Editor, click the "Add Entity and select **Light**, then choose the kind of light you want to create:
 
 * Point Light
 * Directional Light

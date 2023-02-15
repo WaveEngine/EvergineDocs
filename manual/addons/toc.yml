@@ -4,3 +4,6 @@
 - name: ARR
   href: arr/toc.yml
   homepage: arr/index.md
+- name: XRV
+  href: xrv/toc.yml
+  homepage: xrv/index.md

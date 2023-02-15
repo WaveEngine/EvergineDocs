@@ -1,0 +1,26 @@
+- name: Getting started
+  homepage: getting_started.md
+- name: Hand menu
+  homepage: hand_menu.md
+- name: UI
+  href: ui/toc.yml
+  homepage: ui/index.md
+- name: Settings System
+  homepage: settings_system.md
+- name: Help System
+  homepage: help_system.md
+- name: Voice Commands
+  homepage: voice_commands.md
+- name: Messaging
+  homepage: messaging.md
+- name: Storage
+  homepage: storage.md
+- name: Localization
+  homepage: localization.md
+- name: Themes System
+  homepage: themes.md
+- name: Logging
+  homepage: logging.md
+- name: Modules
+  href: modules/toc.yml
+  homepage: modules/index.md
