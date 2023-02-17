@@ -10,6 +10,8 @@ To add a new platform profile, use the _Add_ button. A new window will be open, 
 
 ![Scene update for managers](images/profile_search-profile.jpg)
 
+In the same way as launcher creation form, we have added here some filters to make it easier to find a template. Just make use of free text input and platform dropdown selector to limit template results.
+
 ## Profile management
 
 For each profile, a different set of settings is applied. Once you add a new platform profile, a default set of values will be added for that platform. For example, in platforms like _Windows_ shaders are compiled on runtime by default, but other platforms like _Web_ or _Android_ require shaders to be precompiled due to performance and platform limitations.
