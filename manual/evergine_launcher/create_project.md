@@ -9,6 +9,8 @@ The project configuration windows will be opened. Then you can choose the _Proje
 > [!Tip]
 > New profiles can be added later
 
+As number of templates has been growing in latest Evergine releases, we have decided to add some filters that may be useful to find desired template. You have a free text input and a platform dropdown selector that you can combine to limit template results.
+
 ![Configure new project](images/ConfigureProject.jpg)
 
 ## Open your new Evergine project
