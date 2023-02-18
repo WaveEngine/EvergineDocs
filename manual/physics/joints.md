@@ -1,2 +1,0 @@
-# Joints
-Coming soon
