@@ -1,9 +1,5 @@
 # Cone Twist Joint
 
-<video autoplay loop muted width="100%" height="auto">
-  <source src="images/PointToPointJointVideo.mp4" type="video/mp4">
-</video>
-
 For ragdolls, the **Cone-Twist Joint** is useful for limbs like the upper arm. It is a special point-to-point joint that adds cone and twist axis limits.
 
 A Cone-Twist Joint is similar to a Point-to-Point Joint Relationship, but specifies an elliptical cone within which rotation may take place. The cone is described by specifying a maximum rotation on each axis.
