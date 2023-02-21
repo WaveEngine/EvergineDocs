@@ -1,2 +1,4 @@
 - name: Using linebatch
   href: using_linebatch.md
+- name: Create custom linebatch
+  href: custom_linebatch.md

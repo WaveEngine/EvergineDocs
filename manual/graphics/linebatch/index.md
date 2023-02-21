@@ -11,3 +11,4 @@ The lines are compounds by two vertex and an edge so you cannot control the thic
 ## In this section
 
 * [Using Linebatch](using_linebatch.md)
+* [Create custom Linebatch](custom_linebatch.md)
