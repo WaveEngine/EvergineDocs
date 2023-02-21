@@ -2,7 +2,7 @@
 ---
 ![Audio Editor Interface](images/AudioEditor.jpg)
 
-**Audio Editor** allows editing the audio assets. Double click over an audio asset shown in [Assets Details](../../evergine_studio/interface.md) will open this editor. The editor is composed of 2 main parts:
+**Audio Editor** allows editing the audio assets. Double click over an audio asset shown in [Assets Details](../evergine_studio/interface.md) will open this editor. The editor is composed of 2 main parts:
 
 ## **Viewport**
 

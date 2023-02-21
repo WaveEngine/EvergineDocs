@@ -1,4 +1,4 @@
-# Using Physic bodies
+# Using Physics Bodies
 
 This is a small step by step to cover a variety of physics bodies. This is easily to replicate in Evergine Studio.
 

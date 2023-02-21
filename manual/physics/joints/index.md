@@ -13,7 +13,7 @@ Evergine has a set of default joint types (point to point, hinge, etc...) that a
 
 ![Joints](images/joints.png)
 
-In Evergine you can create Joints by adding the proper component (`HingeJoint3D` for example) to an Entity that contains a [RigidBody3D](../physic_bodies/rigid_bodies.md) component. This body is treated as *Source Rigid Body*. A Joint always need to be connected to another RigidBody, which is named *Connected Rigid Body*.
+In Evergine you can create Joints by adding the proper component (`HingeJoint3D` for example) to an Entity that contains a [RigidBody3D](../physics_bodies/rigid_bodies.md) component. This body is treated as *Source Rigid Body*. A Joint always need to be connected to another RigidBody, which is named *Connected Rigid Body*.
 
 ### Joint Anchor
 

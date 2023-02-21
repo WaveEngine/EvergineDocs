@@ -87,7 +87,7 @@ This snippet creates a small bridge of a series of connected  bodies.
                   PhysicBodyType = RigidBodyType3D.Kinematic
               });
 
-            // Create the slidding object...
+            // Create the sliding object...
             Entity cube = new Entity()
               .AddComponent(new Transform3D())
               .AddComponent(new MaterialComponent() { Material = cubeMaterial })

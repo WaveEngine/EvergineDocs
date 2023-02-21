@@ -5,12 +5,12 @@
 The **Audio** asset allows you to play sound effects and music in your project.
 
 ## Import a Audio asset in Evergine Studio
-You can create an audio asset by dragging an audio file to the [Assets Details](../../evergine_studio/interface.md) panel, as explained [in this article](../../evergine_studio/assets/create.md).
+You can create an audio asset by dragging an audio file to the [Assets Details](../evergine_studio/interface.md) panel, as explained [in this article](../evergine_studio/assets/create.md).
 
 ![Create new audio menu option](images/import_audio.jpg)
 
 ## Audio files in content directory
-**Audio** imported in **Evergine** create an aditional metadata `.wesn` file.
+**Audio** imported in **Evergine** create an additional metadata `.wesn` file.
 
 ![Audio file](images/audioFile.jpg)
 

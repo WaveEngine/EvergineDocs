@@ -19,7 +19,7 @@ In Evergine, we use the `CharacterController3D` component to provide this functi
 | **Restitution**| 0 | Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding bodies is 0, the bodies lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the "bounciness" of rigidbodies. | 
 | **Friction**| 0.5 | Sets the surface friction. | 
 | **RollingFriction**| 0 | Sets the rolling friction. | 
-| **IsSensor** | true | Characters are special type of physic bodies and by default is created as a sensor. |
+| **IsSensor** | true | Characters are special type of physics bodies and by default is created as a sensor. |
 | **CollisionCategory**| `Cat1` | The CollisionCategory flag specify the category of this body. | 
 | **MaskBit**| `All` | The MaskBits indicates with which categories this body will collide. |
 

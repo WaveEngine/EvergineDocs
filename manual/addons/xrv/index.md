@@ -30,7 +30,7 @@ Most of the features are supported for many platforms, but some of them are not 
 - [Logging](logging.md)
 - [Modules](modules/index.md)
   - [Image Gallery](modules/imageGallery/index.md)
-  - [Models Viewer](modules/modelsLoader/index.md)
+  - [Models Viewer](modules/modelViewer/index.md)
   - [Painter](modules/painter/index.md)
   - [Ruler](modules/ruler/index.md)
   - [Streaming Viewer](modules/streamingviewer/index.md)

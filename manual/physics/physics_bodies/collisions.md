@@ -14,7 +14,7 @@ To listen to all collision produced in a body, a [Pysic Body](index.md) componen
 
 ### CollisionInfo3D
 
-This class provides all collision information between two physic bodies (in physic engines, this is usually called a manifold).
+This class provides all collision information between two physics bodies (in physic engines, this is usually called a manifold).
 
 | Property | Description |
 | --- | --- |
@@ -88,7 +88,7 @@ private void BeginCollision(object sender, CollisionInfo3D collisionInfo)
 
 
 ## Collision filtering
-So far in every scene we have made, all the physic bodies were able to collide with all the other bodies. That is the default behavior, but it's also possible to set up 'collision filters' to provide finer control over which bodies can collide with each other. Collision filtering is implemented by setting some properties. These flags are:
+So far in every scene we have made, all the physics bodies were able to collide with all the other bodies. That is the default behavior, but it's also possible to set up 'collision filters' to provide finer control over which bodies can collide with each other. Collision filtering is implemented by setting some properties. These flags are:
 
 * CollisonCategory
 * MaskBits

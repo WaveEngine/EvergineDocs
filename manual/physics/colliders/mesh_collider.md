@@ -10,18 +10,18 @@ A **Mesh Collider** uses the owner entity meshes to define their shape. They use
 
 ### Default mode
 
-By default, a Mesh Collider uses **the entire triangle mesh to generate a collider shape**. This will create the better precision and fidelity. However, only [Static Bodies](../physic_bodies/static_bodies.md) can have Mesh Colliders in the default mode.
+By default, a Mesh Collider uses **the entire triangle mesh to generate a collider shape**. This will create the better precision and fidelity. However, only [Static Bodies](../physics_bodies/static_bodies.md) can have Mesh Colliders in the default mode.
 
 Mesh Colliders in the default mode is more suitable to create collisions for static scenery objects, such as walls, terrain, props, etc...
 
 > [!IMPORTANT]
-> Only [Static Bodies](../physic_bodies/static_bodies.md) can have Mesh Colliders in the default mode.
+> Only [Static Bodies](../physics_bodies/static_bodies.md) can have Mesh Colliders in the default mode.
 
 ![Mesh](images/mesh_collider_full.png)
 
 ### Convex Hull
 
-If you want to use Mesh Colliders in dynamic bodies like [Rigid Bodies](../physic_bodies/rigid_bodies.md), you need to set your Mesh Collider to use a Convex Hull. After using this mode, the Physic Engine creates a convex approximation of the mesh, allowing it to be used in dynamic bodies. As a counterpart, the precision of the collision is degraded.
+If you want to use Mesh Colliders in dynamic bodies like [Rigid Bodies](../physics_bodies/rigid_bodies.md), you need to set your Mesh Collider to use a Convex Hull. After using this mode, the Physic Engine creates a convex approximation of the mesh, allowing it to be used in dynamic bodies. As a counterpart, the precision of the collision is degraded.
 
 Convex colliders are suitable for movable physics objects like, chairs, tables, stones, etc...
 

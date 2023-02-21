@@ -3,14 +3,14 @@
 
 ![Colliders](imges/../images/colliders.png)
 
-**Colliders** are used to define the physical shape of a [Physic Body](../physic_bodies/index.md). Colliders are invisible and don't need to be the exact same shape as the object mesh and in a fact, a rough approximation is often more efficient and indistinguishable in your application.
+**Colliders** are used to define the physical shape of a [Physic Body](../physics_bodies/index.md). Colliders are invisible and don't need to be the exact same shape as the object mesh and in a fact, a rough approximation is often more efficient and indistinguishable in your application.
 
 Evergine provides various collider types, such as Box, Sphere or Capsule. Using simple collider shapes helps with application performance optimizations. However, if you need more detailed and exact collision for your object, use the Mesh collider.
 
 
-## Physic Bodies and Colliders
+## Physics Bodies and Colliders
 
-As we mentioned before in [Physic Bodies](../physic_bodies/index.md) section. A Collider needs a Physic Body to be attached, and a Physic Body itself needs Colliders to define their shape.
+As we mentioned before in [Physics Bodies](../physics_bodies/index.md) section. A Collider needs a Physic Body to be attached, and a Physic Body itself needs Colliders to define their shape.
 
 **A Physic Body search their attached collider in their child hierarchy**, including the owner's entity of the physic body. This also implies that a **Physic Body could have multiple colliders attached** to it.
 

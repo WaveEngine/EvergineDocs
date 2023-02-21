@@ -13,7 +13,7 @@ All SceneManagers in a Scene can be accessed using the `Scene.Managers` property
 | **AssetsSceneManager** | ```this.Managers.AssetsSceneManager``` | Controls the asset of the scene. More information below.
 | **BehaviorManager** | ```this.Managers.BehaviorManager``` | Manages the behavior update execution of the scene and their priority order.
 | **RenderManager** | ```this.Managers.RenderManager``` | Handles the **Rendering** of the scene. More information in the [Rendering](../../graphics/rendering_overview.md) article.
-| **EnvironmentManager** | ```this.Managers.EnvironmentManager``` | Controls the environmental information of the scene. Their Reflection Probes, their environmental radiance and irrandiance maps, etc. More information in the [Environment](../../graphics/environment.md) article.
+| **EnvironmentManager** | ```this.Managers.EnvironmentManager``` | Controls the environmental information of the scene. Their Reflection Probes, their environmental radiance and irrandiance maps, etc. More information in the [Environment](../../graphics/environment/index.md) article.
 | **PhysicManager3D** | ```this.Managers.PhysicManager3D```| Manages the physic simulation. All the Rigid or Static bodies are registered into this manager. More information in the [Physic Manager and Bullet](../../physics/physicmanager_bullet.md) article.
 
 >[!NOTE]

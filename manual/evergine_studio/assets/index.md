@@ -20,7 +20,7 @@ Here are the asset with resource files that **Evergine** currently supports.
 |--------------------|-------------|-------------|
 | [Texture](../../graphics/textures/index.md) | Image file used as texture graphic resource. | `.jpg`, `.jpeg`, `.png`, `.bmp`, `.tga`, `.ktx`, `.dds`, `.hdr` |
 | [Model](../../graphics/models/index.md) | 3d model with geometry, animation and material information. | `.gltf`, `.glb`, `.fbx`, `.3ds`, `.obj`, `.dae` |
-| [Sound](../../audio/sounds/index.md) | Audio file used for music and sound effects | `.wav`, `.mp3`, `.ogg`
+| [Sound](../../audio/index.md) | Audio file used for music and sound effects | `.wav`, `.mp3`, `.ogg`
 | File | Any file that does not satisfy the previous formats | Any other file.
 | [Font](../../graphics/fonts/index.md) | Font file used as font graphics resource | `.ttf`, `.otf`
 

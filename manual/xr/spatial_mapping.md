@@ -51,8 +51,8 @@ One of most important utilities for Spatial Mapping is to generate Physics colli
 | Property | Description |
 | --- | --- |
 | **GenerateColliders** (Default false) | Indicates if physic colliders will be generated for detected spatial mapping surfaces. Generating colliders has an important performance penalty, so we recommend to only enable colliders if it is necessary  *Default value is `false`* |
-| **CollisionCategory** (Default Cat1) |  Specify the CollisionCategory property of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physic_bodies/collision_filtering.md) for further details. *Default value is `Cat1`* |
-| **MaskBits** (Default All) |  Specify the MaskBits properly of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physic_bodies/collision_filtering.md) for further details. *Default value is `All`* |
+| **CollisionCategory** (Default Cat1) |  Specify the CollisionCategory property of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physics_bodies/collisions.md#collision-filtering) for further details. *Default value is `Cat1`* |
+| **MaskBits** (Default All) |  Specify the MaskBits properly of spatial mapping physics colliders (It has no effect if GenerateColliders value is false). Please, read [Collision Filtering](../physics/physics_bodies/collisions.md#collision-filtering) for further details. *Default value is `All`* |
 
 ## Using SpatialMapping from code
 
