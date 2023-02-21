@@ -28,6 +28,7 @@ In the **Text3DMesh** component of your Text3D entity you will find the followin
 | **VerticalAlignment**   | Allows align the text vertically. The available values are: _Top_, _Center_, and _Bottom_    |
 | **Origin**              | Allows to configure the origin of the Text3D entity. The value is a vector2 with values between [0-1].    |
 | **LineSpacing**         | Allows to configure the space between text lines.    |
+| **Softness**            | Allows to configure anti-aliasing effect. The value is a float between [0-2]
 
 ## Create a Text3D from code
 The following code shows the list of components necessary to convert an entity into a billboard entity. 
