@@ -1,34 +1,29 @@
-# Description
+# Streaming Viewer module
 
-Load a video stream from a media [mjpg](https://es.wikipedia.org/wiki/MJPEG) server.
+This module lets you load a video stream from a _MJPEG_ source. This is the unique streaming protocol that we support in current version. Video size can't be configured: this means that window size may vary depending on returned size of images provided by the server.
 
 ![snapshot](images/snapshot.png)
 
-# Installation // TODO
+> [!NOTE]
+> It's required provided JPEG responses counts with _Content-Length_ header to make it work properly.
 
-# Instantiate from code
+
+## Installation
+
+This module is packaged as [Evergine add-on](../../../index.md). To use it in your project, just install it from _Project Settings > Add-Ons_ window.
+
+![Module installation](images/installation.png)
+
+Then, just register the module programmatically within your XRV service instance.
 
 ```csharp
-// Find XrvService instantiation...
-
 var xrv = new XrvService()
-.AddModule(new StreamingViewerModule()
-{
-    SourceURL = "http://host/video.mjpg"
-})
+    .AddModule(new StreamingViewerModule 
+    {
+        SourceURL = "http://<HOST>/video.mjpg"
+    });
 ```
 
-# Usage
+## Usage
 
-Open from hand menu ![snapshot](images/VideoStreaming.png)
-
-Loads video stream from media feed.
-Video size will match media server.
-
-## Media server
-
-It is important that each header of each jpeg inside the mjpg streaming has "Content-Length".
-
-```
-Content-Length: 44244
-```
+- Use ![snapshot](images/VideoStreaming.png) hand menu button to open streaming window.
