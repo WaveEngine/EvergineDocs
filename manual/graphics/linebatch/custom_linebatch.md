@@ -56,6 +56,11 @@ public class MyDrawable : Drawable3D
 }
 ```
 
+**Result**
+![MyDrawable component](images/customLinebatch.jpg)
+
+## Some interesting properties
+
 The line batch has a **Transform** property that could be used to apply transformations (translation, rotation, or scale) to all elements added to the batch. For example, if you use the line batch to draw a CAD map you can use this property to rotate the whole map.
 
 The line batch by default requires that every frame the elements to draw will be added to the batch, but in some cases is interesting to create a static batch and draw the same elements every frame because any new element will not need to be added to the batch at runtime, so you can use the property **ResetAfterRender** to indicates that the line batch doesn't reset the batch every frame.
