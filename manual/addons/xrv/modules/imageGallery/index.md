@@ -24,16 +24,14 @@ This module is packaged as [Evergine add-on](../../../index.md). To use it in yo
 Then, just register the module programmatically within your XRV service instance.
 
 ```csharp
-
-// Find XrvService instantiation...
 FileAccess imagesDataSource = <Create FileAccess instance>;
 var xrv = new XrvService()
-.AddModule(new ImageGalleryModule()
-{
-    ImagePixelsWidth = 640,
-    ImagePixelsHeight = 640,
-    FileAccess = imagesDataSource,
-});
+    .AddModule(new ImageGalleryModule
+    {
+        ImagePixelsWidth = 640,
+        ImagePixelsHeight = 640,
+        FileAccess = imagesDataSource,
+    });
 ```
 
 ## Usage
