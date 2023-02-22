@@ -1,74 +1,74 @@
-# Description
+# Model Viewer module
 
-Easy load 3D models onto space from local repository.
+One of the most common tasks while developing a XR experience is loading 3D models. With this module, you have a way to load models from a remote location into your application. When loaded, a model can be moved, rotated and scaled thanks to its bounding box. Transformations can be performed by near or far interaction, indistinctly.
 
 ![Dragon](images/snapshot2.png)
 
-You can add several repositories from different places.
+This module lets you to define an unlimited number of model repositories, each one can contain an unlimited number of 3D models.
 
 | Properties               | Description                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------- |
 | `NormalizedModelEnabled` | If true will override original scale of the model and set the same for all models. |
 | `NormalizedModelSize`    | Size in meters for models when loaded                                              |
+| `Repositories`           | Array of model repositories.                                                       |
 
-Repository:
+A repository counts with following properties.
 
 | Properties   | Description                                     |
 | ------------ | ----------------------------------------------- |
 | `Name`       | This name will be displayed on model load list. |
-| `FileAccess` | Access policy for folders                       |
+| `FileAccess` | Models data source. Please refer to [Storage](../../storage.md) section for more information. |
 
-# Installation // TODO
+## Installation
 
-# Instantiate from code
+This module is packaged as [Evergine add-on](../../../index.md). To use it in your project, just install it from _Project Settings > Add-Ons_ window.
+
+![Module installation](images/installation.png)
+
+Then, just register the module programmatically within your XRV service instance.
 
 ```csharp
-// Find XrvService instantiation...
-
+FileAccess modelsDataSource = <Create FileAccess instance>;
 var xrv = new XrvService()
-.AddModule(new LoadModelModule()
-{
-    Repositories = new Repository[]
-                    {
-                        new Repository() // Define repository
-                        {
-                            Name = "Remote Sample Models",
-                            FileAccess = loadModelFileAccess,
-                        }
-                    },
-    NormalizedModelEnabled = true,
-    NormalizedModelSize = 0.2f,
-})
+    .AddModule(new ModelViewerModule
+    {
+        Repositories = new Repository[]
+                       {
+                            new Repository()
+                            {
+                                Name = "Remote Sample Models",
+                                FileAccess = loadModelFileAccess,
+                            }
+                       },
+        NormalizedModelEnabled = true,
+        NormalizedModelSize = 0.2f,
+    });
 ```
 
-# Usage
+## Usage
 
-Open from hand menu ![hand menu icon](images/addModel.png)
-
-## Open
-
-From List select model and click on load button.
+- To open model selection window, just tap on ![hand menu icon](images/addModel.png) hand menu button.
+- Select a model from _Models_ list. Each repository can have a different set of models. Once you know which model you want to load, just press _Load_ button.
 
 ![Model list](images/snapshot.png).
 
-## Menu
+### Manipulation
 
-Click on Menu icon to show options ![Menu icon](images/hamburger.png)
-
-![Menu open](images/menuOpen.png)
-
-- ![lock](images/locked.png) : No further modifications allowed on model.
-- ![reset](images/reset.png) : Reset model to original scale.
-- ![remove](images/delete.png) : Remove model from scene.
-
-## Manipulation
-
-By using manipulators can move, scale and rotate models.
-Manipulators are shown over bounding box.
+By using manipulators can move, scale and rotate models. Manipulators are shown over bounding box.
 
 ![Manipulators](images/manipulators.png)
 
-- Red : Scale, pinch on corners and drag for scale model.
-- Green : Roll, pinch on upper middle manipulator and drag for roll rotation.
-- Blue : Pitch, pinch on side middle manipulator and drag for pitch rotation.
-- Pink : stretch, pinch on center manipulator and drag for stretch scale.
+We have marked interaction areas with colors, depending on their manipulation possibilities.
+- **Red**: Scale, pinch on corners and drag for scale model.
+- **Green**: Roll, pinch on upper middle manipulator and drag for roll rotation.
+- **Blue**: Pitch, pinch on side middle manipulator and drag for pitch rotation.
+- **Pink**: stretch, pinch on center manipulator and drag for stretch scale.
+
+### Actions
+
+Each model has a submenu with a set of options. Tap on ![Menu icon](images/hamburger.png) button to expand list of available actions.
+- ![lock](images/locked.png) : Manipulation is disabled for the model. This is, it could not be moved, rotated or scaled until it is unlocked again.
+- ![reset](images/reset.png) : Reset model to original scale and orientation. Position won't be modified.
+- ![remove](images/delete.png) : Removes model from virtual space.
+
+![Menu open](images/menuOpen.png)

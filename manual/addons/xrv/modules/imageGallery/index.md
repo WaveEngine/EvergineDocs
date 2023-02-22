@@ -1,40 +1,40 @@
-# Description
+# Image Gallery module
 
-Easily Load images onto your scene.
+With this module, you can display a gallery of images, that can be stored remotely. A new element will be added in hand menu to provide direct access to gallery window. This window counts with some UI elements like a slider or buttons that lets the user load an image or other.
 
 ![Snapshot](images/snapshot.png).
 
-You can load more than one image, navigate buttons will be added, but all images should have same width/height.
+If data source contains only one image, no navigation buttons will be displayed at all. A single images data source is supported in current module version.
+
+> [!NOTE]
+> In current version, there is a restriction: all images should be of the same size.
 
 | Properties          | Description                              |
 | ------------------- | ---------------------------------------- |
 | `ImagePixelsWidth`  | Image width for the viewer in pixels.    |
 | `ImagePixelsHeight` | Image height for the viewer in pixels.   |
-| `FileAccess`        | Access policy, could be local, azure ... |
+| `FileAccess`        | Images data source. Please refer to [Storage](../../storage.md) section for more information. |
 
-FileAccess: see FileAccess // TODO
+## Installation
 
-# Installation // TODO
+This module is packaged as [Evergine add-on](../../../index.md). To use it in your project, just install it from _Project Settings > Add-Ons_ window.
 
-# Instantiate from code
+![Module installation](images/installation.png)
+
+Then, just register the module programmatically within your XRV service instance.
 
 ```csharp
-// Define image container ...
-var imageGalleryFileAccess = AzureFileShareFileAccess.CreateFromUri(new Uri("https://url.com"));
-imageGalleryFileAccess.Cache = new DiskCache("images");
-
-// Find XrvService instantiation...
+FileAccess imagesDataSource = <Create FileAccess instance>;
 var xrv = new XrvService()
-.AddModule(new ImageGalleryModule()
-{
-    ImagePixelsWidth = 640,
-    ImagePixelsHeight = 640,
-    FileAccess = imageGalleryFileAccess,
-})
+    .AddModule(new ImageGalleryModule
+    {
+        ImagePixelsWidth = 640,
+        ImagePixelsHeight = 640,
+        FileAccess = imagesDataSource,
+    });
 ```
 
-# Usage
+## Usage
 
-Open from hand menu ![hand menu icon](images/imagegallery.png).
-
-You can navigate between images by clicking on ![next](images/next.png) ![previous](images/previous.png) or slider.
+- To open gallery window, just tap on ![hand menu icon](images/imagegallery.png) hand menu button.
+- You can navigate between images by clicking on next ![next](images/next.png) or previous ![previous](images/previous.png) buttons. You can also change current image using attached slider.
