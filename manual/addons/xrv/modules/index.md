@@ -2,6 +2,8 @@
 
 ---
 
+This is the list of our current public modules. You can see them working running our [public XRV sample](https://github.com/EvergineTeam/XRVSample).
+
 ## [Image Gallery](imageGallery/index.md)
 
 With this module you can display images in XR space, with no limitation in their number. Images will be displayed one by one.
