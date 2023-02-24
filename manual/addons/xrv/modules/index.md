@@ -1,49 +1,37 @@
 # XRV Modules
 
-// TODO: Module implementation
-
 ---
 
 ## [Image Gallery](imageGallery/index.md)
 
-With this module you can add images in your scene.
-
-It also supports several images and an easy way for switching between them.
+With this module you can display images in XR space, with no limitation in their number. Images will be displayed one by one.
 
 ![Image gallery sample](imageGallery/images/snapshot.png)
 
 ## [Model Viewer](modelViewer/index.md)
 
-With this module you can add 3D models, from different sources.
-
-Once loaded you can scale them and move them, you also have a menu with more features.
+This module lets you load 3D models from different sources. Once loaded you can scale them and move them, you also have a menu with more features.
 
 ![Image gallery sample](modelViewer/images/snapshot2.png)
 
 ## [Painter](painter/index.md)
 
-With this module you can add lines in your scene to help you to emphasize something in particular.
-
-It also provides a menu to change colors and thickness.
-
-You draw and remove lines, and you have also an undo button.
+This is a module where you can draw lines in XR space to help you to emphasize something in particular. You can choose from different colors and thickness.
 
 ![Image gallery sample](painter/images/snapshot2.png)
 
 ## [Ruler](ruler/index.md)
 
-With this module you can Take measurements in your scene.
-
-Move handlers and obtain a precise measurement between two points.
+With this module you can take measurements from any present object in XR space. Move handlers and obtain a precise measurement between two points.
 
 ![Image gallery sample](ruler/images/snapshot.png)
 
 ## [Streaming Viewer](streamingviewer/index.md)
 
-With this module you can Attach a video stream and load it into your scene.
+Module that loads a panel with video images served by an IP camera.
 
 ![Image gallery sample](streamingviewer/images/snapshot.png)
 
 ## [Create your own Custom Module](customModule/index.md)
 
-Create a module that fit your needs is easy, implement Module interface and provide your custom assets and functionality.
+If you have some specific requirements for your application, you can create a custom module that you can reuse in more applications. 
