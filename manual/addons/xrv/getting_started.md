@@ -113,11 +113,28 @@ protected override void OnPostCreateXRScene()
 }
 ```
 
-5. In some platforms like Android, you may find build errors like this.
+## Platform setup
+
+### Android
+
+In some platforms like Android, you may find build errors like this.
 ```
 error XA2002: Can not resolve reference: `Evergine.Editor.Extension`, referenced by `Evergine.MRTK.Editor`. Please add a NuGet package or assembly reference for `Evergine.Editor.Extension`, or remove the reference to `Evergine.MRTK.Editor`.
 ```
 Just add Evergine.Editor.Extension to your project and it should work.
+
+Also, to make use of passthrough capability, remember to uncomment related parts of code in MainActivity.cs and in Android manifest file.
+
+### UWP (Mixed Reality)
+
+In UWP you may find some PRI generation erros, that you can fix editing your project file and adding the following:
+```xml
+<AppxGeneratePrisForPortableLibrariesEnabled>false</AppxGeneratePrisForPortableLibrariesEnabled>
+```
+
+Also, if you add modules that require internet access or want to make use of voice commands, review that you enable Internet Client and Microphone capabilities. For voice commands, you should also add an explicit reference in Mixed Reality project to _Evergine.Xrv.Core_ NuGet package.
+
+## Add more modules
 
 With all this, you can run application, but the only thing you could do is open hand menu and its two default buttons to open Settings and Help windows. To add more functionalities, you can add any of the existing [XRV modules](modules/index.md), [create your own module](modules/customModule/index.md) or just add new elements using XRV API.
 
