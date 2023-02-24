@@ -39,7 +39,7 @@ Please, note that some directory methods may not work for this file access, as _
 
 ```csharp
 var fileAccess = AzureBlobFileAccess.CreateFromConnectionString("Storage account connection string", "Container name"); //or
-var fileAccess = AzureBlobFileAccess.CreateFromUri("https://<ACCOUNT>.blob.core.windows.net/container?sv=2021-08-06&st=2022-11-18T15%3A07%3A20Z&..."); // Container URI containing SAS
+var fileAccess = AzureBlobFileAccess.CreateFromUri("https://<ACCOUNT>.blob.core.windows.net/container?sv=2021-08-06&st=2022-11-18T15%3A07%3A20Z&..."); // Container URI containing SAS (or without SAS for public containers, if you need read-only operations)
 var fileAccess = AzureBlobFileAccess.CreateFromConnectionString("https://<ACCOUNT>.blob.core.windows.net/container", "sv=2021-08-06&st=2022-11-18T15%3A07%3A20Z&...");  // Container URI with separated SAS
 ```
 

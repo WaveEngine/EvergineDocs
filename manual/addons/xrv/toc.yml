@@ -19,8 +19,6 @@
   homepage: localization.md
 - name: Themes System
   homepage: themes.md
-- name: Logging
-  homepage: logging.md
 - name: Modules
   href: modules/toc.yml
   homepage: modules/index.md

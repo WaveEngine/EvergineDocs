@@ -27,7 +27,6 @@ Most of the features are supported for many platforms, but some of them are not 
 - [Storage](storage.md)
 - [Themes System](themes.md)
 - [Localization](localization.md)
-- [Logging](logging.md)
 - [Modules](modules/index.md)
   - [Image Gallery](modules/imageGallery/index.md)
   - [Models Viewer](modules/modelViewer/index.md)
