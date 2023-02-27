@@ -1,6 +1,6 @@
 # Getting started
-
 ---
+
 Follow the steps below to quickly start running Azure Remote Rendering on your Evergine project:
 
 1. Create an Azure Remote Rendering instance at Azure portal (you need an Azure account).

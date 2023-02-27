@@ -9,8 +9,9 @@ XRV is a library that we are using internally while developing custom XR experie
 It is based on our own [MRTK add-on](../mrtk/index.md), so it uses the same input pointers, user controls like buttons or sliders, configuration components, etc. Based on that we have built all XRV infrastructure.
 
 Most of the features are supported for many platforms, but some of them are not for some of those platforms. You can run XRV for devices like:
-- Meta Quest 2
+- Meta Quest and Meta Quest 2
 - Meta Quest Pro
+- Pico XR headsets
 - Microsoft HoloLens 2
 
 ## In this section
@@ -27,7 +28,6 @@ Most of the features are supported for many platforms, but some of them are not 
 - [Storage](storage.md)
 - [Themes System](themes.md)
 - [Localization](localization.md)
-- [Logging](logging.md)
 - [Modules](modules/index.md)
   - [Image Gallery](modules/imageGallery/index.md)
   - [Models Viewer](modules/modelViewer/index.md)

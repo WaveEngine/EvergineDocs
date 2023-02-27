@@ -157,8 +157,8 @@ _XRV_ provides a set of predefined window distances, but you can add as many as 
 
 | Distance key            | Value (in meters) | Usage                                                           |
 | ------------------- | --------------------------------------------------------------------------------------- |
-| `NearKey`   | 0.4 | This is the distance used by default for alert and confirmation dialogs. |
-| `MediumKey`   | 0.6 | This is the distance used by default for rest of the windows. |
+| `NearKey`   | 0.35 | This is the distance used by default for alert and confirmation dialogs. |
+| `MediumKey`   | 0.5 | This is the distance used by default for rest of the windows. |
 | `FarKey`   | 1 | This is not used at all by built-in elements of _XRV_ but you can use it by your own purpose. |
 
 To override or add a new distance, you can use _SetDistance_ method.
