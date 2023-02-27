@@ -12,7 +12,7 @@ The entire vehicle is represented as a single [Rigid Body](rigid_bodies.md), the
 
 To start using Physic vehicles in Evergine, we need to use two components:
 * **PhysicVehicle3D:** Add this component to the chassis rigid body that we want to turn into a vehicle.
-* **PhysicWheel3D:** Add this component to each entity that you want to act as a wheel for a vehicle. Appart
+* **PhysicWheel3D:** Add this component to each entity that you want to act as a wheel for a vehicle.  
 
 ## PhysicVehicle3D
 
@@ -262,7 +262,5 @@ public class VehicleController : Behavior
 Later, add this component to the vehicle entity created in the previous section:
 
 ```csharp
-
 vehicle.AddComponent(new VehicleController());
-
 ```
