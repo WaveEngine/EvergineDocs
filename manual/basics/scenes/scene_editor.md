@@ -21,6 +21,8 @@
  | ![Rotation](images/rotation.png) | Set the transform manipulation in **Rotation Mode**. |
  | ![Scale](images/scale.png) | Set the transform manipulation in **Scale Mode**. |
  | ![Local](images/local.png) / ![Global](images/global.png)  | Toggles the transform manipulation from local axis to global axis. |
+ | ![Crossing Selection Mode](images/crossingMode.png) / ![Window Selection Mode](images/windowMode.png)  | Toggles the selection mode between **Crossing Mode** (Selects any entity that touches the rectangle selection) and **Window Mode** (Selects only the entities wholly inside the selection rectangle.). |
+ | ![Pivot around Transform](images/transformPivot.png) / ![Pivot around Center](images/centerPivot.png)|  Switch the pivot location between **the last entity selected** and **the center of all the selected entities**.  |
  | ![Move Snap](images/moveSnap.png) | When enabled, translation manipulation is done by steps of a custom value (0.5, 1, 5, 10, 50, 100) |
  | ![Rotation Snap](images/rotateSnap.png) | When enabled, rotation manipulation is done by steps of a custom value (5, 10, 15, 30, 45, 60 and 90 degrees) |
  | ![Scale Snap](images/scaleSnap.png) | When enabled, scale manipulation is done by steps of a custom value (0.001, 0.01, 0.1, 0.5, 1, 5, 10) |
@@ -44,12 +46,17 @@ On top of the viewport there is the **Scene toolbar** where the user can adjust 
 | Action | Description |
 | ------ | ----------- |
 | **Left Mouse** | Select entity. |
+| **Drag Left Mouse** | Rectangle selection. |
+| **Ctrl + Left Mouse** | Add entity to selection. |
+| **Alt + Left Mouse** | Removes entity from selection. |
 | **Right Mouse** | Rotate camera. |
 | **Right Mouse + Arrows / WASD** | Move camera. |
 | **Right Mouse + Mouse Wheel** | Change camera speed up / down.|
 | **Right Mouse + Shift** | Speed up camera by 2.|
 | **Middle Mouse** | Pan camera |
-| **Mouse Wheel** | Zoom in/out camera.
+| **Middle Mouse + Shift** | Orbit camera |
+| **Mouse Wheel** | Dolly in/out camera. |
+| **Mouse Wheel + Ctrl** | Zoom in/out camera. |
 | **Ctrl + D** | Duplicate selected entity.|
 | **G** | Toggle Grid visibility|
 | **W** | Set Translating manipulation mode. |
