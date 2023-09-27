@@ -16,7 +16,6 @@ Evergine web applications can run statically on client side quite fast by the us
 
 ## Limitations
 
-- Physics is not yet available in web platform
 - Due to the very recent support of WebGL2.0 by iOS devices, support on its Safari browser is still a work in progress.
 
 ## In this section

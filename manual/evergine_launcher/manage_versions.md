@@ -10,7 +10,7 @@ Evergine Studio has different repositories with version collections that you can
 
 | Repository  | Description                                        | URL                                                  |
 | ----------- | -------------------------------------------------- | ---------------------------------------------------- |
-| **Preview** | This collection has the stable Evergine versions.  | https://everginestudio.blob.core.windows.net/stable  |
+| **Stable** | This collection has the stable Evergine versions.  | https://everginestudio.blob.core.windows.net/stable  |
 | **Preview** | This collection has the preview Evergine versions. | https://everginestudio.blob.core.windows.net/preview |
 | **Nightly** | This collection has the nightly Evergine versions. | https://everginestudio.blob.core.windows.net/nightly |
 
