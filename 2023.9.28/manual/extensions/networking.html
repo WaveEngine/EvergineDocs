@@ -90,7 +90,7 @@
 <pre><code class="lang-xml">&lt;PackageReference Include=&quot;Evergine.Networking&quot; Version=&quot;2021.11.17.2-preview&quot; /&gt;
 </code></pre>
 <h2 id="server-configuration">Server configuration</h2>
-<p>To create a networking server, you should make use of built-in service named <em>MatchmakingServerService</em>. This service is part of the extension and manages server rooms, players and provides different events that you can use to be notified when a player (client) connects or disconnects from the server, joins or leaves a room, etc. For a complete list of events, take a look to <a href="xref:Evergine.Networking.Server.MatchmakingServerService"><em>MatchmakingServerService</em> API documentation</a>.</p>
+<p>To create a networking server, you should make use of built-in service named <em>MatchmakingServerService</em>. This service is part of the extension and manages server rooms, players and provides different events that you can use to be notified when a player (client) connects or disconnects from the server, joins or leaves a room, etc. For a complete list of events, take a look to <a class="xref" href="../../api/Evergine.Networking.Server.MatchmakingServerService.html"><em>MatchmakingServerService</em> API documentation</a>.</p>
 <p>Just register <em>MatchmakingServerService</em> in Evergine dependencies container to start using it.</p>
 <pre><code class="lang-csharp">this.Container.RegisterInstance(new MatchmakingServerService());
 </code></pre>
