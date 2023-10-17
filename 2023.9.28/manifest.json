@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/azp/agent/_work/18/s/EDocs",
+  "source_base_path": "C:/azp/agent/_work/19/s/EDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -20109,6 +20109,86 @@
       "output": {
         ".html": {
           "relative_path": "manual/platforms/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/iOS.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/iOS.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/ios-toolbar.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/ios-toolbar.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/iosSimulator.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/iosSimulator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/launcher.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/launcher.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/pairtomac.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/pairtomac.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/project-structure.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/project-structure.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "manual/platforms/ios/images/simulators.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/platforms/ios/images/simulators.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/platforms/ios/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/platforms/ios/index.html"
         }
       },
       "version": ""
