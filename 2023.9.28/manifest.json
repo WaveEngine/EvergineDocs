@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/azp/agent/_work/19/s/EDocs",
+  "source_base_path": "C:/azp/agent/_work/20/s/EDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -5393,416 +5393,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.AngleLimitsDef.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.AngleLimitsDef.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ColliderCategory2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ColliderCategory2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ColliderDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ColliderDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ColliderShapeType2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ColliderShapeType2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ContactDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ContactDelegate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.DebugDrawFlags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.DebugDrawFlags.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.DistanceJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.DistanceJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IBoxColliderShape2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IBoxColliderShape2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ICircleColliderShape2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ICircleColliderShape2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ICollider2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ICollider2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IColliderShape2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IColliderShape2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ICollisionInfo2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ICollisionInfo2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IDistanceJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IDistanceJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IEdgeColliderShape2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IEdgeColliderShape2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IMouseJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IMouseJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IPolygonColliderShape2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IPolygonColliderShape2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IPrismaticJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IPrismaticJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IRevoluteJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IRevoluteJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IRigidBody2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IRigidBody2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IRopeJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IRopeJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ISimulation2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ISimulation2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.ISimulationDebugDraw2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.ISimulationDebugDraw2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IWeldJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IWeldJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.IWheelJoint2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.IWheelJoint2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.JointDef2D-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.JointDef2D-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.JointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.JointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.JointType2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.JointType2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.LimitsDef.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.LimitsDef.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.MotorDef.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.MotorDef.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.MouseJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.MouseJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.OnBrokeEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.OnBrokeEventHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.PrismaticJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.PrismaticJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.RevoluteJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.RevoluteJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.RigidBodyDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.RigidBodyDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.RigidBodyMassData2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.RigidBodyMassData2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.RigidBodyType2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.RigidBodyType2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.RopeJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.RopeJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.WeldJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.WeldJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.WheelJointDef2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.WheelJointDef2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Common.Physics2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Common.Physics2D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Evergine.Common.PlatformFamily.yml",
       "output": {
         ".html": {
@@ -6183,40 +5773,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.Graphics2D.LineMeshRenderer2D.yml",
+      "source_relative_path": "api/Evergine.Components.Graphics3D.BackgroundImage.StretchType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Evergine.Components.Graphics2D.LineMeshRenderer2D.html"
+          "relative_path": "api/Evergine.Components.Graphics3D.BackgroundImage.StretchType.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.Graphics2D.Sprite.yml",
+      "source_relative_path": "api/Evergine.Components.Graphics3D.BackgroundImage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Evergine.Components.Graphics2D.Sprite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.Graphics2D.SpriteRenderer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Components.Graphics2D.SpriteRenderer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.Graphics2D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Components.Graphics2D.html"
+          "relative_path": "api/Evergine.Components.Graphics3D.BackgroundImage.html"
         }
       },
       "version": ""
@@ -6753,16 +6323,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.WorkActions.MoveTo2DWorkAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Components.WorkActions.MoveTo2DWorkAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Evergine.Components.WorkActions.MoveTo3DWorkAction.yml",
       "output": {
         ".html": {
@@ -6783,30 +6343,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.WorkActions.RotateTo2DWorkAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Components.WorkActions.RotateTo2DWorkAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Evergine.Components.WorkActions.RotateTo3DWorkAction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Evergine.Components.WorkActions.RotateTo3DWorkAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Evergine.Components.WorkActions.ScaleTo2DWorkAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Evergine.Components.WorkActions.ScaleTo2DWorkAction.html"
         }
       },
       "version": ""
