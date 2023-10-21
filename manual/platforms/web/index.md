@@ -12,7 +12,7 @@ Evergine web applications can run statically on client side quite fast by the us
   - Alternatively, [Install](https://dotnet.microsoft.com/download/dotnet/6.0) latest dotnet SDK release.
 - Install wasm-tools
   - From Visual Studio Installer, add _web development workload_ and the _.Net WebAssembly build tools_ individual component.
-  - Alternatively, from a root terminal: `dotnet workload install wasm-tools --skip-manifest-update`
+  - Additionally, install the `wasm-tools-net6` workload in a root terminal: `dotnet workload install wasm-tools-net6`
 
 ## Limitations
 
