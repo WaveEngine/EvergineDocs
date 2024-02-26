@@ -4,3 +4,6 @@
 - name: XRV
   href: xrv/toc.yml
   homepage: xrv/index.md
+- name: Gaussian Splatting
+  href: gaussiansplatting/toc.yml
+  homepage: gaussiansplatting/index.md
