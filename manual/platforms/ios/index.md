@@ -2,12 +2,12 @@
 
 ![iOS](images/iOS.png)
 
-Recently, Evergine can deploy applications on iOS devices. It is possible due to a _Metal API_ integration and the awesome work done in _.NET7_
+Recently, Evergine can deploy applications on iOS devices. It is possible due to a _Metal API_ integration and the awesome work done in _.NET8_
 
 
 ## Create a new application
 
-Use Evergine launcher to add iOS as one of your project platforms. Current _iOS_ template runs with _.NET7.0 for iOS_. This template will create all necessary code to allow your application to be deployed on iOS devices.
+Use Evergine launcher to add iOS as one of your project platforms. Current _iOS_ template runs with _.NET8.0 for iOS_. This template will create all necessary code to allow your application to be deployed on iOS devices.
 
 ![Create a new project](images/launcher.png)
 
@@ -22,7 +22,7 @@ However, if you want to finally deploy your solution in a iOS device (iPhone or 
 
 #### iOS Workload
 
-In order to compile and deploy iOS projects using Evergine,  you should install iOS workload for _.NET 7.0_. You can do it using a PowerShell console:
+In order to compile and deploy iOS projects using Evergine,  you should install iOS workload for _.NET 8.0_. You can do it using a PowerShell console:
 
 `dotnet workload install ios`
 
@@ -31,7 +31,7 @@ The project structure created when you add an iOS tempalte are the following:
 
 ![Project structure](images/project-structure.jpg)
 
-It will add a project with `net7.0-ios` target framework. It creates a Evergine view embedded in a storyboard. You can create your own native iOS user interface and integrate it with Evergine 3D applications.
+It will add a project with `net8.0-ios` target framework. It creates a Evergine view embedded in a storyboard. You can create your own native iOS user interface and integrate it with Evergine 3D applications.
 
 
 ## Application deployment

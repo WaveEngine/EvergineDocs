@@ -13,7 +13,7 @@ when an Entity is a Parent of another Entity, the Child Entity will move, rotate
 
 ## Local vs World space
 
-3D and 2D position and transformations exist within a coordinate systems called spaces:
+3D  positions and transformations exist within a coordinate systems called spaces:
 
 ### World Space
 

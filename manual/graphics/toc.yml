@@ -42,8 +42,6 @@
   homepage: linebatch/index.md
 # - name: Lines 3D
 #   href: lines_3d.md
-- name: Sprites
-  href: sprites.md
 - name: Billboards
   href: billboard/toc.yml
   homepage: billboard/index.md

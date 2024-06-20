@@ -47,51 +47,6 @@ namespace MyProject
     }
 }
 ```
-## Drawable2D
-
-![Drawable2D](images/drawable2d.png)
-
-This drawables will be processed on every **Camera2D** render. In the other hand with Drawable2D you will render 2D content (Sprites, UI...).
-
-Add the following properties:
- 
-| Property | Description |
-| --- | --- |
-| **Layer** | Suggest the [**RenderLayer**](../../../graphics/render_layers.md) that will use all 2D content used by this Drawable. |
-
-### Creating a Drawable2D
-From Visual Studio you can create a c# class with the following code:
-
-```csharp
-using Evergine.Common.Graphics;
-using Evergine.Framework;
-using Evergine.Framework.Graphics;
-using Evergine.Mathematics;
-using System;
-
-namespace MyProject
-{
-    public class CircleDrawable : Drawable2D
-    {
-        [BindComponent]
-        private Transform2D transform;
-
-        public float Radius {get;set;} = 0.5f;
-        public Color Color {get; set;} = Color.Red;
-
-        public override void Draw(DrawContext drawContext)
-        {
-            // Draw a circle...
-            this.Managers.RenderManager.LineBatch2D.DrawCircle(
-                this.transform.Position, 
-                this.Radius, 
-                this.Color, 
-                this.transform.DrawOrder);
-        }
-    }
-}
-```
-
 
 ## Graphics content
 

@@ -1,5 +1,8 @@
 # UWP platform
 
+> [!WARNING]
+> UWP platform in Evergine is now deprecated and could be removed in future releases.
+
 ## Desktop and tablets
 
 You can add _UWP_ as one of the platforms for your project, using _Universal Windows Platform_ template. With this template, you can create an application that runs in devices such PC, tablet or Xbox.
