@@ -18,9 +18,13 @@ If you save changes and reload the scene, you will realize that entities that we
 
 ### Prefabs edition
 
-If you change values on those entities, this will no affect to new and existing prefab instances. In future releases, we plan to provide an specific prefabs editor. For now, a good option is to create your prefab in a separated scene. At the time of using _Create prefab_ option, a new prefab file will be created, but _**do not**_ save the scene. Doing this, you could modify your entities in the future. Just replace previous prefab file version with the new one.
+If you change values on those entities, this will no affect to new and existing prefab instances. To add, remove or modify elements in your prefab architecture, within associated components, you must use prefab asset editor. 
 
-We don't officially support prefab nesting. This is, create a separated scene for your prefab, and use another prefab in that scene.
+To open prefab editor, just double click prefab asset.
+
+![Prefab editor](images/prefabs-editor.jpg)
+
+Nesting of prefabs is supported now, so you can create prefabs based on other prefabs composition. There are some logic limitations as not allowing cycle dependencies along prefabs. If you try to introduce a cycle, a warning message will be displayed in _Output_ console.
 
 ### Prefab instantiation
 
