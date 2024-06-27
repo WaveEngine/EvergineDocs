@@ -1,6 +1,6 @@
 # Upgrade my project to latest Evergine release
 
-## Update from Evergine 2023.9.28 to Evergine 2024.6.??
+## Update from Evergine 2023.9.28 to Evergine 2024.6.28
 
 When upgrading to Evergine 2024.6, there are a few manual adjustments required to ensure your previous projects work correctly. The main changes include:
 

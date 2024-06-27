@@ -13,8 +13,8 @@ The _Read_ method supports both a file path and a file stream.
 Remember to add package references to your csproj file.
 
 ```xml
-<PackageReference Include="Evergine.Runtimes.GLB" Version="2024.6.??" />
-<PackageReference Include="Evergine.Runtimes.STL" Version="2024.6.??" />
+<PackageReference Include="Evergine.Runtimes.GLB" Version="2024.6.28" />
+<PackageReference Include="Evergine.Runtimes.STL" Version="2024.6.28" />
 ```
 
 If you are running a web project, you should also add following package in your start project.
@@ -42,7 +42,7 @@ private async Task<Material> CustomMaterialAssigner(MaterialData data)
     var metallicRoughness = await data.GetMetallicRoughnessTextureAndSampler();
     var normalTex = await data.GetNormalTextureAndSampler();  
     var emissive = await data.GetEmissiveTextureAndSampler();
-    var occlussion = await data.GetOcclusionTextureAndSampler();            
+    var occlusion = await data.GetOcclusionTextureAndSampler();            
 
     // Get Layer
     var opaqueLayer = assetsService.Load<RenderLayerDescription>(DefaultResourcesIDs.OpaqueRenderLayerID);
@@ -78,8 +78,8 @@ private async Task<Material> CustomMaterialAssigner(MaterialData data)
         EmissiveColor = data.EmissiveColor.ToColor(),
         EmissiveTexture = emissive.Texture,
         EmissiveSampler = emissive.Sampler,
-        OcclusionTexture = occlussion.Texture,
-        OcclusionSampler = occlussion.Sampler,
+        OcclusionTexture = occlusion.Texture,
+        OcclusionSampler = occlusion.Sampler,
         LayerDescription = layer,                
     };
 
