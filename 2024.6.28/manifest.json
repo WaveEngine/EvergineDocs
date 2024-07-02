@@ -1,6 +1,5 @@
 {
-  "homepages": [],
-  "source_base_path": "C:/azp/agent/_work/28/s/EDocs",
+  "source_base_path": "C:/azp/agent/_work/31/s/EDocs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -72,9 +71,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -150,6 +146,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/addons/arr/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/arr/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/arr/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/arr/toc.json"
         }
       },
       "version": ""
@@ -450,6 +459,32 @@
       "output": {
         ".html": {
           "relative_path": "manual/addons/mrtk/prefabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/mrtk/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/mrtk/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/toc.json"
         }
       },
       "version": ""
@@ -1095,6 +1130,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/xrv/modules/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/xrv/modules/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/xrv/modules/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/addons/xrv/settings_system.md",
       "output": {
@@ -1120,6 +1168,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/addons/xrv/themes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/xrv/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/xrv/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/xrv/toc.json"
         }
       },
       "version": ""
@@ -1225,6 +1286,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/addons/xrv/ui/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/xrv/ui/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/xrv/ui/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/addons/xrv/ui/windows_system.md",
       "output": {
@@ -1280,6 +1354,9 @@
       "output": {
         ".html": {
           "relative_path": "manual/animation/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/animation/toc.json"
         }
       },
       "version": ""
@@ -1475,9 +1552,19 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
+      "type": "Toc",
+      "source_relative_path": "manual/audio/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/audio/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/audio/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/audio/using_audio_from_code.md",
       "output": {
@@ -1588,6 +1675,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/application/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/application/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/application/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/basics/application/using_application.md",
       "output": {
@@ -1648,6 +1748,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/bindings/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/bindings/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/bindings/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/basics/component_arch/components/behaviours.md",
       "output": {
@@ -1703,6 +1816,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/component_arch/components/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/component_arch/components/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/component_arch/components/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/component_arch/components/toc.json"
         }
       },
       "version": ""
@@ -1783,6 +1909,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/component_arch/entities/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/component_arch/entities/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/component_arch/entities/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/component_arch/entities/toc.json"
         }
       },
       "version": ""
@@ -1878,14 +2017,24 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/basics/component_arch/prefabs/index.md",
       "output": {
         ".html": {
           "relative_path": "manual/basics/component_arch/prefabs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/component_arch/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/component_arch/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/component_arch/toc.json"
         }
       },
       "version": ""
@@ -2351,6 +2500,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/scenes/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/scenes/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/scenes/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/basics/scenes/using_scenes.md",
       "output": {
@@ -2366,6 +2528,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/basics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/basics/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/basics/toc.json"
         }
       },
       "version": ""
@@ -2971,6 +3146,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/evergine_studio/assets/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/evergine_studio/assets/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/evergine_studio/assets/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/evergine_studio/assets/use.md",
       "output": {
@@ -3001,9 +3189,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/evergine_studio/project_profiles.md",
       "output": {
@@ -3019,6 +3204,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/evergine_studio/renderdoc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/evergine_studio/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/evergine_studio/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/evergine_studio/toc.json"
         }
       },
       "version": ""
@@ -3114,9 +3312,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/extensions/armobile/index.md",
       "output": {
@@ -3547,6 +3742,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/extensions/imgui/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/extensions/imgui/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/extensions/imgui/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/extensions/index.md",
       "output": {
@@ -3557,9 +3765,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/extensions/networking.md",
       "output": {
@@ -3575,6 +3780,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/extensions/openxr.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/extensions/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/extensions/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/extensions/toc.json"
         }
       },
       "version": ""
@@ -3680,6 +3898,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/get_started/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/get_started/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/get_started/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/get_started/upgrade_project.md",
       "output": {
@@ -3770,9 +4001,19 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/billboard/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/billboard/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/billboard/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/cameras.md",
       "output": {
@@ -3828,6 +4069,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/compute_tasks/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/compute_tasks/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/compute_tasks/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/compute_tasks/toc.json"
         }
       },
       "version": ""
@@ -4193,6 +4447,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/effects/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/effects/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/effects/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/effects/using_effects.md",
       "output": {
@@ -4373,6 +4640,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/environment/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/environment/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/environment/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/fonts/create_text3D.md",
       "output": {
@@ -4498,6 +4778,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/fonts/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/fonts/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/fonts/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/fonts/toc.json"
         }
       },
       "version": ""
@@ -4843,9 +5136,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/lights.md",
       "output": {
@@ -5031,6 +5321,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/linebatch/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/linebatch/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/linebatch/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/linebatch/toc.json"
         }
       },
       "version": ""
@@ -5256,14 +5559,24 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/low_level_api/texture.md",
       "output": {
         ".html": {
           "relative_path": "manual/graphics/low_level_api/texture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/low_level_api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/low_level_api/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/low_level_api/toc.json"
         }
       },
       "version": ""
@@ -5434,6 +5747,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/materials/material_editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/materials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/materials/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/materials/toc.json"
         }
       },
       "version": ""
@@ -5914,6 +6240,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/models/runtime_loaders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/models/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/models/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/models/toc.json"
         }
       },
       "version": ""
@@ -6679,6 +7018,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/particles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/particles/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/particles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/particles/using_particles.md",
       "output": {
@@ -6989,6 +7341,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/postprocessing_graph/default_postprocessing_graph/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/postprocessing_graph/default_postprocessing_graph/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/postprocessing_graph/default_postprocessing_graph/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/postprocessing_graph/default_postprocessing_graph/tonemapping.md",
       "output": {
@@ -7234,6 +7599,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/graphics/postprocessing_graph/postprocessing_graph_editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/postprocessing_graph/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/postprocessing_graph/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/postprocessing_graph/toc.json"
         }
       },
       "version": ""
@@ -7529,6 +7907,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/supported_backends/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/supported_backends/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/supported_backends/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/graphics/supported_backends/vulkan.md",
       "output": {
@@ -7749,6 +8140,32 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/textures/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/textures/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/textures/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/graphics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphics/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/graphics/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "manual/images/manual.jpg",
       "output": {
@@ -7814,6 +8231,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/input/mouse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/input/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/input/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/input/toc.json"
         }
       },
       "version": ""
@@ -8154,6 +8584,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/physics/colliders/sphere_collider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/physics/colliders/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/physics/colliders/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/physics/colliders/toc.json"
         }
       },
       "version": ""
@@ -8609,6 +9052,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/physics/joints/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/physics/joints/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/physics/joints/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/physics/physicmanager_bullet.md",
       "output": {
@@ -8879,6 +9335,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/physics/physics_bodies/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/physics/physics_bodies/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/physics/physics_bodies/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/physics/physics_bodies/using_physics_bodies.md",
       "output": {
@@ -8904,6 +9373,19 @@
       "output": {
         ".html": {
           "relative_path": "manual/physics/queries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/physics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/physics/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/physics/toc.json"
         }
       },
       "version": ""
@@ -9049,6 +9531,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/platforms/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/platforms/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/platforms/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "manual/platforms/uwp/images/launcher-desktop.jpg",
       "output": {
@@ -9079,9 +9574,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/platforms/uwp/index.md",
       "output": {
@@ -9173,10 +9665,26 @@
     },
     {
       "type": "Toc",
+      "source_relative_path": "manual/platforms/web/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/platforms/web/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/platforms/web/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
       "source_relative_path": "manual/toc.yml",
       "output": {
         ".html": {
           "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
         }
       },
       "version": ""
@@ -9382,6 +9890,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/xr/input_tracking/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/xr/input_tracking/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/xr/input_tracking/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/xr/input_tracking/trackxrarticulatedhand.md",
       "output": {
@@ -9462,6 +9983,19 @@
       "version": ""
     },
     {
+      "type": "Toc",
+      "source_relative_path": "manual/xr/integrations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/xr/integrations/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/xr/integrations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/xr/overview.md",
       "output": {
@@ -9492,9 +10026,19 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
+      "type": "Toc",
+      "source_relative_path": "manual/xr/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/xr/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/xr/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "manual/xr/trackable_items.md",
       "output": {
@@ -9520,12 +10064,14 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

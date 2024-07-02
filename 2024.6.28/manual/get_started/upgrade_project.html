@@ -91,7 +91,7 @@
 <li>Many engine packages are now compatible only with .NET 8.</li>
 </ul>
 <p>If you update your project using the Evergine launcher, you might encounter errors such as:</p>
-<p><code>&lt;PATH_TO_OUR_PROJECT&gt;\MyScene.wescene(195,18): error WESC000: Unknown node type, check the visibility of the member. [&lt;PATH_TO_OUR_PROJECT&gt;\MigrateSample.csproj]</code></p>
+<p><code> &lt;PATH_TO_OUR_PROJECT&gt;\MyScene.wescene(195,18): error WESC000: Unknown node type, check the visibility of the member. [&lt;PATH_TO_OUR_PROJECT&gt;\MigrateSample.csproj] </code></p>
 <p>To resolve this, run the following script:</p>
 <pre><code class="lang-powershell">&lt;#
 .SYNOPSIS
@@ -179,6 +179,7 @@ Get-ChildItem -Path $path -Recurse -Filter '*.wescene' |
 &lt;!-- Add line below to make it possible Release builds --&gt;
 &lt;Assembly Name=&quot;Vortice.XAudio2&quot; Dynamic=&quot;Auto&quot; /&gt;
 </code></pre>
+
 </article>
           </div>
 
@@ -186,7 +187,7 @@ Get-ChildItem -Path $path -Recurse -Filter '*.wescene' |
             <div class="sideaffix">
 
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <h5>In This Article</h5>
+              <h5>In this article</h5>
               <div></div>
               <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
