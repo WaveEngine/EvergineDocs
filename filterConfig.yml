@@ -1,5 +1,11 @@
 apiRules:
   - exclude:
+      uidRegex: ^EvergineStudio
+      type: Namespace
+  - exclude:
+      uidRegex: ^glTFLoader
+      type: Namespace
+  - exclude:
       uidRegex: ^NAudio
       type: Namespace
   - exclude:
@@ -9,16 +15,13 @@ apiRules:
       uidRegex: ^OpenTK
       type: Namespace
   - exclude:
-      uidRegex: ^System\.Windows
+      uidRegex: ^System
       type: Namespace
   - exclude:
       uidRegex: ^Valve
       type: Namespace
   - exclude:
       uidRegex: ^VuforiaSharp
-      type: Namespace
-  - exclude:
-      uidRegex: ^EvergineStudio
       type: Namespace
   - exclude:
       uidRegex: ^WaveTestCore

@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/Engine/WindowSystems/Evergine.AndroidView/Evergine.AndroidView.csproj"
+          ],
+          "src": "../"
+        }
+      ],
+      "properties": {
+          "TargetFramework": "net8.0-android"
+      },
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+  }
+}
