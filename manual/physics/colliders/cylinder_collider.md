@@ -2,9 +2,9 @@
 
 ![Cylinder Collider](images/cylinder_collider.png)
 
-A Cylinder shaped collider.
+A cylinder-shaped collider.
 
-## CylinderCollider3D component
+## CylinderCollider3D Component
 
 To use a Cylinder Collider in Evergine, you only need to add a `CylinderCollider3D` component to your entity:
 
@@ -14,7 +14,7 @@ To use a Cylinder Collider in Evergine, you only need to add a `CylinderCollider
 
 | Property | Default | Description | 
 | --- | --- | --- |
-| **Radius** | 0.5 | This property define the radius of the Cylinder collider. The **Radius** value can be used in two ways:<ul><li>If the Entity has a mesh (with `MeshComponent` for example), the Radius value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Radius value is used as scene units.</li></ul>|
-| **Height** | 1 | This property define the total height of the Cylinder collider.The **Height** value can be used in two ways:<ul><li>If the Entity has a mesh (with `MeshComponent` for example), the Height value is relative to the mesh height.</li><li>If the entity hasn't any meshes, the Radius value is used as scene units.</li></ul>|
-| **Offset** | 0,0,0 | Offset the collider respect the owner entity. The **Offset** value can be used in two ways:<ul><li>If the Entity has a mesh (with `MeshComponent` for example), the Offset value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Offset value is used as scene units.</li></ul> | 
-| **Margin** | 0.04 | Physic Engine uses a small collision margin for collision shapes, to improve performance and reliability of the collision detection. | 
+| **Radius** | 0.5 | This property defines the radius of the Cylinder Collider. The **Radius** value can be used in two ways:<ul><li>If the entity has a mesh (with `MeshComponent` for example), the Radius value is relative to the mesh extents.</li><li>If the entity has no meshes, the Radius value is used as scene units.</li></ul>|
+| **Height** | 1 | This property defines the total height of the Cylinder Collider. The **Height** value can be used in two ways:<ul><li>If the entity has a mesh (with `MeshComponent` for example), the Height value is relative to the mesh height.</li><li>If the entity has no meshes, the Height value is used as scene units.</li></ul>|
+| **Offset** | 0,0,0 | Offsets the collider with respect to the owner entity. The **Offset** value can be used in two ways:<ul><li>If the entity has a mesh (with `MeshComponent` for example), the Offset value is relative to the mesh extents.</li><li>If the entity has no meshes, the Offset value is used as scene units.</li></ul> | 
+| **Margin** | 0.04 | The Physics Engine uses a small collision margin for collision shapes to improve the performance and reliability of the collision detection. | 

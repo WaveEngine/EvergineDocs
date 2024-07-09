@@ -1,27 +1,27 @@
 # Create Billboard
 
 ![Billboards header](images/billboards.jpg)
-**Billboard** allows simulating far objects like bushes or trees reducing the amount of geometry needed to render your scene.
+**Billboard** allows simulating far objects like bushes or trees, reducing the amount of geometry needed to render your scene.
 
 ## Create a Billboard in Evergine Studio
-You can create a billboard click button on ![Plus Icon](../images/plusIcon.jpg) from [Entity Hierarchy](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Billboard"_
+You can create a billboard by clicking the ![Plus Icon](../images/plusIcon.jpg) button from the [Entity Hierarchy](../../evergine_studio/interface.md) panel to deploy the create menu options and then selecting the option _"Billboard"_
 
 ![Create new billboard menu option](images/EntitiesHierarchyMenu.jpg)
 
-A billboard entity will be added to your scene
+A billboard entity will be added to your scene.
 
 ![Billboard entity](images/BillboardEntity.jpg)
 
-In the billboard component of your billboard entity you will find the following properties:
+In the billboard component of your billboard entity, you will find the following properties:
 
-|Property                       | Description |
-|-------------------------------|-------------|
-| **Texture**               | The billboard texture. |
-| **TintColor**                 | Each pixel of the Billboard will be multiplied by such color during the drawing. By default, it is white. |
-| **Origin**        | Gets or sets the Billboard Origin. The origin (also known as pivot) from where the entity scales, rotates and translates. Its values are included in [0, 1] where (0, 0) indicates the top left corner. Such values are percentages where 1 means the 100% of the rectangle's width/height.    |
-| **Rotation**                   | The Billboard rotation. |
-| **BillboardType**           | The billboard type. The available types are Point orientation or Axial orientation.|
-| **FlipMode**    | Allows flipping the texture coords in Horizontal or Vertical. |
+| Property       | Description |
+|----------------|-------------|
+| **Texture**    | The billboard texture. |
+| **TintColor**  | Each pixel of the billboard will be multiplied by this color during drawing. By default, it is white. |
+| **Origin**     | Gets or sets the billboard origin. The origin (also known as pivot) is where the entity scales, rotates, and translates. Its values are in the range [0, 1], where (0, 0) indicates the top left corner. These values are percentages where 1 means 100% of the rectangle's width/height. |
+| **Rotation**   | The billboard rotation. |
+| **BillboardType** | The billboard type. The available types are Point orientation or Axial orientation. |
+| **FlipMode**   | Allows flipping the texture coordinates horizontally or vertically. |
 
 ## Create a Billboard from code
 The following code shows the list of components necessary to convert an entity into a billboard entity. 

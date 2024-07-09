@@ -1,20 +1,20 @@
 # Material Decorators
 
-**Material Decorator** is a C# class that simplify the use of custom materials to the users. It allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate material decorator of your effects you need to use the [Effect Editor](../effects/effect_editor.md).
+**Material Decorator** is a C# class that simplifies the use of custom materials for users. It allows defining how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate a material decorator for your effects, you need to use the [Effect Editor](../effects/effect_editor.md).
 
 ## Generate Material Decorator
 
-From the [Effect Editor](../effects/effect_editor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
+From the [Effect Editor](../effects/effect_editor.md) toolbox, push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material Decorator.
 
 ![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
 
-A new c# class will be created in your C# solution that you will see from **Visual Studio**
+A new C# class will be created in your C# solution, which you will see in **Visual Studio**.
 
 ![Material Decorator In Visual Studio](images/MaterialDecoratorInVS.jpg)
 
 ## Example
 
-Parting from the following effect resource layout block (This is the section marked in the effect code with the `[Begin_ResourceLayout]` and `[End_ResourceLayout]` tags):
+Starting from the following effect resource layout block (This is the section marked in the effect code with the `[Begin_ResourceLayout]` and `[End_ResourceLayout]` tags):
 
 ```csharp
 [Begin_ResourceLayout]
@@ -32,7 +32,7 @@ Parting from the following effect resource layout block (This is the section mar
 [End_ResourceLayout]
 ```
 
-The generated Material Decorator will be the following:
+The generated Material Decorator will be as follows:
 
 ```csharp
 //------------------------------------------------------------------------------
@@ -77,15 +77,15 @@ namespace DocumentationWorkBench.Effects
 }
 ```
 
-The above Material decorator example shows how the effect resource layout is translated to get/set class properties to make easier use of the effect from code.
+The above Material Decorator example shows how the effect resource layout is translated into get/set class properties to make it easier to use the effect from code.
 
-Now when you open a material asset from [Material Editor](material_editor.md) and the material uses _MyGraphicEffect_ its properties as:
+Now, when you open a material asset from the [Material Editor](material_editor.md) and the material uses _MyGraphicEffect_, its properties will be shown as:
 
 ![Material properties](images/defaultMaterialDecorator.jpg)
 
 ## Customize Material Decorators
 
-Editing the material decorator c# class you can modify how the properties are shown in the [Material Editor](material_editor.md). For example, the Color property appears as Vector3 property because this is the type using in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
+By editing the Material Decorator C# class, you can modify how the properties are shown in the [Material Editor](material_editor.md). For example, the Color property appears as a Vector3 property because this is the type used in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
 
 ```csharp
 public Evergine.Common.Graphics.Color Parameters_Color
@@ -102,5 +102,5 @@ public Evergine.Common.Graphics.Color Parameters_Color
 }
 ```
 
-After this change, if you reload the project in the Evergine Studio, the Material Editor shows its color property as:
+After this change, if you reload the project in Evergine Studio, the Material Editor will show its color property as follows:
 ![Custom Material Decorator](images/customMaterialDecorator.jpg)

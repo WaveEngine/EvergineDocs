@@ -1,12 +1,13 @@
 # Drawables
+
 ---
 
-The **Drawables** are one kind of Component that allows you to do and action each Draw/Render cycle of the Application. A Drawable is associated with an Entity and all Drawables in a scene are managed by [**RenderManager**](../../../graphics/rendering_overview.md).
+**Drawables** are a type of Component that allows you to perform an action during each Draw/Render cycle of the Application. A Drawable is associated with an Entity, and all Drawables in a scene are managed by [**RenderManager**](../../../graphics/rendering_overview.md).
 
 ## Drawable3D
 ![Drawable3D](../../../graphics/images/teapot.png)
 
-**Drawables3D** are a kind of drawables that is designed to provides 3D content. They will be processed on every **Camera3D** render. In these components you usually create graphics elements to draw 3D features (models, billboard, background environment, etc...)
+**Drawable3Ds** are a type of Drawable designed to provide 3D content. They are processed on every **Camera3D** render. In these components, you usually create graphic elements to draw 3D features (models, billboards, background environments, etc...).
 
 Add the following property:
  
@@ -15,7 +16,7 @@ Add the following property:
 | **CastShadows** | Boolean value indicating whether this model will cast shadows. True by default. |
 
 ### Creating a Drawable3D
-From Visual Studio you can create a c# class with the following code:
+From Visual Studio, you can create a C# class with the following code:
 
 ```csharp
 using Evergine.Common.Graphics;
@@ -41,16 +42,16 @@ namespace MyProject
                 this.Size, 
                 this.transform.Orientation);
 
-            // Draw an oriented boundingbox with the specified color and size...
+            // Draw an oriented bounding box with the specified color and size...
             this.Managers.RenderManager.LineBatch3D.DrawBoundingOrientedBox(orientedBBox, this.Color);
         }
     }
 }
 ```
 
-## Graphics content
+## Graphics Content
 
-A Drawable will add to RenderManager objects to be drawn (sprites, meshes, etc...). Read [Render Overview](../../../graphics/rendering_overview.md) document for further details.
+A Drawable will add objects to the RenderManager to be drawn (sprites, meshes, etc...). Read the [Render Overview](../../../graphics/rendering_overview.md) document for further details.
 
 ## Add/Remove a Drawable
-To add/remove a Drawable to/from your entity both from code or Evergine Studio is the same that adding/removing a component because a Drawable is a kind of component. You can see how to add/remove a component [here](index.md)
+To add/remove a Drawable to/from your entity, both from code or Evergine Studio, is the same as adding/removing a component because a Drawable is a type of component. You can see how to add/remove a component [here](index.md).

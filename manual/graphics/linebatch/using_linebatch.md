@@ -2,16 +2,16 @@
 ---
 ![Using billboards header](images/linebatchHeader.jpg)
 
-**LineBatch** only can be used from code. In the scene **RenderManager** you will find the LineBatch3D to draw lines in 3d space and the LineBatch2D to draw lines in 2d space.
+**LineBatch** can only be used from code. In the scene **RenderManager**, you will find the LineBatch3D to draw lines in 3D space and the LineBatch2D to draw lines in 2D space.
 
-If you want to add a debug or helper mode to your entity, you can add a [Drawable3D](../../basics/component_arch/components/drawables.md) component to your scene and from this you will be access to the linebatch:
+If you want to add a debug or helper mode to your entity, you can add a [Drawable3D](../../basics/component_arch/components/drawables.md) component to your scene, and from this, you will have access to the LineBatch:
 
-The following example draw a red line from (0,0,0) to (0,1,0)
+The following example draws a red line from (0,0,0) to (0,1,0).
 
 **From your scene.cs**
 ```csharp
 protected override void CreateScene()
-{    
+{
     ...
     // Add dummy entity to your scene
     var dummyEntity = new Entity()
@@ -22,7 +22,7 @@ protected override void CreateScene()
 ```
 **Drawable component implementation**
 ```csharp
-// Drawable component using lineBatch3D
+// Drawable component using LineBatch3D
 public class MyDrawable : Drawable3D
 {
     public override void Draw(DrawContext drawContext)
@@ -31,10 +31,10 @@ public class MyDrawable : Drawable3D
     }
 }
 ```
-The lineBatch3D not only draw lines but can also draw Point, Sphere, Box ... And LineBatch2D is similar but with shapes (Circle, Square ...)
+The LineBatch3D not only draws lines but can also draw Point, Sphere, Box, etc. The LineBatch2D is similar but with shapes (Circle, Square, etc.).
 
 > [!NOTE]
-> LineBatch3D must be used with Drawable3D and LineBatch2D with Drawable2D_
+> LineBatch3D must be used with Drawable3D and LineBatch2D with Drawable2D.
 
 ## LineBatch
 This section shows with examples all geometries that LineBatch can draw:

@@ -1,42 +1,40 @@
-# Create scenes
+# Create Scenes
 
-When you create a project, it contains a initial **Scene**  (`MyScene.wescene`) containing some base entities.
+When you create a project, it contains an initial **Scene** (`MyScene.wescene`) that includes some base entities.
 
-In **Evergine** scenes are created like another Asset. 
+In **Evergine** scenes are created similarly to other assets.
 
-## Create scene from Evergine Studio
+## Create a Scene Using Evergine Studio
 
-There are two ways of creating a **Scene** from **Evergine Studio**.
+There are two ways to create a **Scene** in **Evergine Studio**:
 
-- In the **Assets Details** panel, right click and select **Create scene** menú item.
+- In the **Assets Details** panel, right-click and select the **Create scene** menu item.
 
 ![Create Scene](images/createScene.png)
 
-- Alternatively, in the main menu, select **Assets > Create scene**
+- Alternatively, in the main menu, select **Assets > Create scene**.
 
 ![Create Scene](images/createSceneMenu.png)
 
-
 >[!NOTE]
-> When creating a **Scene**, the new asset will be placed in the current selected Asset Folder, the one selected in **Project Explorer** panel and the one showed in **Assets Details** panel.
+> When you create a **Scene**, the new asset will be placed in the currently selected Asset Folder, which is shown in the **Project Explorer** panel and the **Assets Details** panel.
 
+## Create a Scene by Code
 
-## Create a scene by code
+To generate a new **Scene** using code, simply create a new class that extends the **Scene** class:
 
-To generate a new **Scene** by code we just need to create a new class extending **Scene**:
-
-1. Create a new class in your **Evergine** project (`MyScene.cs` for example).
-2. Make that class inherit from **Scene** class.
+1. Create a new class in your **Evergine** project (e.g., `MyScene.cs`).
+2. Make that class inherit from the **Scene** class.
 3. You can override the following important methods:
 
 | Method | Description |
 | ------ | ----------- |
 | **CreateScene()** | Method where all the scene entities are created and added to the **Scene**.
 | **RegisterManagers()** | Method where the **SceneManagers** are loaded. `base.RegisterManagers()` will register the default **SceneManagers**. 
-| **Start()** | Called just before the **Scene** start updating and drawing.
-| **End()** | Ends the scene 
-| **Pause()** | Called when the scene is paused. It can be due the app being suspended or either manually paused through the **ScrenContextManager**.
-| **Resume()** | Resume the **Scene** when it's dead..
+| **Start()** | Called just before the **Scene** starts updating and drawing.
+| **End()** | Ends the **Scene**.
+| **Pause()** | Called when the **Scene** is paused. This can occur if the app is suspended or if it is manually paused through the **ScreenContextManager**.
+| **Resume()** | Resumes the **Scene** when it is paused.
 
 Here is a code example:
 ````csharp

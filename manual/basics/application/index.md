@@ -4,16 +4,15 @@
 
 ![Application Overview](images/evergine_overall.png)
 
-In Evergine, the **Application** class is the entry point for your application. It contains all services and expose the application loop with `DrawFrame()` and `UpdateFrame()` cycles. 
+In Evergine, the **Application** class serves as the entry point for your application. It contains all services and exposes the application loop with `DrawFrame()` and `UpdateFrame()` cycles.
 
-Additionally, it offers the [**Container**](container.md) instance, that allows developer to register all Services and global functionality to be accessed and binded through the entire application (from Components, Scenes, Managers, etc...)
+Additionally, it offers the [**Container**](container.md) instance, which allows developers to register all services and global functionality to be accessed and bound throughout the entire application (from components, scenes, managers, etc.).
 
-There can be only one instance of Application class in your Evergine project, and we treat it like a Singleton instance
+There can be only one instance of the Application class in your Evergine project, and we treat it as a Singleton instance.
 
-| Static property | Description |
+| Static Property | Description |
 | --- | --- |
-| `Application.Current` | **Static property** to access the current Application. It's the most common way to access to your application instance from every part of your Evergine classes. |
-
+| `Application.Current` | A **static property** to access the current Application. It is the most common way to access your application instance from any part of your Evergine classes. |
 
 ## In this section
 * [Application Container](container.md)

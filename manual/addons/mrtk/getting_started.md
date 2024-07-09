@@ -1,12 +1,13 @@
-# Getting started
+# Getting Started
 ---
-These are the initial steps to follow in order to get started using our Mixed Reality Toolkit:
-1. Create a new Evergine project, or open an existing one.
+Here are the initial steps to follow to get started with our Mixed Reality Toolkit:
+
+1. Create a new Evergine project or open an existing one.
 2. Install the Evergine.MRTK add-on using the add-on management option in Evergine Studio.
 
 ![Add-on installation](images/addon_installation.png)
 
-3. Change all scenes that will use MRTK functionality so they extend MRTK's XRScene class instead of Evergine's Scene class. There are some material properties that the scene uses, which need to be filled in.
+3. Update all scenes that will use MRTK functionality so they extend MRTK's XRScene class instead of Evergine's Scene class. There are some material properties that the scene uses, which need to be filled in.
 ```csharp
 using System;
 using Evergine.MRTK.Scenes;
@@ -30,7 +31,7 @@ namespace Evergine.MRTK.Demo.Scenes
 }
 ```
 > [!Note]
-> There will probably be an error related to the CreateScene method, which is sealed in the XRScene class. If the scene needs to be modified via code, this can be done by overriding the OnPostCreateXRScene instead.
+> There will probably be an error related to the CreateScene method, which is sealed in the XRScene class. If the scene needs to be modified via code, this can be done by overriding the OnPostCreateXRScene method instead.
 
 4. Register an instance of the NoesisService class in the Application class.
 ```csharp

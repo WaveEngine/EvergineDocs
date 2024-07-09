@@ -1,9 +1,10 @@
-# Evergine platforms
+# Evergine Platforms
 
 ---
-This section documents the different platforms that Evergine can be deployed on.
 
-## In this section
+This section documents the different platforms on which Evergine can be deployed.
+
+## In This Section
 
 * Windows
 * [Web](web/index.md)

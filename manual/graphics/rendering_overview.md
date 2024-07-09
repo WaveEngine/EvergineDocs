@@ -1,3 +1,3 @@
 # Rendering Overview
 
-Coming soon
+Coming soon.

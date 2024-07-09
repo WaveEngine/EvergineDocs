@@ -1,16 +1,16 @@
 # Application Container
 
-The **Application Container** is a class responsible to store objects that will be accesses from the entire application. The application itself does not have functionality itself, and all logic is made using registered instances into the Container.
+The **Application Container** is a class responsible for storing objects that will be accessed throughout the entire application. The application itself does not have inherent functionality; all logic is implemented using instances registered in the Container.
 
-The application Container could be accessed using the `Container` property in the Application class.
+The application Container can be accessed using the `Container` property in the Application class.
 
-Here you will register all [Services](../services.md) of your application, among other instances to control your project (like the [GraphicContext](../../graphics/low_level_api/graphicscontext.md) to expose the graphic API, or AssetsService to control the asset library of your application, and [ScreenContextManager](../scenes/using_scenes.md) to control the scenes that will be played in your application).
+Here you will register all [Services](../services.md) of your application, among other instances to control your project (like the [GraphicContext](../../graphics/low_level_api/graphicscontext.md) to expose the graphic API, AssetsService to control the asset library of your application, and [ScreenContextManager](../scenes/using_scenes.md) to control the scenes that will be played in your application).
 
 > [!TIP]
-> In general terms, in the **Container** you will register all Services and logic that will be consumed for every Scene or Component in your Application.
+> In general, in the **Container**, you will register all Services and logic that will be consumed by every Scene or Component in your Application.
 
 > [!NOTE]
-> There can be only one instance per Type in the Container. Every object registerd here is treated like a Singleton.
+> There can be only one instance per Type in the Container. Every object registered here is treated as a Singleton.
 
 ![Application Container](images/application_container.png)
 
@@ -18,15 +18,15 @@ Here you will register all [Services](../services.md) of your application, among
 
 ### Register Instances
 
-You can register elements inside the Container by two ways:
+You can register elements inside the Container in two ways:
 
 #### Register a Type
 
-You can register a type in the Container. If this functionality will be needed in the future, the Container will create an instance and will offer it to everyone that require this instance. This is dome by the `Container.RegisterType<T>()` method:
+You can register a type in the Container. If this functionality is needed in the future, the Container will create an instance and will offer it to everyone that requires this instance. This is done by the `Container.RegisterType<T>()` method:
 
 | Method | Description |
 | --- | --- |
-| `RegisterType<T>()` | Register the specified type `T`  to the container. |
+| `RegisterType<T>()` | Registers the specified type `T` to the container. |
 
 A small example:
 
@@ -37,7 +37,7 @@ A small example:
         {
             // Previous code :)
 
-            // You could register the service by type...
+            // You can register the service by type...
             this.Container.RegisterType<MyService>();
         }
     ...
@@ -45,12 +45,12 @@ A small example:
 
 #### Register an Instance
 
-In the other hand, you can register directly an instance, this useful if you want to properly initiate the service, or offer an implementation of an abstract class:
+On the other hand, you can register an instance directly. This is useful if you want to properly initialize the service or offer an implementation of an abstract class:
 
 | Methods | Description |
 | --- | --- |
-| `RegisterInstance(T instance)` | Register the instance object into the Container. It will associate to the type of the instance. |
-| `RegisterInstance<T> (T instance)` | Register the instance object into the Container. It will associate to the type of the generic type `<T>`. the instance parameter type must be a subclass of `<T>`.  |
+| `RegisterInstance(T instance)` | Registers the instance object into the Container. It will be associated with the type of the instance. |
+| `RegisterInstance<T>(T instance)` | Registers the instance object into the Container. It will be associated with the type of the generic type `<T>`. The instance parameter type must be a subclass of `<T>`.  |
 
 A small example:
  ```csharp
@@ -60,24 +60,24 @@ A small example:
         {
             // Previous code :)
 
-            // Register directly the service instance...
+            // Register the service instance directly...
             this.Container.RegisterInstance(new MyService());
 
-            // You can register a instance but specifying a parent class to indicates
+            // You can register an instance specifying a parent class to indicate
             // the type that you want to expose.
-            // In that case, you are offering the DX11 implementation when someone request the GraphicsContext...
+            // In this case, you are offering the DX11 implementation when someone requests the GraphicsContext...
             this.Container.RegisterInstance<GraphicsContext>(new DX11GraphicsContext());
         }
     ...
  ```
 
-### Get instances
+### Get Instances
 
-Is easy to obtains instances from the Application Container
+It is easy to obtain instances from the Application Container.
 
-#### Using [BindService] tag attribute
+#### Using [BindService] Tag Attribute
 
-You can use the [BindService] attribute in your Component, SceneManager or even from another Services to automatically inject the Service instance into your property.
+You can use the [BindService] attribute in your Component, SceneManager, or even from other Services to automatically inject the Service instance into your property.
 
 ```csharp
 using Evergine.Framework;
@@ -87,8 +87,8 @@ namespace MyProject
 {
     public class MyBehavior : Behavior
     {
-        // Use the BindService attribute on top of the property or attribute 
-        // in which you want to inject the Service
+        // Use the BindService attribute on top of the property or field 
+        // where you want to inject the Service
         [BindService]
         private MyService myService = null;
 
@@ -100,13 +100,14 @@ namespace MyProject
 }
 ```
 
-#### Using Resolve() methods
-The Container has the following methods to obtains instances:
+#### Using Resolve() Methods
+
+The Container has the following methods to obtain instances:
 
 | Methods | Description |
 | --- | --- |
-| `T Resolve<T>()` | Obtains the instance of the type `<T>` specified. |
-| `object Resolve(Type type)` | Other way to obtains an objects, but without C# generics.  |
+| `T Resolve<T>()` | Obtains the instance of the specified type `<T>`. |
+| `object Resolve(Type type)` | Another way to obtain an object, but without C# generics.  |
 
 
  ```csharp
@@ -132,9 +133,9 @@ namespace MyProject
             this.myService.DoRequest();
         }
 
-        protected override bool OnDettached()
+        protected override bool OnDetached()
         {
-            // Release the reference when a component is being dettached...
+            // Release the reference when a component is being detached...
             this.myService = null;
         }
     }

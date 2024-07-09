@@ -1,10 +1,10 @@
 # Using Physics Bodies
 
-This is a small step by step to cover a variety of physics bodies. This is easily to replicate in Evergine Studio.
+This is a small step-by-step guide to cover a variety of physics bodies. This is easy to replicate in Evergine Studio.
 
-## 1. Create a pile of rigid bodies
+## 1. Create a Pile of Rigid Bodies
 
-In the following example we will create a simple pile of 10 rigid bodies and a static body as a floor:
+In the following example, we will create a simple pile of 10 rigid bodies and a static body as a floor:
 
 ![Sample](images/create_rigid_body.gif)
 
@@ -32,9 +32,8 @@ private void CreateFloor(Material material)
         .AddComponent(new MaterialComponent() { Material = material })
         .AddComponent(new PlaneMesh() { Width = 10, Height = 10 }) // Create a 10x10 floor plane
         .AddComponent(new MeshRenderer())
-
         .AddComponent(new StaticBody3D())        // Add a StaticBody component...
-        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
+        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physics body...
 
     this.Managers.EntityManager.Add(cube);
 }
@@ -49,24 +48,23 @@ private void SpawnCube(Material material, Vector3 position, float size)
         .AddComponent(new MaterialComponent() { Material = material })
         .AddComponent(new CubeMesh() { Size = size })
         .AddComponent(new MeshRenderer())
-
         .AddComponent(new RigidBody3D())        // Add a RigidBody3D component...
-        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
+        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physics body...
 
     this.Managers.EntityManager.Add(cube);
 }
 ```
 
-## 2. Adding a Kinematic body
+## 2. Adding a Kinematic Body
 
-In this step we will add a kinematic body to the scene and we are going to add a simple shake movement:
+In this step, we will add a kinematic body to the scene and add a simple shake movement:
 
 ![Sample2](images/kinematic_rigid_body.gif)
 
 Add the following code to your scene:
 
 ```csharp
- protected override void CreateScene()
+protected override void CreateScene()
 {
     // Previous code of step 1...    
 
@@ -87,20 +85,18 @@ private void CreateKinematic()
         .AddComponent(new MaterialComponent() { Material = material })
         .AddComponent(new CubeMesh() { Size = 1 })
         .AddComponent(new MeshRenderer())
-
         .AddComponent(new RigidBody3D()         // Add a RigidBody3D component...
         {
             PhysicBodyType = RigidBodyType3D.Kinematic  // Kinematic rigid body...
         })
-        .AddComponent(new BoxCollider3D())     // Add a BoxCollider3D to the physic body...        
-        .AddComponent(new ShakeKinematic());   // Add a behavior that move this entity...
+        .AddComponent(new BoxCollider3D())     // Add a BoxCollider3D to the physics body...        
+        .AddComponent(new ShakeKinematic());   // Add a behavior that moves this entity...
 
     this.Managers.EntityManager.Add(cube);
 }
-
 ```
 
-This is the `ShakeKinematic` component, that move the entity:
+This is the `ShakeKinematic` component, which moves the entity:
 
 ```csharp
 public class ShakeKinematic : Behavior

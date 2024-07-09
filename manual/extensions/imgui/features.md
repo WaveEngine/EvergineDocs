@@ -1,11 +1,11 @@
 # Features
 ---
 
-There are a list of different controls that you can create with just a few lines of codes, here is the complete list:
+Here is a list of different controls that you can create with just a few lines of code. Here is the complete list:
 
 ## Window
 
-**Windows** are drag-able containers of Controls. They can receive and lose focus when clicked. Because of this, they are implemented slightly differently from the other Controls. Each Window has an id number, and its contents are declared inside a separate function that is called when the Window has focus.
+**Windows** are draggable containers of controls. They can receive and lose focus when clicked. Because of this, they are implemented slightly differently from the other controls. Each Window has an ID number, and its contents are declared inside a separate function that is called when the Window has focus.
 
 ```csharp
 ImguiNative.igSetNextWindowPos(new Vector2(420, 120), ImGuiCond.Appearing, new Vector2(1, 0.5f));
@@ -27,7 +27,7 @@ The **LabelText** is non-interactive. It is for display only. It cannot be click
 ImguiNative.igBegin("MyWindow", this.imguiDemoOpen.Pointer(), ImGuiWindowFlags.None);
 
 ImguiNative.igLabelText("This is a label", "Value1");
-ImguiNative.igLabelText("This is other label", "Value2");
+ImguiNative.igLabelText("This is another label", "Value2");
 
 ImguiNative.igEnd();
 ```
@@ -80,11 +80,11 @@ The **Toggle** Control creates a checkbox with a persistent on/off state. The us
 
 ## Toolbar
 
-The **Toolbar** Control is essentially a row of Buttons. Only one of the Buttons on the Toolbar can be active at a time, and it will remain active until a different Button is clicked. This behavior emulates the behavior of a typical Toolbar. You can define an arbitrary number of Buttons on the Toolbar.
+The **Toolbar** Control is essentially a row of buttons. Only one of the buttons on the Toolbar can be active at a time, and it will remain active until a different button is clicked. This behavior emulates the behavior of a typical Toolbar. You can define an arbitrary number of buttons on the Toolbar.
 
 ## SelectionGrid
 
-The **SelectionGrid** Control is a multi-row Toolbar. You can determine the number of columns and rows in the grid. Only one Button can be active at time.
+The **SelectionGrid** Control is a multi-row Toolbar. You can determine the number of columns and rows in the grid. Only one button can be active at a time.
 
 ## HorizontalSlider
 
@@ -96,16 +96,16 @@ The **VerticalSlider** Control is a typical vertical sliding knob that can be dr
 
 ## HorizontalScrollbar
 
-The **HorizontalScrollbar** Control is similar to a Slider Control, but visually similar to Scrolling elements for web browsers or word processors. This control is used to navigate the ScrollView Control.
+The **HorizontalScrollbar** Control is similar to a Slider Control, but visually similar to scrolling elements for web browsers or word processors. This control is used to navigate the ScrollView Control.
 
 ## VerticalScrollbar
 
-The **VerticalScrollbar** Control is similar to a Slider Control, but visually similar to Scrolling elements for web browsers or word processors. This control is used to navigate the ScrollView Control.
+The **VerticalScrollbar** Control is similar to a Slider Control, but visually similar to scrolling elements for web browsers or word processors. This control is used to navigate the ScrollView Control.
 
 ## ScrollView
 
-**ScrollViews** are Controls that display a viewable area of a much larger set of Controls.
+**ScrollViews** are Controls that display a viewable area of a much larger set of controls.
 
 ## Images
 
-The **images** control allow to display the content of texture, this is a non-interactive control.
+The **Images** control allows displaying the content of a texture. This is a non-interactive control.

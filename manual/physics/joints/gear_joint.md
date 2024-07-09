@@ -4,7 +4,7 @@
   <source src="images/GearJointVideo.mp4" type="video/mp4">
 </video>
 
-A **Gear Joint** is a type of constraint that allows you to create a relationship between two rigid bodies that is based on their angular velocities. Specifically, it lets you specify a gear ratio between the angular velocities of the two bodies, which can be used to create realistic mechanical systems like gears, pulleys, and other types of machinery.
+A **Gear Joint** is a type of constraint that allows you to create a relationship between two rigid bodies based on their angular velocities. Specifically, it lets you specify a gear ratio between the angular velocities of the two bodies, which can be used to create realistic mechanical systems like gears, pulleys, and other types of machinery.
 
 ## GearJoint3D
 
@@ -12,15 +12,14 @@ In Evergine, a Gear Joint is implemented using the `GearJoint3D` component.
 
 ![Point-to-Point Joint](images/gearJointComponent.png)
 
-
 ## Properties
 
 | Property | Default | Description |
 | --- | --- | --- |
-| **ConnectedEntityPath** | null |  The [entity path](../../basics/component_arch/entities/entity_hierarchy.md#entity-paths) of the connected body. Only when the path is valid a Joint is established properly. |
-| **Axis** | 0, 1, 0 | The axis rotation of the gear. |
+| **ConnectedEntityPath** | null |  The [entity path](../../basics/component_arch/entities/entity_hierarchy.md#entity-paths) of the connected body. Only when the path is valid, a Joint is properly established. |
+| **Axis** | 0, 1, 0 | The axis of rotation of the gear. |
 | **Ratio** | 1 | Sets the desired angular speed ratio between the two objects. For example, if you want one object to rotate at half the speed of the other object, set the value of *Ratio* to 0.5.  |
-| **BreakPoint** | 0 | If the value is greater than 0, Indicates the force that needs to be applied for this joint to break. |
+| **BreakPoint** | 0 | If the value is greater than 0, it indicates the force that needs to be applied for this joint to break. |
 | **CollideConnected** | false | Determines whether a collision between the two bodies managed by the joint is enabled. |
 
 ## Using Gear Joint
@@ -39,19 +38,17 @@ protected override void CreateScene()
     // Load your material
     var material = this.Managers.AssetSceneManager.Load<Material>(DefaultResourcesIDs.DefaultMaterialID);
 
-    float sliderLength = 3;
-
-    // Create the slider holder...
+    // Create gear entities
     Entity gear1 = new Entity()
         .AddComponent(new Transform3D())
         .AddComponent(new Spinner() { AxisIncrease = new Vector3(0, 1f, 0) })
         .AddComponent(new MaterialComponent() { Material = material })
-        .AddComponent(new CylinderMesh() { Height = 0.1f, Diameter = 2})
+        .AddComponent(new CylinderMesh() { Height = 0.1f, Diameter = 2 })
         .AddComponent(new MeshRenderer())
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Kinematic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 
@@ -63,7 +60,7 @@ protected override void CreateScene()
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Dynamic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 
@@ -75,7 +72,7 @@ protected override void CreateScene()
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Dynamic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 

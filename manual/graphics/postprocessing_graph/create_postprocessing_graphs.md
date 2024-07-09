@@ -2,10 +2,10 @@
 ---
 ![Postprocessing header](images/PostProcessingGraph.jpg)
 
-The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](../effects/index.md). 
+The Post-Processing graph is a set of nodes connected to apply visual effects to the output render before displaying it on the screen. Each node is a compute [effect](../effects/index.md). 
 
-## Create a Postprocessing Graph asset in Evergine Studio
-You can create a postprocessing graph click button on ![Plus Icon](../images/plusIcon.jpg) from the [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create Post-Processing Graph"_
+## Create a Postprocessing Graph Asset in Evergine Studio
+You can create a postprocessing graph by clicking the ![Plus Icon](../images/plusIcon.jpg) button in the [Assets Details](../../evergine_studio/interface.md) panel. This will open the create menu options, where you can select the option _"Create Post-Processing Graph"_.
 
 ![Create new postprocessing graph menu option](images/AssetsDetailsMenu.jpg)
 
@@ -14,7 +14,7 @@ You can find the postprocessing graph assets in the [**Assets Details**](../../e
 
 ![Postprocessing Graph asset](images/postProcessinGraphAsset.jpg)
 
-### Postprocessing Graph files in content directory
+### Postprocessing Graph Files in Content Directory
 The postprocessing graph file has the `.wepp` extension.
 
 ![Postprocessing Graph file](images/postProcessingGraphFile.jpg)

@@ -1,8 +1,8 @@
 # Using Compute Tasks
 
-**Compute tasks** are very similar to Materials, they are an associated effect too and you also can generate a class decorator to using from code. The main difference is that the compute tasks only can be used from code. Compute Task decorator are generated from [Effect Editor](../effects/effect_editor.md) like [Material decorators](../materials/material_decorators.md).
+**Compute tasks** are very similar to Materials; they are associated effects too, and you can also generate a class decorator to use from code. The main difference is that compute tasks can only be used from code. Compute Task decorators are generated from [Effect Editor](../effects/effect_editor.md) like [Material decorators](../materials/material_decorators.md).
 
-The compute task decorator helps you set the compute effect resource layout. As input resources, you can use ConstantBuffers, StructureBuffer, Textures, and Samplers. This is an example of a compute task decorator with an input texture and output texture define in its resource layout block:
+The compute task decorator helps you set the compute effect resource layout. As input resources, you can use ConstantBuffers, StructureBuffer, Textures, and Samplers. This is an example of a compute task decorator with an input texture and output texture defined in its resource layout block:
 
 ```csharp
 //------------------------------------------------------------------------------
@@ -49,11 +49,11 @@ namespace DocumentationWorkBench.Effects
 }
 ```
 
-To run a compute task you must call to `Run` methods and exists the following flavors:
+To run a compute task, you must call the `Run` methods. The following variations exist:
 
-| Method |  Description |
-|--------| ----------- |
-| Run    | Defines the groupcount X,Y and Z and the pass selected. |
-| Run1D  | Helper method to run 1D tasks, only need to pass threadCount X the groupSizes are defined as (64,1,1). |
-| Run2D  | Helper method to run 2D tasks, only need to pass ThreadCount X and Y, the groupSizes are defined as (8,8,1). |
-| Run3D  | Helper method to run 3D tasks, is similar to run but you can define ThreadCounts X,Y,Z and GroupSizes X,Y,Z.|
+| Method | Description |
+|--------|-------------|
+| Run    | Defines the group count X, Y, and Z and the selected pass. |
+| Run1D  | Helper method to run 1D tasks; you only need to pass threadCount X. The groupSizes are defined as (64, 1, 1). |
+| Run2D  | Helper method to run 2D tasks; you only need to pass ThreadCount X and Y. The groupSizes are defined as (8, 8, 1). |
+| Run3D  | Helper method to run 3D tasks; it is similar to Run but allows you to define ThreadCounts X, Y, Z and GroupSizes X, Y, Z. |

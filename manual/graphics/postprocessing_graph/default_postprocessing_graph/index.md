@@ -1,11 +1,11 @@
-# Default Postprocessing graph
+# Default Postprocessing Graph
 ---
 ![Default Postprocessing graph](images/defaultPostprocessingGraph.jpg)
 
-Default Evergine project template imports the [**Evergine.Core** package](../../../addons/index.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project.
+The default Evergine project template imports the [**Evergine.Core** package](../../../addons/index.md), which includes the Default Post-Processing graph with the most essential post-processing visual effects commonly used in a project.
 
-## Default Postprocessing effects
-The complete list of postprocessing effects cover by the default postprocessing graph are:
+## Default Postprocessing Effects
+The complete list of postprocessing effects covered by the default postprocessing graph includes:
 
 * [Screen Space Ambient Occlusion (SSAO)](screen_space_ambient_occlusion.md)
 * [Screen Space Reflection (SSR)](screen_space_reflection.md)
@@ -13,13 +13,13 @@ The complete list of postprocessing effects cover by the default postprocessing 
 * [Temporal Anti-Aliasing (TAA)](temporal_anti_aliasing.md)
 * [Motion Blur](motion_blur.md)
 * [Depth of Field (DoF)](depth_of_field.md)
-* [Bloom, Dirt, LensFlare, LightShaft](bloom.md)
+* [Bloom, Dirt, Lens Flare, Light Shaft](bloom.md)
 * [Fidelity Super Resolution (FSR)](fidelity_super_resolution.md)
 * [Sharpen](sharpen.md)
-* [Tonemapping, Chromatic aberration, Vignette, Grain, Distortion](tonemapping.md)
-* [Fast approximate anti-aliasing (FXAA)](anti-aliasing.md)
+* [Tonemapping, Chromatic Aberration, Vignette, Grain, Distortion](tonemapping.md)
+* [Fast Approximate Anti-Aliasing (FXAA)](anti-aliasing.md)
 
-## Using default postprocessing graph from Evergine studio
-These effects can be configured from `PostprocessingGraphRenderer` component inside of a postprocessing volume entity.
+## Using the Default Postprocessing Graph from Evergine Studio
+These effects can be configured from the `PostprocessingGraphRenderer` component inside a postprocessing volume entity.
 
 ![Default Postprocessing graph effects](images/defaultPostprocessingGraphEffects.jpg)

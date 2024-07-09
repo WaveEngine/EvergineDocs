@@ -1,6 +1,6 @@
-# Loading models on runtime
+# Loading Models at Runtime
 
-Loading dynamic models has always been challenging in _Evergine_. To address this, we have introduced new packages that support _GLB_ and _STL_ formats. These packages allow you to manage scenarios where your models are not part of the initial application bundle (i.e., they are not static application assets) or are marked as _Raw_  [assets](../../evergine_studio/assets/index.md). For instance, you can dynamically download models from the internet and display them to users. The new runtime loader packages facilitate this process.
+Loading dynamic models has always been challenging in _Evergine_. To address this, we have introduced new packages that support _GLB_ and _STL_ formats. These packages allow you to manage scenarios where your models are not part of the initial application bundle (i.e., they are not static application assets) or are marked as _Raw_ [assets](../../evergine_studio/assets/index.md). For instance, you can dynamically download models from the internet and display them to users. The new runtime loader packages facilitate this process.
 
 ```csharp
 var assetsService = Application.Current.Container.Resolve<AssetsService>();
@@ -10,21 +10,22 @@ var stlModel = await STLRuntime.Instance.Read("Models/Star_Destroyer_Fixed.stl")
 
 The _Read_ method supports both a file path and a file stream.
 
-Remember to add package references to your csproj file.
+Remember to add package references to your .csproj file.
 
 ```xml
 <PackageReference Include="Evergine.Runtimes.GLB" Version="2024.6.28" />
 <PackageReference Include="Evergine.Runtimes.STL" Version="2024.6.28" />
 ```
 
-If you are running a web project, you should also add following package in your start project.
+If you are running a web project, you should also add the following package to your start project.
 
 ```xml
 <PackageReference Include="SkiaSharp.Views.Blazor" Version="2.88.8" />
 ```
 
-## Material assigners
-Both packages offer their unique methods for loading models and textures. However, you can customize this process by providing your own material assigner function.
+## Material Assigners
+
+Both packages offer unique methods for loading models and textures. However, you can customize this process by providing your own material assigner function.
 
 ```csharp
 public async Task LoadModelTask() {
@@ -44,7 +45,7 @@ private async Task<Material> CustomMaterialAssigner(MaterialData data)
     var emissive = await data.GetEmissiveTextureAndSampler();
     var occlusion = await data.GetOcclusionTextureAndSampler();            
 
-    // Get Layer
+    // Get layer
     var opaqueLayer = assetsService.Load<RenderLayerDescription>(DefaultResourcesIDs.OpaqueRenderLayerID);
     var alphaLayer = assetsService.Load<RenderLayerDescription>(DefaultResourcesIDs.AlphaRenderLayerID);
     RenderLayerDescription layer;
@@ -96,7 +97,7 @@ private async Task<Material> CustomMaterialAssigner(MaterialData data)
         standard.AlphaCutout = data.AlphaCutoff;
     }
 
-    // Vertex Color
+    // Vertex color
     if (data.HasVertexColor)
     {
         if (standard.ActiveDirectivesNames.Contains("VCOLOR"))

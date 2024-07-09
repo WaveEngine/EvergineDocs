@@ -3,15 +3,15 @@
 
 ![Graphics](images/imgui_features.png)
 
-## Install Evergine.ImGUI extension
+## Install Evergine.ImGUI Extension
 
-To start using this extension, just add Evergine.ImGui package to your project using NuGet package manager from Visual Studio.
+To start using this extension, add the Evergine.ImGui package to your project using the NuGet package manager from Visual Studio.
 
 ```xml
 <PackageReference Include="Evergine.ImGui" Version="2022.9.28.1" />
 ```
 
-Register the ImGuiManager on your scene:
+Register the ImGuiManager in your scene:
 
 ```csharp
 public class ImGuiSceneTest : Scene
@@ -31,13 +31,13 @@ public class ImGuiSceneTest : Scene
 }
 ```
 
-And add the namespace ImGuiNET:
+Add the namespace ImGuiNET:
 
 ```csharp
 using ImGuiNET;
 ```
 
-Now you can start calling the ImGui API from everywhere using the static reference:
+Now you can start calling the ImGui API from anywhere using the static reference:
 
 ```csharp
 private bool imguiDemoOpen;
@@ -47,9 +47,9 @@ ImguiNative.igShowDemoWindow(this.imguiDemoOpen.Pointer());
 
 ## Usage
 
-The UI is generated every frame and all the controls between Begin and End will be drawn.
+The UI is generated every frame, and all the controls between Begin and End will be drawn.
 
-Here you have a simple example:
+Here is a simple example:
 
 ```csharp
 bool open = true;
@@ -72,7 +72,7 @@ And this is the result:
 
 <br><br>
 
-And now will see a more advanced example:
+Now let's see a more advanced example:
 
 ```csharp
 bool open = false;
@@ -110,7 +110,7 @@ ImguiNative.igSliderFloat("Reflectance Coef", &reflectanceCoef, 0, 1, null, ImGu
 this.worldInfo.ReflectanceCoef = reflectanceCoef;
 
 float roughness = this.worldInfo.Roughness;
-ImguiNative.igSliderFloat("Roughness", &roughness, 0,1, null, ImGuiSliderFlags.None);
+ImguiNative.igSliderFloat("Roughness", &roughness, 0, 1, null, ImGuiSliderFlags.None);
 this.worldInfo.Roughness = roughness;
 
 ImguiNative.igSpacing();
@@ -130,6 +130,6 @@ This is the result:
 
 ![Graphics](images/imgui_pathtracerui.png)
 
-Take a look this in our [path tracer demo](https://github.com/EvergineTeam/Raytracing).
+Take a look at this in our [path tracer demo](https://github.com/EvergineTeam/Raytracing).
 
-Note: This project need to create a ImGuiRenderer because is using the **Evergine** low level api, but this is not necessary in a default project created from the **Evergine Studio**.
+Note: This project needs to create an ImGuiRenderer because it uses the **Evergine** low-level API, but this is unnecessary in a default project created from **Evergine Studio**.

@@ -1,6 +1,6 @@
 # Framebuffer
 
-Framebuffers represent a collection of memory attachments that are used by a render pass instance. Examples of these memory attachments include the color textures  and depth texture.
+Framebuffers represent a collection of memory attachments that are used by a render pass instance. Examples of these memory attachments include color textures and a depth texture.
 
 ## Creation
 
@@ -43,13 +43,13 @@ var rTDepthTargetDescription = new TextureDescription()
 
 var rTDepthTarget = this.graphicsContext.Factory.CreateTexture(ref rTDepthTargetDescription);
 var depthAttachment = new FrameBufferAttachment(rTDepthTarget, 0, 1);
-var colorsAttachment = new[] { new FrameBufferAttachment(rTColorTarget, 0, 1) };
-this.rTFrameBuffer = this.graphicsContext.Factory.CreateFrameBuffer(depthAttachment, colorsAttachment);
+var colorAttachments = new[] { new FrameBufferAttachment(rTColorTarget, 0, 1) };
+this.rTFrameBuffer = this.graphicsContext.Factory.CreateFrameBuffer(depthAttachment, colorAttachments);
 ```
 
-## How to use
+## How to Use
 
-First, you need to create a graphics pipeline that use the framebuffer output description:
+First, you need to create a graphics pipeline that uses the framebuffer output description:
 
 ```csharp
 var trianglePipelineDescription = new GraphicsPipelineDescription()
@@ -74,7 +74,7 @@ var trianglePipelineDescription = new GraphicsPipelineDescription()
 this.trianglePipelineState = this.graphicsContext.Factory.CreateGraphicsPipeline(ref trianglePipelineDescription);
 ```
 
-And finally you can use to start a renderpass:
+Finally, you can use it to start a render pass:
 
 ```csharp
 // Render to texture

@@ -1,8 +1,8 @@
-# Upgrade my project to latest Evergine release
+# Upgrade My Project to the Latest Evergine Release
 
 ## Update from Evergine 2023.9.28 to Evergine 2024.6.28
 
-When upgrading to Evergine 2024.6, there are a few manual adjustments required to ensure your previous projects work correctly. The main changes include:
+When upgrading to Evergine 2024.6, a few manual adjustments are required to ensure your previous projects work correctly. The main changes include:
 
 - Modifications to how prefabs are serialized.
 - Removal of the 2D API.
@@ -10,18 +10,18 @@ When upgrading to Evergine 2024.6, there are a few manual adjustments required t
 
 If you update your project using the Evergine launcher, you might encounter errors such as:
 
-`
+```
 <PATH_TO_OUR_PROJECT>\MyScene.wescene(195,18): error WESC000: Unknown node type, check the visibility of the member. [<PATH_TO_OUR_PROJECT>\MigrateSample.csproj]
-`
+```
 
 To resolve this, run the following script:
 
 ```powershell
 <#
 .SYNOPSIS
-	Remove deprecated InstancedEntities files 
+	Removes deprecated InstancedEntities files.
 .DESCRIPTION
-	Remove deprecated InstancedEntities files 
+	Removes deprecated InstancedEntities files.
 #>
 
 param (
@@ -36,12 +36,12 @@ They cannot be undone. Do you want to continue?  [y/n]"
 if ($confirmation -ne "y") { exit }
 
 # Remove InstancedEntities files 
-Get-Childitem -Path $path -r -include "InstancedEntities","InstancedEntities.wefile" | Remove-Item -Force
+Get-Childitem -Path $path -Recurse -Include "InstancedEntities","InstancedEntities.wefile" | Remove-Item -Force
 
 # Replace modified properties
-Get-ChildItem -Path $path -r -include "*.wescene","*.weprefab" | 
-Foreach-Object {
-    $p = $_.fullname
+Get-ChildItem -Path $path -Recurse -Include "*.wescene","*.weprefab" | 
+ForEach-Object {
+    $p = $_.FullName
     $a = Get-Content $p
     $a = $a -replace "keyframes","Keyframes"
     $a = $a -replace "additionalComponentList","AdditionalComponents"
@@ -56,15 +56,15 @@ Foreach-Object {
 Additionally, review your csproj files and update the _.NET6_ entries to _.NET8_ for the _TargetFramework_ properties.
 
 ```xml
-  <PropertyGroup>
+<PropertyGroup>
     <OutputType>Exe</OutputType>
     <!-- 
-    Previous Windows project - used by Evergine Studio - was referencing .NET6. Do the same for the rest of your platform specific start projects.
+    Previous Windows project - used by Evergine Studio - was referencing .NET6. Do the same for the rest of your platform-specific start projects.
     <TargetFramework>net6.0-windows</TargetFramework>
     -->
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
+</PropertyGroup>
 ```
 
 Lastly, depending on the specific version of Evergine 2023.9 you are using, you might need to run the following script to address any _VirtualScreenManager_ errors, as this has been removed.
@@ -72,9 +72,9 @@ Lastly, depending on the specific version of Evergine 2023.9 you are using, you 
 ```powershell
 <#
 .SYNOPSIS
-	A way to remove VirtualScreenManager entries from scenes. This manager has been removed 
+	Removes VirtualScreenManager entries from scenes. This manager has been removed.
 .DESCRIPTION
-	A way to remove VirtualScreenManager entries from scenes. This manager has been removed 
+	Removes VirtualScreenManager entries from scenes. This manager has been removed.
 #>
 
 param (
@@ -93,23 +93,23 @@ Get-ChildItem -Path $path -Recurse -Filter '*.wescene' |
         $current++
         Write-Host "($current/$numberOfFiles) Processing file $_.FullName"
         $contents = Get-Content -Raw -Path $_.FullName
-        $preLenght = $contents.Length
+        $preLength = $contents.Length
         $contents = $contents -replace "\s+-.*VirtualScreenManager.*\n.*\n.*\n.*\n.*\n.*\n.*", ""
-        $postLenght = $contents.Length
+        $postLength = $contents.Length
 
-        if ($preLenght -ne $postLenght) {
+        if ($preLength -ne $postLength) {
             Set-Content -Path $_.FullName -Value $contents
         }
     }
 ```
 
-### Additional changes for UWP projects
+### Additional Changes for UWP Projects
 
 If your solution includes UWP projects, update the Default.rd.xml files to create _Release_ builds and avoid _.NET Native_ compiler errors.
 
 ```xml
 <Assembly Name="*Application*" Dynamic="Required All" />
 
-<!-- Add line below to make it possible Release builds -->
+<!-- Add line below to make it possible for Release builds -->
 <Assembly Name="Vortice.XAudio2" Dynamic="Auto" />
 ```

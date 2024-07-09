@@ -1,8 +1,10 @@
+Here is the improved version of your text with correct grammar:
+
 # Messaging
 
-_XRV_ counts with a simple implementation of publisher-subscriber pattern, that will let you communicate two separated parts of code using messages. You can use it in components, services or any other elements if that suits to your needs. You can emit any type of message using this channel, but the recommendation is to create specific message types, that can contain any information that you consider useful.
+_XRV_ includes a simple implementation of the publisher-subscriber pattern, enabling you to communicate between two separate parts of code using messages. You can use it in components, services, or any other elements as needed. You can emit any type of message through this channel; however, it is recommended to create specific message types that can contain any information you consider useful.
 
-To emit a message, just create a custom message class and use _Publish_ method.
+To emit a message, just create a custom message class and use the _Publish_ method.
 
 ```csharp
 public class MyMessage 
@@ -23,7 +25,7 @@ var message = new MyMessage("my-data", 1234);
 pubSub.Publish(message);
 ```
 \
-To receive messages of a given type, you should use _Subscription_ method. It returns a subscription token, that you must save to be able to unsubscribe, depending on your how your code behaves. For example, if you want to use it in a _Component_, the most common pattern will be subscription in _OnAttach/OnActivated_ and desubscribe in _OnDetach/OnDeactivated_.
+To receive messages of a given type, you should use the _Subscribe_ method. It returns a subscription token, which you must save to be able to unsubscribe, depending on how your code behaves. For example, if you want to use it in a _Component_, the most common pattern will be to subscribe in _OnAttach/OnActivated_ and unsubscribe in _OnDetach/OnDeactivated_.
 
 ```csharp
 public class MyComponent : Component 
@@ -51,7 +53,7 @@ public class MyComponent : Component
         this.pubSub.Unsubscribe(this.subscription);
     }
 
-    private void OnModuleActivationChange(MyMessage message) 
+    private void OnMyMessageReceived(MyMessage message) 
     {
         // Do something
     }

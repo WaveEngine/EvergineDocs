@@ -1,3 +1,3 @@
 # ResourceLayout
 
-Coming soon
+Coming Soon

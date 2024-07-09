@@ -1,6 +1,6 @@
 # Bind Components
 
-Using **[BindComponent]** attribute allows your [Components](../component_arch/components/index.md) to stablish dependencies with another components. 
+Using the **[BindComponent]** attribute allows your [Components](../component_arch/components/index.md) to establish dependencies with other components.
 
 ```csharp
 // Bind with the Transform component of the owner entity...
@@ -13,16 +13,18 @@ private List<Camera3D> sceneCameras;
 ```
 
 > [!NOTE]
-> [BindComponent] can only be used inside Components. In other case the binding cannot be resolved
+> [BindComponent] can only be used inside Components. Otherwise, the binding cannot be resolved.
 
 ## [BindComponent] Properties
+
 This attribute offers several ways to customize:
 
 ### isRequired (default `true`)
 
-If the value is true the dependency is required to be resolved, in the oher case, the current Component won't be attached.
+If the value is true, the dependency is required to be resolved; otherwise, the current Component won't be attached.
 
-For insatnce, in the following example we have a custom component `MyComponent`, and a definition of an Entity with two components (a `Transform3D` and `MyComponent`)
+For instance, in the following example, we have a custom component `MyComponent`, and a definition of an Entity with two components (a `Transform3D` and `MyComponent`):
+
 ```csharp
 public class MyComponent : Component
 {
@@ -40,11 +42,12 @@ Entity entity = new Entity()
     .AddComponent(new MyComponent());
 ```
 
-The MyComponent will be attached correctly, because all requirements has been satisfied:
+The MyComponent will be attached correctly because all requirements have been satisfied:
 * The **required Transform3D** will be injected into the `transform` attribute, because we previously added a Transform3D component.
-* The `camera` attribute won't be resolved, and this value will be equal to `null`, however, the component would be attached because **this dependency is not required**.
+* The `camera` attribute won't be resolved, and this value will be equal to `null`; however, the component will be attached because **this dependency is not required**.
 
-In the other hand, in this other Entity, now the MyComponent instance won't be attached because the Transform3D dependency cannot be resolved:
+On the other hand, in this other Entity, the MyComponent instance won't be attached because the Transform3D dependency cannot be resolved:
+
 ```csharp
 Entity anotherEntity = new Entity()    
     .AddComponent(new MyComponent());
@@ -52,9 +55,9 @@ Entity anotherEntity = new Entity()
 
 ### isExactType (default `true`)
 
-If the value is true indicates that the Type of the component to bound must be the same as the type required (nor subclass or parent class).
+If the value is true, it indicates that the Type of the component to bind must be the same as the type required (neither subclass nor parent class).
 
-For insatnce, the following component `MyComponent`, requires a component of the exact type `Camera`
+For instance, the following component `MyComponent` requires a component of the exact type `Camera`:
 
 ```csharp
 public class MyComponent : Component
@@ -71,9 +74,9 @@ Entity entity = new Entity()
     .AddComponent(new MyComponent());
 ```
 
-In that case, the dependency won't be injected, because the entity has no `Camera` component (it has a `Camera3D` component, which is a subclass, but `isExactType` is true)
+In that case, the dependency won't be injected because the entity has no `Camera` component (it has a `Camera3D` component, which is a subclass, but `isExactType` is true).
 
-However, if we change the MyComponent definition and sets `isExactType` value to false, now the dependency will be satisfied, because the entity has a component asignable to a Camera type (the Camera3D component):
+However, if we change the MyComponent definition and set `isExactType` value to false, the dependency will be satisfied because the entity has a component assignable to a Camera type (the Camera3D component):
 
 ```csharp
 public class MyComponent : Component
@@ -90,18 +93,18 @@ This property indicates where the component or components will be searched. Ther
 | Source | Description |
 | --- | --- |
 | `Owner` (default) | The Component will be searched in the owner entity. |
-| `Scene` | The Component is searched in the entire Scene. It iterates over all entities in the scene to find if exist components. |
-| `Children` | Search the Components in its descendant entities, **including the owner entity** |
-| `ChildrenSkipOwner` | Search the Components in its descendant entities, **not including the owner entity** |
-| `Parents` | Search the Components in the ascendant entities, **including the owner entity** |
-| `ParentsSkipOwner` | Search the Components in its ascendant entities, **not including the owner entity** |
+| `Scene` | The Component is searched in the entire Scene. It iterates over all entities in the scene to find if components exist. |
+| `Children` | Search the Components in its descendant entities, **including the owner entity**. |
+| `ChildrenSkipOwner` | Search the Components in its descendant entities, **not including the owner entity**. |
+| `Parents` | Search the Components in the ascendant entities, **including the owner entity**. |
+| `ParentsSkipOwner` | Search the Components in its ascendant entities, **not including the owner entity**. |
 
 A brief example:
 
 ```csharp
 public class MyComponent : Component
 {
-    // Bind a the first Camera3D component in the scene...
+    // Bind the first Camera3D component in the scene...
     [BindComponent(source: BindComponentSource.Scene)]
     private Camera3D firstCamera;
 
@@ -115,11 +118,11 @@ public class MyComponent : Component
 
 ### isRecursive (default `true`)
 
-If set to `true` the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include the direct descendants.
+If set to `true`, the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include direct descendants.
 
 ### tag (default `null`)
 
-If the tag has value, it will only find components in entities that has the specified Tag. It works for filtering entities.
+If the tag has value, it will only find components in entities that have the specified Tag. It works for filtering entities.
 
 ```csharp
 public class MyComponent : Component
@@ -130,3 +133,4 @@ public class MyComponent : Component
 
     // ...
 }
+```
