@@ -83,22 +83,22 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="bind-services">Bind Services</h1>
 
-<p>Using <strong>[BindService]</strong> attribute allows the developer to stablish dependencies with a <a href="../services.html">Service</a> registered in the <a href="../application/container.html">Application Container</a>.</p>
+<p>Using the <strong>[BindService]</strong> attribute allows the developer to establish dependencies with a <a href="../services.html">Service</a> registered in the <a href="../application/container.html">Application Container</a>.</p>
 <pre><code class="lang-csharp">// Bind the Graphics Context registered in the Application...
 [BindService]
 private GraphicsContext transform;
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>[BindService] can be used inside Services, Components and SceneManagers. In other case the binding cannot be resolved</p>
+<p>[BindService] can be used inside Services, Components, and SceneManagers. Otherwise, the binding cannot be resolved.</p>
 </div>
 <h2 id="bindservice-properties">[BindService] Properties</h2>
 <p>This attribute offers several ways to customize:</p>
 <h3 id="isrequired-default-true">isRequired (default <code>true</code>)</h3>
-<p>If the value is true the dependency is required to be resolved, in other case, the current Component won't be attached.</p>
-<p>The isRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).</p>
-<p>For example, if this is all Services registered inside the Application Container:</p>
-<pre><code class="lang-csharp">// Register services into application container...
+<p>If the value is true, the dependency is required to be resolved; otherwise, the current Component won't be attached.</p>
+<p>The isRequired value has the same functionality as [BindComponent] (see <a href="bind_components.html">Bind Components</a> for further details).</p>
+<p>For example, if these are all the Services registered inside the Application Container:</p>
+<pre><code class="lang-csharp">// Register services in the application container...
 this.Container.RegisterType&lt;TimerFactory&gt;();
 this.Container.RegisterType&lt;Random&gt;();
 this.Container.RegisterType&lt;ErrorHandler&gt;();
@@ -118,7 +118,7 @@ this.Container.RegisterType&lt;WorkActionScheduler&gt;();
     // ...
 }
 </code></pre>
-<p>However, in that case, the dependency will fail because the <code>Clock</code> service is not registered:</p>
+<p>However, in this case, the dependency will fail because the <code>Clock</code> service is not registered:</p>
 <pre><code class="lang-csharp">public class MyComponent : Component
 {
     [BindService]

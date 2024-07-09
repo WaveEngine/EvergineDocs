@@ -84,8 +84,8 @@
 <h1 id="sphere-collider">Sphere Collider</h1>
 
 <p><img src="images/sphere_collider.png" alt="Sphere Collider"></p>
-<p>A Sphere shaped collider.</p>
-<h2 id="spherecollider3d-component">SphereCollider3D component</h2>
+<p>A sphere-shaped collider.</p>
+<h2 id="spherecollider3d-component">SphereCollider3D Component</h2>
 <p>To use a Sphere Collider in Evergine, you only need to add a <code>SphereCollider3D</code> component to your entity:</p>
 <p><img src="images/boxcollider3d_component.png" alt="BoxCollider3D"></p>
 <h3 id="properties">Properties</h3>
@@ -101,17 +101,17 @@
 <tr>
 <td><strong>Radius</strong></td>
 <td>0.5</td>
-<td>This property define the radius of the Sphere collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/sphere_collider_radius.mp4" type="video/mp4"></video><br>The <strong>Radius</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Radius value is relative to the mesh extents, to be more specific. <em>In that case, a value of 0.5 let the SphereCollider3D to fit the entity mesh.</em></li><li>If the entity hasn't any meshes, the Radius value is used as scene units. <em>In that case, a value of 2 will create a Sphere collider of a radius of 2 units, and a diameter of 4 units.</em></li></ul></td>
+<td>This property defines the radius of the Sphere Collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/sphere_collider_radius.mp4" type="video/mp4"></video><br>The <strong>Radius</strong> value can be used in two ways:<ul><li>If the entity has a mesh (with <code>MeshComponent</code> for example), the Radius value is relative to the mesh extents. <em>In that case, a value of 0.5 lets the SphereCollider3D fit the entity mesh.</em></li><li>If the entity doesn't have any meshes, the Radius value is used as scene units. <em>In that case, a value of 2 will create a Sphere Collider with a radius of 2 units and a diameter of 4 units.</em></li></ul></td>
 </tr>
 <tr>
 <td><strong>Offset</strong></td>
 <td>0,0,0</td>
-<td>Offset the collider respect the owner entity. <br><video width="600" height="220" autoplay="" loop=""><source src="images/sphere_collider_offset.mp4" type="video/mp4"></video><br>The <strong>Offset</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Offset value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Offset value is used as scene units.</li></ul></td>
+<td>Offsets the collider relative to the owner entity. <br><video width="600" height="220" autoplay="" loop=""><source src="images/sphere_collider_offset.mp4" type="video/mp4"></video><br>The <strong>Offset</strong> value can be used in two ways:<ul><li>If the entity has a mesh (with <code>MeshComponent</code> for example), the Offset value is relative to the mesh extents.</li><li>If the entity doesn't have any meshes, the Offset value is used as scene units.</li></ul></td>
 </tr>
 <tr>
 <td><strong>Margin</strong></td>
 <td>0.04</td>
-<td>Physic Engine uses a small collision margin for collision shapes, to improve performance and reliability of the collision detection.</td>
+<td>The physics engine uses a small collision margin for collision shapes to improve the performance and reliability of collision detection.</td>
 </tr>
 </tbody>
 </table>

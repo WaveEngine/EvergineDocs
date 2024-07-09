@@ -85,21 +85,19 @@
 
 <hr>
 <p><img src="Images/RenderDoc_0.JPG" alt="Graphics"></p>
-<p>RenderDoc is a graphics debugger currently available for Vulkan, DirectX 11/12 and OpenGL development on Windows, Linux and Android.
-It is integrated on <strong>Evergine Studio</strong> to make it easy to debug your application during the development process.</p>
-<p>To install the latest RenderDoc version visit the project <a href="https://renderdoc.org/">website</a></p>
+<p>RenderDoc is a graphics debugger currently available for Vulkan, DirectX 11/12, and OpenGL development on Windows, Linux, and Android. It is integrated into <strong>Evergine Studio</strong> to make it easy to debug your application during the development process.</p>
+<p>To install the latest RenderDoc version, visit the project's <a href="https://renderdoc.org/">website</a>.</p>
 <h2 id="loading-renderdoc">Loading RenderDoc</h2>
-<p>First you need to load the RenderDoc assembly to allow the graphical commands that are sent to the GPU to be captured.
-In the setting menu of the Editor you will find and option called &quot;Enable RenderDoc&quot;. This will reload the graphics device so you must save any changes, and afterwards RenderDoc will be ready to capture the scene.</p>
+<p>First, you need to load the RenderDoc assembly to allow the graphical commands sent to the GPU to be captured. In the settings menu of the Editor, you will find an option called &quot;Enable RenderDoc.&quot; This will reload the graphics device, so you must save any changes. Afterward, RenderDoc will be ready to capture the scene.</p>
 <p><img src="Images/RenderDoc_1.JPG" alt="Graphics"></p>
 <h2 id="capturing-a-frame-with-renderdoc">Capturing a frame with RenderDoc</h2>
-<p>Once RenderDoc is enabled into the <strong>Evergine Studio</strong>, a new button will appear on the right side of the toolbar on the scene view.</p>
+<p>Once RenderDoc is enabled in <strong>Evergine Studio</strong>, a new button will appear on the right side of the toolbar in the scene view.</p>
 <p><img src="Images/RenderDoc_2.JPG" alt="Graphics"></p>
-<p>Pressing this button will trigger a capture of the next frame of rendering for the view. And a new RenderDoc instance will be launched to show the capture. From there you can open the capture and debug using the tool.</p>
+<p>Pressing this button will trigger a capture of the next frame of rendering for the view, and a new RenderDoc instance will be launched to show the capture. From there, you can open the capture and debug using the tool.</p>
 <p><img src="Images/RenderDoc_3.JPG" alt="Graphics"></p>
 <h2 id="naming-objects">Naming objects</h2>
-<p>The <strong>Evergine</strong> low level API allow you to name all the different object types available, this include samplers, buffers, pipelines and much more. These names can then be displayed on RenderDoc to help to debugging the application.</p>
-<p>To set an object name, in a buffer for example, just set it as a parameter in the factory constructor or set the property Name.</p>
+<p>The <strong>Evergine</strong> low-level API allows you to name all the different object types available. This includes samplers, buffers, pipelines, and much more. These names can then be displayed on RenderDoc to help debug the application.</p>
+<p>To set an object name, such as in a buffer, just set it as a parameter in the factory constructor or set the property Name.</p>
 <pre><code class="lang-csharp">this.graphicsContext.Factory.CreateBuffer(ref Description, &quot;Buffer_Name&quot;);
 </code></pre>
 <p>or</p>
@@ -107,10 +105,10 @@ In the setting menu of the Editor you will find and option called &quot;Enable R
 </code></pre>
 <p><img src="Images/RenderDoc_4.JPG" alt="Graphics"></p>
 <h2 id="debug-markers-and-regions">Debug markers and regions</h2>
-<p>In addition to naming the <strong>Evergine</strong> low level API also adds the ability to place debug markers inside command buffers. These can be used to mark points of interest and highlight specific areas inside of the command buffer.</p>
+<p>In addition to naming, the <strong>Evergine</strong> low-level API also adds the ability to place debug markers inside command buffers. These can be used to mark points of interest and highlight specific areas inside the command buffer.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Note that contrary to naming objects, debug markers (and regions) have to placed inside of an active command buffer.</p>
+<p>Note that contrary to naming objects, debug markers (and regions) have to be placed inside an active command buffer.</p>
 </div>
 <pre><code class="lang-csharp">commandBuffer.BeginDebugMarker(&quot;Region_Name&quot;);
 // Stuff
@@ -118,7 +116,7 @@ commandBuffer.EndDebugMarker();
 </code></pre>
 <p><img src="Images/RenderDoc_5.JPG" alt="Graphics"></p>
 <h2 id="including-shader-debug-information">Including shader debug information</h2>
-<p>By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass shader code by adding <code>[Mode Debug]</code> line:</p>
+<p>By default, to optimize the size of DirectX shaders, debugging information is stripped out. This means that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader, you need to set the debug mode inside the pass shader code by adding the <code>[Mode Debug]</code> line:</p>
 <pre><code class="lang-csharp">[Begin_Pass:Default]
 
     [Mode Debug]
@@ -127,8 +125,8 @@ commandBuffer.EndDebugMarker();
 
     // ...
 </code></pre>
-<h2 id="alternative-graphics-debugging-technique">Alternative graphics debugging technique</h2>
-<p>If you build a desktop Windows application using DirectX, you can capture a frame and debug it using <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019">Visual Studio graphics debugger</a>, <a href="https://developer.nvidia.com/nsight-graphics">NVidia Nsight Graphics</a> or <a href="https://devblogs.microsoft.com/pix/introduction/">PIX on Windows</a></p>
+<h2 id="alternative-graphics-debugging-techniques">Alternative graphics debugging techniques</h2>
+<p>If you build a desktop Windows application using DirectX, you can capture a frame and debug it using the <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019">Visual Studio graphics debugger</a>, <a href="https://developer.nvidia.com/nsight-graphics">NVidia Nsight Graphics</a>, or <a href="https://devblogs.microsoft.com/pix/introduction/">PIX on Windows</a>.</p>
 
 </article>
           </div>

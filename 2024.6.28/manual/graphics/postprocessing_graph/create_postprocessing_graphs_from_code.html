@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Create Postprocessing Graph from code | Evergine Doc </title>
+    <title>Create Postprocessing Graph from Code | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Create Postprocessing Graph from code | Evergine Doc ">
+    <meta name="title" content="Create Postprocessing Graph from Code | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -81,10 +81,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="create-postprocessing-graph-from-code">Create Postprocessing Graph from code</h1>
+<h1 id="create-postprocessing-graph-from-code">Create Postprocessing Graph from Code</h1>
 
 <hr>
-<p>Although we recommend to create PostProcessing using Evergine Studio, you can achieve this task from code. The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.</p>
+<p>Although we recommend creating PostProcessing using Evergine Studio, it is possible to achieve this task through code. The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     var graphicsContext = Application.Current.Container.Resolve&lt;GraphicsContext&gt;();      
@@ -110,11 +110,11 @@
                     {
                         float2 outputSize;
                         Output.GetDimensions(outputSize.x, outputSize.y);
-                        float2 uv = (threadID.xy + 0.5) / outputSize;		
+                        float2 uv = (threadID.xy + 0.5) / outputSize;        
 
                         float4 color = input.SampleLevel(Sampler, uv, 0);
 
-                        Output[threadID.xy] = float4(color.x,0,0,1);	
+                        Output[threadID.xy] = float4(color.x, 0, 0, 1);    
                     }
 
                 [End_Pass]

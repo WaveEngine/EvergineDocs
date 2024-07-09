@@ -83,12 +83,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="create-compute-tasks">Create Compute Tasks</h1>
 
-<p><strong>Compute Tasks</strong> allows run tasks on GPU. Compute tasks are associated with a compute effect. It is very useful to improve the performance of a hard task that runs slow on the CPU.</p>
+<p><strong>Compute Tasks</strong> allow running tasks on the GPU. Compute tasks are associated with a compute effect. This is very useful to improve the performance of tasks that run slowly on the CPU.</p>
 <h2 id="compute-effect">Compute Effect</h2>
-<p>Before creating a Compute task you need to create a compute effect from the Assets Details panel and coding the task on <a href="https://docs.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-advanced-stages-compute-shader">HLSL</a> language.</p>
+<p>Before creating a compute task, you need to create a compute effect from the Assets Details panel and code the task using the <a href="https://docs.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-advanced-stages-compute-shader">HLSL</a> language.</p>
 <p><img src="images/CreateComputeEffect.jpg" alt="Create compute effect"></p>
 <h3 id="example">Example</h3>
-<p>This is an example of computing task. In that case the compute applies a grayscale filter to the input texture and stores the result into an output texture. In <a href="../effects/create_effects.html">Create Effects</a> you will find the structure of this code.</p>
+<p>This is an example of a compute task. In this case, the compute task applies a grayscale filter to the input texture and stores the result in an output texture. In <a href="../effects/create_effects.html">Create Effects</a> you will find the structure of this code.</p>
 <pre><code class="lang-csharp">[Begin_ResourceLayout]
 
     Texture2D Input             : register(t0);
@@ -112,10 +112,10 @@
 [End_Pass]
 </code></pre>
 <h2 id="computetask-decorator">ComputeTask Decorator</h2>
-<p>To use a compute task from code you need a compute effect and the compute task decorator associated. You can generate the compute task decorator from <a href="../effects/effect_editor.html">Effect Editor</a>.</p>
-<p><img src="images/computeTaskDecoratorIcon.jpg" alt="Compute task descorator"></p>
+<p>To use a compute task from code, you need a compute effect and the compute task decorator associated with it. You can generate the compute task decorator from the <a href="../effects/effect_editor.html">Effect Editor</a>.</p>
+<p><img src="images/computeTaskDecoratorIcon.jpg" alt="Compute task decorator"></p>
 <h2 id="create-a-new-computetask-from-code">Create a new ComputeTask from code</h2>
-<p>The following sample code can be used to create a new computeTask and run it into your scene. The example assumes that you have a compute effect GPUFilter and its compute task decorator created.</p>
+<p>The following sample code can be used to create a new <code>ComputeTask</code> and run it in your scene. The example assumes that you have a compute effect <code>GPUFilter</code> and its compute task decorator created.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     var graphicsContext = Application.Current.Container.Resolve&lt;GraphicsContext&gt;();

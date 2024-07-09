@@ -84,10 +84,10 @@
 <h1 id="lights">Lights</h1>
 
 <p><img src="images/lights.jpg" alt="Lights"></p>
-<p><strong>Evergine</strong> uses an advanced lighting mode to simulate how light affect geometries. It also supports multiple lights in the scene, allowing a wide range of environment and possibilities.</p>
-<p>Every type of light is modelled in Evergine using a <strong>Light</strong> component.</p>
+<p><strong>Evergine</strong> uses an advanced lighting model to simulate how light affects geometries. It also supports multiple lights in the scene, allowing a wide range of environments and possibilities.</p>
+<p>Every type of light is modeled in Evergine using a <strong>Light</strong> component.</p>
 <h2 id="create-a-light-in-evergine-studio">Create a Light in Evergine Studio</h2>
-<p>In the Entities Hierarchy panel of your Scene Editor, click the &quot;Add Entity and select <strong>Light</strong>, then choose the kind of light you want to create:</p>
+<p>In the Entities Hierarchy panel of your Scene Editor, click &quot;Add Entity,&quot; select <strong>Light</strong>, and then choose the kind of light you want to create:</p>
 <ul>
 <li>Point Light</li>
 <li>Directional Light</li>
@@ -95,11 +95,11 @@
 <li>Spot Light</li>
 <li>Disc Area Light</li>
 <li>Rectangle Area Light</li>
-<li>Rube Area Light</li>
+<li>Tube Area Light</li>
 </ul>
 <p>We discuss the light types later in this article.</p>
 <p><img src="images/addLight.png" alt="Create Light"></p>
-<p>Additionally we can create <strong>photometric lights</strong> from the same panel with theese options:</p>
+<p>Additionally, we can create <strong>photometric lights</strong> from the same panel with these options:</p>
 <ul>
 <li>Photometric Point Light</li>
 <li>Photometric Directional Light</li>
@@ -107,11 +107,11 @@
 <li>Photometric Spot Light</li>
 <li>Photometric Disc Area Light</li>
 <li>Photometric Rectangle Area Light</li>
-<li>Photometric Rube Area Light</li>
+<li>Photometric Tube Area Light</li>
 </ul>
 <p><img src="images/addPhotometricLight.png" alt="Create Light"></p>
-<h2 id="create-light-from-code">Create Light from code</h2>
-<p>The following sample code can be used to instantiate a new basic new point light entity in a scene.</p>
+<h2 id="create-light-from-code">Create Light from Code</h2>
+<p>The following sample code can be used to instantiate a new basic point light entity in a scene.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     // Create a new light entity.
@@ -128,8 +128,8 @@
     this.Managers.EntityManager.Add(pointLightEntity);
 }
 </code></pre>
-<h2 id="basic-light-properties">Basic light properties</h2>
-<p>These are the basic properties that almost all the lights have.</p>
+<h2 id="basic-light-properties">Basic Light Properties</h2>
+<p>These are the basic properties that almost all lights have.</p>
 <table>
 <thead>
 <tr>
@@ -140,7 +140,7 @@
 <tbody>
 <tr>
 <td><a href="xref:Evergine.Framework.Graphics.Light.IsEnabled">Is Enabled</a></td>
-<td>If the light is on / off.</td>
+<td>If the light is on/off.</td>
 </tr>
 <tr>
 <td><a href="xref:Evergine.Framework.Graphics.Light.ShadowEnabled">Shadow Enabled</a></td>
@@ -148,10 +148,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="photometric--non-photometric-lights">Photometric / Non photometric lights</h2>
-<p><strong>Photometric lights</strong> use photometric (<strong>lighting units</strong>) allowing you to define precisely lights as they would be in the real world. They are configured using physical parameters. <strong>Evergine</strong> supports both <strong>photometric</strong> and <strong>non photometric</strong> lights, and it offers all the same light types duplicated depending this choice.</p>
-<h4 id="common-photometric-properties">Common Photometric properties</h4>
-<p>Every photometric light (no matter what type it is) defines this parameters, additionally each specific type of light defines its own intensity unit properties.</p>
+<h2 id="photometric--non-photometric-lights">Photometric / Non-Photometric Lights</h2>
+<p><strong>Photometric lights</strong> use photometric (<strong>lighting units</strong>) allowing you to define lights as they would be in the real world. They are configured using physical parameters. <strong>Evergine</strong> supports both <strong>photometric</strong> and <strong>non-photometric</strong> lights, and it offers the same light types duplicated based on this choice.</p>
+<h4 id="common-photometric-properties">Common Photometric Properties</h4>
+<p>Every photometric light (no matter what type it is) defines these parameters. Additionally, each specific type of light defines its own intensity unit properties.</p>
 <table>
 <thead>
 <tr>
@@ -162,20 +162,20 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.PhotometricPointLight.html#Evergine_Framework_Graphics_PhotometricPointLight_ColorByTemperature">Color By Temperature</a></td>
-<td>Indicates if the light color will be overrided using the light temperature.</td>
+<td>Indicates if the light color will be overridden using the light temperature.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.PhotometricPointLight.html#Evergine_Framework_Graphics_PhotometricPointLight_Temperature">Temperature</a></td>
-<td>The <a href="https://en.wikipedia.org/wiki/Color_temperature">light temperature</a> in <strong>Kelvin</strong> (K). When <em>ColorByTemperature</em> is true, the light color is overrided by the light temperature.</td>
+<td>The <a href="https://en.wikipedia.org/wiki/Color_temperature">light temperature</a> in <strong>Kelvin</strong> (K). When <em>ColorByTemperature</em> is true, the light color is overridden by the light temperature.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Light Intensity unit depends on the light type (for example, PointLights are measured in Lumens, whether DirectionalLights are measured in Lux)</p>
+<p>Light intensity unit depends on the light type (for example, PointLights are measured in Lumens, whereas DirectionalLights are measured in Lux).</p>
 </div>
-<h4 id="non-photometric-lights-properties">Non photometric lights properties</h4>
-<p>For contrary, if you create regular lights, you could use the basic light properties:</p>
+<h4 id="non-photometric-light-properties">Non-Photometric Light Properties</h4>
+<p>On the contrary, if you create regular lights, you can use the basic light properties:</p>
 <table>
 <thead>
 <tr>
@@ -194,17 +194,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="types-of-lights">Types of lights</h2>
-<p>There are different types of lights, each one useful for a different scenario. In general terms, lights are divided in two general categories:</p>
+<h2 id="types-of-lights">Types of Lights</h2>
+<p>There are different types of lights, each useful for a different scenario. In general terms, lights are divided into two general categories:</p>
 <ul>
 <li><strong>Directional Lights:</strong> These lights have unlimited boundaries, and every object is affected by this light type.</li>
 <li><strong>Volume Lights:</strong> The light influence is delimited by a range.</li>
-<li><strong>Area Lights:</strong>  A subtype of volume lights that emulate lights coming from an area instead of a point in the space.</li>
+<li><strong>Area Lights:</strong> A subtype of volume lights that emulate lights coming from an area instead of a point in space.</li>
 </ul>
 <h3 id="directional-lights--photometric-directional-light">Directional Lights / Photometric Directional Light</h3>
 <p><img src="images/directionalLight.jpg" alt="Directional Light"></p>
-<p><strong>Directional lights</strong> are lights that comes uniformly from one direction and at infinited distance. They're used to simulate distant light sources like the sun. It uses the <strong>forward</strong> vector of its entity <strong>Transform3D</strong> for calculating the light direction.</p>
-<p>In case of using a Photometric Directional Light, the intensity is measured using the following property:</p>
+<p><strong>Directional lights</strong> are lights that come uniformly from one direction and at an infinite distance. They're used to simulate distant light sources like the sun. They use the <strong>forward</strong> vector of their entity's <strong>Transform3D</strong> for calculating the light direction.</p>
+<p>In the case of using a Photometric Directional Light, the intensity is measured using the following property:</p>
 <table>
 <thead>
 <tr>
@@ -215,12 +215,12 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.PhotometricDirectionalLight.html#Evergine_Framework_Graphics_PhotometricDirectionalLight_Illuminance">Illuminance (Lux)</a></td>
-<td>The light <a href="https://en.wikipedia.org/wiki/Illuminance">Illuminance</a> measured in <strong>Lux</strong>. Indicates the total luminous flux incident on a surface, per unit area.</td>
+<td>The light <a href="https://en.wikipedia.org/wiki/Illuminance">illuminance</a> measured in <strong>Lux</strong>. Indicates the total luminous flux incident on a surface, per unit area.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="volume-lights">Volume Lights</h3>
-<p>Volume lights are a common type of lights in which the light source comes from a specific point in the space, and its intensity decays with the distance.</p>
+<p>Volume lights are a common type of light in which the light source comes from a specific point in space, and its intensity decays with distance.</p>
 <table>
 <thead>
 <tr>
@@ -235,7 +235,7 @@
 </tr>
 </tbody>
 </table>
-<p>In case of using a Volume Photometric Lights, the intensity is measured using the following property:</p>
+<p>In the case of using Volume Photometric Lights, the intensity is measured using the following property:</p>
 <table>
 <thead>
 <tr>
@@ -246,16 +246,16 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.PhotometricPointLight.html#Evergine_Framework_Graphics_PhotometricPointLight_LuminousPower">Luminous Power (Lumen)</a></td>
-<td>The light <a href="https://en.wikipedia.org/wiki/Luminous_flux">luminous flux</a> in <strong>Lumen</strong></td>
+<td>The light <a href="https://en.wikipedia.org/wiki/Luminous_flux">luminous flux</a> in <strong>Lumen</strong>.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="point-light--photometric-point-light">Point Light / Photometric Point Light</h4>
 <p><img src="images/pointLight.jpg" alt="Point Light"></p>
-<p>A <strong>point light</strong> is located at a point in space and it emits light in all directions equally within its sphere range. Its intensity decays with distance from the light, reaching zero at its maximum range. It's useful for local lights like lamps.</p>
+<p>A <strong>point light</strong> is located at a point in space and emits light equally in all directions within its sphere range. Its intensity decays with distance from the light, reaching zero at its maximum range. It's useful for local lights like lamps.</p>
 <h4 id="spot-light--photometric-spot-light">Spot Light / Photometric Spot Light</h4>
 <p><img src="images/spotLight.jpg" alt="Spot Light"></p>
-<p>A <strong>spot light</strong> is also placed in a specific location and it has a range over which the light decays. However, spot lights are also constrained by an angle, defining a cone shape light.</p>
+<p>A <strong>spot light</strong> is also placed in a specific location and has a range over which the light decays. However, spot lights are constrained by an angle, defining a cone-shaped light.</p>
 <h5 id="specific-properties">Specific Properties</h5>
 <table>
 <thead>
@@ -271,13 +271,13 @@
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.SpotLight.html#Evergine_Framework_Graphics_SpotLight_InnerConeAngle">OuterConeAngle</a></td>
-<td>The outter angle of the spotlight cone</td>
+<td>The outer angle of the spotlight cone.</td>
 </tr>
 </tbody>
 </table>
-<h4 id="tube-area-lights--photometric-tube-area-light">Tube Area lights / Photometric Tube Area Light</h4>
+<h4 id="tube-area-lights--photometric-tube-area-light">Tube Area Lights / Photometric Tube Area Light</h4>
 <p><img src="images/tubeAreaLight.jpg" alt="Tube Area Light"></p>
-<p><strong>Tube Area Lights</strong> are lights that comes from a line segment and have a range and a emission thickness. They are usefull for simulating neon lights.</p>
+<p><strong>Tube Area Lights</strong> are lights that come from a line segment and have a range and emission thickness. They are useful for simulating neon lights.</p>
 <h5 id="specific-properties-1">Specific Properties</h5>
 <table>
 <thead>
@@ -299,7 +299,7 @@
 </table>
 <h4 id="sphere-area-lights--photometric-sphere-area-light">Sphere Area Lights / Photometric Sphere Area Light</h4>
 <p><img src="images/sphereAreaLight.jpg" alt="Sphere Area Light"></p>
-<p><strong>Sphere Area Lights</strong> behave like a phyical sphere emiting light rather a point light. They create much more softer lighting and can use for creating dynamic environment.</p>
+<p><strong>Sphere Area Lights</strong> behave like a physical sphere emitting light rather than a point light. They create much softer lighting and can be used for creating dynamic environments.</p>
 <h5 id="specific-properties-2">Specific Properties</h5>
 <table>
 <thead>
@@ -310,14 +310,14 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="xref:Evergine.Framework.Graphics.SpherAreaLight.Radius">Radius</a></td>
+<td><a href="xref:Evergine.Framework.Graphics.SphereAreaLight.Radius">Radius</a></td>
 <td>The radius of the sphere light volume.</td>
 </tr>
 </tbody>
 </table>
 <h4 id="disc-area-lights--photometric-disc-area-light">Disc Area Lights / Photometric Disc Area Light</h4>
 <p><img src="images/discAreaLight.jpg" alt="Disc Area Light"></p>
-<p><strong>Disc Area Lights</strong> emit their light from a disc with a specified radius and at a maximum range. Useful for creating artificial soft lights.</p>
+<p><strong>Disc Area Lights</strong> emit their light from a disc with a specified radius and a maximum range. Useful for creating artificial soft lights.</p>
 <h5 id="specific-properties-3">Specific Properties</h5>
 <table>
 <thead>
@@ -335,7 +335,7 @@
 </table>
 <h4 id="rectangle-area-lights--photometric-rectangle-area-light">Rectangle Area Lights / Photometric Rectangle Area Light</h4>
 <p><img src="images/rectangleAreaLight.jpg" alt="Rectangle Area Light"></p>
-<p><strong>Rectangle Area Lights</strong> emit their light from a rectangle with a specified with and height, at a maximum range. Useful for creating indoor window lighting, for example.</p>
+<p><strong>Rectangle Area Lights</strong> emit their light from a rectangle with a specified width and height, at a maximum range. Useful for creating indoor window lighting, for example.</p>
 <h5 id="specific-properties-4">Specific Properties</h5>
 <table>
 <thead>
@@ -357,10 +357,10 @@
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Area lights needs to make complex calculation in order to properly simulate their shape. Therefore, they are significantly more performance heavy than their punctual counterparts (Point, Spot and Directional).</p>
+<p>Area lights need to make complex calculations to properly simulate their shape. Therefore, they are significantly more performance-heavy than their punctual counterparts (Point, Spot, and Directional).</p>
 </div>
 <h2 id="shadows">Shadows</h2>
-<p>To enable light cast shadows, the following properties has been added:</p>
+<p>To enable light cast shadows, the following properties have been added:</p>
 <table>
 <thead>
 <tr>
@@ -383,7 +383,7 @@
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Light.html#Evergine_Framework_Graphics_Light_ShadowBias">Shadow Bias</a></td>
-<td>Shadow bias for this specific light. Choosing the correct bias value allows to control shadows artifacts like a Moiré-like patern or Peter panning</td>
+<td>Shadow bias for this specific light. Choosing the correct bias value allows control over shadows artifacts like a Moiré-like pattern or Peter panning.</td>
 </tr>
 </tbody>
 </table>

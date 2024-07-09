@@ -83,24 +83,24 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="bind-entities">Bind Entities</h1>
 
-<p>Using <strong>[BindEntity]</strong> attribute allows your components to stablish dependencies with <a href="../component_arch/entities/index.html">Entities</a> in your scene.</p>
-<p>The search is made using the Entity.Tag propert:</p>
+<p>Using the <strong>[BindEntity]</strong> attribute allows your components to establish dependencies with <a href="../component_arch/entities/index.html">Entities</a> in your scene.</p>
+<p>The search is made using the Entity.Tag property:</p>
 <pre><code class="lang-csharp">// Binding with the first Entity in the Scene tagged with &quot;Player&quot;
 [BindEntity(tag: &quot;Player&quot;)]
 private Entity player;
 
-// Search all Entities with &quot;Item&quot; tag...
+// Search all Entities with the &quot;Item&quot; tag...
 [BindComponent(tag: &quot;Item&quot;)]
 private List&lt;Entity&gt; itemList;
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>[BindEntity] can only be used inside Components. In other case the binding cannot be resolved</p>
+<p>[BindEntity] can only be used inside Components. In other cases, the binding cannot be resolved.</p>
 </div>
 <h2 id="bindentity-properties">[BindEntity] Properties</h2>
 <p>This attribute offers several ways to customize:</p>
 <h3 id="source-default-bindentitysourcescene">source (default <code>BindEntitySource.Scene</code>)</h3>
-<p>This property indicates where the component or components will be searched. There are several values:</p>
+<p>This property indicates where the component or components will be searched. The possible values are:</p>
 <table>
 <thead>
 <tr>
@@ -115,19 +115,19 @@ private List&lt;Entity&gt; itemList;
 </tr>
 <tr>
 <td><code>Children</code></td>
-<td>Search the Entity in its descendant entities, <strong>excluding the owner entity</strong></td>
+<td>Searches the Entity in its descendant entities, <strong>excluding the owner entity</strong></td>
 </tr>
 <tr>
 <td><code>ChildrenSkipOwner</code></td>
-<td>Search the Entity in its descendant entities, <strong>not including the owner entity</strong></td>
+<td>Searches the Entity in its descendant entities, <strong>not including the owner entity</strong></td>
 </tr>
 <tr>
 <td><code>Parents</code></td>
-<td>Search the Entity in the ascendant entities, <strong>including the owner entity</strong></td>
+<td>Searches the Entity in the ascendant entities, <strong>including the owner entity</strong></td>
 </tr>
 <tr>
 <td><code>ParentsSkipOwner</code></td>
-<td>Search the Entity in its ascendant entities, <strong>not including the owner entity</strong></td>
+<td>Searches the Entity in its ascendant entities, <strong>not including the owner entity</strong></td>
 </tr>
 </tbody>
 </table>
@@ -141,12 +141,12 @@ private List&lt;Entity&gt; itemList;
 }
 </code></pre>
 <h3 id="isrequired-default-true">isRequired (default <code>true</code>)</h3>
-<p>If the value is <code>true</code> the dependency is required to be resolved, in other case, the current Component won't be attached.</p>
-<p>The IsRequired value has the same functionality than [BindComponent] (see [Bind Components](bind_components.md for further details)).</p>
+<p>If the value is <code>true</code>, the dependency is required to be resolved; otherwise, the current Component won't be attached.</p>
+<p>The IsRequired value has the same functionality as [BindComponent] (see <a href="bind_components.html">Bind Components</a> for further details).</p>
 <h3 id="isrecursive-default-true">isRecursive (default <code>true</code>)</h3>
-<p>If set to <code>true</code> the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include the direct descendants.</p>
+<p>If set to <code>true</code>, the search will include all descendants (or ascendants) in the hierarchy; otherwise, the search will only include the direct descendants.</p>
 <h3 id="tag-default-null">tag (default <code>null</code>)</h3>
-<p>The Entities will be filtered by its tag value.</p>
+<p>The Entities will be filtered by their tag value.</p>
 
 </article>
           </div>

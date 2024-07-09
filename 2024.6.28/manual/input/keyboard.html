@@ -83,7 +83,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="keyboard">Keyboard</h1>
 
-<p>The keyboard is the most common input device on desktop platforms. You can acces the keyboard state by using <code>KeyboardDispatcher</code>.</p>
+<p>The keyboard is the most common input device on desktop platforms. You can access the keyboard state by using <code>KeyboardDispatcher</code>.</p>
 <h2 id="keyboarddispatcher">KeyboardDispatcher</h2>
 <p>The <code>KeyboardDispatcher</code> is a class used to track keyboard key events.</p>
 <pre><code class="lang-csharp">public abstract class KeyboardDispatcher
@@ -100,23 +100,23 @@
 <table>
 <thead>
 <tr>
-<th>Events</th>
+<th>Event</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>KeyChar</strong></td>
-<td>It occurs when a key is pressed and a character is generated. <code>KeyChar</code> event is useful for text input.</td>
+<td>Occurs when a key is pressed and a character is generated. The <code>KeyChar</code> event is useful for text input.</td>
 </tr>
 <tr>
 <td><strong>KeyDown</strong> and <strong>KeyUp</strong></td>
-<td>This events are available to track keyboard pressed keys but it is recommended to use <code>IsKeyDown</code> and <code>ReadKeyState</code> methods. <ul><li><strong>IsKeyDown</strong>: Gets a value indicating whether the current state of a keyboard key is <a href="button_states.html">Pressing</a> or <a href="button_states.html">Pressed</a>.</li><li><strong>ReadKeyState</strong>: Gets the current <a href="button_states.html">state</a> of a keyboard key.</li></ul></td>
+<td>These events are available to track pressed keyboard keys, but it is recommended to use the <code>IsKeyDown</code> and <code>ReadKeyState</code> methods. <ul><li><strong>IsKeyDown</strong>: Gets a value indicating whether the current state of a keyboard key is <a href="button_states.html">Pressing</a> or <a href="button_states.html">Pressed</a>.</li><li><strong>ReadKeyState</strong>: Gets the current <a href="button_states.html">state</a> of a keyboard key.</li></ul></td>
 </tr>
 </tbody>
 </table>
 <h3 id="using-keyboarddispatcher">Using KeyboardDispatcher</h3>
-<p>The <code>KeyboardDispatcher</code> can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code can be used to access the keyboard dispatcher from a <code>Component</code> or <code>Service</code>.</p>
+<p>The <code>KeyboardDispatcher</code> can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code demonstrates how to access the keyboard dispatcher from a <code>Component</code> or <code>Service</code>.</p>
 <pre><code class="lang-csharp">[BindService]
 protected GraphicsPresenter graphicsPresenter;
 

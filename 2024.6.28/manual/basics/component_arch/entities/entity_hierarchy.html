@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="entity-hierarchy">Entity Hierarchy</h1>
 
-<p>You can establish an Entity as a child of another Entity. Using this relationships, it is possible to define an entity tree, where root entities has several children, and those children could have another children too.</p>
-<h2 id="hierarchy-transformations">Hierarchy transformations</h2>
-<p>If an Entity has a <code>Transform3D</code> component (or <code>Transform2D</code> for 2D entities), the Child Entity will move, rotate and scale in the same way as its Parent does. You can think of parent / child hierarchy as being like the relationship between your arms and your body,  whenever your body moves, your arms also move along with it. Child objects can also have children. Your hands can be considered as children of your arms, and your fingers are hands children.</p>
+<p>You can establish an Entity as a child of another Entity. Using these relationships, it is possible to define an entity tree, where root entities have several children, and those children could have other children too.</p>
+<h2 id="hierarchy-transformations">Hierarchy Transformations</h2>
+<p>If an Entity has a <code>Transform3D</code> component (or <code>Transform2D</code> for 2D entities), the Child Entity will move, rotate and scale in the same way as its Parent does. You can think of the parent/child hierarchy as being like the relationship between your arms and your body; whenever your body moves, your arms also move along with it. Child objects can also have children. Your hands can be considered as children of your arms, and your fingers are children of your hands.</p>
 <p><img src="images/entity_hierarchy.png" alt="Entity Hierarchy"></p>
 <h2 id="hierarchy-properties-and-methods">Hierarchy Properties and Methods</h2>
 <p>The Entity has the following properties and methods to maintain and inspect the hierarchy:</p>
@@ -101,16 +101,16 @@
 <tr>
 <td><strong>Parent</strong></td>
 <td><code>Entity</code></td>
-<td>Point to the inmediate ascendant of this entity. If the entity has no parents this property is <code>null</code></td>
+<td>Points to the immediate ascendant of this entity. If the entity has no parents, this property is <code>null</code></td>
 </tr>
 <tr>
 <td><strong>ChildEntities</strong></td>
 <td><code>IEnumerable&lt;Entity&gt;</code></td>
-<td>A collection of the inmediate descendants.</td>
+<td>A collection of the immediate descendants.</td>
 </tr>
 </tbody>
 </table>
-<p>To add and remove entities, an Entity instance have the following methods:</p>
+<p>To add and remove entities, an Entity instance has the following methods:</p>
 <table>
 <thead>
 <tr>
@@ -121,26 +121,26 @@
 <tbody>
 <tr>
 <td><code>Entity.AddChild(Entity)</code></td>
-<td>Add a child entity to the current entity.</td>
+<td>Adds a child entity to the current entity.</td>
 </tr>
 <tr>
 <td><code>Entity.RemoveChild(...)</code></td>
-<td>Remove a child entity from the current entity. You can specify the entity to remove by giving the following options: <ul><li>The <strong>Entity</strong> instance.</li><li>The child <strong>Name</strong></li><li>The child <strong>ID</strong></li></ul></td>
+<td>Removes a child entity from the current entity. You can specify the entity to remove by giving the following options: <ul><li>The <strong>Entity</strong> instance.</li><li>The child <strong>Name</strong></li><li>The child <strong>ID</strong></li></ul></td>
 </tr>
 </tbody>
 </table>
 <h2 id="entity-paths">Entity Paths</h2>
 <p><img src="images/entity_path.png" alt="Entity Path"></p>
-<p>Like in a normal file system, Evergine implements a simple <strong>Entity Path</strong> system to allow identification of entities in the Scene entity tree.</p>
-<p>An Entity Path cound be accessed by the <code>EntityPath</code> property, and is represented by the sequence of ascendant entity names (including the current entity) separated by the <code>.</code> symbol. For example, in the hierarchy described above, the EntityPath of the <code>Tire2</code> entity is <code>Car.Wheel2.Tire2</code></p>
-<h3 id="path-representation">Path representation</h3>
+<p>Like in a normal file system, Evergine implements a simple <strong>Entity Path</strong> system to allow the identification of entities in the Scene entity tree.</p>
+<p>An Entity Path can be accessed by the <code>EntityPath</code> property and is represented by the sequence of ascendant entity names (including the current entity) separated by the <code>.</code> symbol. For example, in the hierarchy described above, the EntityPath of the <code>Tire2</code> entity is <code>Car.Wheel2.Tire2</code>.</p>
+<h3 id="path-representation">Path Representation</h3>
 <p>These are the path representation elements:</p>
 <ul>
 <li>Entity separator: <code>.</code></li>
 <li>Current entity: <code>[this]</code></li>
 <li>Parent entity: <code>[parent]</code></li>
 </ul>
-<h4 id="sample-uses">Sample uses</h4>
+<h4 id="sample-uses">Sample Uses</h4>
 <p>Using the example described above...</p>
 <ul>
 <li>The <em>relative</em> path from <strong>Wheel1</strong> to <strong>Tire2</strong> would be: <code>[parent].Wheel2.Tire2</code></li>
@@ -150,9 +150,9 @@
 <li>Or: <code>[this].Wheel1.Tire1</code>, Notice that <code>[this]</code> is optional.</li>
 </ul>
 </li>
-<li>The <em>absolute</em> path of <strong>Wheel1</strong> entity would be exactly the one we've been using until now: <code>Car.Wheel1</code></li>
-<li>Whe you want to get an entity that doesn't belong to the source's root entity, we just specify the target's absolute path. For example, the relative path from <strong>Tire1</strong> to <strong>Ground</strong> is just: <code>Ground</code>, instead of <code>[parent].[parent].[parent].Ground</code> (Incorrect path)</li>
-<li>To figure out if a specific path is absolute or relative, we just have to read the first element. If it's one of the special elements (<code>.</code>, <code>[this]</code> pr <code>[parent]</code>):</li>
+<li>The <em>absolute</em> path of the <strong>Wheel1</strong> entity would be exactly the one we've been using until now: <code>Car.Wheel1</code></li>
+<li>When you want to get an entity that doesn't belong to the source's root entity, simply specify the target's absolute path. For example, the relative path from <strong>Tire1</strong> to <strong>Ground</strong> is just <code>Ground</code>, instead of <code>[parent].[parent].[parent].Ground</code> (Incorrect path)</li>
+<li>To determine if a specific path is absolute or relative, we just have to check the first element. If it's one of the special elements (<code>.</code>, <code>[this]</code> or <code>[parent]</code>):</li>
 </ul>
 <table>
 <thead>
@@ -163,7 +163,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>[parent].Wheel1 Relative</code></td>
+<td><code>[parent].Wheel1</code></td>
 <td>Relative</td>
 </tr>
 <tr>
@@ -184,20 +184,20 @@
 </tr>
 </tbody>
 </table>
-<h2 id="additional-methods">Additional methods</h2>
-<p>In order to make easier the search of entities in code, we’ve added the <code>Find()</code> method in the Entity class.</p>
-<pre><code class="lang-csharp">public Entity Find (string path)
+<h2 id="additional-methods">Additional Methods</h2>
+<p>To make it easier to search for entities in code, we’ve added the <code>Find()</code> method in the Entity class.</p>
+<pre><code class="lang-csharp">public Entity Find(string path)
 </code></pre>
-<p>This method finds an entity with the desired <strong>relative</strong> path respect the caller entity. If the relative path is not correct, it returns <code>null</code>.</p>
-<p>We have also added an additional parameter in the <strong>Find</strong> method in <strong>EntityManager</strong> class, allowing to set the source entity and allowing to directly search there.</p>
-<pre><code class="lang-csharp">public Entity Find (string path, Entity sourceEntity = null)
+<p>This method finds an entity with the desired <strong>relative</strong> path with respect to the caller entity. If the relative path is not correct, it returns <code>null</code>.</p>
+<p>We have also added an additional parameter in the <strong>Find</strong> method in the <strong>EntityManager</strong> class, allowing you to set the source entity and directly search there.</p>
+<pre><code class="lang-csharp">public Entity Find(string path, Entity sourceEntity = null)
 </code></pre>
-<p>For example (following with the above-mentioned hierarchy), if we want to search the tire1 entity from car we can call one of the next:</p>
+<p>For example (following the above-mentioned hierarchy), if we want to search for the tire1 entity from the car we can call one of the following:</p>
 <pre><code class="lang-csharp">Entity tire;
 
 // We can find the entity either of these ways
 tire = car.Find(&quot;.Wheel1.Tire1&quot;);
-tire = entityManager.Find(&quot;.Wheel.Tire1&quot;, car);
+tire = entityManager.Find(&quot;.Wheel1.Tire1&quot;, car);
 </code></pre>
 
 </article>

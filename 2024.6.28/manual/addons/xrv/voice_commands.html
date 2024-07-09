@@ -83,16 +83,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="voice-commands">Voice Commands</h1>
 
-<p>Provides a service where we can register key words, that the speech recognition service will detect and we can take actions when this happens. It is based on <a href="../mrtk/index.html">MRTK</a>, so you should work with <em>SpeechHandler</em> if you want to create handlers for your custom controls. If you are only interested in buttons and toggle buttons, you can make use of <em>PressableButtonSpeechHandler</em> defined in <em>MRTK</em>, or <em>ToggleButtonSpeechHandler</em> defined in <em>XRV</em>, to activate a button if associated voice command is recognized.</p>
+<p>This service allows us to register keywords that the speech recognition service will detect, enabling us to take actions when this occurs. It is based on <a href="../mrtk/index.html">MRTK</a>, so you should work with <em>SpeechHandler</em> if you want to create handlers for your custom controls. If you are only interested in buttons and toggle buttons, you can use <em>PressableButtonSpeechHandler</em> defined in <em>MRTK</em> or <em>ToggleButtonSpeechHandler</em> defined in <em>XRV</em> to activate a button when the associated voice command is recognized.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Current implementation supports voice commands for <em>HoloLens 2 (UWP)</em> only. Speech recognition service must be enabled or command recognition will never be fired. Please, note that you should add an explicit reference to <em>Evergine.Xrv.Core</em> NuGet package for your UWP Mixed Reality project. This is necessary in order to take correct implementation of speech service for UWP platform.</p>
+<p>The current implementation supports voice commands for <em>HoloLens 2 (UWP)</em> only. The speech recognition service must be enabled, or command recognition will not occur. Please note that you should add an explicit reference to the <em>Evergine.Xrv.Core</em> NuGet package for your UWP Mixed Reality project. This is necessary to ensure the correct implementation of the speech service for the UWP platform.</p>
 </div>
-<p>User can also activate or deactivate voice command recognition in <em>Configuration -&gt; General</em> section.</p>
-<h2 id="associate-voice-commands-programmatically">Associate voice commands programmatically</h2>
+<p>Users can also activate or deactivate voice command recognition in the <em>Configuration -&gt; General</em> section.</p>
+<h2 id="associate-voice-commands-programmatically">Associate Voice Commands Programmatically</h2>
 <p>You have two options to add custom voice commands:</p>
 <ul>
-<li>Specify voice commands in <a href="hand_menu.html">menu button description</a> for module definition.</li>
+<li>Specify voice commands in the <a href="hand_menu.html">menu button description</a> for module definition.</li>
 </ul>
 <pre><code class="lang-csharp">public MyModule : Module 
 {
@@ -112,18 +112,18 @@
 }
 </code></pre>
 <ul>
-<li>Using <em>Voice System</em> API to programmatically register voice commands. Please, note that this should only be invoked on application startup.</li>
+<li>Use the <em>Voice System</em> API to programmatically register voice commands. Please note that this should only be invoked at application startup.</li>
 </ul>
 <pre><code class="lang-csharp">var voiceSystem = this.xrvService.VoiceSystem;
-voiceSystem.RegisterCommands(new [] { &quot;one command&quot;, &quot;other command&quot; });
+voiceSystem.RegisterCommands(new[] { &quot;one command&quot;, &quot;other command&quot; });
 </code></pre>
-<h2 id="create-custom-speech-handler">Create custom speech handler</h2>
+<h2 id="create-a-custom-speech-handler">Create a Custom Speech Handler</h2>
 <pre><code class="lang-csharp">public MySpeechRecognizer : SpeechHandler 
 {
     protected override void InternalOnSpeechKeywordRecognized(string keyword)
     {
         base.InternalOnSpeechKeywordRecognized(keyword);
-        // Do something depending on matching command
+        // Perform an action depending on the matching command
     }
 }
 </code></pre>

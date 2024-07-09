@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="storage">Storage</h1>
 
-<p>If you need an external repository to load your models, images or other type of files, that are required by your application, you can take a look to what <em>XRV</em> offers about files storage. Base class for storage systems is <em>FileAccess</em> class, that can be extended to create specific implementations for a full CRUD access to files in a repository or folder.</p>
-<h2 id="file-access">File access</h2>
-<p>We provide a set implementations for <em>FileAccess</em> that we are going to enumerate. Following set of methods will be available when using any file access instance from code.</p>
+<p>If you need an external repository to load your models, images, or other types of files required by your application, you can take a look at what <em>XRV</em> offers regarding file storage. The base class for storage systems is the <em>FileAccess</em> class, which can be extended to create specific implementations for full CRUD access to files in a repository or folder.</p>
+<h2 id="file-access">File Access</h2>
+<p>We provide a set of implementations for <em>FileAccess</em> that we will enumerate. The following set of methods will be available when using any file access instance from code.</p>
 <table>
 <thead>
 <tr>
@@ -100,19 +100,19 @@
 </tr>
 <tr>
 <td><strong>CreateBaseDirectoryIfNotExistsAsync</strong></td>
-<td>Ensure that base directory defined by <em>BaseDirectory</em> exits. If it does not exists, directory is created.</td>
+<td>Ensures that the base directory defined by <em>BaseDirectory</em> exists. If it does not exist, the directory is created.</td>
 </tr>
 <tr>
 <td><strong>CreateDirectoryAsync</strong></td>
-<td>Creates a directory, indicated by relative path.</td>
+<td>Creates a directory, indicated by a relative path.</td>
 </tr>
 <tr>
 <td><strong>DeleteDirectoryAsync</strong></td>
-<td>Deletes a directory, indicated by relative path.</td>
+<td>Deletes a directory, indicated by a relative path.</td>
 </tr>
 <tr>
 <td><strong>DeleteFileAsync</strong></td>
-<td>Deletes a file, indicated by relative path.</td>
+<td>Deletes a file, indicated by a relative path.</td>
 </tr>
 <tr>
 <td><strong>GetFileAsync</strong></td>
@@ -124,15 +124,15 @@
 </tr>
 <tr>
 <td><strong>EnumerateDirectoriesAsync</strong></td>
-<td>Enumerates directories existing in base directory or in a relative directory path.</td>
+<td>Enumerates directories existing in the base directory or a relative directory path.</td>
 </tr>
 <tr>
 <td><strong>EnumerateFilesAsync</strong></td>
-<td>Enumerates files existing in base directory or in a relative directory path.</td>
+<td>Enumerates files existing in the base directory or a relative directory path.</td>
 </tr>
 <tr>
 <td><strong>ExistsDirectoryAsync</strong></td>
-<td>Checks if a directory, indicated by relative path, exits or not.</td>
+<td>Checks if a directory, indicated by a relative path, exists or not.</td>
 </tr>
 <tr>
 <td><strong>WriteFileAsync</strong></td>
@@ -140,8 +140,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="local-application-data-folder-storage">Local application data folder storage</h3>
-<p>This is implemented by <em>ApplicationDataFileAccess</em>, which sets as base path the value of <em>System.Environment.SpecialFolder.LocalApplicationData</em>, that can change depending on target platform. If, you create a new file access instance of this type, just set <em>BaseDirectory</em> value to a name for a base directory for that instance. You can use this file access as data cache or to create temporary files needed by your application, but may not be externally available depending on target platform.</p>
+<h3 id="local-application-data-folder-storage">Local Application Data Folder Storage</h3>
+<p>This is implemented by <em>ApplicationDataFileAccess</em>, which sets the base path to the value of <em>System.Environment.SpecialFolder.LocalApplicationData</em>, which can change depending on the target platform. If you create a new file access instance of this type, just set the <em>BaseDirectory</em> value to a name for a base directory for that instance. You can use this file access as a data cache or to create temporary files needed by your application. However, these files may not be externally available depending on the target platform.</p>
 <pre><code class="lang-csharp">var fileAccess = new ApplicationDataFileAccess()
 {
     BaseDirectory = &quot;my-folder&quot;,
@@ -149,27 +149,27 @@
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>We use some folders internally, so be careful and do not use a <em>&quot;cache</em>&quot; as base directory name.</p>
+<p>We use some folders internally, so be careful and do not use <em>&quot;cache&quot;</em> as the base directory name.</p>
 </div>
-<h3 id="azure-blobs-data-storage">Azure Blobs data storage</h3>
-<p>You can also use <em>Azure Blob Storage</em> as data source to download files required by your application. Only thing you need is to add some storage account configuration settings when instancing a file access of this type. You may find different static methods to create instances, depending on set of configuration data you want to provide.</p>
-<p>Please, note that some directory methods may not work for this file access, as <em>Azure Blob Storage</em> does not have the concept of <em>directory</em>. When using SAS, remember that you should add appropiate permissions to the token, if you want full CRUD access to blobs.</p>
+<h3 id="azure-blob-data-storage">Azure Blob Data Storage</h3>
+<p>You can also use <em>Azure Blob Storage</em> as a data source to download files required by your application. The only thing you need to do is add some storage account configuration settings when instantiating a file access of this type. You may find different static methods to create instances, depending on the set of configuration data you want to provide.</p>
+<p>Please note that some directory methods may not work for this file access, as <em>Azure Blob Storage</em> does not have the concept of <em>directories</em>. When using SAS, remember that you should add appropriate permissions to the token if you want full CRUD access to blobs.</p>
 <pre><code class="lang-csharp">var fileAccess = AzureBlobFileAccess.CreateFromConnectionString(&quot;Storage account connection string&quot;, &quot;Container name&quot;); //or
 var fileAccess = AzureBlobFileAccess.CreateFromUri(&quot;https://&lt;ACCOUNT&gt;.blob.core.windows.net/container?sv=2021-08-06&amp;st=2022-11-18T15%3A07%3A20Z&amp;...&quot;); // Container URI containing SAS (or without SAS for public containers, if you need read-only operations)
 var fileAccess = AzureBlobFileAccess.CreateFromConnectionString(&quot;https://&lt;ACCOUNT&gt;.blob.core.windows.net/container&quot;, &quot;sv=2021-08-06&amp;st=2022-11-18T15%3A07%3A20Z&amp;...&quot;);  // Container URI with separated SAS
 </code></pre>
-<h3 id="azure-files-data-storage">Azure Files data storage</h3>
-<p>We have support for other service, <em>Azure Files</em> that you can use. In the same way, you need to specify connection configuration data to make. You may find different static methods to create instances, depending on set of configuration data you want to provide.</p>
+<h3 id="azure-files-data-storage">Azure Files Data Storage</h3>
+<p>We also support another service, <em>Azure Files</em>, that you can use. Similarly, you need to specify connection configuration data. You may find different static methods to create instances, depending on the set of configuration data you want to provide.</p>
 <pre><code class="lang-csharp">var fileAccess = AzureFileShareFileAccess.CreateFromConnectionString(&quot;Storage account connection string&quot;, &quot;Share name&quot;); //or
 var fileAccess = AzureFileShareFileAccess.CreateFromUri(&quot;https://&lt;ACCOUNT&gt;.file.core.windows.net/share?sv=2021-08-06&amp;st=2022-11-18T15%3A07%3A20Z&amp;...&quot;); // Share URI containing SAS
 var fileAccess = AzureFileShareFileAccess.CreateFromConnectionString(&quot;https://&lt;ACCOUNT&gt;.file.core.windows.net/share&quot;, &quot;sv=2021-08-06&amp;st=2022-11-18T15%3A07%3A20Z&amp;...&quot;);  // Share URI with separated SAS
 </code></pre>
-<h2 id="disk-cache">Disk cache</h2>
-<p>Any <em>FileAccess</em> can use an optional cache, that will check for files locally instead of downloading them again. To activate caching for a file access, just create an instance of <em>DiskCache</em> and assign it.</p>
+<h2 id="disk-cache">Disk Cache</h2>
+<p>Any <em>FileAccess</em> can use an optional cache, which will check for files locally instead of downloading them again. To activate caching for a file access, just create an instance of <em>DiskCache</em> and assign it.</p>
 <pre><code class="lang-csharp">var fileAccess = AzureFileShareFileAccess.CreateFromUri(...);
-fileAccess.Cache = new DiskCache(&quot;images&quot;); // indicate an unique cache name for your needs
+fileAccess.Cache = new DiskCache(&quot;images&quot;); // indicate a unique cache name for your needs
 </code></pre>
-<p>For cache, you can specify following settings.</p>
+<p>For caching, you can specify the following settings.</p>
 <table>
 <thead>
 <tr>

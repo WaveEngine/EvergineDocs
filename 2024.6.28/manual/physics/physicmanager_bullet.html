@@ -84,15 +84,15 @@
 <h1 id="physicmanager-and-bullet">PhysicManager and Bullet</h1>
 
 <p><img src="images/physics.png" alt="Physics"></p>
-<p>In Evergine, Physics are implemented with the <strong>PhysicManager3D</strong> class, a <a href="../basics/scenes/scenemanagers.html">SceneManager</a>. This manager is responsible to create and maintain the Physic World. This is an abstract class that only offer the functionality that a Physic Manager should implement:</p>
+<p>In Evergine, Physics are implemented with the <strong>PhysicManager3D</strong> class, a <a href="../basics/scenes/scenemanagers.html">SceneManager</a>. This manager is responsible for creating and maintaining the Physic World. This is an abstract class that only offers the functionality that a Physic Manager should implement:</p>
 <ul>
 <li>Create the Physic World</li>
-<li>Allow to create Physic elements (Bodies, Colliders, etc...)</li>
-<li>OFfer the possibility to perform physic queries (ray casting, sweep test, etc...).</li>
+<li>Allow the creation of Physic elements (Bodies, Colliders, etc.)</li>
+<li>Offer the possibility to perform physic queries (ray casting, sweep test, etc.).</li>
 </ul>
-<p>Because <strong>PhysicManager3D</strong> is a SceneManager, every scene has their own Physic World.</p>
+<p>Because <strong>PhysicManager3D</strong> is a SceneManager, every scene has its own Physic World.</p>
 <h2 id="physicmanager3d-properties">PhysicManager3D properties</h2>
-<p>To properly setup your Physic World, the following properties are useful:</p>
+<p>To properly set up your Physic World, the following properties are useful:</p>
 <table>
 <thead>
 <tr>
@@ -105,48 +105,46 @@
 <tr>
 <td><strong>Gravity</strong></td>
 <td>0, -9.8, 0</td>
-<td>This is the global gravity vector, in m/s. The default value is 1G (-9.8m/s)</td>
+<td>This is the global gravity vector, in m/s². The default value is 1G (-9.8m/s²)</td>
 </tr>
 <tr>
 <td><strong>PerformPhysicSteps</strong></td>
 <td>true</td>
-<td>Indicates if the physic simulation will be updated evey frame. If your scene has dynamics objects (rigidbodies), and this property is set to false, this objects won't be simulated. If your applications only use static bodies, it is recommended to set this property to false.</td>
+<td>Indicates if the physic simulation will be updated every frame. If your scene has dynamic objects (rigidbodies), and this property is set to false, these objects won't be simulated. If your applications only use static bodies, it is recommended to set this property to false.</td>
 </tr>
 <tr>
 <td><strong>MaxSubSteps</strong></td>
 <td>1</td>
-<td>In how many subdivisions the physic world updated are divided. Greater values produce better simulations, but the performance is degraded.</td>
+<td>In how many subdivisions the physic world updates are divided. Greater values produce better simulations, but the performance is degraded.</td>
 </tr>
 <tr>
 <td><strong>PhysicWorldResolution</strong></td>
 <td>1</td>
-<td>The general physic world scale. By default, 1 unit in Evergine is equal to 1 unit in Physic World. Changing this value allows to change this behavior. For example, a value of 10 indicates that a sphere with radius 1 will produce a physic object of 10. Changing this value is useful when the objects are too small or too big.</td>
+<td>The general physic world scale. By default, 1 unit in Evergine is equal to 1 unit in Physic World. Changing this value affects this behavior. For example, a value of 10 indicates that a sphere with a radius of 1 will produce a physic object of 10. Changing this value is useful when the objects are too small or too large.</td>
 </tr>
 <tr>
 <td><strong>FixedTimeStep</strong></td>
 <td>1.0/60</td>
-<td>The physic steps will perform at a fixed timestep indicated in this property (in seconds). By default is 60Hz</td>
+<td>The physic steps will perform at a fixed timestep indicated in this property (in seconds). By default, it is 60Hz.</td>
 </tr>
 <tr>
 <td><strong>DrawFlags</strong></td>
 <td><code>All</code>,<br>-<code>DrawAabb</code>,<br>-<code>DrawContactPoints</code></td>
-<td>This flags allows you to select which elements want to be rendered when <code>RenderManager.DebugLines</code> is set to <code>true</code>. By default all elements are included excepht Aabb and contact points: <ul><li><strong>DrawWireframe:</strong> Debug draw mesh collider wireframe.</li><li><strong>DrawAabb:</strong> Debug draw bodies AABB. </li><li><strong>DrawContactPoints:</strong> Debug draw the contact points between bodies.</li><li><strong>DrawConstraints:</strong> Debug draw physic joints.</li><li><strong>DrawConstraintLimits:</strong> Debug draw the physic joints limits.</li><li><strong>DrawFastWireframe:</strong> Debug draw wireframes in a fast way.</li><li><strong>DrawNormals:</strong> Debug draws normals.</li></ul></td>
+<td>These flags allow you to select which elements you want to be rendered when <code>RenderManager.DebugLines</code> is set to <code>true</code>. By default, all elements are included except Aabb and contact points: <ul><li><strong>DrawWireframe:</strong> Debug draw mesh collider wireframe.</li><li><strong>DrawAabb:</strong> Debug draw bodies AABB. </li><li><strong>DrawContactPoints:</strong> Debug draw the contact points between bodies.</li><li><strong>DrawConstraints:</strong> Debug draw physic joints.</li><li><strong>DrawConstraintLimits:</strong> Debug draw the physic joints limits.</li><li><strong>DrawFastWireframe:</strong> Debug draw wireframes in a fast way.</li><li><strong>DrawNormals:</strong> Debug draw normals.</li></ul></td>
 </tr>
 </tbody>
 </table>
 <h2 id="bullet-and-bulletphysicmanager3d">Bullet and BulletPhysicManager3D</h2>
-<p>Evergine provides an implementation for PhysicManagr3D using the open-source <strong><a href="https://pybullet.org/wordpress/">Bullet Physics</a></strong> engine. For detailed information, see the <a href="https://github.com/bulletphysics/bullet3/blob/master/docs/Bullet_User_Manual.pdf">Bullet User</a>.</p>
+<p>Evergine provides an implementation for PhysicManager3D using the open-source <strong><a href="https://pybullet.org/wordpress/">Bullet Physics</a></strong> engine. For detailed information, see the <a href="https://github.com/bulletphysics/bullet3/blob/master/docs/Bullet_User_Manual.pdf">Bullet User Manual</a>.</p>
 <p>In Evergine, the Bullet implementation can be used with the <code>BulletPhysicManager3D</code>.</p>
 <p><img src="images/bullet_logo.png" alt="Bullet Logo"></p>
 <h3 id="using-bulletphysicmanager3d">Using BulletPhysicManager3D</h3>
-<p>To start using Physics in your scene, you need to create an instance of <code>BulletPhysicManager3D</code> and register into your Scene. This implementation is provided in the <strong>Evergine.Bullet</strong> nuget package.</p>
+<p>To start using Physics in your scene, you need to create an instance of <code>BulletPhysicManager3D</code> and register it into your Scene. This implementation is provided in the <strong>Evergine.Bullet</strong> NuGet package.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Evergine project template will register the Bullet physic manager by default.</p>
+<p>Evergine project templates will register the Bullet Physic Manager by default.</p>
 </div>
-<pre><code class="lang-csharp">public
-
-public class MyScene : Scene
+<pre><code class="lang-csharp">public class MyScene : Scene
 {
     public override void RegisterManagers()
     {

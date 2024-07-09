@@ -81,12 +81,13 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="fixed-joint">Fixed Joint</h1>
 
+<p>Here is the improved text with corrected grammar:</p>
+<h1 id="fixed-joint">Fixed Joint</h1>
 <video autoplay="" loop="" muted="" width="100%" height="auto">
   <source src="images/FixedJointVideo.mp4" type="video/mp4">
 </video>
-<p><strong>Fixed Joints</strong> restricts an object’s movement to be dependent upon another object. This is somewhat similar to Parenting but is implemented through physics rather than Transform hierarchy. The best scenarios for using them are when you have objects that you want to easily break apart from each other, or connect two object’s movement without parenting.</p>
+<p><strong>Fixed Joints</strong> restrict an object’s movement to be dependent upon another object. This is somewhat similar to Parenting but is implemented through physics rather than the Transform hierarchy. The best scenarios for using them are when you have objects that you want to easily break apart from each other or connect two objects' movement without parenting.</p>
 <h2 id="fixedjoint3d">FixedJoint3D</h2>
 <p>In Evergine, a Fixed Joint is implemented using the <code>FixedJoint3D</code> component.</p>
 <p><img src="images/fixedJointComponent.png" alt="Fixed Joint"></p>
@@ -103,7 +104,7 @@
 <tr>
 <td><strong>ConnectedEntityPath</strong></td>
 <td>null</td>
-<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid a Joint is established properly.</td>
+<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid is a Joint established properly.</td>
 </tr>
 <tr>
 <td><strong>Axis</strong></td>
@@ -113,7 +114,7 @@
 <tr>
 <td><strong>Anchor</strong></td>
 <td>0, 0, 0</td>
-<td>The point which defines the center of the joint in source entity local space. All physics-based simulations use this point as the center in calculations.</td>
+<td>The point which defines the center of the joint in the source entity's local space. All physics-based simulations use this point as the center in calculations.</td>
 </tr>
 <tr>
 <td><strong>AutoConfigureConnected</strong></td>
@@ -128,12 +129,12 @@
 <tr>
 <td><strong>ConnectedAnchor</strong></td>
 <td><em>auto-calculated</em></td>
-<td>Manually configure the connected anchor position, in the connected body local space.</td>
+<td>Manually configure the connected anchor position in the connected body's local space.</td>
 </tr>
 <tr>
 <td><strong>BreakPoint</strong></td>
 <td>0</td>
-<td>If the value is greater than 0, Indicates the force that needs to be applied for this joint to break.</td>
+<td>If the value is greater than 0, it indicates the force that needs to be applied for this joint to break.</td>
 </tr>
 <tr>
 <td><strong>CollideConnected</strong></td>
@@ -143,7 +144,7 @@
 </tbody>
 </table>
 <h2 id="using-fixed-joint">Using Fixed Joint</h2>
-<p>This snippet creates two bodies and add a fixed joint maintaining the relative position at start. This is because the <code>AutoConfigureConnected</code> property is set to true.</p>
+<p>This snippet creates two bodies and adds a fixed joint maintaining the relative position at the start. This is because the <code>AutoConfigureConnected</code> property is set to true.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     // Load your material
@@ -176,7 +177,7 @@ private Entity CreateFloor(Material material)
         .AddComponent(new MeshRenderer())
 
         .AddComponent(new StaticBody3D())        // Add a StaticBody component...
-        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
+        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physics body...
 
     return floor;    
 }
@@ -193,7 +194,7 @@ private Entity CreateCube(Material material, Vector3 position, float size)
         .AddComponent(new MeshRenderer())
 
         .AddComponent(new RigidBody3D())        // Add a RigidBody3D component...
-        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
+        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physics body...
 
     return cube;
 }

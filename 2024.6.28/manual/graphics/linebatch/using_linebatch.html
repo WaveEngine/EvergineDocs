@@ -85,12 +85,12 @@
 
 <hr>
 <p><img src="images/linebatchHeader.jpg" alt="Using billboards header"></p>
-<p><strong>LineBatch</strong> only can be used from code. In the scene <strong>RenderManager</strong> you will find the LineBatch3D to draw lines in 3d space and the LineBatch2D to draw lines in 2d space.</p>
-<p>If you want to add a debug or helper mode to your entity, you can add a <a href="../../basics/component_arch/components/drawables.html">Drawable3D</a> component to your scene and from this you will be access to the linebatch:</p>
-<p>The following example draw a red line from (0,0,0) to (0,1,0)</p>
+<p><strong>LineBatch</strong> can only be used from code. In the scene <strong>RenderManager</strong>, you will find the LineBatch3D to draw lines in 3D space and the LineBatch2D to draw lines in 2D space.</p>
+<p>If you want to add a debug or helper mode to your entity, you can add a <a href="../../basics/component_arch/components/drawables.html">Drawable3D</a> component to your scene, and from this, you will have access to the LineBatch:</p>
+<p>The following example draws a red line from (0,0,0) to (0,1,0).</p>
 <p><strong>From your scene.cs</strong></p>
 <pre><code class="lang-csharp">protected override void CreateScene()
-{    
+{
     ...
     // Add dummy entity to your scene
     var dummyEntity = new Entity()
@@ -100,7 +100,7 @@
 }
 </code></pre>
 <p><strong>Drawable component implementation</strong></p>
-<pre><code class="lang-csharp">// Drawable component using lineBatch3D
+<pre><code class="lang-csharp">// Drawable component using LineBatch3D
 public class MyDrawable : Drawable3D
 {
     public override void Draw(DrawContext drawContext)
@@ -109,10 +109,10 @@ public class MyDrawable : Drawable3D
     }
 }
 </code></pre>
-<p>The lineBatch3D not only draw lines but can also draw Point, Sphere, Box ... And LineBatch2D is similar but with shapes (Circle, Square ...)</p>
+<p>The LineBatch3D not only draws lines but can also draw Point, Sphere, Box, etc. The LineBatch2D is similar but with shapes (Circle, Square, etc.).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>LineBatch3D must be used with Drawable3D and LineBatch2D with Drawable2D_</p>
+<p>LineBatch3D must be used with Drawable3D and LineBatch2D with Drawable2D.</p>
 </div>
 <h2 id="linebatch">LineBatch</h2>
 <p>This section shows with examples all geometries that LineBatch can draw:</p>

@@ -84,7 +84,7 @@
 <h1 id="effect-metatags">Effect Metatags</h1>
 
 <hr>
-<p>In evergine the effect are written in <a href="https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide"><strong>HLSL</strong></a> languages, but to automatize some tasks evergine includes additional tags that you can add to the HLSL code.</p>
+<p>In Evergine, effects are written in <a href="https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide"><strong>HLSL</strong></a> language, but to automate some tasks, Evergine includes additional tags that you can add to the HLSL code.</p>
 <h2 id="block-metatags">Block Metatags</h2>
 <p>Effect codes are organized into two important kinds of blocks:</p>
 <table>
@@ -99,18 +99,18 @@
 <tr>
 <td>Resource Layout</td>
 <td><span style="color:lightgreen">[Begin_ResourceLayout]<br> [End_ResourceLayout]</span></td>
-<td>This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using all effect passes.</td>
+<td>This block of code defines all resources (Constant Buffers, Structured Buffers, Textures, and Samplers) using all effect passes.</td>
 </tr>
 <tr>
 <td>Pass</td>
 <td><span style="color:lightgreen">[Begin_Pass:PassName] <br> [End_Pass]</span></td>
-<td>This block of code defines a RenderPipeline pass. The <em>DefaultRenderPipeline</em> defines 3 passes that any effect can define:  ZPrePass, Distortion, Default</td>
+<td>This block of code defines a RenderPipeline pass. The <em>DefaultRenderPipeline</em> defines three passes that any effect can define: ZPrePass, Distortion, Default.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="directives-metatags">Directives Metatags</h2>
-<p>Inside of resource layout block you can define the directive set that your custom effect will have. The directives are useful to enable different features of your effect.</p>
-<p>A directive can be defined as two values On/Off feature or can define a feature with multiple values:
+<p>Inside a resource layout block, you can define the directive set that your custom effect will have. Directives are useful to enable different features of your effect.</p>
+<p>A directive can be defined as a two-value On/Off feature or can define a feature with multiple values:
 <br>
 <span style="color:lightgreen">[Directive:Name <code>A_OFF</code> <code>A</code>]</span>
 <br>
@@ -119,28 +119,28 @@
 <br>
 <span style="color:lightgreen">[Directive:NormalMapping Normal_OFF, Normal]</span>
 <br>
-<span style="color:lightgreen">[Directive:ShadowFilter Shadow_OFF, ShadowFilter3 ShadowFilter5 ShadowFilter7]</span></p>
-<p>An effect is a set of the shader (known as <em>Uber-shader</em>) and the directive help you to define this set of the shader. The directives generate automatically multiple shaders with the effects is compiled.</p>
+<span style="color:lightgreen">[Directive:ShadowFilter Shadow_OFF, ShadowFilter3, ShadowFilter5, ShadowFilter7]</span></p>
+<p>An effect is a set of shaders (known as <em>Uber-shader</em>), and directives help you define this set of shaders. The directives automatically generate multiple shaders when the effects are compiled.</p>
 <p>Example:
 <br>
-<span style="color:lightgreen">[Directive:Name <code>A_OFF</code> <code>A</code>]</span> will generate a shader with A enabled and another shader with A disabled.
+<span style="color:lightgreen">[Directive:Name <code>A_OFF</code> <code>A</code>]</span> will generate a shader with <code>A</code> enabled and another shader with <code>A</code> disabled.
 <br>
-<span style="color:lightgreen">[Directive:Name <code>A_OFF</code> <code>B</code> <code>C</code> <code>D</code> ...]</span> will generate an <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code> ...  shaders.</p>
+<span style="color:lightgreen">[Directive:Name <code>A_OFF</code> <code>B</code> <code>C</code> <code>D</code> ...]</span> will generate <code>A</code>, <code>B</code>, <code>C</code>, <code>D</code> ... shaders.</p>
 <p>Additionally, if you define several directives, it will multiply the combinations. In that case, if you define two directives:
 <br>
 <span style="color:lightgreen">[Directive:FeatureA <code>A_OFF</code> <code>A</code>]</span>
 <br>
 <span style="color:lightgreen">[Directive:FeatureB <code>B_OFF</code> <code>C</code> <code>D</code>]</span>
 <br>
-It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <code>A-B_OFF</code>, <code>A_OFF-C</code>, <code>A-C</code> , <code>A_OFF-D</code>, <code>A-D</code></p>
-<p>The number of combination are multiplied by the number of effect passes so a complex effect would have hundreds or thousands of combinations.</p>
-<p>The effects can compile his combination on-demand in runtime or pre-compiled combination before and use it later in runtime without compile. So you generate a bundle with compiled shader combinations. To know more details go to this <a href="using_effects.html">section</a></p>
-<p>You can shape your effect code with the <code>#if</code> <code>#else</code> and <code>#endif</code> preprocessor directives:</p>
+It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <code>A-B_OFF</code>, <code>A_OFF-C</code>, <code>A-C</code>, <code>A_OFF-D</code>, <code>A-D</code>.</p>
+<p>The number of combinations is multiplied by the number of effect passes, so a complex effect would have hundreds or thousands of combinations.</p>
+<p>The effects can compile their combinations on-demand at runtime or pre-compile combinations beforehand and use them later at runtime without compilation. This allows you to generate a bundle with compiled shader combinations. To know more details, go to this <a href="using_effects.html">section</a>.</p>
+<p>You can shape your effect code with the <code>#if</code>, <code>#else</code>, and <code>#endif</code> preprocessor directives:</p>
 <pre><code class="lang-csharp">#if TEX
     // This code is compiled only if TEX directive is used...
     finalColor = ColorTexture.Sample(ColorSampler, input.Tex); 
 #else
-    // If TEX directive is not present, reach this code...
+    // If TEX directive is not present, this code is reached...
     finalColor = ColorAttribute; 
 #endif
 </code></pre>
@@ -151,7 +151,7 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 #endif
 </code></pre>
 <h2 id="default-values-metatag">Default Values Metatag</h2>
-<p>Evergine allows to inject default values in constant buffer attributes automatically using tags.</p>
+<p>Evergine allows injecting default values into constant buffer attributes automatically using tags.</p>
 <p>Default values can be injected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:</p>
 <pre><code class="lang-csharp">cbuffer Parameters : register(b0)
 {
@@ -159,17 +159,17 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
     float3 Position   : packoffset(c0.y); [Default(2.3, 3.3, 5.6)]
 }
 </code></pre>
-<p>Default value tag supports the following types: <code>int</code>, <code>float</code>, <code>bool</code>, <code>float</code>, <code>float2</code>, <code>float3</code>, <code>float4</code>.</p>
-<h2 id="inject-engine-parameters">Inject Engine parameters</h2>
-<p>Evergine allows injecting engine data to resource layout resources <em>(Constant Buffers attributes and Textures)</em> automatically using tags.</p>
+<p>The default value tag supports the following types: <code>int</code>, <code>float</code>, <code>bool</code>, <code>float2</code>, <code>float3</code>, <code>float4</code>.</p>
+<h2 id="inject-engine-parameters">Inject Engine Parameters</h2>
+<p>Evergine allows injecting engine data into resource layout resources <em>(Constant Buffers attributes and Textures)</em> automatically using tags.</p>
 <p>For example, in the following code, the <code>[WorldViewProjection]</code> metatag is used to inject the object world view projection matrix:</p>
 <pre><code class="lang-csharp">cbuffer PerDrawCall : register(b0)
 {
-    float4x4 WorldViewProj    : packoffset(c0);    [WorldViewProjection]
+    float4x4 WorldViewProj : packoffset(c0); [WorldViewProjection]
 };
 </code></pre>
-<h3 id="list-of-parameter-tag">List of Parameter Tag</h3>
-<p>Here you can find a complete list of available parameter tag that you can use into your effects:</p>
+<h3 id="list-of-parameter-tags">List of Parameter Tags</h3>
+<p>Here you can find a complete list of available parameter tags that you can use in your effects:</p>
 <table>
 <thead>
 <tr>
@@ -190,13 +190,13 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 <td><span style="color:lightgreen">[DrawContextID]</span></td>
 <td>int</td>
 <td>PerView</td>
-<td>Gets drawcontext ID.</td>
+<td>Gets draw context ID.</td>
 </tr>
 <tr>
 <td><span style="color:lightgreen">[DrawContextViewIndex]</span></td>
 <td>int</td>
 <td>PerView</td>
-<td>Gets the view index of this draw context. A draw context can contains several views (cascade shadow, point light shadows, reflection probe, etc...).</td>
+<td>Gets the view index of this draw context. A draw context can contain several views (cascade shadow, point light shadows, reflection probe, etc.).</td>
 </tr>
 <tr>
 <td><span style="color:lightgreen">[World]</span></td>
@@ -265,7 +265,7 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 <td>Gets the unjittered (TAA) world view projection value of the current camera and mesh.</td>
 </tr>
 <tr>
-<td><span style="color:lightgreen">[WorldInverse] </span></td>
+<td><span style="color:lightgreen">[WorldInverse]</span></td>
 <td>Matrix4x4</td>
 <td>PerDrawCall</td>
 <td>Gets the inverse world value of the current render mesh.</td>
@@ -508,7 +508,7 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 </tr>
 <tr>
 <td><span style="color:lightgreen">[DepthBuffer]</span></td>
-<td>Depthbuffer texture.</td>
+<td>Depth buffer texture.</td>
 </tr>
 <tr>
 <td><span style="color:lightgreen">[GBuffer]</span></td>
@@ -556,12 +556,12 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 </tr>
 <tr>
 <td><span style="color:lightgreen">[Custom<code>0..N</code>]</span></td>
-<td>Custom renderpipeline texture.</td>
+<td>Custom render pipeline texture.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="pass-settings-metatags">Pass Settings Metatags</h2>
-<p>These tags are used inside of a pass block code and are useful to configure which settings do you want to compile this pass.</p>
+<p>These tags are used inside a pass block code and are useful to configure which settings you want to compile for this pass.</p>
 <table>
 <thead>
 <tr>
@@ -575,184 +575,12 @@ It will generate the following shader combinations: <code>A_OFF-B_OFF</code>, <c
 <td>Defines HLSL language version and capabilities. The API level values could be: <ul><li><strong>9_1:</strong> DirectX9.1 HLSL 3.0.</li><li><strong>9_2:</strong> DirectX 9.2 HLSL 3.0</li><li><strong>9_3:</strong> DirectX 9.3 HLSL 3.0</li><li><strong>10_0:</strong> DirectX 10 HLSL 4.0</li><li><strong>10_1:</strong> DirectX 10.1 HLSL 4.1</li><li><strong>11_0:</strong> DirectX 11 HLSL 5.0</li><li><strong>11_1:</strong> DirectX 11 HLSL 5.0</li><li><strong>12_0:</strong> DirectX 12 HLSL 6.0</li><li><strong>12_1:</strong> DirectX 12 HLSL 6.1</li><li><strong>12_3:</strong> DirectX 12 HLSL 6.3 (Raytracing)</li></ul></td>
 </tr>
 <tr>
-<td><span style="color:lightgreen">[Entirypoints <code>Stage=MethodName</code>]</span></td>
-<td>Defines the entrypoint stage methods of the pass. The valid stages values are: <ul><li><strong>VS:</strong> Vertex Shader.</li><li><strong>HS:</strong> Hull Shader.</li><li><strong>DS:</strong> Domain Shader.</li><li><strong>GS:</strong> Geometry Shader.</li><li><strong>PS:</strong> Pixel Shader.</li><li><strong>CS:</strong> Compute Shader.</li></ul></td>
+<td><span style="color:lightgreen">[EntryPoints <code>Stage=MethodName</code>]</span></td>
+<td>Defines the entry point stage methods of the pass. The valid stage values are: <ul><li><strong>VS:</strong> Vertex Shader.</li><li><strong>HS:</strong> Hull Shader.</li><li><strong>DS:</strong> Domain Shader.</li><li><strong>GS:</strong> Geometry Shader.</li><li><strong>PS:</strong> Pixel Shader.</li><li><strong>CS:</strong> Compute Shader.</li></ul></td>
 </tr>
 <tr>
 <td><span style="color:lightgreen">[Mode <code>value</code>]</span></td>
-<td>Defines the compilation mode of the pass. Available mode list:<ul><li><strong>None:</strong> Default compilation mode.</li><li><strong>Debug:</strong> Debug mode includes depuration symbols to analyze with shader tools like <a href="https://renderdoc.org/">RenderDoc</a>, <a href="https://devblogs.microsoft.com/pix/introduction/">PIX</a> or <a href="https://developer.nvidia.com/nsight-graphics">NVidia Nsight Graphics</a>.<br>See <a href="../../evergine_studio/renderdoc.html">Profile with Renderdoc</a> for more useful information.</li><li><strong>Release:</strong> Optimize compilation mode.</li></ul></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RequiredWidth <code>Directive</code></span>]</td>
-<td>Defines the directive list required by the pass. <br> <em>Example: [RequiredWith VCOLOR] the renderpipeline run this pass only when VCOLOR directive is enabled.</em></td>
-</tr>
-</tbody>
-</table>
-<h2 id="override-render-layer-metatags">Override Render Layer Metatags</h2>
-<p>These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this <a href="../render_layers.html">section</a>:</p>
-<table>
-<thead>
-<tr>
-<th>Rasterization Process Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span style="color:lightgreen">[FillMode <code>Value</code>]</span></td>
-<td>Determines the fill mode to use when rendering.<br>Available values: <em>WireFrame</em> or <em>Solid</em></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[CullMode <code>Value</code>] </span></td>
-<td>Indicates triangles facing the specified direction are not drawn.<br>Available values: <em>None</em>, <em>Front</em> or <em>Back</em></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[FrontCounterClockwise <code>bool</code>]</span></td>
-<td>Determines if a triangle is front- or back-facing. If this parameter is true, a triangle will be considered front-facing if its vertices are counter-clockwise on the render target and considered back-facing if they are clockwise. <br> Available values: <em>True</em> or <em>false</em></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[DepthBias <code>int</code>]</span></td>
-<td>Depth value added to a given pixel. <br> The value is an integer.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[DepthBiasClamp <code>float</code>]</span></td>
-<td>Maximum depth bias of a pixel. <br> The value is a float [0-1].</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[SlopeScaledDepthBias <code>float</code>]</span></td>
-<td>Scalar on a given pixel's slope. <br> The value is a float.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[DepthClipEnable <code>bool</code>]</span></td>
-<td>Enable clipping based on distance. <br> Available values: <em>True</em> or <em>False</em></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[ScissorEnable <code>bool</code>]</span></td>
-<td>Enable scissor-rectangle culling. All pixels outside an active scissor rectangle are culled. <br> Available values: <em>True</em> or <em>False</em></td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[AntialiasedLineEnable <code>bool</code>]</span></td>
-<td>Specifies whether to enable line antialiasing; only applies if doing line drawing and MultisampleEnable is false. <br> Available values: <em>True</em> or _False.</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Blend State Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span style="color:lightgreen">[AlphaToCoverageEnable <code>bool</code>]</span></td>
-<td>Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.<br> Available values: <em>True</em> or _False.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[IndependentBlendEnable <code>bool</code>]</span></td>
-<td>Specifies whether to enable independent blending in simultaneous render targets. Set to true to enable independent blending. If set to false, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored. <br> Available values: <em>True</em> or _False.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0BlendEnable <code>bool</code>]</span></td>
-<td>Enable (or disable) blending for RenderTarget 0. <br> Available values: <em>True</em> or _False.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0SourceBlendColor <code>Value</code>]</span></td>
-<td>This blend option specifies the operation to perform on the RGB value that the pixel shader outputs. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br> Availables values: <em>Zero</em>, <em>One</em> <em>SourceColor</em>, <em>InverseSourceColor</em>, <em>SourceAlpha</em>, <em>InverseSourceAlpha</em>, <em>DestinationAlpha</em>, <em>InverseDesinationAlpha</em>, <em>DestinationColor</em>, <em>InverseDestinatinoColor</em>, <em>SourceAlphaSaturate</em>, <em>BlendFactor</em>, <em>InverseBlendFactor</em>, <em>SecondarySourceColor</em>, <em>InverseSecondarySourceColor</em>, SecondarySourceAlpha_ or <em>InverseSecondarySourceAlpha</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0DestinationBlendColor <code>Value</code>]</span></td>
-<td>This blend option specifies the operation to perform on the current RGB value in the render target. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br> Availables values: <em>Zero</em>, <em>One</em> <em>SourceColor</em>, <em>InverseSourceColor</em>, <em>SourceAlpha</em>, <em>InverseSourceAlpha</em>, <em>DestinationAlpha</em>, <em>InverseDesinationAlpha</em>, <em>DestinationColor</em>, <em>InverseDestinatinoColor</em>, <em>SourceAlphaSaturate</em>, <em>BlendFactor</em>, <em>InverseBlendFactor</em>, <em>SecondarySourceColor</em>, <em>InverseSecondarySourceColor</em>, SecondarySourceAlpha_ or <em>InverseSecondarySourceAlpha</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0BlendOperationColor <code>Value</code>]</span></td>
-<td>This blend operation defines how to combine the SrcBlend and DestBlend operations. <br> Available values: <em>Add</em>, <em>Substract</em>, <em>ReverseSubstract</em>, <em>Min</em> or <em>Max</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0SourceBlendAlpha <code>Value</code>]</span></td>
-<td>This blend option specifies the operation to perform on the alpha value that the pixel shader outputs. Blend options that end in <em>COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br> Availables values: <em>Zero</em>, <em>One</em> <em>SourceColor</em>, <em>InverseSourceColor</em>, <em>SourceAlpha</em>, <em>InverseSourceAlpha</em>, <em>DestinationAlpha</em>, <em>InverseDesinationAlpha</em>, <em>DestinationColor</em>, <em>InverseDestinatinoColor</em>, <em>SourceAlphaSaturate</em>, <em>BlendFactor</em>, <em>InverseBlendFactor</em>, <em>SecondarySourceColor</em>, <em>InverseSecondarySourceColor</em>, SecondarySourceAlpha</em> or <em>InverseSecondarySourceAlpha</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0DestinationBlendAlpha <code>Value</code>]</span></td>
-<td>This blend option specifies the operation to perform on the current alpha value in the render target. Blend options that end in <em>COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br> Availables values: <em>Zero</em>, <em>One</em> <em>SourceColor</em>, <em>InverseSourceColor</em>, <em>SourceAlpha</em>, <em>InverseSourceAlpha</em>, <em>DestinationAlpha</em>, <em>InverseDesinationAlpha</em>, <em>DestinationColor</em>, <em>InverseDestinatinoColor</em>, <em>SourceAlphaSaturate</em>, <em>BlendFactor</em>, <em>InverseBlendFactor</em>, <em>SecondarySourceColor</em>, <em>InverseSecondarySourceColor</em>, SecondarySourceAlpha</em> or <em>InverseSecondarySourceAlpha</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0BlendOperationAlpha <code>Value</code>]</span></td>
-<td>This blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha operations for RenderTarget 0. <br> Available values: <em>Add</em>, <em>Substract</em>, <em>ReverseSubstract</em>, <em>Min</em> or <em>Max</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[RT0ColorWriteChannels <code>Value</code>]</span></td>
-<td>A write mask for Render target 0. <br> Availables values: <em>None</em>, <em>Red</em>, <em>Green</em>, <em>Blue</em>, <em>Alpha</em> or <em>All</em>.</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Depth Stencil Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span style="color:lightgreen">[DepthEnable <code>bool</code>]</span></td>
-<td>Enable depth testing. <br> Availables values: <em>True</em> or <em>False</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[DepthWriteMask <code>bool</code>]</span></td>
-<td>Identify a portion of the depth-stencil buffer that can be modified by depth data. <br> Available values: <em>True</em> or <em>False</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[DepthFunction <code>Value</code>]</span></td>
-<td>A function that compares depth data against existing depth data. <br> Availables values: <em>Never</em>, <em>Less</em>, <em>Equal</em>, <em>LessEqual</em>, <em>Greater</em>, <em>NotEqual</em>, <em>GreaterEqual</em> or <em>Always</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[StencilEnable <code>bool</code>]</span></td>
-<td>Enable stencil testing. <br> Availables values: <em>True</em> or <em>False</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[StencilReadMask <code>byte</code>]</span></td>
-<td>Identify a portion of the depth-stencil buffer for reading stencil data. <br> The value is a byte.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[StencilWriteMask <code>byte</code>]</span></td>
-<td>Identify a portion of the depth-stencil buffer for writing stencil data. <br> The value is a byte.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[FrontFaceStencilFailOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing fails in FrontFace <br> Availables values: <em>Keep</em>, <em>Zero</em>, <em>Replace</em>, <em>IncrementSaturation</em>, <em>DescrementSaturation</em>, <em>Invert</em>, <em>Increment</em>, <em>Decrement</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[FrontFaceStencilDepthFailOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing passes and depth testing fails in FrontFace. <br> Availables values: <em>Keep</em>, <em>Zero</em>, <em>Replace</em>, <em>IncrementSaturation</em>, <em>DescrementSaturation</em>, <em>Invert</em>, <em>Increment</em>, <em>Decrement</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[FrontFaceStencilPassOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing and depth testing both pass in FrontFace. <br> Availables values: <em>Never</em>, <em>Less</em>, <em>Equal</em>, <em>LessEqual</em>, <em>Greater</em>, <em>NotEqual</em>, <em>GreaterEqual</em> or <em>Always</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[FrontFaceStencilFunction <code>Value</code>]</span></td>
-<td>A function that compares stencil data against existing stencil data in FrontFace. <br> Availables values: <em>Never</em>, <em>Less</em>, <em>Equal</em>, <em>LessEqual</em>, <em>Greater</em>, <em>NotEqual</em>, <em>GreaterEqual</em> or <em>Always</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[BackFaceStencilFailOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing fails in BackFace <br> Availables values: <em>Keep</em>, <em>Zero</em>, <em>Replace</em>, <em>IncrementSaturation</em>, <em>DescrementSaturation</em>, <em>Invert</em>, <em>Increment</em>, <em>Decrement</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[BackFaceStencilDepthFailOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing passes and depth testing fails in BackFace. <br> Availables values: <em>Keep</em>, <em>Zero</em>, <em>Replace</em>, <em>IncrementSaturation</em>, <em>DescrementSaturation</em>, <em>Invert</em>, <em>Increment</em>, <em>Decrement</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[BackFaceStencilPassOperation <code>Value</code>]</span></td>
-<td>The stencil operation to perform when stencil testing and depth testing both pass in BackFace. <br> Availables values: <em>Never</em>, <em>Less</em>, <em>Equal</em>, <em>LessEqual</em>, <em>Greater</em>, <em>NotEqual</em>, <em>GreaterEqual</em> or <em>Always</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[BackFaceStencilFunction <code>Value</code>]</span></td>
-<td>A function that compares stencil data against existing stencil data in BackFace. <br> Availables values: <em>Never</em>, <em>Less</em>, <em>Equal</em>, <em>LessEqual</em>, <em>Greater</em>, <em>NotEqual</em>, <em>GreaterEqual</em> or <em>Always</em>.</td>
-</tr>
-<tr>
-<td><span style="color:lightgreen">[StencilReference <code>int</code>]</span></td>
-<td>The reference value to use when doing a stencil test. <br> The value is a integer.</td>
+<td>Defines the compilation mode of the pass. Available mode list:<ul><li><strong>None:</strong> Default compilation mode.</li><li><strong>Debug:</strong> Debug mode includes debugging symbols to analyze with shader tools like <a href="https://renderdoc.org/">RenderDoc</a>, <a href="https://devblogs.microsoft.com/pix/introduction/">PIX</a>, or <a href="https://developer.nvidia.com/nsight-graphics">NVidia Nsight Graphics</a>.<br>See [Profile</li></ul></td>
 </tr>
 </tbody>
 </table>

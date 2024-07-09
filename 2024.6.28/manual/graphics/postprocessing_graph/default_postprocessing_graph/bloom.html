@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Bloom, Dirt, LightShaft and Lensflare | Evergine Doc </title>
+    <title>Bloom, Dirt, Light Shaft, and Lens Flare | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Bloom, Dirt, LightShaft and Lensflare | Evergine Doc ">
+    <meta name="title" content="Bloom, Dirt, Light Shaft, and Lens Flare | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../../favicon.ico">
@@ -81,11 +81,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="bloom-dirt-lightshaft-and-lensflare">Bloom, Dirt, LightShaft and Lensflare</h1>
+<h1 id="bloom-dirt-light-shaft-and-lens-flare">Bloom, Dirt, Light Shaft, and Lens Flare</h1>
 
-<p>In this section, multiples effects are explained because the process steps to calculate them are similar and they was implemented together for performance reasons.</p>
+<p>In this section, multiple effects are explained because the process steps to calculate them are similar, and they were implemented together for performance reasons.</p>
 <h2 id="bloom">Bloom</h2>
-<p>The effect produces fringes (or feathers) of light extending from the borders of bright areas in an image, contributing to the illusion of an extremely bright light overwhelming the camera or eye capturing the scene.</p>
+<p>This effect produces fringes (or feathers) of light extending from the borders of bright areas in an image, contributing to the illusion of an extremely bright light overwhelming the camera or eye capturing the scene.</p>
 <p><img src="images/Bloom.jpg" alt="Bloom"></p>
 <table>
 <thead>
@@ -97,15 +97,15 @@
 <tbody>
 <tr>
 <td><strong>Threshold</strong></td>
-<td>The pixels with a luminance higher than threshold value will apply the effect.</td>
+<td>Pixels with a luminance higher than the threshold value will apply the effect.</td>
 </tr>
 <tr>
 <td><strong>Color Intensity</strong></td>
-<td>Defines the bloom color intensity in the final blend image.</td>
+<td>Defines the bloom color intensity in the final blended image.</td>
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Defines how the render image and the bloom output will be blended.</td>
+<td>Defines how the rendered image and the bloom output will be blended.</td>
 </tr>
 </tbody>
 </table>
@@ -125,12 +125,12 @@
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Dirt intentsity or how the render image and the dirt output will be blended.</td>
+<td>Dirt intensity or how the rendered image and dirt output will be blended.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="lightshaft">LightShaft</h2>
-<p><strong>LightShaft</strong> also known as <strong>God Rays</strong> allows the viewer to see beams of light shining across the environment.</p>
+<h2 id="light-shaft">Light Shaft</h2>
+<p><strong>Light Shaft</strong>, also known as <strong>God Rays</strong>, allows the viewer to see beams of light shining across the environment.</p>
 <table>
 <thead>
 <tr>
@@ -140,12 +140,12 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Min.Threshold</strong></td>
-<td>Minimun luminance of the pixel will be affected by the effect.</td>
+<td><strong>Min. Threshold</strong></td>
+<td>Minimum luminance of the pixel to be affected by the effect.</td>
 </tr>
 <tr>
 <td><strong>Max. Threshold</strong></td>
-<td>Maximum luminance of the pixel will be affected by the effect.</td>
+<td>Maximum luminance of the pixel to be affected by the effect.</td>
 </tr>
 <tr>
 <td><strong>Scale</strong></td>
@@ -153,12 +153,12 @@
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Defines how the render image and the bloom output will be blended.</td>
+<td>Defines how the rendered image and the bloom output will be blended.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="lensflare">LensFlare</h2>
-<p>A <strong>Lens flare</strong> happens when light is scattered or flared in a lens system, often in response to a bright light, producing a sometimes undesirable artifact in the image. This happens through light scattered by the imaging mechanism itself, for example through internal reflection and forward scatter from material imperfections in the lens.</p>
+<h2 id="lens-flare">Lens Flare</h2>
+<p>A <strong>Lens Flare</strong> happens when light is scattered or flared in a lens system, often in response to bright light, producing a sometimes undesirable artifact in the image. This occurs through light scattered by the imaging mechanism itself, for example through internal reflection and forward scatter from material imperfections in the lens.</p>
 <p><img src="images/LensFlare.jpg" alt="Lens Flare"></p>
 <table>
 <thead>
@@ -170,35 +170,35 @@
 <tbody>
 <tr>
 <td><strong>Ghost Count</strong></td>
-<td>The ghost image number.</td>
+<td>The number of ghost images.</td>
 </tr>
 <tr>
 <td><strong>Ghost Spacing</strong></td>
 <td>The distance between ghost elements.</td>
 </tr>
 <tr>
-<td><strong>Ghost threshold</strong></td>
-<td>The pixels with upper luminance value to the threshold will be used to generate the ghost elements.</td>
+<td><strong>Ghost Threshold</strong></td>
+<td>Pixels with a luminance value above the threshold will be used to generate the ghost elements.</td>
 </tr>
 <tr>
-<td><strong>Halo radius</strong></td>
+<td><strong>Halo Radius</strong></td>
 <td>External halo radius.</td>
 </tr>
 <tr>
-<td><strong>Halo thickness</strong></td>
+<td><strong>Halo Thickness</strong></td>
 <td>External halo thickness.</td>
 </tr>
 <tr>
-<td><strong>Halo threshold</strong></td>
-<td>The pixels with upper luminance value to the threshold will be used to generate the halo.</td>
+<td><strong>Halo Threshold</strong></td>
+<td>Pixels with a luminance value above the threshold will be used to generate the halo.</td>
 </tr>
 <tr>
-<td><strong>Halo Chro. Aberration</strong></td>
-<td>Amout of chromatic aberration.</td>
+<td><strong>Halo Chromatic Aberration</strong></td>
+<td>Amount of chromatic aberration.</td>
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Defines how the render image and the bloom output will be blended.</td>
+<td>Defines how the rendered image and the bloom output will be blended.</td>
 </tr>
 </tbody>
 </table>

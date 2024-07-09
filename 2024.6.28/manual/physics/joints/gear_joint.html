@@ -86,7 +86,7 @@
 <video autoplay="" loop="" muted="" width="100%" height="auto">
   <source src="images/GearJointVideo.mp4" type="video/mp4">
 </video>
-<p>A <strong>Gear Joint</strong> is a type of constraint that allows you to create a relationship between two rigid bodies that is based on their angular velocities. Specifically, it lets you specify a gear ratio between the angular velocities of the two bodies, which can be used to create realistic mechanical systems like gears, pulleys, and other types of machinery.</p>
+<p>A <strong>Gear Joint</strong> is a type of constraint that allows you to create a relationship between two rigid bodies based on their angular velocities. Specifically, it lets you specify a gear ratio between the angular velocities of the two bodies, which can be used to create realistic mechanical systems like gears, pulleys, and other types of machinery.</p>
 <h2 id="gearjoint3d">GearJoint3D</h2>
 <p>In Evergine, a Gear Joint is implemented using the <code>GearJoint3D</code> component.</p>
 <p><img src="images/gearJointComponent.png" alt="Point-to-Point Joint"></p>
@@ -103,12 +103,12 @@
 <tr>
 <td><strong>ConnectedEntityPath</strong></td>
 <td>null</td>
-<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid a Joint is established properly.</td>
+<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid, a Joint is properly established.</td>
 </tr>
 <tr>
 <td><strong>Axis</strong></td>
 <td>0, 1, 0</td>
-<td>The axis rotation of the gear.</td>
+<td>The axis of rotation of the gear.</td>
 </tr>
 <tr>
 <td><strong>Ratio</strong></td>
@@ -118,7 +118,7 @@
 <tr>
 <td><strong>BreakPoint</strong></td>
 <td>0</td>
-<td>If the value is greater than 0, Indicates the force that needs to be applied for this joint to break.</td>
+<td>If the value is greater than 0, it indicates the force that needs to be applied for this joint to break.</td>
 </tr>
 <tr>
 <td><strong>CollideConnected</strong></td>
@@ -139,19 +139,17 @@
     // Load your material
     var material = this.Managers.AssetSceneManager.Load&lt;Material&gt;(DefaultResourcesIDs.DefaultMaterialID);
 
-    float sliderLength = 3;
-
-    // Create the slider holder...
+    // Create gear entities
     Entity gear1 = new Entity()
         .AddComponent(new Transform3D())
         .AddComponent(new Spinner() { AxisIncrease = new Vector3(0, 1f, 0) })
         .AddComponent(new MaterialComponent() { Material = material })
-        .AddComponent(new CylinderMesh() { Height = 0.1f, Diameter = 2})
+        .AddComponent(new CylinderMesh() { Height = 0.1f, Diameter = 2 })
         .AddComponent(new MeshRenderer())
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Kinematic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 
@@ -163,7 +161,7 @@
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Dynamic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 
@@ -175,7 +173,7 @@
         .AddComponent(new RigidBody3D()
         {
             PhysicBodyType = RigidBodyType3D.Dynamic,
-            LinearFactor = Vector3.Zero,                   // Lock the object position to avoid gravity fall...
+            LinearFactor = Vector3.Zero, // Lock the object's position to avoid gravity fall.
         })
         .AddComponent(new CylinderCollider3D());
 

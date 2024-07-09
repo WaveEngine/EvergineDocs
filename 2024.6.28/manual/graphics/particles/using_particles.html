@@ -84,13 +84,13 @@
 <h1 id="using-particles">Using Particles</h1>
 
 <p><img src="images/particles.jpg" alt="Particles header"></p>
-<p>In this document you will learn how to load and use <strong>Particle Systems</strong> in your applications.</p>
-<h2 id="how-to-create-particle-systems-from-evergine-studio">How to create particle systems from Evergine Studio.</h2>
-<p>For instantiating a <strong>Particle System</strong> into a <strong>Scene</strong> just drag the particle system asset from the <em>Asset Details Panel</em> into  your <strong>Scene</strong>.</p>
+<p>In this document, you will learn how to load and use <strong>Particle Systems</strong> in your applications.</p>
+<h2 id="how-to-create-particle-systems-from-evergine-studio">How to create particle systems from Evergine Studio</h2>
+<p>To instantiate a <strong>Particle System</strong> in a <strong>Scene</strong>, simply drag the particle system asset from the <em>Asset Details Panel</em> into your <strong>Scene</strong>.</p>
 <p><img src="images/drag_particles.jpg" alt="Dragging a Particle System"></p>
-<p>This will create a new entity the <strong>Scene</strong>.</p>
+<p>This will create a new entity in the <strong>Scene</strong>.</p>
 <p><img src="images/new_particles.jpg" alt="New Particle System"></p>
-<p>The new created entity has a <strong>Transform3D</strong> component and 2 new components:</p>
+<p>The newly created entity has a <strong>Transform3D</strong> component and two new components:</p>
 <h4 id="particlescomponent">ParticlesComponent</h4>
 <p>This component loads the <strong>Particle System</strong> asset and manages its simulation and resources.</p>
 <p>It has the following methods:</p>
@@ -112,7 +112,7 @@
 </tr>
 <tr>
 <td><strong>Reset ()</strong></td>
-<td>Resets all the particles to its initial state</td>
+<td>Resets all particles to their initial state</td>
 </tr>
 </tbody>
 </table>
@@ -129,27 +129,27 @@
 <tr>
 <td><strong>ParticleSystem</strong></td>
 <td><em>ParticleSystem</em></td>
-<td>Selects the particle system asset into this entity.</td>
+<td>Selects the particle system asset for this entity.</td>
 </tr>
 <tr>
 <td><strong>Force CPU Particles</strong></td>
 <td><em>boolean</em></td>
-<td>Forces the particle system to use a CPU simulation, even if the platform supports GPU particles. <em>(false by default)</em></td>
+<td>Forces the particle system to use CPU simulation, even if the platform supports GPU particles. <em>(false by default)</em></td>
 </tr>
 <tr>
 <td><strong>Emit Automatically</strong></td>
 <td><em>boolean</em></td>
-<td>When <em>true</em>, starts emitting particles when the scene is loaded. If <em>false</em> it will be idle until it's manually started. <em>(true by default)</em></td>
+<td>When <em>true</em>, starts emitting particles when the scene is loaded. If <em>false</em>, it will be idle until it is manually started. <em>(true by default)</em></td>
 </tr>
 <tr>
 <td><strong>Life Factor</strong></td>
 <td><em>float</em></td>
-<td>Factor applied to the life time of the particle. 2 will cause particles life reduced by half. <em>(1 by default)</em></td>
+<td>Factor applied to the lifetime of the particles. A value of 2 will cause the particles' life to be reduced by half. <em>(1 by default)</em></td>
 </tr>
 <tr>
 <td><strong>Time Factor</strong></td>
 <td><em>float</em></td>
-<td>Time factor applied to the <strong>whole particle simulation</strong>. A value of 2 will cause particles move at double speed, while 0.5 will slow down particles to half speed. <em>(1 by default)</em></td>
+<td>Time factor applied to the <strong>whole particle simulation</strong>. A value of 2 will cause particles to move at double speed, while 0.5 will slow down particles to half speed. <em>(1 by default)</em></td>
 </tr>
 </tbody>
 </table>

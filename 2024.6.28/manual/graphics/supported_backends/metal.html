@@ -85,17 +85,17 @@
 
 <p><img src="images/metal.jpg" alt="Metal API"></p>
 <p><strong>Metal</strong> is a low-level graphics and compute API created by <strong>Apple</strong> and is the default API on MacOS and iOS devices.</p>
-<p><strong>Metal</strong> has been available since June 2 2014 on iOS devices powered by Apple A7 or later and sice June 8 2015 on MacOS running OS X El capitan.</p>
-<p><strong>Evergine</strong> uses <strong>Metal</strong> API on MacOS and iOS devices like iPhone and IPad but also supports <a href="vulkan.html">Vulkan</a> graphics API on those platforms through MoltenVK which allows to convert a subset of <strong>Vulkan</strong> API to run on top of <strong>Metal</strong> on MacOS and iOS operating systems.</p>
+<p><strong>Metal</strong> has been available since June 2, 2014, on iOS devices powered by Apple A7 or later, and since June 8, 2015, on MacOS running OS X El Capitan.</p>
+<p><strong>Evergine</strong> uses the <strong>Metal</strong> API on MacOS and iOS devices like iPhone and iPad, but it also supports the <a href="vulkan.html">Vulkan</a> graphics API on these platforms through MoltenVK, which allows for the conversion of a subset of the <strong>Vulkan</strong> API to run on top of <strong>Metal</strong> on MacOS and iOS operating systems.</p>
 <h2 id="supported-metal-devices">Supported Metal devices</h2>
 <ul>
 <li>MacOS x64/x86/ARM64 desktop</li>
 <li>iOS iPhone and iPad</li>
 </ul>
 <h2 id="checking-metal-version">Checking Metal version</h2>
-<p>It is the default graphics API used on iOS and MacOS devices and <strong>Apple</strong> updates through updates. To make sure you have the latest version just update to the latest OS version.</p>
+<p><strong>Metal</strong> is the default graphics API used on iOS and MacOS devices, and <strong>Apple</strong> provides updates through system updates. To ensure you have the latest version, simply update to the latest OS version.</p>
 <h2 id="create-a-graphics-context">Create a Graphics Context</h2>
-<p>To create a graphics context based on <strong>Metal</strong> just write:</p>
+<p>To create a graphics context based on <strong>Metal</strong>, just write:</p>
 <pre><code class="lang-csharp">GraphicsContext graphicsContext = new Evergine.Metal.MTLGraphicsContext();
 graphicsContext.CreateDevice();
 </code></pre>

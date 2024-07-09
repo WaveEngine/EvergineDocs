@@ -88,7 +88,7 @@
 </video>
 <p>The <strong>Slider Joint</strong> allows rigid bodies to rotate around one axis and translate along the same axis.</p>
 <h2 id="sliderjoint3d">SliderJoint3D</h2>
-<p>In Evergine, a Hinge Joint is implemented using the <code>SliderJoint3D</code> component.</p>
+<p>In Evergine, a Slider Joint is implemented using the <code>SliderJoint3D</code> component.</p>
 <p><img src="images/sliderJointComponent.png" alt="Hinge Joint"></p>
 <h3 id="common-properties">Common Properties</h3>
 <table>
@@ -103,7 +103,7 @@
 <tr>
 <td><strong>ConnectedEntityPath</strong></td>
 <td>null</td>
-<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid a Joint is established properly.</td>
+<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid is a joint properly established.</td>
 </tr>
 <tr>
 <td><strong>Axis</strong></td>
@@ -128,12 +128,12 @@
 <tr>
 <td><strong>ConnectedAnchor</strong></td>
 <td><em>auto-calculated</em></td>
-<td>Manually configure the connected anchor position, in the connected body local space.</td>
+<td>Manually configure the connected anchor position in the connected body's local space.</td>
 </tr>
 <tr>
 <td><strong>BreakPoint</strong></td>
 <td>0</td>
-<td>If the value is greater than 0, Indicates the force that needs to be applied for this joint to break.</td>
+<td>If the value is greater than 0, it indicates the force that needs to be applied for this joint to break.</td>
 </tr>
 <tr>
 <td><strong>CollideConnected</strong></td>
@@ -143,7 +143,7 @@
 </tbody>
 </table>
 <h3 id="limit-properties">Limit Properties</h3>
-<p>The following properties set the limits of the rotation movement.</p>
+<p>The following properties set the limits of the rotational movement.</p>
 <table>
 <thead>
 <tr>
@@ -156,7 +156,7 @@
 <tr>
 <td><strong>UseLinearLimit</strong></td>
 <td>false</td>
-<td>If enabled, the position of the sliding object will be restricted within the <em>LowerAngularLimit</em> &amp; <em>UpperAngularLimit</em> values..</td>
+<td>If enabled, the position of the sliding object will be restricted within the <em>LowerLinearLimit</em> &amp; <em>UpperLinearLimit</em> values.</td>
 </tr>
 <tr>
 <td><strong>LowerLinearLimit</strong></td>
@@ -171,17 +171,17 @@
 <tr>
 <td><strong>UseAngularLimit</strong></td>
 <td>false</td>
-<td>If enabled, the angle of the slider will be restricted within the <em>LowerAngularLimit</em> &amp; <em>UpperAngularLimit</em> values..</td>
+<td>If enabled, the angle of the slider will be restricted within the <em>LowerAngularLimit</em> &amp; <em>UpperAngularLimit</em> values.</td>
 </tr>
 <tr>
 <td><strong>LowerAngularLimit</strong></td>
 <td>0</td>
-<td>The lowest angle the rotation can go.</td>
+<td>The lowest angle of the rotation.</td>
 </tr>
 <tr>
 <td><strong>UpperAngularLimit</strong></td>
 <td>0</td>
-<td>The highest  angle the rotation can go.</td>
+<td>The highest angle of the rotation.</td>
 </tr>
 </tbody>
 </table>
@@ -199,7 +199,7 @@
 <tr>
 <td><strong>UseLinearMotor</strong></td>
 <td>false</td>
-<td>If enabled, the motor makes the object spin around.</td>
+<td>If enabled, the motor makes the object slide linearly.</td>
 </tr>
 <tr>
 <td><strong>TargetLinearMotorVelocity</strong></td>
@@ -209,12 +209,12 @@
 <tr>
 <td><strong>MaxLinearMotorForce</strong></td>
 <td>0</td>
-<td>The linear force  applied in order to attain the speed.</td>
+<td>The linear force applied in order to attain the speed.</td>
 </tr>
 <tr>
 <td><strong>UseAngularMotor</strong></td>
 <td>false</td>
-<td>If enabled, the motor makes the object spin around.</td>
+<td>If enabled, the motor makes the object spin.</td>
 </tr>
 <tr>
 <td><strong>TargetAngularMotorVelocity</strong></td>
@@ -229,58 +229,58 @@
 </tbody>
 </table>
 <h2 id="using-slider-joint">Using Slider Joint</h2>
-<p>This snippet creates a small bridge of a series of connected  bodies.</p>
+<p>This snippet creates a small bridge of a series of connected bodies.</p>
 <video autoplay="" loop="" muted="" width="400px" height="auto">
   <source src="images/SliderJointSample.mp4" type="video/mp4">
 </video>
-<pre><code class="lang-csharp">        protected override void CreateScene()
+<pre><code class="lang-csharp">protected override void CreateScene()
+{
+    this.Managers.RenderManager.DebugLines = true;
+
+    // Load your material
+    var material = this.Managers.AssetSceneManager.Load&lt;Material&gt;(DefaultResourcesIDs.DefaultMaterialID);
+    var cubeMaterial = this.Managers.AssetSceneManager.Load&lt;Material&gt;(EvergineContent.CrateMat);
+
+    float sliderLength = 3;
+
+    // Create the slider holder...
+    Entity slider = new Entity()
+        .AddComponent(new Transform3D()
         {
-            this.Managers.RenderManager.DebugLines = true;
+            Scale = new Vector3(sliderLength, 0.1f, 0.1f),
+            Rotation = new Vector3(0, 0, MathHelper.ToRadians(-10)) // Rotate 10º the slider axis
+        })
+        .AddComponent(new MaterialComponent() { Material = material })
+        .AddComponent(new CubeMesh())
+        .AddComponent(new MeshRenderer())
+        .AddComponent(new RigidBody3D()
+        {
+            PhysicBodyType = RigidBodyType3D.Kinematic
+        });
 
-            // Load your material
-            var material = this.Managers.AssetSceneManager.Load&lt;Material&gt;(DefaultResourcesIDs.DefaultMaterialID);
-            var cubeMaterial = this.Managers.AssetSceneManager.Load&lt;Material&gt;(EvergineContent.CrateMat);
+    // Create the sliding object...
+    Entity cube = new Entity()
+        .AddComponent(new Transform3D())
+        .AddComponent(new MaterialComponent() { Material = cubeMaterial })
+        .AddComponent(new CubeMesh() { Size = 0.5f })
+        .AddComponent(new MeshRenderer())
+        .AddComponent(new RigidBody3D()
+        {
+            PhysicBodyType = RigidBodyType3D.Dynamic,
+        });
 
-            float sliderLength = 3;
+    // Create the Joint
+    slider.AddComponent(new SliderJoint3D()
+    {
+        ConnectedEntityPath = cube.EntityPath,
+        UseLinearLimit = true, // Limit the slider
+        LowerLinearLimit = -sliderLength / 2,
+        UpperLinearLimit = sliderLength / 2
+    });
 
-            // Create the slider holder...
-            Entity slider = new Entity()
-              .AddComponent(new Transform3D()
-              {
-                  Scale = new Vector3(sliderLength, 0.1f, 0.1f),
-                  Rotation = new Vector3(0, 0, MathHelper.ToRadians(-10))   // Rotate 10º the slider axis
-              })
-              .AddComponent(new MaterialComponent() { Material = material })
-              .AddComponent(new CubeMesh())
-              .AddComponent(new MeshRenderer())
-              .AddComponent(new RigidBody3D()
-              {
-                  PhysicBodyType = RigidBodyType3D.Kinematic
-              });
-
-            // Create the sliding object...
-            Entity cube = new Entity()
-              .AddComponent(new Transform3D())
-              .AddComponent(new MaterialComponent() { Material = cubeMaterial })
-              .AddComponent(new CubeMesh() { Size = 0.5f })
-              .AddComponent(new MeshRenderer())
-              .AddComponent(new RigidBody3D()
-              {
-                  PhysicBodyType = RigidBodyType3D.Dynamic,
-              });
-
-            // Create the Joint
-            slider.AddComponent(new SliderJoint3D()
-            {
-                ConnectedEntityPath = cube.EntityPath,
-                UseLinearLimit = true,                  // Limit the slider
-                LowerLinearLimit = -sliderLength / 2,
-                UpperLinearLimit = sliderLength / 2
-            });
-
-            this.Managers.EntityManager.Add(slider);
-            this.Managers.EntityManager.Add(cube);
-        }
+    this.Managers.EntityManager.Add(slider);
+    this.Managers.EntityManager.Add(cube);
+}
 </code></pre>
 
 </article>

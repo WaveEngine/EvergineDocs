@@ -84,14 +84,14 @@
 <h1 id="capsule-collider">Capsule Collider</h1>
 
 <p><img src="images/capsule_collider.png" alt="Capsule Collider"></p>
-<p>A Capsule shaped collider.</p>
+<p>A capsule-shaped collider.</p>
 <p>A capsule is a special shape defined by two properties:</p>
 <ul>
 <li><strong>Radius:</strong> The radius of the collider's local width.</li>
 <li><strong>Height:</strong> The total height of the collider.</li>
 </ul>
 <p><img src="images/capsule_shape.png" alt="Capsule shape"></p>
-<h2 id="spherecollider3d-component">SphereCollider3D component</h2>
+<h2 id="spherecollider3d-component">SphereCollider3D Component</h2>
 <p>To use a Sphere Collider in Evergine, you only need to add a <code>SphereCollider3D</code> component to your entity:</p>
 <p><img src="images/capsulecollider3d_component.png" alt="CapsuleCollider3D"></p>
 <h3 id="properties">Properties</h3>
@@ -107,22 +107,22 @@
 <tr>
 <td><strong>Radius</strong></td>
 <td>0.5</td>
-<td>This property define the radius of the Capsule collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_radius.mp4" type="video/mp4"></video><br>The <strong>Radius</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Radius value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Radius value is used as scene units.</li></ul></td>
+<td>This property defines the radius of the Capsule collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_radius.mp4" type="video/mp4"></video><br>The <strong>Radius</strong> value can be used in two ways:<ul><li>If the entity has a mesh (with <code>MeshComponent</code> for example), the Radius value is relative to the mesh extents.</li><li>If the entity has no meshes, the Radius value is used as scene units.</li></ul></td>
 </tr>
 <tr>
 <td><strong>Height</strong></td>
 <td>1</td>
-<td>This property define the total height of the Capsule collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_height.mp4" type="video/mp4"></video><br>The <strong>Height</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Height value is relative to the mesh height.</li><li>If the entity hasn't any meshes, the Radius value is used as scene units.</li></ul></td>
+<td>This property defines the total height of the Capsule collider. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_height.mp4" type="video/mp4"></video><br>The <strong>Height</strong> value can be used in two ways:<ul><li>If the entity has a mesh (with <code>MeshComponent</code> for example), the Height value is relative to the mesh height.</li><li>If the entity has no meshes, the Height value is used as scene units.</li></ul></td>
 </tr>
 <tr>
 <td><strong>Offset</strong></td>
 <td>0,0,0</td>
-<td>Offset the collider respect the owner entity. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_offset.mp4" type="video/mp4"></video><br>The <strong>Offset</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Offset value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Offset value is used as scene units.</li></ul></td>
+<td>Offsets the collider with respect to the owner entity. <br><video width="600" height="220" autoplay="" loop=""><source src="images/capsule_collider_offset.mp4" type="video/mp4"></video><br>The <strong>Offset</strong> value can be used in two ways:<ul><li>If the entity has a mesh (with <code>MeshComponent</code> for example), the Offset value is relative to the mesh extents.</li><li>If the entity has no meshes, the Offset value is used as scene units.</li></ul></td>
 </tr>
 <tr>
 <td><strong>Margin</strong></td>
 <td>0.04</td>
-<td>Physic Engine uses a small collision margin for collision shapes, to improve performance and reliability of the collision detection.</td>
+<td>The physics engine uses a small collision margin for collision shapes to improve performance and reliability of the collision detection.</td>
 </tr>
 </tbody>
 </table>

@@ -83,8 +83,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="scene-managers">Scene Managers</h1>
 
-<p>In <strong>Evergine</strong> the <strong>SceneManagers</strong> are elements that control some important aspects of the scene. They are not based as entities because they behave as a global element of the scene and cannot be attached into a specific entity.</p>
-<p>All SceneManagers in a Scene can be accessed using the <code>Scene.Managers</code> property. This allow to register and access SceneManagers.</p>
+<p>In <strong>Evergine</strong>, the <strong>SceneManagers</strong> are elements that control important aspects of the scene. They are not based on entities because they behave as global elements of the scene and cannot be attached to a specific entity.</p>
+<p>All SceneManagers in a scene can be accessed using the <code>Scene.Managers</code> property. This allows for registering and accessing SceneManagers.</p>
 <h2 id="default-scenemanagers">Default SceneManagers.</h2>
 <p><strong>Evergine</strong> scenes are created with some <strong>SceneManagers</strong> by default. These are:</p>
 <table>
@@ -104,7 +104,7 @@
 <tr>
 <td><strong>AssetsSceneManager</strong></td>
 <td><code>this.Managers.AssetsSceneManager</code></td>
-<td>Controls the asset of the scene. More information below.</td>
+<td>Controls the assets of the scene. More information below.</td>
 </tr>
 <tr>
 <td><strong>BehaviorManager</strong></td>
@@ -119,98 +119,91 @@
 <tr>
 <td><strong>EnvironmentManager</strong></td>
 <td><code>this.Managers.EnvironmentManager</code></td>
-<td>Controls the environmental information of the scene. Their Reflection Probes, their environmental radiance and irrandiance maps, etc. More information in the <a href="../../graphics/environment/index.html">Environment</a> article.</td>
+<td>Controls the environmental information of the scene, including reflection probes, environmental radiance, and irradiance maps. More information in the <a href="../../graphics/environment/index.html">Environment</a> article.</td>
 </tr>
 <tr>
-<td><strong>PhysicManager3D</strong></td>
-<td><code>this.Managers.PhysicManager3D</code></td>
-<td>Manages the physic simulation. All the Rigid or Static bodies are registered into this manager. More information in the <a href="../../physics/physicmanager_bullet.html">Physic Manager and Bullet</a> article.</td>
+<td><strong>PhysicsManager3D</strong></td>
+<td><code>this.Managers.PhysicsManager3D</code></td>
+<td>Manages the physics simulation. All the rigid or static bodies are registered with this manager. More information in the <a href="../../physics/physicmanager_bullet.html">Physics Manager and Bullet</a> article.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The <strong>PhysicsManager3D</strong> scene manager is not registered by default although in the project template it's loaded in the <strong>RegisterManagers</strong> method of the template scene class.</p>
+<p>The <strong>PhysicsManager3D</strong> scene manager is not registered by default, although in the project template, it's loaded in the <strong>RegisterManagers</strong> method of the template scene class.</p>
 </div>
 <h3 id="assets-scene-manager">Assets Scene Manager</h3>
-<p>The <strong>AssetsSceneManager</strong> controls all the asset loaded in the scene. When the scene is disposed <strong>AssetsSceneManager</strong> automatically unloads all the assets of the scene, releasing all the GPU memory in the process. More information in the <a href="../../evergine_studio/assets/use.html">Use Assets</a> article.</p>
-<h2 id="create-custom-scenemanager">Create custom SceneManager</h2>
-<p>In the previous section we've covered all the default <strong>SceneManagers</strong> of the scene. However you can create your own <strong>SceneManager</strong>.</p>
-<p>For doing that:</p>
+<p>The <strong>AssetsSceneManager</strong> controls all the assets loaded in the scene. When the scene is disposed, the <strong>AssetsSceneManager</strong> automatically unloads all the assets of the scene, releasing all the GPU memory in the process. More information in the <a href="../../evergine_studio/assets/use.html">Use Assets</a> article.</p>
+<h2 id="create-custom-scenemanager">Create Custom SceneManager</h2>
+<p>In the previous section, we've covered all the default <strong>SceneManagers</strong> of the scene. However, you can create your own <strong>SceneManager</strong>.</p>
+<p>To do this:</p>
 <ul>
 <li>Create a new class in the <strong>Evergine</strong> project in the <strong>Visual Studio Solution</strong>.</li>
-<li>Set that the new class inherit from <strong>SceneManager</strong> class.</li>
+<li>Set the new class to inherit from the <strong>SceneManager</strong> class.</li>
 </ul>
-<p>The new created scene manager can use all the <strong>lifecycle</strong> methods like <strong>OnAttached</strong>, <strong>OnDetach</strong>, etc. More information in <a href="../lifecycle_elements.html">Life cycle</a> article.</p>
+<p>The newly created scene manager can use all the <strong>lifecycle</strong> methods like <strong>OnAttached</strong>, <strong>OnDetach</strong>, etc. More information in the <a href="../lifecycle_elements.html">Life Cycle</a> article.</p>
 <h3 id="updatablescenemanager">UpdatableSceneManager</h3>
-<p>In addition, instead on creating a class that inherit <strong>SceneManager</strong> we can choose to inherit from <strong>UpdatableSceneManager</strong>. This class has an <strong>Update</strong> method that will be called in every frame. This is useful for managers that need to update some components in real time. For example, <strong>PhysicManager3D</strong> controls the physic simulation using this method.</p>
+<p>In addition, instead of creating a class that inherits from <strong>SceneManager</strong>, we can choose to inherit from <strong>UpdatableSceneManager</strong>. This class has an <strong>Update</strong> method that will be called in every frame. This is useful for managers that need to update some components in real-time. For example, <strong>PhysicsManager3D</strong> controls the physics simulation using this method.</p>
 <h2 id="using-scenemanagers">Using SceneManagers</h2>
 <h3 id="register-a-scene-manager">Register a Scene Manager</h3>
 <p>We can register a new <strong>SceneManager</strong> from code like this:</p>
-<pre><code class="lang-csharp">
-// We can register a scene manager directly using the actual instance.
+<pre><code class="lang-csharp">// We can register a scene manager directly using the actual instance.
 this.Managers.AddManager(new MyManager());
 
-// Alternatively we can register by type. Useful when dealing with abstract classes.
+// Alternatively, we can register by type, which is useful when dealing with abstract classes.
 this.Managers.AddManager&lt;PhysicsManager3D&gt;(new BulletPhysicsManager3D());
-
 </code></pre>
-<h3 id="unregister-a-scene-manager">Unregister a Scene Manager.</h3>
-<p>We can also unregister calling the following function:</p>
-<pre><code class="lang-csharp">
-// We can remove the manager using its instance.
+<h3 id="unregister-a-scene-manager">Unregister a Scene Manager</h3>
+<p>We can also unregister a scene manager by calling the following function:</p>
+<pre><code class="lang-csharp">// We can remove the manager using its instance.
 this.Managers.RemoveManager(myManagerInstance);
 
-// Or the type. For example, next line will remove BulletPhysicsManager3D manager that we registered in the previous section.
+// Or by type. For example, the next line will remove the BulletPhysicsManager3D manager that we registered in the previous section.
 this.Managers.RemoveManager&lt;PhysicsManager3D&gt;();
 </code></pre>
 <h3 id="obtaining-a-scenemanager">Obtaining a SceneManager</h3>
 <p>We can obtain a registered <strong>SceneManager</strong> in several ways.</p>
-<h4 id="using-bindscenemanager-attribute">Using [BindSceneManager] attribute</h4>
-<p>With the [BindSceneManager] attribute in your Component or another custom SceneManager (See the <a href="../bindings/index.html">Binding article</a>)</p>
-<pre><code class="lang-csharp">
-public class MyComponent : Component 
+<h4 id="using-bindscenemanager-attribute">Using [BindSceneManager] Attribute</h4>
+<p>With the [BindSceneManager] attribute in your Component or another custom SceneManager (See the <a href="../bindings/index.html">Binding article</a>):</p>
+<pre><code class="lang-csharp">public class MyComponent : Component 
 {    
     [BindSceneManager]
     public RenderManager RenderManager;
 
     protected override void Start()
     {
-        // Once the component is attached, the RenderManager property has being bound...
+        // Once the component is attached, the RenderManager property has been bound...
         this.RenderManager.DebugLines = true;
     }
 }
-
 </code></pre>
-<h4 id="searching-the-scenemanager-directly">Searching the SceneManager directly</h4>
-<p>Using the SceneManager.FindManager<t>() you can find your desired manager</t></p>
-<pre><code class="lang-csharp">
-MyManager manager = this.Managers.FindManager&lt;MyManager&gt;();
+<h4 id="searching-the-scenemanager-directly">Searching the SceneManager Directly</h4>
+<p>Using the <code>SceneManager.FindManager&lt;T&gt;()</code> you can find your desired manager:</p>
+<pre><code class="lang-csharp">MyManager manager = this.Managers.FindManager&lt;MyManager&gt;();
 
-// This for example will return the BulletPhysicsManager3D registered before.
+// This, for example, will return the BulletPhysicsManager3D registered before.
 PhysicsManager3D physics = this.Managers.FindManager&lt;PhysicsManager3D&gt;();
 
-// For default SceneManagers you can access using quick properties :)
+// For default SceneManagers, you can access them using quick properties :)
 RenderManager renderManager = this.Managers.RenderManager;
-
 </code></pre>
-<h2 id="scene-managers-in-evergine-studio">Scene managers in Evergine Studio</h2>
-<p>Until <em>Evergine 2022.2.16</em>, default scene template included an entity named <em>SceneManagers</em> to configure some of built-in managers. From now, this entity is no longer included when you create a new scene, as scene managers are included in a separate panel.</p>
+<h2 id="scene-managers-in-evergine-studio">Scene Managers in Evergine Studio</h2>
+<p>Until <em>Evergine 2022.2.16</em>, the default scene template included an entity named <em>SceneManagers</em> to configure some built-in managers. From now on, this entity is no longer included when you create a new scene, as scene managers are included in a separate panel.</p>
 <p><img src="images/managers-panel.jpg" alt="Scene managers panel"></p>
-<p>In that panel, you count with a user interface very similar to <em>Entity Details</em> panel, where you can manage components for an entity. In this case, you can manage scene managers for your scene. Behavior is the same: to add a new manager, just make use of add button and search for the element you want.</p>
+<p>In that panel, you have a user interface very similar to the <em>Entity Details</em> panel, where you can manage components for an entity. In this case, you can manage scene managers for your scene. The behavior is the same: to add a new manager, just use the add button and search for the element you want.</p>
 <p><img src="images/managers-add.jpg" alt="Scene update for managers"></p>
-<p>By default, managers search window will scan all available managers in your project and Evergine core libraries. If you don't want that one of your custom managers to be selectable, mark your class with <em>[Discoverable(false)]</em> attribute.</p>
-<pre><code>[Discoverable(false)]
+<p>By default, the managers search window will scan all available managers in your project and Evergine core libraries. If you don't want one of your custom managers to be selectable, mark your class with the <em>[Discoverable(false)]</em> attribute.</p>
+<pre><code class="lang-csharp">[Discoverable(false)]
 public class MyManager : SceneManager
 {
 }
 </code></pre>
-<p>To remove a manager from a scene, just right click over the element and select remove option. There are a few managers that are required for the engine to correctly work, so you should be careful about removing them. Anyways, a confirmation message will be displayed if you try to remove one of those managers.</p>
+<p>To remove a manager from a scene, just right-click over the element and select the remove option. There are a few managers that are required for the engine to work correctly, so you should be careful about removing them. A confirmation message will be displayed if you try to remove one of those managers.</p>
 <p><img src="images/managers-remove.jpg" alt="Scene update for managers"></p>
-<h3 id="migrating-older-scenes">Migrating older scenes</h3>
-<p>For scenes created with Until <em>Evergine 2022.2.16</em> or below, <em>Evergine Studio</em> will ask you for asset update once you open the scene file. It will automatically copy your custom values for shadows and environment managers located in obsolete <em>SceneManagers</em> entity to scene managers saved within your scene.</p>
+<h3 id="migrating-older-scenes">Migrating Older Scenes</h3>
+<p>For scenes created with <em>Evergine 2022.2.16</em> or below, <em>Evergine Studio</em> will ask you for an asset update once you open the scene file. It will automatically copy your custom values for shadows and environment managers located in the obsolete <em>SceneManagers</em> entity to scene managers saved within your scene.</p>
 <p><img src="images/managers-scene-update.jpg" alt="Scene update for managers"></p>
-<p>It is recommendable to confirm scene update when requested, but this process can't be undone if, for some reason, you decide to go back to <em>Evergine 2022.2.16</em>. Once scene asset is updated, <em>SceneManagers</em> entity will be removed and replaced by entries in managers file section.</p>
+<p>It is recommended to confirm the scene update when requested, but this process cannot be undone if, for some reason, you decide to go back to <em>Evergine 2022.2.16</em>. Once the scene asset is updated, the <em>SceneManagers</em> entity will be removed and replaced by entries in the managers file section.</p>
 
 </article>
           </div>

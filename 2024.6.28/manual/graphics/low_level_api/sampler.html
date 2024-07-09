@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="sampler">Sampler</h1>
 
-<p>A <strong>Sampler State</strong> is a low level object that encapsulates how a texture will be sampled in your application.</p>
+<p>A <strong>Sampler State</strong> is a low-level object that encapsulates how a texture will be sampled in your application.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a sampler, first you need to create the SamplerStateDescription struct:</p>
+<p>To create a sampler, you first need to create the <code>SamplerStateDescription</code> struct:</p>
 <pre><code class="lang-csharp">// Linear clamp sampler state
 var samplerDescription = new SamplerStateDescription()
 {
@@ -141,7 +141,7 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 <tr>
 <td><strong>MaxAnisotropy</strong></td>
 <td><code>uint</code></td>
-<td>Clamping value used if D3D11_FILTER_ANISOTROPIC or D3D11_FILTER_COMPARISON_ANISOTROPIC is specified in Filter. Valid values are between 1 and 16.</td>
+<td>Clamping value used if <code>D3D11_FILTER_ANISOTROPIC</code> or <code>D3D11_FILTER_COMPARISON_ANISOTROPIC</code> is specified in Filter. Valid values are between 1 and 16.</td>
 </tr>
 <tr>
 <td><strong>ComparisonFunc</strong></td>
@@ -156,12 +156,12 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 <tr>
 <td><strong>MinLOD</strong></td>
 <td><code>float</code></td>
-<td>Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed.</td>
+<td>Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level, and any level higher than that is less detailed.</td>
 </tr>
 <tr>
 <td><strong>MaxLOD</strong></td>
 <td><code>float</code></td>
-<td>Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. This value must be greater than or equal to MinLOD.</td>
+<td>Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level, and any level higher than that is less detailed. This value must be greater than or equal to MinLOD.</td>
 </tr>
 </tbody>
 </table>
@@ -252,7 +252,7 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 Valid values are between 1 and 16.</p>
 <p><img src="images/Sampler_Anisotropy.jpg" alt="Graphics"></p>
 <h2 id="presets">Presets</h2>
-<p>To make the sampler construction easy, you can use <code>Evergine.Common.SamplerStates</code> to describe the most common sampler descriptions:</p>
+<p>To simplify sampler construction, you can use <code>Evergine.Common.SamplerStates</code> to describe the most common sampler descriptions:</p>
 <table>
 <thead>
 <tr>
@@ -289,7 +289,7 @@ Valid values are between 1 and 16.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="default-initialization">Default initialization</h3>
+<h3 id="default-initialization">Default Initialization</h3>
 <pre><code class="lang-csharp">public void SetDefault()
 {
     this.Filter = TextureFilter.MinLinear_MagLinear_MipLinear;
@@ -304,7 +304,7 @@ Valid values are between 1 and 16.</p>
     this.BorderColor = SamplerBorderColor.OpaqueWhite;
 }
 </code></pre>
-<h3 id="presets-initialization">Presets initialization</h3>
+<h3 id="presets-initialization">Presets Initialization</h3>
 <pre><code class="lang-csharp">PointClamp = SamplerStateDescription.Default;
 PointClamp.Filter = TextureFilter.MinPoint_MagPoint_MipPoint;
 

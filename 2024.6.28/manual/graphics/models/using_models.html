@@ -84,9 +84,9 @@
 <h1 id="using-models">Using Models</h1>
 
 <p><img src="images/UsingModels.jpg" alt="Models header"></p>
-<p>In this document you will learn how to load and use <strong>Models</strong> in your applications.</p>
-<h2 id="load-model-from-code">Load Model from code</h2>
-<p>The following sample code can be used to instantiate an existing <strong>Model</strong> asset (<code>camera.fbx</code> in this case) into your scene, creating a entity hierarchy.</p>
+<p>In this document, you will learn how to load and use <strong>Models</strong> in your applications.</p>
+<h2 id="load-model-from-code">Load Model from Code</h2>
+<p>The following sample code can be used to instantiate an existing <strong>Model</strong> asset (<code>camera.fbx</code> in this case) into your scene, creating an entity hierarchy.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
@@ -97,19 +97,19 @@
     // Apply to an entity
     Entity camera = cameraModel.InstantiateModelHierarchy(assetsService);
 
-    // Alternatively this method accepts the name of the root entity.
+    // Alternatively, this method accepts the name of the root entity.
     Entity camera = cameraModel.InstantiateModelHierarchy(&quot;coolCamera&quot;, assetsService);
 
-    // Adds the entity into the scene.
+    // Add the entity into the scene.
     this.Managers.EntityManager.Add(camera);
 }
 </code></pre>
-<h2 id="how-to-create-models-from-evergine-studio">How to create models from Evergine Studio.</h2>
-<p>For instantiating a <strong>Model</strong> into a <strong>Scene</strong> just drag the model asset from the <em>Asset Details Panel</em> into  your <strong>Scene</strong>.</p>
+<h2 id="how-to-create-models-from-evergine-studio">How to Create Models from Evergine Studio</h2>
+<p>To instantiate a <strong>Model</strong> into a <strong>Scene</strong>, simply drag the model asset from the <em>Asset Details Panel</em> into your <strong>Scene</strong>.</p>
 <p><img src="images/DragModel.jpg" alt="Dragging a Model"></p>
 <p>This will instantiate a full hierarchy of entities into the <strong>Scene</strong>.</p>
 <p><img src="images/NewModel.jpg" alt="New Model"></p>
-<p>The new created hiearchy has the next kind of entities:</p>
+<p>The newly created hierarchy contains the following types of entities:</p>
 <table>
 <thead>
 <tr>
@@ -120,23 +120,23 @@
 <tbody>
 <tr>
 <td><strong>Root</strong></td>
-<td>The root node of the hierarchy. If the model contains animation this entity will contain the <strong>Animation3D</strong> component.</td>
+<td>The root node of the hierarchy. If the model contains animation, this entity will contain the <strong>Animation3D</strong> component.</td>
 </tr>
 <tr>
 <td><strong>Node</strong></td>
-<td>Nodes without geometry attached. They are empty entities with just a <strong>Transform3D</strong> with the specific position, scale and orientation.</td>
+<td>Nodes without geometry attached. They are empty entities with just a <strong>Transform3D</strong> with the specific position, scale, and orientation.</td>
 </tr>
 <tr>
 <td><strong>Mesh</strong></td>
-<td><div><p>Node that contains geometry. It contains the following components: <li><strong>MeshComponent</strong>, specifying with mesh from the model it will show.</li><li><strong>MaterialComponent</strong>. For every different material from the entity mesh, a component will be created.</li><li><strong>MeshRenderer</strong> for rendering the geometry.</li></div></td>
+<td><div><p>Node that contains geometry. It includes the following components: <li><strong>MeshComponent</strong>, specifying which mesh from the model will be shown.</li><li><strong>MaterialComponent</strong>. For every different material from the entity mesh, a component will be created.</li><li><strong>MeshRenderer</strong> for rendering the geometry.</li></div></td>
 </tr>
 <tr>
 <td><strong>Skin</strong></td>
-<td>If the node contains a skinned mesh, it will have the same components of a normal <em>Mesh</em> node, but using <strong>SkinnedMeshRenderer</strong> component instead.</td>
+<td>If the node contains a skinned mesh, it will have the same components as a normal <em>Mesh</em> node but will use the <strong>SkinnedMeshRenderer</strong> component instead.</td>
 </tr>
 </tbody>
 </table>
-<p>As you can see this, entity hierarchy mirrors the inner <strong>Model</strong> asset structure seen <a href="index.html">here</a>.</p>
+<p>As you can see, this entity hierarchy mirrors the inner <strong>Model</strong> asset structure seen <a href="index.html">here</a>.</p>
 
 </article>
           </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Ruler module | Evergine Doc </title>
+    <title>Ruler Module | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Ruler module | Evergine Doc ">
+    <meta name="title" content="Ruler Module | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../../../favicon.ico">
@@ -81,22 +81,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="ruler-module">Ruler module</h1>
+<h1 id="ruler-module">Ruler Module</h1>
 
-<p>This module lets users to measure elements in virtual space. It creates a basic ruler element with manipulators in both ends. When user grabs any of these manipulators, distance from one side to the other will be automatically calculated.</p>
+<p>This module allows users to measure elements in virtual space. It creates a basic ruler element with manipulators at both ends. When the user grabs any of these manipulators, the distance from one side to the other is automatically calculated.</p>
 <p><img src="images/snapshot.png" alt="snapshot"></p>
 <h2 id="installation">Installation</h2>
-<p>This module is packaged as <a href="../../../index.html">Evergine add-on</a>. To use it in your project, just install it from <em>Project Settings &gt; Add-Ons</em> window.</p>
+<p>This module is packaged as an <a href="../../../index.html">Evergine add-on</a>. To use it in your project, install it from the <em>Project Settings &gt; Add-Ons</em> window.</p>
 <p><img src="images/installation.png" alt="Module installation"></p>
-<p>Then, just register the module programmatically within your XRV service instance.</p>
+<p>Then, register the module programmatically within your XRV service instance.</p>
 <pre><code class="lang-csharp">var xrv = new XrvService()
     .AddModule(new RulerModule());
 </code></pre>
 <h2 id="usage">Usage</h2>
 <ul>
-<li><img src="images/measure.png" alt="snapshot"> button is added to hand menu. Tapping on this button will toggle ruler visibility.</li>
-<li>Drag line ends will update distance measurement.</li>
-<li>Access to <a href="../../settings_system.html">Settings</a> to change current measure units. You can choose between meters and feet.</li>
+<li>The <img src="images/measure.png" alt="snapshot"> button is added to the hand menu. Tapping this button will toggle the ruler's visibility.</li>
+<li>Dragging the line ends will update the distance measurement.</li>
+<li>Access <a href="../../settings_system.html">Settings</a> to change the current measurement units. You can choose between meters and feet.</li>
 </ul>
 
 </article>

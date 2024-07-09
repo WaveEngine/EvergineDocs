@@ -83,32 +83,32 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="using-entities">Using Entities</h1>
 
-<p>Manipulate Entities is quite straightforward in Evergine.</p>
+<p>Manipulating entities is quite straightforward in Evergine.</p>
 <h2 id="from-evergine-studio">From Evergine Studio</h2>
 <h3 id="add-entity-in-evergine-studio">Add Entity in Evergine Studio</h3>
-<p>In the <strong>Entities Hiearchy</strong> area in an oppened SceneEditor,  just click the <img src="../../../graphics/images/plusIcon.jpg" alt="Add Button"> button. A popup menu will appear:</p>
+<p>In the <strong>Entities Hierarchy</strong> area in an opened SceneEditor, just click the <img src="../../../graphics/images/plusIcon.jpg" alt="Add Button"> button. A pop-up menu will appear:</p>
 <p><img src="images/create_entity.png" alt="Create Entity"></p>
-<p>This menu gives you several options to create entities. If you just want to create an Entity with only the Transform3D component, click the <code>Empty entity</code>  button.</p>
-<p>If an Entity is selected, you can change its properties (Name, Tag, enable) in the Entity Details panel:</p>
+<p>This menu gives you several options to create entities. If you just want to create an entity with only the Transform3D component, click the <code>Empty entity</code> button.</p>
+<p>If an entity is selected, you can change its properties (Name, Tag, Enable) in the Entity Details panel:</p>
 <p><img src="images/entity_details.png" alt="Entity details"></p>
 <h2 id="from-code">From Code</h2>
-<h3 id="create-a-new-entity-from-code">Create a new Entity from code</h3>
-<p>Creating and Entity from code is a not a complex task:</p>
+<h3 id="create-a-new-entity-from-code">Create a new Entity from Code</h3>
+<p>Creating an entity from code is not a complex task:</p>
 <pre><code class="lang-csharp">Entity entity = new Entity(&quot;EntityName&quot;);
 
 // Set the Entity Tag...
-entity.Tag = &quot;Tag&quot;
+entity.Tag = &quot;Tag&quot;;
 
 // Add some components...
-entity.AddComponent(new Transform3D());
+entity.AddComponent(new Transform3D())
     .AddComponent(new TeapotMesh())
     .AddComponent(new MaterialComponent())
-    .AddComponent(new MeshRenderer())
+    .AddComponent(new MeshRenderer());
 
 // Add to the EntityManager
 this.Managers.EntityManager.Add(entity);
 </code></pre>
-<h3 id="create-a-simple-hierarchy-from-code">Create a simple Hierarchy from code</h3>
+<h3 id="create-a-simple-hierarchy-from-code">Create a Simple Hierarchy from Code</h3>
 <pre><code class="lang-csharp">// Create the parent entity...
 Entity parentEntity = new Entity()
     .AddComponent(new Transform3D());

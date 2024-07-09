@@ -84,7 +84,7 @@
 <h1 id="built-in-effects">Built-in Effects</h1>
 
 <hr>
-<p>In this section are described the effects included in <a href="../../addons/index.html"><strong>Evergine.Core</strong> package</a></p>
+<p>This section describes the effects included in the <a href="../../addons/index.html"><strong>Evergine.Core</strong> package</a>.</p>
 <h2 id="standard-effect">Standard Effect</h2>
 <table>
 <thead>
@@ -96,11 +96,11 @@
 <tbody>
 <tr>
 <td><strong>Lighting enabled</strong></td>
-<td>Indicates that the material interacts with the lights of the scene. In the following image the left material has disabled ligth and the right material has it enabled <br> <img src="images/DefaultMaterialLightOnOff.png" alt="Light off/on"></td>
+<td>Indicates that the material interacts with the lights of the scene. In the following image, the left material has lighting disabled and the right material has it enabled. <br> <img src="images/DefaultMaterialLightOnOff.png" alt="Light off/on"></td>
 </tr>
 <tr>
 <td><strong>IBL enabled</strong></td>
-<td>Indicates that the material reflects the enviroment of the scene. In the following image the left material has disabled it while the right material has it enabled <br> <img src="images/DefaultMaterialIBLOnOff.png" alt="IBL off/on"></td>
+<td>Indicates that the material reflects the environment of the scene. In the following image, the left material has it disabled while the right material has it enabled. <br> <img src="images/DefaultMaterialIBLOnOff.png" alt="IBL off/on"></td>
 </tr>
 <tr>
 <td><strong>Base Color</strong></td>
@@ -108,11 +108,11 @@
 </tr>
 <tr>
 <td><strong>Alpha</strong></td>
-<td>Indicates the transparent of the surface. <em>Note. This parameter requires set the LayerDescription property to Alpha or a layer with blend mode enable</em> <br> <img src="images/DefaultMaterialAlphaOnOff.png" alt="Alpha values"></td>
+<td>Indicates the transparency of the surface. <em>Note: This parameter requires setting the LayerDescription property to Alpha or a layer with blend mode enabled.</em> <br> <img src="images/DefaultMaterialAlphaOnOff.png" alt="Alpha values"></td>
 </tr>
 <tr>
 <td><strong>Vertex Color</strong></td>
-<td>Indicates the surface color will be read from vertex data of the mesh.</td>
+<td>Indicates that the surface color will be read from vertex data of the mesh.</td>
 </tr>
 <tr>
 <td><strong>Base Color Texture</strong></td>
@@ -120,23 +120,23 @@
 </tr>
 <tr>
 <td><strong>Base Color Sampler</strong></td>
-<td>Albedo texture sampler used by Base Color Texture.</td>
+<td>Albedo texture sampler used by the Base Color Texture.</td>
 </tr>
 <tr>
 <td><strong>UVOffsets 0</strong></td>
-<td>Texcoord UV offset added to the vertex texcoord data of the mesh. <em>Note. You can create interesting material effect only animating this parameter.</em></td>
+<td>Texcoord UV offset added to the vertex texcoord data of the mesh. <em>Note: You can create interesting material effects by animating this parameter.</em></td>
 </tr>
 <tr>
 <td><strong>Metallic</strong></td>
-<td>Indicates how &quot;metal-like&quot; the surface is. Its value is between [0-1]. In the following image you can see the result with different values. <br> <img src="images/DefaultMaterialMetallic.png" alt="Metallic values"></td>
+<td>Indicates how &quot;metal-like&quot; the surface is. Its value is between [0-1]. In the following image, you can see the result with different values. <br> <img src="images/DefaultMaterialMetallic.png" alt="Metallic values"></td>
 </tr>
 <tr>
 <td><strong>Roughness</strong></td>
-<td>Defines the smoothness or roughness of the surface. The value is between 0.0 and 1.0 <br> <img src="images/DefaultMaterialRoughness.png" alt="Roughness values"></td>
+<td>Defines the smoothness or roughness of the surface. The value is between 0.0 and 1.0. <br> <img src="images/DefaultMaterialRoughness.png" alt="Roughness values"></td>
 </tr>
 <tr>
 <td><strong>Reflectance</strong></td>
-<td>Fresnel reflectance at normal incidence for dieletrice surface. This replaces an explicit index of refraction. <br> <img src="images/DefaultMaterialReflectance.png" alt="Reflectance values"></td>
+<td>Fresnel reflectance at normal incidence for dielectric surfaces. This replaces an explicit index of refraction. <br> <img src="images/DefaultMaterialReflectance.png" alt="Reflectance values"></td>
 </tr>
 <tr>
 <td><strong>Reference Alpha</strong></td>
@@ -152,7 +152,7 @@
 </tr>
 <tr>
 <td><strong>OrderBias</strong></td>
-<td>This value is used to modify the rendering order of the meshes</td>
+<td>This value is used to modify the rendering order of the meshes.</td>
 </tr>
 <tr>
 <td><strong>LayerDescription</strong></td>
@@ -171,7 +171,7 @@
 <tbody>
 <tr>
 <td><strong>MetalRoughness Texture</strong></td>
-<td>This texture allows to define multiples roughness and metallic values to the surface area instead a constant roughness/metallic value for all surface. Note. the Metallic value is (blue channel) and Roughness is (green channel).</td>
+<td>This texture allows defining multiple roughness and metallic values to the surface area instead of a constant roughness/metallic value for the whole surface. Note: Metallic value is in the blue channel and Roughness is in the green channel.</td>
 </tr>
 <tr>
 <td><strong>MetalRoughness Sampler</strong></td>
@@ -190,15 +190,15 @@
 <tbody>
 <tr>
 <td><strong>Normal Texture</strong></td>
-<td>This texture allows to simulate more details without using more polygons.</td>
+<td>This texture allows simulating more details without using more polygons.</td>
 </tr>
 <tr>
-<td><strong>Normal Smapler</strong></td>
+<td><strong>Normal Sampler</strong></td>
 <td>Sampler used by the Normal texture.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ambient-occlusion">Ambient occlusion</h3>
+<h3 id="ambient-occlusion">Ambient Occlusion</h3>
 <table>
 <thead>
 <tr>
@@ -227,8 +227,8 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>EmissiveColor</strong></td>
-<td>Additional diffuse color to simulate emissive surfaces (such as neons, etc.) This parameter is mostly useful in an HDR pipeline with a bloom pass.</td>
+<td><strong>Emissive Color</strong></td>
+<td>Additional diffuse color to simulate emissive surfaces (such as neons, etc.). This parameter is mostly useful in an HDR pipeline with a bloom pass.</td>
 </tr>
 <tr>
 <td><strong>Emissive Compensation</strong></td>
@@ -236,7 +236,7 @@
 </tr>
 <tr>
 <td><strong>Emissive Texture</strong></td>
-<td>Additional diffuse albedo to simulate emissive surfaces (such as neons, etc.) This parameter is mostly useful in an HDR pipeline with a <a href="../postprocessing_graph/default_postprocessing_graph/bloom.html">bloom postprocessing effect</a>.</td>
+<td>Additional diffuse albedo to simulate emissive surfaces (such as neons, etc.). This parameter is mostly useful in an HDR pipeline with a <a href="../postprocessing_graph/default_postprocessing_graph/bloom.html">bloom postprocessing effect</a>.</td>
 </tr>
 <tr>
 <td><strong>Emissive Sampler</strong></td>
@@ -255,7 +255,7 @@
 <tbody>
 <tr>
 <td><strong>ClearCoat</strong></td>
-<td>Strength of the clear coat layer. Scalar between 0 and 1</td>
+<td>Strength of the clear coat layer. Scalar between 0 and 1.</td>
 </tr>
 <tr>
 <td><strong>ClearCoat Roughness</strong></td>
@@ -263,7 +263,7 @@
 </tr>
 <tr>
 <td><strong>ClearCoat Normal Texture</strong></td>
-<td>Normal map texture that affects to the clear coat layer.</td>
+<td>Normal map texture that affects the clear coat layer.</td>
 </tr>
 <tr>
 <td><strong>ClearCoat Normal Sampler</strong></td>
@@ -282,11 +282,11 @@
 <tbody>
 <tr>
 <td><strong>Dual Texture Blend</strong></td>
-<td>Blend mode between Base Color and 2nd Base Color. Availables values: <em>Lightmap</em>, <em>Multiplicative</em>, <em>Additive</em>, <em>Mask</em>.</td>
+<td>Blend mode between Base Color and 2nd Base Color. Available values: <em>Lightmap</em>, <em>Multiplicative</em>, <em>Additive</em>, <em>Mask</em>.</td>
 </tr>
 <tr>
 <td><strong>UV Offsets 1</strong></td>
-<td>UV Coord offset apply to the 2nd UV coords on the vertex format.</td>
+<td>UV Coord offset applied to the 2nd UV coords on the vertex format.</td>
 </tr>
 <tr>
 <td><strong>2nd Base Color Texture</strong></td>
@@ -294,12 +294,12 @@
 </tr>
 <tr>
 <td><strong>2nd Base Color Sampler</strong></td>
-<td>Sampler used by the 2nd Base Color texture</td>
+<td>Sampler used by the 2nd Base Color texture.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="distortion-effect">Distortion Effect</h2>
-<p>This effect requires to use <strong>Distortion effect</strong> inside of <a href="../postprocessing_graph/default_postprocessing_graph/tonemapping.html"><strong>Default postprocessing effect</strong></a>)</p>
+<p>This effect requires the <strong>Distortion effect</strong> inside the <a href="../postprocessing_graph/default_postprocessing_graph/tonemapping.html"><strong>Default postprocessing effect</strong></a>.</p>
 <table>
 <thead>
 <tr>
@@ -314,11 +314,11 @@
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Define the intensity of the distortion.</td>
+<td>Defines the intensity of the distortion.</td>
 </tr>
 <tr>
 <td><strong>Distortion Texture</strong></td>
-<td>The texture used with the distortion</td>
+<td>The texture used with the distortion.</td>
 </tr>
 <tr>
 <td><strong>Sampler</strong></td>

@@ -84,13 +84,13 @@
 <h1 id="environment-textures">Environment Textures</h1>
 
 <p><img src="images/environment_material.jpg" alt="Environment Textures"></p>
-<p>This is the best way to transfer the illumination of a equirectangular HDR image to your scene.</p>
-<h2 id="equirectangular-textures">Equirectangular textures</h2>
-<p>A equirectangular image is created to convert a 360º view into a 2D texture. It usually has an aspect ratio of 2:1.</p>
-<p>If you use HDR equirectangular images (generally <code>.hdr</code> format) will produce more realistic illuminations. In <a href="https://polyhaven.com/hdris">Poly Haven</a> site you can find a lot of environment textures grouped by categories (outdoor, skies, indoor, night, etc...)</p>
+<p>This is the best way to transfer the illumination of an equirectangular HDR image to your scene.</p>
+<h2 id="equirectangular-textures">Equirectangular Textures</h2>
+<p>An equirectangular image is created to convert a 360º view into a 2D texture. It usually has an aspect ratio of 2:1.</p>
+<p>Using HDR equirectangular images (generally <code>.hdr</code> format) will produce more realistic illumination. On the <a href="https://polyhaven.com/hdris">Poly Haven</a> site, you can find many environment textures grouped by categories (outdoor, skies, indoor, night, etc.)</p>
 <p><img src="images/venice_hdr.jpg" alt="Equirectangular"></p>
 <h2 id="skyboxeffect">SkyboxEffect</h2>
-<p>En Evergine, to create an environment lighting from a equirectangular image, you need to create a environment sphere dome with a SkyboxEffect material, that will use the HDR environment texture.</p>
+<p>In Evergine, to create environment lighting from an equirectangular image, you need to create an environment sphere dome with a SkyboxEffect material that will use the HDR environment texture.</p>
 <p>The SkyboxEffect only has 3 useful properties:</p>
 <table>
 <thead>
@@ -102,7 +102,7 @@
 <tbody>
 <tr>
 <td><strong>Texture</strong></td>
-<td>The equirectangular image to use as environment.</td>
+<td>The equirectangular image to use as the environment.</td>
 </tr>
 <tr>
 <td><strong>TextureSampler</strong></td>
@@ -110,7 +110,7 @@
 </tr>
 <tr>
 <td><strong>Parameters_Intensity</strong></td>
-<td>A factor that modify the intensity of the texture. This is used to increase or reduce the brightness of the texture.</td>
+<td>A factor that modifies the intensity of the texture. This is used to increase or reduce the brightness of the texture.</td>
 </tr>
 </tbody>
 </table>
@@ -119,24 +119,24 @@
 <p>If you want to use this effect with a common SphereMesh, use the <strong>Skybox</strong> layer in the LayerDescription property.</p>
 </div>
 <p><img src="images/skybox_effect.png" alt="SkyboxEffect"></p>
-<h2 id="using-skybox-material">Using Skybox material</h2>
-<p>Steps to create an Environmental lighting using a equirectangular image:</p>
+<h2 id="using-skybox-material">Using Skybox Material</h2>
+<p>Steps to create environmental lighting using an equirectangular image:</p>
 <ol>
-<li>Import into your Evergine project an equirectangular HDR image.</li>
-<li>Create a new SkyboxEffect material</li>
+<li>Import an equirectangular HDR image into your Evergine project.</li>
+<li>Create a new SkyboxEffect material.</li>
 <li>Edit the new SkyboxEffect material, and set the Texture property with the imported equirectangular image.</li>
-<li>Assign the Skybox LayerDescription tho the new SkyboxEffect material.</li>
+<li>Assign the Skybox LayerDescription to the new SkyboxEffect material.</li>
 <li>Now you have two options:
 <ul>
 <li><strong>Option A (reuse the SkyAtmosphere):</strong>
 <ul>
-<li>Select the SkyAtmosphere entity, in the MaterialComponent, set the new SkyboxEffect material. This will override the AtmosphereController appearance.</li>
+<li>Select the SkyAtmosphere entity, and in the MaterialComponent, set the new SkyboxEffect material. This will override the AtmosphereController appearance.</li>
 </ul>
 </li>
 <li><strong>Option B (create a new sky dome):</strong>
 <ol>
 <li>Create a new Sphere primitive in your scene, and assign the new SkyboxEffect material.</li>
-<li>In the new entity, set the Tag property to &quot;Skybox&quot;</li>
+<li>In the new entity, set the Tag property to &quot;Skybox&quot;.</li>
 <li>Delete the SkyAtmosphere entity.</li>
 </ol>
 </li>

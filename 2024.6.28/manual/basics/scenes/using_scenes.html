@@ -83,17 +83,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="using-scenes">Using Scenes</h1>
 
-<p>For loading and launching a <strong>Scene</strong> from code we have to use <strong>ScreenContextManager</strong> and understand the concept of <strong>ScreenContexts</strong>.</p>
+<p>To load and launch a <strong>Scene</strong> from code, we need to use <strong>ScreenContextManager</strong> and understand the concept of <strong>ScreenContexts</strong>.</p>
 <h3 id="screencontext">ScreenContext</h3>
-<p>A <strong>ScreenContext</strong> represents a list of <strong>Scenes</strong> that can be simultanously loaded in the application at the same time.</p>
+<p>A <strong>ScreenContext</strong> represents a list of <strong>Scenes</strong> that can be simultaneously loaded in the application.</p>
 <p><img src="images/ScreenContext.png" alt="ScreenContext"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>For example, this the diagram above depicts a <strong>ScreenContext</strong> containing two scenes: <em>MainScene</em> for the application logic, and <em>UIScene</em> another one just the <strong>UI</strong>.</p>
+<p>For example, the diagram above depicts a <strong>ScreenContext</strong> containing two scenes: <em>MainScene</em> for the application logic and <em>UIScene</em>, another one just for the <strong>UI</strong>.</p>
 </div>
 <h3 id="screencontextmanager">ScreenContextManager</h3>
-<p><strong>ScreenContextManager</strong> is a <a href="../services.html">Service</a> that manages the <strong>Scene navigation</strong> between scenes or, more accurately, <strong>ScreenContext</strong>.
-Its main methods are:</p>
+<p><strong>ScreenContextManager</strong> is a <a href="../services.html">Service</a> that manages the <strong>Scene navigation</strong> between scenes or, more accurately, <strong>ScreenContexts</strong>. Its main methods are:</p>
 <table>
 <thead>
 <tr>
@@ -104,11 +103,11 @@ Its main methods are:</p>
 <tbody>
 <tr>
 <td>To</td>
-<td>Navigating to a new <strong>ScreenContext</strong>  (passed by parameter), replacing the previous <strong>ScreenContext.</strong></td>
+<td>Navigates to a new <strong>ScreenContext</strong> (passed by parameter), replacing the previous <strong>ScreenContext</strong>.</td>
 </tr>
 <tr>
 <td>Push</td>
-<td>Navigtes to a new <strong>ScreenContext</strong> but keeps the previous one in a stack so we can restore later.</td>
+<td>Navigates to a new <strong>ScreenContext</strong> but keeps the previous one in a stack so we can restore it later.</td>
 </tr>
 <tr>
 <td>Pop</td>
@@ -116,24 +115,24 @@ Its main methods are:</p>
 </tr>
 <tr>
 <td>FindContextByName</td>
-<td>For searching among the <strong>ScreenContext</strong> list.</td>
+<td>Searches among the <strong>ScreenContext</strong> list.</td>
 </tr>
 </tbody>
 </table>
-<p>So loading and navigating to a <strong>Scene</strong> by code would be like this (this code is placed in the <strong>Application</strong> class):</p>
+<p>So, loading and navigating to a <strong>Scene</strong> by code would be like this (this code is placed in the <strong>Application</strong> class):</p>
 <pre><code class="lang-csharp">
-// Loads the scenes. will create MyScene and UIScene objects which should be existing classes that intherit Scene class.
-// These scenes are populated with all entities defined in its respectives assets (MainScene.wescene and UIScene.wescene)
+// Loads the scenes. This will create MyScene and UIScene objects which should be existing classes that inherit from the Scene class.
+// These scenes are populated with all entities defined in their respective assets (MainScene.wescene and UIScene.wescene).
 
 var baseScene = assetsService.Load&lt;MyScene&gt;(EvergineContent.Scenes.MainScene_wescene);
 var uiScene = assetsService.Load&lt;UIScene&gt;(EvergineContent.Scenes.UIScene_wescene);
 
-// Creates a context and navigate to it.
-ScreenContext screenContext = new ScreenContext(scene, uiScene);
+// Creates a context and navigates to it.
+ScreenContext screenContext = new ScreenContext(baseScene, uiScene);
 screenContextManager.To(screenContext);
 
 </code></pre>
-<p>For more details read the <a href="../application/screen_context_manager.html">ScreenContextManager</a> section.</p>
+<p>For more details, read the <a href="../application/screen_context_manager.html">ScreenContextManager</a> section.</p>
 
 </article>
           </div>

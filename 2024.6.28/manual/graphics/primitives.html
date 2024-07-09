@@ -85,7 +85,7 @@
 
 <hr>
 <p><img src="images/primitives.jpg" alt="Primitives"></p>
-<p>Evergine has a 3D <strong>primitives</strong> collection that you can use for prototyping proposes. The primitives are easier and faster to use so they are very useful when you are making tests or your creating a prototype scene.</p>
+<p>Evergine has a collection of 3D <strong>primitives</strong> that you can use for prototyping purposes. The primitives are easier and faster to use, making them very useful when you are conducting tests or creating a prototype scene.</p>
 <p>Primitive collection:</p>
 <ul>
 <li>Capsule</li>
@@ -98,34 +98,34 @@
 <li>Teapot</li>
 <li>Torus</li>
 </ul>
-<p>The main difference of using primitives instead of a <a href="models/index.html">Model</a> is that in that case the Mesh is generated procedurally, instead of obtaining it from an asset. It allows you to parametrice the way this mesh is generated.</p>
-<h2 id="create-primitive-from-evergine-studio">Create primitive from Evergine Studio</h2>
-<p>From the Entity Hierarchy panel click on<img src="images/plusIcon.jpg" alt="plus"> button and go to Primitives 3D submenu.</p>
+<p>The main difference between using primitives and using a <a href="models/index.html">Model</a> is that in the case of primitives, the Mesh is generated procedurally instead of being obtained from an asset. This allows you to parameterize the way the mesh is generated.</p>
+<h2 id="create-a-primitive-from-evergine-studio">Create a Primitive from Evergine Studio</h2>
+<p>From the Entity Hierarchy panel, click on the <img src="images/plusIcon.jpg" alt="plus"> button and go to the Primitives 3D submenu.</p>
 <p><img src="images/CreatePrimitivesMenu.jpg" alt="Create Primitive"></p>
-<h2 id="create-primtive-from-code">Create primtive from code</h2>
-<p>To create a primitive only need to create an entity with the following components:</p>
+<h2 id="create-a-primitive-from-code">Create a Primitive from Code</h2>
+<p>To create a primitive, you only need to create an entity with the following components:</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
-        {
-            var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
+{
+    var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
 
-            var material = assetsService.Load&lt;Material&gt;(EvergineContent.Materials.DefaultMaterial);
+    var material = assetsService.Load&lt;Material&gt;(EvergineContent.Materials.DefaultMaterial);
 
-            Entity cubeEntity = new Entity()
-                .AddComponent(new Transform3D())
-                .AddComponent(new MaterialComponent() { Material = material })
-                .AddComponent(new CubeMesh()) // A cube primitive
-                .AddComponent(new MeshRenderer());
+    Entity cubeEntity = new Entity()
+        .AddComponent(new Transform3D())
+        .AddComponent(new MaterialComponent() { Material = material })
+        .AddComponent(new CubeMesh()) // A cube primitive
+        .AddComponent(new MeshRenderer());
 
-            this.Managers.EntityManager.Add(cubeEntity);
-        }
+    this.Managers.EntityManager.Add(cubeEntity);
+}
 </code></pre>
 <div class="TIP">
 <h5>Tip</h5>
-<p>To create primitive only need to change <em>CubeMesh</em> component by <em>CapsuleMesh</em>, <em>ConeMesh</em>, <em>CylinderMesh</em>, <em>PlaneMesh</em>, <em>PyramidMesh</em>, <em>SphereMesh</em>, <em>TeapotMesh</em> or <em>TorusMesh</em> component.</p>
+<p>To create a primitive, you only need to change the <em>CubeMesh</em> component to <em>CapsuleMesh</em>, <em>ConeMesh</em>, <em>CylinderMesh</em>, <em>PlaneMesh</em>, <em>PyramidMesh</em>, <em>SphereMesh</em>, <em>TeapotMesh</em>, or <em>TorusMesh</em> component.</p>
 </div>
 <h2 id="cube-parameters">Cube Parameters</h2>
 <p><img src="images/cube.png" alt="Cube"></p>
-<p>The component for create this primitive is <code>CubeMesh</code></p>
+<p>The component to create this primitive is <code>CubeMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -140,11 +140,11 @@
 </tr>
 <tr>
 <td><strong>UVHorizontalFlip</strong></td>
-<td>Value indicating whether to flip the horizontal texture coordinate.</td>
+<td>Indicates whether to flip the horizontal texture coordinate.</td>
 </tr>
 <tr>
 <td><strong>UVVerticalFlip</strong></td>
-<td>Value indicating whether to flip the vertical texture coordinate.</td>
+<td>Indicates whether to flip the vertical texture coordinate.</td>
 </tr>
 <tr>
 <td><strong>InitialU</strong></td>
@@ -166,7 +166,7 @@
 </table>
 <h2 id="sphere-parameters">Sphere Parameters</h2>
 <p><img src="images/sphere.png" alt="Sphere"></p>
-<p>The component for create this primitive is <code>SphereMesh</code></p>
+<p>The component to create this primitive is <code>SphereMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -185,17 +185,17 @@
 </tr>
 <tr>
 <td><strong>UVHorizontalFlip</strong></td>
-<td>Value indicating whether to flip the horizontal texture coordinate.</td>
+<td>Indicates whether to flip the horizontal texture coordinate.</td>
 </tr>
 <tr>
 <td><strong>UVVerticalFlip</strong></td>
-<td>Value indicating whether to flip the vertical texture coordinate.</td>
+<td>Indicates whether to flip the vertical texture coordinate.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="plane-parameters">Plane Parameters</h2>
 <p><img src="images/plane.png" alt="Plane"></p>
-<p>The component for create this primitive is <code>PlaneMesh</code></p>
+<p>The component to create this primitive is <code>PlaneMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -206,7 +206,7 @@
 <tbody>
 <tr>
 <td><strong>PlaneNormal</strong></td>
-<td>The normal of the plane. Availables values: <ul><li>XPositive<li>YPositive<li>ZPositive<li>XNegative<li>YNegative<li>ZNegative</li></ul></td>
+<td>The normal of the plane. Available values: <ul><li>XPositive</li><li>YPositive</li><li>ZPositive</li><li>XNegative</li><li>YNegative</li><li>ZNegative</li></ul></td>
 </tr>
 <tr>
 <td><strong>Width</strong></td>
@@ -218,23 +218,23 @@
 </tr>
 <tr>
 <td><strong>TwoSides</strong></td>
-<td>Value indicating whether the plane has two sides. By default botton face of the plane is not generated.</td>
+<td>Indicates whether the plane has two sides. By default, the bottom face of the plane is not generated.</td>
 </tr>
 <tr>
 <td><strong>UMirror</strong></td>
-<td>Value indicating whether to flip the horizontal texture coordinate.</td>
+<td>Indicates whether to flip the horizontal texture coordinate.</td>
 </tr>
 <tr>
 <td><strong>VMirror</strong></td>
-<td>Value indicating whether to flip the vertical texture coordinate.</td>
+<td>Indicates whether to flip the vertical texture coordinate.</td>
 </tr>
 <tr>
 <td><strong>UOffset</strong></td>
-<td>Apply an offset to the horizontal texture coordinates.</td>
+<td>Applies an offset to the horizontal texture coordinates.</td>
 </tr>
 <tr>
 <td><strong>VOffset</strong></td>
-<td>Apply an offset to the vertical  texture coordinates.</td>
+<td>Applies an offset to the vertical texture coordinates.</td>
 </tr>
 <tr>
 <td><strong>UTile</strong></td>
@@ -246,13 +246,13 @@
 </tr>
 <tr>
 <td><strong>Origin</strong></td>
-<td>Represent the pivot in a normalized position. By default the value is (0.5, 0.5), which indicatest that the PlaneMesh position is measured from the center of the plane.</td>
+<td>Represents the pivot in a normalized position. By default, the value is (0.5, 0.5), which indicates that the PlaneMesh position is measured from the center of the plane.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="teapot-parameters">Teapot Parameters</h2>
 <p><img src="images/teapot.png" alt="Teapot"></p>
-<p>The component for create this primitive is <code>TeapotMesh</code></p>
+<p>The component to create this primitive is <code>TeapotMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -273,7 +273,7 @@
 </table>
 <h2 id="capsule-parameters">Capsule Parameters</h2>
 <p><img src="images/capsule.png" alt="Capsule"></p>
-<p>The component for create this primitive is <code>CapsuleMesh</code></p>
+<p>The component to create this primitive is <code>CapsuleMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -292,13 +292,13 @@
 </tr>
 <tr>
 <td><strong>Tessellation</strong></td>
-<td>the tessellation of the capsule. Must be even.</td>
+<td>The tessellation of the capsule. Must be even.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="cone-parameters">Cone Parameters</h2>
 <p><img src="images/cone.png" alt="Cone"></p>
-<p>The component for create this primitive is <code>ConeMesh</code></p>
+<p>The component to create this primitive is <code>ConeMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -323,7 +323,7 @@
 </table>
 <h2 id="cylinder-parameters">Cylinder Parameters</h2>
 <p><img src="images/cylinder.png" alt="Cylinder"></p>
-<p>The component for create this primitive is <code>CylinderMesh</code></p>
+<p>The component to create this primitive is <code>CylinderMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -348,7 +348,7 @@
 </table>
 <h2 id="pyramid-parameters">Pyramid Parameters</h2>
 <p><img src="images/pyramid.png" alt="Pyramid"></p>
-<p>The component for create this primitive is <code>PyramidMesh</code></p>
+<p>The component to create this primitive is <code>PyramidMesh</code>.</p>
 <table>
 <thead>
 <tr>
@@ -358,14 +358,14 @@
 </thead>
 <tbody>
 <tr>
-<td>Size</td>
+<td><strong>Size</strong></td>
 <td>The size of the pyramid. Must be greater than 0.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="torus-parameters">Torus Parameters</h2>
 <p><img src="images/torus.png" alt="Torus"></p>
-<p>The component for create this primitive is <code>TorusMesh</code></p>
+<p>The component to create this primitive is <code>TorusMesh</code>.</p>
 <table>
 <thead>
 <tr>

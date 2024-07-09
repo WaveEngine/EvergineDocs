@@ -85,15 +85,15 @@
 
 <hr>
 <p><img src="images/environment.png" alt="Environment"></p>
-<p>In this section we will cover how you can control in Evergine the environmental light.</p>
+<p>In this section, we will cover how you can control the environmental light in Evergine.</p>
 <h2 id="image-based-lighting-ibl">Image Based Lighting (IBL)</h2>
-<p><strong>Image Based lighting (IBL)</strong> is a rendering technique which involves capturing an omnidirectional representation of real-world light information as an image, typically using a 360° camera. This image is then projected onto a dome or sphere analogously to environment mapping, and this is used to simulate the lighting for the objects in the scene. This allows highly detailed real-world lighting to be used to light a scene, instead of trying to accurately model illumination using an existing rendering technique.</p>
+<p><strong>Image Based Lighting (IBL)</strong> is a rendering technique that involves capturing an omnidirectional representation of real-world light information as an image, typically using a 360° camera. This image is then projected onto a dome or sphere, similar to environment mapping, and is used to simulate the lighting for objects in the scene. This allows highly detailed real-world lighting to be used to light a scene instead of trying to accurately model illumination using an existing rendering technique.</p>
 <p>Image-based lighting often uses <strong>high-dynamic-range</strong> (HDR) imaging for greater realism.</p>
 <p><img src="images/ibl.jpg" alt="IBL"></p>
 <p>IBL involves the creation of two lighting components:</p>
 <ul>
 <li><strong>Irradiance map</strong> (Diffuse): For the diffuse illumination, we need what is called an Irradiance Map. This usually involves a cubemap (or Spherical Harmonics) that stores the amount of light coming from each direction.</li>
-<li><strong>Radiance map</strong> (Specular): Now, when we get to specular illumination, we need a texture called  <strong>Pre-filtered Mip-Mapped Radiance Environment Map (PMREM)</strong>. This is another cubemap that pre-calculate the reflected environment. An as an addition, it store in its MipMap levels different reflections for roughness values. <img src="images/ibl_prefilter_map.png" alt="radiance"> <a href="https://learnopengl.com/PBR/IBL/Specular-IBL"><em>Credits LearnOpenGL</em></a></li>
+<li><strong>Radiance map</strong> (Specular): For specular illumination, we need a texture called <strong>Pre-filtered Mip-Mapped Radiance Environment Map (PMREM)</strong>. This is another cubemap that pre-calculates the reflected environment. Additionally, it stores different reflections for various roughness values in its MipMap levels. <img src="images/ibl_prefilter_map.png" alt="radiance"> <a href="https://learnopengl.com/PBR/IBL/Specular-IBL"><em>Credits LearnOpenGL</em></a></li>
 </ul>
 <p>Evergine will use Image Based Lighting to create environmental illumination.</p>
 <h2 id="in-this-section">In this section</h2>

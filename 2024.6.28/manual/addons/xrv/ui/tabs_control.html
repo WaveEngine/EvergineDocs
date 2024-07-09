@@ -83,10 +83,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="tabs-control">Tabs Control</h1>
 
-<p>Tabs control gives basic infrastructure and functionality to add tabbed panels to your application.</p>
+<p>The Tabs control gives basic infrastructure and functionality to add tabbed panels to your application.</p>
 <p>It provides a container and a tab navigation system.</p>
 <p><img src="images/tabs_control_base.png" alt="tab container base"></p>
-<p>It provides following properties to customize the control.</p>
+<p>It offers the following properties to customize the control:</p>
 <table>
 <thead>
 <tr>
@@ -97,20 +97,20 @@
 <tbody>
 <tr>
 <td><code>Size</code></td>
-<td>Set size for the container.</td>
+<td>Sets the size for the container.</td>
 </tr>
 <tr>
 <td><code>SelectedItem</code></td>
-<td>Sets selected tab, and show associated content.</td>
+<td>Sets the selected tab and shows the associated content.</td>
 </tr>
 <tr>
 <td><code>Builder</code></td>
-<td>returns <code>TabControlBuilder</code></td>
+<td>Returns <code>TabControlBuilder</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-a-tab-control-programmatically">Create a tab control programmatically</h2>
-<p>Easiest way to create a tab instance is to use <code>TabControlBuilder</code> provides features related to add content in the tab control.</p>
+<p>The easiest way to create a tab instance is to use <code>TabControlBuilder</code>, which provides features related to adding content to the tab control.</p>
 <table>
 <thead>
 <tr>
@@ -129,15 +129,15 @@
 </tr>
 <tr>
 <td><code>WithSize</code></td>
-<td>Specifies a size for tab control</td>
+<td>Specifies a size for the tab control.</td>
 </tr>
 <tr>
 <td><code>WithActiveItemTextColor</code></td>
-<td>Specifies active text color for tab item.</td>
+<td>Specifies the active text color for the tab item.</td>
 </tr>
 <tr>
 <td><code>WithInactiveItemTextColor</code></td>
-<td>Specifies inactive text color for tab item.</td>
+<td>Specifies the inactive text color for the tab item.</td>
 </tr>
 </tbody>
 </table>
@@ -151,10 +151,9 @@
     })
     .Build();  
 </code></pre>
-<p>In <em>XRV</em> we make use of this tab control builder in configuration and help windows. If you want a window which only content entity is a tab control, you can
-make use of <em>TabbedWindow</em> class.</p>
+<p>In <em>XRV</em>, we use this tab control builder in configuration and help windows. If you want a window where the only content entity is a tab control, you can make use of the <em>TabbedWindow</em> class.</p>
 <h2 id="tab-items-definition">Tab items definition</h2>
-<p><code>TabItem</code> provides tab and content for the tab control.</p>
+<p><code>TabItem</code> provides tabs and content for the tab control.</p>
 <table>
 <thead>
 <tr>

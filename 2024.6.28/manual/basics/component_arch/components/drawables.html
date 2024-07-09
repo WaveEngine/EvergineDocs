@@ -84,10 +84,10 @@
 <h1 id="drawables">Drawables</h1>
 
 <hr>
-<p>The <strong>Drawables</strong> are one kind of Component that allows you to do and action each Draw/Render cycle of the Application. A Drawable is associated with an Entity and all Drawables in a scene are managed by <a href="../../../graphics/rendering_overview.html"><strong>RenderManager</strong></a>.</p>
+<p><strong>Drawables</strong> are a type of Component that allows you to perform an action during each Draw/Render cycle of the Application. A Drawable is associated with an Entity, and all Drawables in a scene are managed by <a href="../../../graphics/rendering_overview.html"><strong>RenderManager</strong></a>.</p>
 <h2 id="drawable3d">Drawable3D</h2>
 <p><img src="../../../graphics/images/teapot.png" alt="Drawable3D"></p>
-<p><strong>Drawables3D</strong> are a kind of drawables that is designed to provides 3D content. They will be processed on every <strong>Camera3D</strong> render. In these components you usually create graphics elements to draw 3D features (models, billboard, background environment, etc...)</p>
+<p><strong>Drawable3Ds</strong> are a type of Drawable designed to provide 3D content. They are processed on every <strong>Camera3D</strong> render. In these components, you usually create graphic elements to draw 3D features (models, billboards, background environments, etc...).</p>
 <p>Add the following property:</p>
 <table>
 <thead>
@@ -104,7 +104,7 @@
 </tbody>
 </table>
 <h3 id="creating-a-drawable3d">Creating a Drawable3D</h3>
-<p>From Visual Studio you can create a c# class with the following code:</p>
+<p>From Visual Studio, you can create a C# class with the following code:</p>
 <pre><code class="lang-csharp">using Evergine.Common.Graphics;
 using Evergine.Framework;
 using Evergine.Framework.Graphics;
@@ -128,16 +128,16 @@ namespace MyProject
                 this.Size, 
                 this.transform.Orientation);
 
-            // Draw an oriented boundingbox with the specified color and size...
+            // Draw an oriented bounding box with the specified color and size...
             this.Managers.RenderManager.LineBatch3D.DrawBoundingOrientedBox(orientedBBox, this.Color);
         }
     }
 }
 </code></pre>
-<h2 id="graphics-content">Graphics content</h2>
-<p>A Drawable will add to RenderManager objects to be drawn (sprites, meshes, etc...). Read <a href="../../../graphics/rendering_overview.html">Render Overview</a> document for further details.</p>
+<h2 id="graphics-content">Graphics Content</h2>
+<p>A Drawable will add objects to the RenderManager to be drawn (sprites, meshes, etc...). Read the <a href="../../../graphics/rendering_overview.html">Render Overview</a> document for further details.</p>
 <h2 id="addremove-a-drawable">Add/Remove a Drawable</h2>
-<p>To add/remove a Drawable to/from your entity both from code or Evergine Studio is the same that adding/removing a component because a Drawable is a kind of component. You can see how to add/remove a component <a href="index.html">here</a></p>
+<p>To add/remove a Drawable to/from your entity, both from code or Evergine Studio, is the same as adding/removing a component because a Drawable is a type of component. You can see how to add/remove a component <a href="index.html">here</a>.</p>
 
 </article>
           </div>

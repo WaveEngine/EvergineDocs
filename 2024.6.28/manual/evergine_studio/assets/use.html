@@ -90,91 +90,88 @@
 <li>Reference it from another asset.</li>
 <li>Load it from code.</li>
 </ul>
-<h2 id="reference-asset-from-components">Reference asset from components.</h2>
-<p>Lots of components can use assets. For example, <code>MeshComponent</code> uses <strong>Model</strong> assets and <code>Sprite</code> uses <strong>Texture</strong> assets.</p>
-<p>When a component uses an asset, it will show a <strong>Asset Selection Control</strong> in its section in the <strong>Entity Details</strong> panel.</p>
-<p><img src="Images/assetSelectionControl.png" alt="Assets Selection Control"></p>
-<p>When a <strong>Scene</strong> is loaded in Evergine, all referenced assets by components will be loaded automatically.</p>
-<p>To add an asset to that component, we need to click on it and a <strong>Asset Picking Dialog</strong> will appear, allowing is to select a desired asset.</p>
-<p><img src="Images/assetPicker.png" alt="Assets Picker Dialog"></p>
+<h2 id="reference-an-asset-from-components">Reference an asset from components</h2>
+<p>Many components can use assets. For example, <code>MeshComponent</code> uses <strong>Model</strong> assets, and <code>Sprite</code> uses <strong>Texture</strong> assets.</p>
+<p>When a component uses an asset, it will show an <strong>Asset Selection Control</strong> in its section in the <strong>Entity Details</strong> panel.</p>
+<p><img src="Images/assetSelectionControl.png" alt="Asset Selection Control"></p>
+<p>When a <strong>Scene</strong> is loaded in Evergine, all assets referenced by components will be loaded automatically.</p>
+<p>To add an asset to that component, we need to click on it and an <strong>Asset Picking Dialog</strong> will appear, allowing us to select a desired asset.</p>
+<p><img src="Images/assetPicker.png" alt="Asset Picker Dialog"></p>
 <ul>
 <li>The user can also fill the <strong>Asset filter</strong> textbox to filter all the assets, making it easier in big projects.</li>
-<li>Clicking the <strong>lens icon</strong> <img src="Images/lensIcon.png" alt="Lens Icon"> will select the asset in the <strong>Asset Details</strong> panel. Useful to locate and edit a specific asset used in your scene.</li>
-<li>Clicking in an asset of the list will select it and set it as the property value of the component.</li>
-<li>To clear the asset reference, just select the <strong>No Asset</strong> <img src="Images/noAsset.png" alt="No Asset Button"> element on the list (it's the first one).</li>
+<li>Clicking the <strong>lens icon</strong> <img src="Images/lensIcon.png" alt="Lens Icon"> will select the asset in the <strong>Asset Details</strong> panel. This is useful to locate and edit a specific asset used in your scene.</li>
+<li>Clicking on an asset in the list will select it and set it as the property value of the component.</li>
+<li>To clear the asset reference, simply select the <strong>No Asset</strong> <img src="Images/noAsset.png" alt="No Asset Button"> option from the list (it's the first one).</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The dialog will only shows assets of the same type of the defined by the component property or field.</p>
+<p>The dialog will only show assets of the same type as defined by the component property or field.</p>
 </div>
-<h2 id="reference-asset-by-other-assets">Reference asset by other assets</h2>
-<p>In the same way as the components, assets can reference other assets. For example, a <strong>Material</strong> can reference a <strong>Texture</strong> and a <strong>Texture</strong> references a <strong>SamplerState</strong> asset.</p>
+<h2 id="reference-an-asset-by-other-assets">Reference an asset by other assets</h2>
+<p>In the same way as components, assets can reference other assets. For example, a <strong>Material</strong> can reference a <strong>Texture</strong>, and a <strong>Texture</strong> can reference a <strong>SamplerState</strong> asset.</p>
 <p>You can reference those assets in the same way you add them to components (see above).</p>
-<h2 id="reference-assets-by-code">Reference assets by code.</h2>
-<p>An asset can be loaded an accessed at runtime using in two ways depending of the asset scope:</p>
+<h2 id="reference-assets-by-code">Reference assets by code</h2>
+<p>An asset can be loaded and accessed at runtime in two ways, depending on the asset scope:</p>
 <ul>
-<li><strong>AssetsService</strong>: For loading global assets, used in more than one <strong>Scene</strong>.</li>
+<li><strong>AssetsService</strong>: For loading global assets used in more than one <strong>Scene</strong>.</li>
 <li><strong>AssetsSceneManager</strong>: For loading assets in a <strong>Scene</strong>.</li>
 </ul>
 <h3 id="assetsservice-loading">AssetsService loading</h3>
-<p><strong>AssetsService</strong> is a <em>Service</em> that manages all the assets in the application. When loading an asset using this service we are also responsible of unloading it when it's no longer needed.</p>
-<pre><code class="lang-csharp">
-var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
+<p><strong>AssetsService</strong> is a <em>Service</em> that manages all the assets in the application. When loading an asset using this service, we are also responsible for unloading it when it's no longer needed.</p>
+<pre><code class="lang-csharp">var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
 
 Texture textureAsset;    
 
 // Asset loading.
 
-// Load asset by id (using EvergineContent).
+// Load asset by ID (using EvergineContent).
 textureAsset = assetsService.Load&lt;Texture&gt;(EvergineContent.Textures.SampleTexture_png);
 
 // Load asset by path.
 textureAsset = assetsService.Load&lt;Texture&gt;(&quot;SampleTexture.wetx&quot;);
 
-// Load asset by stream (we need to provide an asset name anyways).
+// Load asset by stream (we need to provide an asset name anyway).
 textureAsset = assetsService.Load&lt;Texture&gt;(&quot;SampleTexture.wetx&quot;, stream);
 
 // Asset unloading.
 
-// Unloads asset by id.
+// Unload asset by ID.
 assetsService.Unload(EvergineContent.Textures.SampleTexture_png);
 
 // Unload asset by path.
 assetsService.Unload(&quot;SampleTexture.wetx&quot;);
 </code></pre>
 <h3 id="assetsscenemanager-loading">AssetsSceneManager loading</h3>
-<p><strong>AssetsSceneManager</strong> is a <em>SceneManager</em> that controls all the assets in a specific <strong>Scene</strong>. All the assets loaded through this <em>SceneManager</em> will be unloaded when the <strong>Scene</strong> is disposed (When navigating to other scenes, for example).</p>
-<p>Its methods are pretty similar to the <strong>AssetsService</strong>.</p>
-<pre><code class="lang-csharp">
-var assetSceneManager = this.Managers.AssetSceneManager.
+<p><strong>AssetsSceneManager</strong> is a <em>SceneManager</em> that controls all the assets in a specific <strong>Scene</strong>. All the assets loaded through this <em>SceneManager</em> will be unloaded when the <strong>Scene</strong> is disposed (when navigating to other scenes, for example).</p>
+<p>Its methods are very similar to those of <strong>AssetsService</strong>.</p>
+<pre><code class="lang-csharp">var assetSceneManager = this.Managers.AssetSceneManager;
 
 Texture textureAsset;    
 
 // Asset loading.
 
-// Load asset by id (using EvergineContent).
+// Load asset by ID (using EvergineContent).
 textureAsset = assetSceneManager.Load&lt;Texture&gt;(EvergineContent.Textures.SampleTexture_png);
 
 // Load asset by path.
 textureAsset = assetSceneManager.Load&lt;Texture&gt;(&quot;SampleTexture.wetx&quot;);
 
-// Load asset by stream (we need to provide an asset name anyways).
+// Load asset by stream (we need to provide an asset name anyway).
 textureAsset = assetSceneManager.Load&lt;Texture&gt;(&quot;SampleTexture.wetx&quot;, stream);
 
 // Asset unloading.
 
-// Unloads asset by id.
+// Unload asset by ID.
 assetSceneManager.Unload(EvergineContent.Textures.SampleTexture_png);
 
 // Unload asset by path.
 assetSceneManager.Unload(&quot;SampleTexture.wetx&quot;);
 </code></pre>
 <h3 id="force-new-instance-when-loading">Force new instance when loading</h3>
-<p>By default when an asset is loaded either in the <strong>AssetsService</strong> or the <strong>AssetsSceneManager</strong> only one instance of the asset is generated. This saves <em>GPU memory</em> and time.</p>
-<p>However, in some certain occasions we want to load a <em>different instance</em>* of an already loaded asset. For example, we want to load and use a <strong>Material</strong> and changing it but we don't want to change the rest of instances, only this one.</p>
-<p>In this case we can do using the <strong>forceNewInstance</strong> in the Load method.</p>
-<pre><code class="lang-csharp">
-// Forces a new instance to load.
+<p>By default, when an asset is loaded either in the <strong>AssetsService</strong> or the <strong>AssetsSceneManager</strong>, only one instance of the asset is generated. This saves <em>GPU memory</em> and time.</p>
+<p>However, on certain occasions, we want to load a <em>different instance</em> of an already loaded asset. For example, we may want to load and use a <strong>Material</strong> and change it without affecting the other instances.</p>
+<p>In this case, we can use the <strong>forceNewInstance</strong> parameter in the Load method.</p>
+<pre><code class="lang-csharp">// Forces a new instance to load.
 Texture textureAsset = assetSceneManager.Load&lt;Texture&gt;(EvergineContent.Textures.SampleTexture_png, true); 
 Texture textureAsset = assetsService.Load&lt;Texture&gt;(EvergineContent.Textures.SampleTexture_png, true);
 </code></pre>

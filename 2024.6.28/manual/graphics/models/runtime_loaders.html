@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Loading models on runtime | Evergine Doc </title>
+    <title>Loading Models at Runtime | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Loading models on runtime | Evergine Doc ">
+    <meta name="title" content="Loading Models at Runtime | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -81,23 +81,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="loading-models-on-runtime">Loading models on runtime</h1>
+<h1 id="loading-models-at-runtime">Loading Models at Runtime</h1>
 
-<p>Loading dynamic models has always been challenging in <em>Evergine</em>. To address this, we have introduced new packages that support <em>GLB</em> and <em>STL</em> formats. These packages allow you to manage scenarios where your models are not part of the initial application bundle (i.e., they are not static application assets) or are marked as <em>Raw</em>  <a href="../../evergine_studio/assets/index.html">assets</a>. For instance, you can dynamically download models from the internet and display them to users. The new runtime loader packages facilitate this process.</p>
+<p>Loading dynamic models has always been challenging in <em>Evergine</em>. To address this, we have introduced new packages that support <em>GLB</em> and <em>STL</em> formats. These packages allow you to manage scenarios where your models are not part of the initial application bundle (i.e., they are not static application assets) or are marked as <em>Raw</em> <a href="../../evergine_studio/assets/index.html">assets</a>. For instance, you can dynamically download models from the internet and display them to users. The new runtime loader packages facilitate this process.</p>
 <pre><code class="lang-csharp">var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
 var glbModel = await GLBRuntime.Instance.Read(&quot;Models/samurai_toad.glb&quot;);
 var stlModel = await STLRuntime.Instance.Read(&quot;Models/Star_Destroyer_Fixed.stl&quot;);
 </code></pre>
 <p>The <em>Read</em> method supports both a file path and a file stream.</p>
-<p>Remember to add package references to your csproj file.</p>
+<p>Remember to add package references to your .csproj file.</p>
 <pre><code class="lang-xml">&lt;PackageReference Include=&quot;Evergine.Runtimes.GLB&quot; Version=&quot;2024.6.28&quot; /&gt;
 &lt;PackageReference Include=&quot;Evergine.Runtimes.STL&quot; Version=&quot;2024.6.28&quot; /&gt;
 </code></pre>
-<p>If you are running a web project, you should also add following package in your start project.</p>
+<p>If you are running a web project, you should also add the following package to your start project.</p>
 <pre><code class="lang-xml">&lt;PackageReference Include=&quot;SkiaSharp.Views.Blazor&quot; Version=&quot;2.88.8&quot; /&gt;
 </code></pre>
-<h2 id="material-assigners">Material assigners</h2>
-<p>Both packages offer their unique methods for loading models and textures. However, you can customize this process by providing your own material assigner function.</p>
+<h2 id="material-assigners">Material Assigners</h2>
+<p>Both packages offer unique methods for loading models and textures. However, you can customize this process by providing your own material assigner function.</p>
 <pre><code class="lang-csharp">public async Task LoadModelTask() {
     var model = await GLBRuntime.Instance.Read(&quot;Scenes/DamagedHelmet.glb&quot;, this.CustomMaterialAssigner);
     var entity = model.InstantiateModelHierarchy(assetsService);
@@ -115,7 +115,7 @@ private async Task&lt;Material&gt; CustomMaterialAssigner(MaterialData data)
     var emissive = await data.GetEmissiveTextureAndSampler();
     var occlusion = await data.GetOcclusionTextureAndSampler();            
 
-    // Get Layer
+    // Get layer
     var opaqueLayer = assetsService.Load&lt;RenderLayerDescription&gt;(DefaultResourcesIDs.OpaqueRenderLayerID);
     var alphaLayer = assetsService.Load&lt;RenderLayerDescription&gt;(DefaultResourcesIDs.AlphaRenderLayerID);
     RenderLayerDescription layer;
@@ -167,7 +167,7 @@ private async Task&lt;Material&gt; CustomMaterialAssigner(MaterialData data)
         standard.AlphaCutout = data.AlphaCutoff;
     }
 
-    // Vertex Color
+    // Vertex color
     if (data.HasVertexColor)
     {
         if (standard.ActiveDirectivesNames.Contains(&quot;VCOLOR&quot;))

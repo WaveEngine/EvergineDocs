@@ -95,10 +95,10 @@
     public event EventHandler&lt;PointerEventArgs&gt; PointerMove;
 }
 </code></pre>
-<p><code>Points</code> property gets a list of points detected inside the surface at the current frame.</p>
-<p><code>PointerDown</code>, <code>PointerUp</code> and <code>PointerMove</code> events are available to track touch and pointer points.</p>
+<p>The <code>Points</code> property gets a list of points detected on the surface in the current frame.</p>
+<p>The <code>PointerDown</code>, <code>PointerUp</code>, and <code>PointerMove</code> events are available to track touch and pointer points.</p>
 <h3 id="pointerpoint">PointerPoint</h3>
-<p>The PointerPoint class give the following information:</p>
+<p>The PointerPoint class provides the following information:</p>
 <table>
 <thead>
 <tr>
@@ -109,20 +109,20 @@
 <tbody>
 <tr>
 <td><strong>Id</strong></td>
-<td>A number that is uniquely associated to this touch. It is usually given by the underliying platform.</td>
+<td>A number that is uniquely associated with this touch. It is usually provided by the underlying platform.</td>
 </tr>
 <tr>
 <td><strong>Position</strong></td>
-<td>The pointer position in screen coordinates</td>
+<td>The pointer position in screen coordinates.</td>
 </tr>
 <tr>
 <td><strong>State</strong></td>
-<td>Get the current pointer state. See <a href="button_states.html">Button States</a> for more information.</td>
+<td>Gets the current pointer state. See <a href="button_states.html">Button States</a> for more information.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="using-pointerdispatcher">Using PointerDispatcher</h3>
-<p>The <code>PointerDispatcher</code> can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code can be used to access the pointer dispatcher from a <code>Component</code> or <code>Service</code>.</p>
+<p>The <code>PointerDispatcher</code> can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code shows how to access the pointer dispatcher from a <code>Component</code> or <code>Service</code>.</p>
 <pre><code class="lang-csharp">[BindService]
 protected GraphicsPresenter graphicsPresenter;
 
@@ -130,12 +130,12 @@ protected override void Update(TimeSpan time)
 {
     PointerDispatcher pointerDispatcher = this.graphicsPresenter.FocusedDisplay?.PointerDispatcher;
 
-    if (keyboardDispatcher == null)
+    if (pointerDispatcher == null)
     {
         return;
     }
 
-    foreach (PointerPoint p in keyboardDispatcher.Points)
+    foreach (PointerPoint p in pointerDispatcher.Points)
     {
         if (p.State == ButtonState.Pressing)
         {

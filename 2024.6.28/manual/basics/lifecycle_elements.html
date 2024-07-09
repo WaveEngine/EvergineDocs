@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Lifecycle of elements | Evergine Doc </title>
+    <title>Lifecycle of Elements | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Lifecycle of elements | Evergine Doc ">
+    <meta name="title" content="Lifecycle of Elements | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -81,21 +81,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lifecycle-of-elements">Lifecycle of elements</h1>
+<h1 id="lifecycle-of-elements">Lifecycle of Elements</h1>
 
-<p>Running Evergine components, entities or other objects executes a number of functions in a predetermined order. This document describes those functions and explains how they fit into the execution sequence.</p>
-<p>The following elements has the same lifecycle methods, and all information described in this document can be applied on each one:</p>
+<p>Running Evergine components, entities, or other objects executes a number of functions in a predetermined order. This document describes those functions and explains how they fit into the execution sequence.</p>
+<p>The following elements have the same lifecycle methods, and all information described in this document can be applied to each one:</p>
 <ul>
 <li><a href="component_arch/components/index.html">Components</a></li>
 <li><a href="component_arch/entities/index.html">Entities</a></li>
 <li><a href="services.html">Services</a></li>
 <li><a href="scenes/scenemanagers.html">SceneManagers</a></li>
 </ul>
-<h2 id="lifecycle-overview">Lifecycle overview</h2>
+<h2 id="lifecycle-overview">Lifecycle Overview</h2>
 <p>The diagram below summarizes how Evergine orders and repeats function invocations over the element's lifetime:</p>
 <p><img src="images/lifecycle.png" alt="Lifecycle"></p>
-<h2 id="lifecycle-properties">Lifecycle properties</h2>
-<p>All elements that implements the default lifecycle shares the same properties. These properties and methods are exposed in the <code>AttachableObject</code> class. Because of this, the Component, Entity, Service or SceneServices classes extend AttachableObject class.</p>
+<h2 id="lifecycle-properties">Lifecycle Properties</h2>
+<p>All elements that implement the default lifecycle share the same properties. These properties and methods are exposed in the <code>AttachableObject</code> class. Because of this, the Component, Entity, Service, or SceneServices classes extend the AttachableObject class.</p>
 <table>
 <thead>
 <tr>
@@ -106,15 +106,15 @@
 <tbody>
 <tr>
 <td><strong>IsEnabled</strong> (getter and setter)</td>
-<td>Allows to enable or disable an element. A disabled Behavior is not updated, or a disabled Drawable doesn't draw anything.</td>
+<td>Allows enabling or disabling an element. A disabled Behavior is not updated, or a disabled Drawable does not draw anything.</td>
 </tr>
 <tr>
 <td><strong>State</strong> (getter)</td>
-<td>Gets the current state of this object. We cover this area later in this document</td>
+<td>Gets the current state of this object. We cover this area later in this document.</td>
 </tr>
 </tbody>
 </table>
-<p>To easy checking states, Evergine offers several properties (getter only) to know in which state are the element:</p>
+<p>To easily check states, Evergine offers several properties (getter only) to determine the state of the element:</p>
 <table>
 <thead>
 <tr>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td><strong>IsAttached</strong></td>
-<td>Indicates if this object has been <strong>attached</strong> (the OnAttached() method has been invoked). When an element is detached this property is set to <code>false</code></td>
+<td>Indicates if this object has been <strong>attached</strong> (the OnAttached() method has been invoked). When an element is detached, this property is set to <code>false</code>.</td>
 </tr>
 <tr>
 <td><strong>IsActivated</strong></td>
@@ -146,81 +146,81 @@
 </tbody>
 </table>
 <h2 id="initialization">Initialization</h2>
-<p>These methdos get usually called when the Application starts.</p>
+<p>These methods are usually called when the Application starts.</p>
 <h3 id="onloaded">OnLoaded()</h3>
-<p>This method is called after the element is deserialized (during the scene loading) or it is created from code:</p>
+<p>This method is called after the element is deserialized (during the scene loading) or created from code:</p>
 <ul>
-<li>This method is invoked <strong>once</strong> during the object lifetime.</li>
-<li>OnLoaded() is usually used to initialize all variables and functionality that <strong>does not depends on other external elements</strong>.</li>
+<li>This method is invoked <strong>once</strong> during the object’s lifetime.</li>
+<li>OnLoaded() is usually used to initialize all variables and functionality that <strong>do not depend on other external elements</strong>.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>On this step, all Bindings are not yet resolved.</p>
+<p>At this step, all bindings are not yet resolved.</p>
 </div>
 <h3 id="onattached">OnAttached()</h3>
-<p>This method is invoked when an element is attached into Evergine.</p>
+<p>This method is invoked when an element is attached to Evergine.</p>
 <ul>
-<li><strong>All bindings are resolved</strong> prior execution of this method.</li>
-<li>This method is used to stablish dependencies with external elements.</li>
-<li>This method returns a boolean value. Return <code>true</code> if the execution has been succeded, otherwise the component is not suscessfully attached.</li>
+<li><strong>All bindings are resolved</strong> prior to the execution of this method.</li>
+<li>This method is used to establish dependencies with external elements.</li>
+<li>This method returns a boolean value. Return <code>true</code> if the execution has succeeded, otherwise the component is not successfully attached.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>On this step, all binding elements (Components for example) may not have been attached yet.</p>
+<p>At this step, all binding elements (Components, for example) may not have been attached yet.</p>
 </div>
 <h3 id="onactivated">OnActivated()</h3>
-<p>This method is invoked when an element is activated, this can happend  after the OnAttached() execution or we change the IsEnabled property.</p>
+<p>This method is invoked when an element is activated. This can happen after the OnAttached() execution or when we change the IsEnabled property.</p>
 <ul>
-<li>This method only is invoked if <code>IsEnabled == true</code>, if a Component <strong>or</strong> its Entity has been disabled, this method is not executed.</li>
-<li>During this method, we setup the functionality once we have previously stablished all dependencies. We usually put here all code that can be easily undone when the component will be deactivated (subscribe to events for example.)</li>
+<li>This method is only invoked if <code>IsEnabled == true</code>. If a Component <strong>or</strong> its Entity has been disabled, this method is not executed.</li>
+<li>During this method, we set up the functionality once we have previously established all dependencies. Usually, we put here all code that can be easily undone when the component will be deactivated (subscribe to events, for example).</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>On this step, all dependencies (Components for example) have being previously attached, but some elements may not have been activated yet.</p>
+<p>At this step, all dependencies (Components, for example) have been previously attached, but some elements may not have been activated yet.</p>
 </div>
 <h3 id="start">Start()</h3>
 <p>This method is called <strong>before the first frame update</strong> only if the element has been previously activated.</p>
 <ul>
-<li>This method is called only <strong>once</strong> per attachment. If we enable or disable a Component, the Start method is not called again. However, if we detach a Component and reattach again to an Entity, the Start() method will be called again (after the OnAttached() and OnActivated() invocations)</li>
-<li>In that method we usually put all initialization functionality that depends on other elements and that we only want to execute once.</li>
+<li>This method is called only <strong>once</strong> per attachment. If we enable or disable a Component, the Start method is not called again. However, if we detach a Component and reattach it to an Entity, the Start() method will be called again (after the OnAttached() and OnActivated() invocations).</li>
+<li>In this method, we usually put all initialization functionality that depends on other elements and that we only want to execute once.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>On this step, all dependencies have being activated, but some elements may not have been started yet.</p>
+<p>At this step, all dependencies have been activated, but some elements may not have been started yet.</p>
 </div>
-<h2 id="per-frame--loop">Per frame  loop</h2>
-<p>During the appliction Update/Draw loop, each Frame the following methods are invoked:</p>
+<h2 id="per-frame-loop">Per Frame Loop</h2>
+<p>During the application Update/Draw loop, each frame the following methods are invoked:</p>
 <h3 id="update">Update()</h3>
-<p>This method is only available on <a href="component_arch/components/behaviours.html">Behaviors</a>, <a href="services.html">UpdatableServices</a> or <a href="scenes/scenemanagers.html">UpdatableSceneManagers</a>.</p>
+<p>This method is only available on <a href="component_arch/components/behaviours.html">Behaviors</a>, <a href="services.html">UpdatableServices</a>, or <a href="scenes/scenemanagers.html">UpdatableSceneManagers</a>.</p>
 <ul>
 <li>This method can only be executed if the element has been started (attached and initialized).</li>
 <li>In general terms, the Update() method is called once per frame.</li>
-<li>We put here execution code to update the application logic or state (player movement, camera input controller, etc...)</li>
+<li>We put here execution code to update the application logic or state (player movement, camera input controller, etc.).</li>
 </ul>
 <h3 id="draw">Draw()</h3>
-<p>This method is only available on <a href="component_arch/components/drawables.html">Drawables</a></p>
+<p>This method is only available on <a href="component_arch/components/drawables.html">Drawables</a>.</p>
 <ul>
 <li>This method can only be executed if the element has been started (attached and initialized).</li>
 <li>The Draw() method is called <strong>once per drawing camera</strong>, during the rendering phase.</li>
-<li>We put here all code to update RenderObjects before the camera will process them.</li>
+<li>We put here all code to update RenderObjects before the camera processes them.</li>
 </ul>
 <h2 id="deinitialization">Deinitialization</h2>
-<p>Evergine follows the following steps to properly destroy or detach an element</p>
+<p>Evergine follows the following steps to properly destroy or detach an element.</p>
 <h3 id="ondeactivated">OnDeactivated()</h3>
 <p>This method is called when an activated element becomes disabled or inactive.</p>
 <ul>
-<li>This method is the opposite of OnActivated() method, and it's a good practice to undo all functionalities done in the OnActivated() method (unsubscribe events for example).</li>
+<li>This method is the opposite of the OnActivated() method, and it's a good practice to undo all functionalities done in the OnActivated() method (unsubscribe events, for example).</li>
 </ul>
 <h3 id="ondetach">OnDetach()</h3>
-<p>OnDetach is called when an element is detached</p>
+<p>OnDetach is called when an element is detached.</p>
 <ul>
-<li>This method is the opposite of OnAttached() method, and it's a good practice to undo all functionalities done in the OnAttached() method.</li>
+<li>This method is the opposite of the OnAttached() method, and it's a good practice to undo all functionalities done in the OnAttached() method.</li>
 </ul>
 <h3 id="ondestroy">OnDestroy()</h3>
-<p>This method is invoke when the element is defintively removed and we want to destroy or dispose objects.</p>
+<p>This method is invoked when the element is definitively removed and we want to destroy or dispose of objects.</p>
 <ul>
-<li>A destroyed element cannot be attached again, and it is finally disposed.</li>
-<li>A good practice is to remove all internal data of this component (tables, collections, etc...)</li>
+<li>A destroyed element cannot be attached again, and it is finally disposed of.</li>
+<li>A good practice is to remove all internal data of this component (tables, collections, etc.).</li>
 </ul>
 
 </article>

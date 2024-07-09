@@ -86,11 +86,11 @@
 <hr>
 <p><img src="images/effects.jpg" alt="Materials header"></p>
 <p>In this document, you will learn how to load and use <strong>Effects</strong> in your applications.</p>
-<h2 id="how-to-apply-an-effect-to-a-material-from-evergine-studio">How to apply an effect to a material from Evergine Studio.</h2>
-<p>From <a href="../materials/material_editor.html">Material Editor</a> you can select the effect that the material will use on the top side of the properties.</p>
+<h2 id="how-to-apply-an-effect-to-a-material-from-evergine-studio">How to apply an effect to a material from Evergine Studio</h2>
+<p>From the <a href="../materials/material_editor.html">Material Editor</a>, you can select the effect that the material will use from the top side of the properties.</p>
 <p><img src="images/ApplyEffect.jpg" alt="Material Editor"></p>
 <h2 id="load-effect-from-code">Load Effect from code</h2>
-<p>The following sample code can be used to instantiate an existing effect asset, created an associated material, and apply an entity in your scene.</p>
+<p>The following sample code can be used to instantiate an existing effect asset, create an associated material, and apply it to an entity in your scene.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve&lt;AssetsService&gt;();
@@ -98,7 +98,7 @@
     // Load effect
     Effect standardEffect = assetsService.Load&lt;Effect&gt;(EvergineContent.Effects.StandardEffect);
 
-    // Create material asociated			
+    // Create material associated
     Material defaultMaterial = new Material(standardEffect)
     {
         LayerDescription = assetsService.Load&lt;RenderLayerDescription&gt;(EvergineContent.RenderLayers.Opaque),

@@ -84,13 +84,13 @@
 <h1 id="webgpu">WebGPU</h1>
 
 <p><img src="images/webgpu.jpg" alt="WebGPU API"></p>
-<p><strong>WebGPU</strong> is a working project to become in a future web standard API for accelerated graphics and compute, aiming to provide modern 3D graphics and computation capabilities on Web platform.</p>
-<p>It is developed by the <strong>W3C</strong> for the Web community group with engineers from <strong>Apple</strong>, <strong>Mozilla</strong>, <strong>Microsoft</strong>, <strong>Google</strong> and others. This technology run on top of the latest graphics APIs like DirectX 12, Vulkan and Metal.</p>
-<p><strong>Chrome</strong>, <strong>Edge</strong> and <strong>Firefox</strong> already support it as experimental feature so you need to move to beta channel and active it. <strong>Evergine</strong> uses <strong>WebGPU</strong> on Web platforms when it is available otherwise use <a href="opengl.html">WebGL</a> which is the most supported graphics technology today.</p>
-<p>To check the implementation status of this technology visit <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status">webgpu.io</a>.</p>
+<p><strong>WebGPU</strong> is an ongoing project aimed at becoming a future web standard API for accelerated graphics and compute, providing modern 3D graphics and computation capabilities on the Web platform.</p>
+<p>It is developed by the <strong>W3C</strong> Web Community Group with engineers from <strong>Apple</strong>, <strong>Mozilla</strong>, <strong>Microsoft</strong>, <strong>Google</strong>, and others. This technology runs on top of the latest graphics APIs like DirectX 12, Vulkan, and Metal.</p>
+<p><strong>Chrome</strong>, <strong>Edge</strong>, and <strong>Firefox</strong> already support it as an experimental feature, so you need to switch to the beta channel and activate it. <strong>Evergine</strong> uses <strong>WebGPU</strong> on Web platforms when it is available; otherwise, it uses <a href="opengl.html">WebGL</a>, which is the most supported graphics technology today.</p>
+<p>To check the implementation status of this technology, visit <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status">webgpu.io</a>.</p>
 <h2 id="supported-webgpu-devices">Supported WebGPU devices</h2>
 <ul>
-<li>Chrome, Edge, Safari and firefox browsers on Desktop, tablet and mobile.</li>
+<li>Chrome, Edge, Safari, and Firefox browsers on Desktop, tablet, and mobile.</li>
 </ul>
 <h2 id="checking-webgpu-version">Checking WebGPU version</h2>
 <table>
@@ -107,12 +107,12 @@
 </tr>
 <tr>
 <td><strong>Edge</strong></td>
-<td>The WebGPUflag must be enabled by writing this in your browser: <br> <code>edge://flags/#enable-unsafe-webgpu</code></td>
+<td>The WebGPU flag must be enabled by writing this in your browser: <br> <code>edge://flags/#enable-unsafe-webgpu</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-a-graphics-context">Create a Graphics Context</h2>
-<p>To create a graphics context based on <strong>WebGPU</strong> just write:</p>
+<p>To create a graphics context based on <strong>WebGPU</strong>, just write:</p>
 <pre><code class="lang-csharp">GraphicsContext graphicsContext = new Evergine.WebGPU.WGPUGraphicsContext();
 graphicsContext.CreateDevice();
 </code></pre>

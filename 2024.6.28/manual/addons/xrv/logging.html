@@ -83,8 +83,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="logging">Logging</h1>
 
-<p>We provide logging service that implements <code>Microsoft.Extensions.Logging.ILogger</code> and uses <code>Serilog</code>.</p>
-<p>We use <code>LoggingConfiguration</code> class to configure logging.</p>
+<p>We provide a logging service that implements <code>Microsoft.Extensions.Logging.ILogger</code> and uses <code>Serilog</code>.</p>
+<p>We use the <code>LoggingConfiguration</code> class to configure logging.</p>
 <table>
 <thead>
 <tr>
@@ -99,7 +99,7 @@
 </tr>
 <tr>
 <td><code>EnableFileLogging</code></td>
-<td>If true save logs to file.</td>
+<td>If true, saves logs to a file.</td>
 </tr>
 <tr>
 <td><code>FileOptions</code></td>
@@ -108,37 +108,36 @@
 </tbody>
 </table>
 <h2 id="registration">Registration</h2>
-<p>Use <code>WithLogging</code> method from <code>XrvService</code>.</p>
+<p>Use the <code>WithLogging</code> method from <code>XrvService</code>.</p>
 <pre><code class="lang-csharp">var xrvService = Application.Current.Container.Resolve&lt;XrvService&gt;();
 
 var config = new LoggingConfiguration()
 {
     LogLevel = LogLevel.Debug
-}
+};
 
 xrvService.WithLogging(config);
-
 </code></pre>
-<h2 id="uses">Uses</h2>
-<p>Obtain the service and use it.</p>
-<h3 id="get-logging-anywhere">Get Logging anywhere</h3>
+<h2 id="usage">Usage</h2>
+<p>Obtain the service and use it as needed.</p>
+<h3 id="get-logging-anywhere">Get logging anywhere</h3>
 <pre><code class="lang-csharp">// Get logger
 var log = Application.Current.Container.Resolve&lt;ILogger&gt;();
 </code></pre>
-<h3 id="get-logging-in-component">Get Logging in component</h3>
+<h3 id="get-logging-in-a-component">Get logging in a component</h3>
 <pre><code class="lang-csharp">[BindService]
 private ILogger log = null;
 </code></pre>
 <h3 id="log">Log</h3>
-<pre><code class="lang-csharp">// log debug
+<pre><code class="lang-csharp">// Log debug
 log.Log(LogLevel.Debug, &quot;debug msg&quot;);
 </code></pre>
 <h3 id="warning">Warning</h3>
-<pre><code class="lang-csharp">// log warning
+<pre><code class="lang-csharp">// Log warning
 log.LogWarning(&quot;warning msg&quot;);
 </code></pre>
 <h3 id="error">Error</h3>
-<pre><code class="lang-csharp">// log error
+<pre><code class="lang-csharp">// Log error
 log.LogError(&quot;error&quot;);
 </code></pre>
 

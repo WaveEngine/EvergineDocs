@@ -83,22 +83,22 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="prefabs">Prefabs</h1>
 
-<p>Sometimes you need to reuse entities including their components and their descendants. Instead of use copy and paste or entity duplication for doing this, that will create maintenance problems, you can use the concept of <em>prefab</em>. A <em>prefab</em> is a type of asset which helps developers with this basic function: reusing.</p>
-<h2 id="creating-a-prefab">Creating a prefab</h2>
-<p>To create a prefab, first you need to build your entities hierarchy and assign components. For example, we can create an entity with a teapot and a plane, and a <a class="xref" href="../../../../api/Evergine.Components.Graphics3D.Spinner.html">Spinner</a> component to the top of this hierarchy.</p>
+<p>Sometimes you need to reuse entities, including their components and descendants. Instead of using copy and paste or entity duplication, which can create maintenance problems, you can use the concept of a <em>prefab</em>. A <em>prefab</em> is a type of asset that helps developers with this basic function: reusing.</p>
+<h2 id="creating-a-prefab">Creating a Prefab</h2>
+<p>To create a prefab, first you need to build your entities’ hierarchy and assign components. For example, you can create an entity with a teapot and a plane, and add a <a class="xref" href="../../../../api/Evergine.Components.Graphics3D.Spinner.html">Spinner</a> component to the top of this hierarchy.</p>
 <p><img src="images/prefabs-init.jpg" alt="Prefab structure"></p>
-<p>To create a prefab, right click on the top-most entity that you wan to include in it, and select <em>Create prefab</em> option.</p>
+<p>To create a prefab, right-click on the top-most entity that you want to include in it, and select the <em>Create prefab</em> option.</p>
 <p><img src="images/prefabs-create.jpg" alt="Prefab creation"></p>
-<p>This will create a new asset with <em>weprefab</em> extension the same folder that you have selected in <em>Project Explorer</em> panel. If you created prefab in the wrong folder, don't worry as they are like any other Evergine asset, you can move it wherever you want.</p>
+<p>This will create a new asset with a <em>weprefab</em> extension in the same folder that you have selected in the <em>Project Explorer</em> panel. If you create the prefab in the wrong folder, don't worry. Like any other Evergine asset, you can move it wherever you want.</p>
 <p><img src="images/prefabs-folder.jpg" alt="Prefab creation"></p>
-<p>If you save changes and reload the scene, you will realize that entities that were part of created prefab, are marked now with a &quot;(Prefab)&quot; suffix. Using prefab creation option <strong>is not reversible once you save the scene</strong>. You can also drag and drop asset element from <em>Asset Details</em> panel to your scene, to create new prefab instances.</p>
-<h3 id="prefabs-edition">Prefabs edition</h3>
-<p>If you change values on those entities, this will no affect to new and existing prefab instances. To add, remove or modify elements in your prefab architecture, within associated components, you must use prefab asset editor.</p>
-<p>To open prefab editor, just double click prefab asset.</p>
+<p>If you save changes and reload the scene, you will realize that entities that were part of the created prefab are now marked with a &quot;(Prefab)&quot; suffix. Using the prefab creation option <strong>is not reversible once you save the scene</strong>. You can also drag and drop asset elements from the <em>Asset Details</em> panel to your scene to create new prefab instances.</p>
+<h3 id="prefabs-edition">Prefabs Edition</h3>
+<p>If you change values on those entities, this will not affect new and existing prefab instances. To add, remove, or modify elements in your prefab architecture, including associated components, you must use the prefab asset editor.</p>
+<p>To open the prefab editor, just double-click the prefab asset.</p>
 <p><img src="images/prefabs-editor.jpg" alt="Prefab editor"></p>
-<p>Nesting of prefabs is supported now, so you can create prefabs based on other prefabs composition. There are some logic limitations as not allowing cycle dependencies along prefabs. If you try to introduce a cycle, a warning message will be displayed in <em>Output</em> console.</p>
-<h3 id="prefab-instantiation">Prefab instantiation</h3>
-<p>To create a prefab instance programmatically, you can use following code snippet:</p>
+<p>Nesting of prefabs is now supported, so you can create prefabs based on the composition of other prefabs. There are some logical limitations, such as not allowing cyclical dependencies among prefabs. If you try to introduce a cycle, a warning message will be displayed in the <em>Output</em> console.</p>
+<h3 id="prefab-instantiation">Prefab Instantiation</h3>
+<p>To create a prefab instance programmatically, you can use the following code snippet:</p>
 <pre><code class="lang-csharp">var prefab = this.assetsService.Load&lt;Prefab&gt;(EvergineContent.Scenes.Entity_weprefab);
 var entity = prefab.Instantiate();
 </code></pre>

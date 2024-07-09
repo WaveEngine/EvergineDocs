@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>UWP platform | Evergine Doc </title>
+    <title>UWP Platform | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="UWP platform | Evergine Doc ">
+    <meta name="title" content="UWP Platform | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -81,38 +81,38 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="uwp-platform">UWP platform</h1>
+<h1 id="uwp-platform">UWP Platform</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
-<p>UWP platform in Evergine is now deprecated and could be removed in future releases.</p>
+<p>The UWP platform in Evergine is now deprecated and could be removed in future releases.</p>
 </div>
-<h2 id="desktop-and-tablets">Desktop and tablets</h2>
-<p>You can add <em>UWP</em> as one of the platforms for your project, using <em>Universal Windows Platform</em> template. With this template, you can create an application that runs in devices such PC, tablet or Xbox.</p>
+<h2 id="desktop-and-tablets">Desktop and Tablets</h2>
+<p>You can add <em>UWP</em> as one of the platforms for your project using the <em>Universal Windows Platform</em> template. With this template, you can create an application that runs on devices such as PCs, tablets, or Xbox.</p>
 <p><img src="images/launcher-desktop.jpg" alt="Create a new project"></p>
-<p>Project targets <em>Windows 10</em> build <em>16299</em> as minimal version, and <em>Windows 10</em> build <em>18362</em> as target version.</p>
+<p>The project targets <em>Windows 10</em> build <em>16299</em> as the minimum version, and <em>Windows 10</em> build <em>18362</em> as the target version.</p>
 <p><img src="images/project-structure.jpg" alt="Project structure"></p>
-<p>You can also deploy applications to <em>HoloLens</em> devices, as stated in <a href="#Mixed-Reality">Mixed Reality</a> section.</p>
+<p>You can also deploy applications to <em>HoloLens</em> devices, as stated in the <a href="#Mixed-Reality">Mixed Reality</a> section.</p>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>You have to install target SDKs to build and run the application. You can find download links <a href="https://developer.microsoft.com/en-us/windows/downloads/sdk-archive">here</a>.</p>
-<h3 id="application-deployment">Application deployment</h3>
-<p>As a standard <em>UWP</em> application, you can deploy your application in your local Windows device, in a remote device or in a physical device connected by <em>USB</em> to your development machine.</p>
+<p>You must install the target SDKs to build and run the application. You can find download links <a href="https://developer.microsoft.com/en-us/windows/downloads/sdk-archive">here</a>.</p>
+<h3 id="application-deployment">Application Deployment</h3>
+<p>As a standard <em>UWP</em> application, you can deploy your application on your local Windows device, a remote device, or a physical device connected by <em>USB</em> to your development machine.</p>
 <h2 id="Mixed-Reality">Mixed Reality</h2>
-<p>If you want to create an Evergine project for <em>HoloLens</em> you should use <em>Mixed Reality</em> template.</p>
+<p>If you want to create an Evergine project for <em>HoloLens</em>, you should use the <em>Mixed Reality</em> template.</p>
 <p><img src="images/launcher-mixed-reality.jpg" alt="Create a new project"></p>
-<p>Project targets <em>Windows 10</em> build <em>16299</em> as minimal version, and <em>Windows 10</em> build <em>18362</em> as target version.</p>
-<h3 id="xr-capabilities">XR capabilities</h3>
-<p>Evergine for <em>Mixed Reality</em> relies on a set on interfaces and classes defined in <em>Evergine.Framework.XR.*</em> namespace:</p>
+<p>The project targets <em>Windows 10</em> build <em>16299</em> as the minimum version, and <em>Windows 10</em> build <em>18362</em> as the target version.</p>
+<h3 id="xr-capabilities">XR Capabilities</h3>
+<p>Evergine for <em>Mixed Reality</em> relies on a set of interfaces and classes defined in the <em>Evergine.Framework.XR.*</em> namespace:</p>
 <ul>
 <li>QR code detection with <a class="xref" href="../../../api/Evergine.Framework.XR.QR.IQRCodeWatcherService.html">IQRCodeWatcherService</a>.</li>
 <li>Spatial anchors with <a class="xref" href="../../../api/Evergine.Framework.XR.SpatialAnchors.SpatialAnchor.html">SpatialAnchor</a>.</li>
 <li>Spatial mapping with <a class="xref" href="../../../api/Evergine.Framework.XR.SpatialMapping.SpatialMappingObserver.html">SpatialMappingObserver</a> and <a class="xref" href="../../../api/Evergine.Framework.XR.SpatialMapping.SpatialMappingSurface.html">SpatialMappingSurface</a>.</li>
 </ul>
-<h3 id="application-deployment-1">Application deployment</h3>
+<h3 id="application-deployment-1">Application Deployment</h3>
 <p>In this case, there are two options for application deployment:</p>
 <ul>
-<li>Deploy in <em>HoloLens</em> emulator: before deploying, you need to install device emulator from <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive">official documentation</a> page.</li>
-<li>Deploy in a <em>HoloLens</em> device: remember that you should mark <em>ARM64</em> as active configuration to deploy an application for <em>HoloLens 2</em>. For more information, read <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2">official documentation</a>.</li>
+<li>Deploy in the <em>HoloLens</em> emulator: Before deploying, you need to install the device emulator from the <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive">official documentation</a> page.</li>
+<li>Deploy on a <em>HoloLens</em> device: Remember that you should mark <em>ARM64</em> as the active configuration to deploy an application for <em>HoloLens 2</em>. For more information, read the <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2">official documentation</a>.</li>
 </ul>
 
 </article>

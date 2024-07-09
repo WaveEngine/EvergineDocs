@@ -84,43 +84,42 @@
 <h1 id="opengl">OpenGL</h1>
 
 <p><img src="images/opengl.jpg" alt="OpenGL API"></p>
-<p>Open Graphics Library (OpenGL) is the most widely adopted 2D and 3D graphics API in the industry cross-platform.
-Silicon Graphics Inc, began developing OpenGL in 1991 and released it on June 30 1992, and now is a technology maintained by <strong>Khronos Group</strong>.</p>
-<p><strong>Evergine</strong> use OpenGL graphics API on Web platform and Windows desktop but is deprecating this technology in favor of <a href="vulkan.html">Vulkan</a>, which is the new modern graphics API created by the <strong>Khronos Group</strong>.</p>
-<p><strong>OpenGL</strong> is used on Web platform by <strong>Evergine</strong> through the version named <strong>WebGL</strong>. This is the default version supported in the most popular browsers.</p>
+<p>Open Graphics Library (OpenGL) is the most widely adopted 2D and 3D graphics API in the industry, cross-platform. Silicon Graphics Inc. began developing OpenGL in 1991 and released it on June 30, 1992. Now, it is a technology maintained by the <strong>Khronos Group</strong>.</p>
+<p><strong>Evergine</strong> uses the OpenGL graphics API on the Web platform and Windows desktop but is deprecating this technology in favor of <a href="vulkan.html">Vulkan</a>, the new modern graphics API created by the <strong>Khronos Group</strong>.</p>
+<p><strong>OpenGL</strong> is used on the Web platform by <strong>Evergine</strong> through a version named <strong>WebGL</strong>, which is the default version supported in the most popular browsers.</p>
 <ul>
-<li>Chrome, Edge, Firefox support WebGL 2.0</li>
-<li>Safari supports WebGL 1.0</li>
+<li>Chrome, Edge, and Firefox support WebGL 2.0.</li>
+<li>Safari supports WebGL 1.0.</li>
 </ul>
 <h2 id="supported-opengl-devices">Supported OpenGL devices</h2>
 <ul>
 <li>Windows 8/10/11 x64/x86 desktop</li>
-<li>Web Browsers desktop, tablet and mobile.</li>
+<li>Web Browsers on desktop, tablet, and mobile devices.</li>
 </ul>
 <h2 id="checking-opengl-version">Checking OpenGL version</h2>
-<p>If you a running Windows 7 or later the <strong>OpenGL</strong> library has already been installed on your system.</p>
-<p>To check the <strong>OpenGL</strong> version available on your system just find out the control panel of your graphics card or you can download the <a href="https://opengl.gpuinfo.org/download.php">OpenGL Hardware Capability Viewer</a>.</p>
+<p>If you are running Windows 7 or later, the <strong>OpenGL</strong> library has already been installed on your system.</p>
+<p>To check the <strong>OpenGL</strong> version available on your system, locate the control panel of your graphics card or download the <a href="https://opengl.gpuinfo.org/download.php">OpenGL Hardware Capability Viewer</a>.</p>
 <h2 id="create-a-graphics-context">Create a Graphics Context</h2>
-<p>To create a graphics context based on <strong>OpenGL</strong> just write:</p>
+<p>To create a graphics context based on <strong>OpenGL</strong>, simply write:</p>
 <pre><code class="lang-csharp">GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext();
 graphicsContext.CreateDevice();
 </code></pre>
-<p>To create a graphics context based on <strong>WebGL</strong> just write:</p>
+<p>To create a graphics context based on <strong>WebGL</strong>, simply write:</p>
 <pre><code class="lang-csharp">GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext(GraphicsBackend.WebGL2);
 graphicsContext.CreateDevice();
 </code></pre>
 <h2 id="build--run">Build &amp; Run</h2>
 <p>You can select <strong>OpenGL</strong> API support during the new project creation from the <strong>Evergine</strong> launcher.</p>
 <h3 id="desktop">Desktop</h3>
-<p>If the project already exists you can add the <strong>OpenGL</strong> support from <strong>Evergine Studio</strong> by clicking on Settings -&gt; Project Settings.</p>
+<p>If the project already exists, you can add <strong>OpenGL</strong> support from <strong>Evergine Studio</strong> by clicking on Settings -&gt; Project Settings.</p>
 <p><img src="images/dx12_support_0.JPG" alt="Settings"></p>
-<p>Selecting and adding the profile for Windows (OpenGL).</p>
+<p>Select and add the profile for Windows (OpenGL).</p>
 <p><img src="images/gl_support_1.JPG" alt="Settings"></p>
 <p><img src="images/gl_support_2.JPG" alt="Settings"></p>
 <p>You can run on <strong>OpenGL</strong> by clicking on File -&gt; Build &amp; Run -&gt; Windows.OpenGL.</p>
 <p><img src="images/gl_support_3.JPG" alt="Settings"></p>
 <h3 id="webgl">WebGL</h3>
-<p>To support Web Platforms based on <strong>WebGL</strong> versions you also need to add from project setting the WebGL Template, selecting WebGL 2.0 or 1.0 depends your project needs.</p>
+<p>To support Web platforms based on <strong>WebGL</strong> versions, you also need to add the WebGL Template from the project settings, selecting WebGL 2.0 or 1.0 depending on your project needs.</p>
 <p><img src="images/gl_support_4.JPG" alt="Settings"></p>
 
 </article>

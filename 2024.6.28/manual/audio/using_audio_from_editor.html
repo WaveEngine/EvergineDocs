@@ -84,9 +84,9 @@
 <h1 id="using-audio-from-evergine-studio">Using Audio from Evergine Studio</h1>
 
 <p><img src="images/3dAudioHeader.jpg" alt="Spatial sounds"></p>
-<p>The 3D spatialized audio allows simulate sounds in a 3D environmnet. The goal is to reproduce audio in a way that replicates the way we hear sound in the real world.</p>
-<p>Spatial sounds are very useful to simulate environments in <em>Virtual Reality / Augmented reality</em> because this feature added more realism to the experience.</p>
-<p>In Evergine there are two components to simulate audio/spatial audio:</p>
+<p>3D spatialized audio allows simulating sounds in a 3D environment. The goal is to reproduce audio in a way that replicates how we hear sound in the real world.</p>
+<p>Spatial sounds are very useful for simulating environments in <em>Virtual Reality / Augmented Reality</em> because this feature adds more realism to the experience.</p>
+<p>In Evergine, there are two components to simulate audio/spatial audio:</p>
 <table>
 <thead>
 <tr>
@@ -101,13 +101,13 @@
 </tr>
 <tr>
 <td><strong>SoundEmitter3D</strong></td>
-<td>Represents an emitter. This component can be added to any Entity of your scene to emit a 3D sound.</td>
+<td>Represents an emitter. This component can be added to any entity in your scene to emit a 3D sound.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="sound-listener">Sound Listener</h2>
-<p>To add a sound listener component to the main camera, select the camera and click the button on <img src="images/plusIcon.jpg" alt="plus icon"> from <strong>Entity Details</strong> panel and search the component.</p>
-<p><img src="images/AddSoundListener.jpg" alt="Add listerner component"></p>
+<p>To add a sound listener component to the main camera, select the camera and click the button with the <img src="images/plusIcon.jpg" alt="plus icon"> in the <strong>Entity Details</strong> panel and search for the component.</p>
+<p><img src="images/AddSoundListener.jpg" alt="Add listener component"></p>
 <table>
 <thead>
 <tr>
@@ -118,12 +118,12 @@
 <tbody>
 <tr>
 <td><strong>DopplerFactor</strong></td>
-<td>Changes in frequency of a wave in relation to a listener who is moving relative to the sound emitter. The value is a positive float and the default value is 1.0.</td>
+<td>Changes in the frequency of a wave relative to a listener who is moving relative to the sound emitter. The value is a positive float, and the default value is 1.0.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="sound-emitter">Sound Emitter</h2>
-<p>To add a sound emitter component to any scene entity, select the entity and click the button on<img src="images/plusIcon.jpg" alt="plus icon"> from <strong>Entity Details</strong> panel and search the component.</p>
+<p>To add a sound emitter component to any scene entity, select the entity and click the button with the <img src="images/plusIcon.jpg" alt="plus icon"> in the <strong>Entity Details</strong> panel and search for the component.</p>
 <p><img src="images/AddSoundEmitter.jpg" alt="Add emitter component"></p>
 <table>
 <thead>
@@ -135,23 +135,23 @@
 <tbody>
 <tr>
 <td><strong>Audio</strong></td>
-<td>The audio asset. <strong><em>Note. The audio must be mono to work as spatial sound.</em></strong></td>
+<td>The audio asset. <strong><em>Note: The audio must be mono to work as spatial sound.</em></strong></td>
 </tr>
 <tr>
 <td><strong>Volume</strong></td>
-<td>The audio volume. The value is between [0.0-1.0] and the default value is 1.0.</td>
+<td>The audio volume. The value is between [0.0-1.0], and the default value is 1.0.</td>
 </tr>
 <tr>
 <td><strong>Pitch</strong></td>
-<td>The quality makes it possible to judge sounds as <em>higher</em> and <em>lower</em> in the sense associated with musical melodies. The value is between [0.0-1.0] and the default value is 1.0.</td>
+<td>The quality that makes it possible to judge sounds as <em>higher</em> or <em>lower</em> in the sense associated with musical melodies. The value is between [0.0-1.0], and the default value is 1.0.</td>
 </tr>
 <tr>
 <td><strong>IsMuted</strong></td>
-<td>Indicates whether the emitter is muted or not.</td>
+<td>Indicates whether the emitter is muted.</td>
 </tr>
 <tr>
 <td><strong>Distance Scale Factor</strong></td>
-<td>This is only used to calculate the doppler effect on the sound effect.</td>
+<td>This is only used to calculate the Doppler effect on the sound effect.</td>
 </tr>
 <tr>
 <td><strong>Play Automatically</strong></td>
@@ -159,11 +159,11 @@
 </tr>
 <tr>
 <td><strong>Loop</strong></td>
-<td>The emitter is playing in loop mode.</td>
+<td>The emitter plays in loop mode.</td>
 </tr>
 <tr>
 <td><strong>Apply3D</strong></td>
-<td>Indicates whether the position of the emitter with respect to the listener will be used to simulate spatial sound or not.</td>
+<td>Indicates whether the position of the emitter with respect to the listener will be used to simulate spatial sound.</td>
 </tr>
 </tbody>
 </table>

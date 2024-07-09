@@ -84,7 +84,7 @@
 <h1 id="cone-twist-joint">Cone Twist Joint</h1>
 
 <p>For ragdolls, the <strong>Cone-Twist Joint</strong> is useful for limbs like the upper arm. It is a special point-to-point joint that adds cone and twist axis limits.</p>
-<p>A Cone-Twist Joint is similar to a Point-to-Point Joint Relationship, but specifies an elliptical cone within which rotation may take place. The cone is described by specifying a maximum rotation on each axis.</p>
+<p>A Cone-Twist Joint is similar to a Point-to-Point Joint relationship but specifies an elliptical cone within which rotation may take place. The cone is described by specifying a maximum rotation on each axis.</p>
 <h2 id="conetwistjoint3d">ConeTwistJoint3D</h2>
 <p>In Evergine, a Cone-Twist Joint is implemented using the <code>ConeTwistJoint3D</code> component.</p>
 <p><img src="images/conetwistJointComponent.png" alt="Point-to-Point Joint"></p>
@@ -102,7 +102,7 @@
 <tr>
 <td><strong>ConnectedEntityPath</strong></td>
 <td>null</td>
-<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid a Joint is established properly.</td>
+<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid is a joint properly established.</td>
 </tr>
 <tr>
 <td><strong>Anchor</strong></td>
@@ -117,12 +117,12 @@
 <tr>
 <td><strong>ConnectedAnchor</strong></td>
 <td><em>auto-calculated</em></td>
-<td>Manually configure the connected anchor position, in the connected body local space.</td>
+<td>Manually configure the connected anchor position in the connected body local space.</td>
 </tr>
 <tr>
 <td><strong>BreakPoint</strong></td>
 <td>0</td>
-<td>If the value is greater than 0, Indicates the force that needs to be applied for this joint to break.</td>
+<td>If the value is greater than 0, it indicates the force that needs to be applied for this joint to break.</td>
 </tr>
 <tr>
 <td><strong>CollideConnected</strong></td>
@@ -131,7 +131,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="limit-properties">Limit properties</h3>
+<h3 id="limit-properties">Limit Properties</h3>
 <table>
 <thead>
 <tr>
@@ -144,7 +144,7 @@
 <tr>
 <td><strong>ConeTwistSettings</strong></td>
 <td>30º, 30º, 30º</td>
-<td>Defines the limitation angle in each axis.</td>
+<td>Defines the limitation angle on each axis.</td>
 </tr>
 <tr>
 <td><strong>LimitSoftness</strong></td>
@@ -187,12 +187,12 @@
 <tr>
 <td><strong>MotorTargetImpulse</strong></td>
 <td>0</td>
-<td>The impulse applied in order to attain the speed.</td>
+<td>The impulse applied to attain the speed.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="using-cone-twist-joint">Using Cone-Twist Joint</h2>
-<p>This snippet creates a serie of bodies attached using Cone-Twist joints.</p>
+<p>This snippet creates a series of bodies attached using Cone-Twist joints.</p>
 <video autoplay="" loop="" muted="" width="400px" height="auto">
   <source src="images/ConeTwistSample.mp4" type="video/mp4">
 </video>
@@ -209,7 +209,7 @@
     // Create the chain...
     for (int i = 0; i &lt; chainLength; i++)
     {
-        /// The first object is kinematic (we don't want a falling chain :D)
+        // The first object is kinematic (we don't want a falling chain :D)
         var rigidObjectType = (i == 0) ? RigidBodyType3D.Kinematic : RigidBodyType3D.Dynamic;
 
         // Create the link entities...

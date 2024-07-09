@@ -84,19 +84,19 @@
 <h1 id="sky-atmosphere">Sky Atmosphere</h1>
 
 <p><img src="images/sky_atmosphere.jpg" alt="Environment Manager"></p>
-<p>This is the default way to create environment lighting in Evergine. When you create a new Scene in Evergine Studio, it will use this method to provide the environmental lighting.</p>
-<p>They create a HDR sky texture that simulates physically the atmosphere properties. Additionally it will use a <a href="../lights.html#directional-lights--photometric-directional-light">Directional Light</a> to control the atmosphere light dispersion and light intensity and color.</p>
+<p>This is the default method to create environment lighting in Evergine. When you create a new scene in Evergine Studio, it will use this method to provide the environmental lighting.</p>
+<p>It creates an HDR sky texture that physically simulates the properties of the atmosphere. Additionally, it uses a <a href="../lights.html#directional-lights--photometric-directional-light">Directional Light</a> to control the atmosphere light dispersion, as well as the light intensity and color.</p>
 <h1 id="suncomponent">SunComponent</h1>
-<p>This component is used to mark a DirectionalLight as the light source that will use the atmosphere controller. When you create a Evergine Scene, it will create a DirectionalLight with a SunComponent.</p>
-<p>Changing the DirectionalLight rotation allows you to change the visual atmospheric, simulating effects like sunset, sunrise or daylight:</p>
+<p>This component is used to mark a Directional Light as the light source that will use the atmosphere controller. When you create an Evergine Scene, it will create a Directional Light with a SunComponent.</p>
+<p>Changing the Directional Light's rotation allows you to change the visual atmosphere, simulating effects like sunset, sunrise, or daylight:</p>
 <p><video width="600" autoplay="" loop=""><source src="images/sky_atmosphere.mp4" type="video/mp4"></video></p>
-<p>This component has no properties, and the only purpose is to mark a DirectionalLight as the Sun source.</p>
+<p>This component has no properties; its only purpose is to mark a Directional Light as the Sun source.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Only the first light with SunComponent will be used.</p>
+<p>Only the first light with a SunComponent will be used.</p>
 </div>
 <h2 id="atmospherecontroller-component">AtmosphereController component</h2>
-<p>This component is responsible to control the set the physical properties of the atmosphere and render the sky dome texture.</p>
+<p>This component is responsible for controlling the physical properties of the atmosphere and rendering the sky dome texture.</p>
 <p><img src="images/atmosphere_controller.png" alt="AtmosphereController"></p>
 <table>
 <thead>
@@ -110,22 +110,22 @@
 <tr>
 <td><strong>RayleighScattering</strong></td>
 <td>5.5, 13, 22.4</td>
-<td>Rayleigh scattering coefficient per each color channel wavelength (Red, Green and Blue).</td>
+<td>Rayleigh scattering coefficient for each color channel wavelength (Red, Green, and Blue).</td>
 </tr>
 <tr>
 <td><strong>RayleighScaleHeight</strong></td>
 <td>8000</td>
-<td>Scale height for Rayleigh scattering measured in meters.</td>
+<td>Scale height for Rayleigh scattering, measured in meters.</td>
 </tr>
 <tr>
 <td><strong>PlanetRadiusInKm</strong></td>
 <td>6371</td>
-<td>Radius of the planet in Kilometers</td>
+<td>Radius of the planet in kilometers.</td>
 </tr>
 <tr>
 <td><strong>AtmosphereRadiusInKm</strong></td>
 <td>6471</td>
-<td>Radius of the atmosphere in Kilometers</td>
+<td>Radius of the atmosphere in kilometers.</td>
 </tr>
 <tr>
 <td><strong>MieScatteringCoefficient</strong></td>
@@ -135,7 +135,7 @@
 <tr>
 <td><strong>MieScaleHeight</strong></td>
 <td>12000</td>
-<td>Mie scattering scale height in meters</td>
+<td>Mie scattering scale height in meters.</td>
 </tr>
 <tr>
 <td><strong>MiePreferredScattering</strong></td>
@@ -145,12 +145,12 @@
 <tr>
 <td><strong>ModifySunColor</strong></td>
 <td>true</td>
-<td>This will force to</td>
+<td>This will force the adjustment of the Sun color.</td>
 </tr>
 <tr>
 <td><strong>SunIntensity</strong></td>
 <td>22.0</td>
-<td>The Sun intensity.</td>
+<td>The Sun's intensity.</td>
 </tr>
 <tr>
 <td><strong>SunDiskEnabled</strong></td>
@@ -160,24 +160,24 @@
 <tr>
 <td><strong>SunDiskSize</strong></td>
 <td>0.02</td>
-<td>The size of the sun disk in degrees</td>
+<td>The size of the sun disk in degrees.</td>
 </tr>
 </tbody>
 </table>
-<p>These properties allows you to simulate another atmospheres of other worlds, like Mars (atmosphere obtained from <a href="https://argos.vu/wp-content/uploads/2021/06/18591764.pdf">here</a>):</p>
+<p>These properties allow you to simulate the atmospheres of other worlds, like Mars (atmosphere obtained from <a href="https://argos.vu/wp-content/uploads/2021/06/18591764.pdf">here</a>):</p>
 <p><img src="images/sky_mars.jpg" alt="Mars"></p>
 <p>Or you can simulate any exotic atmosphere:</p>
 <p><img src="images/sky_alien.jpg" alt="Alien"></p>
 <h2 id="using-sky-atmosphere">Using Sky Atmosphere</h2>
 <h3 id="in-evergine-studio">In Evergine Studio</h3>
-<p>You can add two entities from Evergine Studio under Environment menu entry:</p>
+<p>You can add two entities from Evergine Studio under the Environment menu entry:</p>
 <ul>
-<li><strong>Sun Light:</strong> This will create a Photometric Directional Light marked as a Sun light with the <code>SunComponent</code></li>
-<li><strong>Sky Atmospheric dome:</strong> Will create a Sphere mesh with the <code>AtmosphereController</code> component to create the atmosphere. This entity also has the &quot;Skybox&quot; tag.</li>
+<li><strong>Sun Light:</strong> This will create a Photometric Directional Light marked as a Sun Light with the <code>SunComponent</code>.</li>
+<li><strong>Sky Atmospheric dome:</strong> This will create a sphere mesh with the <code>AtmosphereController</code> component to create the atmosphere. This entity also has the &quot;Skybox&quot; tag.</li>
 </ul>
 <p><img src="images/sky_everginestudio.png" alt="Sky Evergine Studio"></p>
-<h3 id="from-code">From code</h3>
-<p>This is a small code snippet to create both entities needed to create a sky atmosphere:</p>
+<h3 id="from-code">From Code</h3>
+<p>Here is a small code snippet to create the two entities needed to create a sky atmosphere:</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
     // Create the sun light

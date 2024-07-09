@@ -83,63 +83,63 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="entitymanager">EntityManager</h1>
 
-<p><strong>EntityManager</strong> is the subsystem in the Scene responsible to manage Entities. It is responsible to maintain the Entity list, and the lifecycle of each one.</p>
+<p><strong>EntityManager</strong> is the subsystem in the Scene responsible for managing Entities. It is responsible for maintaining the Entity list and the lifecycle of each one.</p>
 <p>Useful ways to interact with EntityManager:</p>
 <h2 id="add-and-remove-entities">Add and Remove Entities</h2>
 <p>The most common way to interact with EntityManager is by adding and removing entities:</p>
 <pre><code class="lang-csharp">EntityManager entityManager = scene.Managers.EntityManager;
 
-// Add an Entity to the Scene..
+// Add an Entity to the Scene.
 entityManager.Add(entity);
 
-// Remove an Entity from the Scene...
+// Remove an Entity from the Scene.
 entityManager.Remove(entity);
 </code></pre>
 <h2 id="important-properties">Important Properties</h2>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th>Property</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>EntityGraph</strong></td>
-<td>Return the entities at the top level on the scene (Those without parent)</td>
+<td>Returns the entities at the top level in the scene (those without a parent).</td>
 </tr>
 <tr>
 <td><strong>AllEntities</strong></td>
-<td>Return all the entities of the scene, including those who have parent.</td>
+<td>Returns all the entities in the scene, including those that have a parent.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="find-entities">Find Entities</h2>
-<p>You can  find Entities in several ways:</p>
+<p>You can find Entities in several ways:</p>
 <h3 id="find-entity-by-entitypath">Find Entity by EntityPath</h3>
 <p>This is the most common way to find an Entity in the Scene, by using its <strong>EntityPath</strong>:</p>
-<pre><code class="lang-csharp">// Find an entity by its Entity Path...
+<pre><code class="lang-csharp">// Find an entity by its EntityPath.
 var entity = entityManager.Find(&quot;Parent.Entity1.ChildEntity&quot;);
 </code></pre>
 <h3 id="find-entity-by-id">Find Entity by ID</h3>
-<p>You can find an Entity if you specify its ID (Guid)</p>
-<pre><code class="lang-csharp">// Find an entity by its ID...
+<p>You can find an Entity by specifying its ID (Guid).</p>
+<pre><code class="lang-csharp">// Find an entity by its ID.
 Guid id = entity.Id;
 var entity = entityManager.Find(id);
 </code></pre>
 <h3 id="find-all-entities-by-tag">Find all Entities by Tag</h3>
-<p>As we mentined before, you can set the tag Entities by setting the <code>Tag</code> property. So, you can obtain an Entity collection that match a given Tag:</p>
-<pre><code class="lang-csharp">// Find all entities with a given Tag...
+<p>As we mentioned before, you can set the tag for Entities by setting the <code>Tag</code> property. You can obtain a collection of entities that match a given Tag:</p>
+<pre><code class="lang-csharp">// Find all entities with a given Tag.
 IEnumerable&lt;Entity&gt; entityCollection = entityManager.FindAllByTag(&quot;Tag&quot;);
 </code></pre>
 <h2 id="entity-tag-collection">Entity Tag Collection</h2>
-<p>A useful feature of EntityManager is the possibility to obtain a live collection of entities that match a specified Tag.</p>
-<p>This collection is represented by the <code>EntityTagCollection</code> class. The main advantage compared to invoke <code>FindAllByTag()</code> method is that in this case the collection is dynamic during the application lifetime. So, you can subscribe to events to get notified when the collection changes:</p>
-<p>Here it is a glimpse of how to use it:</p>
-<pre><code class="lang-csharp">// Gets the tag collection...
+<p>A useful feature of EntityManager is the ability to obtain a live collection of entities that match a specified Tag.</p>
+<p>This collection is represented by the <code>EntityTagCollection</code> class. The main advantage compared to invoking the <code>FindAllByTag()</code> method is that in this case, the collection is dynamic during the application's lifetime. You can subscribe to events to get notified when the collection changes.</p>
+<p>Here is a glimpse of how to use it:</p>
+<pre><code class="lang-csharp">// Get the tag collection.
 var tagCollection = entityManager.GetEntityTagCollection(&quot;Tag&quot;);
 
-// Iterates over all matching entities...
+// Iterate over all matching entities.
 foreach (var entity in tagCollection.Entities)
 {
     System.Console.WriteLine(entity.EntityPath);
@@ -147,14 +147,14 @@ foreach (var entity in tagCollection.Entities)
 
 // TagCollection Events:
 
-// OnEntityAdded: Event triggered when a new Entity with the given Tag is added to the Scene...
+// OnEntityAdded: Event triggered when a new Entity with the given Tag is added to the Scene.
 tagCollection.OnEntityAdded += (sender, entity) =&gt; 
 { 
     System.Console.WriteLine($&quot;New entity: {entity.EntityPath}&quot;); 
 };
 
-// OnEntityRemoved: Event triggered when an Entity is no longer belong to this collection, 
-// becuase the Entity is removed or its Tag has changed...
+// OnEntityRemoved: Event triggered when an Entity no longer belongs to this collection, 
+// because the Entity is removed or its Tag has changed.
 tagCollection.OnEntityRemoved += (sender, entity) =&gt;
 {
     System.Console.WriteLine($&quot;Entity removed: {entity.EntityPath}&quot;);

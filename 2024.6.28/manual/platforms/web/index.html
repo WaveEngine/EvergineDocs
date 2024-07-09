@@ -84,30 +84,30 @@
 <h1 id="evergine-on-the-web-with-webgl-and-webassembly">Evergine on the web with WebGL and WebAssembly</h1>
 
 <hr>
-<p>An Evergine application can be deployed as a web app, using WebGL 2.0 as rendering API.</p>
-<p>Evergine web applications can run statically on client side quite fast by the use of Blazor Web Assembly for native code execution. Furthermore, they are optimzed for fast loading, by parallelizing asset downloading and leveraging compressing techniques such as Brotli and Zip. Finally, to improve the loading as much as possible, which is crucial in web sites, we also provide an optional ASP server application that implements some optimizations that can only be done from server side.</p>
+<p>An Evergine application can be deployed as a web app, using WebGL 2.0 as the rendering API.</p>
+<p>Evergine web applications can run statically on the client side quite fast by using Blazor WebAssembly for native code execution. Furthermore, they are optimized for fast loading by parallelizing asset downloading and leveraging compression techniques such as Brotli and Zip. Finally, to improve loading as much as possible, which is crucial on websites, we also provide an optional ASP server application that implements some optimizations that can only be done from the server side.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>.Net8.0 SDK
+<li>.NET 8.0 SDK
 <ul>
 <li>Install Visual Studio 2022 (Recommended)</li>
-<li>Alternatively, <a href="https://dotnet.microsoft.com/download/dotnet/8.0">Install</a> latest dotnet SDK release.</li>
+<li>Alternatively, <a href="https://dotnet.microsoft.com/download/dotnet/8.0">install</a> the latest .NET SDK release.</li>
 </ul>
 </li>
 <li>Install wasm-tools
 <ul>
-<li>From Visual Studio Installer, add <em>web development workload</em> and the <em>.Net WebAssembly build tools</em> individual component.</li>
+<li>From the Visual Studio Installer, add the <em>web development workload</em> and the <em>.NET WebAssembly build tools</em> individual component.</li>
 <li>Additionally, install the <code>wasm-tools</code> workload in a root terminal: <code>dotnet workload install wasm-tools</code></li>
 </ul>
 </li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <ul>
-<li>Due to the very recent support of WebGL2.0 by iOS devices, support on its Safari browser is still a work in progress.</li>
+<li>Due to the very recent support of WebGL 2.0 by iOS devices, support on the Safari browser is still a work in progress.</li>
 </ul>
 <h2 id="in-this-section">In this section</h2>
 <ul>
-<li><a href="getting_started.html">Getting started</a></li>
+<li><a href="getting_started.html">Getting Started</a></li>
 <li><a href="ops.html">DevOps</a></li>
 <li><a href="tips.html">Tips</a></li>
 </ul>

@@ -85,18 +85,18 @@
 
 <hr>
 <p><img src="images/FontEditor.jpg" alt="Font Editor Interface"></p>
-<p><strong>Font Editor</strong> allows editing the font assets. Double click over a font asset shown in <a href="../../evergine_studio/interface.html">Assets Details</a> will open this editor. The editor is composed of 3 main parts:</p>
+<p><strong>Font Editor</strong> allows you to edit font assets. Double-clicking on a font asset shown in <a href="../../evergine_studio/interface.html">Assets Details</a> will open this editor. The editor is composed of three main parts:</p>
 <h2 id="viewport"><strong>Viewport</strong></h2>
-<p>Shows the result of the current font configuration. The viewport has a toolbox on the top side that allows change the font color and background color.</p>
+<p>Displays the result of the current font configuration. The viewport includes a toolbox at the top that allows you to change the font color and background color.</p>
 <h2 id="input-text"><strong>Input Text</strong></h2>
-<p>In this area you can input different texts to test the font configuration in the viewport. By default appear the paragrah <em>&quot;The quick brown fox jumps over the lazy dog. 1234567890.:,;'&quot;(!?)+-*/=&quot;</em> that test all letters, numbers and punctuation marks. But if you modify the charset to include additional characters you can test including them in this input text.</p>
+<p>In this area, you can input different texts to test the font configuration in the viewport. By default, the paragraph <em>&quot;The quick brown fox jumps over the lazy dog. 1234567890.:,;'&quot;(!?)+-*/=&quot;</em> appears, which tests all letters, numbers, and punctuation marks. However, if you modify the charset to include additional characters, you can test them by including them in this input text.</p>
 <h2 id="properties"><strong>Properties</strong></h2>
 <p>The font properties that you can configure are:</p>
 <table>
 <thead>
 <tr>
 <th>Property</th>
-<th>Default value</th>
+<th>Default Value</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -104,12 +104,12 @@
 <tr>
 <td><strong>MinGlyphSize</strong></td>
 <td>32</td>
-<td>The minimum glyph size used to render a font glyph in the atlas. When a font is so thin or has thin parts as ligatures, it will be necessary to increase this size for a correct render. Increasing the size produces more large atlas and a more weight font asset.</td>
+<td>The minimum glyph size used to render a font glyph in the atlas. When a font is very thin or has thin parts such as ligatures, it may be necessary to increase this size for accurate rendering. Increasing the size results in a larger atlas and a heavier font asset.</td>
 </tr>
 <tr>
 <td><strong>Charset</strong></td>
 <td>['','~']</td>
-<td>Sets the character set. <p> The charset is a text with UTF-8 or ASCII encondig. The following syntax are correct: </p> <ul><li> Single character: <em>'A'</em> (UTF-8 enconded), <em>65</em> (decimal Unicode), <em>0x41</em> (hexadecimal Unicode)</li><li>Range of characters: <em>['A', 'Z']</em>,<em>[65, 90]</em>, <em>[0x41, 0x5a]</em></li> <li>String of characters: <em>&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</em> (UTF-8 enconded)</li> </ul> <p>The entries should be separated by commas or whitespace. In between quotation marks, backslash is used as the escape character (e.g. ''', '\', &quot;!&quot;#&quot;). The order in which characters appear is not taken into consideration.</p></td>
+<td>Sets the character set. <p>The charset is a text with UTF-8 or ASCII encoding. The following syntax is correct:</p> <ul><li>Single character: <em>'A'</em> (UTF-8 encoded), <em>65</em> (decimal Unicode), <em>0x41</em> (hexadecimal Unicode)</li><li>Range of characters: <em>['A', 'Z']</em>, <em>[65, 90]</em>, <em>[0x41, 0x5a]</em></li> <li>String of characters: <em>&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</em> (UTF-8 encoded)</li> </ul> <p>Entries should be separated by commas or whitespace. Inside quotation marks, the backslash is used as the escape character (e.g., ''', '\', &quot;!&quot;#&quot;). The order in which characters appear is not considered.</p></td>
 </tr>
 </tbody>
 </table>

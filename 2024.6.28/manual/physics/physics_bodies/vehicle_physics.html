@@ -87,17 +87,17 @@
   <source src="images/physic_vehicle.mp4" type="video/mp4">
 </video>
 <p><font size="2"><em>The car model is based on <a href="https://sketchfab.com/3d-models/real-car-new-d90c7f830f9c41398bb55de4a2e001be">Real Car New</a> made by Maker Game Studios</em></font></p>
-<p>Is it possible to simulate physical vehicles by using a standard <a href="rigid_bodies.html">Rigid Body</a> and applying several components to set the Vehicle behavior. This is a simplified vehicle physic model. Instead of simulation each wheel and chassis as separate rigid bodies, connected by <a href="../joints/index.html">joints</a>, it uses a simplified model.</p>
-<p>The entire vehicle is represented as a single <a href="rigid_bodies.html">Rigid Body</a>, the chassis. The collision detection of the wheels is approximated using <a href="../queries.html#raycast">ray-casting</a>, and the tire friction is a basic anisotropic friction model.</p>
-<p>To start using Physic vehicles in Evergine, we need to use two components:</p>
+<p>It is possible to simulate physical vehicles using a standard <a href="rigid_bodies.html">Rigid Body</a> and applying several components to set the vehicle's behavior. This is a simplified vehicle physics model. Instead of simulating each wheel and chassis as separate rigid bodies connected by <a href="../joints/index.html">joints</a>, it uses a simplified model.</p>
+<p>The entire vehicle is represented as a single <a href="rigid_bodies.html">Rigid Body</a>, the chassis. The collision detection of the wheels is approximated using <a href="../queries.html#raycast">ray-casting</a>, and the tire friction is modeled using basic anisotropic friction.</p>
+<p>To start using physics vehicles in Evergine, we need to use two components:</p>
 <ul>
 <li><strong>PhysicVehicle3D:</strong> Add this component to the chassis rigid body that we want to turn into a vehicle.</li>
-<li><strong>PhysicWheel3D:</strong> Add this component to each entity that you want to act as a wheel for a vehicle.</li>
+<li><strong>PhysicWheel3D:</strong> Add this component to each entity that you want to act as a wheel for the vehicle.</li>
 </ul>
 <h2 id="physicvehicle3d">PhysicVehicle3D</h2>
 <p>In Evergine, a vehicle is implemented using the <code>PhysicVehicle3D</code> component.</p>
 <p><img src="images/physicVehicleComponent.png" alt="PhysicVehicle3D Component"></p>
-<h3 id="general-vehicle-properties">General vehicle properties</h3>
+<h3 id="general-vehicle-properties">General Vehicle Properties</h3>
 <table>
 <thead>
 <tr>
@@ -110,7 +110,7 @@
 <tr>
 <td><strong>SuspensionStiffness</strong></td>
 <td>20</td>
-<td>Suspension stiffness is a measure of how much force is required to compress the suspension of a vehicle.</td>
+<td>Suspension stiffness is a measure of how much force is required to compress the vehicle's suspension.</td>
 </tr>
 <tr>
 <td><strong>SuspensionCompression</strong></td>
@@ -125,22 +125,22 @@
 <tr>
 <td><strong>MaxSuspensionTravel</strong></td>
 <td>5.0</td>
-<td>It represents the maximum distance that the suspension can be compressed or extended. It is measured in units of length.</td>
+<td>Represents the maximum distance that the suspension can be compressed or extended. It is measured in units of length.</td>
 </tr>
 <tr>
 <td><strong>FrictionSlip</strong></td>
 <td>1000</td>
-<td>It refers to the amount of slip that occurs between the tire and the ground during motion. Friction slip is typically modeled using a friction coefficient that represents the ratio of the tangential force to the normal force between the tire and the ground. This coefficient can be adjusted to simulate different levels of slip and traction for different types of vehicles and surfaces.</td>
+<td>Refers to the amount of slip that occurs between the tire and the ground during motion. Friction slip is typically modeled using a friction coefficient that represents the ratio of the tangential force to the normal force between the tire and the ground. This coefficient can be adjusted to simulate different levels of slip and traction for different types of vehicles and surfaces.</td>
 </tr>
 <tr>
 <td><strong>MaxSuspensionForce</strong></td>
 <td>6000</td>
-<td>Specifies the maximum force that the suspension can apply to the chassis of the vehicle. It is used to limit the effect of the suspension when it is compressed or stretched, preventing the vehicle from bouncing too much or losing stability.</td>
+<td>Specifies the maximum force that the suspension can apply to the vehicle's chassis. It is used to limit the effect of the suspension when it is compressed or stretched, preventing the vehicle from bouncing too much or losing stability.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="control-the-vehicle">Control the vehicle</h3>
-<p>Using the following methods you can control your vehicle:</p>
+<h3 id="control-the-vehicle">Control the Vehicle</h3>
+<p>Using the following methods, you can control your vehicle:</p>
 <table>
 <thead>
 <tr>
@@ -151,23 +151,23 @@
 <tbody>
 <tr>
 <td><strong>ApplyEngineForce(force)</strong></td>
-<td>This method is used to <strong>apply the engine force</strong> that will be applied to the vehicle. This can be adjusted to increase or decrease the speed of the vehicle, and it can be set to a negative value to go backwards. <em>The engine force will be applied only to the drive wheels.</em></td>
+<td>This method applies the engine force to the vehicle. This can be adjusted to increase or decrease the vehicle's speed and can be set to a negative value for reverse. <em>The engine force will be applied only to the drive wheels.</em></td>
 </tr>
 <tr>
 <td><strong>SetSteeringValue(steering)</strong></td>
-<td>This method is used to set the steering angle of the vehicle. Use this method to change the vehicle direction. <em>The steering value is only applied to steerable wheels.</em></td>
+<td>This method sets the vehicle's steering angle. Use this method to change the vehicle's direction. <em>The steering value is only applied to steerable wheels.</em></td>
 </tr>
 <tr>
 <td><strong>SetBrake(brake)</strong></td>
-<td>Indicates the brake force applied by the vehicle. <em>The steering value is only applied to brakable wheels.</em></td>
+<td>This method indicates the brake force applied by the vehicle. <em>The brake value is only applied to brakeable wheels.</em></td>
 </tr>
 </tbody>
 </table>
 <h2 id="physicwheel3d">PhysicWheel3D</h2>
 <p>In Evergine, a wheel is implemented using the <code>PhysicWheel3D</code> component.</p>
 <p><img src="images/physicWheelComponent.png" alt="PhysicWheel3D Component"></p>
-<h3 id="vehicle-attachment-properties">Vehicle attachment Properties</h3>
-<p>First of all, it's necessary to indicate how which vehicle entity the wheel will be associated.</p>
+<h3 id="vehicle-attachment-properties">Vehicle Attachment Properties</h3>
+<p>First, it's necessary to indicate which vehicle entity the wheel will be associated with.</p>
 <table>
 <thead>
 <tr>
@@ -180,7 +180,7 @@
 <tr>
 <td><strong>SearchVehicle</strong></td>
 <td><code>FromParents</code></td>
-<td>Indicates the strategy to search the associated vehicle: <ul><li><strong>FromParents:</strong> The wheel entity is a child of the Chassis vehicle. Find the first PhysicVehicle3D component in its descendants.</li><li><strong>FromEntityPath:</strong> The vehicle entity is selected by indicating its <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">Entity Path</a>.</li></ul></td>
+<td>Indicates the strategy to search for the associated vehicle: <ul><li><strong>FromParents:</strong> The wheel entity is a child of the Chassis vehicle. Find the first PhysicVehicle3D component in its descendants.</li><li><strong>FromEntityPath:</strong> The vehicle entity is selected by indicating its <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">Entity Path</a>.</li></ul></td>
 </tr>
 <tr>
 <td><strong>PhysicVehicleEntityPath</strong></td>
@@ -190,7 +190,7 @@
 </tbody>
 </table>
 <h3 id="wheel-axis-properties">Wheel Axis Properties</h3>
-<p>The following properties helps to define how the wheel directions of suspension and rotation among other things</p>
+<p>The following properties help to define the wheel directions for suspension and rotation, among other things.</p>
 <table>
 <thead>
 <tr>
@@ -203,7 +203,7 @@
 <tr>
 <td><strong>WheelRadius</strong></td>
 <td>0.5</td>
-<td>Determines the wheel radius. The <strong>WheelRadius</strong> value can be used in two ways:<ul><li>If the Entity has a mesh (with <code>MeshComponent</code> for example), the Size value is relative to the mesh extents.</li><li>If the entity hasn't any meshes, the Size value is used as scene units.</li></ul></td>
+<td>Determines the wheel radius. The <strong>WheelRadius</strong> value can be used in two ways: <ul><li>If the entity has a mesh (with <code>MeshComponent</code>, for example), the size value is relative to the mesh extents.</li><li>If the entity doesn't have any meshes, the size value is used as scene units.</li></ul></td>
 </tr>
 <tr>
 <td><strong>RotationAxis</strong></td>
@@ -222,9 +222,9 @@
 </tr>
 </tbody>
 </table>
-<p><img src="images/wheelAxies.png" alt="Wheel Axies"></p>
+<p><img src="images/wheelAxies.png" alt="Wheel Axes"></p>
 <h3 id="flags-properties">Flags Properties</h3>
-<p>In the following properties you can specify how the wheel will be used in the car (steerable, breakable, etc...)</p>
+<p>In the following properties, you can specify how the wheel will be used in the car (steerable, brakeable, etc.)</p>
 <table>
 <thead>
 <tr>
@@ -237,7 +237,7 @@
 <tr>
 <td><strong>IsFrontWheel</strong></td>
 <td><code>false</code></td>
-<td>It indicates if this is a front wheel or not. This property, in combination with others, helps to define the behavior of the wheel. For example, a steerable wheel which is not a front wheel will be steered in the opposite direction that a front wheel.</td>
+<td>Indicates whether this is a front wheel or not. This property, in combination with others, helps to define the wheel's behavior. For example, a steerable wheel that is not a front wheel will be steered in the opposite direction of a front wheel.</td>
 </tr>
 <tr>
 <td><strong>IsSteerableWheel</strong></td>
@@ -252,14 +252,14 @@
 <tr>
 <td><strong>IsBrakableWheel</strong></td>
 <td><code>true</code></td>
-<td>Determine if the wheel is able to brake or not.</td>
+<td>Determines if the wheel is able to brake or not.</td>
 </tr>
 </tbody>
 </table>
-<p>With the above properties, you can define different types of vehicles (4x4, font-wheel-drive, etc.)</p>
-<h3 id="controlling-the-wheel-individually">Controlling the wheel individually</h3>
-<p>Above we described how to control your vehicle using a sets of methods to control the general steering, brake and engine force values of the vehicle.</p>
-<p>You can also avoid to use this methods and set individually these properties to the wheel directly. This allows you to set different values to each wheel (different steering values per wheel for example).</p>
+<p>With the above properties, you can define different types of vehicles (4x4, front-wheel-drive, etc.).</p>
+<h3 id="controlling-the-wheel-individually">Controlling the Wheel Individually</h3>
+<p>Above we described how to control your vehicle using sets of methods to control the general steering, brake, and engine force values of the vehicle.</p>
+<p>You can also avoid using these methods and set these properties individually for each wheel. This allows you to set different values for each wheel (e.g., different steering values per wheel).</p>
 <table>
 <thead>
 <tr>
@@ -278,12 +278,12 @@
 </tr>
 <tr>
 <td><strong>Brake</strong></td>
-<td>The brake force acting to this wheel.</td>
+<td>The brake force acting on this wheel.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="overriding-vehicle-settings">Overriding vehicle settings</h3>
-<p>As we mentioned before, the <code>PhysicVehicle3D</code> component defines a series of physical properties of the suspensions. By default, all of these properties are applied to all wheel equally, but you can override these properties and set your specific values.</p>
+<h3 id="overriding-vehicle-settings">Overriding Vehicle Settings</h3>
+<p>As we mentioned before, the <code>PhysicVehicle3D</code> component defines a series of physical properties for the suspension. By default, all of these properties are applied to all wheels equally, but you can override these properties and set your specific values.</p>
 <table>
 <thead>
 <tr>
@@ -301,7 +301,7 @@
 <tr>
 <td><strong>SuspensionStiffness</strong></td>
 <td>20</td>
-<td>Suspension stiffness is a measure of how much force is required to compress the suspension of a vehicle.</td>
+<td>Suspension stiffness is a measure of how much force is required to compress the vehicle's suspension.</td>
 </tr>
 <tr>
 <td><strong>SuspensionCompression</strong></td>
@@ -316,23 +316,23 @@
 <tr>
 <td><strong>MaxSuspensionTravel</strong></td>
 <td>5.0</td>
-<td>It represents the maximum distance that the suspension can be compressed or extended. It is measured in units of length.</td>
+<td>Represents the maximum distance that the suspension can be compressed or extended. It is measured in units of length.</td>
 </tr>
 <tr>
 <td><strong>FrictionSlip</strong></td>
 <td>1000</td>
-<td>It refers to the amount of slip that occurs between the tire and the ground during motion. Friction slip is typically modeled using a friction coefficient that represents the ratio of the tangential force to the normal force between the tire and the ground. This coefficient can be adjusted to simulate different levels of slip and traction for different types of vehicles and surfaces.</td>
+<td>Refers to the amount of slip that occurs between the tire and the ground during motion. Friction slip is typically modeled using a friction coefficient that represents the ratio of the tangential force to the normal force between the tire and the ground. This coefficient can be adjusted to simulate different levels of slip and traction for different types of vehicles and surfaces.</td>
 </tr>
 <tr>
 <td><strong>MaxSuspensionForce</strong></td>
 <td>6000</td>
-<td>Specifies the maximum force that the suspension can apply to the chassis of the vehicle. It is used to limit the effect of the suspension when it is compressed or stretched, preventing the vehicle from bouncing too much or losing stability.</td>
+<td>Specifies the maximum force that the suspension can apply to the vehicle's chassis. It is used to limit the effect of the suspension when it is compressed or stretched, preventing the vehicle from bouncing too much or losing stability.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="using-physics-vehicles">Using Physics Vehicles</h2>
-<p>In the following snippet we are going to create a simple vehicle and start controlling it.</p>
-<h3 id="create-the-vehicle">Create the vehicle</h3>
+<p>In the following snippet, we are going to create a simple vehicle and start controlling it.</p>
+<h3 id="create-the-vehicle">Create the Vehicle</h3>
 <video autoplay="" loop="" muted="" width="400px" height="auto">
   <source src="images/VehiclePhysicsSample.mp4" type="video/mp4">
 </video>
@@ -351,8 +351,7 @@
         .AddComponent(new PlaneMesh() { Width = 20, Height = 20 })
         .AddComponent(new MeshRenderer())
         .AddComponent(new StaticBody3D())
-        .AddComponent(new BoxCollider3D())
-        ;
+        .AddComponent(new BoxCollider3D());
 
     // Create the vehicle entity
     var vehicle = new Entity()
@@ -372,13 +371,11 @@
         .AddComponent(new BoxCollider3D());
     vehicle.AddChild(chassis);
 
-    // Add Wheels
-    vehicle.AddChild(this.AddWheel( vehicleMaterial, new Vector3(1, -0.5f, 1.5f), true, true));
+    // Add wheels
+    vehicle.AddChild(this.AddWheel(vehicleMaterial, new Vector3(1, -0.5f, 1.5f), true, true));
     vehicle.AddChild(this.AddWheel(vehicleMaterial, new Vector3(-1, -0.5f, 1.5f), true, true));
     vehicle.AddChild(this.AddWheel(vehicleMaterial, new Vector3(1, -0.5f, -1.5f), false, false));
     vehicle.AddChild(this.AddWheel(vehicleMaterial, new Vector3(-1, -0.5f, -1.5f), false, false));
-
-
 
     this.Managers.EntityManager.Add(floor);
     this.Managers.EntityManager.Add(vehicle);
@@ -404,12 +401,12 @@ private Entity AddWheel(Material material, Vector3 position, bool isFront, bool 
         });
 }
 </code></pre>
-<h3 id="control-the-car">Control the car!</h3>
+<h3 id="control-the-car">Control the Car!</h3>
 <p>We just need to add a simple custom behavior to start controlling the car:</p>
 <video autoplay="" loop="" muted="" width="400px" height="auto">
   <source src="images/VehiclePhysicsSample2.mp4" type="video/mp4">
 </video>
-<p>First of all, create a custom Behavior, with the following code:</p>
+<p>First of all, create a custom Behavior with the following code:</p>
 <pre><code class="lang-csharp">public class VehicleController : Behavior
 {
     [BindService]
@@ -418,8 +415,8 @@ private Entity AddWheel(Material material, Vector3 position, bool isFront, bool 
     [BindComponent]
     private PhysicVehicle3D vehicle;
 
-    public float MaxForce = 1000; // Max Engine force
-    public float Brake = 20;  // Max breke force
+    public float MaxForce = 1000; // Max engine force
+    public float Brake = 20;  // Max brake force
     public float MaxSteering = MathHelper.ToRadians(35);
     public float SteeringSmooth = 0.5f;
 
@@ -432,21 +429,21 @@ private Entity AddWheel(Material material, Vector3 position, bool isFront, bool 
 
         float engineForce = 0;
 
-        // If press the W or Up Arrow, move forward...
+        // If W or the Up Arrow key is pressed, move forward...
         if ((keyboard.ReadKeyState(Keys.W) == ButtonState.Pressed) || (keyboard.ReadKeyState(Keys.Up) == ButtonState.Pressed))
         {
             engineForce = MaxForce;
         }
-        // If press the S or Down Arrow, reverse direction...
+        // If S or the Down Arrow key is pressed, reverse direction...
         else if ((keyboard.ReadKeyState(Keys.S) == ButtonState.Pressed) || (keyboard.ReadKeyState(Keys.Down) == ButtonState.Pressed))
         {
             engineForce = -MaxForce / 3;
         }
 
-        // Apply the brake if we press the space bar
+        // Apply the brake if the Space bar is pressed
         var brake = keyboard.ReadKeyState(Keys.Space) == ButtonState.Pressed ? Brake : 0;
 
-        // Sets the Steering value by aplying D,A or Left and Right Arrow...
+        // Set the steering value by pressing D, A, or the Left and Right Arrow keys...
         var steeringRotation = 0f;
         if ((keyboard.ReadKeyState(Keys.D) == ButtonState.Pressed) || (keyboard.ReadKeyState(Keys.Right) == ButtonState.Pressed))
         {
@@ -461,7 +458,7 @@ private Entity AddWheel(Material material, Vector3 position, bool isFront, bool 
         // Smooth the steering...
         this.currentSteering = MathHelper.SmoothDamp(this.currentSteering, steeringRotation, ref this.steeringVelocity, this.SteeringSmooth, (float)gameTime.TotalSeconds);
 
-        // Apply the engine force, brake and steering values...
+        // Apply the engine force, brake, and steering values...
         this.vehicle.ApplyEngineForce(engineForce);
         this.vehicle.SetSteeringValue(this.currentSteering);
         this.vehicle.SetBrake(brake);

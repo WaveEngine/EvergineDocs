@@ -84,14 +84,14 @@
 <h1 id="static-bodies">Static Bodies</h1>
 
 <p><img src="../images/physics.png" alt="Static Bodies"></p>
-<p><strong>Static bodies</strong> are not affected by any physic force, and as a result it don't move. Rigid bodies can collide with static bodies. In general, static bodies can be used for objects that are immovable, like walls, floors, etc...</p>
-<p>In Evergine, we use the <code>StaticBody3D</code> component to provide the functionality required to turn an Entity into a Static body.</p>
+<p><strong>Static bodies</strong> are not affected by any physical force, and as a result, they don't move. Rigid bodies can collide with static bodies. In general, static bodies can be used for objects that are immovable, like walls, floors, etc.</p>
+<p>In Evergine, we use the <code>StaticBody3D</code> component to provide the functionality required to turn an Entity into a static body.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>You can change the position of a static body changing the entity Transform, but it is not recommended if you want to apply motions. In that case use a Kinematic RigidBody</p>
+<p>You can change the position of a static body by changing the entity Transform, but it is not recommended if you want to apply motions. In that case, use a Kinematic RigidBody.</p>
 </div>
 <h2 id="static-component">Static Component</h2>
-<p>In Evergine, we use the <code>StaticBody3D</code> component to provide the functionality required to turn an Entity into a Static body.</p>
+<p>In Evergine, we use the <code>StaticBody3D</code> component to provide the functionality required to turn an Entity into a static body.</p>
 <p><img src="images/staticbody3d_component.png" alt="StaticBody3D"></p>
 <h3 id="general-properties">General properties</h3>
 <table>
@@ -106,7 +106,7 @@
 <tr>
 <td><strong>Restitution</strong></td>
 <td>0</td>
-<td>Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding bodies is 0, the bodies lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the &quot;bounciness&quot; of rigidbodies.</td>
+<td>Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding bodies is 0, the bodies lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the &quot;bounciness&quot; of rigid bodies.</td>
 </tr>
 <tr>
 <td><strong>Friction</strong></td>
@@ -121,33 +121,31 @@
 <tr>
 <td><strong>IsSensor</strong></td>
 <td>false</td>
-<td>If you set a physic body to be a sensor, other colliders no longer bump into it. Instead, they pass through. Sensors detects when bodies enter it, which you can use in your application.</td>
+<td>If you set a physical body to be a sensor, other colliders no longer bump into it. Instead, they pass through. Sensors detect when bodies enter it, which you can use in your application.</td>
 </tr>
 <tr>
 <td><strong>CollisionCategory</strong></td>
 <td><code>Cat1</code></td>
-<td>The CollisionCategory flag specify the category of this body.</td>
+<td>The CollisionCategory flag specifies the category of this body.</td>
 </tr>
 <tr>
 <td><strong>MaskBit</strong></td>
 <td><code>All</code></td>
-<td>The MaskBits indicates with which categories this body will collide.</td>
+<td>The MaskBits indicate with which categories this body will collide.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-a-static-body">Create a Static Body</h2>
-<p>You only need to add a <code>StaticBody3D</code> to an entity, to become this into a static body. Don't forget to add a proper collider too.</p>
+<p>You only need to add a <code>StaticBody3D</code> to an entity to make it a static body. Don't forget to add a proper collider too.</p>
 <h3 id="from-code">From code</h3>
-<p>In the following code we will create a floor plane of 10x10 units:</p>
-<pre><code class="lang-csharp">
-Entity floor = new Entity()
+<p>In the following code, we will create a floor plane of 10x10 units:</p>
+<pre><code class="lang-csharp">Entity floor = new Entity()
     .AddComponent(new Transform3D(){ Position = position })
     .AddComponent(new MaterialComponent() { Material = floorMaterial }) // assign a material
     .AddComponent(new PlaneMesh(){ Width = 10, Height = 10 }) // Create a 10x10 floor plane
     .AddComponent(new MeshRenderer())
-
-    .AddComponent(new StaticBody3D())         // Add a StaticBody3D component...    
-    .AddComponent(new BoxCollider3D());     // Assign a BoxCollider3D to the physic body...
+    .AddComponent(new StaticBody3D())         // Add a StaticBody3D component    
+    .AddComponent(new BoxCollider3D());     // Assign a BoxCollider3D to the physical body
 
 this.Managers.EntityManager.Add(floor);
 </code></pre>

@@ -84,13 +84,13 @@
 <h1 id="rigid-bodies">Rigid Bodies</h1>
 
 <p><img src="../images/physics.png" alt="Rigid Bodies"></p>
-<p>Rigid bodies are moved around by forces such as collision and gravity. In general, rigidbodies are good choice for objects that can be moved or pushed like boxes, furniture, and obstacles.</p>
+<p>Rigid bodies are moved around by forces such as collisions and gravity. In general, rigid bodies are a good choice for objects that can be moved or pushed, like boxes, furniture, and obstacles.</p>
 <p>In Evergine, we use the <code>RigidBody3D</code> component to provide the functionality required to turn an Entity into a rigid body.</p>
-<p>Every frame, the PhysicManager update the state of every registered rigid body, changing their poses and detecting collisions.</p>
+<p>Every frame, the PhysicManager updates the state of every registered rigid body, changing their poses and detecting collisions.</p>
 <h2 id="rigidbody3d-component">RigidBody3D Component</h2>
 <p>In Evergine, we use the <code>RigidBody3D</code> component to provide the functionality required to turn an Entity into a rigid body.</p>
 <p><img src="images/rigidbody3d_component.png" alt="RigidBody3D"></p>
-<h3 id="general-properties">General properties</h3>
+<h3 id="general-properties">General Properties</h3>
 <table>
 <thead>
 <tr>
@@ -103,12 +103,12 @@
 <tr>
 <td><strong>Mass</strong></td>
 <td>1.0</td>
-<td>Sets the mass of the rigid body. Try to avoid larger mass ratios (differences).</td>
+<td>Sets the mass of the rigid body. Try to avoid large mass ratios (differences).</td>
 </tr>
 <tr>
 <td><strong>Restitution</strong></td>
 <td>0</td>
-<td>Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding bodies is 0, the bodies lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the &quot;bounciness&quot; of rigidbodies.</td>
+<td>Sets the amount of kinetic energy lost or gained after a collision. A typical value is between 0 and 1. If the restitution property of colliding bodies is 0, the bodies lose all energy and stop moving immediately on impact. If the restitution is 1, they lose no energy and rebound with the same velocity they collided at. Use this to change the &quot;bounciness&quot; of rigid bodies.</td>
 </tr>
 <tr>
 <td><strong>Friction</strong></td>
@@ -123,17 +123,17 @@
 <tr>
 <td><strong>CollisionCategory</strong></td>
 <td><code>Cat1</code></td>
-<td>The CollisionCategory flag specify the category of this body.</td>
+<td>The CollisionCategory flag specifies the category of this body.</td>
 </tr>
 <tr>
 <td><strong>MaskBit</strong></td>
 <td><code>All</code></td>
-<td>The MaskBits indicates with which categories this body will collide.</td>
+<td>The MaskBits indicate with which categories this body will collide.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="motion-properties">Motion properties</h3>
-<p>The following properties affect the movement of the rigidbody.</p>
+<h3 id="motion-properties">Motion Properties</h3>
+<p>The following properties affect the movement of the rigid body.</p>
 <table>
 <thead>
 <tr>
@@ -151,12 +151,12 @@
 <tr>
 <td><strong>LinearFactor</strong></td>
 <td>1,1,1</td>
-<td>This property is used to limit the translation of a rigidbody. It's separated in X, Y, Z. If one of this axis is set to 1, the movement is not limited, and if a value is set to 0, this axis is locked.</td>
+<td>This property is used to limit the translation of a rigid body. It's separated into X, Y, and Z. If one of these axes is set to 1, the movement is not limited, and if a value is set to 0, the axis is locked.</td>
 </tr>
 <tr>
 <td><strong>LinearDamping</strong></td>
 <td>0</td>
-<td>Used to slow down the movement of an object. The higher the drag the more the object slows down.</td>
+<td>Used to slow down the movement of an object. The higher the drag, the more the object slows down.</td>
 </tr>
 <tr>
 <td><strong>AngularVelocity</strong></td>
@@ -166,37 +166,37 @@
 <tr>
 <td><strong>AngularFactor</strong></td>
 <td>1,1,1</td>
-<td>This property is used to limit the rotation of a rigidbody. It's separated in X, Y, Z. If one of this axis is set to 1, the rotation is not limited, and if a value is set to 0, this axis is locked.</td>
+<td>This property is used to limit the rotation of a rigid body. It's separated into X, Y, and Z. If one of these axes is set to 1, the rotation is not limited, and if a value is set to 0, the axis is locked.</td>
 </tr>
 <tr>
 <td><strong>AngularDamping</strong></td>
 <td>0</td>
-<td>Used to slow down the rotation of an object. The higher the drag the more the rotation slows down.</td>
+<td>Used to slow down the rotation of an object. The higher the drag, the more the rotation slows down.</td>
 </tr>
 <tr>
 <td><strong>OverrideGravity</strong></td>
 <td>false</td>
-<td>Indicates if this rigidbody will define their own gravity value, instead of using the common value defined in PhysicManager.</td>
+<td>Indicates if this rigid body will define its own gravity value instead of using the common value defined in PhysicManager.</td>
 </tr>
 <tr>
 <td><strong>Gravity</strong></td>
 <td>0,-9.8,0</td>
-<td>If <strong>OverrideGravity</strong> is true, the rigidbody will use this value as the gravity intensity.</td>
+<td>If <strong>OverrideGravity</strong> is true, the rigid body will use this value as the gravity intensity.</td>
 </tr>
 <tr>
 <td><strong>IsSensor</strong></td>
 <td>false</td>
-<td>If you set a physic body to be a sensor, other colliders no longer bump into it. Instead, they pass through. Sensors detects when bodies enter it, which you can use in your application.</td>
+<td>If you set a physics body to be a sensor, other colliders no longer bump into it. Instead, they pass through. Sensors detect when bodies enter it, which you can use in your application.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="kinematic-rigid-bodies">Kinematic Rigid Bodies</h3>
-<p>There are two types of rigid bodies, dynamics and kinematic bodies.</p>
-<p>In <strong>Dynamic</strong> rigidbodies, their movement is driven by the physic simulation. Receive forces and can be pushed by other bodies.</p>
-<p>In contrary, <strong>Kinematic</strong> rigidbodies are not influenced by forces (such as gravity), and have no momentum. They cannot be pushed by other rigid bodies and their movement is only controlled by changing it's transform. <em>An elevator platform is a good example of a kinematic rigid body.</em></p>
-<p>Although kinematic rigidbodies aren't moved by physics, other objects can still collide with them. <em>For example, in the case of an elevator, objects placed inside won't fall through the elevator floor.</em></p>
+<p>There are two types of rigid bodies: dynamic and kinematic bodies.</p>
+<p>In <strong>Dynamic</strong> rigid bodies, their movement is driven by the physics simulation. They receive forces and can be pushed by other bodies.</p>
+<p>In contrast, <strong>Kinematic</strong> rigid bodies are not influenced by forces (such as gravity) and have no momentum. They cannot be pushed by other rigid bodies, and their movement is only controlled by changing their transform. <em>An elevator platform is a good example of a kinematic rigid body.</em></p>
+<p>Although kinematic rigid bodies aren't moved by physics, other objects can still collide with them. <em>For example, in the case of an elevator, objects placed inside won't fall through the elevator floor.</em></p>
 <p><img src="images/kinematic_bodies.gif" alt="Kinematic Bodies"></p>
-<p>Is it possible to specify the  type of rigidbody with the <strong>PysicBodyType</strong> property:</p>
+<p>It is possible to specify the type of rigid body with the <strong>PhysicBodyType</strong> property:</p>
 <table>
 <thead>
 <tr>
@@ -209,26 +209,24 @@
 <tr>
 <td><strong>PhysicBodyType</strong></td>
 <td>Dynamic</td>
-<td>There are two types of rigid bodies: <ul><li><strong>Dynamic:</strong> Their movement is driven by the physic simulation. Receive forces and can be pushed by other bodies.</li><li><strong>Kinematic:</strong> A Kinematic rigidbodies are not influenced by forces (such as gravity), and have no momentum. They cannot be pushed by other rigid bodies and their movement is only controlled by changing it's transform.</li></ul></td>
+<td>There are two types of rigid bodies: <ul><li><strong>Dynamic:</strong> Their movement is driven by the physics simulation. They receive forces and can be pushed by other bodies.</li><li><strong>Kinematic:</strong> Kinematic rigid bodies are not influenced by forces (such as gravity) and have no momentum. They cannot be pushed by other rigid bodies, and their movement is only controlled by changing their transform.</li></ul></td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-a-rigidbody">Create a RigidBody</h2>
-<p>You only need to add a <code>RigidBody3D</code> to an entity, to become this into a rigid body. Don't forget to add a proper collider too.</p>
-<h3 id="from-code">From code</h3>
-<p>Little example to create a bouncing sphere:</p>
-<pre><code class="lang-csharp">
-Entity bouncingBall = new Entity()
-    .AddComponent(new Transform3D(){ Position = position })
-    .AddComponent(new MaterialComponent() { Material = material }) // assign a material
+<p>You only need to add a <code>RigidBody3D</code> to an entity to turn it into a rigid body. Don't forget to add a proper collider too.</p>
+<h3 id="from-code">From Code</h3>
+<p>A small example to create a bouncing sphere:</p>
+<pre><code class="lang-csharp">Entity bouncingBall = new Entity()
+    .AddComponent(new Transform3D() { Position = position })
+    .AddComponent(new MaterialComponent() { Material = material }) // Assign a material
     .AddComponent(new SphereMesh())
     .AddComponent(new MeshRenderer())
-
     .AddComponent(new RigidBody3D()         // Add a RigidBody3D component...
     {
         Restitution = 1.0f                  // Create a bouncing ball (restitution 1)
     })        
-    .AddComponent(new SphereCollider3D());     // Assign a SphereCollider3D to the physic body...
+    .AddComponent(new SphereCollider3D());  // Assign a SphereCollider3D to the physics body...
 
 this.Managers.EntityManager.Add(bouncingBall);
 </code></pre>

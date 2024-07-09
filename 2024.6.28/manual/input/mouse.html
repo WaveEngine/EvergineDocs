@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="mouse">Mouse</h1>
 
-<p><strong>Mouse</strong> is the most common input device on desktop platforms. You can access the mouse state by using the <code>MouseDispatcher</code>.</p>
+<p>The <strong>Mouse</strong> is the most common input device on desktop platforms. You can access the mouse state by using the <code>MouseDispatcher</code>.</p>
 <h2 id="mousedispatcher">MouseDispatcher</h2>
-<p>The <code>MouseDispatcher</code> is a class used to track mouse button events. It inherits from <a href="touch.html"><code>PointerDispatcher</code></a> so it can be used to produce touch events using the mouse.</p>
+<p>The <code>MouseDispatcher</code> is a class used to track mouse button events. It inherits from <a href="touch.html"><code>PointerDispatcher</code></a>, so it can be used to produce touch events using the mouse.</p>
 <pre><code class="lang-csharp">public abstract class MouseDispatcher : PointerDispatcher
 {
     public MouseButtons State { get; }
@@ -109,7 +109,7 @@
 }
 </code></pre>
 <h3 id="properties">Properties</h3>
-<p>It gives you the following properties:</p>
+<p>It provides you with the following properties:</p>
 <table>
 <thead>
 <tr>
@@ -124,19 +124,19 @@
 </tr>
 <tr>
 <td><strong>Position</strong></td>
-<td>Gets the mouse absolute screen position at the current frame.</td>
+<td>Gets the mouse's absolute screen position at the current frame.</td>
 </tr>
 <tr>
 <td><strong>PositionDelta</strong></td>
-<td>property gets the mouse delta position since the last frame. In other words, it describes how much the mouse has.</td>
+<td>Gets the mouse's delta position since the last frame. In other words, it describes how much the mouse has moved.</td>
 </tr>
 <tr>
 <td><strong>ScrollDelta</strong></td>
-<td>Gets the mouse scroll increment since the last frame. <ul><li>The value <strong>X</strong> indicates a horizontal scroll increment. The value is positive if the mouse wheel is rotated to the right or negative if the mouse wheel is rotated to the left.</li><li>The value <strong>Y</strong> indicates a vertical scroll increment. The value is positive if the mouse wheel is rotated in an upward direction (away from the user) or negative if the mouse wheel is rotated in a downward direction (toward the user).</li></ul></td>
+<td>Gets the mouse's scroll increment since the last frame. <ul><li>The value <strong>X</strong> indicates a horizontal scroll increment. The value is positive if the mouse wheel is rotated to the right and negative if the mouse wheel is rotated to the left.</li><li>The value <strong>Y</strong> indicates a vertical scroll increment. The value is positive if the mouse wheel is rotated in an upward direction (away from the user) and negative if the mouse wheel is rotated in a downward direction (toward the user).</li></ul></td>
 </tr>
 <tr>
 <td><strong>CursorType</strong></td>
-<td>property gets the mouse active cursor type.</td>
+<td>Gets the mouse's active cursor type.</td>
 </tr>
 <tr>
 <td><strong>IsMouseOver</strong></td>
@@ -145,7 +145,7 @@
 </tbody>
 </table>
 <h3 id="events">Events</h3>
-<p>You can be subscribed to events to ve notified when mouse state change:</p>
+<p>You can subscribe to events to be notified when the mouse state changes:</p>
 <table>
 <thead>
 <tr>
@@ -156,15 +156,15 @@
 <tbody>
 <tr>
 <td><strong>MouseMove</strong> and <strong>MouseScroll</strong></td>
-<td>This events track changes in mouse position and scroll.</td>
+<td>These events track changes in mouse position and scroll.</td>
 </tr>
 <tr>
-<td><strong>MouseButtonDown</strong>  and <strong>MouseButtonUp</strong></td>
-<td>This events are available to track mouse pressed buttons but it is recommended to use <code>IsButtonDown</code> and <code>ReadButtonState</code> methods: <ul><li><strong>IsButtonDown</strong>: Gets a value indicating whether the current state of a mouse button is <a href="button_states.html">Pressing</a> or <a href="button_states.html">Pressed</a>.</li><li><strong>ReadButtonState:</strong> Gets the current <a href="button_states.html">state</a> of a mouse button.</li></ul></td>
+<td><strong>MouseButtonDown</strong> and <strong>MouseButtonUp</strong></td>
+<td>These events track mouse button presses, but it is recommended to use the <code>IsButtonDown</code> and <code>ReadButtonState</code> methods: <ul><li><strong>IsButtonDown</strong>: Gets a value indicating whether the current state of a mouse button is <a href="button_states.html">Pressing</a> or <a href="button_states.html">Pressed</a>.</li><li><strong>ReadButtonState</strong>: Gets the current <a href="button_states.html">state</a> of a mouse button.</li></ul></td>
 </tr>
 <tr>
 <td><strong>MouseLeave</strong> and <strong>MouseEnter</strong></td>
-<td>They indicate if the mouse enter or leave the <code>Surface</code>, so, they track changes in the <code>IsMouseOver</code> property.</td>
+<td>These events indicate if the mouse has entered or left the <code>Surface</code>, thereby tracking changes in the <code>IsMouseOver</code> property.</td>
 </tr>
 </tbody>
 </table>
@@ -172,23 +172,23 @@
 <table>
 <thead>
 <tr>
-<th>Events</th>
+<th>Methods</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>TrySetCursorPosition</strong></td>
-<td>Try to update the cursor position. When this method is supported by the patform, this method will return <em>true</em>.</td>
+<td>Attempts to update the cursor position. When this method is supported by the platform, it will return <em>true</em>.</td>
 </tr>
 <tr>
 <td><strong>TrySetCursorType</strong></td>
-<td>Try to update the cursor type. When this method is supported by the patform, this method will return <em>true</em>.</td>
+<td>Attempts to update the cursor type. When this method is supported by the platform, it will return <em>true</em>.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="using-mousedispatcher">Using MouseDispatcher</h3>
-<p>The MouseDispatcher can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code can be used to access the mouse dispatcher from a Component or Service.</p>
+<p>The <code>MouseDispatcher</code> can be found within the <code>Display</code> or <code>Surface</code> objects. The following sample code can be used to access the mouse dispatcher from a Component or Service.</p>
 <pre><code class="lang-csharp">[BindService]
 protected GraphicsPresenter graphicsPresenter;
 

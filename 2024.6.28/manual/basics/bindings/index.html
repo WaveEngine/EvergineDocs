@@ -84,13 +84,13 @@
 <h1 id="binding-elements">Binding Elements</h1>
 
 <hr>
-<p>Evergine allows to bind dependencies automatically across your components, services and sceneManagers.</p>
-<p>For example, bindings allow a custom component to require that its Owner Entity has a Transform3D component, and set it to a property during the <strong>Attach</strong> phase (see the <a href="../lifecycle_elements.html">Lifecycle</a> documents)</p>
-<p>This binding feature gives to developers a lot of flexibility to interconnect components, services and scene managers, avoiding the tedious part to setup this dependencies in Evergine Studio or from code.</p>
+<p>Evergine allows you to bind dependencies automatically across your components, services, and scene managers.</p>
+<p>For example, bindings allow a custom component to require that its Owner Entity has a Transform3D component and set it to a property during the <strong>Attach</strong> phase (see the <a href="../lifecycle_elements.html">Lifecycle</a> documents).</p>
+<p>This binding feature gives developers a lot of flexibility to interconnect components, services, and scene managers, avoiding the tedious setup of these dependencies in Evergine Studio or from code.</p>
 <p>In Evergine, we define bindings using property attributes ([BindComponent] for example).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>All dependencies are not available until the Attach phase, if you try to access during in the constructor,  <code>OnLoaded()</code> or <code>OnDestroy()</code> methods, the property value is goint to be <code>null</code></p>
+<p>All dependencies are not available until the Attach phase. If you try to access them during the constructor, <code>OnLoaded()</code>, or <code>OnDestroy()</code> methods, the property value is going to be <code>null</code>.</p>
 </div>
 <h2 id="in-this-section">In this section</h2>
 <p>There are four types of binding:</p>
@@ -98,10 +98,10 @@
 <li><a href="bind_components.html">Bind Components</a></li>
 <li><a href="bind_services.html">Bind Services</a></li>
 <li><a href="bind_entities.html">Bind Entities</a></li>
-<li><a href="bind_scenemanagers.html">Bind SceneManagers</a></li>
+<li><a href="bind_scenemanagers.html">Bind Scene Managers</a></li>
 </ul>
 <h2 id="example">Example</h2>
-<p>In the following example, the component will bind a service, a component an a scene manager.</p>
+<p>In the following example, the component will bind a service, a component, and a scene manager.</p>
 <pre><code class="lang-csharp">public class MyComponent : Component
 {
     [BindService]
@@ -119,11 +119,11 @@
     {
         // All values of bind attributes will be injected after the Attach phase...
         
-        // Bind assetService
+        // Bind assetsService
         this.defaultMaterial = this.assetsService.Load&lt;Material&gt;(EvergineContent.Materials.DefaultMaterial);
         
         // Bind SceneManagers
-        this.RenderManager.DebugLines = true;
+        this.renderManager.DebugLines = true;
         
         // Bind Components
         this.transform.Position = Vector3.Zero;
@@ -133,12 +133,12 @@
 }
 </code></pre>
 <h2 id="bind-collections">Bind Collections</h2>
-<p>If the [Bind] attribute is set on top of <code>List&lt;T&gt;</code> property, they will attempt to search a list of elements that elements that satisfy the dependency:</p>
+<p>If the [Bind] attribute is set on top of a <code>List&lt;T&gt;</code> property, it will attempt to search for a list of elements that satisfy the dependency:</p>
 <pre><code class="lang-csharp">// Bind with the Transform component of the owner entity...
 [BindComponent]
 private Transform3D transform;
 
-// Bind a list with all Camera3D components of the entire scene...
+// Bind a list with all Camera3D components in the entire scene...
 [BindComponent(source: BindComponentSource.Scene)]
 private List&lt;Camera3D&gt; sceneCameras;
 </code></pre>

@@ -84,26 +84,23 @@
 <h1 id="physics-bodies">Physics Bodies</h1>
 
 <hr>
-<p>A Physics Body is an object that can interact with the physic world. In some cases is being affected by dynamic forces such as gravity, or collides with other bodies.</p>
+<p>A Physics Body is an object that can interact with the physical world. In some cases, it is affected by dynamic forces such as gravity or collides with other bodies.</p>
 <p>Physics Bodies use their attached <a href="../colliders/index.html">Colliders</a> to define their physical shape.</p>
-<h2 id="type-of-physics-bodies">Type of Physics Bodies</h2>
+<h2 id="types-of-physics-bodies">Types of Physics Bodies</h2>
 <h3 id="rigid-bodies">Rigid Bodies</h3>
-<p>Rigid bodies are moved around by forces such as collision and gravity. In general, rigidbodies are good choice for objects that can be moved or pushed like boxes, furniture, and obstacles. In Evergine we use <code>RigidBody3D</code> component.</p>
+<p>Rigid bodies are moved around by forces such as collision and gravity. In general, rigid bodies are a good choice for objects that can be moved or pushed, like boxes, furniture, and obstacles. In Evergine, we use the <code>RigidBody3D</code> component.</p>
 <p><a href="rigid_bodies.html"><img src="images/rigid_bodies.gif" alt="Rigid Bodies"></a></p>
 <h3 id="static-bodies">Static Bodies</h3>
-<p>Static bodies are not affected by any physic force, and as a result it don't move. Rigid bodies can collide with static bodies. In general, static bodies can be used for objects that are immovable, like walls, floors, etc...
-In Evergine we use <code>StaticBody3D</code> component.</p>
+<p>Static bodies are not affected by any physical force and, as a result, do not move. Rigid bodies can collide with static bodies. In general, static bodies can be used for objects that are immovable, like walls, floors, etc. In Evergine, we use the <code>StaticBody3D</code> component.</p>
 <p>[<img src="images/static_bodies.gif" alt="Static Bodies">(static_bodies)</p>
 <h3 id="character-controller">Character Controller</h3>
-<p>Is a special type of body used for player controlled characters. It is usually controlled by the user inputs.
-In Evergine we use <code>CharacterController3D</code> component.</p>
+<p>This is a special type of body used for player-controlled characters. It is usually controlled by user inputs. In Evergine, we use the <code>CharacterController3D</code> component.</p>
 <p><a href="character_controller.html"><img src="images/character_controller.png" alt="Character Controller"></a></p>
 <h3 id="vehicles">Vehicles</h3>
-<p>Is it possible to simulate physical vehicles by using a standard <a href="rigid_bodies.html">Rigid Body</a> and applying several components to set the Vehicle behavior.
-In Evergine, add a <code>PhysicVehicle3D</code> to a RigidBody entity, and add several <code>PhysicWheel3D</code> for each desired wheel.</p>
+<p>It is possible to simulate physical vehicles by using a standard <a href="rigid_bodies.html">Rigid Body</a> and applying several components to set the vehicle's behavior. In Evergine, add a <code>PhysicVehicle3D</code> to a RigidBody entity, and add several <code>PhysicWheel3D</code> for each desired wheel.</p>
 <p><a href="vehicle_physics.html"><img src="images/physic_vehicle.gif" alt="Vehicle Physics"></a></p>
 <h2 id="physics-bodies-and-colliders">Physics Bodies and Colliders</h2>
-<p>As we mentioned before, a physic body itself doesn't define its shape. The entity that owns the Physic Body need at least one <strong><a href="../colliders/index.html">Collider</a></strong> component to interact with other bodies. For example, a rigid body without colliders will pass through a floor, because it doesn't have any shape to cause collisions.</p>
+<p>As mentioned before, a physic body itself doesn't define its shape. The entity that owns the Physic Body needs at least one <strong><a href="../colliders/index.html">Collider</a></strong> component to interact with other bodies. For example, a rigid body without colliders will pass through a floor because it doesn't have any shape to cause collisions.</p>
 <h2 id="in-this-section">In this section</h2>
 <ul>
 <li><a href="rigid_bodies.html">Rigid Bodies</a></li>

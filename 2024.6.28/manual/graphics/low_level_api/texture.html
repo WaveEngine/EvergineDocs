@@ -83,10 +83,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="texture">Texture</h1>
 
-<p>A <strong>Texture</strong> object in a low-level API is a 2D (even 1D and 3d textures exists) used to provide details to objects or to map information.</p>
-<p>Please, reade the <a href="../textures/index.html">Graphics Texture</a> section for high level asset and how to use in Evergine Studio.</p>
+<p>A <strong>Texture</strong> object in a low-level API is a 2D object (1D and 3D textures also exist) used to provide details to objects or to map information.</p>
+<p>Please read the <a href="../textures/index.html">Graphics Texture</a> section for high-level asset information and usage in Evergine Studio.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a texture, first you need to create the TextureDescription struct:</p>
+<p>To create a texture, you first need to create the <code>TextureDescription</code> struct:</p>
 <pre><code class="lang-csharp">uint expectedSize = 256;
 ResourceUsage expectedUsage = ResourceUsage.Default;
 
@@ -121,27 +121,27 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tr>
 <td><strong>Type</strong></td>
 <td><code>TextureType</code></td>
-<td>Texture type TextureType.</td>
+<td>Type of the texture.</td>
 </tr>
 <tr>
 <td><strong>Format</strong></td>
 <td><code>PixelFormat</code></td>
-<td>Texture format PixelFormat.</td>
+<td>Format of the texture pixels.</td>
 </tr>
 <tr>
 <td><strong>Width</strong></td>
 <td><code>uint</code></td>
-<td>Texture width (in texels).</td>
+<td>Width of the texture (in texels).</td>
 </tr>
 <tr>
 <td><strong>Height</strong></td>
 <td><code>uint</code></td>
-<td>Texture height (in texels).</td>
+<td>Height of the texture (in texels).</td>
 </tr>
 <tr>
 <td><strong>Depth</strong></td>
 <td><code>uint</code></td>
-<td>Texture Depth (in texels).</td>
+<td>Depth of the texture (in texels).</td>
 </tr>
 <tr>
 <td><strong>ArraySize</strong></td>
@@ -151,7 +151,7 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tr>
 <td><strong>Faces</strong></td>
 <td><code>uint</code></td>
-<td>Number of texture faces useful in TextureCube and TextureCubeArray.</td>
+<td>Number of texture faces, useful in <code>TextureCube</code> and <code>TextureCubeArray</code>.</td>
 </tr>
 <tr>
 <td><strong>MipLevels</strong></td>
@@ -161,7 +161,7 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tr>
 <td><strong>Flags</strong></td>
 <td><code>TextureFlags</code></td>
-<td>The texture flags TextureFlags.</td>
+<td>The texture flags.</td>
 </tr>
 <tr>
 <td><strong>Usage</strong></td>
@@ -176,12 +176,12 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tr>
 <td><strong>CpuAccess</strong></td>
 <td><code>ResourceCpuAccess</code></td>
-<td>Flags ResourceCpuAccess to specify the type of CPU access allowed.</td>
+<td>Flags specifying the type of CPU access allowed.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="texturetype">TextureType</h3>
-<p>Specify the texture type.</p>
+<p>Specifies the texture type.</p>
 <table>
 <thead>
 <tr>
@@ -192,37 +192,36 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tbody>
 <tr>
 <td><strong>Texture2D</strong></td>
-<td>Represent a two dimensions texture.</td>
+<td>Represents a two-dimensional texture.</td>
 </tr>
 <tr>
 <td><strong>Texture2DArray</strong></td>
-<td>Represent an array of 2D textures.</td>
+<td>Represents an array of 2D textures.</td>
 </tr>
 <tr>
 <td><strong>Texture1D</strong></td>
-<td>Represent a one dimension texture.</td>
+<td>Represents a one-dimensional texture.</td>
 </tr>
 <tr>
 <td><strong>Texture1DArray</strong></td>
-<td>Represent an array of 1D textures.</td>
+<td>Represents an array of 1D textures.</td>
 </tr>
 <tr>
 <td><strong>TextureCube</strong></td>
-<td>Represent a 6 faces texture cube.</td>
+<td>Represents a 6-face texture cube.</td>
 </tr>
 <tr>
 <td><strong>TextureCubeArray</strong></td>
-<td>Represent an array of textures cube.</td>
+<td>Represents an array of texture cubes.</td>
 </tr>
 <tr>
 <td><strong>Texture3D</strong></td>
-<td>Represent a three dimensions texture.</td>
+<td>Represents a three-dimensional texture.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="pixelformat">PixelFormat</h3>
-<p>Specify the bytes format used in each texel.
-The most common format are:</p>
+<p>Specifies the byte format used in each texel. The most common formats are:</p>
 <table>
 <thead>
 <tr>
@@ -325,24 +324,24 @@ The most common format are:</p>
 </tr>
 <tr>
 <td><strong>R32G32B32A32_Float</strong></td>
-<td>A four-component, 128-bit floating-point format that supports 32 bits per channel including alpha. 1</td>
+<td>A four-component, 128-bit floating-point format that supports 32 bits per channel including alpha.</td>
 </tr>
 <tr>
 <td><strong>R32G32B32A32_SInt</strong></td>
-<td>A four-component, 128-bit signed-integer format that supports 32 bits per channel including alpha. 1</td>
+<td>A four-component, 128-bit signed-integer format that supports 32 bits per channel including alpha.</td>
 </tr>
 <tr>
 <td><strong>R32G32B32A32_UInt</strong></td>
-<td>A four-component, 128-bit unsigned-integer format that supports 32 bits per channel including alpha. 1</td>
+<td>A four-component, 128-bit unsigned-integer format that supports 32 bits per channel including alpha.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See the <a class="xref" href="../../../api/Evergine.Common.Graphics.PixelFormat.html">PixelFormat</a> enum at Evergine.Common namespace for the complete list.</p>
+<p>See the <a class="xref" href="../../../api/Evergine.Common.Graphics.PixelFormat.html">PixelFormat</a> enum in the <code>Evergine.Common</code> namespace for the complete list.</p>
 </div>
 <h3 id="textureflags">TextureFlags</h3>
-<p>Identifies how to bing a texture.</p>
+<p>Identifies how to bind a texture.</p>
 <table>
 <thead>
 <tr>
@@ -357,11 +356,11 @@ The most common format are:</p>
 </tr>
 <tr>
 <td><strong>ShaderResource</strong></td>
-<td>A texture usable as a ShaderResourceView.</td>
+<td>A texture usable as a <code>ShaderResourceView</code>.</td>
 </tr>
 <tr>
 <td><strong>RenderTarget</strong></td>
-<td>A texture usable as render target.</td>
+<td>A texture usable as a render target.</td>
 </tr>
 <tr>
 <td><strong>UnorderedAccess</strong></td>
@@ -373,7 +372,7 @@ The most common format are:</p>
 </tr>
 <tr>
 <td><strong>GenerateMipmaps</strong></td>
-<td>Enables MIP map generation by GPU.</td>
+<td>Enables MIP map generation by the GPU.</td>
 </tr>
 </tbody>
 </table>
@@ -393,7 +392,7 @@ The most common format are:</p>
 </tr>
 <tr>
 <td><strong>Immutable</strong></td>
-<td>A resource that can only be read by the GPU. It cannot be written by the GPU, and cannot be accessed at all by the CPU.</td>
+<td>A resource that can only be read by the GPU. It cannot be written by the GPU and cannot be accessed at all by the CPU.</td>
 </tr>
 <tr>
 <td><strong>Dynamic</strong></td>
@@ -406,7 +405,7 @@ The most common format are:</p>
 </tbody>
 </table>
 <h3 id="texturesamplecount">TextureSampleCount</h3>
-<p>Describes the number of samples to use in a Texture.</p>
+<p>Describes the number of samples to use in a texture.</p>
 <table>
 <thead>
 <tr>
@@ -417,7 +416,7 @@ The most common format are:</p>
 <tbody>
 <tr>
 <td><strong>None</strong></td>
-<td>Not multisample. <strong>Default value</strong>.</td>
+<td>Not multisample, <strong>Default value</strong>.</td>
 </tr>
 <tr>
 <td><strong>Count2</strong></td>
@@ -457,16 +456,16 @@ The most common format are:</p>
 </tr>
 <tr>
 <td><strong>Write</strong></td>
-<td>The CPU can be write this resource.</td>
+<td>The CPU can write to this resource.</td>
 </tr>
 <tr>
 <td><strong>Read</strong></td>
-<td>The CPU can be read this resources.</td>
+<td>The CPU can read from this resource.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="usage-examples">Usage examples</h2>
-<h2 id="how-to-create-and-fill-a-texture-by-code">How to create and fill a texture by code</h2>
+<h3 id="how-to-create-and-fill-a-texture-by-code">How to create and fill a texture by code</h3>
 <pre><code class="lang-csharp">uint expectedSize = 256;
 
 var description = new TextureDescription()
@@ -526,7 +525,7 @@ float[] data = Enumerable.Range(0, (int)(expectedSize * expectedSize)).Select(i 
 this.GraphicsContext.UpdateTextureData(texture, data);
 texture.Dispose();
 </code></pre>
-<h3 id="how-to-copy-from-other-device-texture">How to copy from other device texture</h3>
+<h3 id="how-to-copy-from-another-device-texture">How to copy from another device texture</h3>
 <pre><code class="lang-csharp">uint expectedSize = 256;
 
 var description = new TextureDescription()
@@ -565,7 +564,6 @@ queue.WaitIdle();
 texture.Dispose();
 textureCopy.Dispose();
 queue.Dispose();
-
 </code></pre>
 <h3 id="how-to-set-data-in-a-staging-texture">How to set data in a staging texture</h3>
 <pre><code class="lang-csharp">uint expectedSize = 256;
@@ -593,7 +591,6 @@ float[] data = Enumerable.Range(0, (int)(expectedSize * expectedSize)).Select(i 
 this.GraphicsContext.UpdateTextureData(texture, data);
 
 texture.Dispose();
-
 </code></pre>
 <h3 id="how-to-map-and-read-a-staging-texture">How to map and read a staging texture</h3>
 <pre><code class="lang-csharp">uint expectedSize = 256;

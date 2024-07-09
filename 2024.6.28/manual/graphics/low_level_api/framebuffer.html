@@ -83,7 +83,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="framebuffer">Framebuffer</h1>
 
-<p>Framebuffers represent a collection of memory attachments that are used by a render pass instance. Examples of these memory attachments include the color textures  and depth texture.</p>
+<p>Framebuffers represent a collection of memory attachments that are used by a render pass instance. Examples of these memory attachments include color textures and a depth texture.</p>
 <h2 id="creation">Creation</h2>
 <p>A framebuffer provides the attachments that a RenderPass needs while rendering.</p>
 <pre><code class="lang-csharp">// Create Render Target FrameBuffer
@@ -122,11 +122,11 @@ var rTDepthTargetDescription = new TextureDescription()
 
 var rTDepthTarget = this.graphicsContext.Factory.CreateTexture(ref rTDepthTargetDescription);
 var depthAttachment = new FrameBufferAttachment(rTDepthTarget, 0, 1);
-var colorsAttachment = new[] { new FrameBufferAttachment(rTColorTarget, 0, 1) };
-this.rTFrameBuffer = this.graphicsContext.Factory.CreateFrameBuffer(depthAttachment, colorsAttachment);
+var colorAttachments = new[] { new FrameBufferAttachment(rTColorTarget, 0, 1) };
+this.rTFrameBuffer = this.graphicsContext.Factory.CreateFrameBuffer(depthAttachment, colorAttachments);
 </code></pre>
-<h2 id="how-to-use">How to use</h2>
-<p>First, you need to create a graphics pipeline that use the framebuffer output description:</p>
+<h2 id="how-to-use">How to Use</h2>
+<p>First, you need to create a graphics pipeline that uses the framebuffer output description:</p>
 <pre><code class="lang-csharp">var trianglePipelineDescription = new GraphicsPipelineDescription()
 {
     PrimitiveTopology = PrimitiveTopology.TriangleList,
@@ -148,7 +148,7 @@ this.rTFrameBuffer = this.graphicsContext.Factory.CreateFrameBuffer(depthAttachm
 
 this.trianglePipelineState = this.graphicsContext.Factory.CreateGraphicsPipeline(ref trianglePipelineDescription);
 </code></pre>
-<p>And finally you can use to start a renderpass:</p>
+<p>Finally, you can use it to start a render pass:</p>
 <pre><code class="lang-csharp">// Render to texture
 var commandBuffer = this.commandQueue.CommandBuffer();
 

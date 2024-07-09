@@ -83,10 +83,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="screen-space-ambient-occlusion-ssao">Screen Space Ambient Occlusion (SSAO)</h1>
 
-<p>The <strong>Screen Space Ambient Occlusion (SSAO)</strong> effect approximates Ambient Occlusion in realtime, as an image post-processing effect. It darkens creases, holes and surfaces that are close to each others. In real life, such areas tend to block out or occlude ambient light, hence they appear darker.</p>
-<p>This effect uses the depth framebuffer data and throws several rays into a range in different directions from each pixel. If a ray hits with any geometry the pixel will become darker. The darkest pixel will be the one that all rays hit with something, and in the other part, the lightest pixel will occurs where all his rays didn't hit with anything.</p>
+<p>The <strong>Screen Space Ambient Occlusion (SSAO)</strong> effect approximates Ambient Occlusion in real-time, as an image post-processing effect. It darkens creases, holes, and surfaces that are close to each other. In real life, such areas tend to block out or occlude ambient light, hence they appear darker.</p>
+<p>This effect uses the depth framebuffer data and casts several rays in different directions from each pixel within a specified range. If a ray intersects with any geometry, the pixel will become darker. The darkest pixel will be the one where all rays intersect with something; conversely, the lightest pixel occurs where none of its rays intersect with anything.</p>
 <p><img src="images/SSAO.jpg" alt="SSAO"></p>
-<p>In the above picture you can see first the scene without effect applied, then the scene with the SSAO output, and finally the blend combination between original render and SSAO output.</p>
+<p>In the above picture, you can see the scene without the effect applied first, then the scene with the SSAO output, and finally the blend combination between the original render and the SSAO output.</p>
 <h2 id="ssao-parameters">SSAO Parameters</h2>
 <table>
 <thead>
@@ -102,11 +102,11 @@
 </tr>
 <tr>
 <td><strong>Range</strong></td>
-<td>Range around the point using to calculate close geometries.</td>
+<td>Range around the point used to calculate close geometries.</td>
 </tr>
 <tr>
 <td><strong>Power</strong></td>
-<td>Amount of darkness</td>
+<td>Amount of darkness.</td>
 </tr>
 <tr>
 <td><strong>Scale Bias</strong></td>
@@ -114,7 +114,7 @@
 </tr>
 <tr>
 <td><strong>Intensity</strong></td>
-<td>Intensity of the blend with render image.</td>
+<td>Intensity of the blend with the render image.</td>
 </tr>
 </tbody>
 </table>

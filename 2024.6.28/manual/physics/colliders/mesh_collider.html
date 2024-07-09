@@ -85,25 +85,25 @@
 
 <p><img src="images/mesh_collider.png" alt="Mesh Collider"></p>
 <p>A collider represented by an arbitrary mesh.</p>
-<p>A <strong>Mesh Collider</strong> uses the owner entity meshes to define their shape. They use all <code>MeshComponent</code> to obtain meshes and create colliders with them.</p>
+<p>A <strong>Mesh Collider</strong> uses the owner entity meshes to define its shape. It uses all <code>MeshComponent</code> objects to obtain meshes and creates colliders with them.</p>
 <h2 id="types-of-mesh-collider">Types of Mesh Collider</h2>
 <h3 id="default-mode">Default mode</h3>
-<p>By default, a Mesh Collider uses <strong>the entire triangle mesh to generate a collider shape</strong>. This will create the better precision and fidelity. However, only <a href="../physics_bodies/static_bodies.html">Static Bodies</a> can have Mesh Colliders in the default mode.</p>
-<p>Mesh Colliders in the default mode is more suitable to create collisions for static scenery objects, such as walls, terrain, props, etc...</p>
+<p>By default, a Mesh Collider uses <strong>the entire triangle mesh to generate a collider shape</strong>. This creates the best precision and fidelity. However, only <a href="../physics_bodies/static_bodies.html">Static Bodies</a> can have Mesh Colliders in the default mode.</p>
+<p>Mesh Colliders in the default mode are more suitable for creating collisions for static scenery objects, such as walls, terrain, props, etc.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Only <a href="../physics_bodies/static_bodies.html">Static Bodies</a> can have Mesh Colliders in the default mode.</p>
 </div>
 <p><img src="images/mesh_collider_full.png" alt="Mesh"></p>
 <h3 id="convex-hull">Convex Hull</h3>
-<p>If you want to use Mesh Colliders in dynamic bodies like <a href="../physics_bodies/rigid_bodies.html">Rigid Bodies</a>, you need to set your Mesh Collider to use a Convex Hull. After using this mode, the Physic Engine creates a convex approximation of the mesh, allowing it to be used in dynamic bodies. As a counterpart, the precision of the collision is degraded.</p>
-<p>Convex colliders are suitable for movable physics objects like, chairs, tables, stones, etc...</p>
+<p>If you want to use Mesh Colliders in dynamic bodies like <a href="../physics_bodies/rigid_bodies.html">Rigid Bodies</a>, you need to set your Mesh Collider to use a Convex Hull. In this mode, the physics engine creates a convex approximation of the mesh, allowing it to be used in dynamic bodies. As a trade-off, the precision of the collision is reduced.</p>
+<p>Convex colliders are suitable for movable physics objects like chairs, tables, stones, etc.</p>
 <p><img src="images/mesh_collider_convex.png" alt="Mesh"></p>
 <h2 id="meshcollider3d-component">MeshCollider3D component</h2>
 <p>To use a Mesh Collider in Evergine, you only need to add a <code>MeshCollider3D</code> component to your entity.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Is obvious, but to use a <code>MeshCollider3D</code>, the owner entity is required to have at least one <code>MeshComponent</code></p>
+<p>It is obvious, but to use a <code>MeshCollider3D</code>, the owner entity is required to have at least one <code>MeshComponent</code>.</p>
 </div>
 <p><img src="images/meshcollider3d_component.png" alt="MeshCollider3D"></p>
 <h3 id="properties">Properties</h3>
@@ -124,22 +124,22 @@
 <tr>
 <td><strong>Offset</strong></td>
 <td>0,0,0</td>
-<td>Position offset of the collider respect the owner entity. The units is relative of the size of the entity mesh.</td>
+<td>Position offset of the collider relative to the owner entity. The units are relative to the size of the entity mesh.</td>
 </tr>
 <tr>
 <td><strong>RotationOffset</strong></td>
 <td>0,0,0</td>
-<td>Apply to the Collider a rotation offset respect the owner entity.</td>
+<td>Applies a rotation offset to the Collider relative to the owner entity.</td>
 </tr>
 <tr>
 <td><strong>Margin</strong></td>
 <td>0.04</td>
-<td>Physic Engine uses a small collision margin for collision shapes, to improve performance and reliability of the collision detection.</td>
+<td>The physics engine uses a small collision margin for collision shapes to improve performance and reliability of the collision detection.</td>
 </tr>
 <tr>
 <td><strong>AsyncShapeCreation</strong></td>
 <td>false</td>
-<td>Allows to create the Mesh colliders in an asynchronous way. Create mesh colliders could be very CPU intensive. By default the execution thread is blocked until the Mesh Collider is generated. If this property is set to <code>true</code> the generation is done in a thread apart, releasing the main thread. However, it is possible that some frames the collider won't work.</td>
+<td>Allows the creation of Mesh Colliders asynchronously. Creating mesh colliders can be very CPU intensive. By default, the execution thread is blocked until the Mesh Collider is generated. If this property is set to <code>true</code>, the generation is done on a separate thread, freeing the main thread. However, it is possible that for some frames the collider won't work.</td>
 </tr>
 </tbody>
 </table>

@@ -83,12 +83,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="xr-spatial-anchors">XR Spatial Anchors</h1>
 
-<p>A <strong>spatial anchor</strong> represents an important point in the real world that the system tracks over time. Each anchor has an adjustable coordinate system, based on other anchors or frames of reference, to ensure anchored holograms stay precisely in place.</p>
+<p>A <strong>spatial anchor</strong> represents an important point in the real world that the system tracks over time. Each anchor has an adjustable coordinate system based on other anchors or frames of reference, ensuring that anchored holograms stay precisely in place.</p>
 <p>Rendering a hologram in an anchor's coordinate system gives you the most precise positioning for that hologram at any given time. This comes at the cost of small adjustments over time to the hologram's position as the system continually moves it back into place based on the real world.</p>
 <p>By <strong>saving local spatial anchors</strong> to disk and loading them back later, your application <strong>can calculate the same location in the real world</strong> across multiple application sessions on a single HoloLens.</p>
 <p>While spatial anchors are great for holograms that should remain fixed in the world, once an anchor is placed, it can't be moved.</p>
 <h2 id="supported-devices">Supported Devices</h2>
-<p>Currently in Evergine, the following devices has <strong>Spatial Anchors</strong> support:</p>
+<p>Currently, in Evergine, the following devices have <strong>Spatial Anchors</strong> support:</p>
 <table>
 <thead>
 <tr>
@@ -105,17 +105,17 @@
 </table>
 <h2 id="trackspatialanchor-component">TrackSpatialAnchor Component</h2>
 <p><img src="images/spatialanchor_componment.png" alt="Spatial Anchors"></p>
-<p>In Evergine, you can create Spatial Anchors in your device using the <code>TrackSpatialAnchor</code> component. This component allows you to do:</p>
+<p>In Evergine, you can create Spatial Anchors on your device using the <code>TrackSpatialAnchor</code> component. This component allows you to:</p>
 <ul>
 <li>Detect a Spatial Anchor and place the owner entity in the tracked pose (position and orientation).</li>
-<li>Create a Spatial Anchor to a desired position and orientation.</li>
+<li>Create a Spatial Anchor in a desired position and orientation.</li>
 </ul>
 <div class="NOTE">
 <h5>Note</h5>
-<p>During the application running, the position is usually updated to adapt the anchor position to the best predicted pose.</p>
+<p>During the application's runtime, the position is usually updated to adapt the anchor position to the best predicted pose.</p>
 </div>
 <h3 id="properties-and-methods">Properties and Methods</h3>
-<p>The following properties provides you the way to setup a Spatial Anchor</p>
+<p>The following properties provide you with the means to set up a Spatial Anchor:</p>
 <table>
 <thead>
 <tr>
@@ -126,11 +126,11 @@
 <tbody>
 <tr>
 <td><strong>AnchorId</strong></td>
-<td>The Anchor Identifier. This is the Id used to find the anchor in the XR Platform. If the XR Platform find a stored anchor with the given ID, it will track and update the position of the owner entity.</td>
+<td>The Anchor Identifier. This is the ID used to find the anchor in the XR Platform. If the XR Platform finds a stored anchor with the given ID, it will track and update the position of the owner entity.</td>
 </tr>
 <tr>
 <td><strong>StoreAnchor()</strong></td>
-<td>Store the current entity position and orientation as an spatial anchor with the current AnchorId. After this method</td>
+<td>Stores the current entity's position and orientation as a spatial anchor with the current AnchorId.</td>
 </tr>
 </tbody>
 </table>
@@ -144,18 +144,18 @@
         .AddComponent(new Transform3D())
         .AddComponent(new TrackSpatialAnchor() 
         { 
-            AnchorId = &quot;AwesomeAnchor&quot; // The anchor Id.
+            AnchorId = &quot;AwesomeAnchor&quot; // The anchor ID.
         });
 
     this.Managers.EntityManager.Add(anchor);
 }
 </code></pre>
 <h2 id="low-level-spatial-anchors">Low-Level Spatial Anchors</h2>
-<p>While the most usual way to access to Spatial Anchors is using the <code>TrackSpatialAnchor</code>component, you can access to a low-level way that provides more functionality.</p>
-<p>The <code>XRPlatform.SpatialAnchorStore</code> gives access to all low-level functionality implemented by the XR Platform. If this property is <code>null</code> the XR device doesn't support Spatial Anchor.</p>
-<p>Another useful class is <code>SpatialAnchor</code>. This class is represent a Spatial Anchor in your XR System. With <code>XRPlatform.SpatialAnchorStore</code> class you can create/delete/update instances of <code>SpatialAnchor</code>.</p>
+<p>While the most usual way to access Spatial Anchors is by using the <code>TrackSpatialAnchor</code> component, you can access a low-level method that provides more functionality.</p>
+<p>The <code>XRPlatform.SpatialAnchorStore</code> gives access to all low-level functionality implemented by the XR Platform. If this property is <code>null</code>, the XR device doesn't support Spatial Anchors.</p>
+<p>Another useful class is the <code>SpatialAnchor</code>. This class represents a Spatial Anchor in your XR System. With the <code>XRPlatform.SpatialAnchorStore</code> class, you can create, delete, and update instances of <code>SpatialAnchor</code>.</p>
 <h3 id="spatialanchor-properties">SpatialAnchor properties</h3>
-<p>This class represent a spatial anchor that can be persisted or updated in your XR Platform</p>
+<p>This class represents a spatial anchor that can be persisted or updated in your XR Platform.</p>
 <table>
 <thead>
 <tr>
@@ -165,7 +165,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Transform</strong> (only get)</td>
+<td><strong>Transform</strong> (only gets)</td>
 <td>Gets the detected transform (Matrix4x4?) of the Spatial Anchor.</td>
 </tr>
 </tbody>
@@ -181,33 +181,32 @@
 <tbody>
 <tr>
 <td><strong>SavedAnchors</strong></td>
-<td>Read only dictionary &lt;string, SpatialAnchor&gt; that returns all stored anchors in this device.</td>
+<td>Read-only dictionary &lt;string, SpatialAnchor&gt; that returns all stored anchors on this device.</td>
 </tr>
 <tr>
 <td><strong>CreateSpatialAnchor()</strong></td>
-<td>Create a SpatialAnchor instance in the specified position and orientation. This method only create the SpatialAnchor instance, <strong>but not persist this anchor in the device</strong></td>
+<td>Creates a Spatial Anchor instance in the specified position and orientation. This method only creates the Spatial Anchor instance but does not persist this anchor on the device.</td>
 </tr>
 <tr>
 <td><strong>StoreAnchor(id, anchor)</strong></td>
-<td>Store the specified SpatialAnchor instance with the given identifier. After this method, this anchor will be persisted and can be accessed every time the application runs.</td>
+<td>Stores the specified Spatial Anchor instance with the given identifier. After this method, this anchor will be persisted and can be accessed every time the application runs.</td>
 </tr>
 <tr>
 <td><strong>RemoveAnchor(id)</strong></td>
-<td>Remove a stored anchor with the given identifier.</td>
+<td>Removes a stored anchor with the given identifier.</td>
 </tr>
 <tr>
 <td><strong>RemoveAllAnchors()</strong></td>
-<td>Remove all persisted anchors in this device.</td>
+<td>Removes all persisted anchors on this device.</td>
 </tr>
 </tbody>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>There can only be one SpatialAnchor for each identifier</p>
+<p>There can only be one Spatial Anchor for each identifier.</p>
 </div>
 <h4 id="store-a-spatial-anchor-from-code">Store a Spatial Anchor from code</h4>
-<pre><code class="lang-csharp">
-[BindService]
+<pre><code class="lang-csharp">[BindService]
 private XRPlatform xrPlatform;
 
 [BindComponent]
@@ -217,7 +216,7 @@ public void StoreAnchor(string id)
 {
     if (this.xrPlatform.SpatialAnchorStore == null)
     {
-        throw new InvalidOperationException(&quot;XRPlatform doesn't support Spatial Anchor&quot;);
+        throw new InvalidOperationException(&quot;XRPlatform doesn't support Spatial Anchors&quot;);
     }
 
     // Create the spatial anchor...
@@ -230,21 +229,20 @@ public void StoreAnchor(string id)
 }
 </code></pre>
 <h4 id="debug-all-stored-anchors-from-code">Debug all stored anchors from code</h4>
-<pre><code class="lang-csharp">
-[BindService]
+<pre><code class="lang-csharp">[BindService]
 private XRPlatform xrPlatform;
 
 protected override void Start()
 {
     if (this.xrPlatform.SpatialAnchorStore == null)
     {
-        throw new InvalidOperationException(&quot;XRPlatform doesn't support Spatial Anchor&quot;);
+        throw new InvalidOperationException(&quot;XRPlatform doesn't support Spatial Anchors&quot;);
     }
 
     var material = this.Managers.AssetSceneManager
         .Load&lt;Material&gt;(EvergineContent.DefaultMaterialID);
 
-    foreach (var anchorId in this.spatialAnchorStore.SavedAnchors.Keys)
+    foreach (var anchorId in this.xrPlatform.SpatialAnchorStore.SavedAnchors.Keys)
     {
         Entity anchorEntity = new Entity()
             .AddComponent(new Transform3D())
@@ -252,7 +250,7 @@ protected override void Start()
             .AddComponent(new CubeMesh() { Size = 0.1f } )
             .AddComponent(new MeshRenderer())
             .AddComponent(new TrackSpatialAnchor(){
-                AnchorId = anchorId // The anchor Id.
+                AnchorId = anchorId // The anchor ID.
             });
 
         this.Managers.EntityManager.Add(anchorEntity);

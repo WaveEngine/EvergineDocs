@@ -84,8 +84,8 @@
 <h1 id="using-postprocessing-graph">Using Postprocessing Graph</h1>
 
 <p><img src="images/PostProcessingGraph.jpg" alt="Postprocessing Graph header"></p>
-<p>In this document, you will learn how to load and use <strong>Postprocesing Graph</strong> in your applications.</p>
-<h2 id="load-postprocessing-graph-from-code">Load Postprocessing Graph from code</h2>
+<p>In this document, you will learn how to load and use the <strong>Postprocessing Graph</strong> in your applications.</p>
+<h2 id="load-postprocessing-graph-from-code">Load Postprocessing Graph from Code</h2>
 <p>The following sample code can be used to instantiate an existing postprocessing graph asset and apply it in your scene.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
@@ -93,7 +93,7 @@
 
     var graph = assetsService.Load&lt;PostProcessingGraph&gt;(EvergineContent.PostprocessingGraph.MyPostProcessingGraph);
 
-    // Add postprocessing graph to scene
+    // Add postprocessing graph to the scene
     Entity postprocessingVolume = new Entity()
         .AddComponent(new Transform3D())
         .AddComponent(new PostProcessingGraphRenderer() { ppGraph = graph });
@@ -101,10 +101,10 @@
     this.Managers.EntityManager.Add(postprocessingVolume);
 }
 </code></pre>
-<h2 id="how-to-apply-postprocessing-graph-to-a-scene-from-evergine-studio">How to apply Postprocessing graph to a scene from Evergine Studio.</h2>
-<p>You can apply a postprocessing graph to your scene click on <img src="../images/plusIcon.jpg" alt="Plus Icon"> button from <a href="../../evergine_studio/interface.html">Entities Hierarchy</a> panel and select <em>Post-processing Volume</em></p>
+<h2 id="how-to-apply-postprocessing-graph-to-a-scene-from-evergine-studio">How to Apply Postprocessing Graph to a Scene from Evergine Studio</h2>
+<p>You can apply a postprocessing graph to your scene by clicking on the <img src="../images/plusIcon.jpg" alt="Plus Icon"> button from the <a href="../../evergine_studio/interface.html">Entities Hierarchy</a> panel and selecting <em>Post-processing Volume</em>.</p>
 <p><img src="images/CreatePostprocessingGraph.jpg" alt="Create Postprocessing Volume"></p>
-<p>Postprocessing Volume is an entity in your scene composed of 3 components:</p>
+<p>A Postprocessing Volume is an entity in your scene composed of 3 components:</p>
 <ul>
 <li><code>Transform3D</code></li>
 <li><code>PostProcessingGraphRenderer</code></li>
@@ -125,12 +125,12 @@
 </tr>
 <tr>
 <td><strong>Volume</strong></td>
-<td>The cameras enter into the volume defines by a BoxCollider will be affected by the postprocessing graph.</td>
+<td>The cameras that enter into the volume defined by a BoxCollider will be affected by the postprocessing graph.</td>
 </tr>
 </tbody>
 </table>
-<p>In addition, you can configure the <em>LayerOrder</em> to execute the postprocessing in your scene. For example, you can execute the postprocessing after drawing all entities of your scene but before the UI entities.</p>
-<p>Finally, The PostProcessingGraphRenderer allows to load a Postprocessing Graph asset and displays all his nodes or his associated <a href="custom_postprocessing_graph.html">decorator</a>.</p>
+<p>In addition, you can configure the <em>LayerOrder</em> to execute the postprocessing in your scene. For example, you can execute the postprocessing after drawing all entities in your scene but before the UI entities.</p>
+<p>Finally, the PostProcessingGraphRenderer allows you to load a Postprocessing Graph asset and displays all its nodes or its associated <a href="custom_postprocessing_graph.html">decorator</a>.</p>
 <p><img src="images/PostprocessingGraphRenderer.jpg" alt="Postprocessing Renderer"></p>
 
 </article>

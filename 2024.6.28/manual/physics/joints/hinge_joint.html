@@ -86,7 +86,7 @@
 <video autoplay="" loop="" muted="" width="100%" height="auto">
   <source src="images/HingeJointVideo.mp4" type="video/mp4">
 </video>
-<p>The <strong>Hinge Joint</strong> restricts the translation and two additional angular degrees of freedom, so the body can only rotate around one defined axis. This joint is useful for representing doors or wheels rotating around an axis. The user can specify limits and motor settings for the hinge.</p>
+<p>The <strong>Hinge Joint</strong> restricts translation and two additional angular degrees of freedom, so the body can only rotate around one defined axis. This joint is useful for representing doors or wheels rotating around an axis. The user can specify limits and motor settings for the hinge.</p>
 <h2 id="hingejoint3d">HingeJoint3D</h2>
 <p>In Evergine, a Hinge Joint is implemented using the <code>HingeJoint3D</code> component.</p>
 <p><img src="images/hingeJointComponent.png" alt="Hinge Joint"></p>
@@ -103,7 +103,7 @@
 <tr>
 <td><strong>ConnectedEntityPath</strong></td>
 <td>null</td>
-<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid a Joint is established properly.</td>
+<td>The <a href="../../basics/component_arch/entities/entity_hierarchy.html#entity-paths">entity path</a> of the connected body. Only when the path is valid is a joint established properly.</td>
 </tr>
 <tr>
 <td><strong>Axis</strong></td>
@@ -128,12 +128,12 @@
 <tr>
 <td><strong>ConnectedAnchor</strong></td>
 <td><em>auto-calculated</em></td>
-<td>Manually configure the connected anchor position, in the connected body local space.</td>
+<td>Manually configure the connected anchor position in the connected body's local space.</td>
 </tr>
 <tr>
 <td><strong>BreakPoint</strong></td>
 <td>0</td>
-<td>If the value is greater than 0, Indicates the force that needs to be applied for this joint to break.</td>
+<td>If the value is greater than 0, it indicates the force that needs to be applied for this joint to break.</td>
 </tr>
 <tr>
 <td><strong>CollideConnected</strong></td>
@@ -156,7 +156,7 @@
 <tr>
 <td><strong>UseAngularLimit</strong></td>
 <td>false</td>
-<td>If enabled, the angle of the hinge will be restricted within the <em>LowerAngularLimit</em> &amp; <em>UpperAngularLimit</em> values..</td>
+<td>If enabled, the angle of the hinge will be restricted within the <em>LowerAngularLimit</em> and <em>UpperAngularLimit</em> values.</td>
 </tr>
 <tr>
 <td><strong>LowerAngularLimit</strong></td>
@@ -166,7 +166,7 @@
 <tr>
 <td><strong>UpperAngularLimit</strong></td>
 <td>0</td>
-<td>The highest  angle the rotation can go.</td>
+<td>The highest angle the rotation can go.</td>
 </tr>
 <tr>
 <td><strong>LimitSoftness</strong></td>
@@ -214,76 +214,76 @@
 </tbody>
 </table>
 <h2 id="using-hinge-joint">Using Hinge Joint</h2>
-<p>This snippet creates a small bridge of a series of connected  bodies.</p>
+<p>This snippet creates a small bridge of a series of connected bodies.</p>
 <video autoplay="" loop="" muted="" width="400px" height="auto">
   <source src="images/HingeSample.mp4" type="video/mp4">
 </video>
-<pre><code class="lang-csharp">        protected override void CreateScene()
+<pre><code class="lang-csharp">protected override void CreateScene()
+{
+    this.Managers.RenderManager.DebugLines = true;
+
+    // Load your material
+    var cubeMaterial = this.Managers.AssetSceneManager.Load&lt;Material&gt;(DefaultResourcesIDs.DefaultMaterialID);
+
+    int chainLength = 6;
+    Entity previousLink = null;
+
+    var size = new Vector3(0.5f, 0.1f, 2);
+    var separation = 0.6f;
+
+    // Create the chain...
+    for (int i = 0; i &lt; chainLength; i++)
+    {
+        // The first object is kinematic (we don't want a falling chain :D)
+        var rigidObjectType = (i == 0) ? RigidBodyType3D.Kinematic : RigidBodyType3D.Dynamic;
+
+        // Create the link entities...
+        var link = this.CreateCube(cubeMaterial, new Vector3(i * separation, 0, 0), size, rigidObjectType);
+
+        if (previousLink != null)
         {
-            this.Managers.RenderManager.DebugLines = true;
-
-            // Load your material
-            var cubeMaterial = this.Managers.AssetSceneManager.Load&lt;Material&gt;(DefaultResourcesIDs.DefaultMaterialID);
-
-            int chainLength = 6;
-            Entity previousLink = null;
-
-            var size = new Vector3(0.5f, 0.1f, 2);
-            var separation = 0.6f;
-
-            // Create the chain...
-            for (int i = 0; i &lt; chainLength; i++)
+            // Add a PointToPoint joint to the previous link connected to the current link...
+            previousLink.AddComponent(new HingeJoint3D()
             {
-                /// The first object is kinematic (we don't want a falling chain :D)
-                var rigidObjectType = (i == 0) ? RigidBodyType3D.Kinematic : RigidBodyType3D.Dynamic;
-
-                // Create the link entities...
-                var link = this.CreateCube(cubeMaterial, new Vector3(i * separation, 0, 0), size, rigidObjectType);
-
-                if (previousLink != null)
-                {
-                    // Add a PointToPoint joint to the previous link connected to the current link...
-                    previousLink.AddComponent(new HingeJoint3D()
-                    {
-                        ConnectedEntityPath = link.EntityPath,
-                        Axis = Vector3.Forward,                     // Sets the hinge axis to Z
-                        Anchor = new Vector3(separation / 2, 0, 0)  // Sets the Anchor between the Source and Connected body
-                    });
-                }
-
-                previousLink = link;
-
-                this.Managers.EntityManager.Add(link);
-            }
+                ConnectedEntityPath = link.EntityPath,
+                Axis = Vector3.Forward,                     // Sets the hinge axis to Z
+                Anchor = new Vector3(separation / 2, 0, 0)  // Sets the Anchor between the source and connected body
+            });
         }
 
-        private Entity CreateCube(Material material, Vector3 position, Vector3 size, RigidBodyType3D rigidBodyType)
+        previousLink = link;
+
+        this.Managers.EntityManager.Add(link);
+    }
+}
+
+private Entity CreateCube(Material material, Vector3 position, Vector3 size, RigidBodyType3D rigidBodyType)
+{
+    Entity cube = new Entity()
+        .AddComponent(new Transform3D()
         {
-            Entity cube = new Entity()
-                .AddComponent(new Transform3D()
-                {
-                    Position = position,
-                    Scale = size
-                })
-                .AddComponent(new MaterialComponent() { Material = material })
-                .AddComponent(new CubeMesh())
-                .AddComponent(new MeshRenderer())
+            Position = position,
+            Scale = size
+        })
+        .AddComponent(new MaterialComponent() { Material = material })
+        .AddComponent(new CubeMesh())
+        .AddComponent(new MeshRenderer())
 
-                .AddComponent(new RigidBody3D()         // Add a RigidBody3D component...
-                {
-                    PhysicBodyType = rigidBodyType
-                })
-                .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
+        .AddComponent(new RigidBody3D()         // Add a RigidBody3D component...
+        {
+            PhysicBodyType = rigidBodyType
+        })
+        .AddComponent(new BoxCollider3D());     // Add a BoxCollider3D to the physic body...
 
-            return cube;
-        }
+    return cube;
+}
 </code></pre>
 <h3 id="add-motor">Add Motor</h3>
-<p>At the end of the previous CreateScene() method, add the following code:</p>
-<pre><code class="lang-csharp">            var firstHinge = this.Managers.EntityManager.FindFirstComponentOfType&lt;HingeJoint3D&gt;();
-            firstHinge.UseMotor = true;
-            firstHinge.MotorTargetVelocity = 4;
-            firstHinge.MotorTargetImpulse = 100;            
+<p>At the end of the previous <code>CreateScene()</code> method, add the following code:</p>
+<pre><code class="lang-csharp">var firstHinge = this.Managers.EntityManager.FindFirstComponentOfType&lt;HingeJoint3D&gt;();
+firstHinge.UseMotor = true;
+firstHinge.MotorTargetVelocity = 4;
+firstHinge.MotorTargetImpulse = 100;
 </code></pre>
 <p>This will produce the following effect:</p>
 <video autoplay="" loop="" muted="" width="400px" height="auto">

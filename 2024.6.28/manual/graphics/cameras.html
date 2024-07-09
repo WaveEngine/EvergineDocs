@@ -84,9 +84,9 @@
 <h1 id="cameras">Cameras</h1>
 
 <p><img src="images/cameras.jpg" alt="Cameras"></p>
-<p><strong>Cameras</strong> are responsible to capture your scene and display it to the user. By customizing and manipulating cameras, you can make the visual composition of your scene truly appealing.</p>
-<p>You can create an unlimited number of cameras in a <strong>Scene</strong>. They can be set to render in any order, at any place on the screen, and choose the render target destination of this camera.</p>
-<h2 id="create-a-camera3d-from-code">Create a Camera3D from code</h2>
+<p><strong>Cameras</strong> are responsible for capturing your scene and displaying it to the user. By customizing and manipulating cameras, you can make the visual composition of your scene truly appealing.</p>
+<p>You can create an unlimited number of cameras in a <strong>Scene</strong>. They can be set to render in any order, at any location on the screen, and choose the render target destination of this camera.</p>
+<h2 id="create-a-camera3d-from-code">Create a Camera3D from Code</h2>
 <p>The following sample code can be used to instantiate a new camera entity in a scene.</p>
 <pre><code class="lang-csharp">protected override void CreateScene()
 {
@@ -103,15 +103,15 @@
 }
 </code></pre>
 <h2 id="create-a-camera3d-in-evergine-studio">Create a Camera3D in Evergine Studio</h2>
-<p>In the Entities Hierarchy panel of your Scene Editor, click the &quot;Add Entity and select <strong>Camera3D</strong>, then choose the kind of camera you want to create:</p>
+<p>In the Entities Hierarchy panel of your Scene Editor, click &quot;Add Entity&quot; and select <strong>Camera3D</strong>, then choose the kind of camera you want to create:</p>
 <ul>
-<li><strong>Fixed Camera:</strong> This camera does not have any built-in behaviour, it is static.</li>
-<li><strong>View Camera:</strong> This camera can be moved using the mouse, touch or keyboard while respecting the look-at point.</li>
-<li><strong>Free Camera:</strong> This camera can be moved using the mouse, touch or keyboard.</li>
+<li><strong>Fixed Camera:</strong> This camera does not have any built-in behavior; it is static.</li>
+<li><strong>View Camera:</strong> This camera can be moved using the mouse, touch, or keyboard while respecting the look-at point.</li>
+<li><strong>Free Camera:</strong> This camera can be moved using the mouse, touch, or keyboard.</li>
 </ul>
 <p><img src="images/createFreeCamera.png" alt="Create Camera"></p>
-<h2 id="camera3d-properties">Camera3D properties</h2>
-<h3 id="basic-camera3d-properties">Basic Camera3D properties</h3>
+<h2 id="camera3d-properties">Camera3D Properties</h2>
+<h3 id="basic-camera3d-properties">Basic Camera3D Properties</h3>
 <table>
 <thead>
 <tr>
@@ -122,7 +122,7 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_FieldOfView">Field of View</a></td>
-<td>The Camera’s view angle, measured in degrees along the axis specified in the Field of View Axis drop-down.</td>
+<td>The camera’s view angle, measured in degrees along the axis specified in the Field of View Axis drop-down.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_FieldOfViewAxis">Field of View Axis</a></td>
@@ -142,29 +142,29 @@
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ClearFlags">Clear Flags</a></td>
-<td>This flags indicates wich part of the framebuffer will be cleared before rendering: <ul><li><strong>Target:</strong> Clear the color buffer attachments.</li><li><strong>Depth:</strong> Clear the depth buffer attachment.</li><li><strong>Stencil:</strong> Clear the stencil buffer attachment.</li><li><strong>All:</strong> Clear all attachments described before.</li></ul></td>
+<td>This flag indicates which part of the framebuffer will be cleared before rendering: <ul><li><strong>Target:</strong> Clear the color buffer attachments.</li><li><strong>Depth:</strong> Clear the depth buffer attachment.</li><li><strong>Stencil:</strong> Clear the stencil buffer attachment.</li><li><strong>All:</strong> Clear all attachments described before.</li></ul></td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_HDREnabled">HDR Enabled</a></td>
-<td>Render the camera output in a HDR format</td>
+<td>Render the camera output in an HDR format.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_CameraOrder">Camera Order</a></td>
-<td>Specify the order in which the camera will be rendered. Lower values produces that the camera will be rendered first.</td>
+<td>Specify the order in which the camera will be rendered. Lower values indicate that the camera will be rendered first.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="frustum">Frustum</h3>
-<p>The camera frustum is the region of the space that will be appear on the screen.</p>
+<p>The camera frustum is the region of space that will appear on the screen.</p>
 <p><img src="images/cameraFrustum.png" alt="Camera Frustum"></p>
-<p>Is defined by near, far planes and field of view properties.</p>
+<p>It is defined by near, far planes, and field of view properties.</p>
 <p>The near and far planes determine where the camera's view begins and ends.</p>
 <ul>
 <li>The <strong>near plane</strong> is the closest point the camera can see. The default value is 0.1. Objects before this point aren't drawn.</li>
 <li>The <strong>far plane</strong>, also known as the draw distance, is the furthest point the camera can see. Objects beyond this point aren't drawn. The default setting is 1000.</li>
 </ul>
-<h2 id="photometric-properties">Photometric properties</h2>
-<p>By default, the camera uses basic properties to specify camera views (field of view and exposure). However, is possible to specify these values using physical values used in real cameras.</p>
+<h2 id="photometric-properties">Photometric Properties</h2>
+<p>By default, the camera uses basic properties to specify camera views (field of view and exposure). However, it is possible to specify these values using physical values used in real cameras.</p>
 <p>To enable physical parameters:</p>
 <table>
 <thead>
@@ -180,7 +180,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="focal-length-and-sensor-size">Focal Length and sensor size</h3>
+<h3 id="focal-length-and-sensor-size">Focal Length and Sensor Size</h3>
 <table>
 <thead>
 <tr>
@@ -190,17 +190,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_FocalLength">Focal Length (milimeters)</a></td>
-<td>The <a href="https://en.wikipedia.org/wiki/Focal_length">Focal length</a> is a common terms in photography to describe the field of view.</td>
+<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_FocalLength">Focal Length (millimeters)</a></td>
+<td>The <a href="https://en.wikipedia.org/wiki/Focal_length">focal length</a> is a common term in photography to describe the field of view.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SensorSize">Sensor Size (milimeters)</a></td>
-<td>The <a href="https://en.wikipedia.org/wiki/Image_sensor_format">Sensor size</a> describes the size in milimeters of the camera sensor. It has several implications in combination with other properties. For example, Sensor Size and Focal length defines the camera field of view.</td>
+<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_SensorSize">Sensor Size (millimeters)</a></td>
+<td>The <a href="https://en.wikipedia.org/wiki/Image_sensor_format">sensor size</a> describes the size in millimeters of the camera sensor. It has several implications in combination with other properties. For example, sensor size and focal length define the camera field of view.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="exposure">Exposure</h3>
-<p>The Exposure property specifies the overal factor that will be applied to the render output. In combination with HDR render output and environments will produce realistic results:</p>
+<p>The exposure property specifies the overall factor that will be applied to the render output. In combination with HDR render output and environments, it will produce realistic results:</p>
 <table>
 <thead>
 <tr>
@@ -217,7 +217,7 @@
 </tr>
 </tbody>
 </table>
-<p>The exposure can be specified using the Exposure property, but if you use photometric camera properties you could reproduce physical behavior concerning the amount of light gathered by the camera:</p>
+<p>The exposure can be specified using the exposure property, but if you use photometric camera properties, you can reproduce physical behavior concerning the amount of light gathered by the camera:</p>
 <table>
 <thead>
 <tr>
@@ -228,29 +228,29 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_Aperture">Aperture</a> (f-stops)</td>
-<td>The <a href="https://en.wikipedia.org/wiki/Aperture">Aperture</a>, expressed in f-stops, controls how open or closed the camera system's aperture is. In addition to the exposition, the aperture setting controls the depth of field.</td>
+<td>The <a href="https://en.wikipedia.org/wiki/Aperture">aperture</a>, expressed in f-stops, controls how open or closed the camera system's aperture is. In addition to the exposure, the aperture setting controls the depth of field.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ShutterSpeed">Shutter speed</a> (Seconds)</td>
-<td>The <a href="https://en.wikipedia.org/wiki/Shutter_speed">Shutter speed</a>, expressed in seconds, controls how long the aperture remains opened. In addition to the exposition, the shutter speed controls motion blur.</td>
+<td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_ShutterSpeed">Shutter Speed</a> (seconds)</td>
+<td>The <a href="https://en.wikipedia.org/wiki/Shutter_speed">shutter speed</a>, expressed in seconds, controls how long the aperture remains open. In addition to the exposure, the shutter speed controls motion blur.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_Sensitivity">Sensitivity</a> (ISO)</td>
-<td>The <a href="https://en.wikipedia.org/wiki/Focal_length">Focal length</a>, expressed in ISO, controls how the light reaching the sensor is quantized. In addition to the exposition, the sensitivity setting controls the amount of noise.</td>
+<td>The <a href="https://en.wikipedia.org/wiki/Focal_length">sensitivity</a>, expressed in ISO, controls how the light reaching the sensor is quantized. In addition to the exposure, the sensitivity setting controls the amount of noise.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_Compensation">Compensation</a> (EV units)</td>
-<td>The <a href="https://en.wikipedia.org/wiki/Exposure_compensation">Compensation, Exposure Compensation or EC</a> is expressed in EV units. Applying an exposure compensation EC is a simple as adding an offset to the final exposure.</td>
+<td>The <a href="https://en.wikipedia.org/wiki/Exposure_compensation">compensation, exposure compensation, or EC</a> is expressed in EV units. Applying an exposure compensation EC is as simple as adding an offset to the final exposure.</td>
 </tr>
 </tbody>
 </table>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Exposure of 1 could be achieved using Aperture 1 f-stop, Shutter Speed of 1.2 seconds and Sensitivity of 100 ISO</p>
+<p>Exposure of 1 can be achieved using an aperture of 1 f-stop, a shutter speed of 1.2 seconds, and sensitivity of 100 ISO.</p>
 </div>
-<h2 id="camera-render-output">Camera render output</h2>
+<h2 id="camera-render-output">Camera Render Output</h2>
 <p>By default, the camera render output will be targeted to the default <strong>Display</strong> registered in the <strong>GraphicPresenter</strong> service.</p>
-<p>This behavior could be modified using two properties:</p>
+<p>This behavior can be modified using two properties:</p>
 <table>
 <thead>
 <tr>
@@ -261,11 +261,11 @@
 <tbody>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_DisplayTag">DisplayTag</a></td>
-<td>It controls wich Display will be used to output the render. Each display is registered into the GraphicPresenter using a DisplayTag. Setting this property will be used to specify the camera output to the framebuffer defined in this display.</td>
+<td>It controls which display will be used to output the render. Each display is registered into the GraphicPresenter using a DisplayTag. Setting this property will specify the camera output to the framebuffer defined in this display.</td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/Evergine.Framework.Graphics.Camera.html#Evergine_Framework_Graphics_Camera_FrameBuffer">Framebuffer</a></td>
-<td>However, you can override this behavior by setting a Framebuffer instance. If you are doing that, the camera output will be targeted to this framebuffer instance, even if you have previously specified a DisplayTag.</td>
+<td>However, you can override this behavior by setting a framebuffer instance. If you do this, the camera output will be targeted to this framebuffer instance, even if you have previously specified a DisplayTag.</td>
 </tr>
 </tbody>
 </table>

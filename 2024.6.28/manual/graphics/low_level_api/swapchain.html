@@ -83,15 +83,15 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="swapchain">Swapchain</h1>
 
-<p>A swap chain is a collection of buffers that are used for displaying frames to the user. Each time an application presents a new frame for display, the first buffer in the swap chain takes the place of the displayed buffer. This process is called swapping or flipping.</p>
-<p>A graphics adapter holds a pointer to a surface that represents the image being displayed on the monitor, called a front buffer. As the monitor is refreshed, the graphics card sends the contents of the front buffer to the monitor to be displayed. However, this leads to a problem when rendering real-time graphics. The heart of the problem is that monitor refresh rates are very slow in comparison to the rest of the computer. Common refresh rates range from 60 Hz (60 times per second) to 100 Hz. If your application is updating the front buffer while the monitor is in the middle of a refresh, the image that is displayed will be cut in half with the upper half of the display containing the old image and the lower half containing the new image. This problem is referred to as tearing.</p>
+<p>A swap chain is a collection of buffers used for displaying frames to the user. Each time an application presents a new frame for display, the first buffer in the swap chain takes the place of the displayed buffer. This process is called swapping or flipping.</p>
+<p>A graphics adapter holds a pointer to a surface that represents the image being displayed on the monitor, called a front buffer. As the monitor is refreshed, the graphics card sends the contents of the front buffer to the monitor to be displayed. However, this leads to a problem when rendering real-time graphics. The heart of the problem is that monitor refresh rates are very slow in comparison to the rest of the computer. Common refresh rates range from 60 Hz (60 times per second) to 100 Hz. If your application is updating the front buffer while the monitor is in the middle of a refresh, the image that is displayed will be cut in half, with the upper half of the display containing the old image and the lower half containing the new image. This problem is referred to as tearing.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a Swapchain, first you need to create the SwapChainDescription struct:</p>
-<pre><code class="lang-csharp">// Create a windows...
+<p>To create a swap chain, first you need to create the <code>SwapChainDescription</code> struct:</p>
+<pre><code class="lang-csharp">// Create a window...
 var windowSystem = new Evergine.WindowsForms.FormsWindowsSystem();
 var window = windowSystem.CreateWindow(windowsTitle, width, height);
 
-// Create a swapchain descriptor and assign the surface info...
+// Create a swap chain descriptor and assign the surface info...
 var swapChainDescriptor = new SwapChainDescription()
 {
     Width = window.Width,
@@ -107,7 +107,7 @@ var swapChainDescriptor = new SwapChainDescription()
     SurfaceInfo = window.SurfaceInfo
 };
 
-// Finally, create the swapchain...
+// Finally, create the swap chain...
 var swapChain = this.graphicsContext.CreateSwapChain(swapChainDescriptor);
 swapChain.VerticalSync = false;
 </code></pre>
@@ -129,12 +129,12 @@ swapChain.VerticalSync = false;
 <tr>
 <td><strong>Width</strong></td>
 <td><code>uint</code></td>
-<td>The swapchain buffers width.</td>
+<td>The swap chain buffers width.</td>
 </tr>
 <tr>
 <td><strong>Height</strong></td>
 <td><code>uint</code></td>
-<td>The swapchain buffers height.</td>
+<td>The swap chain buffers height.</td>
 </tr>
 <tr>
 <td><strong>RefreshRate</strong></td>
@@ -149,22 +149,22 @@ swapChain.VerticalSync = false;
 <tr>
 <td><strong>ColorTargetFlags</strong></td>
 <td><code>TextureFlags</code></td>
-<td>The color texture flags for binding to pipeline stages. The flags ca be combined by a logical OR.</td>
+<td>The color texture flags for binding to pipeline stages. The flags can be combined by a logical OR.</td>
 </tr>
 <tr>
 <td><strong>DepthStencilTargetFormat</strong></td>
 <td><code>PixelFormat</code></td>
-<td>The pixel format of the depthstencil target.</td>
+<td>The pixel format of the depth stencil target.</td>
 </tr>
 <tr>
 <td><strong>DepthStencilTargetFlags</strong></td>
 <td><code>TextureFlags</code></td>
-<td>The depth texture flags for binding to pipeline stages. The flags ca be combined by a logical OR.</td>
+<td>The depth texture flags for binding to pipeline stages. The flags can be combined by a logical OR.</td>
 </tr>
 <tr>
 <td><strong>SampleCount</strong></td>
 <td><code>TextureSampleCount</code></td>
-<td>The sampler count of this swapchain.</td>
+<td>The sample count of this swap chain.</td>
 </tr>
 <tr>
 <td><strong>IsWindowed</strong></td>
@@ -174,7 +174,7 @@ swapChain.VerticalSync = false;
 </tbody>
 </table>
 <h3 id="textureflags">TextureFlags</h3>
-<p>Identifies how to bing a texture.</p>
+<p>Identifies how to bind a texture.</p>
 <table>
 <thead>
 <tr>
@@ -185,15 +185,15 @@ swapChain.VerticalSync = false;
 <tbody>
 <tr>
 <td><strong>None</strong></td>
-<td>Not specified, <strong>Default value</strong>.</td>
+<td>Not specified, <strong>default value</strong>.</td>
 </tr>
 <tr>
 <td><strong>ShaderResource</strong></td>
-<td>A texture usable as a ShaderResourceView.</td>
+<td>A texture usable as a Shader Resource View.</td>
 </tr>
 <tr>
 <td><strong>RenderTarget</strong></td>
-<td>A texture usable as render target.</td>
+<td>A texture usable as a render target.</td>
 </tr>
 <tr>
 <td><strong>UnorderedAccess</strong></td>
@@ -210,7 +210,7 @@ swapChain.VerticalSync = false;
 </tbody>
 </table>
 <h3 id="texturesamplecount">TextureSampleCount</h3>
-<p>Describes the number of samples to use in a Texture.</p>
+<p>Describes the number of samples to use in a texture.</p>
 <table>
 <thead>
 <tr>

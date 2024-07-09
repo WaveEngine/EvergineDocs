@@ -85,20 +85,20 @@
 
 <hr>
 <p><img src="images/model.jpg" alt="Models"></p>
-<p>Models are files that contains <strong>3d objects</strong> like characters, objects, and all kind of elements. <strong>Evergine</strong> supports importing models created by 3D editing software (like <em>3ds Max</em>, <em>Blender</em> or CAD software like <em>Solidworks</em>.) but also supports procedural model generation.</p>
-<p>Models are crucial assets in every graphical application because can provide high quality and realism.</p>
-<p>In <strong>Evergine</strong> a <strong>Model</strong> is a graphical element that combines multiple parts to conform a full 3D object in a scene.</p>
-<p>It can contains the following parts:</p>
+<p>Models are files that contain <strong>3D objects</strong> like characters, items, and all kinds of elements. <strong>Evergine</strong> supports importing models created by 3D editing software (like <em>3ds Max</em>, <em>Blender</em>, or CAD software like <em>Solidworks</em>.) and also supports procedural model generation.</p>
+<p>Models are crucial assets in every graphical application because they can provide high quality and realism.</p>
+<p>In <strong>Evergine</strong>, a <strong>Model</strong> is a graphical element that combines multiple parts to form a full 3D object in a scene.</p>
+<p>It can contain the following parts:</p>
 <ul>
-<li>Node Hierarchy.</li>
+<li>Node Hierarchy</li>
 <li>MeshContainers</li>
-<li>Material references.</li>
-<li>Skinning information.</li>
+<li>Material references</li>
+<li>Skinning information</li>
 <li>Animation Clips</li>
 </ul>
 <h2 id="node-hierarchy">Node Hierarchy</h2>
-<p>A <strong>Model</strong> contains a node graph that covers all the objects of the 3d model. They are covered in the <strong>NodeContent</strong> class. They can have geometry or just serve as dummy element, but all of them contains a transform information (position, orientation and scale) and a list of children.</p>
-<p><strong>Model</strong> contains the hierarchy in these two properties:</p>
+<p>A <strong>Model</strong> contains a node graph that covers all the objects of the 3D model. These are covered in the <strong>NodeContent</strong> class. They can contain geometry or just serve as dummy elements, but all of them contain transform information (position, orientation, and scale) and a list of children.</p>
+<p>The <strong>Model</strong> contains the hierarchy in these two properties:</p>
 <table>
 <thead>
 <tr>
@@ -109,20 +109,20 @@
 <tbody>
 <tr>
 <td>AllNodes</td>
-<td>The list of all the <strong>NodeContents</strong>, whether they are in the root level or not.</td>
+<td>The list of all the <strong>NodeContents</strong>, whether they are at the root level or not.</td>
 </tr>
 <tr>
 <td>RootNodes</td>
-<td>The indices of the NodeContent elements of the <em>AllNodes</em> list that contains the nodes at root level (they don't have a parent).</td>
+<td>The indices of the <strong>NodeContent</strong> elements in the <em>AllNodes</em> list that contain the nodes at root level (they don't have a parent).</td>
 </tr>
 </tbody>
 </table>
 <p>For example, if we have this node hierarchy:</p>
 <p><img src="images/nodeHierarchy.png" alt="Node Hierarchy"></p>
-<p>A <strong>Model</strong> would have them stored in this way:</p>
+<p>A <strong>Model</strong> would store them in this way:</p>
 <p><img src="images/modelNodes.png" alt="Model Nodes"></p>
 <h3 id="nodecontent">NodeContent</h3>
-<p>The <strong>NodeContent</strong> refers to the class that represents one node. It contains the basic information of a node of a 3d model:</p>
+<p>The <strong>NodeContent</strong> refers to the class that represents one node. It contains the basic information of a node in a 3D model:</p>
 <table>
 <thead>
 <tr>
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 <td>Mesh</td>
-<td><strong>MeshContainer</strong> reference of the node. That means the node has geometry attached to it. <em>null</em> if the node doesn't have geometry.</td>
+<td><strong>MeshContainer</strong> reference of the node, meaning the node has geometry attached to it. <em>null</em> if the node doesn't have geometry.</td>
 </tr>
 <tr>
 <td>Skin</td>
@@ -161,8 +161,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="meshescontainers">MeshesContainers</h2>
-<p>In a <strong>Model</strong> mesh containers are where the 3d geometry is stored. It usually represents one full object, and it can contains one or more Meshes (see <a href="../meshes.html">this section</a> for more information.). The main reason for the <strong>MeshContainer</strong> concept is that a geometry attached to a node can contain multiple sub-elements with a different material each of them. One <strong>MeshContainer</strong> can be referenced by one or more nodes, making the model more memory efficient.</p>
+<h2 id="meshcontainers">MeshContainers</h2>
+<p>In a <strong>Model</strong>, mesh containers are where the 3D geometry is stored. They usually represent one full object and can contain one or more meshes (see <a href="../meshes.html">this section</a> for more information). The main reason for the <strong>MeshContainer</strong> concept is that geometry attached to a node can contain multiple sub-elements, each with a different material. One <strong>MeshContainer</strong> can be referenced by one or more nodes, making the model more memory efficient.</p>
 <table>
 <thead>
 <tr>
@@ -177,24 +177,24 @@
 </tr>
 <tr>
 <td>Skin</td>
-<td>Reference of the SkinContent for skinning information (if it's the case).</td>
+<td>Reference to the SkinContent for skinning information (if applicable).</td>
 </tr>
 <tr>
 <td>BoundingBox</td>
-<td>The Bounding box of the mesh.</td>
+<td>The bounding box of the mesh.</td>
 </tr>
 <tr>
 <td>Meshes</td>
-<td>List of the meshes of this container</td>
+<td>List of the meshes in this container</td>
 </tr>
 </tbody>
 </table>
 <h2 id="materials">Materials</h2>
-<p>The model also contain a list of a tuple containing the material id and the material name referenced by its meshes. The <strong>Mesh</strong> class contains a parameter called <em>MaterialIndex</em> which tells us the index of this list we're refering to.</p>
+<p>The model also contains a list of tuples containing the material ID and the material name referenced by its meshes. The <strong>Mesh</strong> class contains a parameter called <em>MaterialIndex</em> which tells us the index of this list we're referring to.</p>
 <h2 id="skinning-information">Skinning Information</h2>
-<p><strong>Evergine</strong> supports Skinning animation. With this method a geometry is deformed following the transformations of a set of bones.</p>
-<p>To support it the model class contains an array of <strong>SkinContent</strong> class, that represents the skinning information of a geometry. Every <strong>MeshContainer</strong> and <strong>Node</strong> that as a skinned mesh references one of the elements of the array.</p>
-<p>The <strong>SkinContent</strong> class contain this information:</p>
+<p><strong>Evergine</strong> supports skinning animation. With this method, geometry is deformed following the transformations of a set of bones.</p>
+<p>To support it, the model class contains an array of the <strong>SkinContent</strong> class, which represents the skinning information of a geometry. Every <strong>MeshContainer</strong> and <strong>Node</strong> that has a skinned mesh references one of the elements of the array.</p>
+<p>The <strong>SkinContent</strong> class contains this information:</p>
 <table>
 <thead>
 <tr>
@@ -209,11 +209,11 @@
 </tr>
 <tr>
 <td>Nodes</td>
-<td>Array of integer that contain the indices of the AllNodes list of the Model class. They are the bone nodes of the skeleton.</td>
+<td>Array of integers that contain the indices of the AllNodes list of the Model class. These are the bone nodes of the skeleton.</td>
 </tr>
 <tr>
 <td>InverseBindPoses</td>
-<td>Array of <strong>Matrix4x4</strong>. For every node of the skeleton there is a matrix in that contains the inverse bind pose relative to its parent.</td>
+<td>Array of <strong>Matrix4x4</strong>. For every node of the skeleton, there is a matrix that contains the inverse bind pose relative to its parent.</td>
 </tr>
 <tr>
 <td>RootJoint</td>
@@ -221,8 +221,8 @@
 </tr>
 </tbody>
 </table>
-<p>Using this properties animating the nodes referenced by this <strong>SkinContent</strong> will animate the geometry accordingly.</p>
-<p>In order for the skinned mesh to work properly, the <strong>Vertex Buffer</strong> of the skinned mesh needs the following fields:</p>
+<p>Using these properties, animating the nodes referenced by this <strong>SkinContent</strong> will animate the geometry accordingly.</p>
+<p>For the skinned mesh to work properly, the <strong>Vertex Buffer</strong> of the skinned mesh needs the following fields:</p>
 <table>
 <thead>
 <tr>
@@ -235,17 +235,17 @@
 <tr>
 <td><strong>BoneIndices</strong></td>
 <td>´int4short´</td>
-<td>Vector that contains the indices of the bones (from the            Nodes list) affected by this vertex.</td>
+<td>Vector that contains the indices of the bones (from the Nodes list) affected by this vertex.</td>
 </tr>
 <tr>
 <td><strong>BoneWeights</strong></td>
 <td>float4</td>
-<td>For every bone from he previous field, the weight indicates the percentaje of the box transforms that applies to this vertex.</td>
+<td>For every bone from the previous field, the weight indicates the percentage of the bone transforms that apply to this vertex.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="animations">Animations</h2>
-<p>In <strong>Evergine</strong> model animation is achieved by animating nodes. If those nodes are part of a skinning bones, it will also animate the skinned mesh accordingly.</p>
+<p>In <strong>Evergine</strong>, model animation is achieved by animating nodes. If those nodes are part of skinning bones, it will also animate the skinned mesh accordingly.</p>
 <h2 id="in-this-section">In this section</h2>
 <ul>
 <li><a href="import_model.html">Import Models</a></li>

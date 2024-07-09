@@ -84,57 +84,57 @@
 <h1 id="project-structure">Project Structure</h1>
 
 <p><img src="images/projectStructure.png" alt="Project Structure"></p>
-<p><strong>Evergine</strong> projects need to be inter-connected so we can deal with different platforms or rendering system, for example. That means that by default an <strong>Evergine</strong> project has a specific structure.</p>
+<p><strong>Evergine</strong> projects need to be interconnected to manage different platforms or rendering systems, for example. This means that by default, an <strong>Evergine</strong> project has a specific structure.</p>
 <h2 id="folders--projects">Folders / Projects</h2>
-<p>When we create our <strong>Evergine</strong> application, it defines by default one <strong>Visual Studio Solution</strong> for every <strong>Project profile</strong> we creates. It will also define the following folders:</p>
+<p>When we create our <strong>Evergine</strong> application, it defines by default one <strong>Visual Studio Solution</strong> for every <strong>Project profile</strong> we create. It will also define the following folders:</p>
 <p><img src="images/projectFolder.png" alt="Project Folder"></p>
-<p>A description of this project structure:</p>
+<p>Here is a description of this project structure:</p>
 <table>
 <thead>
 <tr>
 <th>Folder</th>
 <th>Example</th>
-<th>Element description</th>
+<th>Element Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[ProjectName].weproj</strong></td>
 <td>NewProject.weproj</td>
-<td>This is the <strong>Evergine Project</strong> file. This file contains metafile information about  the project profiles, packages among other things.<br><br><em>If you double click this file, the project will be opened in <strong>Evergine Studio</strong></em></td>
+<td>This is the <strong>Evergine Project</strong> file. This file contains metadata information about the project profiles, packages, among other things.<br><br><em>If you double-click this file, the project will open in <strong>Evergine Studio</strong></em></td>
 </tr>
 <tr>
 <td><strong>Content/</strong></td>
 <td>Content/</td>
-<td>Contains all the <strong>Evergine assets</strong> of the project. Every texture, model, scene of the project are saved in this folder.</td>
+<td>Contains all the <strong>Evergine assets</strong> of the project. Every texture, model, and scene of the project is saved in this folder.</td>
 </tr>
 <tr>
 <td><strong>[ProjectName]/</strong></td>
 <td>NewProject/<strong>NewProject.csproj</strong></td>
-<td>It contains <em>[ProjectName].csproj</em>, the <strong>base</strong> project where usually the main <strong>Evergine</strong> code are defined (<em>scenes, components, services, etc.</em>).<br><br><em>All code written in this project will be shared between all profile projects.</em></td>
+<td>Contains <em>[ProjectName].csproj</em>, the <strong>base</strong> project where the main <strong>Evergine</strong> code is usually defined (<em>scenes, components, services, etc.</em>).<br><br><em>All code written in this project will be shared among all profile projects.</em></td>
 </tr>
 <tr>
 <td><strong>[ProjectName].[Profile]/</strong></td>
 <td>NewProject.Windows/<strong>NewProject.Windows.csproj</strong><br><strong>NewProject.Windows.sln</strong></td>
-<td>There will be a folder with every application profile. It contains <em>[ProjectName].[Profile].csproj</em>,  the <strong>Launcher</strong> application for that specific profile carrying all its specific classes and logic. For example, the project for <strong>UWP.MixedReality</strong> will be a UWP Mixed Reality application.<br>Additionally, a Visual Studio Solution is created per each profile.<br><br><em>In that projects we reconmend to put all specific code for that profile.</em></td>
+<td>There will be a folder for each application profile. It contains <em>[ProjectName].[Profile].csproj</em>, the <strong>Launcher</strong> application for that specific profile, carrying all its specific classes and logic. For example, the project for <strong>UWP.MixedReality</strong> will be a UWP Mixed Reality application. Additionally, a Visual Studio Solution is created for each profile.<br><br><em>In these projects, we recommend placing all specific code for that profile.</em></td>
 </tr>
 <tr>
 <td><strong>[ProjectName].Editor/</strong></td>
 <td>NewProject.Editor/<strong>NewProject.Editor.csproj</strong></td>
-<td>Contains <em>[ProjectName].Editor.csproj</em> project that contains the <strong>Evergine Editor</strong> customizations. For example, for showing a custom panel for a specific component is created here.</td>
+<td>Contains <em>[ProjectName].Editor.csproj</em>, the project that contains the <strong>Evergine Editor</strong> customizations. For example, showing a custom panel for a specific component is created here.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="visual-studio-solutions">Visual Studio Solutions</h2>
-<p>As we have mentioned before, per each different <a href="../evergine_studio/project_profiles.html">Profile</a> (Windows, UWP, Android, etc...) <strong>Evergine</strong> will create a Visual Studio solution.</p>
-<p>This solution will launch the Evergine application in the specified target. So for example, a Windows profile will produces a .Net desktop application, however an Android profile solution will create a Xamarin.Android project to deploy in devices.</p>
+<p>As mentioned before, for each different <a href="../evergine_studio/project_profiles.html">Profile</a> (Windows, UWP, Android, etc...) <strong>Evergine</strong> will create a Visual Studio solution.</p>
+<p>This solution will launch the Evergine application in the specified target. For example, a Windows profile will produce a .NET desktop application, while an Android profile solution will create a Xamarin.Android project for deployment on devices.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Every profile solution may require differents Visual Studio features (&quot;Mobile development with .Net&quot; for mobile devices, or &quot;UWP development&quot; for UWP profiles...).
-Follow Visual Studio indications to install the missing features.</p>
+<p>Every profile solution may require different Visual Studio features (&quot;Mobile development with .Net&quot; for mobile devices, or &quot;UWP development&quot; for UWP profiles...).
+Follow Visual Studio's indications to install the missing features.</p>
 </div>
-<h2 id="custom-structue">Custom structue</h2>
-<p><strong>Evergine</strong> supports custom structures in your application. It only requires that every specific profile solution can build properly.</p>
+<h2 id="custom-structure">Custom Structure</h2>
+<p><strong>Evergine</strong> supports custom structures in your application. It only requires that every specific profile solution can be built properly.</p>
 
 </article>
           </div>

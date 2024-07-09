@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="queryheap">QueryHeap</h1>
 
-<p>A query heap contains an array of GPU queries. A query heap allows batch a set of GPU queries to get better performance.</p>
+<p>A query heap contains an array of GPU queries. A query heap allows batching a set of GPU queries to achieve better performance.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a QueryHeap, first you need to construct a QueryHeapDescription:</p>
+<p>To create a <code>QueryHeap</code>, you first need to construct a <code>QueryHeapDescription</code>:</p>
 <pre><code class="lang-csharp">QueryHeap queryHeap;
 uint maxQueries = 4;
 
@@ -96,7 +96,6 @@ QueryHeapDescription desc = new QueryHeapDescription()
 };
 
 this.queryHeap = this.graphicsContext.Factory.CreateQueryHeap(ref desc);
-
 </code></pre>
 <h3 id="querytype">QueryType</h3>
 <table>
@@ -109,7 +108,7 @@ this.queryHeap = this.graphicsContext.Factory.CreateQueryHeap(ref desc);
 <tbody>
 <tr>
 <td><strong>Timestamp</strong></td>
-<td>Indicates the query is for high definition GPU and CPU timestamps.</td>
+<td>Indicates the query is for high-definition GPU and CPU timestamps.</td>
 </tr>
 <tr>
 <td><strong>Occlusion</strong></td>
@@ -117,13 +116,13 @@ this.queryHeap = this.graphicsContext.Factory.CreateQueryHeap(ref desc);
 </tr>
 <tr>
 <td><strong>BinaryOcclusion</strong></td>
-<td>Indicates the query is for a binary depth/stencil occlusion statistics.</td>
+<td>Indicates the query is for binary depth/stencil occlusion statistics.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="timestamp-queries">Timestamp queries</h2>
-<p>You can obtain timestamps as part of a command list (rather than a CPU-side call on a command queue) via timestamp queries.</p>
-<h3 id="how-to-use-timestamp-queries">How to use timestamp queries</h3>
+<h2 id="timestamp-queries">Timestamp Queries</h2>
+<p>You can obtain timestamps as part of a command list (rather than via a CPU-side call on a command queue) using timestamp queries.</p>
+<h3 id="how-to-use-timestamp-queries">How to Use Timestamp Queries</h3>
 <pre><code class="lang-csharp">ulong[] results;
 
 var commandBuffer = this.commandQueue.CommandBuffer();
@@ -154,7 +153,7 @@ this.commandQueue.WaitIdle();
 
 this.queryHeap.ReadData(0, 4, this.results);
 </code></pre>
-<h3 id="how-to-show-timestamp-results">How to show timestamp results</h3>
+<h3 id="how-to-show-timestamp-results">How to Show Timestamp Results</h3>
 <pre><code class="lang-csharp">this.surface.MouseDispatcher.DispatchEvents();
 this.surface.KeyboardDispatcher.DispatchEvents();
 
@@ -168,16 +167,16 @@ double time1 = ((this.results[1] - this.results[0]) / gpuFrequency) * 1000.0;
 double time2 = ((this.results[3] - this.results[2]) / gpuFrequency) * 1000.0;
 
 ImGui.SetNextWindowSize(new System.Numerics.Vector2(300, 100));
-ImGui.Begin(&quot;Timmings&quot;);
-ImGui.Text($&quot;Draw: { time1.ToString(&quot;0.0000&quot;) } ms&quot;);
-ImGui.Text($&quot;ImGui: { time2.ToString(&quot;0.0000&quot;) } ms&quot;);
+ImGui.Begin(&quot;Timings&quot;);
+ImGui.Text($&quot;Draw: {time1.ToString(&quot;0.0000&quot;)} ms&quot;);
+ImGui.Text($&quot;ImGui: {time2.ToString(&quot;0.0000&quot;)} ms&quot;);
 ImGui.End();
 
 this.uiRenderer.Render(commandBuffer);
 </code></pre>
-<h2 id="occlusion-queries">Occlusion queries</h2>
-<p>Hardware occlusion queries were one of the most eagerly awaited graphics hardware features in a long time. This feature makes it possible for an application to ask the 3D API whether or not any pixels would be drawn if a particular object were rendered. With this feature, applications can check whether or not the bounding boxes of complex objects are visible; if the bounds are occluded, the application can skip drawing those objects.</p>
-<h3 id="queryheap-creation">QueryHeap creation</h3>
+<h2 id="occlusion-queries">Occlusion Queries</h2>
+<p>Hardware occlusion queries have been one of the most eagerly awaited graphics hardware features for a long time. This feature allows an application to ask the 3D API whether any pixels would be drawn if a particular object were rendered. With this feature, applications can check whether the bounding boxes of complex objects are visible; if the bounds are occluded, the application can skip drawing those objects.</p>
+<h3 id="queryheap-creation">QueryHeap Creation</h3>
 <pre><code class="lang-csharp">uint maxQueries = 4;
 QueryHeapDescription desc = new QueryHeapDescription()
 {
@@ -187,7 +186,7 @@ QueryHeapDescription desc = new QueryHeapDescription()
 
 var queryHeap = this.graphicsContext.Factory.CreateQueryHeap(ref desc);
 </code></pre>
-<h3 id="how-to-use-occlusion-queries">How to use occlusion queries</h3>
+<h3 id="how-to-use-occlusion-queries">How to Use Occlusion Queries</h3>
 <pre><code class="lang-csharp">// Draw
 var commandBuffer = this.commandQueue.CommandBuffer();
 
@@ -218,7 +217,7 @@ this.commandQueue.WaitIdle();
 
 this.queryHeap.ReadData(0, 1, this.results);
 </code></pre>
-<h3 id="how-to-show-occlusion-results">How to show occlusion results</h3>
+<h3 id="how-to-show-occlusion-results">How to Show Occlusion Results</h3>
 <pre><code class="lang-csharp">this.surface.MouseDispatcher.DispatchEvents();
 this.surface.KeyboardDispatcher.DispatchEvents();
 
@@ -228,7 +227,7 @@ this.uiRenderer.NewFrame(gameTime);
 
 ImGui.SetNextWindowSize(new System.Numerics.Vector2(300, 100));
 ImGui.Begin(&quot;Occlusion Test&quot;);
-ImGui.Text($&quot;Samples: { this.results[0] } &quot;);
+ImGui.Text($&quot;Samples: {this.results[0]}&quot;);
 ImGui.End();
 
 this.uiRenderer.Render(commandBuffer);

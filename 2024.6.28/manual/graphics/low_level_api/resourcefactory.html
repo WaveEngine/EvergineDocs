@@ -83,16 +83,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="resourcefactory">ResourceFactory</h1>
 
-<p><strong>ResourceFactory</strong> is the factory class responsible to create all low-level objects like a native Texture, Sampler, GraphicsPipeline among other things...</p>
-<p>Once you have the <a href="graphicscontext.html">GraphicsContext</a> instance you can use it to access to the ResourceFactory and start creating Low-Level objects. In this example, to create a VertexBuffer object:</p>
+<p><strong>ResourceFactory</strong> is the factory class responsible for creating all low-level objects such as a native Texture, Sampler, GraphicsPipeline, among other things.</p>
+<p>Once you have the <a href="graphicscontext.html">GraphicsContext</a> instance, you can use it to access the ResourceFactory and start creating low-level objects. In this example, to create a VertexBuffer object:</p>
 <pre><code class="lang-csharp">var vertexBufferDescription = 
     new BufferDescription((uint)Unsafe.SizeOf&lt;VertexPositionNormalTexture&gt;() * (uint)vertexData.Length, BufferFlags.VertexBuffer, ResourceUsage.Default);
 
 var vertexBuffer = this.graphicsContext.Factory.CreateBuffer(vertexData, ref vertexBufferDescription);
 </code></pre>
-<p>All the common Low-Level objects (textures, buffer, ...) are represented by abstract classes, and ResourceFactory allows you to create them in the same way for all the supported APIs. So, for example, a ResourceFactory of <code>DX11GraphicsContext</code> always will create DX11 graphics resources (<code>DX11Texture</code>, <code>DX11Buffer</code> and so on).</p>
+<p>All the common low-level objects (textures, buffers, etc.) are represented by abstract classes, and ResourceFactory allows you to create them in the same way for all the supported APIs. For example, a ResourceFactory of <code>DX11GraphicsContext</code> will always create DX11 graphics resources (<code>DX11Texture</code>, <code>DX11Buffer</code>, and so on).</p>
 <h2 id="objects">Objects</h2>
-<p>The complete list of objects that you can create using the ResourceFactory are:</p>
+<p>The complete list of objects that you can create using the ResourceFactory includes:</p>
 <ul>
 <li><a href="buffer.html">Buffer</a></li>
 <li><a href="texture.html">Texture</a></li>

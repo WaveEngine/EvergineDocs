@@ -83,11 +83,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="buffer">Buffer</h1>
 
-<p>A Buffer represents a block of memory that can be used in GPU operations. You can use buffers to store a wide variety of data, including position vectors, normal vectors, texture coordinates in a vertex buffer, indexes in an index buffer for example.</p>
+<p>A Buffer represents a block of memory that can be used in GPU operations. You can use buffers to store a wide variety of data, including position vectors, normal vectors, texture coordinates in a vertex buffer, and indexes in an index buffer, for example.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a buffer, first you need to create the BufferDescription struct:</p>
-<pre><code class="lang-csharp">
-// Populate some data for the buffer...
+<p>To create a buffer, first, you need to create the BufferDescription struct:</p>
+<pre><code class="lang-csharp">// Populate some data for the buffer...
 Vector4[] vertexData = new Vector4[]
 {
     new Vector4(0.0f, 0.2f, 0.0f, 1.0f),   new Vector4(1.0f, 0.0f, 0.0f, 1.0f),
@@ -123,7 +122,7 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 <tr>
 <td><strong>Flags</strong></td>
 <td><code>BufferFlags</code></td>
-<td>Buffer flags describing buffer type.</td>
+<td>Buffer flags describing the buffer type.</td>
 </tr>
 <tr>
 <td><strong>CpuAccess</strong></td>
@@ -154,15 +153,15 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 <tbody>
 <tr>
 <td><strong>Default</strong></td>
-<td>A resource that requires read and write access by the GPU, <strong>Default value.</strong></td>
+<td>A resource that requires read and write access by the GPU. <strong>Default value.</strong></td>
 </tr>
 <tr>
 <td><strong>Immutable</strong></td>
-<td>A resource that can only be read by the GPU. It cannot be written by the GPU, and cannot be accessed at all by the CPU.</td>
+<td>A resource that can only be read by the GPU. It cannot be written by the GPU and cannot be accessed at all by the CPU.</td>
 </tr>
 <tr>
 <td><strong>Dynamic</strong></td>
-<td>A resource that is accessible by both the GPU (read only) and the CPU (write only).</td>
+<td>A resource that is accessible by both the GPU (read-only) and the CPU (write-only).</td>
 </tr>
 <tr>
 <td><strong>Staging</strong></td>
@@ -171,7 +170,7 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 </tbody>
 </table>
 <h3 id="bufferflags">BufferFlags</h3>
-<p>Identifies how to bind a buffer. This flag gives a hint to the graphics API of how this buffer will be used.</p>
+<p>Identifies how to bind a buffer. This flag gives a hint to the graphics API about how this buffer will be used.</p>
 <table>
 <thead>
 <tr>
@@ -202,7 +201,7 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 </tr>
 <tr>
 <td><strong>AccelerationStructure</strong></td>
-<td>Bind a buffer to used in a raytracing stage.</td>
+<td>Bind a buffer to be used in a raytracing stage.</td>
 </tr>
 <tr>
 <td><strong>RenderTarget</strong></td>
@@ -210,15 +209,15 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 </tr>
 <tr>
 <td><strong>UnorderedAccess</strong></td>
-<td>Bind a buffer as unordered access resource.</td>
+<td>Bind a buffer as an unordered access resource.</td>
 </tr>
 <tr>
 <td><strong>BufferStructured</strong></td>
-<td>Bind a buffer as structured buffer resoruce.</td>
+<td>Bind a buffer as a structured buffer resource.</td>
 </tr>
 <tr>
 <td><strong>IndirectBuffer</strong></td>
-<td>Bind a buffer as indirect buffer to the input-assembler stage.</td>
+<td>Bind a buffer as an indirect buffer to the input-assembler stage.</td>
 </tr>
 </tbody>
 </table>
@@ -234,21 +233,21 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 <tbody>
 <tr>
 <td><strong>None</strong></td>
-<td>Not specified, <strong>Default value</strong>.</td>
+<td>Not specified. <strong>Default value.</strong></td>
 </tr>
 <tr>
 <td><strong>Write</strong></td>
-<td>The CPU can be write this resource.</td>
+<td>The CPU can write to this resource.</td>
 </tr>
 <tr>
 <td><strong>Read</strong></td>
-<td>The CPU can be read this resources.</td>
+<td>The CPU can read from this resource.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="using-buffers">Using Buffers</h2>
 <h3 id="how-to-update-a-default-buffer-buffer-created-with-resourceusagedefault">How to update a Default Buffer (Buffer created with ResourceUsage.Default)</h3>
-<p>In that case, you just need to execute the <code>GraphicsContext.UpdateBufferData(...)</code> method:</p>
+<p>In this case, you just need to execute the <code>GraphicsContext.UpdateBufferData(...)</code> method:</p>
 <pre><code class="lang-csharp">var vertexData = new Vector4[]
 {
     new Vector4(0.0f, 0.2f, 0.0f, 1.0f),   new Vector4(1.0f, 0.0f, 0.0f, 1.0f),
@@ -265,7 +264,7 @@ var buffer = this.GraphicsContext.Factory.CreateBuffer(ref bufferDescription);
 this.GraphicsContext.UpdateBufferData(buffer, vertexData);
 </code></pre>
 <h3 id="how-to-copy-a-default-buffer-into-another-default-buffer">How to copy a Default Buffer into another Default Buffer</h3>
-<p>In that case you need to execute the<code> CommandBuffer.CopyBufferDataTo(...)</code> method. To do this, you need to obtains a <code>CommandBuffer</code> instance and enqueue the copy command:</p>
+<p>In this case, you need to execute the <code>CommandBuffer.CopyBufferDataTo(...)</code> method. To do this, you need to obtain a <code>CommandBuffer</code> instance and enqueue the copy command:</p>
 <pre><code class="lang-csharp">var vertexData = new Vector4[]
 {
     new Vector4(0.0f, 0.2f, 0.0f, 1.0f),   new Vector4(1.0f, 0.0f, 0.0f, 1.0f),
@@ -308,9 +307,8 @@ bufferCopy.Dispose();
 queue.Dispose();
 </code></pre>
 <h3 id="how-to-read-a-default-buffer-content-by-using-a-staging-buffer">How to read a Default Buffer content (by using a Staging Buffer)</h3>
-<p>In order to read a Default Buffer, you need to copy previously the content into a Staging Buffer. Once you do this, you could map the Stagging Buffer to CPU Memory and access the data without problems:</p>
-<pre><code class="lang-csharp">
-var vertexData = new Vector4[]
+<p>In order to read a Default Buffer, you need to copy the content into a Staging Buffer first. Once you do this, you can map the Staging Buffer to CPU memory and access the data without problems:</p>
+<pre><code class="lang-csharp">var vertexData = new Vector4[]
 {
     new Vector4(0.0f, 0.2f, 0.0f, 1.0f),   new Vector4(1.0f, 0.0f, 0.0f, 1.0f),
     new Vector4(0.2f, -0.2f, 0.0f, 1.0f),  new Vector4(0.0f, 1.0f, 0.0f, 1.0f),
@@ -345,10 +343,10 @@ command.Commit();
 queue.Submit();
 queue.WaitIdle();
 
-// To read the buffer data, Map the buffer into the CPU memory...
+// To read the buffer data, map the buffer into the CPU memory...
 var readableResource = this.GraphicsContext.MapMemory(stagingBuffer, MapMode.Read);
 
-// Checks if the staging buffer content is the same as that we use before to create 
+// Check if the staging buffer content is the same as that we used before to create 
 // the default buffer...
 for (int i = 0; i &lt; vertexData.Length; i++)
 {
@@ -356,7 +354,7 @@ for (int i = 0; i &lt; vertexData.Length; i++)
     Assert.Equal(*pointer, vertexData[i]);
 }
 
-// Unmap the memory to free the CPU Memory resources...
+// Unmap the memory to free the CPU memory resources...
 this.GraphicsContext.UnmapMemory(stagingBuffer);
 
 buffer.Dispose();
@@ -364,7 +362,7 @@ stagingBuffer.Dispose();
 queue.Dispose();
 </code></pre>
 <h3 id="how-to-update-a-dynamic-buffer-from-cpu">How to update a Dynamic Buffer from CPU</h3>
-<p>A Dynamic Buffer could be updated directly from CPU. To do this, you only need to map a Buffer and write the data directly to the mapped pointer:</p>
+<p>A Dynamic Buffer can be updated directly from the CPU. To do this, you only need to map a Buffer and write the data directly to the mapped pointer:</p>
 <pre><code class="lang-csharp">var vectorSize = (uint)Unsafe.SizeOf&lt;Vector4&gt;();
 var vertexData = new Vector4[]
 {
@@ -391,7 +389,7 @@ for (int i = 0; i &lt; vertexData.Length; i++)
     pointer++;
 }
 
-// Once the buffer us unmapped, the new buffer content is accesible by the GPU...
+// Once the buffer is unmapped, the new buffer content is accessible by the GPU...
 this.GraphicsContext.UnmapMemory(dynamicBuffer);
 
 dynamicBuffer.Dispose();

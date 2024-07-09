@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Create custom LineBatch | Evergine Doc </title>
+    <title>Create Custom LineBatch | Evergine Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Create custom LineBatch | Evergine Doc ">
+    <meta name="title" content="Create Custom LineBatch | Evergine Doc ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -81,11 +81,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="create-custom-linebatch">Create custom LineBatch</h1>
+<h1 id="create-custom-linebatch">Create Custom LineBatch</h1>
 
 <hr>
-<p>In most cases will be enough to use the default linebatch3D provided by the RenderManager, but sometimes is useful to create your custom line batch because you can modify its global transformation or you can modify its render behavior without impact in the default line batch included in Evergine. In these cases will be interesting to create an independent custom line batch.</p>
-<h2 id="how-to-create-a-custom-linebatch">How to create a custom linebatch</h2>
+<p>In most cases, the default LineBatch3D provided by the RenderManager will be sufficient. However, sometimes it is useful to create your custom line batch so you can modify its global transformation or alter its rendering behavior without impacting the default line batch included in Evergine. In these situations, it can be beneficial to create an independent custom line batch.</p>
+<h2 id="how-to-create-a-custom-linebatch">How to Create a Custom LineBatch</h2>
 <pre><code class="lang-csharp">public class MyDrawable : Drawable3D
 {
     [BindService]
@@ -112,14 +112,14 @@
     protected override void OnActivated()
     {
         // Enable line batch when the component is activated
-        this.lineBatch.IsEnabled= true;
+        this.lineBatch.IsEnabled = true;
         base.OnActivated();
     }
 
     protected override void OnDeactivated()
     {
         // Disable line batch when the component is deactivated
-        this.lineBatch.IsEnabled= false;
+        this.lineBatch.IsEnabled = false;
         base.OnDeactivated();
     }
 
@@ -139,9 +139,9 @@
 </code></pre>
 <p><strong>Result</strong>
 <img src="images/customLinebatch.jpg" alt="MyDrawable component"></p>
-<h2 id="some-interesting-properties">Some interesting properties</h2>
-<p>The line batch has a <strong>Transform</strong> property that could be used to apply transformations (translation, rotation, or scale) to all elements added to the batch. For example, if you use the line batch to draw a CAD map you can use this property to rotate the whole map.</p>
-<p>The line batch by default requires that every frame the elements to draw will be added to the batch, but in some cases is interesting to create a static batch and draw the same elements every frame because any new element will not need to be added to the batch at runtime, so you can use the property <strong>ResetAfterRender</strong> to indicates that the line batch doesn't reset the batch every frame.</p>
+<h2 id="some-interesting-properties">Some Interesting Properties</h2>
+<p>The line batch has a <strong>Transform</strong> property that can be used to apply transformations (translation, rotation, or scale) to all elements added to the batch. For example, if you use the line batch to draw a CAD map, you can use this property to rotate the whole map.</p>
+<p>By default, the line batch requires that every frame the elements to draw be added to the batch. However, in some cases, it is useful to create a static batch and draw the same elements every frame because no new elements will need to be added to the batch at runtime. You can use the <strong>ResetAfterRender</strong> property to indicate that the line batch doesn't reset the batch every frame.</p>
 <pre><code class="lang-csharp">this.lineBatch = new LineBatch3D(this.graphicsContext, layer)
 {
     ResetAfterRender = false,

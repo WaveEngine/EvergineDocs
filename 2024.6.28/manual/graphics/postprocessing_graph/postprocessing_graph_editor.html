@@ -85,51 +85,51 @@
 
 <hr>
 <p><img src="images/PostprocessingGraphEditor.jpg" alt="Postprocessing Graph Interface"></p>
-<p><strong>Postprocessing Graph Editor</strong> allows editing the Postprocessing Graph assets. Double click over a postprocessing graph asset shown in <a href="../../evergine_studio/interface.html">Assets Details</a> will open this editor. The editor is composed of 3 main parts:</p>
+<p><strong>Postprocessing Graph Editor</strong> allows editing Postprocessing Graph assets. Double-clicking on a postprocessing graph asset shown in <a href="../../evergine_studio/interface.html">Assets Details</a> will open this editor. The editor is composed of three main parts:</p>
 <ul>
 <li>Graph Editor</li>
-<li>Compute Effects collection</li>
-<li>Viewport.</li>
+<li>Compute Effects Collection</li>
+<li>Viewport</li>
 </ul>
 <h2 id="graph-editor"><strong>Graph Editor</strong></h2>
-<p>The <strong>Graph Editor</strong> allows you to create graph nodes to connect the start node (<em>Render</em>) with the last node (<em>Screen</em>). The nodes are computed effects and his parameters, input, and output are defined by his ResourceLayout block.</p>
+<p>The <strong>Graph Editor</strong> allows you to create graph nodes to connect the start node (<em>Render</em>) with the last node (<em>Screen</em>). The nodes are computed effects, and their parameters, inputs, and outputs are defined by their ResourceLayout block.</p>
 <table>
 <thead>
 <tr>
-<th>Node elements</th>
+<th>Node Elements</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Name</strong></td>
-<td>Located on top of the Node is the name of the compute effect used.</td>
+<td>Located at the top of the Node is the name of the compute effect used.</td>
 </tr>
 <tr>
 <td><strong>Divisors</strong></td>
-<td>Allows configure the ThreadGroupDivisor X,y and Z to dispatch the compute effect.</td>
+<td>Allows configuring the ThreadGroupDivisor X, Y, and Z to dispatch the compute effect.</td>
 </tr>
 <tr>
 <td><strong>Parameters</strong></td>
-<td>Allows configuring constant buffer or structure buffer properties to the compute effect.</td>
+<td>Allows configuring constant buffer or structure buffer properties for the compute effect.</td>
 </tr>
 <tr>
 <td><strong>Input</strong></td>
-<td>Allows set Textures and Samplers to the compute effect.</td>
+<td>Allows setting Textures and Samplers for the compute effect.</td>
 </tr>
 <tr>
 <td><strong>Output</strong></td>
-<td>Allows set RWTextures to the compute effect.</td>
+<td>Allows setting RWTextures for the compute effect.</td>
 </tr>
 </tbody>
 </table>
 <p><img src="images/PostprocessingNode.jpg" alt="Node Parts"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>The node inputs can only be connected with a single node output but a node output can be connected with multiple node inputs.</p>
+<p>The node inputs can only be connected with a single node output, but a node output can be connected with multiple node inputs.</p>
 </div>
 <h3 id="toolbox"><strong>Toolbox</strong></h3>
-<p>The toolbox is located on the top side of the graph editor and allows to manipulate the graph view.</p>
+<p>The toolbox is located at the top of the graph editor and allows you to manipulate the graph view.</p>
 <table>
 <thead>
 <tr>
@@ -144,7 +144,7 @@
 </tr>
 <tr>
 <td><img src="images/relocateIcon.jpg" alt="Relocate"></td>
-<td>Execute an algorithm to relocated nodes and avoid node overlapping.</td>
+<td>Execute an algorithm to relocate nodes and avoid node overlapping.</td>
 </tr>
 <tr>
 <td><img src="images/zoomInIcon.jpg" alt="Zoom In"> <img src="images/zoomOutIcon.jpg" alt="Zoom Out"></td>
@@ -166,26 +166,26 @@
 <tbody>
 <tr>
 <td><strong>Left mouse button</strong></td>
-<td>Selection tool. Allows to select a single or multiple nodes.</td>
+<td>Selection tool. Allows selecting single or multiple nodes.</td>
 </tr>
 <tr>
 <td><strong>Right mouse button</strong></td>
-<td>Cut tool. Allows the draw a cut line to break conections.</td>
+<td>Cut tool. Allows you to draw a cut line to break connections.</td>
 </tr>
 <tr>
-<td><strong>Medium mouse button</strong></td>
-<td>Pan tool. Allows to move along the graph.</td>
+<td><strong>Middle mouse button</strong></td>
+<td>Pan tool. Allows you to move along the graph.</td>
 </tr>
 <tr>
 <td><strong>Mouse wheel</strong></td>
-<td>Allows to make zoom in/out over the graph.</td>
+<td>Allows you to zoom in/out over the graph.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="compuse-effects-collection"><strong>Compuse Effects Collection</strong></h2>
+<h2 id="compute-effects-collection"><strong>Compute Effects Collection</strong></h2>
 <p>In this panel, you can find all compute effects existing in the project and drag an effect to the graph editor to use it.</p>
 <h2 id="viewport"><strong>Viewport</strong></h2>
-<p>The vewport allows to inspect the result of the postprocessing graph applied to the scene:</p>
+<p>The viewport allows you to inspect the result of the postprocessing graph applied to the scene:</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>To refresh the graph changes in the viewport, you need to save all graph changes.</p>
@@ -200,11 +200,11 @@
 <tbody>
 <tr>
 <td><img src="images/sceneIcon.jpg" alt="Select scene"></td>
-<td>The combobox allows to select the current scene for the viewport.</td>
+<td>The combobox allows selecting the current scene for the viewport.</td>
 </tr>
 <tr>
 <td><img src="images/cameraIcon.jpg" alt="Camera settings"></td>
-<td>Opens the camera settings to configure all its parameters. The camera changes are not stored so it is only for testing proposes.</td>
+<td>Opens the camera settings to configure all its parameters. The camera changes are not stored, so it is only for testing purposes.</td>
 </tr>
 </tbody>
 </table>
@@ -226,7 +226,7 @@
 <td>Rotates camera.</td>
 </tr>
 <tr>
-<td><strong>Medium mouse button</strong></td>
+<td><strong>Middle mouse button</strong></td>
 <td>Camera panning.</td>
 </tr>
 <tr>
