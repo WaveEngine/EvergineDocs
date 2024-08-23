@@ -1,5 +1,44 @@
 # Upgrade My Project to the Latest Evergine Release
 
+## Update from Evergine 2024.6.28 to Evergine 2024.9.??
+
+Since Evergine 2024.9.??, there are some changes that should be applied to already existing projects that want to be upgraded to this version. 
+
+For FreeCamera3D component, you may find build errors on your project, related to some properties that have been renamed: 
+- TouchSensibility renamed to TouchSensitivity
+- MouseSensibility renamed to MouseSensitivity
+
+You should update any existing YAML file (mostly scenes or maybe prefabs) that contains a component of this type. To help you with this tasks in projects with many files, you can run following script.
+
+```powershell
+<#
+.SYNOPSIS
+	Fix renamed properties
+.DESCRIPTION
+	Fix renamed properties.
+#>
+
+param (
+	[Parameter(mandatory=$false)]
+    [string]$path
+)
+
+$confirmation = Read-Host "This script performs the following actions:
+- Migrate modified properties.
+They cannot be undone. Do you want to continue?  [y/n]"
+if ($confirmation -ne "y") { exit }
+
+# Replace modified properties
+Get-ChildItem -Path $path -Recurse -Include "*.wescene","*.weprefab" | 
+ForEach-Object {
+    $p = $_.FullName
+    $a = Get-Content $p
+    $a = $a -replace "MouseSensibility","MouseSensitivity"
+    $a = $a -replace "TouchSensibility","TouchSensitivity"
+    Set-Content $a -Path $p
+}
+```
+
 ## Update from Evergine 2023.9.28 to Evergine 2024.6.28
 
 When upgrading to Evergine 2024.6, a few manual adjustments are required to ensure your previous projects work correctly. The main changes include:
