@@ -1,0 +1,31 @@
+name: CD
+
+on:
+  workflow_dispatch: # Manually trigger the workflow
+    inputs:
+      publishEnabled:
+        description: "Publish to docs website"
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  build:
+    # if: github.ref == 'refs/heads/master': # Only run on master branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out docs repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Check out engine repo
+        uses: actions/checkout@master
+        with:
+          repository: EvergineTeam/Engine
+          token: ${{ secrets.ACTIONS_TOKEN }}
+          path: ../Engine
+
+      - name: Check if checkout worked
+        run: |
+          ls .
+          ls ../Engine
