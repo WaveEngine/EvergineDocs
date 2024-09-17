@@ -1,76 +1,42 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "src/Engine/Audio/Evergine.OpenAL/Evergine.OpenAL.csproj",
-            "src/Engine/Audio/Evergine.XAudio2/Evergine.XAudio2.csproj",
-
-            "src/Engine/Common/Evergine.Assets/Evergine.Assets.csproj",
-            "src/Engine/Common/Evergine.Common/Evergine.Common.csproj",
-            "src/Engine/Common/Evergine.Components/Evergine.Components.csproj",
-            "src/Engine/Common/Evergine_Framework/Evergine.Framework.csproj",
-            "src/Engine/Common/Evergine.Mathematics/Evergine.Mathematics.csproj",
-
-            "src/Engine/Physics/Evergine.Bullet/Evergine.Bullet.csproj",
-
-            "src/Engine/Platform/Evergine.Platform.csproj",
-
-            "src/Engine/Rendering/Evergine.DirectX11/Evergine.DirectX11.csproj",
-            "src/Engine/Rendering/Evergine.OpenGL/Evergine.OpenGL.csproj",
-            "src/Engine/WindowSystems/Evergine.SDL/Evergine.SDL.csproj",
-
-            "src/Extensions/Evergine.Networking/Evergine.Networking.csproj",
-            "src/Extensions/Evergine.OpenXR/Evergine.OpenXR.csproj",
-            "src/Extensions/Evergine.Vuforia/Evergine.Vuforia/Evergine.Vuforia.csproj",
-            "src/Extensions/Evergine.Vuforia/VuforiaSharp/Evergine.VuforiaSharp.csproj",
-
-            "src/Runtimes/Evergine.Runtimes.GLB/Evergine.Runtimes.GLB.csproj",
-            "src/Runtimes/Evergine.Runtimes.STL/Evergine.Runtimes.STL.csproj",
-
-            "src/Tools/Evergine.HLSLEverywhere/Evergine.HLSLEverywhere.csproj"
-          ],
-          "src": "../"
-        }
-      ],
-      "properties": {
-          "TargetFramework": "netstandard2.0"
-      },
-      "dest": "api",
-      "filter": "filterConfig.yml"
-    }
-  ],
   "build": {
     "content": [
       {
-        "files": ["api/**.yml", "api/index.md"]
+        "files": ["api/**.yml"],
+        "src": "build"
+      },
+      {
+        "files": ["api/index.md"],
+        "src": "src"
       },
       {
         "files": ["manual/**.md", "manual/**/toc.yml", "toc.yml", "*.md"],
-        "exclude": ["obj/**", "_site/**"]
+        "exclude": ["obj/**", "_site/**"],
+        "src": "src"
       }
     ],
     "resource": [
       {
         "files": ["manual/**/images/**", "images/**"],
-        "exclude": ["obj/**", "_site/**"]
+        "exclude": ["obj/**", "_site/**"],
+        "src": "src"
       }
     ],
     "overwrite": [
       {
         "files": ["api/**.md"],
-        "exclude": ["obj/**", "_site/**"]
+        "exclude": ["obj/**", "_site/**"],
+        "src": "src"
       }
     ],
-    "dest": "build/DocOnline",
+    "dest": "build/dist",
     "globalMetadata": {
       "_appTitle": "Evergine Doc",
       "_enableSearch": "true",
       "_disableContribution": "true",
       "_gitContribute": {
-        "repo": "https://github.com/Evergine/Documentation.git",
-        "branch": "develop"
+        "repo": "https://github.com/EvergineTeam/EvergineDocs",
+        "branch": "next-release"
       }
     },
     "fileMetadataFiles": [],
