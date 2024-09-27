@@ -94,7 +94,36 @@ cbuffer PerDrawCall : register(b0)
 };
 ```
 
-### List of Parameter Tags
+## Pass Settings Metatags
+
+These tags are used inside a pass block code and are useful to configure which settings you want to compile for this pass.
+
+| Tag                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span style="color:lightgreen">[Profile `API_Level`]</span>                 | Defines HLSL language version and capabilities. The API level values could be: <ul><li>**9_1:** DirectX9.1 HLSL 3.0.</li><li>**9_2:** DirectX 9.2 HLSL 3.0</li><li>**9_3:** DirectX 9.3 HLSL 3.0</li><li>**10_0:** DirectX 10 HLSL 4.0</li><li>**10_1:** DirectX 10.1 HLSL 4.1</li><li>**11_0:** DirectX 11 HLSL 5.0</li><li>**11_1:** DirectX 11 HLSL 5.0</li><li>**12_0:** DirectX 12 HLSL 6.0</li><li>**12_1:** DirectX 12 HLSL 6.1</li><li>**12_3:** DirectX 12 HLSL 6.3 (Raytracing)</li></ul> |
+| <span style="color:lightgreen">[EntryPoints `Stage=MethodName`]</span>      | Defines the entry point stage methods of the pass. The valid stage values are: <ul><li>**VS:** Vertex Shader.</li><li>**HS:** Hull Shader.</li><li>**DS:** Domain Shader.</li><li>**GS:** Geometry Shader.</li><li>**PS:** Pixel Shader.</li><li>**CS:** Compute Shader.</li></ul>                                                                                                                                                                                                                                                                                                                                                     |
+| <span style="color:lightgreen">[Mode `value`]</span>                        | Defines the compilation mode of the pass. Available mode list:<ul><li>**None:** Default compilation mode.</li><li>**Debug:** Debug mode includes debugging symbols to analyze with shader tools like [RenderDoc](https://renderdoc.org/), [PIX](https://devblogs.microsoft.com/pix/introduction/), or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics).<br/>See [Profile
+
+## Textures Metatags
+
+| Texture Tag                                   | Description                       |
+|-----------------------------------------------|-----------------------------------|
+| <span style="color:lightgreen">[Framebuffer]</span>                       | Framebuffer texture.              |
+| <span style="color:lightgreen">[DepthBuffer]</span>                       | Depth buffer texture.             |
+| <span style="color:lightgreen">[GBuffer]</span>                           | GBuffer texture.                  |
+| <span style="color:lightgreen">[Lighting]</span>                          | Lighting texture.                 |
+| <span style="color:lightgreen">[DFGLut]</span>                            | Lookup table for DFG precalculated texture. |
+| <span style="color:lightgreen">[IBLRadiance]</span>                       | IBL Prefiltered Mipmapped radiance environment texture. |
+| <span style="color:lightgreen">[ZPrePass]</span>                          | ZPrePass in forward rendering (Normal + Roughness). |
+| <span style="color:lightgreen">[DistortionPass]</span>                    | Distortion pass in forward rendering. |
+| <span style="color:lightgreen">[IBLIrradiance]</span>                     | IBL diffuse irradiance map.       |
+| <span style="color:lightgreen">[TemporalHistory]</span>                   | Temporal AA history texture.      |
+| <span style="color:lightgreen">[DirectionalShadowMap]</span>              | Shadow map array texture.         |
+| <span style="color:lightgreen">[SpotShadowMap]</span>                     | Shadow map array texture.         |
+| <span style="color:lightgreen">[PunctualShadowMap]</span>                 | Shadow map array cube texture.    |
+| <span style="color:lightgreen">[Custom`0..N`]</span>                      | Custom render pipeline texture.   |
+
+## List of Parameter Tags
 
 Here you can find a complete list of available parameter tags that you can use in your effects:
 
@@ -153,29 +182,42 @@ Here you can find a complete list of available parameter tags that you can use i
 | <span style="color:lightgreen">[SunIntensity]</span>                    | float         | PerFrame      | Gets the sun intensity.                                                  |
 | <span style="color:lightgreen">[SkyboxTransform]</span>                 | Matrix4x4     | PerFrame      | Gets the skybox transform.                                               |
 
-| Texture Tag                                   | Description                       |
+
+## Overridden properties of the RenderLayer tags
+
+| Tag                                   | Description                       |
 |-----------------------------------------------|-----------------------------------|
-| <span style="color:lightgreen">[Framebuffer]</span>                       | Framebuffer texture.              |
-| <span style="color:lightgreen">[DepthBuffer]</span>                       | Depth buffer texture.             |
-| <span style="color:lightgreen">[GBuffer]</span>                           | GBuffer texture.                  |
-| <span style="color:lightgreen">[Lighting]</span>                          | Lighting texture.                 |
-| <span style="color:lightgreen">[DFGLut]</span>                            | Lookup table for DFG precalculated texture. |
-| <span style="color:lightgreen">[IBLRadiance]</span>                       | IBL Prefiltered Mipmapped radiance environment texture. |
-| <span style="color:lightgreen">[ZPrePass]</span>                          | ZPrePass in forward rendering (Normal + Roughness). |
-| <span style="color:lightgreen">[DistortionPass]</span>                    | Distortion pass in forward rendering. |
-| <span style="color:lightgreen">[IBLIrradiance]</span>                     | IBL diffuse irradiance map.       |
-| <span style="color:lightgreen">[TemporalHistory]</span>                   | Temporal AA history texture.      |
-| <span style="color:lightgreen">[DirectionalShadowMap]</span>              | Shadow map array texture.         |
-| <span style="color:lightgreen">[SpotShadowMap]</span>                     | Shadow map array texture.         |
-| <span style="color:lightgreen">[PunctualShadowMap]</span>                 | Shadow map array cube texture.    |
-| <span style="color:lightgreen">[Custom`0..N`]</span>                      | Custom render pipeline texture.   |
-
-## Pass Settings Metatags
-
-These tags are used inside a pass block code and are useful to configure which settings you want to compile for this pass.
-
-| Tag                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span style="color:lightgreen">[Profile `API_Level`]</span>                 | Defines HLSL language version and capabilities. The API level values could be: <ul><li>**9_1:** DirectX9.1 HLSL 3.0.</li><li>**9_2:** DirectX 9.2 HLSL 3.0</li><li>**9_3:** DirectX 9.3 HLSL 3.0</li><li>**10_0:** DirectX 10 HLSL 4.0</li><li>**10_1:** DirectX 10.1 HLSL 4.1</li><li>**11_0:** DirectX 11 HLSL 5.0</li><li>**11_1:** DirectX 11 HLSL 5.0</li><li>**12_0:** DirectX 12 HLSL 6.0</li><li>**12_1:** DirectX 12 HLSL 6.1</li><li>**12_3:** DirectX 12 HLSL 6.3 (Raytracing)</li></ul> |
-| <span style="color:lightgreen">[EntryPoints `Stage=MethodName`]</span>      | Defines the entry point stage methods of the pass. The valid stage values are: <ul><li>**VS:** Vertex Shader.</li><li>**HS:** Hull Shader.</li><li>**DS:** Domain Shader.</li><li>**GS:** Geometry Shader.</li><li>**PS:** Pixel Shader.</li><li>**CS:** Compute Shader.</li></ul>                                                                                                                                                                                                                                                                                                                                                     |
-| <span style="color:lightgreen">[Mode `value`]</span>                        | Defines the compilation mode of the pass. Available mode list:<ul><li>**None:** Default compilation mode.</li><li>**Debug:** Debug mode includes debugging symbols to analyze with shader tools like [RenderDoc](https://renderdoc.org/), [PIX](https://devblogs.microsoft.com/pix/introduction/), or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics).<br/>See [Profile
+| <span style="color:lightgreen">[FillMode]</span>                       | Determines the fill mode used when rendering  |
+| <span style="color:lightgreen">[CullMode]</span>                       | Indicates that triangles facing the specified direction are not drawn.  |
+| <span style="color:lightgreen">[FrontCounterClockwise]</span>          | Determines if a triangle is front- or back-facing. If this parameter is TRUE, a triangle is considered front-facing if its vertices are counterclockwise on the render target and considered back-facing if they are clockwise. If this parameter is FALSE, the opposite is true.  |
+| <span style="color:lightgreen">[DepthBias]</span>                      | Depth value added to a given pixel. For information about depth bias.  |
+| <span style="color:lightgreen">[DepthBiasClamp]</span>                 | The maximum depth bias of a pixel.  |
+| <span style="color:lightgreen">[SlopeScaledDepthBias]</span>           | Scalar of a given pixel's slope.  |
+| <span style="color:lightgreen">[DepthClipEnable]</span>                | Enables clipping based on distance.  |
+| <span style="color:lightgreen">[ScissorEnable]</span>                  | Enables scissor-rectangle culling. All pixels outside an active scissor rectangle are culled.  |
+| <span style="color:lightgreen">[AntialiasedLineEnable]</span>          | Specifies whether to enable line antialiasing; this applies only if doing line drawing and MultisampleEnable is false.  |
+| <span style="color:lightgreen">[RT0BlendEnable]</span>                 | Enables (or disables) blending.  |
+| <span style="color:lightgreen">[RTOSourceBlendColor]</span>            | This blend option specifies the operation to perform on the RGB values that the pixel shader outputs. The Blend option defines how to combine the SrcBlend and DestBlend operations.  |
+| <span style="color:lightgreen">[RT0DestinationBlendColor]</span>       | This blend option specifies the operation to perform on the current RGB value in the render target. The Blend option defines how to combine the SrcBlend and DestBlend values.  |
+| <span style="color:lightgreen">[RT0BlendOperationColor]</span>         | This blend operation defines how to combine the SrcBlend and DestBlend operands.  |
+| <span style="color:lightgreen">[RT0SourceBlendAlpha]</span>            | This blend option specifies the operation to perform on the alpha value that the pixel shader outputs. Blend option that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations.  |
+| <span style="color:lightgreen">[RT0DestinationBlendAlpha]</span>       | This blend option specifies the operation to perform on the current alpha value in the render target. Blend option that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations.  |
+| <span style="color:lightgreen">[RT0BlendOperationAlpha]</span>         | RThis blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha values.  |
+| <span style="color:lightgreen">[RT0ColorWriteChannels]</span>          | A writing mask.  |
+| <span style="color:lightgreen">[AlphaToCoverageEnable]</span>          | Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.  |
+| <span style="color:lightgreen">[IndependentBlendEnable]</span>         | Specifies whether to enable independent blending in simultaneous render targets. Set to TRUE to enable independent blending. If set to FALSE, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored.  |
+| <span style="color:lightgreen">[DepthEnable]</span>                    | Enables depth testing.  |
+| <span style="color:lightgreen">[DepthWriteMask]</span>                 | Identifies a portion of the depth-stencil buffer that can be modified by depth data.  |
+| <span style="color:lightgreen">[DepthFunction]</span>                  | Compares depth data against existing depth data.  |
+| <span style="color:lightgreen">[StencilEnable]</span>                  | Enables stencil testing.  |
+| <span style="color:lightgreen">[StencilReadMask]</span>                | Identifies a portion of the depth-stencil buffer for reading stencil data.  |
+| <span style="color:lightgreen">[StencilWriteMask]</span>               | dentifies a portion of the depth-stencil buffer for writing stencil data.  |
+| <span style="color:lightgreen">[FrontFaceStencilFailOperation]</span>  | The stencil operation performed when stencil testing fails. (Front Face) |
+| <span style="color:lightgreen">[FrontFaceStencilDepthFailOperation]</span>  | The stencil operation to perform when stencil testing passes and depth testing fails. (Front Face)  |
+| <span style="color:lightgreen">[FrontFaceStencilPassOperation]</span>  | The stencil operation to perform when both stencil testing and depth testing pass. (Front Face)  |
+| <span style="color:lightgreen">[FrontFaceStencilFunction]</span>       | A function that compares stencil data with existing stencil data. (Front Face)  |
+| <span style="color:lightgreen">[BackFaceStencilFailOperation]</span>   | The stencil operation performed when stencil testing fails. (Back Face)  |
+| <span style="color:lightgreen">[BackFaceStencilDepthFailOperation]</span>  | The stencil operation to perform when stencil testing passes and depth testing fails. (Back Face)  |
+| <span style="color:lightgreen">[BackFaceStencilPassOperation]</span>   | The stencil operation to perform when both stencil testing and depth testing pass. (Back Face)  |
+| <span style="color:lightgreen">[BackFaceStencilFunction]</span>        | A function that compares stencil data with existing stencil data. (Back Face)  |
+| <span style="color:lightgreen">[StencilReference]</span>               | The reference value to use when performing a stencil test.  |
