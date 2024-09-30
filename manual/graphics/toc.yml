@@ -5,11 +5,17 @@
   href: cameras.md
 - name: Lights
   href: lights.md
+- name: Effects
+  href: effects/toc.yml
+  homepage: effects/index.md
 - name: Materials
   href: materials/toc.yml
   homepage: materials/index.md
 - name: Textures
   href: textures/toc.yml
+- name: RenderLayer
+  href: renderlayers/toc.yml
+  homepage: renderlayers/index.md
   homepage: textures/index.md
 - name: Models
   href: models/toc.yml
@@ -28,9 +34,6 @@
 - name: Particle System
   href: particles/toc.yml
   homepage: particles/index.md
-- name: Effects
-  href: effects/toc.yml
-  homepage: effects/index.md
 - name: Compute Tasks
   href: compute_tasks/toc.yml
   homepage: compute_tasks/index.md
