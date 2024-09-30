@@ -185,7 +185,7 @@ Here you can find a complete list of available parameter tags that you can use i
 
 ## Overridden properties of the RenderLayer tags
 
-These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../render_layers.md):
+These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../renderlayers/index.md.md):
 
 
 | Rasterization Process Tag      |  Description                               |
