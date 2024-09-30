@@ -185,39 +185,48 @@ Here you can find a complete list of available parameter tags that you can use i
 
 ## Overridden properties of the RenderLayer tags
 
-| Tag                                   | Description                       |
-|-----------------------------------------------|-----------------------------------|
-| <span style="color:lightgreen">[FillMode]</span>                       | Determines the fill mode used when rendering  |
-| <span style="color:lightgreen">[CullMode]</span>                       | Indicates that triangles facing the specified direction are not drawn.  |
-| <span style="color:lightgreen">[FrontCounterClockwise]</span>          | Determines if a triangle is front- or back-facing. If this parameter is TRUE, a triangle is considered front-facing if its vertices are counterclockwise on the render target and considered back-facing if they are clockwise. If this parameter is FALSE, the opposite is true.  |
-| <span style="color:lightgreen">[DepthBias]</span>                      | Depth value added to a given pixel. For information about depth bias.  |
-| <span style="color:lightgreen">[DepthBiasClamp]</span>                 | The maximum depth bias of a pixel.  |
-| <span style="color:lightgreen">[SlopeScaledDepthBias]</span>           | Scalar of a given pixel's slope.  |
-| <span style="color:lightgreen">[DepthClipEnable]</span>                | Enables clipping based on distance.  |
-| <span style="color:lightgreen">[ScissorEnable]</span>                  | Enables scissor-rectangle culling. All pixels outside an active scissor rectangle are culled.  |
-| <span style="color:lightgreen">[AntialiasedLineEnable]</span>          | Specifies whether to enable line antialiasing; this applies only if doing line drawing and MultisampleEnable is false.  |
-| <span style="color:lightgreen">[RT0BlendEnable]</span>                 | Enables (or disables) blending.  |
-| <span style="color:lightgreen">[RTOSourceBlendColor]</span>            | This blend option specifies the operation to perform on the RGB values that the pixel shader outputs. The Blend option defines how to combine the SrcBlend and DestBlend operations.  |
-| <span style="color:lightgreen">[RT0DestinationBlendColor]</span>       | This blend option specifies the operation to perform on the current RGB value in the render target. The Blend option defines how to combine the SrcBlend and DestBlend values.  |
-| <span style="color:lightgreen">[RT0BlendOperationColor]</span>         | This blend operation defines how to combine the SrcBlend and DestBlend operands.  |
-| <span style="color:lightgreen">[RT0SourceBlendAlpha]</span>            | This blend option specifies the operation to perform on the alpha value that the pixel shader outputs. Blend option that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations.  |
-| <span style="color:lightgreen">[RT0DestinationBlendAlpha]</span>       | This blend option specifies the operation to perform on the current alpha value in the render target. Blend option that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations.  |
-| <span style="color:lightgreen">[RT0BlendOperationAlpha]</span>         | RThis blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha values.  |
-| <span style="color:lightgreen">[RT0ColorWriteChannels]</span>          | A writing mask.  |
-| <span style="color:lightgreen">[AlphaToCoverageEnable]</span>          | Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.  |
-| <span style="color:lightgreen">[IndependentBlendEnable]</span>         | Specifies whether to enable independent blending in simultaneous render targets. Set to TRUE to enable independent blending. If set to FALSE, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored.  |
-| <span style="color:lightgreen">[DepthEnable]</span>                    | Enables depth testing.  |
-| <span style="color:lightgreen">[DepthWriteMask]</span>                 | Identifies a portion of the depth-stencil buffer that can be modified by depth data.  |
-| <span style="color:lightgreen">[DepthFunction]</span>                  | Compares depth data against existing depth data.  |
-| <span style="color:lightgreen">[StencilEnable]</span>                  | Enables stencil testing.  |
-| <span style="color:lightgreen">[StencilReadMask]</span>                | Identifies a portion of the depth-stencil buffer for reading stencil data.  |
-| <span style="color:lightgreen">[StencilWriteMask]</span>               | dentifies a portion of the depth-stencil buffer for writing stencil data.  |
-| <span style="color:lightgreen">[FrontFaceStencilFailOperation]</span>  | The stencil operation performed when stencil testing fails. (Front Face) |
-| <span style="color:lightgreen">[FrontFaceStencilDepthFailOperation]</span>  | The stencil operation to perform when stencil testing passes and depth testing fails. (Front Face)  |
-| <span style="color:lightgreen">[FrontFaceStencilPassOperation]</span>  | The stencil operation to perform when both stencil testing and depth testing pass. (Front Face)  |
-| <span style="color:lightgreen">[FrontFaceStencilFunction]</span>       | A function that compares stencil data with existing stencil data. (Front Face)  |
-| <span style="color:lightgreen">[BackFaceStencilFailOperation]</span>   | The stencil operation performed when stencil testing fails. (Back Face)  |
-| <span style="color:lightgreen">[BackFaceStencilDepthFailOperation]</span>  | The stencil operation to perform when stencil testing passes and depth testing fails. (Back Face)  |
-| <span style="color:lightgreen">[BackFaceStencilPassOperation]</span>   | The stencil operation to perform when both stencil testing and depth testing pass. (Back Face)  |
-| <span style="color:lightgreen">[BackFaceStencilFunction]</span>        | A function that compares stencil data with existing stencil data. (Back Face)  |
-| <span style="color:lightgreen">[StencilReference]</span>               | The reference value to use when performing a stencil test.  |
+These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../render_layers.md):
+
+
+| Rasterization Process Tag      |  Description                               |
+| ------------------------------ | ------------------------------------------ |
+| <span style="color:lightgreen">[FillMode `Value`]</span>           | Determines the fill mode to use when rendering.<br/>Available values: _WireFrame_ or _Solid_   |
+| <span style="color:lightgreen">[CullMode `Value`] </span>            |  Indicates triangles facing the specified direction are not drawn.<br/>Available values: _None_, _Front_ or _Back_      |
+| <span style="color:lightgreen">[FrontCounterClockwise `bool`]</span>| Determines if a triangle is front- or back-facing. If this parameter is true, a triangle will be considered front-facing if its vertices are counter-clockwise on the render target and considered back-facing if they are clockwise. <br/> Available values: _True_ or _false_            |
+| <span style="color:lightgreen">[DepthBias `int`]   | Depth value added to a given pixel. <br/> The value is an integer. |
+| <span style="color:lightgreen">[DepthBiasClamp `float`] | Maximum depth bias of a pixel. <br/> The value is a float [0-1].|
+| <span style="color:lightgreen">[SlopeScaledDepthBias `float`]</span> | Scalar on a given pixel's slope. <br/> The value is a float.|
+| <span style="color:lightgreen">[DepthClipEnable `bool`]</span> | Enable clipping based on distance. <br/> Available values: _True_ or _False_|
+| <span style="color:lightgreen">[ScissorEnable `bool`]</span> | Enable scissor-rectangle culling. All pixels outside an active scissor rectangle are culled. <br/> Available values: _True_ or _False_ |
+| <span style="color:lightgreen">[AntialiasedLineEnable `bool`]</span> |  Specifies whether to enable line antialiasing; only applies if doing line drawing and MultisampleEnable is false. <br/> Available values: _True_ or _False. |
+
+| Blend State Tag | Description |
+| ------------------------------ | ------------------------------------------ |
+| <span style="color:lightgreen">[AlphaToCoverageEnable `bool`]</span> | Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.<br/> Available values: _True_ or _False. |
+| <span style="color:lightgreen">[IndependentBlendEnable `bool`]</span> | Specifies whether to enable independent blending in simultaneous render targets. Set to true to enable independent blending. If set to false, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored. <br/> Available values: _True_ or _False. |
+| <span style="color:lightgreen">[RT0BlendEnable `bool`]</span> | Enable (or disable) blending for RenderTarget 0. <br/> Available values: _True_ or _False. | 
+| <span style="color:lightgreen">[RT0SourceBlendColor `Value`]</span> | This blend option specifies the operation to perform on the RGB value that the pixel shader outputs. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br/> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0DestinationBlendColor `Value`]</span> | This blend option specifies the operation to perform on the current RGB value in the render target. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br/> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0BlendOperationColor `Value`]</span> | This blend operation defines how to combine the SrcBlend and DestBlend operations. <br/> Available values: _Add_, _Substract_, _ReverseSubstract_, _Min_ or _Max_.|
+| <span style="color:lightgreen">[RT0SourceBlendAlpha `Value`]</span> | This blend option specifies the operation to perform on the alpha value that the pixel shader outputs. Blend options that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br/> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0DestinationBlendAlpha `Value`]</span> | This blend option specifies the operation to perform on the current alpha value in the render target. Blend options that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br/> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0BlendOperationAlpha `Value`]</span> | This blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha operations for RenderTarget 0. <br/> Available values: _Add_, _Substract_, _ReverseSubstract_, _Min_ or _Max_.|
+| <span style="color:lightgreen">[RT0ColorWriteChannels `Value`]</span> | A write mask for Render target 0. <br/> Availables values: _None_, _Red_, _Green_, _Blue_, _Alpha_ or _All_. |
+
+| Depth Stencil Tag | Description |
+| ------------------------------ | ------------------------------------------ |
+| <span style="color:lightgreen">[DepthEnable `bool`]</span> | Enable depth testing. <br/> Availables values: _True_ or _False_.|
+| <span style="color:lightgreen">[DepthWriteMask `bool`]</span> | Identify a portion of the depth-stencil buffer that can be modified by depth data. <br/> Available values: _True_ or _False_.|
+| <span style="color:lightgreen">[DepthFunction `Value`]</span> | A function that compares depth data against existing depth data. <br/> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[StencilEnable `bool`]</span> | Enable stencil testing. <br/> Availables values: _True_ or _False_. |
+| <span style="color:lightgreen">[StencilReadMask `byte`]</span> | Identify a portion of the depth-stencil buffer for reading stencil data. <br/> The value is a byte. |
+| <span style="color:lightgreen">[StencilWriteMask `byte`]</span> | Identify a portion of the depth-stencil buffer for writing stencil data. <br/> The value is a byte.
+| <span style="color:lightgreen">[FrontFaceStencilFailOperation `Value`]</span> | The stencil operation to perform when stencil testing fails in FrontFace <br/> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[FrontFaceStencilDepthFailOperation `Value`]</span> | The stencil operation to perform when stencil testing passes and depth testing fails in FrontFace. <br/> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[FrontFaceStencilPassOperation `Value`]</span> | The stencil operation to perform when stencil testing and depth testing both pass in FrontFace. <br/> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[FrontFaceStencilFunction `Value`]</span> | A function that compares stencil data against existing stencil data in FrontFace. <br/> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[BackFaceStencilFailOperation `Value`]</span> |The stencil operation to perform when stencil testing fails in BackFace <br/> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[BackFaceStencilDepthFailOperation `Value`]</span> | The stencil operation to perform when stencil testing passes and depth testing fails in BackFace. <br/> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[BackFaceStencilPassOperation `Value`]</span> | The stencil operation to perform when stencil testing and depth testing both pass in BackFace. <br/> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[BackFaceStencilFunction `Value`]</span> | A function that compares stencil data against existing stencil data in BackFace. <br/> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[StencilReference `int`]</span> | The reference value to use when doing a stencil test. <br/> The value is a integer. |
