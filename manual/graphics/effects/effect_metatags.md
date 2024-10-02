@@ -6,43 +6,58 @@ In Evergine, effects are written in [**HLSL**](https://docs.microsoft.com/en-us/
 
 ## Block Metatags
 
-Effect codes are organized into two important kinds of blocks:
+Effect codes are organized into fourth important kinds of blocks:
 
 | Block            | Tags                                                                                                                                                  | Description                                                                        |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | Resource Layout  | <span style="color:lightgreen">[Begin_ResourceLayout]<br/> [End_ResourceLayout]</span>                                                                  | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures, and Samplers) using all effect passes.     |
 | Pass             | <span style="color:lightgreen">[Begin_Pass:PassName] <br/> [End_Pass]</span>                                                                           | This block of code defines a RenderPipeline pass. The _DefaultRenderPipeline_ defines three passes that any effect can define: ZPrePass, Distortion, Default. |
+| Library | <span style="color:lightgreen">[Begin_Library] <br/> [End_Library]</span>                                                                           | This block of code defines a Library Effect, which is a collection of static variables, constants, directives, and reusable functions. This block is exclusive to Library Effects and cannot be used together with Resource Layout or Pass blocks. |
+| Global  | -  | All code placed outside of any block will be assigned to the Global section. This can be useful when defining variables that configure a library, such as in the case of FXAA. | 
+
+## Include Metatags
+
+To use a Library Effect in your Graphics or Compute effects, simply include it using the following metatag:
+
+<span style="color:lightgreen">[Include_Library LibraryName LibraryIdentifierNumber]</span>     
+
+- **LibraryName**: A human-readable name for your library.
+- **LibraryIdentifierNumber**: A unique GUID that identifies the library effect asset.
+
+The advantage of using the GUID is that it remains independent of the asset’s relative path. This means you can move your library assets around the project’s content folders without breaking the references.
+
+
 
 ## Directives Metatags
 
 Inside a resource layout block, you can define the directive set that your custom effect will have. Directives are useful to enable different features of your effect.
 
 A directive can be defined as a two-value On/Off feature or can define a feature with multiple values:
-<br/>
-<span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span>
-<br/>
-<span style="color:lightgreen">[Directive:Name `A_OFF` `B` `C` `D` ...]</span>
 
+<span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span>
+
+<span style="color:lightgreen">[Directive:Name `A_OFF` `B` `C` `D` ...]</span>
+<br/>
 Example:
-<br/>
+
 <span style="color:lightgreen">[Directive:NormalMapping Normal_OFF, Normal]</span>
-<br/>
+
 <span style="color:lightgreen">[Directive:ShadowFilter Shadow_OFF, ShadowFilter3, ShadowFilter5, ShadowFilter7]</span>
 
 An effect is a set of shaders (known as _Uber-shader_), and directives help you define this set of shaders. The directives automatically generate multiple shaders when the effects are compiled.
 
 Example:
-<br/>
+
 <span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span> will generate a shader with `A` enabled and another shader with `A` disabled.
-<br/>
+
 <span style="color:lightgreen">[Directive:Name `A_OFF` `B` `C` `D` ...]</span> will generate `A`, `B`, `C`, `D` ... shaders.
 
 Additionally, if you define several directives, it will multiply the combinations. In that case, if you define two directives:
-<br/>
+
 <span style="color:lightgreen">[Directive:FeatureA `A_OFF` `A`]</span>
-<br/>
+
 <span style="color:lightgreen">[Directive:FeatureB `B_OFF` `C` `D`]</span>
-<br/>
+
 It will generate the following shader combinations: `A_OFF-B_OFF`, `A-B_OFF`, `A_OFF-C`, `A-C`, `A_OFF-D`, `A-D`.
 
 The number of combinations is multiplied by the number of effect passes, so a complex effect would have hundreds or thousands of combinations.
@@ -185,7 +200,7 @@ Here you can find a complete list of available parameter tags that you can use i
 
 ## Overridden properties of the RenderLayer tags
 
-These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../renderlayers/index.md.md):
+These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../renderlayers/index.md):
 
 
 | Rasterization Process Tag      |  Description                               |

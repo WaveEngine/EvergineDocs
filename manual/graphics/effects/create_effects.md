@@ -10,10 +10,11 @@ An **effect** is an _uber-shader_ capable of representing a single shader or a l
 |------------------|-------------|
 | Graphics Effect  | Defines a rasterization pipeline with Vertex Shader, Geometry Shader, Hull Shader, Domain Shader, and Pixel Shader. These are useful for creating materials. |
 | Compute Effect   | Defines a compute pipeline with Compute Shader. These are useful for creating [compute tasks]() and [post-processing graph](../postprocessing_graph/index.md) nodes.|
+| Library Effect | Defines a collection of static variables, constants, directives, and reusable functions that can be referenced from your Graphics and Compute effects. By simply including the library in your effect files, you can centralize shared logic and keep your effect codebase clean and maintainable. Read more about [Library Effect](library_effect.md)|
 
 ## Create an Effect Asset in Evergine Studio
 
-You can create an effect by clicking the button with ![Plus Icon](../images/plusIcon.jpg) from the [Assets Details](../../evergine_studio/interface.md) panel. This will open a create menu with options. Click on the option _"Create effect->Graphics Effect or Compute Effect."_
+You can create an effect by clicking the button with ![Plus Icon](../images/plusIcon.jpg) from the [Assets Details](../../evergine_studio/interface.md) panel. This will open a create menu with options. Click on the option _"Create effect->Graphics Effect, Compute Effect or Library Effect"_
 
 ![Create new effect menu option](images/AssetsDetailsMenu.jpg)
 
