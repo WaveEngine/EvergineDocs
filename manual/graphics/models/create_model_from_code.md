@@ -1,2 +1,2 @@
-# How to create a model from code
+# How to Create a Model from Code
 Coming soon

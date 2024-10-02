@@ -1,18 +1,18 @@
 # Logging
 
-We provide logging service that implements `Microsoft.Extensions.Logging.ILogger` and uses `Serilog`.
+We provide a logging service that implements `Microsoft.Extensions.Logging.ILogger` and uses `Serilog`.
 
-We use `LoggingConfiguration` class to configure logging.
+We use the `LoggingConfiguration` class to configure logging.
 
 | Properties          | Description                |
 | ------------------- | -------------------------- |
 | `LogLevel`          | Sets log level verbosity.  |
-| `EnableFileLogging` | If true save logs to file. |
+| `EnableFileLogging` | If true, saves logs to a file. |
 | `FileOptions`       | Log file name and max size |
 
 ## Registration
 
-Use `WithLogging` method from `XrvService`.
+Use the `WithLogging` method from `XrvService`.
 
 ```csharp
 var xrvService = Application.Current.Container.Resolve<XrvService>();
@@ -20,24 +20,23 @@ var xrvService = Application.Current.Container.Resolve<XrvService>();
 var config = new LoggingConfiguration()
 {
     LogLevel = LogLevel.Debug
-}
+};
 
 xrvService.WithLogging(config);
-
 ```
 
-## Uses
+## Usage
 
-Obtain the service and use it.
+Obtain the service and use it as needed.
 
-### Get Logging anywhere
+### Get logging anywhere
 
 ```csharp
 // Get logger
 var log = Application.Current.Container.Resolve<ILogger>();
 ```
 
-### Get Logging in component
+### Get logging in a component
 
 ```csharp
 [BindService]
@@ -47,20 +46,20 @@ private ILogger log = null;
 ### Log
 
 ```csharp
-// log debug
+// Log debug
 log.Log(LogLevel.Debug, "debug msg");
 ```
 
 ### Warning
 
 ```csharp
-// log warning
+// Log warning
 log.LogWarning("warning msg");
 ```
 
 ### Error
 
 ```csharp
-// log error
+// Log error
 log.LogError("error");
 ```

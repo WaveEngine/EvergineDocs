@@ -1,37 +1,37 @@
 # Create Text3D
 
 ![Text3D header](images/createText3D.jpg)
-**Text3D** is a component that allows to render a paragrah in 3D space. It is possible to render a simple header text or a large paragram and configure the limit of the text, wrapping and ellipsis.
+**Text3D** is a component that allows you to render text in 3D space. You can render anything from a simple header to a large paragraph, and configure text limits, wrapping, and ellipsis.
 
 ## Create a Text3D in Evergine Studio
-You can create a Text3D click button on ![Plus Icon](../images/plusIcon.jpg) from [Entity Hierarchy](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Text3D"_
+You can create a Text3D by clicking the ![Plus Icon](../images/plusIcon.jpg) button in the [Entity Hierarchy](../../evergine_studio/interface.md) panel to deploy a menu of creation options, and then selecting the _"Text3D"_ option.
 
-![Create new text3D menu option](images/EntitiesHierarchyMenu.jpg)
+![Create new Text3D menu option](images/EntitiesHierarchyMenu.jpg)
 
-A Text3D entity will be added to your scene
+A Text3D entity will be added to your scene.
 
 ![Text3D entity](images/text3DEntity.jpg)
 
-In the **Text3DMesh** component of your Text3D entity you will find the following properties:
+In the **Text3DMesh** component of your Text3D entity, you will find the following properties:
 
-|Property                       | Description |
+| Property                       | Description |
 |-------------------------------|-------------|
-| **Font**           | The font asset used. (Font family) |
+| **Font**           | The font asset used (Font family). |
 | **Layer**          | RenderLayer used to render the text. |
-| **Text**           | The text will be drawn. It is possible to use **/n** to line break.    |
+| **Text**           | The text to be drawn. Use **/n** to insert a line break. |
 | **Color**          | The text color. |
-| **Size**           | The canvas size or area. Enable _DebugMode_ property in the **Text3DRenderer** component to show this area _(blue rectangle)_|
+| **Size**           | The canvas size or area. Enable the _DebugMode_ property in the **Text3DRenderer** component to show this area _(blue rectangle)_. |
 | **ScaleFactor**    | The text scale factor. |
-| **Wrapping**       | Word wrapping. If this option is enabled line breaking will be created automatically when the current line hasn't enough space to add more words.
-| **Ellipsis**       | If this option is enabled it will show a three ellipsis at the end of the text when hasn't enough space in the canvas to add more letters. |
-| **HorizontalAlignment** | Allows align the text horizontally. The available values are: _Left_, _Center_, and _Right_    |
-| **VerticalAlignment**   | Allows align the text vertically. The available values are: _Top_, _Center_, and _Bottom_    |
-| **Origin**              | Allows to configure the origin of the Text3D entity. The value is a vector2 with values between [0-1].    |
-| **LineSpacing**         | Allows to configure the space between text lines.    |
-| **Softness**            | Allows to configure anti-aliasing effect. The value is a float between [0-2]
+| **Wrapping**       | Word wrapping. If this option is enabled, line breaks will be created automatically when the current line doesn't have enough space for more words. |
+| **Ellipsis**       | If this option is enabled, three ellipses will be shown at the end of the text when there isn't enough canvas space for additional letters. |
+| **HorizontalAlignment** | Align the text horizontally. The available values are: _Left_, _Center_, and _Right_. |
+| **VerticalAlignment**   | Align the text vertically. The available values are: _Top_, _Center_, and _Bottom_. |
+| **Origin**              | Configure the origin of the Text3D entity. The value is a vector2 with values between [0-1]. |
+| **LineSpacing**         | Configure the space between text lines. |
+| **Softness**            | Configure the anti-aliasing effect. The value is a float between [0-2]. |
 
 ## Create a Text3D from code
-The following code shows the list of components necessary to convert an entity into a billboard entity. 
+The following code shows the list of components necessary to convert an entity into a Text3D entity.
 
 ```csharp
 public class MyScene : Scene
@@ -62,6 +62,6 @@ The result:
 
 ## Enable debug mode
 
-Sometimes will be useful to enable _DebugMode_ property in **Text3DRenderer** component to draw the debug information of our Text3D entity. The canvas space will be shown as a blue rectangle. The text space will be shown as a yellow rectangle and a red point will be render on each character origin.
+Sometimes it is useful to enable the _DebugMode_ property in the **Text3DRenderer** component to draw the debug information for our Text3D entity. The canvas space will be shown as a blue rectangle. The text space will be shown as a yellow rectangle, and a red point will be rendered on each character origin.
 
 ![Debug Mode animation](images/debugMode.gif)

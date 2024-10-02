@@ -1,14 +1,14 @@
 # Create Compute Tasks
 
-**Compute Tasks** allows run tasks on GPU. Compute tasks are associated with a compute effect. It is very useful to improve the performance of a hard task that runs slow on the CPU.
+**Compute Tasks** allow running tasks on the GPU. Compute tasks are associated with a compute effect. This is very useful to improve the performance of tasks that run slowly on the CPU.
 
 ## Compute Effect
-Before creating a Compute task you need to create a compute effect from the Assets Details panel and coding the task on [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-advanced-stages-compute-shader) language.
+Before creating a compute task, you need to create a compute effect from the Assets Details panel and code the task using the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3d11/direct3d-11-advanced-stages-compute-shader) language.
 
 ![Create compute effect](images/CreateComputeEffect.jpg)
 
 ### Example
-This is an example of computing task. In that case the compute applies a grayscale filter to the input texture and stores the result into an output texture. In [Create Effects](../effects/create_effects.md) you will find the structure of this code.
+This is an example of a compute task. In this case, the compute task applies a grayscale filter to the input texture and stores the result in an output texture. In [Create Effects](../effects/create_effects.md) you will find the structure of this code.
 
 ```csharp
 [Begin_ResourceLayout]
@@ -35,12 +35,12 @@ This is an example of computing task. In that case the compute applies a graysca
 ```
 ## ComputeTask Decorator
 
-To use a compute task from code you need a compute effect and the compute task decorator associated. You can generate the compute task decorator from [Effect Editor](../effects/effect_editor.md).
+To use a compute task from code, you need a compute effect and the compute task decorator associated with it. You can generate the compute task decorator from the [Effect Editor](../effects/effect_editor.md).
 
-![Compute task descorator](images/computeTaskDecoratorIcon.jpg)
+![Compute task decorator](images/computeTaskDecoratorIcon.jpg)
 
 ## Create a new ComputeTask from code
-The following sample code can be used to create a new computeTask and run it into your scene. The example assumes that you have a compute effect GPUFilter and its compute task decorator created.
+The following sample code can be used to create a new `ComputeTask` and run it in your scene. The example assumes that you have a compute effect `GPUFilter` and its compute task decorator created.
 
 ```csharp
 protected override void CreateScene()

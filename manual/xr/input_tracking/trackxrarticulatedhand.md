@@ -2,11 +2,11 @@
 
 ![TrackXRArticulatedHand](images/trackxrarticulatedhand.jpg)
 
-This component is used to track and obtain the state of an articulated hand. A variety of MR and VR platforms supports hand tracking, like Mixed Reality (HoloLens) or Oculus Quest.
+This component is used to track and obtain the state of an articulated hand. A variety of MR and VR platforms support hand tracking, such as Mixed Reality (HoloLens) or Oculus Quest.
 
 ## Supported Hand Joints
 
-Evergine supports a list of hand joints to be tracked, it is described using the `XRHandJointKind` enumeration, and its values can be visually perceived in the following image:
+Evergine supports a list of hand joints to be tracked, described using the `XRHandJointKind` enumeration. Its values can be visually perceived in the following image:
 
 ![Hand Joints](images/hand-skeleton.png)
 
@@ -15,19 +15,20 @@ Evergine supports a list of hand joints to be tracked, it is described using the
 
 ## Properties
 
-The following properties has been added to this component in order to acces hand joint information:
+The following properties have been added to this component to access hand joint information:
 
 | Property | Description |
 | --- | --- |
-| **Handedness** | With this property you will indicate the handedness of the device that you want to track: <ul><li>`LeftHand` to specify the left hand.</li><li>`RightHand` to specify the right hand.</li><li>`Undefined` if the device has no specific handedness.</li></ul> |
-| **TrackingLostMode** | Specify the strategy to follow in case that the device is not well tracked: <ul><li>`DisableEntityOnPoseInvalid` disable the entity if the tracked pose is not valid. In the case that the device is well tracked again, the entity will be enabled again. *This is the default value.*</li><li>`KeepLastPose` stop to track the entity if the pose is not valid, maintaining the entity with the last pose received.</li><li>`DisableEntityOnDisconnection` disable the entity only if the selected device is no longer connected.</li></ul> |
-| **SupportedHandJointKind** | Returns a `XRHandJointKind[]` array of supported hand joints. Hand tracking in some devices can be limited and only support a limited joints |
-| **TryGetArticulatedHandJoint()** | Obtains the articulated hand joint state specified using a `XRHandJointKind` value. Return true if the joint is susscessfully obtained. |
+| **Handedness** | This property allows you to indicate the handedness of the device you want to track: <ul><li>`LeftHand` to specify the left hand.</li><li>`RightHand` to specify the right hand.</li><li>`Undefined` if the device has no specific handedness.</li></ul> |
+| **TrackingLostMode** | Specifies the strategy to follow if the device is not well-tracked: <ul><li>`DisableEntityOnPoseInvalid` disables the entity if the tracked pose is not valid. If the device is well-tracked again, the entity will be enabled again. *This is the default value.*</li><li>`KeepLastPose` stops tracking the entity if the pose is not valid, maintaining the entity with the last received pose.</li><li>`DisableEntityOnDisconnection` disables the entity only if the selected device is no longer connected.</li></ul> |
+| **SupportedHandJointKind** | Returns an `XRHandJointKind[]` array of supported hand joints. Hand tracking in some devices can be limited and only support limited joints. |
+| **TryGetArticulatedHandJoint** | Obtains the articulated hand joint state specified using an `XRHandJointKind` value. Returns true if the joint is successfully obtained. |
 
 ## Using TrackXRArticulatedHand
 
 ### Create a TrackXRArticulatedHand from code
-In the following code you will find how to create an entity that track a controller from code:
+
+In the following code, you will learn how to create an entity that tracks a controller from code:
 
 ```csharp
 protected override void CreateScene()
@@ -55,7 +56,7 @@ protected override void CreateScene()
 
 ### Read the Hand Joints
 
-Small sample to read the hand joint state:
+A small sample to read the hand joint state:
 
 ```csharp
 public class DebugArticulatedhand : Behavior
@@ -83,19 +84,18 @@ public class DebugArticulatedhand : Behavior
 }
 ```
 
-
 ### Render Hands
 
-Using the `XRDeviceRenderableModel` component add the possibility to obatains a renderable model associated to XR device. In the case of articulated hands, it provides a skinned mesh of the hand following the user hand poses.
+Using the `XRDeviceRenderableModel` component, you can obtain a renderable model associated with an XR device. In the case of articulated hands, it provides a skinned mesh of the hand that follows the user's hand poses.
 
 > [!Note]
-> You can add to the entity an optional `MaterialComponent` component, to specify which material will be used to render the hand meshes. If this component is not provided, they will be rendered by the default material.
+> You can add an optional `MaterialComponent` to the entity to specify which material will be used to render the hand meshes. If this component is not provided, they will be rendered with the default material.
 
 <video width="512" height="512" autoplay loop><source src="images/renderhandsvideo.mp4" type="video/mp4"></video>
 
 #### Render Hands from code
 
-Small example that shows how to render both hands using the `XRDeviceRenderableModel` component.
+A small example that shows how to render both hands using the `XRDeviceRenderableModel` component:
 
 ```csharp
 protected override void CreateScene()

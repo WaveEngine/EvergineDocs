@@ -1,8 +1,8 @@
 # ResourceFactory
 
-**ResourceFactory** is the factory class responsible to create all low-level objects like a native Texture, Sampler, GraphicsPipeline among other things... 
+**ResourceFactory** is the factory class responsible for creating all low-level objects such as a native Texture, Sampler, GraphicsPipeline, among other things.
 
-Once you have the [GraphicsContext](graphicscontext.md) instance you can use it to access to the ResourceFactory and start creating Low-Level objects. In this example, to create a VertexBuffer object:
+Once you have the [GraphicsContext](graphicscontext.md) instance, you can use it to access the ResourceFactory and start creating low-level objects. In this example, to create a VertexBuffer object:
 
 ```csharp
 var vertexBufferDescription = 
@@ -10,11 +10,12 @@ var vertexBufferDescription =
 
 var vertexBuffer = this.graphicsContext.Factory.CreateBuffer(vertexData, ref vertexBufferDescription);
 ```
-All the common Low-Level objects (textures, buffer, ...) are represented by abstract classes, and ResourceFactory allows you to create them in the same way for all the supported APIs. So, for example, a ResourceFactory of `DX11GraphicsContext` always will create DX11 graphics resources (`DX11Texture`, `DX11Buffer` and so on).
+
+All the common low-level objects (textures, buffers, etc.) are represented by abstract classes, and ResourceFactory allows you to create them in the same way for all the supported APIs. For example, a ResourceFactory of `DX11GraphicsContext` will always create DX11 graphics resources (`DX11Texture`, `DX11Buffer`, and so on).
 
 ## Objects
 
-The complete list of objects that you can create using the ResourceFactory are:
+The complete list of objects that you can create using the ResourceFactory includes:
 
 * [Buffer](buffer.md)
 * [Texture](texture.md)

@@ -1,19 +1,19 @@
-# Streaming Viewer module
+# Streaming Viewer Module
 
-This module lets you load a video stream from a _MJPEG_ source. This is the unique streaming protocol that we support in current version. Video size can't be configured: this means that window size may vary depending on returned size of images provided by the server.
+This module allows you to load a video stream from an _MJPEG_ source. This is the only streaming protocol supported in the current version. The video size cannot be configured, which means that the window size may vary depending on the image size provided by the server.
 
 ![snapshot](images/snapshot.png)
 
 > [!NOTE]
-> It's required provided JPEG responses counts with _Content-Length_ header to make it work properly.
+> The provided JPEG responses must include the _Content-Length_ header to function properly.
 
 ## Installation
 
-This module is packaged as [Evergine add-on](../../../index.md). To use it in your project, just install it from _Project Settings > Add-Ons_ window.
+This module is packaged as an [Evergine add-on](../../../index.md). To use it in your project, install it from the _Project Settings > Add-Ons_ window.
 
 ![Module installation](images/installation.png)
 
-Then, just register the module programmatically within your XRV service instance.
+Next, register the module programmatically within your XRV service instance.
 
 ```csharp
 var xrv = new XrvService()
@@ -23,11 +23,11 @@ var xrv = new XrvService()
     });
 ```
 
-## Android-based systems
+## Android-Based Systems
 
-In Android-based systems, like Meta Quest, there are some constraints about clear text traffic. By default, it is not allowed. If you set a source that is not served over HTTPS, you must white-list camera domain or IP address using appropriate native mechanism. Please see [Android documentation](https://developer.android.com/training/articles/security-config#CleartextTrafficPermitted) for more information.
+In Android-based systems, such as Meta Quest, there are constraints regarding clear text traffic. By default, it is not allowed. If your source is not served over HTTPS, you must whitelist the camera's domain or IP address using the appropriate native mechanism. Please see the [Android documentation](https://developer.android.com/training/articles/security-config#CleartextTrafficPermitted) for more information.
 
-1. Add a XML file under Android resources folder. We are giving it a name _like network_security_config.xml_
+1. Add an XML file under the Android resources folder. We will name it _network_security_config.xml_.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,7 +39,7 @@ In Android-based systems, like Meta Quest, there are some constraints about clea
 </network-security-config>
 ```
 
-2. Register security configuration within your application definition under Android manifest file
+2. Register the security configuration within your application definition under the Android manifest file.
 
 ```xml
 <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config">
@@ -49,4 +49,4 @@ In Android-based systems, like Meta Quest, there are some constraints about clea
 
 ## Usage
 
-- Use ![snapshot](images/VideoStreaming.png) hand menu button to open streaming window.
+- Use the ![snapshot](images/VideoStreaming.png) hand menu button to open the streaming window.

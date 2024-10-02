@@ -2,13 +2,13 @@
 
 ---
 
-XRV is a library that we are using internally while developing custom XR experiences for our customers. It tries to gather in a single place different functionalities and features commonly required by applications we build, like floating windows, hand menu, voice commands, etc.
+XRV is a library we use internally while developing custom XR experiences for our customers. It aims to gather in one place various functionalities and features commonly required by the applications we build, such as floating windows, hand menus, voice commands, and more.
 
 ![XRV main image](images/main.jpg)
 
-It is based on our own [MRTK add-on](../mrtk/index.md), so it uses the same input pointers, user controls like buttons or sliders, configuration components, etc. Based on that we have built all XRV infrastructure.
+It is based on our own [MRTK add-on](../mrtk/index.md), which means it uses the same input pointers, user controls like buttons or sliders, configuration components, etc. Leveraging this foundation, we have built the entire XRV infrastructure.
 
-Most of the features are supported for many platforms, but some of them are not for some of those platforms. You can run XRV for devices like:
+Most of the features are supported on many platforms, but some features may not be available on all platforms. You can run XRV on devices like:
 - Meta Quest and Meta Quest 2
 - Meta Quest Pro
 - Pico XR headsets

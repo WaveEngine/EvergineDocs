@@ -1,5 +1,7 @@
 - name: Android
   homepage: android/index.md
+- name: iOS
+  homepage: ios/index.md
 - name: UWP
   homepage: uwp/index.md
 - name: Web

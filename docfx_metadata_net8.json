@@ -1,0 +1,28 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/Engine/Rendering/Evergine.DirectX12/Evergine.DirectX12.csproj",
+            "src/Engine/Rendering/Evergine.Metal/Evergine.Metal.csproj",
+            "src/Engine/Rendering/Evergine.Vulkan/Evergine.Vulkan.csproj",
+            "src/Engine/WindowSystems/Evergine.Web/Evergine.Web.csproj",
+            
+            "src/Extensions/Evergine.ImGui/Evergine.ImGui.csproj",
+
+            "src/Extensions/Evergine.OpenVR/Evergine.OpenVR.csproj"
+          ],
+          "src": "../"
+        }
+      ],
+      "properties": {
+          "TargetFramework": "net8.0"
+      },
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+  }
+}

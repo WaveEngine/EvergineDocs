@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/Engine/WindowSystems/Evergine.iOSView/Evergine.iOSView.csproj"
+          ],
+          "src": "../"
+        }
+      ],
+      "properties": {
+          "TargetFramework": "net8.0-ios"
+      },
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+  }
+}

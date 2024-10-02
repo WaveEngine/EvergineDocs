@@ -1,6 +1,6 @@
-# Create Postprocessing Graph from code
+# Create Postprocessing Graph from Code
 ---
-Although we recommend to create PostProcessing using Evergine Studio, you can achieve this task from code. The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.
+Although we recommend creating PostProcessing using Evergine Studio, it is possible to achieve this task through code. The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.
 
 ```csharp
 protected override void CreateScene()
@@ -28,11 +28,11 @@ protected override void CreateScene()
                     {
                         float2 outputSize;
                         Output.GetDimensions(outputSize.x, outputSize.y);
-                        float2 uv = (threadID.xy + 0.5) / outputSize;		
+                        float2 uv = (threadID.xy + 0.5) / outputSize;        
 
                         float4 color = input.SampleLevel(Sampler, uv, 0);
 
-                        Output[threadID.xy] = float4(color.x,0,0,1);	
+                        Output[threadID.xy] = float4(color.x, 0, 0, 1);    
                     }
 
                 [End_Pass]

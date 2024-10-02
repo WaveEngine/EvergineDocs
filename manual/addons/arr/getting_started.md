@@ -1,16 +1,16 @@
-# Getting started
+# Getting Started
 ---
 
 Follow the steps below to quickly start running Azure Remote Rendering on your Evergine project:
 
-1. Create an Azure Remote Rendering instance at Azure portal (you need an Azure account).
-    * Once created, copy your account id, key, and domain. You will need them to configure the session on your app.
+1. Create an Azure Remote Rendering instance on the Azure portal (you need an Azure account).
+    * Once created, copy your account ID, key, and domain. You will need them to configure the session in your app.
 2. Create a new Evergine project, or open an existing one.
-3. Install the Evergine.ARR add-on using the add-on managemer in Evergine Studio.
+3. Install the Evergine.ARR add-on using the Add-on Manager in Evergine Studio.
 
-![Add-on installation](images/addon_installation.png)
+![Add-on Installation](images/addon_installation.png)
 
-4. Add the Azure Remote Rendering service to your Application
+4. Add the Azure Remote Rendering service to your application:
 
 ```csharp
 public partial class MainApplication : Application
@@ -24,9 +24,10 @@ public partial class MainApplication : Application
         BackgroundTaskScheduler.Background.Configure(this.Container);
     }
     ...
+}
 ```
 
-5. Go to Evergine Studio, add the ARRSessionManager component on the Environment manager entity and configure it using your credentials.
+5. Go to Evergine Studio, add the ARRSessionManager component to the Environment Manager entity, and configure it using your credentials.
 
 ![Session Manager](images/arr_session_manager.png)
 
@@ -34,11 +35,11 @@ public partial class MainApplication : Application
 
 ![Proxy Camera](images/arr_proxy_camera.png)
 
-7. For each big model that you want to render remotely, add an entity with _ARRModelLoader_ and _ARREntitySync_ components.
+7. For each large model that you want to render remotely, add an entity with the _ARRModelLoader_ and _ARREntitySync_ components.
 
-![Proxy Camera](images/arr_model.png)
+![Model Loader](images/arr_model.png)
 
 > [!Note]
-> The Url of your model can be obtained from Azure Remote Rendering instance in Azure Portal. If you don't have any, you can use the default builtin://Engine.
+> The URL of your model can be obtained from the Azure Remote Rendering instance on the Azure Portal. If you don't have any, you can use the default URL: builtin://Engine.
 
-And that's it! The project should be ready to render the model(s) on windows or other platforms like UWP or Mixed Reality. Check out the [demo](https://github.com/EvergineTeam/AzureRemoteRendering) for more information or the [MRTK add-on](https://github.com/EvergineTeam/MixedRealityToolkit) to add AR controls to your project and start interacting with your models.
+And that's it! The project should be ready to render the model(s) on Windows or other platforms like UWP or Mixed Reality. Check out the [demo](https://github.com/EvergineTeam/AzureRemoteRendering) for more information or the [MRTK add-on](https://github.com/EvergineTeam/MixedRealityToolkit) to add AR controls to your project and start interacting with your models.

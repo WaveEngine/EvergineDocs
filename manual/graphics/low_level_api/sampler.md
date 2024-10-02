@@ -1,10 +1,10 @@
 # Sampler
 
-A **Sampler State** is a low level object that encapsulates how a texture will be sampled in your application.
+A **Sampler State** is a low-level object that encapsulates how a texture will be sampled in your application.
 
 ## Creation
 
-To create a sampler, first you need to create the SamplerStateDescription struct:
+To create a sampler, you first need to create the `SamplerStateDescription` struct:
 
 ```csharp
 // Linear clamp sampler state
@@ -28,17 +28,17 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 ### SamplerStateDescription
 
 | Property | Type | Description |
-|--------| ----------- |----------- |
+|----------|------|-------------|
 | **Filter** | `TextureFilter` | Filtering method to use when sampling a texture. |
 | **AddressU** | `TextureAddressMode` | Method to use for resolving a u texture coordinate that is outside the 0 to 1 range. |
 | **AddressV** | `TextureAddressMode` | Method to use for resolving a v texture coordinate that is outside the 0 to 1 range. |
 | **AddressW** | `TextureAddressMode` | Method to use for resolving a w texture coordinate that is outside the 0 to 1 range. |
 | **MipLODBias** | `float` | Offset from the calculated mipmap level. For example, if Direct3D calculates that a texture should be sampled at mipmap level 3 and MipLODBias is 2, then the texture will be sampled at mipmap level 5. |
-| **MaxAnisotropy** | `uint` | Clamping value used if D3D11_FILTER_ANISOTROPIC or D3D11_FILTER_COMPARISON_ANISOTROPIC is specified in Filter. Valid values are between 1 and 16. |
+| **MaxAnisotropy** | `uint` | Clamping value used if `D3D11_FILTER_ANISOTROPIC` or `D3D11_FILTER_COMPARISON_ANISOTROPIC` is specified in Filter. Valid values are between 1 and 16. |
 | **ComparisonFunc** | `ComparisonFunction` | A function that compares sampled data against existing sampled data. |
 | **BorderColor** | `SamplerBorderColor` | Border color. |
-| **MinLOD** | `float` | Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. |
-| **MaxLOD** | `float` | Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. This value must be greater than or equal to MinLOD. |
+| **MinLOD** | `float` | Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level, and any level higher than that is less detailed. |
+| **MaxLOD** | `float` | Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level, and any level higher than that is less detailed. This value must be greater than or equal to MinLOD. |
 
 ### TextureFilter
 
@@ -47,7 +47,7 @@ Defines texture filtering modes for a texture stage.
 ![Graphics](images/Sampler_TextureFilter.jpg)
 
 | Value | Description |
-|--------| ----------- |----------- |
+|-------|-------------|
 | **MinPoint_MagPoint_MipPoint** | Use point sampling for minification, magnification, and mip-level sampling. |
 | **MinPoint_MagPoint_MipLinear** | Use point sampling for minification and magnification; use linear interpolation for mip-level sampling. |
 | **MinPoint_MagLinear_MipPoint** | Use point sampling for minification; use linear interpolation for magnification; use point sampling for mip-level sampling. |
@@ -63,7 +63,7 @@ Defines texture filtering modes for a texture stage.
 Your application can assign texture coordinates to any vertex of any primitive. Typically, the u- and v-texture coordinates that you assign to a vertex are in the range of 0.0 to 1.0 inclusive. However, by assigning texture coordinates outside that range, you can create certain special texturing effects.
 
 | Value | Description |
-|--------| ----------- |
+|-------|-------------|
 | **Wrap** | Tile the texture at every (u,v) integer junction. For example, for u values between 0 and 3, the texture is repeated three times. |
 | **Mirror** | Flip the texture at every (u,v) integer junction. For u values between 0 and 1. |
 | **Clamp** | Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0.0 or 1.0, respectively. |
@@ -81,10 +81,10 @@ Valid values are between 1 and 16.
 
 ## Presets
 
-To make the sampler construction easy, you can use `Evergine.Common.SamplerStates` to describe the most common sampler descriptions:
+To simplify sampler construction, you can use `Evergine.Common.SamplerStates` to describe the most common sampler descriptions:
 
 | Value |
-|--------|
+|-------|
 | **PointClamp** |
 | **PointWrap** |
 | **PointMirror** |
@@ -95,7 +95,7 @@ To make the sampler construction easy, you can use `Evergine.Common.SamplerState
 | **AnisotropicWrap** |
 | **AnisotropicMirror** |
 
-### Default initialization
+### Default Initialization
 
 ```csharp
 public void SetDefault()
@@ -113,7 +113,7 @@ public void SetDefault()
 }
 ```
 
-### Presets initialization
+### Presets Initialization
 
 ```csharp
 PointClamp = SamplerStateDescription.Default;

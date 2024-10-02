@@ -1,7 +1,7 @@
 # UI
 
 ---
-XRV provides some built-in components and artifacts that makes life easier to developer about creating uniform and consistent user interfaces.
+XRV provides some built-in components and artifacts that make life easier for developers by creating uniform and consistent user interfaces.
 
 ## In this section
 

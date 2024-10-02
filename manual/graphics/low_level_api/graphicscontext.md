@@ -2,7 +2,7 @@
 
 The GraphicsContext is the central class for displaying your application. It's used to create and manage graphic resources.
 
-Like the majority of Low-level-API classes, GraphicsContext is an abstract class that exposes common functionality of each graphics API (e.g. DirectX, Vulkan, Metal...). To use this API just need to create or get access to the GraphicsContext instance indicating the properly implementation depending of which graphic backend are you interested.
+Like the majority of Low-level-API classes, GraphicsContext is an abstract class that exposes the common functionality of each graphics API (e.g. DirectX, Vulkan, Metal...). To use this API, you just need to create or access the GraphicsContext instance, indicating the appropriate implementation depending on which graphic backend you are interested in.
 
 In the following example, we are creating a DirectX11 GraphicsContext:
 
@@ -10,7 +10,7 @@ In the following example, we are creating a DirectX11 GraphicsContext:
 var graphicsContext = new Evergine.DirectX11.DX11GraphicsContext();
 ```
 
-Use the specify constructor to initialize a concrete graphics API.
+Use the specified constructor to initialize a concrete graphics API.
 
 | API        | Class                       |
 | ---------- | --------------------------- |
@@ -22,7 +22,7 @@ Use the specify constructor to initialize a concrete graphics API.
 
 ## Initialize the Device
 
-Once you have created the Graphics context, in order to create resources and render your content, you need to create the graphics device:
+Once you have created the GraphicsContext, to create resources and render your content, you need to create the graphics device:
 
 ```csharp
 graphicsContext.CreateDevice();
@@ -30,29 +30,29 @@ graphicsContext.CreateDevice();
 
 ### Validation Layer
 
-To enable debug graphics mode you must added the ValidationLayer object to the device constructor, this will show you the native and internal errors:
+To enable debug graphics mode, you must add the ValidationLayer object to the device constructor. This will show you the native and internal errors:
 
 ```csharp
 // Add a ValidationLayer instance in the CreateDevice invocation...
 graphicsContext.CreateDevice(new ValidationLayer());
 ```
 
-By default, the ValidationLayer use exception to notify any issue, but it is possible to change it:
+By default, the ValidationLayer uses exceptions to notify any issue, but it is possible to change it:
 
 | Notify Method | Declaration                                               | Description                                                         |
 | ------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
-| **Exception** | `new ValidationLayer()`                                   | Throws exception with each internal error and stop the execution.   |
-| **Trace**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Trace)` | Display all errors in console without stopping the execution        |
-| **Event**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Event)` | The ValidationLayer.Error event allow to obtains the error messages |
+| **Exception** | `new ValidationLayer()`                                   | Throws exceptions for each internal error and stops the execution.  |
+| **Trace**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Trace)` | Displays all errors in the console without stopping the execution.  |
+| **Event**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Event)` | The ValidationLayer.Error event allows you to obtain the error messages. |
 
 ## Initialize Swapchain
 
-Once you have the GraphicsContext you can use it to create the swapchain and use it to render on a surface.
+Once you have the GraphicsContext, you can use it to create the swapchain and render on a surface.
 
 ```csharp
-// Create a windows...
+// Create a window...
 var windowSystem = new Evergine.WindowsForms.FormsWindowsSystem();
-var window = windowSystem.CreateWindow(windowsTitle, width, height);
+var window = windowSystem.CreateWindow(windowTitle, width, height);
 
 // Create a swapchain descriptor and assign the surface info...
 var swapChainDescriptor = new SwapChainDescription()
@@ -75,7 +75,7 @@ var swapChain = this.graphicsContext.CreateSwapChain(swapChainDescriptor);
 swapChain.VerticalSync = false;
 ```
 
-To create the surface first you need to select an UI technology:
+To create the surface, first, you need to select a UI technology:
 
 | UI                | Class                                           |
 | ----------------- | ----------------------------------------------- |

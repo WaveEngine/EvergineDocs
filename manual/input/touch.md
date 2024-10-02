@@ -17,21 +17,23 @@ public abstract class PointerDispatcher
 }
 ```
 
-`Points` property gets a list of points detected inside the surface at the current frame.
+The `Points` property gets a list of points detected on the surface in the current frame.
 
-`PointerDown`, `PointerUp` and `PointerMove` events are available to track touch and pointer points.
+The `PointerDown`, `PointerUp`, and `PointerMove` events are available to track touch and pointer points.
 
 ### PointerPoint
-The PointerPoint class give the following information:
+
+The PointerPoint class provides the following information:
 
 | Property | Description |
 | --- | --- |
-| **Id** | A number that is uniquely associated to this touch. It is usually given by the underliying platform. |
-| **Position** | The pointer position in screen coordinates |
-| **State** | Get the current pointer state. See [Button States](button_states.md) for more information. |
+| **Id** | A number that is uniquely associated with this touch. It is usually provided by the underlying platform. |
+| **Position** | The pointer position in screen coordinates. |
+| **State** | Gets the current pointer state. See [Button States](button_states.md) for more information. |
 
 ### Using PointerDispatcher
-The `PointerDispatcher` can be found within the `Display` or `Surface` objects. The following sample code can be used to access the pointer dispatcher from a `Component` or `Service`.
+
+The `PointerDispatcher` can be found within the `Display` or `Surface` objects. The following sample code shows how to access the pointer dispatcher from a `Component` or `Service`.
 
 ```csharp
 [BindService]
@@ -41,12 +43,12 @@ protected override void Update(TimeSpan time)
 {
     PointerDispatcher pointerDispatcher = this.graphicsPresenter.FocusedDisplay?.PointerDispatcher;
 
-    if (keyboardDispatcher == null)
+    if (pointerDispatcher == null)
     {
         return;
     }
 
-    foreach (PointerPoint p in keyboardDispatcher.Points)
+    foreach (PointerPoint p in pointerDispatcher.Points)
     {
         if (p.State == ButtonState.Pressing)
         {

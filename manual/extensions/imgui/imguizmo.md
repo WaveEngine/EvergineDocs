@@ -3,37 +3,37 @@
 
 ![ImGuizmo](images/ImGuizmo.png)
 
-This extension also allow you to use the ImGuizmo library, this is a collection of 3D widgets on top o ImGUI library, this project and source code is available on github at: https://github.com/CedricGuillemet/ImGuizmo.
+This extension also allows you to use the ImGuizmo library, which is a collection of 3D widgets built on top of the ImGUI library. The project and source code are available on GitHub at: https://github.com/CedricGuillemet/ImGuizmo.
 
 > [!NOTE]
-> The C# wrapper is generated on top of a c-api wrapper version of this library, so some samples may not work directly but all the features are supported.
+> The C# wrapper is generated on top of a C-API wrapper version of this library. As a result, some samples may not work directly, but all features are supported.
 
 ## Features
 
-This library comes with many widget in 3D useful to create an editor tool, here you have more info about the 
+This library comes with many widgets in 3D that are useful for creating editor tools. Here you have more information about them:
 
-## ImViewGizmo widget
+## ImViewGizmo Widget
 
-This widget display a 3D cube in a corner of the screen that represent the view transformation, it is used to select between different camera views preset like top, left, right and bottom.
+This widget displays a 3D cube in a corner of the screen that represents the view transformation. It is used to select between different camera view presets like top, left, right, and bottom.
 
 ![ImGuizmo](images/ImGuizmo_ImViewGizmo.gif)
 
-## ImGuizmo widget
+## ImGuizmo Widget
 
-This widget allow you to draw 3D helpers useful to move, scale and transform 3D geometry, this widgets compute the result 4x4 Matrix to make it easy to apply it to the geometry.
+This widget allows you to draw 3D helpers that are useful for moving, scaling, and transforming 3D geometry. These widgets compute the resulting 4x4 Matrix, making it easy to apply it to the geometry.
 
 ![ImGuizmo](images/ImGuizmo_1.gif)
 ![ImGuizmo](images/ImGuizmo_2.gif)
 ![ImGuizmo](images/ImGuizmo_3.gif)
 
-## ImSequencer widget
+## ImSequencer Widget
 
-A WIP little sequencer used to edit frame start/end for different events in a timeline.
+A work-in-progress little sequencer used to edit frame start/end for different events in a timeline.
 
 ![ImGuizmo](images/ImGuizmo_ImSequencer.png)
 
-## Graph editor widget
+## Graph Editor Widget
 
-This widget is useful to create a custom graph editor based on nodes and links between them. It is possible to change how nodes are rendered to customize them.
+This widget is useful for creating a custom graph editor based on nodes and links between them. It is possible to change how nodes are rendered to customize them.
 
 ![ImGuizmo](images/ImGuizmo_GraphEditor.jpg)

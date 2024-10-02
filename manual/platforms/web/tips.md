@@ -1,5 +1,5 @@
-# Tips to optimize a web application
+# Tips to Optimize a Web Application
 
-Web platform have some technology limitations compared to regular desktop apps. Specifically, loading time is much worse than applications stored in the local computer, and execution power is reduces.Therefore it is important to apply some optimizations to get good performance on the browser.
+Web platforms have some technological limitations compared to regular desktop apps. Specifically, loading times are much worse than for applications stored on the local computer, and execution power is reduced. Therefore, it is important to apply some optimizations to achieve good performance in the browser.
 
-* Reduce texture sizes: Textures are usually one of the biguest assets. To improve the loading time, try to use reduce its resolution to the possible minimum.
+* Reduce texture sizes: Textures are usually one of the biggest assets. To improve loading times, try to reduce their resolution to the possible minimum.

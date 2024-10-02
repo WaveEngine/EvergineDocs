@@ -1,30 +1,30 @@
 # Tabs Control
 
-Tabs control gives basic infrastructure and functionality to add tabbed panels to your application.
+The Tabs control gives basic infrastructure and functionality to add tabbed panels to your application.
 
 It provides a container and a tab navigation system.
 
 ![tab container base](images/tabs_control_base.png)
 
-It provides following properties to customize the control.
+It offers the following properties to customize the control:
 
 | Properties     | Description                                     |
 | -------------- | ----------------------------------------------- |
-| `Size`         | Set size for the container.                     |
-| `SelectedItem` | Sets selected tab, and show associated content. |
-| `Builder`      | returns `TabControlBuilder`                     |
+| `Size`         | Sets the size for the container.                     |
+| `SelectedItem` | Sets the selected tab and shows the associated content. |
+| `Builder`      | Returns `TabControlBuilder`.                     |
 
 ## Create a tab control programmatically
 
-Easiest way to create a tab instance is to use `TabControlBuilder` provides features related to add content in the tab control.
+The easiest way to create a tab instance is to use `TabControlBuilder`, which provides features related to adding content to the tab control.
 
 | Methods                     | Description                                 |
 | --------------------------- | ------------------------------------------- |
-| `AddItem`                   | Adds a single item.            |
-| `AddItems`                   | Adds a set of items.            |
-| `WithSize`                  | Specifies a size for tab control            |
-| `WithActiveItemTextColor`   | Specifies active text color for tab item.   |
-| `WithInactiveItemTextColor` | Specifies inactive text color for tab item. |
+| `AddItem`                   | Adds a single item.                         |
+| `AddItems`                  | Adds a set of items.                        |
+| `WithSize`                  | Specifies a size for the tab control.       |
+| `WithActiveItemTextColor`   | Specifies the active text color for the tab item.   |
+| `WithInactiveItemTextColor` | Specifies the inactive text color for the tab item. |
 
 ```csharp
 var tabEntity = TabControl.Builder
@@ -38,16 +38,15 @@ var tabEntity = TabControl.Builder
     .Build();  
 ```
 
-In _XRV_ we make use of this tab control builder in configuration and help windows. If you want a window which only content entity is a tab control, you can
-make use of _TabbedWindow_ class.
+In _XRV_, we use this tab control builder in configuration and help windows. If you want a window where the only content entity is a tab control, you can make use of the _TabbedWindow_ class.
 
 ## Tab items definition
 
-`TabItem` provides tab and content for the tab control.
+`TabItem` provides tabs and content for the tab control.
 
 | Properties | Description                       |
 | ---------- | --------------------------------- |
 | `Name`     | Tab Name.                         |
 | `Data`     | General purpose data.             |
 | `Order`    | Order to be displayed.            |
-| `Contents` | Content for the tab item. |
+| `Contents` | Content for the tab item.         |

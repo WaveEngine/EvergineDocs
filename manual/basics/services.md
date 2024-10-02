@@ -1,20 +1,22 @@
 # Services
+
 ---
 
-In Evergine, **Services** are elements that allow you to manage global features. A Service functionality could be accessed from every Scene, Component or Behavior in your application. The services could be bond from any [component](component_arch/components/index.md) even other services using the [aplication container](application/index.md).
+In Evergine, **Services** are elements that allow you to manage global features. Service functionality can be accessed from every Scene, Component, or Behavior in your application. Services can also be bound to any [component](component_arch/components/index.md) or even other services using the [application container](application/index.md).
 
-Developing custom Evergine services are useful to integrate your application with external external services or APIs.
+Developing custom Evergine services is useful for integrating your application with external services or APIs.
 
-There are two kind of services:
+There are two kinds of services:
  
- * **Basic Services**: This kind of service is very useful to expose functionality or to execute global tasks.
- * **Updatable Services**: Is a Service subclass with an `Update()` method that allows running an action every application update cycle.
+ * **Basic Services**: This type of service is very useful to expose functionality or to execute global tasks.
+ * **Updatable Services**: This is a Service subclass with an `Update()` method that allows running an action during every application update cycle.
 
 ## Creating a Service
-To create a basic Service, add a class from _Visual Studio_ and extend the `Service` class:
+
+To create a basic Service, add a class in Visual Studio and extend the `Service` class:
  
- ```csharp
- using Evergine.Framework.Services;
+```csharp
+using Evergine.Framework.Services;
 
 namespace MyProject
 {
@@ -45,15 +47,14 @@ namespace MyProject
         }        
     }
 }
+``` 
 
- ``` 
+### Creating an UpdatableService
 
-### Create an UpdatableService
-
-On the other hand, to create a updatable service add a class from Visual Studio and extend the `UpdatableService' class.
+To create an updatable service, add a class in Visual Studio and extend the `UpdatableService` class.
 
 ```csharp
- using Evergine.Framework.Services;
+using Evergine.Framework.Services;
 
 public class MyUpdatableService : UpdatableService
 {
@@ -62,38 +63,37 @@ public class MyUpdatableService : UpdatableService
         // Called on every application update cycle...
     }        
 }
+``` 
 
- ``` 
+## Registering a New Service in Your Application
 
-## Register a new Service in your Application
+Before using a service, it is necessary to register it in the [application container](application/index.md) where you can register the type or an instance.
 
-Before using a service is necessary to register it in the [application container](application/index.md) where you can register the type or an instance.
-
- ```csharp
- public partial class MyApplication : Application
+```csharp
+public partial class MyApplication : Application
+{
+    public MyApplication()
     {
-        public MyApplication()
-        {
-            // Previous code :)
+        // Previous code :)
 
-            // You could register the service by type...
-            this.Container.RegisterType<MyService>();
+        // You can register the service by type...
+        this.Container.RegisterType<MyService>();
 
-            // Or register the Service using an instance...
-            this.Container.RegisterInstance(new MyService());            
-        }
-    ...
- ```
+        // Or register the service using an instance...
+        this.Container.RegisterInstance(new MyService());            
+    }
+}
+```
 
 ## Using Services
 
-Accessing registered services could be done by two ways:
+Accessing registered services can be done in two ways:
 
-### Using [BindService] attribute
+### Using the [BindService] Attribute
 
-You can use the [BindService] attribute in your Component, SceneManager or even from another Services to automatically inject the Service instance into your property.
+You can use the [BindService] attribute in your Component, SceneManager, or even from another service to automatically inject the Service instance into your property.
 
- ```csharp
+```csharp
 using Evergine.Framework;
 using System;
 
@@ -101,7 +101,7 @@ namespace MyProject
 {
     public class MyBehavior : Behavior
     {
-        // Use the BindService attribute on top of the property or attribute in which you want to inject the Service
+        // Use the BindService attribute on top of the property in which you want to inject the Service
         [BindService]
         private MyService myService = null;
 
@@ -111,13 +111,13 @@ namespace MyProject
         }
     }
 }
- ```
+```
 
- ### Using Application Container
+### Using the Application Container
 
- In the other hand, you could obtains the Service instance directly from the Application Container:
+On the other hand, you can obtain the Service instance directly from the Application Container.
 
-  ```csharp
+```csharp
 using Evergine.Framework;
 using System;
 
@@ -129,7 +129,7 @@ namespace MyProject
 
         protected override bool OnAttached()
         {            
-            // Use the Resolve<Type> method from the Application Container....
+            // Use the Resolve<Type> method from the Application Container...
             this.myService = Application.Current.Container.Resolve<MyService>();
 
             return base.OnAttached();
@@ -140,11 +140,11 @@ namespace MyProject
             this.myService.DoRequest();
         }
 
-        protected override bool OnDettached()
+        protected override bool OnDetached()
         {
-            // Release the reference when a component is being dettached...
+            // Release the reference when a component is being detached...
             this.myService = null;
         }
     }
 }
- ```
+```
