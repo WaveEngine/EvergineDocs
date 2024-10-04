@@ -26,6 +26,9 @@ For maximum performance and to support future graphics features, we use Vulkan a
 
 ### Create a Meta Quest Template
 
+![Meta Quest](images/metaquest.png)
+
+
 To start developing your Evergine project with Meta Quest, simply select the Android Meta Quest template when creating an Evergine project:
 
 ![Meta Quest template](images/openxr_template.png)
@@ -33,3 +36,16 @@ To start developing your Evergine project with Meta Quest, simply select the And
 Alternatively, if you have already created an Evergine project, you can add the Meta Quest profile in the Project Settings:
 
 ![Meta Quest add profile](images/openxr_addprofile.png)
+
+### Create a Pico VR Template
+
+![Pico](images/picovr.png)
+
+**Pico VR** headsets, like Pico 4, are powerful standalone devices designed for immersive VR experiences. To start developing your Evergine project with Pico VR, select the Android Pico VR template when creating a new Evergine project:
+
+![Pico template](images/openxr_picotemplate.png)
+
+
+If you already have an Evergine project, you can add the Pico VR profile directly from the Project Settings:
+
+![Meta Quest add profile](images/openxr_addpicoprofile.png)
