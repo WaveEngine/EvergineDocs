@@ -38,8 +38,9 @@ This functionality will be covered in the following documents in this section.
 
 ## In this section
 
-* [XRPlatform](xrplatform.md)
+* [XR Platform](xrplatform.md)
 * [Input Devices](input_tracking/index.md)
 * [Spatial Mapping](spatial_mapping.md)
 * [Spatial Anchors](spatial_anchors.md)
 * [Trackable Items](trackable_items.md)
+* [Passthrough](passthrough.md)

@@ -12,3 +12,5 @@
   href: spatial_anchors.md
 - name: Trackable Items
   href: trackable_items.md
+- name: Passthrough
+  href: passthrough.md
