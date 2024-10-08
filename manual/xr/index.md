@@ -36,10 +36,24 @@ In Evergine, you can develop with different XR platforms and solutions, and Ever
 
 This functionality will be covered in the following documents in this section.
 
+## XR Integrations
+
+Evergine includes several XR platform integrations.
+
+### [OpenXR](openxr/index.md)
+
+**OpenXR** is an open, royalty-free API standard from Khronos, designed to unify development across multiple VR/MR/AR (XR) devices.
+
+This initiative is backed by companies like Meta, Microsoft, HTC, Steam, Varjo, and Magic Leap, enabling support for all their devices.
+
+![OpenXR](openxr/images/openxr_logo.png)
+
 ## In this section
 
-* [XRPlatform](xrplatform.md)
+* [XR Platform](xrplatform.md)
+* [OpenXR](openxr/index.md)
 * [Input Devices](input_tracking/index.md)
 * [Spatial Mapping](spatial_mapping.md)
 * [Spatial Anchors](spatial_anchors.md)
 * [Trackable Items](trackable_items.md)
+* [Passthrough](passthrough.md)
