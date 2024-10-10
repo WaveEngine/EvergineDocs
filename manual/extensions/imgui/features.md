@@ -332,12 +332,66 @@ namespace ImGUI
 
 ## Images
 
-The **Images** control allows displaying the content of a texture. This is a non-interactive control.
+**Image** controls in ImGui allow you to display images within your user interface. When working with ImGui in C# using Evergine bindings, you can use these controls to show textures, icons, or any other graphical elements.
 
 ```csharp
+using Evergine.Framework;
+using System;
+using Evergine.UI;
+using Evergine.Bindings.Imgui;
+using Evergine.Mathematics;
+using System.Threading.Tasks;
+
+namespace LoadingImages
+{
+    public class MyUI : Behavior
+    {
+        bool open = true;
+        IntPtr image;
+
+        [BindSceneManager]
+        ImGuiManager imguiManager;
+
+        protected override void Start()
+        {
+            base.Start();
+            DownloadImage();
+        }
+
+        private async void DownloadImage()
+        {
+            string url = $"https://pbs.twimg.com/profile_images/1460919352862158851/T0aHus0C_400x400.jpg";
+            var textureimage = await ImGUIHelpers.DownloadTextureFromUrl(url);
+            image = imguiManager.CreateImGuiBinding(textureimage);
+        }
+
+        protected override unsafe void Update(TimeSpan gameTime)
+        {
+            ImguiNative.igBegin("Debug", open.Pointer(), ImGuiWindowFlags.None);
+
+            // Set window size
+            ImguiNative.igSetNextWindowSize(new Vector2(500, 500), ImGuiCond.FirstUseEver);
+
+            ImguiNative.igText("Image Display:");
+
+            if (image != IntPtr.Zero)
+            {
+                Vector2 imageSize = new Vector2(400, 400);
+                ImguiNative.igImage(image, imageSize, new Vector2(0, 0), new Vector2(1, 1), new Vector4(1, 1, 1, 1), new Vector4(0, 0, 0, 0));
+                ImguiNative.igText($"Image Size: {imageSize.X}x{imageSize.Y}");
+            }
+            else
+            {
+                ImguiNative.igTextColored(new Vector4(1, 0, 0, 1), "Failed to load image");
+            }
+
+            ImguiNative.igEnd();
+        }
+    }
+}
 ```
 
-![Text](images/Features_Toolbar.png)
+![Text](images/Features_Image.png)
 
 ## SelectionGrid
 

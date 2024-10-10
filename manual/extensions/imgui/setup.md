@@ -12,7 +12,7 @@ To start using this extension, add the Evergine.ImGui package to your project us
 ```
 ## Usage
 
-Make sure you have the necessary namespaces added to your code:
+Make sure you have the necessary namespaces added to your scene:
 ```csharp
 using Evergine.UI;
 ```
@@ -36,8 +36,16 @@ public class ImGuiSceneTest : Scene
 ...
 }
 ```
+### Step 1: Allow unsafe block
+As the ImGui C# binding we are going to use is lightweight, it requires the use of unsafe code. The advantage of this is that if you find any sample written in C++, you can directly copy it since all the methods and parameters are the same.
 
-### Step 1: Creating a Custom UI Behavior
+To enable unsafe code:
+    **Option 1:** go to the project in which you are going to write it, open Properties, and in the Build tab, you will find an option called Allow unsafe code, enable it.
+    **Option 2**: Edit the project file and add the following line:
+```xml
+<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+```
+### Step 2: Creating a Custom UI Behavior
 - Create a new Behavior class in your project. Name it, for example, MyUI.
 - Extend the class from the Behavior base class.
 - Override the Update method to include ImGui calls.
@@ -51,9 +59,9 @@ using Evergine.Mathematics;
 
 namespace ImGUI
 {
-    public unsafe class MyUI : Behavior
+    public class MyUI : Behavior
     {
-        protected override void Update(TimeSpan gameTime)
+        protected override unsafe void Update(TimeSpan gameTime)
         {
             bool open = true;
             ImguiNative.igBegin("Debug", open.Pointer(), ImGuiWindowFlags.None);
@@ -71,7 +79,7 @@ namespace ImGUI
     }
 }
 ```
-### Step 2: Adding MyUI to an Entity in the Scene
+### Step 3: Adding MyUI to an Entity in the Scene
 - Open the Evergine Editor.
 - Create a new Empty Entity in your scene.
 - Attach the MyUI behavior to the entity you just created from the Evergine Studio.
