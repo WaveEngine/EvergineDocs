@@ -32,7 +32,7 @@ The *VertexBuffer* class in Evergine represents a buffer that holds the vertex d
 It mainly contains the **Buffer** that contains the raw data and the **LayoutDescription** declaring what kind of vertex information it has.
 The Vertex Buffer plays a crucial role in managing the vertex layouts and size, ensuring that this data can be processed efficiently by the GPU. The VertexBuffer class handles data organization and allows developers to define how vertex attributes like positions, normals, and textures are stored.
 
-#### Interleaved and Non-Interleaved Data
+### Interleaved and Non-Interleaved Data
 
 It's common to think of a vertex as a single entity (an object that holds all its relevant data). However, we can also get vertex attributes from separate streams, where the data for each attribute (like position, normals, or colors) is stored in contiguous memory blocks: one for positions, another for normals, and so on.
 
@@ -103,7 +103,7 @@ An index buffer is essentially a list of references to the vertices in the verte
 
 ## Create Mesh from Code
 
-Once created our **VertexBuffer** and **IndexBuffer** (if needed), we can create the Mesh with the next simple code:
+The next code explain how to create a simple mesh. It uses the **VertexPositionColor** struct for defining its data:
 
 ```csharp
 // Vertices and indices data.
