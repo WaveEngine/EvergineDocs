@@ -103,6 +103,9 @@ An index buffer is essentially a list of references to the vertices in the verte
 
 ## Create Mesh from Code
 
+
+### Simple mesh using a predefined type
+
 The next code explain how to create a simple mesh. It uses the **VertexPositionColor** struct for defining its data:
 
 ```csharp
@@ -148,7 +151,75 @@ return new Mesh(new VertexBuffer[] { vertexBuffer }, indexBuffer, PrimitiveTopol
 };
 ```
 
-The resulting mesh once placed into a component should be like this:
 
+### Simple mesh using your own arrays
 
-![Interleaved](images/Quad.png)
+This code, on the other hand, explain how to build your own mesh with your own data types.
+
+```csharp
+// Indices data array.
+ushort[] indexData = new ushort[] { 0, 1, 2, 0, 2, 3 };
+
+// Position data array.
+Vector3[] positions = new Vector3[]
+{
+    new Vector3(-0.5f, 0.5f, 0.0f),
+    new Vector3(0.5f, 0.5f, 0.0f),
+    new Vector3(0.5f, -0.5f, 0.0f),
+    new Vector3(-0.5f, -0.5f, 0.0f),
+};
+
+// Color data array.
+Vector4[] colors = new Vector4[]
+{
+    Color.Blue.ToVector4(),
+    Color.Red.ToVector4(),
+    Color.Green.ToVector4(),
+    Color.Yellow.ToVector4(),
+};
+
+// Vertex Buffer with the position attribute data.
+var bufferPosDesc = new BufferDescription()
+{
+    SizeInBytes = (uint)Unsafe.SizeOf<Vector3>() * (uint)this.positions.Length,
+    Flags = BufferFlags.ShaderResource | BufferFlags.VertexBuffer,
+    Usage = ResourceUsage.Default,
+};
+
+Buffer bufferPos = graphicsContext.Factory.CreateBuffer(this.positions, ref bufferPosDesc);
+LayoutDescription layoutPos = new LayoutDescription().Add(new ElementDescription(ElementFormat.Float3, ElementSemanticType.Position, 0, 0));
+VertexBuffer vertexBufferPos = new VertexBuffer(bufferPos, layoutPos);
+
+// Vertex Buffer with the color attribute data.
+var bufferColorDesc = new BufferDescription()
+{
+    SizeInBytes = (uint)Unsafe.SizeOf<Vector4>() * (uint)this.colors.Length,
+    Flags = BufferFlags.ShaderResource | BufferFlags.VertexBuffer,
+    Usage = ResourceUsage.Default,
+};
+
+Buffer bufferColor = graphicsContext.Factory.CreateBuffer(this.colors, ref bufferColorDesc);
+LayoutDescription layoutColor = new LayoutDescription().Add(new ElementDescription(ElementFormat.Float4, ElementSemanticType.Color, 0));
+VertexBuffer vertexBufferColor = new VertexBuffer(bufferColor, layoutColor);
+
+// Index Buffer
+var iBufferDescription = new BufferDescription()
+{
+    SizeInBytes = (uint)(sizeof(ushort) * this.indexData.Length),
+    Flags = BufferFlags.IndexBuffer,
+    Usage = ResourceUsage.Default
+};
+
+Buffer iBuffer = graphicsContext.Factory.CreateBuffer(this.indexData, ref iBufferDescription);
+var indexBuffer = new IndexBuffer(iBuffer);
+
+// Create Mesh with the 2 previous vertex buffers and the index buffer.
+return new Mesh(new VertexBuffer[] { vertexBufferPos, vertexBufferColor }, indexBuffer, PrimitiveTopology.TriangleList)
+{
+    BoundingBox = this.ComputeBoundingBox(),
+};
+```
+
+In both cases the result will be the same:
+
+![Quad](images/Quad.png)
