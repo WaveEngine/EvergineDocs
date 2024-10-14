@@ -21,7 +21,7 @@
   href: models/toc.yml
   homepage: models/index.md
 - name: Meshes
-  href: meshes.md
+  href: meshes/index.md
 - name: Primitives
   href: primitives.md
 # - name: Render Layers
