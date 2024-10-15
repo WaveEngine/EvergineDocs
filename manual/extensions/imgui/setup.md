@@ -37,7 +37,7 @@ public class ImGuiSceneTest : Scene
 }
 ```
 ### Step 1: Allow unsafe block
-As the ImGui C# binding we are going to use is lightweight, it requires the use of unsafe code. The advantage of this is that if you find any sample written in C++, you can directly copy it since all the methods and parameters are the same.
+As the ImGui C# binding we are going to use is lightweight, it requires the use of unsafe code.
 
 To enable unsafe code:
     **Option 1:** go to the project in which you are going to write it, open Properties, and in the Build tab, you will find an option called Allow unsafe code, enable it.
