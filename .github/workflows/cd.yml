@@ -81,7 +81,7 @@ jobs:
 
   deploy:
     runs-on: windows-latest
-    # # if: ${{ github.event.inputs.publish == 'true' }}
+    if: ${{ github.event.inputs.publish == 'true' }}
     needs:
       - build
     steps:
