@@ -13,10 +13,10 @@
   homepage: materials/index.md
 - name: Textures
   href: textures/toc.yml
+  homepage: textures/index.md
 - name: RenderLayer
   href: renderlayers/toc.yml
   homepage: renderlayers/index.md
-  homepage: textures/index.md
 - name: Models
   href: models/toc.yml
   homepage: models/index.md
