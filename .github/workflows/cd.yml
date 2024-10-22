@@ -1,0 +1,128 @@
+name: CD
+
+on:
+  workflow_dispatch: # Manually trigger the workflow
+    inputs:
+      publish:
+        description: "Publish to docs website"
+        type: boolean
+        required: false
+        default: false
+      version:
+        description: "Docs version in 'YYYY.M.D' format"
+        required: false
+        default: "2024.10.22"
+      evergineBranch:
+        description: "Evergine branch to build the automatic docs"
+        required: false
+        default: "master"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      evergineFolder: ./Engine
+    steps:
+      - name: Check out docs repo
+        uses: actions/checkout@v4
+      - name: Check out engine repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.evergineBranch }}
+          repository: EvergineTeam/Engine
+          path: ./Engine
+          token: ${{secrets.ENGINE_GITHUB_TOKEN}}
+
+      - name: Configure docfx
+        shell: pwsh
+        run: |
+          .\scripts\create_docfx_api_config.ps1 -evergineFolder ${{ env.evergineFolder }}
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Cache docfx
+        id: cache-docfx
+        uses: actions/cache@v4
+        with:
+          path: ./build/tools
+          key: docfx-binaries-${{ runner.os }}
+
+      - if: ${{ steps.cache-docfx.outputs.cache-hit != 'true' }}
+        name: Install Docfx
+        shell: pwsh
+        run: |
+          ./scripts/install_docfx.ps1
+
+      # TODO add cache to workloads
+      - name: Workloads install
+        shell: pwsh
+        id: workloads_install
+        run: |
+          dotnet workload install android ios macos
+
+      - name: Build API
+        shell: pwsh
+        run: |
+          .\scripts\build_api.ps1
+
+      - name: Build Docs
+        shell: pwsh
+        run: |
+          ./scripts/build_docs.ps1
+
+      - name: Bundle build
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+
+  deploy:
+    runs-on: windows-latest
+    if: ${{ github.event.inputs.publish == 'true' }}
+    needs:
+      - build
+    steps:
+      - name: Check out gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Delete version if exists
+        shell: pwsh
+        run: |
+          $path = "./${{ github.event.inputs.version }}"
+          if (Test-Path -LiteralPath $path) {
+            Remove-Item -LiteralPath $path -Recurse
+          }
+
+      - name: Download build
+        uses: actions/download-artifact@master
+        with:
+          name: build
+          path: ./build
+
+      - name: Deploy new version locally
+        shell: pwsh
+        run: |
+          New-Item -Path . -Name "${{ github.event.inputs.version }}" -ItemType "directory"
+          Copy-Item -r ./build/dist/* ./${{ github.event.inputs.version }}
+          Copy-Item ./build/index.html . -Force
+          Copy-Item ./build/versions.json . -Force
+          $AllVersions = Get-ChildItem -Directory -Name -Exclude build | Sort-Object -Descending | Foreach-Object {"""$_""" }
+          $AllVersions = $AllVersions -Join ", "
+          ((Get-Content -path .\index.html -Raw) -replace "dist", "${{ github.event.inputs.version }}") | Set-Content -Path ./index.html
+          ((Get-Content -path .\versions.json -Raw) -replace '"dist"', "$AllVersions") | Set-Content -Path ./versions.json
+
+      - name: Publish deployment
+        shell: pwsh
+        run: |
+          git config --global user.name "Continuous Deployment"
+          git config --global user.email "cd@evergine.com"
+          git add ./${{ github.event.inputs.version }}
+          git add ./index.html
+          git add ./versions.json
+          git commit -m "v${{ github.event.inputs.version }} update"
+          git push

@@ -37,6 +37,8 @@ To enable Passthrough on Meta Quest devices with Evergine, starting with the Eve
 
 ### Use Simultaneous Hands and Controllers (Multimodal)
 
+![Simultaneous Hands and Controllers](images/simultaneous-hands-controllers.png)
+
 Multimodal input provides simultaneous tracking of both hands and controllers. It also indicates whether the controller(s) are in hand or not. Multimodal input allows users to enjoy the benefits of both worlds: they can use hands for immersion, and controllers for accuracy and haptics.
 
 Check [here](https://developers.meta.com/horizon/documentation/native/android/native-multimodal/?locale=fi_FI) for more information.

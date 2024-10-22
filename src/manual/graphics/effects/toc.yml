@@ -1,5 +1,7 @@
 - name: Create Effects
   href: create_effects.md
+- name: Library Effects
+  href: library_effect.md  
 - name: Effect Metatags
   href: effect_metatags.md
 - name: Using Effects

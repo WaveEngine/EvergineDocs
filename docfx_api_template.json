@@ -1,0 +1,15 @@
+// This file is used to generate the API docfx configuration under build/docfx.json
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [],
+          "src": ""
+        }
+      ],
+      "dest": "./api", // build/api folder
+      "filter": "../filterConfig.yml"
+    }
+  ]
+}
