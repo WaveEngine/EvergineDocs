@@ -223,3 +223,8 @@ return new Mesh(new VertexBuffer[] { vertexBufferPos, vertexBufferColor }, index
 In both cases the result will be the same:
 
 ![Quad](images/Quad.png)
+
+>[!NOTE]
+> In this [article](../models/create_model_from_code.md) is explained how to show this custom mesh into a new entity.
+
+For a single mesh Model, **Evergine** offers an easy way creating it, just passing it as a parameter in its constructor:
