@@ -1,8 +1,8 @@
-## Upgrade My Project to the Latest Evergine Release
+# Upgrade My Project to the Latest Evergine Release
 
 In this article, you will find detailed instructions on how to upgrade your project to the latest Evergine releases. Keeping your project updated is essential for accessing new features, improvements, and bug fixes. 
 
-### Why Upgrade?
+## Why Upgrade?
 
 Upgrading to the latest version ensures that your project benefits from:
 - **Enhanced Performance:** New releases often include optimizations that improve application speed and responsiveness.
@@ -10,7 +10,7 @@ Upgrading to the latest version ensures that your project benefits from:
 - **Bug Fixes:** Address known issues from previous versions to ensure a smoother workflow.
 - **Compatibility:** Stay aligned with the Evergine ecosystem and its evolving standards.
 
-### Important Considerations
+## Important Considerations
 
 Before proceeding with the upgrade:
 - **Backup Your Project:** Always create a backup of your current project to prevent data loss.
