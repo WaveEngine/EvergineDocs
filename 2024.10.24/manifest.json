@@ -22315,106 +22315,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/add-addon.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/add-addon.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/add-on-prefabs.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/add-on-prefabs.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/new-project.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/new-project.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/prefab-cursor.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/prefab-cursor.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/prefab-face.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/prefab-face.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/prefab-images.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/prefab-images.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/prefab-points.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/prefab-points.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/project-config1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/project-config1.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "src/manual/extensions/armobile/images/project-config2.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "manual/extensions/armobile/images/project-config2.jpg"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/manual/extensions/armobile/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/extensions/armobile/index.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "src/manual/extensions/imgui/features.md",
       "output": {
@@ -23042,6 +22942,29 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "src/manual/get_started/migrations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/get_started/migrations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "src/manual/get_started/migrations/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/get_started/migrations/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/get_started/migrations/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "src/manual/get_started/migrations/upgrade_project_2024.10.24.md",
       "output": {
         ".html": {
@@ -23079,16 +23002,6 @@
         },
         ".json": {
           "relative_path": "manual/get_started/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/manual/get_started/upgrade_project.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/get_started/upgrade_project.html"
         }
       },
       "version": ""
