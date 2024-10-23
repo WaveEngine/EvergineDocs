@@ -18,5 +18,5 @@ Before proceeding with the upgrade:
 
 Once you have completed the necessary preparations, you can follow the links below for specific instructions on upgrading from your current version to the desired release.
 
-* [Update from Evergine 2023.9.28 to Evergine 2024.6.28](migrations/upgrade_project_2024.6.28.md)
-* [Update from Evergine 2024.6.28 to Evergine 2024.10.24](migrations/upgrade_project_2024.10.24.md)
+* [Update from Evergine 2023.9.28 to Evergine 2024.6.28](upgrade_project_2024.6.28.md)
+* [Update from Evergine 2024.6.28 to Evergine 2024.10.24](upgrade_project_2024.10.24.md)
