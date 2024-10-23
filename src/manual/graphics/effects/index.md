@@ -14,6 +14,7 @@ The default Evergine project template imports the [**Evergine.Core** package](..
 ## In this section
 
 * [Create Effects](create_effects.md)
+* [Library Effects](library_effect.md)
 * [Effect Metatags](effect_metatags.md)
 * [Using Effects](using_effects.md)
 * [Effect Editor](effect_editor.md)

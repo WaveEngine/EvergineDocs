@@ -5,19 +5,15 @@
 	This script generates the Evergine API Documentation for an specific framework. Defaults to net8.0 .
 	It uses DocFX.
 .EXAMPLE
-	.\<script_name> [-targetFramework net8.0-android]
+	.\<script_name>
 .LINK
 	https://evergine.com
 #>
 
-param
-(
-	[Parameter(HelpMessage="API Target Framework to build")][string]$targetFramework = "net8.0"
-)
-
 # Config variables
 $buildFolder = "build"
-$apiConfigFolder = Join-Path $buildFolder "config"
+$configFile = "docfx-api.json"
+$apiFolder = "build/api"
 
 # Add common configuration and functions
 . "$PSScriptRoot/ps_support.ps1"
@@ -27,18 +23,19 @@ $currentDir = (Get-Location).Path
 Push-Location $currentDir
 Set-Location $PSScriptRoot/..
 
-$docfx = InstallDocFX
+$docfx = GetDocFX
 
-# Get all json files apiConfigFolder/$targetFramework
-$configPath = Resolve-Path (Join-Path $apiConfigFolder $targetFramework)
-$configFiles = Get-ChildItem -Path $configPath -Filter "*.json"
+# Clean API yaml files, except .gitignore
+Get-ChildItem -Path $apiFolder -Recurse -Exclude ".gitignore" | Remove-Item -Force
 
-LogInfo "START Building the documentation with DocFX for $targetFramework ..."
+# Get json config file
+$configFile = Resolve-Path (Join-Path $buildFolder $configFile)
+
+LogInfo "START Building the sources API with DocFX ..."
+
 $cmd = "$(Resolve-Path (Join-Path $toolsFolder docfx.exe))"
-foreach ($configFile in $configFiles)
-{
-	Invoke-Expression "$docfx metadata $configFile"
-}
-LogInfo "END Building the documentation with DocFX for $targetFramework."
+Invoke-Expression "$docfx metadata $configFile"
+
+LogInfo "END Building the sources API with DocFX."
 
 Pop-Location

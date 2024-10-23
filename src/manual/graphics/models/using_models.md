@@ -1,6 +1,6 @@
 # Using Models
 
-![Models header](images/usingModels.jpg)
+![Models header](images/UsingModels.jpg)
 
 In this document, you will learn how to load and use **Models** in your applications.
 

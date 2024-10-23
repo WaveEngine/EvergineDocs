@@ -8,3 +8,5 @@
   href: level_of_detail.md
 - name: Model Editor
   href: model_editor.md
+- name: Create model from code
+  href: create_model_from_code.md

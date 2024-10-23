@@ -1,5 +1,4 @@
-// This file is used to generate the API docfx configuration for each source and target framework
-// It will be stored under build/config/framework/docfx.json
+// This file is used to generate the API docfx configuration under build/docfx.json
 {
   "metadata": [
     {
@@ -9,11 +8,8 @@
           "src": ""
         }
       ],
-      "properties": {
-        "TargetFramework": ""
-      },
-      "dest": "../../api", // build/api folder
-      "filter": "../../../filterConfig.yml"
+      "dest": "./api", // build/api folder
+      "filter": "../filterConfig.yml"
     }
   ]
 }

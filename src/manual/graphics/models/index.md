@@ -47,7 +47,7 @@ The **NodeContent** refers to the class that represents one node. It contains th
 | Skin | Reference of a **SkinContent** element, meaning the node is a skinned mesh. _null_ if the node is not skinned. |
 
 ## MeshContainers
-In a **Model**, mesh containers are where the 3D geometry is stored. They usually represent one full object and can contain one or more meshes (see [this section](../meshes.md) for more information). The main reason for the **MeshContainer** concept is that geometry attached to a node can contain multiple sub-elements, each with a different material. One **MeshContainer** can be referenced by one or more nodes, making the model more memory efficient.
+In a **Model**, mesh containers are where the 3D geometry is stored. They usually represent one full object and can contain one or more meshes (see [this section](../meshes/index.md) for more information). The main reason for the **MeshContainer** concept is that geometry attached to a node can contain multiple sub-elements, each with a different material. One **MeshContainer** can be referenced by one or more nodes, making the model more memory efficient.
 
 | Property | Description |
 | -------- | ----------- |
@@ -92,3 +92,4 @@ In **Evergine**, model animation is achieved by animating nodes. If those nodes 
 * [Using Model](using_models.md)
 * [Level of Detail](level_of_detail.md)
 * [Model Editor](model_editor.md)
+* [Create Models from code](create_model_from_code.md)

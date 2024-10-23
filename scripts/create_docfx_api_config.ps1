@@ -15,21 +15,11 @@ param
 )
 
 # Config variables
-$sources = @(
-	"src/Engine",
-	"src/Extensions",
-	"src/Runtimes",
-	"src/Tools/Evergine.HLSLEverywhere"
-)
-$defaultTargetFramework = "net8.0"
-$targetFrameworks = @(
-	@{"framework"="net8.0-android"; "filter"="android"},
-	@{"framework"="net8.0-ios"; "filter"="ios|macos|metal"},
-	@{"framework"="net8.0-windows"; "filter"="wpf|forms|winui"}
-)
+$csproj_sources = "src/Engine|src/Extensions|src/Runtimes|src/Tools/Evergine.HLSLEverywhere"
+$csproj_excludes = "macos"  # format a|b|c..
 $metadataConfigFile = "docfx_api_template.json"
 $buildFolder = "build"
-$configFolder = Join-Path $buildFolder "config"
+$configFile = "docfx-api.json"
 
 # Add common configuration and functions
 . "$PSScriptRoot/ps_support.ps1"
@@ -39,88 +29,40 @@ $currentDir = (Get-Location).Path
 Push-Location $currentDir
 Set-Location $PSScriptRoot/..
 
-$isSRCAvailable = Test-Path -Path $evergineFolder
-if (-Not $isSRCAvailable)
+$isEngineAvailable = Test-Path -Path $evergineFolder
+if (-Not $isEngineAvailable)
 {
 	LogError "Evergine folder not found. No API config has been generated."
 	Pop-Location
 	exit 1
 }
 
-# Clean api folder
-$configFolder = Resolve-Path $configFolder
-Remove-Item -Recurse -Force -Path $configFolder -Exclude ".gitignore"
+# Get all csproj file paths that are inside src folder
+$absoluteEngineFolder = Resolve-Path $evergineFolder
+$csprojFiles = Get-ChildItem -Path $absoluteEngineFolder -Filter "*.csproj" -Recurse
 
-# Builds the api docfx config based on an src folder
-function BuildDocfxConfig($srcFolder)
+$csprojPaths = @()
+foreach ($csproj in $csprojFiles)
 {
-	$srcid = $srcFolder.Replace("/", "_")
-	$absoluteSRCFolder = Resolve-Path (Join-Path $evergineFolder $srcFolder)
-
-	# Get all csproj file paths that are inside src folder
-	$csprojFiles = Get-ChildItem -Path $absoluteSRCFolder -Filter "*.csproj" -Recurse
-
-	# arrange csprojs by target framework
-	$csprojFilesByTargetFramework = @{}
-	foreach ($csproj in $csprojFiles)
+	$csprojPath = (Resolve-Path -Relative -Path $csproj -RelativeBasePath $absoluteEngineFolder).Replace("\", "/").Replace("./", "")
+	# if csproj name contains the filter, discard
+	if (($csprojPath -match $csproj_sources) -and (-not ($csproj.Name -match $csproj_excludes)))
 	{
-		$csprojPath = (Resolve-Path -Relative -Path $csproj -RelativeBasePath $absoluteSRCFolder).Replace("\", "/").Replace("./", "")
-
-		$isTargetFrameworkFound = $false
-		foreach ($targetFramework in $targetFrameworks)
-		{
-			# if csproj name contains the filter, add it to the target framework
-			if ($csproj.Name -match $targetFramework.filter)
-			{
-				$csprojFilesByTargetFramework[$targetFramework.framework] += @($csprojPath)
-				$isTargetFrameworkFound = $true
-				break
-			}
-		}
-
-		if (-Not $isTargetFrameworkFound)
-		{
-			$csprojFilesByTargetFramework[$defaultTargetFramework] += @($csprojPath)
-		}
-	}
-
-	# build docfx config for each target framework
-	foreach ($targetFramework in $csprojFilesByTargetFramework.Keys)
-	{
-		$outputFolder = Join-Path $configFolder $targetFramework
-		# create output folder if not exists
-		if (-Not (Test-Path -Path $outputFolder))
-		{
-			New-Item -ItemType Directory -Force -Path $outputFolder
-		}
-
-		# load template metadata
-		$metadata = Get-Content $metadataConfigFile -Raw | ConvertFrom-Json
-
-		# update metadata with the new csproj files
-		$metadata.metadata[0].src[0].files = @()
-		foreach ($csproj in $csprojFilesByTargetFramework[$targetFramework])
-		{
-			$metadata.metadata[0].src[0].files += $csproj
-		}
-
-		# update metadata with the new src folder
-		$metadata.metadata[0].src[0].src = (Resolve-Path -Relative -Path $absoluteSRCFolder -RelativeBasePath $outputFolder).Replace("\", "/")
-
-		# update metadata with the new target framework
-		$metadata.metadata[0].properties.TargetFramework = $targetFramework
-
-
-		# write the new metadata to a new file
-		$metadataFile = Join-Path $outputFolder "docfx-$srcid.json"
-		$metadata | ConvertTo-Json -Depth 5 | Set-Content $metadataFile
+		$csprojPaths += @($csprojPath)
 	}
 }
 
+# Build docfx API config file
 
-foreach ($src in $sources)
-{
-	BuildDocfxConfig $src
-}
+# load template metadata & update with the new csproj files
+$metadata = Get-Content $metadataConfigFile -Raw | ConvertFrom-Json
+$metadata.metadata[0].src[0].files = $csprojPaths
+
+# update metadata with the new src folder
+$metadata.metadata[0].src[0].src = (Resolve-Path -Relative -Path $absoluteEngineFolder -RelativeBasePath $buildFolder).Replace("\", "/")
+
+# write the new metadata to a new file
+$metadataFile = Join-Path $buildFolder $configFile
+$metadata | ConvertTo-Json -Depth 5 | Set-Content $metadataFile
 
 Pop-Location

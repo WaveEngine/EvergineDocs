@@ -42,6 +42,22 @@ function InstallDocFX()
         LogDebug "Unzipping DocFX ..."
         Microsoft.PowerShell.Archive\Expand-Archive -LiteralPath $zipPath -DestinationPath "$toolsFolder"
         ThrowOnNativeFailure
+
+        LogInfo "DocFX successfully installed!"
+    }
+}
+
+function GetDocFX()
+{
+    LogDebug "Checking if DocFX is installed ..."
+    $toolsFolder = Resolve-Path $toolsFolder
+    $docfxPath = Join-Path $toolsFolder "docfx.exe"
+    $docfxInstalled = Test-Path -Path $docfxPath
+
+    if(-Not ($docfxInstalled))
+    {
+        LogError "DocFX is not installed. Please install it first calling the function 'InstallDocFX' in a previous run."
+        exit(1)
     }
 
     return "$(Resolve-Path (Join-Path $toolsFolder docfx.exe))"

@@ -16,20 +16,7 @@ Currently, Evergine allows you to create PC desktop applications that cover almo
 
 The OpenXR implementation is provided by the `OpenXRPlatform` service, a class that offers the implementation of [XRPlatform](../xrplatform.md). When you create an `OpenXRPlatform` instance, you have the option to specify which extensions you want to enable.
 
-## Meta Quest Project Template
+## In This Section
 
-The Oculus Quest device is now called Meta Quest following the latest announcement from Facebook. This is the most popular VR headset currently, with about 10 million units of the newest Quest 2 device sold.
-
-Thanks to the OpenXR standard, the latest version of Evergine allows you to deploy your VR applications on Meta Quest devices.
-
-For maximum performance and to support future graphics features, we use Vulkan as the only Graphics API on this Android-based platform.
-
-### Create a Meta Quest Template
-
-To start developing your Evergine project with Meta Quest, simply select the Android Meta Quest template when creating an Evergine project:
-
-![Meta Quest template](images/openxr_template.png)
-
-Alternatively, if you have already created an Evergine project, you can add the Meta Quest profile in the Project Settings:
-
-![Meta Quest add profile](images/openxr_addprofile.png)
+- [Meta Quest](metaquest.md)
+- [Pico VR](pico.md)
