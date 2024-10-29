@@ -83,9 +83,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="hand-menu">Hand Menu</h1>
 
-<p>One of the main features that XRV offers is the hand menu. This is an element that shows a set of buttons that can be added or removed programmatically, and its container is attached to the user's wrist. When the user turns their palm, the menu will be displayed or hidden depending on the palm's orientation. It works for both the left and right hands.</p>
+<p>The hand menu is one of XRV’s primary features, enabling interactive buttons on the user's wrist. It appears when the user turns their palm and is accessible for both left and right hands.</p>
 <p><img src="images/hand_menu.jpg" alt="Hand menu"></p>
-<p>Each one of the configured modules for an XRV application has the possibility to add a new button to this menu. To do this, in the module definition class, just create an instance for the <em>HandMenuButton</em> property.</p>
+<p>Each configured module in an XRV application can add a button to the hand menu by defining a <em>HandMenuButton</em> property in the module’s definition class.</p>
 <pre><code class="lang-csharp">public class MyModule : Module 
 {
     public override MenuButtonDescription HandMenuButton { get; protected set; }
@@ -99,9 +99,9 @@
     }
 }
 </code></pre>
-<p>If you set a <em>null</em> value to this property, no button will be automatically added to the hand menu.</p>
-<h3 id="hand-menu-button-configuration">Hand Menu Button Configuration</h3>
-<p>Here you will find a table with elements that can be configured for each one of the hand menu buttons using <em>MenuButtonDescription</em>.</p>
+<p>If <em>HandMenuButton</em> is set to <em>null</em>, no button will be added to the menu for that module.</p>
+<h3 id="configuring-hand-menu-buttons">Configuring Hand Menu Buttons</h3>
+<p>The following table details configurable elements for each button using <em>MenuButtonDescription</em>:</p>
 <table>
 <thead>
 <tr>
@@ -112,40 +112,39 @@
 <tbody>
 <tr>
 <td><strong>IconOn</strong></td>
-<td>Material identifier to be used when the button is in the <em>on</em> state for a toggle button, or just the button icon for a non-toggle button.</td>
+<td>Material identifier when the button is <em>on</em> for toggle buttons or the standard icon for non-toggle buttons.</td>
 </tr>
 <tr>
 <td><strong>IconOff</strong></td>
-<td>Material identifier to be used when the button is in the <em>off</em> state (for toggle buttons only).</td>
+<td>Material identifier when the button is <em>off</em> (toggle buttons only).</td>
 </tr>
 <tr>
 <td><strong>IsToggle</strong></td>
-<td>Indicates if the button should be a toggle button or not.</td>
+<td>Defines whether the button functions as a toggle.</td>
 </tr>
 <tr>
 <td><strong>TextOn</strong></td>
-<td>Button text to be used when the button is in the <em>on</em> state for a toggle button, or just the button icon for a non-toggle button. This property is a <em>Func&lt;string&gt;</em> to let the user define different values depending on the application's display language.</td>
+<td>Text shown when the button is <em>on</em> for toggle buttons, or standard text for non-toggle buttons. Supports localization via <em>Func&lt;string&gt;</em>.</td>
 </tr>
 <tr>
 <td><strong>TextOff</strong></td>
-<td>Button text to be used when the button is in the <em>off</em> state (for toggle buttons only). This property is a <em>Func&lt;string&gt;</em> to let the user define different values depending on the application's display language.</td>
+<td>Text when the button is <em>off</em> (toggle buttons only), also supporting localization.</td>
 </tr>
 <tr>
 <td><strong>VoiceCommandOn</strong></td>
-<td>Voice command to activate the button when it is in the <em>on</em> state for a toggle button, or just the button icon for a non-toggle button.</td>
+<td>Voice command to activate the button in its <em>on</em> state (toggle buttons only). Note: it was only supported on UWP - it's not applied in last version</td>
 </tr>
 <tr>
 <td><strong>VoiceCommandOff</strong></td>
-<td>Voice command to activate the button when it is in the <em>off</em> state (for toggle buttons only).</td>
+<td>Voice command to activate the button in its <em>off</em> state (toggle buttons only). Note: it was only supported on UWP - it's not applied in last version</td>
 </tr>
 </tbody>
 </table>
 <h3 id="attachingdetaching-the-hand-menu">Attaching/Detaching the Hand Menu</h3>
-<p>The user has the option to detach the menu from their hand using the <em>Detach</em> button located at the top of the menu. When doing this, the menu will change its layout and behave like a standard window. The user can choose to make it follow them or stay pinned wherever they want.</p>
+<p>The menu can be detached from the wrist by selecting the <em>Detach</em> button at the top, transforming it into a floating window. Users can pin the detached menu in place or have it follow them. To reattach the menu to the wrist, press the detached menu's <em>Close</em> button.</p>
 <p><img src="images/hand_menu_detached.jpg" alt="Detached hand menu"></p>
-<p>To bring the menu back to the wrist, the user just has to press the detached menu's <em>Close</em> button.</p>
 <h3 id="adding-buttons-programmatically">Adding Buttons Programmatically</h3>
-<p>You can also add or remove buttons programmatically, apart from the buttons that you may have added (or not) from your own application module definitions. Note that <em>XrvService</em> exposes a <em>HandMenu</em> property that allows you to apply some custom configurations to the menu. The menu buttons collection can be modified at runtime.</p>
+<p>In addition to module-defined buttons, buttons can be added or removed dynamically using <em>XrvService’s HandMenu</em> property.</p>
 <pre><code class="lang-csharp">var xrv = Application.Current.Container.Resolve&lt;XrvService&gt;();
 var handMenu = xrv.HandMenu;
 var buttonDefinition = new MenuButtonDescription 
@@ -159,15 +158,14 @@ handMenu.ButtonDescriptors.Add(buttonDefinition);
 // removing a defined button
 handMenu.ButtonDescriptors.Remove(buttonDefinition);
 </code></pre>
-<h3 id="hand-menu-layout">Hand Menu Layout</h3>
-<p>We don't support modifying the built-in hand menu shape or layout. You can only modify the number of buttons per column. This property has a minimum size of 4 buttons per column, as this is necessary for the detached menu state.</p>
-<p>To modify the number of buttons per column, use the following code snippet:</p>
+<h3 id="hand-menu-layout-customization">Hand Menu Layout Customization</h3>
+<p>The hand menu layout cannot be modified directly. However, the number of buttons per column can be adjusted, with a minimum of 4 buttons per column to maintain functionality in detached mode.</p>
 <pre><code class="lang-csharp">handMenu.ButtonsPerColumn = 5;
 </code></pre>
-<h3 id="hand-menu-starting-tutorial">Hand Menu Starting Tutorial</h3>
-<p>A tutorial animation can be displayed every time the application is started, to let users know that they should turn their hand if they want to display the menu and interact with the application.</p>
+<h3 id="hand-menu-tutorial">Hand Menu Tutorial</h3>
+<p>A startup tutorial animation demonstrates how to display the menu by turning the hand, helping new users interact effectively.</p>
 <p><img src="images/hand_menu_tutorial.jpg" alt="Hand menu tutorial"></p>
-<p>To hide this animation on application start, you can use this code snippet. Note that you should deactivate the flag after XRV initialization (the hand menu will not be available before that).</p>
+<p>To disable this animation at startup, deactivate the flag after initializing XRV:</p>
 <pre><code class="lang-csharp">var xrv = Application.Current.Container.Resolve&lt;XrvService&gt;();
 xrv.Initialize(this);
 xrv.HandMenu.DisplayTutorial = false;

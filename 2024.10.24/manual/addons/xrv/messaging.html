@@ -81,11 +81,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-
-<p>Here is the improved version of your text with correct grammar:</p>
 <h1 id="messaging">Messaging</h1>
-<p><em>XRV</em> includes a simple implementation of the publisher-subscriber pattern, enabling you to communicate between two separate parts of code using messages. You can use it in components, services, or any other elements as needed. You can emit any type of message through this channel; however, it is recommended to create specific message types that can contain any information you consider useful.</p>
-<p>To emit a message, just create a custom message class and use the <em>Publish</em> method.</p>
+
+<p><em>XRV</em> provides a straightforward implementation of the publisher-subscriber pattern, allowing different parts of your application to communicate via messages. This system can be used in components, services, or any other elements as needed. You can emit any type of message; however, it's recommended to create specific message types that contain any relevant information.</p>
+<p>To send a message, create a custom message class and use the <em>Publish</em> method.</p>
 <pre><code class="lang-csharp">public class MyMessage 
 {
     public MyMessage(string data1, int data2) 
@@ -104,7 +103,7 @@ var message = new MyMessage(&quot;my-data&quot;, 1234);
 pubSub.Publish(message);
 </code></pre>
 <p><br>
-To receive messages of a given type, you should use the <em>Subscribe</em> method. It returns a subscription token, which you must save to be able to unsubscribe, depending on how your code behaves. For example, if you want to use it in a <em>Component</em>, the most common pattern will be to subscribe in <em>OnAttach/OnActivated</em> and unsubscribe in <em>OnDetach/OnDeactivated</em>.</p>
+To receive messages of a specific type, use the <em>Subscribe</em> method. It returns a subscription token, which you should save to enable unsubscribing when necessary. For example, if you want to use it in a <em>Component</em>, the standard approach is to subscribe in <em>OnAttach/OnActivated</em> and unsubscribe in <em>OnDetach/OnDeactivated</em>.</p>
 <pre><code class="lang-csharp">public class MyComponent : Component 
 {
     [BindService]

@@ -84,20 +84,114 @@
 <h1 id="configurators">Configurators</h1>
 
 <hr>
-<p>The configurator components were created to ease the customization process and, in some cases, to extend the functionality of certain controls. To use them, add them to the prefab root after instancing a prefab.</p>
-<p>There are examples for all configurators in the <em>test scenes</em> in the <em>MRTK Demo</em> project.</p>
+<p>Configurator components simplify customization and, in some cases, extend functionality for specific controls. To use a configurator, add it to the root of a prefab after instantiating the prefab.</p>
+<p>Examples for each configurator can be found in the test scenes within the <em>MRTK Demo</em> project.</p>
 <h2 id="standard-button-configurator">Standard Button Configurator</h2>
-<p>This configurator can manage the configuration of certain aspects of a basic button, such as the icon, button text, and material plate. If the color should also be changed, the <em>CreatesNewIconMaterialInstance</em> and <em>CreatesNewBackPlateMaterialInstance</em> checkboxes will ensure that the change does not affect other instances.</p>
+<p>The <strong>Standard Button Configurator</strong> allows easy customization of certain button elements, such as the icon, button text, and material plate. If you want to change the color without affecting other button instances, check the <em>CreatesNewIconMaterialInstance</em> and <em>CreatesNewBackPlateMaterialInstance</em> options to ensure unique instances.</p>
 <p><img src="images/standard_button_configurator.png" alt="Standard button configurator"></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plate</strong></td>
+<td>Material used as the back plate of the button.</td>
+</tr>
+<tr>
+<td><strong>CreatesNewBackPlateMaterialInstance</strong></td>
+<td>Creates a new material instance for the back plate, allowing runtime modifications without affecting other elements sharing the same material in the UI.</td>
+</tr>
+<tr>
+<td><strong>CreatesNewIconMaterialInstance</strong></td>
+<td>Creates a new material instance for the icon, enabling independent runtime adjustments.</td>
+</tr>
+<tr>
+<td><strong>AllowBackPlateNullMaterial</strong></td>
+<td>Allows a null material to be used for the back plate.</td>
+</tr>
+<tr>
+<td><strong>AllowIconNullMaterial</strong></td>
+<td>Allows a null material to be used for the icon.</td>
+</tr>
+<tr>
+<td><strong>Icon</strong></td>
+<td>Material used for the button icon.</td>
+</tr>
+<tr>
+<td><strong>PrimaryColor</strong></td>
+<td>Sets the primary color used to tint the icon and define the text color.</td>
+</tr>
+<tr>
+<td><strong>Text</strong></td>
+<td>Text displayed on the button.</td>
+</tr>
+<tr>
+<td><strong>TextScale</strong></td>
+<td>Scale factor for the button text.</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Font used for the button text.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="togglebutton">ToggleButton</h2>
-<p>When added to a button, the <em>ToggleButton</em> component extends its base functionality so that the button will have two different styles depending on whether it is in the <em>ON</em> or <em>OFF</em> state. This component adds two <em>ToggleButtonConfigurator</em> components, which can be used to configure each state in a very similar way to the <em>StandardButtonConfigurator</em>.</p>
+<p>Adding the <strong>ToggleButton</strong> component to a button provides two distinct styles based on its <em>ON</em> or <em>OFF</em> state. This component automatically adds two <strong>ToggleButtonConfigurator</strong> components, allowing for customized configuration of each state similar to the <strong>Standard Button Configurator</strong>.</p>
 <p><img src="images/toggle_button_configurator.png" alt="Toggle button configurator"></p>
+<p>Take a look to sample scene for buttons (<em>Buttons.wescene</em>) at <a href="https://github.com/EvergineTeam/MixedRealityToolkit/tree/master/Samples/Evergine.MRTK.Demo/Content/Scenes/Samples">https://github.com/EvergineTeam/MixedRealityToolkit/tree/master/Samples/Evergine.MRTK.Demo/Content/Scenes/Samples</a>.</p>
 <h2 id="multi-state-buttons">Multi-State Buttons</h2>
-<p>The <em>ToggleButton</em> component adds the <em>ToggleStateManager</em> and two <em>ToggleButtonConfigurators</em> to the button. There is also an implementation for tri-state buttons by way of adding a <em>MultiStateStateManager</em> and three <em>MultiStateButtonConfigurator</em> components to a button.</p>
-<p>All these <em>StateManager</em> classes extend the <em>BaseStateManager</em> class using an enum with all the states a button can have. If more than three states are needed, a new class can be created using this base class and a custom enum. The configurator components also need to be implemented using this enum, so each one is associated with a single state.</p>
+<p>The <strong>ToggleButton</strong> component also includes the <em>ToggleStateManager</em> and two <em>ToggleButtonConfigurators</em>, enabling multi-state functionality. For tri-state buttons, you can use the <em>MultiStateStateManager</em> and three <strong>MultiStateButtonConfigurator</strong> components to manage three separate states.</p>
+<p>All <em>StateManager</em> classes inherit from the <em>BaseStateManager</em> class, which uses an enum to define possible button states. For more than three states, create a custom class using <em>BaseStateManager</em> with a new enum defining the extra states. Each configurator component should then correspond to a unique state using this custom enum.</p>
 <h2 id="slider-configurator">Slider Configurator</h2>
-<p>This configurator contains specific settings to change the track and thumb materials, and the label text in a slider.</p>
+<p>The <strong>Slider Configurator</strong> offers specific options to customize the slider’s track, thumb materials, and label text.</p>
 <p><img src="images/slider_configurator.png" alt="Slider configurator"></p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Track</strong></td>
+<td>Material used for the track mesh.</td>
+</tr>
+<tr>
+<td><strong>Material</strong></td>
+<td>Material used for the thumb mesh.</td>
+</tr>
+<tr>
+<td><strong>CreatesNewTrackMaterialInstance</strong></td>
+<td>Creates a new material instance for the track, enabling unique runtime modifications.</td>
+</tr>
+<tr>
+<td><strong>CreatesNewThumbMaterialInstance</strong></td>
+<td>Creates a new material instance for the thumb, allowing independent runtime adjustments.</td>
+</tr>
+<tr>
+<td><strong>PrimaryColor</strong></td>
+<td>Sets the primary color, affecting the title color.</td>
+</tr>
+<tr>
+<td><strong>SecondaryColor</strong></td>
+<td>Sets the secondary color, affecting the value display color.</td>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td>Title displayed on the slider.</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Font used for the slider’s text.</td>
+</tr>
+</tbody>
+</table>
+<p>Take a look to sample scene for sliders (<em>Sliders.wescene</em>) at <a href="https://github.com/EvergineTeam/MixedRealityToolkit/tree/master/Samples/Evergine.MRTK.Demo/Content/Scenes/Samples">https://github.com/EvergineTeam/MixedRealityToolkit/tree/master/Samples/Evergine.MRTK.Demo/Content/Scenes/Samples</a>.</p>
 
 </article>
           </div>

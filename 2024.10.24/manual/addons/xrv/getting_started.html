@@ -84,21 +84,19 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <hr>
-<p>In this section, we present step-by-step instructions to get ready to execute XRV on your device.</p>
+<p>Follow these steps to prepare your environment for running XRV on your target device.</p>
 <h2 id="project-setup">Project Setup</h2>
-<ol>
-<li><p>Create a new project using <a href="../../evergine_launcher/create_project.html">Evergine Launcher</a>. You should include an extra template project, apart from Windows, for your target device. For example, with a Meta Quest headset, you can choose between <em>Xamarin</em> and/or <em>.NET 6</em> project templates.</p>
-</li>
-<li><p>Once Evergine Studio is opened, add an MRTK add-on. You can check <a href="../index.html">how to add add-ons to an existing project</a>.
-<img src="images/getting-started-mrtk.png" alt="Installing MRTK add-on"></p>
-</li>
-<li><p>With the MRTK add-on installed, you need to add the <em>Evergine.XRV.Core</em> add-on using the project management dialog again.
-<img src="images/getting-started-xrv.png" alt="Installing XRV add-on"></p>
-</li>
-</ol>
+<p><strong>1. Create a new project</strong></p>
+<p>Use <a href="../../evergine_launcher/create_project.html">Evergine Launcher</a> to start a new project. Along with Windows, select an additional template for your target device. For Meta Quest or Pico headsets, you can choose from two different templates.</p>
+<p><strong>2. Add the MRTK Add-on</strong></p>
+<p>Open Evergine Studio and add the MRTK add-on to your project. Refer to <a href="../index.html">this guide</a> for instructions on adding add-ons.</p>
+<p><img src="images/getting-started-mrtk.png" alt="Installing MRTK add-on"></p>
+<p><strong>3. Add the Evergine.XRV.Core Add-on</strong></p>
+<p>With MRTK installed, add the <em>Evergine.XRV.Core</em> add-on via the project management dialog.</p>
+<p><img src="images/getting-started-xrv.png" alt="Installing XRV add-on"></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>All XRV add-ons have an associated NuGet package. Like Evergine packages, nightly builds of XRV are available on a public NuGet feed. Preview packages will be published on NuGet.org. So, for nightly builds, you should update your nuget.config file to include the Evergine nightly feed:</p>
+<p>XRV add-ons are available as NuGet packages. For nightly builds, update <code>nuget.config</code> to include the Evergine nightly feed:</p>
 </div>
 <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;configuration&gt;
@@ -108,14 +106,12 @@
   &lt;/packageSources&gt;
 &lt;/configuration&gt;
 </code></pre>
-<ol start="4">
-<li>Change the default scene SunLight entity value for Illuminance to a value of 1.
-<img src="images/getting-started-scene-settings.png" alt="Configuring scene settings"></li>
-</ol>
+<p><strong>4. Adjust SunLight Illuminance</strong></p>
+<p>In your default scene, set the SunLight entity’s Illuminance value to 1.</p>
+<p><img src="images/getting-started-scene-settings.png" alt="Configuring scene settings"></p>
 <h2 id="code-setup">Code Setup</h2>
-<ol>
-<li>Register the background scheduler in your Application constructor.</li>
-</ol>
+<p><strong>1. Configure the Application Constructor</strong></p>
+<p>Register the background scheduler in your <code>Application</code> constructor.</p>
 <pre><code class="lang-csharp">public MyApplication()
 {
     this.Container.RegisterType&lt;Settings&gt;();
@@ -133,9 +129,8 @@
     BackgroundTaskScheduler.Background.Configure(this.Container);
 }
 </code></pre>
-<ol start="2">
-<li>Change your scene class to implement XRScene.</li>
-</ol>
+<p><strong>2. Implement XRScene in Your Scene Class</strong></p>
+<p>Modify your scene class to inherit from <code>XRScene</code>.</p>
 <pre><code class="lang-csharp">public class MyScene : XRScene
 {
     protected override Guid CursorMatPressed =&gt; EvergineContent.MRTK.Materials.Cursor.CursorPinch;
@@ -159,15 +154,13 @@
     //...
 }
 </code></pre>
-<ol start="3">
-<li>Add Microsoft.Bcl.AsyncInterfaces to the shared project.</li>
-</ol>
+<p><strong>3. Add Microsoft.Bcl.AsyncInterfaces Package</strong></p>
+<p>Include <code>Microsoft.Bcl.AsyncInterfaces</code> in your shared project:</p>
 <pre><code class="lang-xml">&lt;PackageReference Include=&quot;Microsoft.Bcl.AsyncInterfaces&quot; Version=&quot;7.0.0&quot; /&gt;
 </code></pre>
-<ol start="4">
-<li>Finally, create an XrvService instance and initialize it under OnPostCreateXRScene.</li>
-</ol>
-<p>MyApplication.cs</p>
+<p><strong>4. Initialize XrvService</strong></p>
+<p>Set up an <code>XrvService</code> instance within <code>OnPostCreateXRScene</code>.</p>
+<p><strong>MyApplication.cs</strong></p>
 <pre><code class="lang-csharp">public override void Initialize()
 {
     base.Initialize();
@@ -182,7 +175,7 @@ private void InitializeXrv()
     this.Container.RegisterInstance(xrv);
 }
 </code></pre>
-<p>MyScene.cs</p>
+<p><strong>MyScene.cs</strong></p>
 <pre><code class="lang-csharp">protected override void OnPostCreateXRScene()
 {
     base.OnPostCreateXRScene();
@@ -192,20 +185,15 @@ private void InitializeXrv()
 </code></pre>
 <h2 id="platform-setup">Platform Setup</h2>
 <h3 id="android">Android</h3>
-<p>On some platforms like Android, you may encounter build errors like this:</p>
+<p>If you encounter build errors like the following:</p>
 <pre><code>error XA2002: Cannot resolve reference: `Evergine.Editor.Extension`, referenced by `Evergine.MRTK.Editor`. Please add a NuGet package or assembly reference for `Evergine.Editor.Extension`, or remove the reference to `Evergine.MRTK.Editor`.
 </code></pre>
-<p>Simply add Evergine.Editor.Extension to your project, and it should work.</p>
+<p>Add <code>Evergine.Editor.Extension</code> to your project. For passthrough capabilities, uncomment related code in <code>MainActivity.cs</code> and in the Android manifest.</p>
 <p>Also, to make use of the passthrough capability, remember to uncomment the related parts of your code in MainActivity.cs and in the Android manifest file.</p>
-<h3 id="uwp-mixed-reality">UWP (Mixed Reality)</h3>
-<p>In UWP, you may encounter some PRI generation errors that you can fix by editing your project file and adding the following:</p>
-<pre><code class="lang-xml">&lt;AppxGeneratePrisForPortableLibrariesEnabled&gt;false&lt;/AppxGeneratePrisForPortableLibrariesEnabled&gt;
-</code></pre>
-<p>Also, if you add modules that require internet access or want to use voice commands, ensure that you enable Internet Client and Microphone capabilities. For voice commands, you should also add an explicit reference in the Mixed Reality project to the <em>Evergine.Xrv.Core</em> NuGet package.</p>
 <h2 id="add-more-modules">Add More Modules</h2>
-<p>With all this, you can run the application, but the only thing you can do is open the hand menu and its two default buttons to open Settings and Help windows. To add more functionalities, you can add any of the existing <a href="modules/index.html">XRV modules</a>, <a href="modules/customModule/index.html">create your own module</a>, or just add new elements using the XRV API.</p>
+<p>At this point, you can open the hand menu with default buttons for Settings and Help. To extend functionality, consider adding any <a href="modules/index.html">XRV modules</a>, <a href="modules/customModule/index.html">creating your own module</a>, or using the XRV API to add new elements.</p>
 <p><img src="images/getting-started-menu.JPG" alt="Hand menu example"></p>
-<p>You can also take a look at our <a href="https://github.com/EvergineTeam/XRVSample">XRV sample</a> that includes all our public modules.</p>
+<p>You can also take a look at our <a href="https://github.com/EvergineTeam/XRV/tree/develop/samples">XRV sample</a> that includes all our public modules.</p>
 
 </article>
           </div>

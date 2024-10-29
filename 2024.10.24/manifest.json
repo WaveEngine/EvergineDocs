@@ -19260,6 +19260,139 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/checkbox.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/checkbox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/combobox.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/combobox.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/checkbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/checkbox.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/combobox.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/combobox.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/listview.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/listview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/listview_custom-adapter.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/listview_custom-adapter.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/scrollview.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/scrollview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/scrollview_material_layer.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/scrollview_material_layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/images/scrollview_text_layer.png",
+      "output": {
+        "resource": {
+          "relative_path": "manual/addons/mrtk/user_controls/images/scrollview_text_layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/listview.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/listview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/scrollview.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/scrollview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "src/manual/addons/mrtk/user_controls/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/addons/mrtk/user_controls/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/addons/mrtk/user_controls/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "src/manual/addons/toc.yml",
       "output": {

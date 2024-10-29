@@ -84,29 +84,27 @@
 <h1 id="creating-custom-controls">Creating Custom Controls</h1>
 
 <hr>
-<p>All MRTK controls use custom interfaces to receive user interaction events. Most components need to be added to an entity that has a <em>BoxCollider</em> component and a <em>StaticBody</em> component to properly manage them within the physics engine.</p>
+<p>MRTK controls utilize custom interfaces to handle user interaction events. Most controls should be added to an entity equipped with a <em>BoxCollider</em> component and a <em>StaticBody</em> component to ensure correct behavior within the physics engine.</p>
 <h2 id="focus-events">Focus Events</h2>
-<p>Components that implement the <em>IMixedRealityFocusHandler</em> interface will receive focus events. A control gains focus in the following scenarios:</p>
+<p>Controls implementing the <em>IMixedRealityFocusHandler</em> interface receive focus events under the following conditions:</p>
 <ul>
 <li>When a <em>near pointer</em> is close to the entity.</li>
-<li>When a <em>far pointer</em> is pointing to the entity using a ray.</li>
-<li>When the user is looking at the entity (using the GazeProvider).</li>
+<li>When a <em>far pointer</em> targets the entity using a ray.</li>
+<li>The user gazes at the entity (via the <em>GazeProvider</em>).</li>
 </ul>
-<p>The default button style leverages the focus event by raising the icon and text when acquiring focus.</p>
+<p>In the default button style, focus events visually raise the icon and text, indicating focus.</p>
 <h2 id="touch-events">Touch Events</h2>
-<p>Components that implement the <em>IMixedRealityTouchHandler</em> interface will receive events when the <em>near pointer</em> makes contact with the entity's collider.</p>
-<p>These events are used in the <em>PressableButton</em> component, which is part of the standard button and enables the button's main feature.</p>
+<p>Controls implementing the <em>IMixedRealityTouchHandler</em> interface receive events when the near pointer touches the entity’s collider. This interaction is central to the <em>PressableButton</em> component, which is used in the standard button to enable its primary functionality.</p>
 <h2 id="pointer-events">Pointer Events</h2>
-<p>Components that implement the <em>IMixedRealityPointerHandler</em> interface will receive pointer events:</p>
+<p>Controls implementing the <em>IMixedRealityPointerHandler</em> interface receive the following pointer events:</p>
 <ul>
-<li>Pointer Down: when the user grabs an object, either through near interaction or far interaction using the air-tap gesture.</li>
-<li>Pointer Dragged: when the user has already grabbed the object and is still interacting with it, allowing the object to receive position updates.</li>
-<li>Pointer Up: when the user stops interacting with the object.</li>
+<li><strong>Pointer Down</strong>: Triggered when the user grabs an object via near or far interaction (e.g., an air-tap).</li>
+<li><strong>Pointer Dragged</strong>: Occurs while the user is holding the object, enabling position updates.</li>
+<li><strong>Pointer Up</strong>: Triggered when the user releases the object.</li>
 </ul>
-<p>These events are used, for example, in the manipulation handlers, which allow the user to grab an object and move, rotate, or scale it arbitrarily.</p>
+<p>Pointer events are useful in manipulation handlers, enabling users to grab and freely move, rotate, or scale objects.</p>
 <h2 id="speech-events">Speech Events</h2>
-<p>Components that implement the <em>IMixedRealitySpeechHandler</em> interface will receive events whenever the user performs voice commands. These can be used to remotely activate buttons or perform global actions within the application.</p>
-<p>These components do not need to be attached to an entity with a collider, as they do not rely on the physics engine.</p>
+<p>Controls implementing the <em>IMixedRealitySpeechHandler</em> interface receive events for voice commands, allowing users to activate buttons or execute global actions through speech. These components don’t need a collider, as they operate independently of the physics engine.</p>
 
 </article>
           </div>

@@ -83,11 +83,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="settings-system">Settings System</h1>
 
-<p><em>XRV</em> provides a default window where you can include specific settings for your application or modules. It also includes a section for general settings provided by the core library, such as turning voice commands on or off. To open the <em>Configuration</em> window, just press the <img src="images/settings.png" alt="settings hand menu"> button that you can find in the hand menu.</p>
+<p><em>XRV</em> provides a default window where you can include specific settings for your application or modules. It also includes a section for general settings provided by the core library, such as enabling or disabling voice commands. To open the <em>Configuration</em> window, simply press the <img src="images/settings.png" alt="settings hand menu"> button found in the hand menu.</p>
 <p><img src="images/settings_system_panel.png" alt="settings hand menu"></p>
-<p>This window is a <em>TabbedWindow</em>, and you have two ways of adding new elements:</p>
+<p>This window is a <em>TabbedWindow</em>, and you have two ways to add new elements:</p>
 <ul>
-<li>Adding a configuration section to your custom module</li>
+<li><strong>Adding a configuration section to your custom module</strong></li>
 </ul>
 <pre><code class="lang-csharp">public class MyModule : Module
 {
@@ -104,7 +104,7 @@
 }
 </code></pre>
 <ul>
-<li>Using the <em>SettingsSystem</em> API</li>
+<li><strong>Using the <em>SettingsSystem</em> API</strong></li>
 </ul>
 <pre><code class="lang-csharp">var settings = this.xrvService.SettingsSystem;
 var item = new TabItem

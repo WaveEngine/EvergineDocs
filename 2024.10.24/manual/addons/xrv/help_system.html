@@ -83,11 +83,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="help-system">Help System</h1>
 
-<p>Another predefined window that <em>XRV</em> offers is the <em>Help</em> window. This window is intended to contain text and images that guide application users in learning how to use the application. It works in the same way as the <a href="settings_system.html">Settings System</a>: you can associate a help section with your custom module, or you can add or remove items programmatically. To open the <em>Help</em> window, simply press the <img src="images/help.png" alt="help hand menu"> button found in the hand menu.</p>
+<p>Another predefined window that <em>XRV</em> offers is the <em>Help</em> window. This window is designed to contain text and images that guide application users in learning how to use the application. It operates in the same way as the <a href="settings_system.html">Settings System</a>: you can associate a help section with your custom module or add and remove items programmatically. To open the <em>Help window</em>, simply press the help hand menu button found in the hand menu.</p>
 <p><img src="images/help_system_menu.png" alt="settings hand menu"></p>
 <p>This window is a <em>TabbedWindow</em> and you have two ways of adding new elements:</p>
 <ul>
-<li>Adding a help section to your custom module</li>
+<li><strong>Adding a help section to your custom module</strong></li>
 </ul>
 <pre><code class="lang-csharp">public class MyModule : Module
 {
@@ -104,7 +104,7 @@
 }
 </code></pre>
 <ul>
-<li>Using the <em>HelpSystem</em> API</li>
+<li><strong>Using the <em>HelpSystem</em> API</strong></li>
 </ul>
 <pre><code class="lang-csharp">var help = this.xrvService.HelpSystem;
 var item = new TabItem
