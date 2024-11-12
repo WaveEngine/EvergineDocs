@@ -408,3 +408,45 @@ _C#_
 [JSInvokable($"{BaseInvokeClassName}:SetUInt3")]
 public static void SetUInt3(UInt3 uint3)
 ```
+
+#### Vector2JsonConverter
+
+Expects vector be defined as following.
+
+_JavaScript_
+```javascript
+window.Utils.invoke("SetVector2", {x: 1.0, y: 2.0 });
+```
+_C#_
+```csharp
+[JSInvokable($"{BaseInvokeClassName}:SetVector2")]
+public static void SetVector2(Vector2 vector)
+```
+
+#### Vector3JsonConverter
+
+Expects vector be defined as following.
+
+_JavaScript_
+```javascript
+window.Utils.invoke("SetVector3", {x: 1.0, y: 2.0, z: 3.0 });
+```
+_C#_
+```csharp
+[JSInvokable($"{BaseInvokeClassName}:SetVector3")]
+public static void SetVector3(Vector3 vector)
+```
+
+#### Vector4JsonConverter
+
+Expects vector be defined as following.
+
+_JavaScript_
+```javascript
+window.Utils.invoke("SetVector4", {x: 1.0, y: 2.0, z: 3.0, w: 4.0 });
+```
+_C#_
+```csharp
+[JSInvokable($"{BaseInvokeClassName}:SetVector4")]
+public static void SetVector4(Vector4 vector)
+```
