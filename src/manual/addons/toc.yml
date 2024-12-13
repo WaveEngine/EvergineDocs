@@ -1,9 +1,6 @@
 - name: MRTK
   href: mrtk/toc.yml
   homepage: mrtk/index.md
-- name: ARR
-  href: arr/toc.yml
-  homepage: arr/index.md
 - name: XRV
   href: xrv/toc.yml
   homepage: xrv/index.md
