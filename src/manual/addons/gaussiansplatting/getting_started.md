@@ -15,17 +15,19 @@ Open Evergine Studio and add the Evergine.GaussianSplatting add-on to your proje
 ![Add-on installation](images/addon_installation.png)
 
 > [!NOTE]
-> Gaussian Splatting add-ons are available as NuGet packages. For nightly builds, update `nuget.config` to include the Evergine nightly feed:
+> If you are using a Web profile, you need to perform the additional steps described in this document: [Setup Gaussian Splatting on the Web Platform](web_setup.md)
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <packageSources>
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-    <add key="Evergine Nightly" value="https://pkgs.dev.azure.com/plainconcepts/Evergine.Nightly/_packaging/Evergine.NightlyBuilds/nuget/v3/index.json" />
-  </packageSources>
-</configuration>
-```
+> [!NOTE]
+> Gaussian Splatting add-ons are available as NuGet packages. For nightly builds, update `nuget.config` to include the Evergine nightly feed:
+>```xml
+><?xml version="1.0" encoding="utf-8"?>
+><configuration>
+>  <packageSources>
+>    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+>    <add key="Evergine Nightly" value="https://pkgs.dev.azure.com/plainconcepts/Evergine.Nightly/_packaging/>Evergine.NightlyBuilds/nuget/v3/index.json" />
+>  </packageSources>
+></configuration>
+>```
 
 ### 3. Add Your Splat File to the Project
 

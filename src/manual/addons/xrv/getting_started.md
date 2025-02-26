@@ -24,16 +24,15 @@ With MRTK installed, add the _Evergine.XRV.Core_ add-on via the project manageme
 
 > [!NOTE]
 > XRV add-ons are available as NuGet packages. For nightly builds, update `nuget.config` to include the Evergine nightly feed:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <packageSources>
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-    <add key="Evergine Nightly" value="https://pkgs.dev.azure.com/plainconcepts/Evergine.Nightly/_packaging/Evergine.NightlyBuilds/nuget/v3/index.json" />
-  </packageSources>
-</configuration>
-```
+>```xml
+><?xml version="1.0" encoding="utf-8"?>
+><configuration>
+>  <packageSources>
+>    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+>    <add key="Evergine Nightly" value="https://pkgs.dev.azure.com/plainconcepts/Evergine.Nightly/_packaging/>Evergine.NightlyBuilds/nuget/v3/index.json" />
+>  </packageSources>
+></configuration>
+>```
 
 **4. Adjust SunLight Illuminance**
 
